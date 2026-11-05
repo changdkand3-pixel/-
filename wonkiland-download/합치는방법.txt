@@ -1,0 +1,8 @@
+세 파일을 같은 폴더에 저장하세요.
+Windows 명령 프롬프트(cmd)에서:
+copy /b wonkiland_fixed.zip.001+wonkiland_fixed.zip.002+wonkiland_fixed.zip.003 wonkiland_fixed.zip
+
+macOS/Linux 터미널에서:
+cat wonkiland_fixed.zip.001 wonkiland_fixed.zip.002 wonkiland_fixed.zip.003 > wonkiland_fixed.zip
+
+생성된 ZIP을 압축 해제하고 wonkiland_fixed.html을 사용하세요.
