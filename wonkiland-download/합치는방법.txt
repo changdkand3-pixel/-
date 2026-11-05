@@ -1,8 +1,9 @@
-세 파일을 같은 폴더에 저장하세요.
+세 파일을 같은 폴더에 저장하세요. 파일 이름에 v2가 있어야 합니다.
 Windows 명령 프롬프트(cmd)에서:
-copy /b wonkiland_fixed.zip.001+wonkiland_fixed.zip.002+wonkiland_fixed.zip.003 wonkiland_fixed.zip
+copy /b wonkiland_fixed_v2.zip.001+wonkiland_fixed_v2.zip.002+wonkiland_fixed_v2.zip.003 wonkiland_fixed_v2.zip
 
 macOS/Linux 터미널에서:
-cat wonkiland_fixed.zip.001 wonkiland_fixed.zip.002 wonkiland_fixed.zip.003 > wonkiland_fixed.zip
+cat wonkiland_fixed_v2.zip.001 wonkiland_fixed_v2.zip.002 wonkiland_fixed_v2.zip.003 > wonkiland_fixed_v2.zip
 
-생성된 ZIP을 압축 해제하고 wonkiland_fixed.html을 사용하세요.
+생성된 ZIP을 압축 해제하고 wonkiland_fixed_v2.html을 Neocities에 올리세요.
+이전 wonkiland_fixed 주소 대신 새 wonkiland_fixed_v2 주소를 여세요.
