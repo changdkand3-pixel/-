@@ -4,9 +4,25 @@
   "liveGoogleProbe": {
     "providerReachable": true,
     "httpStatus": 200,
+    "doGetAvailable": true,
     "assetResponseSucceeded": false,
-    "googleError": "Script function not found: doGet",
-    "diagnosis": "The currently deployed Apps Script version does not expose doGet; save the prepared Code.gs in the separate Drive project and update the existing deployment to a new version."
+    "googleError": "Asset not found",
+    "checkedAssets": [
+      "small legacy image",
+      "main map image",
+      "one music file"
+    ],
+    "diagnosis": "Configured parent folder contains original-named files in image/music subfolders. Bridge expects prepared hash-named assets directly inside the configured folder."
   },
-  "deployedSiteMatchesPreparedHTML": true
+  "deployedSiteMatchesPreparedHTML": true,
+  "folderInspection": {
+    "topLevelSubfolders": [
+      "난이도 중",
+      "음악파일",
+      "이미지파일"
+    ],
+    "visibleImageFiles": 50,
+    "visibleMusicFiles": 8,
+    "expectedPreparedFilesDirectlyInConfiguredFolder": 77
+  }
 }
