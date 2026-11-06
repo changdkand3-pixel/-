@@ -1,8 +1,8 @@
-세 v4 파일을 같은 폴더에 저장하세요.
+세 v5 파일을 같은 폴더에 저장하세요.
 Windows 명령 프롬프트(cmd)에서:
-copy /b wonkiland_fixed_v4.zip.001+wonkiland_fixed_v4.zip.002+wonkiland_fixed_v4.zip.003 wonkiland_fixed_v4.zip
+copy /b wonkiland_fixed_v5.zip.001+wonkiland_fixed_v5.zip.002+wonkiland_fixed_v5.zip.003 wonkiland_fixed_v5.zip
 
 macOS/Linux:
-cat wonkiland_fixed_v4.zip.001 wonkiland_fixed_v4.zip.002 wonkiland_fixed_v4.zip.003 > wonkiland_fixed_v4.zip
+cat wonkiland_fixed_v5.zip.001 wonkiland_fixed_v5.zip.002 wonkiland_fixed_v5.zip.003 > wonkiland_fixed_v5.zip
 
-압축을 풀고 wonkiland_fixed_v4.html을 Neocities에 업로드한 뒤 새 v4 주소를 여세요.
+압축을 풀고 wonkiland_fixed_v5.html을 Neocities에 업로드한 뒤 새 v5 주소를 여세요.
