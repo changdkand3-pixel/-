@@ -1,8 +1,8 @@
-이번에는 분할 파일 4개입니다. 모두 같은 폴더에 저장하세요.
-Windows 명령 프롬프트(cmd):
-copy /b wonkiland_fixed_v7.zip.001+wonkiland_fixed_v7.zip.002+wonkiland_fixed_v7.zip.003+wonkiland_fixed_v7.zip.004 wonkiland_fixed_v7.zip
+네 파일을 같은 폴더에 저장하세요.
+Windows cmd:
+copy /b wonkiland_upload_v8.zip.001+wonkiland_upload_v8.zip.002+wonkiland_upload_v8.zip.003+wonkiland_upload_v8.zip.004 wonkiland_upload_v8.zip
 
 macOS/Linux:
-cat wonkiland_fixed_v7.zip.001 wonkiland_fixed_v7.zip.002 wonkiland_fixed_v7.zip.003 wonkiland_fixed_v7.zip.004 > wonkiland_fixed_v7.zip
+cat wonkiland_upload_v8.zip.001 wonkiland_upload_v8.zip.002 wonkiland_upload_v8.zip.003 wonkiland_upload_v8.zip.004 > wonkiland_upload_v8.zip
 
-압축을 풀고 wonkiland_fixed_v7.html을 Neocities에 올린 뒤 새 v7 주소로 접속하세요.
+압축을 풀고 업로드방법.md를 따라 HTML과 이미지 폴더를 모두 올리세요.
