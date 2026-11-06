@@ -1,0 +1,30 @@
+[
+  {
+    "viewport": "desktop",
+    "coldImageRequests": 52,
+    "warmImageRequests": 0,
+    "musicOnDemand": true,
+    "volumeAndPause": true,
+    "privateGrade2Images": 23,
+    "chaptersOpened": 6,
+    "newErrors": []
+  },
+  {
+    "viewport": "mobile",
+    "coldImageRequests": 52,
+    "warmImageRequests": 0,
+    "musicOnDemand": true,
+    "volumeAndPause": true,
+    "privateGrade2Images": 23,
+    "chaptersOpened": 6,
+    "newErrors": []
+  },
+  {
+    "tamperedAssetRejected": true,
+    "errorScreenVisible": true
+  },
+  {
+    "appsScriptHandlerMockValidated": true,
+    "invalidAssetRejected": true
+  }
+]
