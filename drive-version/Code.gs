@@ -1,5 +1,5 @@
 // Separate project: do not replace the existing member/sync Apps Script.
-const DRIVE_FOLDER_ID = 'PASTE_DRIVE_FOLDER_ID';
+const DRIVE_FOLDER_ID = '10dbk7-IOghD-lpEfT5__ZrboHEQ87j5C';
 const SITE_ORIGIN = 'https://hinsrolin.neocities.org';
 function doGet(e) {
   const p = (e && e.parameter) || {};

@@ -1,4 +1,4 @@
-# Google Drive 연결 준비본 — 실제 배포 확인 전
+# Google Drive 연결 준비본 — 폴더 설정 완료, 웹앱 배포 필요
 
 게임 이미지 52개와 음악 25곡을 Drive에서 받아 브라우저에 캐시합니다. Neocities에는 약 5.3MB HTML과 작은 설정 파일만 올립니다. 음악은 재생할 때 해당 곡을 받습니다.
 
@@ -27,13 +27,13 @@ cat wonkiland_drive_assets.zip.001 wonkiland_drive_assets.zip.002 wonkiland_driv
 
 ZIP을 풀고 나오는 **drive-assets 폴더**를 Google Drive에 업로드하세요. 그 폴더 안에 이미지와 음악 총 **77개 파일**이 있어야 합니다. 파일 이름은 바꾸지 마세요. ZIP 파일만 Drive에 올려두는 방식이 아닙니다.
 
-업로드된 **drive-assets 폴더의 링크**를 보내주시면 폴더 ID를 설정할 수 있습니다. 폴더 자체를 공개로 바꿀 필요는 없습니다. 웹앱을 배포하는 Google 계정이 이 폴더를 읽을 수 있어야 합니다.
+**제공된 폴더 ID를 Code.gs에 설정했습니다:** `10dbk7-IOghD-lpEfT5__ZrboHEQ87j5C`. 이 폴더 안에 77개 파일이 직접 들어 있어야 합니다. 폴더 자체를 공개로 바꿀 필요는 없습니다. 웹앱을 배포하는 Google 계정이 이 폴더를 읽을 수 있어야 합니다.
 
 ## 2. 별도 Apps Script 프로젝트 배포
 
 1. https://script.google.com/ 에서 **새 프로젝트**를 만드세요. 기존 회원관리·Google Sheets 동기화 코드를 덮어쓰지 마세요.
 2. [Code.gs](Code.gs)의 코드를 새 프로젝트의 Code.gs에 넣으세요.
-3. 첫 줄의 `PASTE_DRIVE_FOLDER_ID`를 **77개 파일이 직접 들어 있는 drive-assets 폴더 ID**로 바꾸세요. 폴더 링크의 `/folders/` 다음 부분입니다.
+3. **Code.gs에는 제공된 폴더 ID가 이미 설정되어 있습니다.** 폴더 ID는 바꾸지 않아도 됩니다. 해당 폴더 안에 77개 파일이 직접 있어야 합니다.
 4. 프로젝트 설정에서 appsscript.json 표시를 켜고 [appsscript.json](appsscript.json)을 넣으면 Drive 읽기 전용 권한으로 범위를 제한할 수 있습니다.
 5. **배포 → 새 배포 → 웹 앱**, 실행 사용자는 **본인**, 액세스 권한은 **모든 사용자(로그인 없이)**로 설정합니다. 본인 Google 계정에서 필요한 읽기 권한을 승인합니다.
 6. 배포 URL(`https://script.google.com/macros/s/.../exec`)을 복사해 채팅에 보내 주세요. `/dev` 테스트 주소가 아닙니다. 비밀번호나 인증키는 보내지 마세요.
