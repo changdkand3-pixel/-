@@ -1,10 +1,12 @@
 {
   "driveFolderConfigured": true,
   "deploymentURLConfigured": true,
-  "frontendConfigFilenameVerified": true,
-  "localIntegration": "previously passed on desktop and mobile with mock broker",
   "liveGoogleProbe": {
-    "verified": false,
-    "reason": "execution environment proxy rejected CONNECT to script.google.com (403); no response from user deployment was received"
-  }
+    "providerReachable": true,
+    "httpStatus": 200,
+    "assetResponseSucceeded": false,
+    "googleError": "Script function not found: doGet",
+    "diagnosis": "The currently deployed Apps Script version does not expose doGet; save the prepared Code.gs in the separate Drive project and update the existing deployment to a new version."
+  },
+  "deployedSiteMatchesPreparedHTML": true
 }
