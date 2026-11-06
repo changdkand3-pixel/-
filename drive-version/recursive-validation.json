@@ -1,0 +1,19 @@
+{
+  "mockExistingClassifiedFolder": {
+    "assets": 56,
+    "missing": 21,
+    "music": 25
+  },
+  "afterAddingCommonFolder": {
+    "status": "ok",
+    "folderCount": 11,
+    "assetCount": 77,
+    "imageCount": 52,
+    "musicCount": 25,
+    "missingAssets": []
+  },
+  "cachedLookupAvoidsRescan": true,
+  "all77NestedAssetsFound": true,
+  "invalidPathRejected": true,
+  "liveGoogleDeployment": "pending user update"
+}

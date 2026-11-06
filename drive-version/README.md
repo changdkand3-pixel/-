@@ -1,85 +1,45 @@
-# Google Drive 연결 준비본 — 폴더·웹앱 주소 설정 완료
+# Google Drive 연결 — 학년·단원 하위 폴더 지원
 
-## 지금 Neocities에 올릴 최종 파일
+이미 업로드한 분류 폴더를 유지할 수 있도록 **Code.gs를 하위 폴더 검색 방식으로 수정**했습니다. Neocities의 HTML·설정 파일은 현재 것으로 계속 사용합니다.
 
-사용자가 제공한 Drive 폴더 ID와 별도 Apps Script `/exec` 주소를 설정했습니다. 아래 **두 파일을 다시 다운로드**해 Neocities의 **같은 작업장 폴더**에 올리세요. GitHub 파일 페이지에서 **Download raw file**을 누르면 됩니다.
+## 지금 필요한 작업 두 가지
 
-1. [wonkiland_drive.html](wonkiland_drive.html) — 약 5.3MB
-2. [wonkiland-drive-config.js](wonkiland-drive-config.js) — 배포 주소가 이미 입력된 설정 파일
+### 1. 중계 코드 업데이트
 
-Neocities에서 **wonkiland_drive.html**을 열면 이미지 준비 진행률이 표시됩니다. `wonkiland_assets` 이미지 폴더를 Neocities에 올릴 필요는 없습니다. Drive에는 77개 자료가 들어 있어야 합니다. 기존 정상 파일은 실제 연결 확인 전까지 보관하세요.
+1. **드라이브 자료용 Apps Script 프로젝트**에서 [최신 Code.gs](Code.gs) 전체를 넣고 저장합니다. 기존 회원관리/동기화 프로젝트는 변경하지 마세요.
+2. **배포 → 배포 관리 → 연필 → 버전: 새 버전 → 배포**로 기존 배포를 업데이트합니다. 같은 `/exec` 주소를 유지합니다.
 
-## 현재 실제 연결 진단: 배포는 정상 응답, 자료 배치가 다름
+이 코드는 설정한 최상위 폴더 안의 학년·단원 하위 폴더를 검색합니다. 찾은 파일 ID를 10분간 캐시하고 새 파일은 캐시에 없을 때 다시 찾습니다. 같은 내용의 파일이 여러 폴더에 있어도 하나를 사용합니다. 이름이 정해진 자료 파일만 읽으며 수정·삭제하지 않습니다.
 
-`doGet` 누락은 해결됐습니다. 현재 웹앱은 **Asset not found**를 반환합니다. 제공된 `드래곤볼 수학문제` 폴더 안에는 `이미지파일`, `음악파일`, `난이도 중` 하위 폴더가 있고, 이미지·음악 파일명은 `KakaoTalk...`, `music_01...` 등입니다. 현재 웹앱은 아래 전용 ZIP에 들어 있는 이름의 자료 **77개가 설정된 폴더에 직접** 들어 있어야 동작합니다.
+### 2. 빠진 이미지 21개만 추가
 
-1. 아래 자료 ZIP 분할 파일 **4개**를 받아 합친 뒤 압축을 풉니다.
-2. PC에서 압축을 푼 **drive-assets 폴더 안으로 들어가 파일 77개를 모두 선택**합니다.
-3. [현재 연결된 드래곤볼 수학문제 폴더](https://drive.google.com/drive/folders/10dbk7-IOghD-lpEfT5__ZrboHEQ87j5C)를 열고, 선택한 **파일 77개를 이 위치에 직접 업로드**합니다.
-4. 업로드 완료를 알려 주시면 대표 이미지·음악의 실제 응답을 다시 확인하겠습니다. 현재 Apps Script 배포 주소와 Neocities 파일 설정은 그대로 사용할 수 있습니다.
+직접 조사한 현재 폴더에는 **음악 25개 + 이미지 31개 = 총 56개**가 있습니다. 메인 지도·메뉴 배경과 일부 캐릭터 이미지를 포함한 **21개**가 아직 필요합니다.
 
-파일명은 `46a16a...png`처럼 긴 영문·숫자로 된 이름이어야 합니다. 기존 원본 폴더나 파일을 삭제할 필요는 없습니다.
+**[빠진 이미지 21개 ZIP 받기 — 약 7.4MB](wonkiland_missing_assets.zip)**
 
----
+파일 페이지의 **Download raw file**로 받아 압축을 푸세요. [현재 자료 폴더](https://drive.google.com/drive/folders/10dbk7-IOghD-lpEfT5__ZrboHEQ87j5C) 안에 `공통이미지` 폴더를 만들고, 압축을 푼 파일 21개를 올리면 됩니다. 파일 이름은 그대로 유지하세요. 기존에 올린 56개를 다시 업로드하거나 옮길 필요는 없습니다.
 
-아래는 이미 완료한 Drive 업로드·배포 절차를 포함한 참고 설명입니다.
+배포 업데이트와 21개 업로드가 끝나면 알려 주세요. 실제 서버에서 **이미지 52개·음악 25개·누락 0개**인지 확인하겠습니다.
 
-게임 이미지 52개와 음악 25곡을 Drive에서 받아 브라우저에 캐시합니다. Neocities에는 약 5.3MB HTML과 작은 설정 파일만 올립니다. 음악은 재생할 때 해당 곡을 받습니다.
+## 새 진단 기능
 
-**현재 로컬 중계 시뮬레이터만 검증했습니다. 실제 Google Apps Script 배포·권한·속도는 아직 확인하지 못했습니다. 기존 회원관리/동기화 프로젝트는 변경하지 않습니다. 기존 v7 다운로드도 별도 폴더에 유지됩니다.**
+배포한 `/exec` 주소 뒤에 `?action=health`를 붙이면 폴더 수·자료 수·누락 목록을 JSON으로 확인할 수 있습니다. 이는 파일 목록을 읽는 진단이며 파일을 변경하지 않습니다. 현재 기대 파일 목록은 77개입니다. 새로운 규격의 자료는 실제 요청 때 자동 검색되므로 이 진단 기대 목록 때문에 접근이 제한되지는 않습니다.
 
-## 1. 드라이브에 자료 넣기
+## 앞으로 추가할 때
 
-아래 네 파일을 각각 열고 **Download raw file**로 같은 PC 폴더에 저장하세요.
+학년·단원별 폴더를 계속 사용하세요. 게임에 등록된 자료의 파일명은 유지해야 합니다. 새 이미지가 게임에 자동으로 등장하는 것은 아니므로 캐릭터 이름·학년·단원 연결도 함께 등록해야 합니다. 기존 이름의 자료 이동은 같은 최상위 폴더 안이면 찾을 수 있습니다.
 
-- [자료 ZIP 1 (24MB)](wonkiland_drive_assets.zip.001)
-- [자료 ZIP 2 (24MB)](wonkiland_drive_assets.zip.002)
-- [자료 ZIP 3 (24MB)](wonkiland_drive_assets.zip.003)
-- [자료 ZIP 4 (약 9.8MB)](wonkiland_drive_assets.zip.004)
+## 현재 검증 범위
 
-Windows cmd:
+공개된 실제 폴더 10개의 구조와 56개 준비 파일을 조사했습니다. 이 구조를 재현한 모의 Drive API에서 모든 하위 폴더 검색, 21개 추가 후 총 77개 검색·누락 0개, 반복 요청 캐시, 잘못된 경로 거부를 검증했습니다. 새 코드의 실제 Google 배포와 최종 사이트 실행은 사용자 배포 업데이트 후 확인해야 합니다.
 
-```bat
-copy /b wonkiland_drive_assets.zip.001+wonkiland_drive_assets.zip.002+wonkiland_drive_assets.zip.003+wonkiland_drive_assets.zip.004 wonkiland_drive_assets.zip
-```
+[하위 폴더 검증 결과](recursive-validation.json) · [현재 연결 상태](connection-status.json)
 
-macOS/Linux:
+## 기존 준비 파일
 
-```sh
-cat wonkiland_drive_assets.zip.001 wonkiland_drive_assets.zip.002 wonkiland_drive_assets.zip.003 wonkiland_drive_assets.zip.004 > wonkiland_drive_assets.zip
-```
+- [Neocities용 wonkiland_drive.html](wonkiland_drive.html) — 약 5.3MB
+- [주소가 설정된 wonkiland-drive-config.js](wonkiland-drive-config.js)
+- [읽기 전용 권한 설정 appsscript.json](appsscript.json)
+- [자료 묶음 1](wonkiland_drive_assets.zip.001) · [2](wonkiland_drive_assets.zip.002) · [3](wonkiland_drive_assets.zip.003) · [4](wonkiland_drive_assets.zip.004) — 전체 재설치가 필요한 경우에만 사용
 
-ZIP을 풀고 나오는 **drive-assets 폴더 안의 파일 77개를 선택하여 현재 연결된 Drive 폴더에 직접 업로드**하세요. 파일 이름을 그대로 유지하세요. 이 폴더 안에는 이미지와 음악 총 **77개 파일**이 직접 있어야 합니다.
-
-**제공된 폴더 ID를 Code.gs에 설정했습니다:** `10dbk7-IOghD-lpEfT5__ZrboHEQ87j5C`. 이 폴더 안에 77개 파일이 직접 들어 있어야 합니다. 폴더 자체를 공개로 바꿀 필요는 없습니다. 웹앱을 배포하는 Google 계정이 이 폴더를 읽을 수 있어야 합니다.
-
-## 2. 별도 Apps Script 프로젝트 배포
-
-1. https://script.google.com/ 에서 **새 프로젝트**를 만드세요. 기존 회원관리·Google Sheets 동기화 코드를 덮어쓰지 마세요.
-2. [Code.gs](Code.gs)의 코드를 새 프로젝트의 Code.gs에 넣으세요.
-3. **Code.gs에는 제공된 폴더 ID가 이미 설정되어 있습니다.** 폴더 ID는 바꾸지 않아도 됩니다. 해당 폴더 안에 77개 파일이 직접 있어야 합니다.
-4. 프로젝트 설정에서 appsscript.json 표시를 켜고 [appsscript.json](appsscript.json)을 넣으면 Drive 읽기 전용 권한으로 범위를 제한할 수 있습니다.
-5. **배포 → 새 배포 → 웹 앱**, 실행 사용자는 **본인**, 액세스 권한은 **모든 사용자(로그인 없이)**로 설정합니다. 본인 Google 계정에서 필요한 읽기 권한을 승인합니다.
-6. 배포 URL(`https://script.google.com/macros/s/.../exec`)을 복사해 채팅에 보내 주세요. `/dev` 테스트 주소가 아닙니다. 비밀번호나 인증키는 보내지 마세요.
-
-이 웹앱은 설정된 폴더의 정해진 형식의 자료 파일만 읽으며 수정·삭제 기능은 없습니다. 배포한 웹앱은 게임 자료를 공개 웹사이트에 제공하는 용도입니다. 계정 정책에서 익명 액세스를 허용하지 않으면 이 방식의 연결이 막힐 수 있습니다.
-
-## 3. Neocities에 두 파일 업로드
-
-- [wonkiland_drive.html](wonkiland_drive.html)
-- [wonkiland-drive-config.js](wonkiland-drive-config.js)
-
-설정 파일에는 제공된 `/exec` URL이 이미 입력되어 있습니다. 이 배포 주소는 공개 주소이며 비밀번호가 아닙니다. 수정하지 않고 업로드할 수 있습니다.
-두 파일을 기존 작업장 폴더 안의 같은 위치에 올리고 `wonkiland_drive` 주소를 여세요. 이미지 폴더를 Neocities에 올릴 필요는 없습니다.
-
-## 실제 연결 후 확인할 사항
-
-첫 방문은 약 37.5MB의 이미지를 받아 시간이 걸립니다. 이후에는 브라우저 캐시를 재사용합니다. 음악은 약 45MB 전체를 한 번에 받지 않고 필요한 곡만 받아 재생합니다. Apps Script/Drive의 속도·호출 한도와 브라우저 정책에 따라 실제 대기 시간이 달라질 수 있습니다. 실제 Google 연결을 확인하기 전에는 기존 작동 파일을 보관하세요.
-
-## 로컬에서 확인한 범위
-
-PC·모바일 Chromium에서 이미지 52개를 중계로 받는 첫 로딩, 재방문 이미지 요청 0회, 음악 한 곡의 필요 시 로딩·재생·일시정지·음량 조절, 비밀번호 5283 및 초1-2의 23개 이미지·6개 단원 대결을 확인했습니다. 변조된 자료는 해시 검사로 거부했습니다. 별도 Apps Script 핸들러는 Drive API 모의 객체로 정상 응답·잘못된 파일명 거부를 검사했습니다. 실제 Google 서비스의 배포 성공을 뜻하지 않습니다.
-
-회원관리/동기화/방명록/가구 배치와 게임 규칙은 유지되며, 원본 회원 수강과목 cloneNode 오류도 그대로입니다.
-
-[로컬 검증 결과](local-validation.json)
+기존 게임·회원관리·동기화·방명록·가구 배치 코드는 이번 하위 폴더 수정에 포함되지 않습니다.

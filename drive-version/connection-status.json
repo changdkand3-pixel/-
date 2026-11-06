@@ -24,5 +24,17 @@
     "visibleImageFiles": 50,
     "visibleMusicFiles": 8,
     "expectedPreparedFilesDirectlyInConfiguredFolder": 77
+  },
+  "classifiedFolderInspection": {
+    "foldersRead": 10,
+    "preparedAssetsFound": 56,
+    "imagesFound": 31,
+    "musicFound": 25,
+    "requiredMissingImages": 21
+  },
+  "recursiveBridge": {
+    "prepared": true,
+    "mockTestPassed": true,
+    "liveDeploymentPending": true
   }
 }
