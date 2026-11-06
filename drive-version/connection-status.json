@@ -1,0 +1,10 @@
+{
+  "driveFolderConfigured": true,
+  "deploymentURLConfigured": true,
+  "frontendConfigFilenameVerified": true,
+  "localIntegration": "previously passed on desktop and mobile with mock broker",
+  "liveGoogleProbe": {
+    "verified": false,
+    "reason": "execution environment proxy rejected CONNECT to script.google.com (403); no response from user deployment was received"
+  }
+}

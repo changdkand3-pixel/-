@@ -1,4 +1,21 @@
-# Google Drive 연결 준비본 — 폴더 설정 완료, 웹앱 배포 필요
+# Google Drive 연결 준비본 — 폴더·웹앱 주소 설정 완료
+
+## 지금 Neocities에 올릴 최종 파일
+
+사용자가 제공한 Drive 폴더 ID와 별도 Apps Script `/exec` 주소를 설정했습니다. 아래 **두 파일을 다시 다운로드**해 Neocities의 **같은 작업장 폴더**에 올리세요. GitHub 파일 페이지에서 **Download raw file**을 누르면 됩니다.
+
+1. [wonkiland_drive.html](wonkiland_drive.html) — 약 5.3MB
+2. [wonkiland-drive-config.js](wonkiland-drive-config.js) — 배포 주소가 이미 입력된 설정 파일
+
+Neocities에서 **wonkiland_drive.html**을 열면 이미지 준비 진행률이 표시됩니다. `wonkiland_assets` 이미지 폴더를 Neocities에 올릴 필요는 없습니다. Drive에는 77개 자료가 들어 있어야 합니다. 기존 정상 파일은 실제 연결 확인 전까지 보관하세요.
+
+**실제 Google 연결은 아직 확인하지 못했습니다.** 작업 환경 프록시가 `script.google.com` 연결을 403으로 차단해 사용자 웹앱의 응답을 받지 못했습니다. 사이트 자체 오류라는 뜻은 아닙니다. 로컬 모의 중계에서는 PC·모바일의 이미지 캐시·음악·게임을 검증했습니다. 실제 첫 로딩 속도와 Google 권한은 Neocities에서 실행해 확인해야 합니다.
+
+이미지를 준비하는 화면에서 멈추거나 오류가 뜨면 문구가 보이도록 화면을 보내 주세요. 이때 Neocities에 올린 페이지 주소도 같이 알려주시면 진단에 도움이 됩니다.
+
+---
+
+아래는 이미 완료한 Drive 업로드·배포 절차를 포함한 참고 설명입니다.
 
 게임 이미지 52개와 음악 25곡을 Drive에서 받아 브라우저에 캐시합니다. Neocities에는 약 5.3MB HTML과 작은 설정 파일만 올립니다. 음악은 재생할 때 해당 곡을 받습니다.
 
@@ -45,7 +62,7 @@ ZIP을 풀고 나오는 **drive-assets 폴더**를 Google Drive에 업로드하�
 - [wonkiland_drive.html](wonkiland_drive.html)
 - [wonkiland-drive-config.js](wonkiland-drive-config.js)
 
-설정 파일의 빈 따옴표 안에 위에서 받은 `/exec` URL을 넣습니다. 이 배포 주소는 공개 주소이며 비밀번호가 아닙니다.
+설정 파일에는 제공된 `/exec` URL이 이미 입력되어 있습니다. 이 배포 주소는 공개 주소이며 비밀번호가 아닙니다. 수정하지 않고 업로드할 수 있습니다.
 두 파일을 기존 작업장 폴더 안의 같은 위치에 올리고 `wonkiland_drive` 주소를 여세요. 이미지 폴더를 Neocities에 올릴 필요는 없습니다.
 
 ## 실제 연결 후 확인할 사항
