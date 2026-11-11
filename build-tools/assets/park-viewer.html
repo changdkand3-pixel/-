@@ -11,6 +11,18 @@
 #wk64Viewer .wk64-stats{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 #wk64Viewer .wk64-stats span{padding:6px 10px;border-radius:10px;background:#eef5ff;font:700 13px system-ui;color:#173b63}
 #wk64Viewer .wk64-empty{padding:20px;text-align:center;color:#5b6577}
+#wk64Viewer .wk36-card{padding-top:0!important;padding-bottom:0!important}
+#wk64Viewer .wk67-head{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;padding:14px 0 8px;margin:0;border-bottom:1px solid #e3e9f2}
+#wk64Viewer .wk67-head h2{margin:0;font-size:19px;min-width:0;overflow-wrap:anywhere}
+#wk64Viewer .wk67-head span{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px;flex:none}
+#wk64Viewer .wk67-foot{position:sticky;bottom:0;z-index:5;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;background:#fff;padding:10px 0 14px;margin-top:12px;border-top:1px solid #e3e9f2}
+#wk64Viewer .wk67-foot button{flex:1 1 140px;min-height:46px!important;font-size:15px!important}
+#wk64Viewer button.wk67-x{background:#e04848!important;color:#fff!important;border-color:#c43232!important;font-weight:900!important}
+#wk64Viewer .wk64-item b{display:flex!important;justify-content:space-between;gap:6px}
+#wk64Viewer .wk64-item em{font-style:normal;font-size:12px;color:#6c3fcf;white-space:nowrap}
+#wk64Viewer .wk64-item:hover,#wk64Viewer .wk64-item:focus-visible{border-color:#6c3fcf!important;background:#f1eaff!important}
+#wk64Viewer .wk64-item.wk67-none{background:#f6f7f9!important;border-color:#d5dbe3!important}
+#wk64Viewer .wk67-note{grid-column:1/-1;font:700 12px system-ui;color:#5b6577}
 #wk65Stats{margin:10px 0;padding:10px;border-radius:14px;background:#f2f8ff;border:2px solid #bcd8f5}
 #wk65Stats h3{margin:0 0 8px;font-size:16px;color:#173b63}
 #wk65Stats .wk65-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px}
@@ -65,29 +77,46 @@
   var e=rd('wonkiland_dbz_english_v1');if(e)out.push('🔤 영어 승리 '+Number(e.wins||0)+' · 맞힌 문제 '+Number(e.solved||0)+' · 친구 '+(e.friends||[]).length+'명');
   return out;}
  function when(t){if(!t)return '';var d=new Date(t);return isNaN(d)?String(t):d.toLocaleString('ko-KR');}
- var data=null,tab='members';
- function box(){var o=document.getElementById('wk64Viewer');if(o)return o;o=document.createElement('div');o.id='wk64Viewer';o.className='wk36-modal';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.innerHTML='<section class="wk36-card"></section>';document.body.appendChild(o);o.addEventListener('click',function(e){if(e.target===o)o.remove();});return o;}
- function paintList(){var c=box().querySelector('.wk36-card');var mem=data.members||[],sh=data.showcases||[];
-  var h='<header style="display:flex;justify-content:space-between;align-items:center;gap:8px"><h2 style="margin:0">🔍 회원 공원 구경하기</h2><button type="button" data-x>닫기</button></header><p class="wk36-status">관리자만 볼 수 있습니다. 일반회원은 로그인했을 때 저장된 기록, 공유한 공원은 회원이 직접 보낸 공원입니다.</p>';
+ var data=null,tab='members',view='list';
+ /* 67차: 나가기 칸(위·아래 고정), Esc·바깥 누르기·휴대폰 뒤로 가기로 나가기 */
+ function exitAll(){var o=document.getElementById('wk64Viewer');if(o)o.remove();view='list';if(history.state&&history.state.wk67)try{history.back();}catch(_){}}
+ function box(){var o=document.getElementById('wk64Viewer');if(o)return o;o=document.createElement('div');o.id='wk64Viewer';o.className='wk36-modal';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.tabIndex=-1;o.innerHTML='<section class="wk36-card"></section>';document.body.appendChild(o);
+  o.addEventListener('click',function(e){if(e.target===o)exitAll();});
+  try{history.pushState({wk67:1},'',location.href);}catch(_){}
+  setTimeout(function(){o.focus();},0);return o;}
+ document.addEventListener('keydown',function(e){if(e.key!=='Escape'||!document.getElementById('wk64Viewer'))return;e.preventDefault();e.stopPropagation();view==='one'&&data?paintList():exitAll();},true);
+ window.addEventListener('popstate',function(){var o=document.getElementById('wk64Viewer');if(!o)return;if(view==='one'&&data){paintList();try{history.pushState({wk67:1},'',location.href);}catch(_){}}else{o.remove();view='list';}});
+ function head(title,inOne){return '<header class="wk67-head"><h2>'+esc(title)+'</h2><span>'+(inOne&&data?'<button type="button" data-back>◀ 목록</button>':'')+'<button type="button" class="wk67-x" data-x aria-label="구경하기 나가기">✕ 나가기</button></span></header>';}
+ function foot(inOne){return '<div class="wk67-foot">'+(inOne&&data?'<button type="button" data-back>◀ 회원 목록으로</button>':'')+'<button type="button" class="wk67-x" data-x>✕ 구경하기 나가기</button></div>';}
+ function parkList(m){var keys={};try{keys=JSON.parse(m.progress||'{}').keys||{};}catch(_){}var list=[];Object.keys(keys).forEach(function(k){if(/^wonkiParkDraft37_/.test(k)&&!/_focus$/.test(k))list=list.concat(parkOf(keys[k]));});return {keys:keys,list:list};}
+ function paintList(){view='list';var c=box().querySelector('.wk36-card');var mem=data.members||[],sh=data.showcases||[];
+  var withRec=mem.filter(function(m){return m.progress;}).length;
+  var h=head('🔍 회원 공원 구경하기')+'<p class="wk36-status">회원 이름을 누르면 그 회원의 공원과 기록을 볼 수 있어요. (관리자 전용)</p>';
   h+='<div class="wk64-tabs"><button type="button" data-tab="members" class="'+(tab==='members'?'on':'')+'">👤 일반회원 '+mem.length+'명</button><button type="button" data-tab="show" class="'+(tab==='show'?'on':'')+'">📣 공유한 공원 '+sh.length+'개</button></div><div class="wk64-list">';
-  if(tab==='members'){if(!mem.length)h+='<div class="wk64-empty">아직 저장된 일반회원 기록이 없어요. 회원이 63차 이후 로그인하면 생깁니다.</div>';
-   mem.forEach(function(m,i){var keys={};try{keys=JSON.parse(m.progress||'{}').keys||{};}catch(_){}var n=0;Object.keys(keys).forEach(function(k){if(/^wonkiParkDraft37_/.test(k)&&!/_focus$/.test(k))n+=parkOf(keys[k]).length;});
-    h+='<button type="button" class="wk64-item" data-m="'+i+'"><b>'+esc(m.nickname||m.name||m.id)+'</b><small>'+(m.name&&m.nickname?esc(m.name)+' · ':'')+'건물 '+n+'개 · '+esc(when(m.savedAt))+'</small><small>'+esc(stats(keys).join(' / ')||'게임 기록 없음')+'</small></button>';});}
+  if(tab==='members'){if(!mem.length)h+='<div class="wk64-empty">아직 가입한 일반회원이 없어요.</div>';else h+='<div class="wk67-note">기록 있음 '+withRec+'명 · 아직 로그인 기록 없음 '+(mem.length-withRec)+'명</div>';
+   mem.forEach(function(m,i){var r=parkList(m);var info=[m.name&&m.nickname&&m.name!==m.nickname?m.name:'',m.relationship||''].filter(Boolean).join(' · ');
+    h+='<button type="button" class="wk64-item'+(m.progress?'':' wk67-none')+'" data-m="'+i+'"><b>'+esc(m.nickname||m.name||m.id)+'<em>보기 ▶</em></b>'+(info?'<small>'+esc(info)+'</small>':'')+(m.progress?'<small>🏗 건물 '+r.list.length+'개 · '+esc(when(m.savedAt))+'</small><small>'+esc(stats(r.keys).join(' / ')||'게임 기록 없음')+'</small>':'<small>아직 로그인해서 저장한 기록이 없어요</small>')+'</button>';});}
   else{if(!sh.length)h+='<div class="wk64-empty">아직 공유된 공원이 없어요.</div>';
-   sh.forEach(function(s,i){h+='<button type="button" class="wk64-item" data-s="'+i+'"><b>'+esc(s.name)+'</b><small>건물 '+Number(s.count||0)+'개 · '+esc(when(s.time))+'</small>'+(s.message?'<small>💬 '+esc(s.message)+'</small>':'')+'</button>';});}
-  c.innerHTML=h+'</div>';bind(c);}
- function paintOne(title,sub,list,st){var c=box().querySelector('.wk36-card');
-  c.innerHTML='<header style="display:flex;justify-content:space-between;align-items:center;gap:8px"><h2 style="margin:0">'+esc(title)+'</h2><span><button type="button" data-back>◀ 목록</button><button type="button" data-x>닫기</button></span></header><p class="wk36-status">'+esc(sub)+'</p>'+(st&&st.length?'<div class="wk64-stats">'+st.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>':'')+(list.length?mapSVG(list):'<div class="wk64-empty">지은 건물이 없어요.</div>');bind(c);}
- function bind(c){c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=function(){box().remove();};});c.querySelectorAll('[data-back]').forEach(function(b){b.onclick=paintList;});
+   sh.forEach(function(s,i){h+='<button type="button" class="wk64-item" data-s="'+i+'"><b>'+esc(s.name)+'<em>보기 ▶</em></b><small>건물 '+Number(s.count||0)+'개 · '+esc(when(s.time))+'</small>'+(s.message?'<small>💬 '+esc(s.message)+'</small>':'')+'</button>';});}
+  c.innerHTML=h+'</div>'+foot(false);c.scrollTop=0;bind(c);}
+ function paintOne(title,sub,list,st,empty){view='one';var c=box().querySelector('.wk36-card');
+  c.innerHTML=head(title,true)+'<p class="wk36-status">'+esc(sub)+'</p>'+(st&&st.length?'<div class="wk64-stats">'+st.map(function(x){return '<span>'+esc(x)+'</span>';}).join('')+'</div>':'')+(list.length?mapSVG(list):'<div class="wk64-empty">'+esc(empty||'지은 건물이 없어요.')+'</div>')+foot(true);c.scrollTop=0;bind(c);}
+ function bind(c){c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=exitAll;});c.querySelectorAll('[data-back]').forEach(function(b){b.onclick=paintList;});
   c.querySelectorAll('[data-tab]').forEach(function(b){b.onclick=function(){tab=b.dataset.tab;paintList();};});
-  c.querySelectorAll('[data-m]').forEach(function(b){b.onclick=function(){var m=data.members[+b.dataset.m],keys={};try{keys=JSON.parse(m.progress||'{}').keys||{};}catch(_){}var list=[];Object.keys(keys).forEach(function(k){if(/^wonkiParkDraft37_/.test(k)&&!/_focus$/.test(k))list=list.concat(parkOf(keys[k]));});paintOne('👤 '+(m.nickname||m.name||m.id)+'의 공원','저장 시각 '+when(m.savedAt)+' · 건물 '+list.length+'개',list,stats(keys));};});
+  c.querySelectorAll('[data-m]').forEach(function(b){b.onclick=function(){var m=data.members[+b.dataset.m],r=parkList(m);var info=[m.name,m.relationship].filter(Boolean).join(' · ');
+   if(!m.progress){paintOne('👤 '+(m.nickname||m.name||m.id)+'님의 공원',(info?info+' · ':'')+'아직 저장된 기록이 없어요',[],[],'이 회원은 아직 로그인해서 공원·게임 기록을 저장하지 않았어요. 회원이 로그인하면 자동으로 저장됩니다.');return;}
+   paintOne('👤 '+(m.nickname||m.name||m.id)+'님의 공원',(info?info+' · ':'')+'저장 시각 '+when(m.savedAt)+' · 건물 '+r.list.length+'개',r.list,stats(r.keys));};});
   c.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){var s=data.showcases[+b.dataset.s],list=parkOf(s.park);paintOne('📣 '+s.name+'님이 공유한 공원',when(s.time)+(s.message?' · 💬 '+s.message:'')+' · 건물 '+list.length+'개',list,[]);};});}
+ /* 가입한 일반회원 명단과 진행 기록 합치기 */
+ function mergeMembers(rec,all){var by={},out=[];(rec||[]).forEach(function(m){by[m.id]=m;out.push(m);});
+  (all||[]).forEach(function(f){if(!f||!f.id||f.deleted||f.deletedAt)return;var m=by[f.id];if(m){m.nickname=m.nickname||f.nickname||'';m.name=m.name||f.name||'';m.relationship=f.relationship||f.category||'';}else out.push({id:f.id,nickname:f.nickname||'',name:f.name||'',relationship:f.relationship||f.category||'',savedAt:'',progress:''});});
+  out.sort(function(a,b){if(!!a.progress!==!!b.progress)return a.progress?-1:1;if(a.progress)return String(b.savedAt).localeCompare(String(a.savedAt));return String(a.nickname||a.name).localeCompare(String(b.nickname||b.name),'ko');});return out;}
  async function viewer(){
   if(typeof window.wonkiLandAdminLogin!=='function'){alert('관리자 로그인 기능을 찾을 수 없습니다. 페이지를 새로고침해 주세요.');return;}
   if(location.protocol!=='https:'){alert('Neocities의 https:// 주소에서 열어 주세요.');return;}
   var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){say('🔍 관리자 로그인 실패: '+(e&&e.message||e),true);return;}
   say('🔍 회원 공원을 불러오는 중이에요…');
-  try{data=await post('admin_park_list',{idToken:tok});markAdmin();tab='members';paintList();say('🔍 일반회원 '+(data.members||[]).length+'명 · 공유한 공원 '+(data.showcases||[]).length+'개');}
+  try{var fr=post('admin_friend_list',{idToken:tok}).catch(function(){return {members:[]};});data=await post('admin_park_list',{idToken:tok});data.members=mergeMembers(data.members,(await fr).members);markAdmin();tab='members';paintList();say('🔍 일반회원 '+(data.members||[]).length+'명 · 공유한 공원 '+(data.showcases||[]).length+'개');}
   catch(e){say(/지원하지 않는/.test(String(e.message))?'🔍 서버가 아직 구경하기를 지원하지 않아요 (서버 업데이트 필요)':'🔍 불러오지 못했어요: '+e.message,true);}
  }
  function install(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');if(!tools||document.getElementById('wk64ShowOff'))return;
@@ -127,7 +156,7 @@
   if(!s)document.addEventListener('wonki-visitor-summary31',function f(e){if(document.body.contains(st)&&!st.dataset.full)paintStats(st,e.detail,'페이지의 방문 집계 기준 ('+(e.detail.day||'')+')');},{once:true});
   loadStats(st,false);
   try{window.WonkiParkRoles66&&window.WonkiParkRoles66.adminMenu(box,closeEditor);}catch(e){console.warn(e);}}
- function showPark(title,sub,list){paintOne(title,sub,list,[]);var c=box().querySelector('.wk36-card');c.querySelectorAll('[data-back]').forEach(function(b){b.remove();});}
+ function showPark(title,sub,list){data=null;paintOne(title,sub,list,[]);}
  window.WonkiParkViewer={showOff:showOff,viewer:viewer,adminMenu:adminMenu,showPark:showPark,_render:function(d){data=d;tab='members';paintList();}};
 })();
 </script>
