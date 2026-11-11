@@ -2,7 +2,7 @@
 
 ## ⬇️ 다운로드
 
-### **[👉 wonkiland_v58_새그림만.zip 받기 (HTML + 새 그림 104개, 약 13MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v58/wonkiland_v58_새그림만.zip)**
+### **[👉 wonkiland_v58_새그림만.zip 받기 (HTML + 새 그림 104개, 약 11MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v58/wonkiland_v58_새그림만.zip)**
 
 57차까지 그림을 올리셨다면 이 zip만 받으면 됩니다. 압축을 풀고 **안의 파일을 모두 선택해서** Neocities의 원기랜드 폴더(`작업장` 등)에 올리세요.
 
