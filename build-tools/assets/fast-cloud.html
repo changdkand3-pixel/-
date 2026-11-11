@@ -44,8 +44,32 @@
 })();
 </script>
 <script id="wk70-visit-source">
-/* 70차: 어디서 들어왔는지(카톡·인스타 등)를 첫 화면에서 기억. 페이지가 스스로 새로 고쳐도 유지되게 세션에 저장 */
-(function(){try{if(sessionStorage.getItem('wk70_src'))return;var ua=navigator.userAgent||'',r='';try{r=document.referrer?new URL(document.referrer).hostname:'';}catch(_){}
- var s=/KAKAOTALK/i.test(ua)||/kakao/i.test(r)?'카카오톡':/Instagram/i.test(ua)||/instagram/i.test(r)?'인스타그램':/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)||/facebook|(^|\.)fb\.(com|me)$/i.test(r)?'페이스북':/NAVER\(|NAVER/i.test(ua)||/naver/i.test(r)?'네이버':/BAND\//i.test(ua)||/band\.us/i.test(r)?'밴드':/google\./i.test(r)?'구글':/daum\.|kakao\.com/i.test(r)?'다음':(r&&r!==location.hostname?'기타 링크':'직접 입력·즐겨찾기');
- sessionStorage.setItem('wk70_src',s);}catch(_){}})();
+/* 70차·77차: 어디서 들어왔는지 첫 화면에서 기억 (페이지가 스스로 새로 고쳐도 유지되게 세션에 저장)
+   wk70_src = 들어온 곳(카카오톡·네이버·추적 링크…), wk77_det = 상세(검색·블로그·사이트 주소·링크 이름) */
+(function(){try{if(sessionStorage.getItem('wk70_src'))return;var ua=navigator.userAgent||'',host='',path='';
+ try{if(document.referrer){var u=new URL(document.referrer);host=u.hostname.replace(/^www\.|^m\./,'');path=u.pathname;}}catch(_){}
+ if(host===location.hostname)host='';
+ var tag='';try{tag=(new URL(location.href).searchParams.get('src')||'').replace(/[<>"'=]/g,'').trim().slice(0,30);}catch(_){}
+ var src='',det='';
+ if(/KAKAOTALK/i.test(ua)){src='카카오톡';det='카톡 앱에서 열림';}
+ else if(/Instagram/i.test(ua)){src='인스타그램';det='인스타 앱에서 열림';}
+ else if(/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)){src='페이스북';det='페이스북 앱에서 열림';}
+ else if(/BAND\//i.test(ua)){src='밴드';det='밴드 앱에서 열림';}
+ else if(/NAVER\(|NAVER/i.test(ua)&&!host){src='네이버';det='네이버 앱에서 열림';}
+ if(host){var h=host;
+  if(/kakao/.test(h)){src=src||'카카오톡';det=det||'카카오 링크';}
+  else if(/instagram\.com|l\.instagram\.com/.test(h)){src='인스타그램';det=det||'인스타그램 링크';}
+  else if(/facebook\.com|fb\.(com|me)|l\.facebook\.com/.test(h)){src='페이스북';det=det||'페이스북 링크';}
+  else if(/naver\.com$/.test(h)){src='네이버';det=/search/.test(h)?'네이버 검색':/blog/.test(h)?'네이버 블로그':/cafe/.test(h)?'네이버 카페':/band/.test(h)?'밴드':h;}
+  else if(/daum\.net$/.test(h)){src='다음';det=/search/.test(h)?'다음 검색':/cafe/.test(h)?'다음 카페':h;}
+  else if(/(^|\.)google\./.test(h)){src='구글';det='구글 검색';}
+  else if(/youtube\.com$|youtu\.be$/.test(h)){src='유튜브';det='유튜브 링크';}
+  else if(/band\.us$/.test(h)){src='밴드';det='밴드 링크';}
+  else if(/(^|\.)(x|twitter)\.com$|^t\.co$/.test(h)){src='X(트위터)';det='X 링크';}
+  else if(/threads\.(net|com)$/.test(h)){src='스레드';det='스레드 링크';}
+  else if(/bing\.com$/.test(h)){src='기타 사이트';det='빙 검색';}
+  else if(!src){src='기타 사이트';det=h;}}
+ if(tag){var base=src;src='추적 링크';det=tag+(base&&base!=='추적 링크'?' ('+base+')':'');}
+ if(!src){src='직접 입력·즐겨찾기';det='';}
+ sessionStorage.setItem('wk70_src',src);sessionStorage.setItem('wk77_det',det.slice(0,40));}catch(_){}})();
 </script>

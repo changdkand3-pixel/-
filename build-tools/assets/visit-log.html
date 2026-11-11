@@ -1,4 +1,4 @@
-<!-- 70차: 방문 기록 — 일반회원은 닉네임·방문 시각, 방문자는 들어온 곳·기기 숫자만 -->
+<!-- 70차: 방문 기록 — 일반회원은 닉네임·방문 시각, 방문자는 들어온 곳·기기 숫자만 / 77차: 유튜브처럼 자세한 방문 경로 통계 + 추적 링크 -->
 <style id="wk70-style">
 #wk70Visits{margin:10px 0;padding:10px;border-radius:14px;background:#fff8ec;border:2px solid #f3cf8e}
 #wk70Visits h3{margin:0 0 6px;font-size:16px;color:#6b3a00}
@@ -10,6 +10,39 @@
 #wk70Visits .chips span{background:#fff;border:1px solid #f0d9b0;border-radius:999px;padding:3px 9px;font:700 12px system-ui;color:#5a3a00}
 #wk70Visits .note{font:12px system-ui;color:#7a6a50;margin-top:4px}
 .wk70-notice{margin:8px 0 0;padding:8px 10px;border-radius:10px;background:#fff8ec;border:1px solid #f3cf8e;color:#6b3a00;font:700 12px/1.5 system-ui;text-align:left}
+#wk77Detail{z-index:2147483600!important}
+#wk77Detail .wk36-card{width:min(760px,98vw);max-height:94dvh;overflow:auto;padding-top:0!important}
+#wk77Detail .wk77-head{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;padding:14px 0 8px;border-bottom:1px solid #e3e9f2}
+#wk77Detail .wk77-head h2{margin:0;font-size:19px}
+#wk77Detail button.wk77-x{background:#e04848!important;color:#fff!important;border-color:#c43232!important;font-weight:900!important}
+#wk77Detail button.wk77-pri{background:#6c3fcf!important;color:#fff!important;font-weight:900!important}
+#wk77Detail h3{margin:14px 0 6px;font-size:16px;color:#173b63}
+#wk77Detail .wk77-tabs{display:flex;gap:6px;margin:10px 0}
+#wk77Detail .wk77-tabs .on{background:#173b5c!important;color:#fff!important}
+#wk77Detail .wk77-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px}
+#wk77Detail .wk77-tiles div{background:#f2f8ff;border-radius:10px;padding:8px;text-align:center;font:700 12px system-ui;color:#5b6577}
+#wk77Detail .wk77-tiles b{display:block;font-size:22px;color:#173b63}
+#wk77Detail .wk77-row{margin:6px 0}
+#wk77Detail .wk77-lab{display:flex;justify-content:space-between;gap:8px;font:700 14px system-ui;color:#203852}
+#wk77Detail .wk77-lab b{font-size:13px;color:#5b6577;white-space:nowrap}
+#wk77Detail .wk77-bar{height:9px;border-radius:9px;background:#eef2f7;overflow:hidden;margin-top:3px}
+#wk77Detail .wk77-bar i{display:block;height:100%;background:linear-gradient(90deg,#6c9fe0,#6c3fcf);border-radius:9px}
+#wk77Detail .wk77-sub{list-style:none;margin:4px 0 0 18px;padding:0}
+#wk77Detail .wk77-sub li{display:flex;justify-content:space-between;font:12px system-ui;color:#5b6577;border-bottom:1px dashed #e3e9f2;padding:2px 0}
+#wk77Detail .wk77-hours,#wk77Detail .wk77-days{display:flex;align-items:flex-end;gap:2px;height:110px;padding-bottom:18px}
+#wk77Detail .wk77-hours span,#wk77Detail .wk77-days span{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;position:relative}
+#wk77Detail .wk77-hours i,#wk77Detail .wk77-days i{display:block;background:#6c9fe0;border-radius:3px 3px 0 0;min-height:2px}
+#wk77Detail .wk77-hours em,#wk77Detail .wk77-days em{position:absolute;bottom:-16px;left:0;right:0;text-align:center;font:10px system-ui;color:#5b6577;font-style:normal;white-space:nowrap}
+#wk77Detail .wk77-days b{position:absolute;top:-2px;left:0;right:0;text-align:center;font:9px system-ui;color:#173b63}
+#wk77Detail .wk77-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+#wk77Detail .wk77-note{font:12px/1.6 system-ui;color:#5b6577}
+#wk77Detail .wk77-none{font:13px system-ui;color:#7a8698;padding:6px 0}
+#wk77Detail .wk77-foot{position:sticky;bottom:0;display:flex;gap:8px;flex-wrap:wrap;background:#fff;padding:10px 0 14px;border-top:1px solid #e3e9f2;margin-top:10px}
+#wk77Detail .wk77-foot button{flex:1 1 140px;min-height:44px}
+#wk77Detail .wk77-in{display:block;font:700 14px system-ui;margin:10px 0}
+#wk77Detail .wk77-chips{display:flex;flex-wrap:wrap;gap:4px}
+#wk77Detail .wk77-out{margin-top:10px;padding:10px;border-radius:12px;background:#f6f1ff;display:flex;flex-direction:column;gap:6px}
+#wk77Detail .wk77-out code{word-break:break-all;font:12px ui-monospace,monospace;color:#3c2280}
 </style>
 <script id="wk70-visit-log">
 (function(){
@@ -25,6 +58,9 @@
   function on(e){var d=e.data;if(!d||d.type!=='wonki-cloud-response'||d.nonce!==nonce)return;var v=d.payload||{};v.success?fin(resolve,v):fin(reject,new Error(v.message||'서버 요청 실패'));}
   var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},wait||20000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
  function session(){try{return JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');}catch(_){return null;}}
+ function browser(){var ua=navigator.userAgent||'';return /KAKAOTALK/i.test(ua)?'카카오톡 앱':/Instagram/i.test(ua)?'인스타그램 앱':/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)?'페이스북 앱':/NAVER\(|NAVER/i.test(ua)?'네이버 앱':/BAND\//i.test(ua)?'밴드 앱':/SamsungBrowser/i.test(ua)?'삼성 인터넷':/Whale/i.test(ua)?'웨일':/Edg\//i.test(ua)?'엣지':/Firefox|FxiOS/i.test(ua)?'파이어폭스':/Chrome|CriOS/i.test(ua)?'크롬':/Safari/i.test(ua)?'사파리':'기타';}
+ function osName(){var ua=navigator.userAgent||'';return /Android/i.test(ua)?'안드로이드':/iPhone|iPad|iPod/i.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1)?'아이폰·아이패드':/Windows/i.test(ua)?'윈도우':/Macintosh|Mac OS/i.test(ua)?'맥':'기타';}
+ function detail(){try{return sessionStorage.getItem('wk77_det')||'';}catch(_){return '';}}
  function device(){var ua=navigator.userAgent||'';if(/iPad|Tablet/i.test(ua)||(/Android/i.test(ua)&&!/Mobile/i.test(ua))||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1))return '태블릿';return /Mobi|Android|iPhone|iPod/i.test(ua)?'휴대폰':'컴퓨터';}
  function source(){try{return sessionStorage.getItem('wk70_src')||'직접 입력·즐겨찾기';}catch(_){return '직접 입력·즐겨찾기';}}
  function ownerDevice(){try{return localStorage.getItem('wk65_admin_device')==='1';}catch(_){return false;}}
@@ -33,7 +69,7 @@
   if(!tok&&ownerDevice())return; /* 주인장 기기의 방문은 세지 않음 */
   var key='wk70_sent_'+(tok?'m':'g');try{if(sessionStorage.getItem(key)===(tok||'1'))return;sessionStorage.setItem(key,tok||'1');}catch(_){}
   var vid='';try{vid=localStorage.getItem('wonkiLand_daily_visitor_id_v1')||'';}catch(_){}
-  post1('visit_log',{sessionToken:tok,source:source(),device:device(),visitorId:vid}).catch(function(e){console.warn('WonkiLand: 방문 기록 실패',e&&e.message);});}
+  post1('visit_log',{sessionToken:tok,source:source(),device:device(),browser:browser(),os:osName(),detail:detail(),visitorId:vid}).catch(function(e){console.warn('WonkiLand: 방문 기록 실패',e&&e.message);});}
  /* 로그인 창·가입 화면에 안내 */
  function notice(){var btn=document.getElementById('wkgaLogin');if(btn&&!document.getElementById('wk70LoginNote')){var n=document.createElement('p');n.id='wk70LoginNote';n.className='wk70-notice';n.textContent=NOTICE;(btn.parentElement||btn).after(n);}
   var bf=document.getElementById('wk66Benefit');if(bf&&!document.getElementById('wk70JoinNote')){var m=document.createElement('div');m.id='wk70JoinNote';m.className='wk70-notice';m.textContent=NOTICE;bf.appendChild(m);}
@@ -46,8 +82,9 @@
   if(!m.length)h+='<div class="note">아직 로그인해서 들어온 회원이 없어요.</div>';
   else h+='<ol>'+m.slice(0,50).map(function(v){return '<li><span><b>'+esc(v.nickname||v.name||'회원')+'</b>'+(v.name&&v.nickname?' · '+esc(v.name):'')+'</span><small>'+esc(ago(v.time))+'<br>'+esc(v.source)+' · '+esc(v.device)+'</small></li>';}).join('')+'</ol>';
   h+='<h3 style="margin-top:10px">📍 들어온 곳 (최근 30일 · '+Number(r.total30||0)+'번)</h3>'+chips(r.sources)+'<h3 style="margin-top:6px">📱 기기</h3>'+chips(r.devices);
+  h+='<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px"><button type="button" data-wk77more>📊 방문 경로 자세히 보기</button><button type="button" data-wk77link>🔗 추적 링크 만들기</button></div>';
   h+='<div class="note">회원이 아닌 방문자는 누군지 알 수 없고, 들어온 곳·기기 숫자만 셉니다. 같은 회원은 30분에 한 번만 기록됩니다.</div>';
-  el.innerHTML=h;}
+  el.innerHTML=h;LAST=r;var mb=el.querySelector('[data-wk77more]');if(mb)mb.onclick=function(){openDetail(r);};var lb=el.querySelector('[data-wk77link]');if(lb)lb.onclick=openLinkMaker;}
  function cachedToken(){try{var t=sessionStorage.getItem('wk64_admin_token');if(!t)return '';var e=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000;return e-Date.now()>300000?t:'';}catch(_){return '';}}
  async function load(el,login){var tok=cachedToken();
   if(!tok&&login){try{tok=await window.wonkiLandAdminLogin();}catch(e){el.querySelector('.note').textContent='관리자 Google 로그인 실패: '+(e&&e.message||e);return;}}
@@ -64,7 +101,45 @@
  function status(el,t,bad){var n=el.querySelector('.wk70-st');if(!n){n=document.createElement('div');n.className='note wk70-st';el.insertBefore(n,el.children[1]||null);}n.textContent=t;n.style.color=bad?'#9a2a00':'';}
  function retry(el){if(el.querySelector('[data-wk70r]'))return;var b=document.createElement('button');b.type='button';b.dataset.wk70r='1';b.textContent='🔄 다시 불러오기';b.onclick=function(){load(el,true);};el.appendChild(b);}
  function adminMenu(box){if(box.querySelector('#wk70Visits'))return;var el=document.createElement('div');el.id='wk70Visits';var st=box.querySelector('#wk65Stats');if(st)st.after(el);else box.appendChild(el);load(el,false);}
- window.WonkiVisitLog70={adminMenu:adminMenu,send:send,source:source,device:device};
+ /* ---- 77차: 자세한 방문 경로 통계 창 ---- */
+ var LAST=null,PER='d7';
+ var SHARE_URL='https://hinsrolin.neocities.org/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C';
+ var ICON={'카카오톡':'💬','인스타그램':'📸','페이스북':'📘','네이버':'🟢','다음':'🔵','구글':'🔎','유튜브':'▶️','밴드':'🟩','X(트위터)':'✖️','스레드':'🧵','기타 사이트':'🌐','기타 링크':'🔗','추적 링크':'🏷','직접 입력·즐겨찾기':'⌨️'};
+ function sorted(o){return Object.keys(o||{}).map(function(k){return [k,o[k]];}).sort(function(a,b){return b[1]-a[1];});}
+ function bars(o,total,withIcon,sub){var list=sorted(o);if(!list.length)return '<div class="wk77-none">아직 기록이 없어요.</div>';
+  return list.map(function(x){var pct=total?Math.round(x[1]/total*1000)/10:0;var subs=sub?sorted(sub).filter(function(d){return d[0].indexOf(x[0]+' › ')===0;}):[];
+   return '<div class="wk77-row"><div class="wk77-lab"><span>'+(withIcon?(ICON[x[0]]||'•')+' ':'')+esc(x[0])+'</span><b>'+x[1]+'번 · '+pct+'%</b></div><div class="wk77-bar"><i style="width:'+Math.max(2,pct)+'%"></i></div>'+(subs.length?'<ul class="wk77-sub">'+subs.slice(0,8).map(function(d){return '<li><span>'+esc(d[0].slice(x[0].length+3))+'</span><b>'+d[1]+'</b></li>';}).join('')+'</ul>':'')+'</div>';}).join('');}
+ function hourBars(hs){var mx=Math.max.apply(null,hs.concat([1]));return '<div class="wk77-hours">'+hs.map(function(n,i){return '<span title="'+i+'시 '+n+'번"><i style="height:'+Math.round(n/mx*100)+'%"></i><em>'+(i%3===0?i:'')+'</em></span>';}).join('')+'</div>';}
+ function dayBars(days,n){var out=[],now=Date.now();for(var i=n-1;i>=0;i--){var d=new Date(now+9*3600e3-i*86400e3).toISOString().slice(0,10);out.push([d,days[d]||0]);}var mx=Math.max.apply(null,out.map(function(x){return x[1];}).concat([1]));
+  return '<div class="wk77-days">'+out.map(function(x){return '<span title="'+x[0]+' '+x[1]+'번"><i style="height:'+Math.round(x[1]/mx*100)+'%"></i><em>'+x[0].slice(5).replace('-','/')+'</em><b>'+x[1]+'</b></span>';}).join('')+'</div>';}
+ function detailBox(){var o=document.getElementById('wk77Detail');if(o)return o;o=document.createElement('div');o.id='wk77Detail';o.className='wk36-modal';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.innerHTML='<section class="wk36-card"></section>';document.body.appendChild(o);o.addEventListener('click',function(e){if(e.target===o)o.remove();});return o;}
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){var o=document.getElementById('wk77Detail');if(o){e.stopPropagation();o.remove();}}},true);
+ function openDetail(r){r=r||LAST;var c=detailBox().querySelector('.wk36-card');
+  if(!r||!r.periods){c.innerHTML='<header class="wk77-head"><h2>📊 방문 경로</h2><button type="button" class="wk77-x" data-x>✕ 닫기</button></header><div class="wk77-none">자세한 통계는 서버 업데이트(77차 Code.gs) 후에 보입니다. 지금은 최근 30일 요약만 볼 수 있어요.</div>';c.querySelector('[data-x]').onclick=function(){detailBox().remove();};return;}
+  var P=r.periods[PER]||{},T=P.total||0,label={d1:'오늘',d7:'최근 7일',d30:'최근 30일'}[PER];
+  var h='<header class="wk77-head"><h2>📊 방문 경로 · '+label+'</h2><button type="button" class="wk77-x" data-x>✕ 닫기</button></header>';
+  h+='<div class="wk77-tabs">'+['d1','d7','d30'].map(function(k){return '<button type="button" data-per="'+k+'" class="'+(k===PER?'on':'')+'">'+{d1:'오늘',d7:'7일',d30:'30일'}[k]+'</button>';}).join('')+'</div>';
+  h+='<div class="wk77-tiles"><div><b>'+T+'</b>방문</div><div><b>'+(P.uniq||0)+'</b>방문한 사람</div><div><b>'+(P.fresh||0)+'</b>처음 온 사람</div><div><b>'+(P.back||0)+'</b>다시 온 사람</div><div><b>'+(P.members||0)+'</b>회원 방문</div></div>';
+  h+='<h3>📍 어디서 들어왔나요? (트래픽 소스)</h3>'+bars(P.sources,T,true,P.details);
+  if(sorted(P.tags).length)h+='<h3>🏷 추적 링크별 방문</h3>'+bars(P.tags,T,false);
+  h+='<h3>📅 날짜별 방문</h3>'+(PER==='d1'?'<div class="wk77-none">오늘 하루는 아래 시간대별로 보세요.</div>':dayBars(P.days||{},PER==='d7'?7:30));
+  h+='<h3>🕐 시간대별 방문 (한국 시간)</h3>'+hourBars(P.hours||[]);
+  h+='<div class="wk77-grid"><div><h3>📱 기기</h3>'+bars(P.devices,T,false)+'</div><div><h3>🌐 브라우저·앱</h3>'+bars(P.browsers,T,false)+'</div><div><h3>💻 운영체제</h3>'+bars(P.os,T,false)+'</div></div>';
+  h+='<p class="wk77-note">• 같은 방문자는 6시간, 같은 회원은 30분에 한 번만 셉니다. 주인장 기기의 방문은 세지 않아요.<br>• "직접 입력·즐겨찾기"에는 주소를 직접 친 경우, 즐겨찾기, 문자·메모 앱 링크처럼 브라우저가 어디서 왔는지 알려 주지 않는 경우가 모두 들어가요. 정확히 알고 싶으면 🔗 추적 링크를 쓰세요.<br>• 77차 이전 기록에는 브라우저·운영체제가 "알 수 없음"으로 보여요.</p>';
+  h+='<div class="wk77-foot"><button type="button" data-link>🔗 추적 링크 만들기</button><button type="button" class="wk77-x" data-x>✕ 닫기</button></div>';
+  c.innerHTML=h;c.scrollTop=0;
+  c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=function(){detailBox().remove();};});
+  c.querySelectorAll('[data-per]').forEach(function(b){b.onclick=function(){PER=b.dataset.per;openDetail(r);};});
+  c.querySelector('[data-link]').onclick=openLinkMaker;}
+ function openLinkMaker(){var c=detailBox().querySelector('.wk36-card');
+  c.innerHTML='<header class="wk77-head"><h2>🔗 추적 링크 만들기</h2><button type="button" class="wk77-x" data-x>✕ 닫기</button></header><p class="wk77-note" style="margin-top:8px">링크에 이름을 붙여서 올리면, 그 링크로 들어온 방문을 따로 셀 수 있어요. (유튜브의 "외부 링크"처럼)<br>예: 성당 단톡방에는 <b>성당단톡방</b>, 인스타 프로필에는 <b>인스타프로필</b> 링크를 올리기</p><label class="wk77-in">링크 이름 (한글·영어·숫자, 30자까지)<input type="text" maxlength="30" placeholder="예: 성당단톡방"></label><div class="wk77-chips">'+['카톡단톡방','인스타프로필','인스타스토리','페이스북','밴드','블로그','유튜브설명'].map(function(x){return '<button type="button" data-pre="'+x+'">'+x+'</button>';}).join('')+'</div><div class="wk77-out" hidden><code></code><button type="button" class="wk77-pri" data-copy>📋 링크 복사</button></div><div class="wk77-foot">'+(LAST&&LAST.periods?'<button type="button" data-back>📊 방문 경로 보기</button>':'')+'<button type="button" class="wk77-x" data-x>✕ 닫기</button></div>';
+  var inp=c.querySelector('input'),out=c.querySelector('.wk77-out'),code=out.querySelector('code');
+  function upd(){var v=inp.value.replace(/[<>"'=&?#\/\\\s]/g,'').slice(0,30);if(v!==inp.value)inp.value=v;out.hidden=!v;code.textContent=v?SHARE_URL+'?src='+encodeURIComponent(v):'';}
+  inp.oninput=upd;c.querySelectorAll('[data-pre]').forEach(function(b){b.onclick=function(){inp.value=b.dataset.pre;upd();};});
+  out.querySelector('[data-copy]').onclick=async function(){var t=code.textContent;try{await navigator.clipboard.writeText(t);this.textContent='✓ 복사했어요';}catch(_){prompt('아래 링크를 복사해 주세요',t);}};
+  c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=function(){detailBox().remove();};});var bk=c.querySelector('[data-back]');if(bk)bk.onclick=function(){openDetail(LAST);};
+  setTimeout(function(){inp.focus();},50);}
+ window.WonkiVisitLog70={openDetail:openDetail,openLinkMaker:openLinkMaker,adminMenu:adminMenu,send:send,source:source,device:device};
  window.addEventListener('wonki-member-changed37',function(){setTimeout(send,300);});
  var nt=new MutationObserver(function(){notice();});
  function start(){notice();try{nt.observe(document.body,{childList:true,subtree:true});}catch(_){}setTimeout(send,2500);}

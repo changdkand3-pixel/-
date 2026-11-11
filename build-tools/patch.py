@@ -353,6 +353,9 @@ t=t[:_h]+'\n'+_fc68+t[_h:]
 # ---------- 20. 73차: 관리자 Google 로그인 창을 맨 위로 (구경하기·관리자 메뉴 화면 뒤에 가려지던 문제)
 rep("""overlay.style.cssText='position:fixed;inset:0;z-index:2147483000;background:rgba(0,0,0,.68)""","""overlay.id='wk73GoogleLogin';overlay.style.cssText='position:fixed;inset:0;z-index:2147483640;background:rgba(0,0,0,.68)""")
 
+# ---------- 21. 77차: 원기랜드 카톡·링크 공유 버튼 링크에 추적 이름(src=공유버튼) 붙이기
+rep("""const URL='https://hinsrolin.neocities.org/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C';function install(){""","""const URL='https://hinsrolin.neocities.org/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C?src=%EA%B3%B5%EC%9C%A0%EB%B2%84%ED%8A%BC';function install(){""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
