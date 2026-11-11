@@ -1,0 +1,87 @@
+<!-- 업데이트 카드 (포스터형). 다음 차수는 WONKI_UPDATE 내용만 바꾸면 됩니다. -->
+<style id="wk-update-poster-style">
+#wonki48Update,#wonki53Update{display:none!important}
+#wkUpdatePoster{position:fixed;inset:0;z-index:2147483400;display:flex;align-items:center;justify-content:center;padding:12px;background:#0b2540b8;overflow:auto}
+#wkUpdatePoster[hidden]{display:none!important}
+#wkUpdatePoster .wkp{position:relative;width:min(520px,100%);max-height:calc(100dvh - 24px);overflow:auto;border-radius:24px;border:4px solid #ffd54d;background:linear-gradient(180deg,#e8f6ff 0%,#fbf1ff 48%,#eefbe8 100%);box-shadow:0 0 0 3px #fff8,0 18px 50px #0007;font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;color:#1d2f55;scrollbar-width:thin}
+#wkUpdatePoster .wkp-x{position:absolute;right:8px;top:8px;z-index:6;width:32px;height:32px;border:3px solid #fff;border-radius:50%;background:#e04848;color:#fff;font:900 18px/1 system-ui;cursor:pointer;box-shadow:0 2px 6px #0005}
+#wkUpdatePoster .wkp-head{position:relative;padding:14px 12px 16px;text-align:center;background:var(--sky) center top/cover no-repeat;border-radius:20px 20px 0 0;overflow:hidden}
+#wkUpdatePoster .wkp-head:after{content:"";position:absolute;inset:auto 0 0 0;height:46px;background:linear-gradient(transparent,#e8f6ff)}
+#wkUpdatePoster .wkp-head>*{position:relative;z-index:1}
+#wkUpdatePoster .wkp-medal{position:absolute;z-index:2;top:14px;width:72px;height:72px;border-radius:50%;background:center/cover no-repeat;border:4px solid #fff;box-shadow:0 0 0 4px #ffcf3f,0 6px 14px #0005}
+#wkUpdatePoster .wkp-medal.l{left:14px}#wkUpdatePoster .wkp-medal.r{right:14px;top:46px}
+#wkUpdatePoster .wkp-rabbit{position:absolute;z-index:3;right:6px;top:40px;width:112px;height:auto;filter:drop-shadow(0 0 2px #fff) drop-shadow(0 6px 8px #0005);pointer-events:none}
+#wkUpdatePoster .wkp-ribbon{margin-bottom:22px!important}
+#wkUpdatePoster .wkp-brand{display:inline-block;margin:4px 84px 0;font:900 clamp(25px,6.6vw,34px)/1.15 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;letter-spacing:-1px;color:#ff4f9a;-webkit-text-stroke:6px #fff;paint-order:stroke fill;text-shadow:0 4px 0 #6b3fb5,0 6px 6px #0004}
+#wkUpdatePoster .wkp-ribbon{display:inline-block;margin:4px 0 8px;padding:3px 22px;border-radius:6px;background:linear-gradient(#8b5cf6,#6436c8);color:#fff;font:900 15px/1.3 system-ui;letter-spacing:1px;box-shadow:0 2px 0 #3b1f80}
+#wkUpdatePoster .wkp-title{display:flex;align-items:center;justify-content:center;gap:4px;margin:6px 0 10px;font:900 clamp(23px,6.4vw,36px)/1.15 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;letter-spacing:-1.5px}
+#wkUpdatePoster .wkp-title span{color:#ffd21f;-webkit-text-stroke:7px #3a2170;paint-order:stroke fill;text-shadow:0 5px 0 #2b1557,0 8px 8px #0006}
+#wkUpdatePoster .wkp-title i{font-style:normal;font-size:.8em;filter:drop-shadow(0 2px 2px #0004)}
+#wkUpdatePoster .wkp-date{display:inline-flex;align-items:center;gap:6px;padding:7px 18px;border-radius:999px;background:linear-gradient(#7c4ddb,#5a2db6);color:#fff;font:800 15px/1.2 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;border:2px solid #fff;box-shadow:0 3px 8px #0004}
+#wkUpdatePoster .wkp-body{padding:4px 10px 6px}
+#wkUpdatePoster .wkp-sec{display:grid;grid-template-columns:92px 1fr 64px;align-items:center;gap:8px;margin:10px 0;padding:10px 10px;border-radius:20px;border:3px solid var(--c);background:linear-gradient(135deg,#fff,var(--bg));box-shadow:0 0 0 3px #fff,0 4px 10px #1d2f5522}
+#wkUpdatePoster .wkp-tag{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+#wkUpdatePoster .wkp-tag b{font-size:38px;line-height:1;filter:drop-shadow(0 3px 2px #0003)}
+#wkUpdatePoster .wkp-tag span{display:block;padding:4px 8px;border-radius:12px;background:linear-gradient(var(--c),var(--d));color:#fff;font:900 14px/1.2 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;border:2px solid #fff;box-shadow:0 2px 4px #0003;white-space:nowrap}
+#wkUpdatePoster .wkp-sec ul{margin:0;padding:0;list-style:none}
+#wkUpdatePoster .wkp-sec li{display:flex;gap:7px;align-items:flex-start;padding:6px 0;font:800 15px/1.35 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;border-bottom:2px solid color-mix(in srgb,var(--c) 30%,transparent)}
+#wkUpdatePoster .wkp-sec li:last-child{border-bottom:0}
+#wkUpdatePoster .wkp-sec li:before{content:"✓";flex:none;display:grid;place-items:center;width:21px;height:21px;margin-top:1px;border-radius:50%;background:linear-gradient(#5fe27a,#1f9d45);color:#fff;font:900 13px/1 system-ui;border:2px solid #fff;box-shadow:0 1px 2px #0004}
+#wkUpdatePoster .wkp-deco{font-size:44px;text-align:center;filter:drop-shadow(0 4px 3px #0003)}
+#wkUpdatePoster .wkp-sum{display:flex;align-items:center;gap:8px;margin:12px 0 6px;padding:10px;border-radius:18px;border:3px solid #c08cf0;background:linear-gradient(90deg,#fff7df,#fff,#f3e7ff)}
+#wkUpdatePoster .wkp-sum b{flex:none;padding:8px 10px;border-radius:10px;background:linear-gradient(#e2473c,#b52a22);color:#ffe9a8;font:900 15px/1.2 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;border:3px solid #8a5a2b;box-shadow:0 3px 0 #6b3f17;transform:rotate(-3deg)}
+#wkUpdatePoster .wkp-sum p{margin:0;font:italic 900 16px/1.45 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:#3a2a72;text-align:center;flex:1}
+#wkUpdatePoster .wkp-foot{position:relative;margin-top:6px;height:190px;background:var(--plaza) center 40%/cover no-repeat;border-radius:0 0 20px 20px}
+#wkUpdatePoster .wkp-foot:before{content:"";position:absolute;inset:0 0 auto 0;height:50px;background:linear-gradient(#eefbe8,transparent)}
+#wkUpdatePoster .wkp-act{position:absolute;left:0;right:0;bottom:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+#wkUpdatePoster .wkp-ok{min-height:44px;padding:8px 28px;border:3px solid #fff;border-radius:999px;background:linear-gradient(#ffcf3f,#f39b0a);color:#4a2700;font:900 17px/1 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 0 #b26a00,0 6px 12px #0005}
+#wkUpdatePoster .wkp-act label{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border-radius:999px;background:#ffffffe6;font:800 13px/1 "Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;cursor:pointer}
+#wkUpdateReopen{border:1px solid #c9a6f5;border-radius:10px;background:#f4ecff;color:#5a2db6;font:800 13px system-ui;padding:8px 12px;cursor:pointer}
+@media(max-width:430px){#wkUpdatePoster .wkp-rabbit{width:78px;top:34px;right:2px}#wkUpdatePoster .wkp-ribbon{margin-bottom:14px!important}#wkUpdatePoster .wkp-brand{margin:4px 64px 0}#wkUpdatePoster .wkp-title span{-webkit-text-stroke:6px #3a2170}#wkUpdatePoster .wkp-sec{grid-template-columns:76px 1fr;padding:9px 8px}#wkUpdatePoster .wkp-deco{display:none}#wkUpdatePoster .wkp-tag b{font-size:32px}#wkUpdatePoster .wkp-tag span{font-size:12.5px;padding:3px 6px}#wkUpdatePoster .wkp-sec li{font-size:14px}#wkUpdatePoster .wkp-medal{width:50px;height:50px}#wkUpdatePoster .wkp-title{margin-top:14px}#wkUpdatePoster .wkp-medal.r{top:44px}#wkUpdatePoster .wkp-sum{flex-direction:column}#wkUpdatePoster .wkp-foot{height:160px}}
+</style>
+<script id="wk-update-poster">
+(function(){
+ 'use strict';
+ /* ===== 이번 업데이트 내용 (다음 차수는 여기만 바꿉니다) ===== */
+ var WONKI_UPDATE={
+  no:55,
+  date:'2026년 11월 11일',
+  sections:[
+   {label:'요청·문제',icon:'📋',deco:'🏗️',c:'#3f9cf0',d:'#1f63c4',bg:'#e3f2ff',items:['동기화하면 서버가 바쁘다는 메시지','새 건물이 확장 지역으로 안 옮겨짐','문제 화면에 저장·윗단계 버튼이 없음']},
+   {label:'변경 사항',icon:'⚙️',deco:'🎡',c:'#b06be6',d:'#7b3fc4',bg:'#f6e9ff',items:['서버가 응답 없으면 자동으로 3번까지 다시 시도','확장 지역 어디든 건물 이동','문제 화면에 ◀ 상대 선택 · 📚 단원 목록 · 💾 저장']},
+   {label:'지금 상태',icon:'💻',deco:'📝',c:'#49c063',d:'#23913f',bg:'#e6f9e8',items:['동기화 결과에 실패 이유를 짧게 표시','수학·영어 초3-1은 그대로']}
+  ],
+  summary:'어디든 건물을 놓고,<br>문제 풀다가도 바로 저장!'
+ };
+ var ART=__ART__;
+ var KEY='wonkiUpdatePosterHide_'+WONKI_UPDATE.no;
+ function today(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+ function build(){
+  var o=document.getElementById('wkUpdatePoster');if(o)return o;
+  o=document.createElement('div');o.id='wkUpdatePoster';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.setAttribute('aria-label','원기랜드 제'+WONKI_UPDATE.no+'차 업데이트 안내');o.hidden=true;
+  var u=WONKI_UPDATE,n=String(u.no).padStart(2,'0');
+  o.innerHTML='<article class="wkp" style="--sky:url('+ART.sky+');--plaza:url('+ART.plaza+')">'+
+   '<button type="button" class="wkp-x" aria-label="업데이트 안내 닫기">×</button>'+
+   '<header class="wkp-head"><span class="wkp-medal l" style="background-image:url('+ART.wheel+')"></span><img class="wkp-rabbit" alt="" aria-hidden="true" src="'+ART.rabbit+'">'+
+   '<h2 class="wkp-brand">웰컴투 원기랜드</h2><br><span class="wkp-ribbon">WonkiLand</span>'+
+   '<div class="wkp-title"><i>🌿</i><span>제'+n+'차 업데이트 안내</span><i style="transform:scaleX(-1)">🌿</i></div>'+
+   '<div class="wkp-date">📅 업데이트 일자 : '+esc(u.date)+'</div></header>'+
+   '<div class="wkp-body">'+u.sections.map(function(s){return '<section class="wkp-sec" style="--c:'+s.c+';--d:'+s.d+';--bg:'+s.bg+'"><div class="wkp-tag"><b aria-hidden="true">'+s.icon+'</b><span>'+esc(s.label)+'</span></div><ul>'+s.items.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul><div class="wkp-deco" aria-hidden="true">'+s.deco+'</div></section>';}).join('')+
+   '<div class="wkp-sum"><b>📢 '+u.no+'차 핵심 요약</b><p>'+u.summary+'</p></div></div>'+
+   '<footer class="wkp-foot"><div class="wkp-act"><button type="button" class="wkp-ok">확인</button><label><input type="checkbox" class="wkp-hide"> 오늘 하루 보지 않기</label></div></footer></article>';
+  document.body.appendChild(o);
+  function close(){try{if(o.querySelector('.wkp-hide').checked)localStorage.setItem(KEY,today());}catch(_){}o.hidden=true;}
+  o.querySelector('.wkp-x').onclick=close;o.querySelector('.wkp-ok').onclick=close;
+  o.addEventListener('click',function(e){if(e.target===o)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!o.hidden)close();});
+  return o;
+ }
+ function show(){var o=build();o.hidden=false;o.querySelector('.wkp').scrollTop=0;setTimeout(function(){o.querySelector('.wkp-ok').focus({preventScroll:true});},50);}
+ function reopenButton(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');if(!tools||document.getElementById('wkUpdateReopen'))return;var b=document.createElement('button');b.type='button';b.id='wkUpdateReopen';b.textContent='📢 '+WONKI_UPDATE.no+'차 업데이트 안내';b.onclick=show;tools.insertBefore(b,tools.firstChild);}
+ function init(){reopenButton();var hidden=false;try{hidden=localStorage.getItem(KEY)===today();}catch(_){}if(!hidden)show();}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+ window.addEventListener('load',reopenButton,{once:true});
+ window.WonkiUpdatePoster={show:show,data:WONKI_UPDATE};
+})();
+</script>

@@ -1,0 +1,4582 @@
+{
+"e1-2": {
+"v": [
+[
+"uncle",
+"삼촌"
+],
+[
+"aunt",
+"이모"
+],
+[
+"cousin",
+"사촌"
+],
+[
+"pen",
+"펜"
+],
+[
+"cup",
+"컵"
+],
+[
+"hat",
+"모자"
+],
+[
+"ruler",
+"자"
+],
+[
+"crayon",
+"크레용"
+],
+[
+"lunchbox",
+"도시락"
+],
+[
+"name",
+"이름"
+],
+[
+"love",
+"사랑하다"
+],
+[
+"kind",
+"친절한"
+],
+[
+"parents",
+"부모님"
+],
+[
+"picture",
+"그림"
+]
+],
+"p": [
+[
+"My aunt is kind.",
+"나의 이모는 친절합니다.",
+"is",
+[
+"am",
+"are",
+"be"
+],
+"한 사람 주어 뒤에는 is를 써요."
+],
+[
+"I have a red pen.",
+"나는 빨간 펜이 있습니다.",
+"have",
+[
+"has",
+"is",
+"am"
+],
+"I 뒤에는 have를 써요."
+],
+[
+"This is my cousin.",
+"이 아이는 나의 사촌입니다.",
+"This",
+[
+"These",
+"Those",
+"They"
+],
+"가까이 있는 한 명은 This로 소개해요."
+],
+[
+"I love my family.",
+"나는 나의 가족을 사랑합니다.",
+"love",
+[
+"loves",
+"loving",
+"to love"
+],
+"I 뒤에는 동사원형을 써요."
+],
+[
+"What is your name?",
+"너의 이름은 무엇이니?",
+"What",
+[
+"Who",
+"Where",
+"When"
+],
+"이름을 물을 때는 What을 써요."
+],
+[
+"These are my crayons.",
+"이것들은 나의 크레용입니다.",
+"These",
+[
+"This",
+"That",
+"It"
+],
+"여러 개를 가리킬 때는 These를 써요."
+],
+[
+"Is she your aunt?",
+"그녀는 너의 이모니?",
+"Is",
+[
+"Are",
+"Am",
+"Do"
+],
+"she 질문은 Is로 시작해요."
+]
+],
+"passage": "My uncle and aunt visit us on Sunday. My cousin Jisu comes too. We eat lunch together. Jisu has a yellow hat.",
+"r": [
+[
+"일요일에 방문하는 사람은?",
+"삼촌과 이모",
+[
+"선생님과 친구",
+"할머니와 할아버지",
+"의사와 간호사"
+],
+"My uncle and aunt visit us on Sunday라고 했어요."
+],
+[
+"사촌의 이름은?",
+"지수",
+[
+"미나",
+"민호",
+"수진"
+],
+"My cousin Jisu라고 했어요."
+],
+[
+"지수가 가진 모자의 색은?",
+"노란색",
+[
+"빨간색",
+"파란색",
+"초록색"
+],
+"Jisu has a yellow hat이라고 했어요."
+]
+]
+},
+"e2-1": {
+"v": [
+[
+"banana",
+"바나나"
+],
+[
+"juice",
+"주스"
+],
+[
+"cheese",
+"치즈"
+],
+[
+"cookie",
+"쿠키"
+],
+[
+"carrot",
+"당근"
+],
+[
+"meat",
+"고기"
+],
+[
+"head",
+"머리"
+],
+[
+"leg",
+"다리"
+],
+[
+"arm",
+"팔"
+],
+[
+"tooth",
+"이(치아)"
+],
+[
+"hungry",
+"배고픈"
+],
+[
+"delicious",
+"맛있는"
+],
+[
+"orange",
+"오렌지"
+],
+[
+"finger",
+"손가락"
+]
+],
+"p": [
+[
+"I am hungry.",
+"나는 배가 고픕니다.",
+"am",
+[
+"is",
+"are",
+"be"
+],
+"I 뒤에는 am을 써요."
+],
+[
+"He likes bananas.",
+"그는 바나나를 좋아합니다.",
+"likes",
+[
+"like",
+"liking",
+"to likes"
+],
+"He 뒤의 현재 동사에는 s를 붙여요."
+],
+[
+"Touch your head.",
+"머리를 만지세요.",
+"Touch",
+[
+"Touches",
+"Touched",
+"Touching"
+],
+"명령문은 동사원형으로 시작해요."
+],
+[
+"I have two arms.",
+"나는 팔이 두 개 있습니다.",
+"arms",
+[
+"arm",
+"an arm",
+"a arm"
+],
+"two 뒤에는 복수 명사를 써요."
+],
+[
+"Do you want some juice?",
+"너는 주스를 좀 원하니?",
+"Do",
+[
+"Does",
+"Is",
+"Are"
+],
+"you의 일반동사 의문문은 Do로 시작해요."
+],
+[
+"The cookie is delicious.",
+"그 쿠키는 맛있습니다.",
+"is",
+[
+"are",
+"am",
+"be"
+],
+"한 개의 주어 뒤에는 is를 써요."
+],
+[
+"I don't like carrots.",
+"나는 당근을 좋아하지 않습니다.",
+"don't",
+[
+"doesn't",
+"isn't",
+"not"
+],
+"I의 일반동사 부정은 don't예요."
+]
+],
+"passage": "I am hungry. I eat a banana and some cheese. My brother drinks juice. Carrots are good for our eyes.",
+"r": [
+[
+"글쓴이가 먹는 것은?",
+"바나나와 치즈",
+[
+"사과와 빵",
+"당근과 고기",
+"쿠키와 우유"
+],
+"a banana and some cheese라고 했어요."
+],
+[
+"글쓴이의 남자 형제가 마시는 것은?",
+"주스",
+[
+"우유",
+"물",
+"차"
+],
+"My brother drinks juice에서 찾아요."
+],
+[
+"눈에 좋다고 한 음식은?",
+"당근",
+[
+"치즈",
+"쿠키",
+"바나나"
+],
+"Carrots are good for our eyes라고 했어요."
+]
+]
+},
+"e2-2": {
+"v": [
+[
+"swing",
+"그네"
+],
+[
+"slide",
+"미끄럼틀"
+],
+[
+"kite",
+"연"
+],
+[
+"game",
+"게임"
+],
+[
+"draw",
+"그리다"
+],
+[
+"cook",
+"요리하다"
+],
+[
+"throw",
+"던지다"
+],
+[
+"catch",
+"잡다"
+],
+[
+"kick",
+"차다"
+],
+[
+"tired",
+"피곤한"
+],
+[
+"fun",
+"재미있는"
+],
+[
+"park",
+"공원"
+],
+[
+"picnic",
+"소풍"
+],
+[
+"laugh",
+"웃다"
+]
+],
+"p": [
+[
+"I can kick the ball.",
+"나는 공을 찰 수 있습니다.",
+"can",
+[
+"cans",
+"am",
+"to"
+],
+"할 수 있다는 can + 동사원형이에요."
+],
+[
+"She draws a picture.",
+"그녀는 그림을 그립니다.",
+"draws",
+[
+"draw",
+"drawing",
+"drawed"
+],
+"She 뒤의 현재 동사에는 s를 붙여요."
+],
+[
+"Let's fly a kite.",
+"연을 날리자.",
+"Let's",
+[
+"Let",
+"Does",
+"Is"
+],
+"함께 하자고 할 때는 Let's를 써요."
+],
+[
+"We play in the park.",
+"우리는 공원에서 놉니다.",
+"in",
+[
+"on",
+"to",
+"of"
+],
+"공원 안에서는 in을 써요."
+],
+[
+"I am tired now.",
+"나는 지금 피곤합니다.",
+"am",
+[
+"is",
+"are",
+"be"
+],
+"I 뒤에는 am을 써요."
+],
+[
+"Can you catch the ball?",
+"너는 공을 잡을 수 있니?",
+"Can",
+[
+"Do",
+"Is",
+"Are"
+],
+"할 수 있는지 물을 때는 Can으로 시작해요."
+],
+[
+"They are dancing now.",
+"그들은 지금 춤추고 있습니다.",
+"dancing",
+[
+"dance",
+"dances",
+"danced"
+],
+"지금 하고 있는 일은 be + -ing예요."
+]
+],
+"passage": "After school, I go to the park with my friends. We play on the swing and the slide. Then we fly a kite. It is fun, but I am tired at night.",
+"r": [
+[
+"글쓴이는 방과 후에 어디에 가나요?",
+"공원",
+[
+"도서관",
+"병원",
+"수영장"
+],
+"I go to the park라고 했어요."
+],
+[
+"공원에서 하지 않은 놀이는?",
+"공 던지기",
+[
+"그네 타기",
+"미끄럼틀 타기",
+"연날리기"
+],
+"swing, slide, kite만 나와요."
+],
+[
+"밤에 글쓴이의 상태는?",
+"피곤하다",
+[
+"슬프다",
+"배고프다",
+"무섭다"
+],
+"I am tired at night라고 했어요."
+]
+]
+},
+"e3-1": {
+"v": [
+[
+"scissors",
+"가위"
+],
+[
+"glue",
+"풀"
+],
+[
+"clock",
+"시계"
+],
+[
+"calendar",
+"달력"
+],
+[
+"computer",
+"컴퓨터"
+],
+[
+"question",
+"질문"
+],
+[
+"answer",
+"대답"
+],
+[
+"listen",
+"듣다"
+],
+[
+"speak",
+"말하다"
+],
+[
+"write",
+"쓰다"
+],
+[
+"open",
+"열다"
+],
+[
+"close",
+"닫다"
+]
+],
+"p": [
+[
+"Nice to meet you.",
+"만나서 반가워요.",
+"meet",
+[
+"meets",
+"meeting",
+"met"
+],
+"to 뒤에는 동사원형을 써요."
+],
+[
+"Please open the window.",
+"창문을 열어 주세요.",
+"open",
+[
+"opens",
+"opened",
+"opening"
+],
+"Please 뒤 명령문은 동사원형을 써요."
+],
+[
+"Don't run in the classroom.",
+"교실에서 뛰지 마세요.",
+"Don't",
+[
+"Doesn't",
+"Not",
+"No"
+],
+"하지 말라고 할 때는 Don't를 써요."
+],
+[
+"How are you?",
+"어떻게 지내세요?",
+"How",
+[
+"What",
+"Who",
+"Where"
+],
+"안부를 물을 때는 How are you?라고 해요."
+],
+[
+"May I ask a question?",
+"질문을 해도 될까요?",
+"May",
+[
+"Am",
+"Do",
+"Does"
+],
+"허락을 구할 때는 May I ~?를 써요."
+],
+[
+"There are two clocks.",
+"시계가 두 개 있습니다.",
+"are",
+[
+"is",
+"am",
+"be"
+],
+"There 뒤 복수 명사에는 are를 써요."
+],
+[
+"Listen to your teacher.",
+"선생님 말씀을 들으세요.",
+"Listen",
+[
+"Listens",
+"Listening",
+"Listened"
+],
+"명령문은 동사원형으로 시작해요."
+]
+],
+"passage": "Good morning, class! Today we have a new friend. Her name is Sora. Please listen to her and say hello. Sora, you can sit next to Minsu.",
+"r": [
+[
+"새로 온 친구의 이름은?",
+"소라",
+[
+"민수",
+"미나",
+"지호"
+],
+"Her name is Sora라고 했어요."
+],
+[
+"선생님이 학생들에게 부탁한 것은?",
+"소라의 말을 듣고 인사하기",
+[
+"창문 열기",
+"질문 쓰기",
+"교실 청소하기"
+],
+"listen to her and say hello라고 했어요."
+],
+[
+"소라가 앉을 자리는?",
+"민수 옆",
+[
+"창문 옆",
+"문 앞",
+"선생님 책상"
+],
+"sit next to Minsu라고 했어요."
+]
+]
+},
+"e3-2": {
+"v": [
+[
+"monkey",
+"원숭이"
+],
+[
+"elephant",
+"코끼리"
+],
+[
+"giraffe",
+"기린"
+],
+[
+"horse",
+"말"
+],
+[
+"duck",
+"오리"
+],
+[
+"bee",
+"벌"
+],
+[
+"tall",
+"키가 큰"
+],
+[
+"slow",
+"느린"
+],
+[
+"long",
+"긴"
+],
+[
+"short",
+"짧은"
+],
+[
+"strong",
+"힘센"
+],
+[
+"hop",
+"깡충 뛰다"
+],
+[
+"dolphin",
+"돌고래"
+],
+[
+"spider",
+"거미"
+]
+],
+"p": [
+[
+"A duck can swim.",
+"오리는 수영할 수 있습니다.",
+"can",
+[
+"cans",
+"is",
+"does"
+],
+"can 뒤에는 동사원형이 와요."
+],
+[
+"Can a horse fly?",
+"말은 날 수 있나요?",
+"Can",
+[
+"Do",
+"Is",
+"Are"
+],
+"능력을 물을 때 Can으로 시작해요."
+],
+[
+"A giraffe has a long neck.",
+"기린은 목이 깁니다.",
+"has",
+[
+"have",
+"is",
+"are"
+],
+"하나인 주어 뒤에는 has를 써요."
+],
+[
+"Turtles are slow.",
+"거북은 느립니다.",
+"are",
+[
+"is",
+"am",
+"be"
+],
+"복수 주어 뒤에는 are를 써요."
+],
+[
+"A horse is faster than a turtle.",
+"말은 거북보다 더 빠릅니다.",
+"faster",
+[
+"fast",
+"fastest",
+"more fast"
+],
+"두 개를 비교할 때 -er than을 써요."
+],
+[
+"Snakes can't fly.",
+"뱀은 날 수 없습니다.",
+"can't",
+[
+"don't can",
+"isn't",
+"not"
+],
+"할 수 없을 때는 can't를 써요."
+],
+[
+"Bees can fly.",
+"벌은 날 수 있습니다.",
+"fly",
+[
+"flies",
+"flying",
+"to fly"
+],
+"can 뒤에는 동사원형이 와요."
+]
+],
+"passage": "This is a zoo. A giraffe is very tall. An elephant is big and strong. A monkey can climb trees. A rabbit can hop, but it can't fly.",
+"r": [
+[
+"이 글의 장소는?",
+"동물원",
+[
+"학교",
+"바다",
+"농장"
+],
+"This is a zoo라고 했어요."
+],
+[
+"크고 힘센 동물은?",
+"코끼리",
+[
+"기린",
+"원숭이",
+"토끼"
+],
+"An elephant is big and strong이라고 했어요."
+],
+[
+"토끼가 할 수 없는 것은?",
+"날기",
+[
+"깡충 뛰기",
+"먹기",
+"달리기"
+],
+"it can't fly라고 했어요."
+]
+]
+},
+"e4-1": {
+"v": [
+[
+"bed",
+"침대"
+],
+[
+"mirror",
+"거울"
+],
+[
+"closet",
+"옷장"
+],
+[
+"shelf",
+"선반"
+],
+[
+"roof",
+"지붕"
+],
+[
+"floor",
+"바닥"
+],
+[
+"wall",
+"벽"
+],
+[
+"stairs",
+"계단"
+],
+[
+"in front of",
+"~ 앞에"
+],
+[
+"on",
+"~ 위에"
+],
+[
+"near",
+"가까이에"
+],
+[
+"living room",
+"거실"
+],
+[
+"curtain",
+"커튼"
+],
+[
+"basement",
+"지하실"
+]
+],
+"p": [
+[
+"The cat is under the bed.",
+"고양이는 침대 아래에 있습니다.",
+"under",
+[
+"on",
+"in",
+"to"
+],
+"아래에 있을 때는 under를 써요."
+],
+[
+"The mirror is on the wall.",
+"거울은 벽에 걸려 있습니다.",
+"on",
+[
+"in",
+"under",
+"at"
+],
+"벽에 붙어 있을 때는 on을 써요."
+],
+[
+"Where is the sofa?",
+"소파는 어디에 있니?",
+"Where",
+[
+"What",
+"Who",
+"When"
+],
+"위치를 물을 때는 Where를 써요."
+],
+[
+"There is a shelf in my room.",
+"내 방에 선반이 하나 있습니다.",
+"is",
+[
+"are",
+"am",
+"be"
+],
+"There 뒤 단수 명사에는 is를 써요."
+],
+[
+"The tree is in front of the house.",
+"나무는 집 앞에 있습니다.",
+"front",
+[
+"next",
+"top",
+"side"
+],
+"~ 앞에는 in front of예요."
+],
+[
+"My books are on the shelf.",
+"내 책들은 선반 위에 있습니다.",
+"are",
+[
+"is",
+"am",
+"be"
+],
+"복수 주어 뒤에는 are를 써요."
+],
+[
+"Is there a bed in your room?",
+"너의 방에 침대가 있니?",
+"there",
+[
+"here",
+"it",
+"this"
+],
+"있는지 물을 때 Is there ~?를 써요."
+]
+],
+"passage": "Welcome to my house. The living room has a big sofa. My bedroom is next to the bathroom. There is a mirror on the wall. My cat sleeps under my bed.",
+"r": [
+[
+"거실에 있는 것은?",
+"큰 소파",
+[
+"피아노",
+"옷장",
+"작은 탁자"
+],
+"The living room has a big sofa라고 했어요."
+],
+[
+"글쓴이의 침실은 어디 옆에 있나요?",
+"욕실",
+[
+"부엌",
+"정원",
+"거실"
+],
+"next to the bathroom이라고 했어요."
+],
+[
+"고양이가 자는 곳은?",
+"침대 아래",
+[
+"소파 위",
+"선반 위",
+"정원"
+],
+"under my bed라고 했어요."
+]
+]
+},
+"e4-2": {
+"v": [
+[
+"always",
+"항상"
+],
+[
+"sometimes",
+"가끔"
+],
+[
+"never",
+"결코 ~않다"
+],
+[
+"often",
+"자주"
+],
+[
+"guitar",
+"기타"
+],
+[
+"soccer",
+"축구"
+],
+[
+"movie",
+"영화"
+],
+[
+"comic book",
+"만화책"
+],
+[
+"bike",
+"자전거"
+],
+[
+"get up",
+"일어나다"
+],
+[
+"go to bed",
+"잠자리에 들다"
+],
+[
+"Saturday",
+"토요일"
+]
+],
+"p": [
+[
+"I always get up at seven.",
+"나는 항상 7시에 일어납니다.",
+"always",
+[
+"never",
+"once",
+"ago"
+],
+"항상은 always예요."
+],
+[
+"She often plays soccer.",
+"그녀는 자주 축구를 합니다.",
+"plays",
+[
+"play",
+"playing",
+"to play"
+],
+"She 뒤 현재 동사에는 s를 붙여요."
+],
+[
+"What time do you go to bed?",
+"너는 몇 시에 잠자리에 드니?",
+"What",
+[
+"Who",
+"Where",
+"Which"
+],
+"시간을 물을 때 What time을 써요."
+],
+[
+"He goes to school by bike.",
+"그는 자전거로 학교에 갑니다.",
+"goes",
+[
+"go",
+"going",
+"gos"
+],
+"go는 he 뒤에서 goes가 돼요."
+],
+[
+"I like watching movies.",
+"나는 영화 보는 것을 좋아합니다.",
+"watching",
+[
+"watch",
+"watches",
+"watched"
+],
+"like 뒤에 -ing를 써서 좋아하는 일을 말해요."
+],
+[
+"We never eat lunch at home.",
+"우리는 집에서 점심을 절대 먹지 않습니다.",
+"never",
+[
+"always",
+"often",
+"sometimes"
+],
+"절대 ~하지 않는다는 never예요."
+],
+[
+"How often do you play the guitar?",
+"너는 얼마나 자주 기타를 치니?",
+"often",
+[
+"many",
+"much",
+"old"
+],
+"횟수를 물을 때 How often을 써요."
+]
+],
+"passage": "On Saturday, I get up late. I often read comic books in the morning. In the afternoon, I play the guitar. Sometimes I watch a movie with my family.",
+"r": [
+[
+"토요일에 글쓴이는 어떻게 일어나나요?",
+"늦게 일어난다",
+[
+"일찍 일어난다",
+"일어나지 않는다",
+"7시에 일어난다"
+],
+"I get up late라고 했어요."
+],
+[
+"오후에 하는 일은?",
+"기타 치기",
+[
+"축구하기",
+"숙제하기",
+"피아노 치기"
+],
+"In the afternoon, I play the guitar라고 했어요."
+],
+[
+"가족과 가끔 하는 일은?",
+"영화 보기",
+[
+"요리하기",
+"자전거 타기",
+"만화책 읽기"
+],
+"Sometimes I watch a movie with my family라고 했어요."
+]
+]
+},
+"e5-1": {
+"v": [
+[
+"last week",
+"지난주"
+],
+[
+"ago",
+"전에"
+],
+[
+"vacation",
+"방학"
+],
+[
+"beach",
+"해변"
+],
+[
+"zoo",
+"동물원"
+],
+[
+"castle",
+"성"
+],
+[
+"bought",
+"샀다"
+],
+[
+"saw",
+"보았다"
+],
+[
+"went",
+"갔다"
+],
+[
+"ate",
+"먹었다"
+],
+[
+"interesting",
+"흥미로운"
+],
+[
+"famous",
+"유명한"
+]
+],
+"p": [
+[
+"I went to the beach last week.",
+"나는 지난주에 해변에 갔습니다.",
+"went",
+[
+"go",
+"goes",
+"going"
+],
+"지난 일은 과거형 went로 써요."
+],
+[
+"We saw a famous castle.",
+"우리는 유명한 성을 보았습니다.",
+"saw",
+[
+"see",
+"sees",
+"seeing"
+],
+"see의 과거형은 saw예요."
+],
+[
+"Did you visit the zoo?",
+"너는 동물원을 방문했니?",
+"Did",
+[
+"Do",
+"Does",
+"Are"
+],
+"과거 의문문은 Did로 시작해요."
+],
+[
+"I didn't eat lunch yesterday.",
+"나는 어제 점심을 먹지 않았습니다.",
+"didn't",
+[
+"don't",
+"doesn't",
+"isn't"
+],
+"과거 부정은 didn't + 동사원형이에요."
+],
+[
+"The museum was interesting.",
+"그 박물관은 흥미로웠습니다.",
+"was",
+[
+"is",
+"were",
+"are"
+],
+"단수 주어의 과거 be동사는 was예요."
+],
+[
+"We were very excited.",
+"우리는 매우 신이 났습니다.",
+"were",
+[
+"was",
+"are",
+"is"
+],
+"We의 과거 be동사는 were예요."
+],
+[
+"Where did you go last week?",
+"너는 지난주에 어디에 갔니?",
+"did",
+[
+"do",
+"does",
+"are"
+],
+"과거 의문문에는 did를 써요."
+]
+],
+"passage": "Last summer vacation, my family went to Jeju. We saw a beautiful beach. I ate fresh fish there. We bought some souvenirs for our friends. It was a wonderful trip.",
+"r": [
+[
+"가족이 간 곳은?",
+"제주",
+[
+"부산",
+"서울",
+"강릉"
+],
+"went to Jeju라고 했어요."
+],
+[
+"글쓴이가 먹은 것은?",
+"신선한 생선",
+[
+"피자",
+"김밥",
+"아이스크림"
+],
+"I ate fresh fish라고 했어요."
+],
+[
+"친구들을 위해 산 것은?",
+"기념품",
+[
+"표",
+"사진",
+"옷"
+],
+"bought some souvenirs for our friends라고 했어요."
+]
+]
+},
+"e5-2": {
+"v": [
+[
+"next week",
+"다음 주"
+],
+[
+"snow",
+"눈"
+],
+[
+"wind",
+"바람"
+],
+[
+"sunny",
+"화창한"
+],
+[
+"hot",
+"더운"
+],
+[
+"tent",
+"텐트"
+],
+[
+"lake",
+"호수"
+],
+[
+"hill",
+"언덕"
+],
+[
+"hike",
+"등산하다"
+],
+[
+"umbrella",
+"우산"
+],
+[
+"forest",
+"숲"
+],
+[
+"island",
+"섬"
+],
+[
+"rainbow",
+"무지개"
+],
+[
+"season",
+"계절"
+]
+],
+"p": [
+[
+"I will hike next week.",
+"나는 다음 주에 등산할 것입니다.",
+"will",
+[
+"am",
+"did",
+"was"
+],
+"미래의 일은 will + 동사원형이에요."
+],
+[
+"It is going to snow tomorrow.",
+"내일 눈이 올 예정입니다.",
+"going",
+[
+"go",
+"went",
+"goes"
+],
+"be going to + 동사원형으로 예정을 말해요."
+],
+[
+"The lake is bigger than the pond.",
+"그 호수는 연못보다 더 큽니다.",
+"bigger",
+[
+"big",
+"biggest",
+"more big"
+],
+"big의 비교급은 bigger예요."
+],
+[
+"Summer is hotter than spring.",
+"여름은 봄보다 더 덥습니다.",
+"hotter",
+[
+"hot",
+"hottest",
+"more hot"
+],
+"hot의 비교급은 hotter예요."
+],
+[
+"Don't forget your umbrella.",
+"우산을 잊지 마세요.",
+"forget",
+[
+"forgets",
+"forgot",
+"forgetting"
+],
+"Don't 뒤에는 동사원형을 써요."
+],
+[
+"This is the highest mountain in Korea.",
+"이것은 한국에서 가장 높은 산입니다.",
+"highest",
+[
+"higher",
+"high",
+"more high"
+],
+"셋 이상 중 가장 ~할 때는 -est를 써요."
+],
+[
+"What will you bring?",
+"너는 무엇을 가져올 거니?",
+"will",
+[
+"did",
+"are",
+"is"
+],
+"미래를 물을 때 will을 써요."
+]
+],
+"passage": "Next week, we are going to camp near a lake. It will be sunny and warm. We will bring a tent and a map. If it rains, we will stay in the tent.",
+"r": [
+[
+"다음 주 계획은?",
+"호수 근처에서 야영하기",
+[
+"섬 여행하기",
+"박물관 가기",
+"숲에서 등산하기"
+],
+"camp near a lake라고 했어요."
+],
+[
+"예상되는 날씨는?",
+"화창하고 따뜻하다",
+[
+"춥고 눈이 온다",
+"바람이 세다",
+"흐리고 비가 온다"
+],
+"It will be sunny and warm이라고 했어요."
+],
+[
+"비가 오면 어떻게 하나요?",
+"텐트 안에 있는다",
+[
+"집에 돌아간다",
+"우산을 산다",
+"강에서 논다"
+],
+"we will stay in the tent라고 했어요."
+]
+]
+},
+"e6-1": {
+"v": [
+[
+"bank",
+"은행"
+],
+[
+"bakery",
+"빵집"
+],
+[
+"post office",
+"우체국"
+],
+[
+"station",
+"역"
+],
+[
+"block",
+"블록"
+],
+[
+"crosswalk",
+"횡단보도"
+],
+[
+"traffic light",
+"신호등"
+],
+[
+"must",
+"~해야 한다"
+],
+[
+"should",
+"~하는 게 좋다"
+],
+[
+"wear",
+"입다"
+],
+[
+"helmet",
+"헬멧"
+],
+[
+"across from",
+"~ 맞은편에"
+],
+[
+"subway",
+"지하철"
+],
+[
+"police",
+"경찰"
+]
+],
+"p": [
+[
+"Go straight one block.",
+"한 블록 곧장 가세요.",
+"straight",
+[
+"right",
+"turn",
+"across"
+],
+"곧장은 straight예요."
+],
+[
+"Turn left at the corner.",
+"모퉁이에서 왼쪽으로 도세요.",
+"left",
+[
+"right",
+"straight",
+"across"
+],
+"왼쪽은 left예요."
+],
+[
+"The bank is across from the bakery.",
+"은행은 빵집 맞은편에 있습니다.",
+"across",
+[
+"next",
+"between",
+"behind"
+],
+"맞은편은 across from이에요."
+],
+[
+"You must wear a helmet.",
+"너는 헬멧을 써야 합니다.",
+"must",
+[
+"musts",
+"is",
+"does"
+],
+"must 뒤에는 동사원형이 와요."
+],
+[
+"You should wait for the green light.",
+"초록불을 기다리는 게 좋아요.",
+"should",
+[
+"shoulds",
+"are",
+"do"
+],
+"충고할 때 should + 동사원형을 써요."
+],
+[
+"Where is the post office?",
+"우체국은 어디에 있나요?",
+"Where",
+[
+"What",
+"Who",
+"When"
+],
+"장소를 물을 때 Where를 써요."
+],
+[
+"Don't cross the street at a red light.",
+"빨간불에는 길을 건너지 마세요.",
+"cross",
+[
+"crosses",
+"crossing",
+"crossed"
+],
+"Don't 뒤에는 동사원형을 써요."
+]
+],
+"passage": "Excuse me. How can I get to the station? Go straight two blocks and turn right at the traffic light. The station is across from the post office. Be careful at the crosswalk.",
+"r": [
+[
+"길을 묻는 사람이 가려는 곳은?",
+"역",
+[
+"은행",
+"빵집",
+"병원"
+],
+"How can I get to the station?이라고 물었어요."
+],
+[
+"신호등에서 어떻게 하나요?",
+"오른쪽으로 돈다",
+[
+"왼쪽으로 돈다",
+"길을 건넌다",
+"멈춰서 기다린다"
+],
+"turn right at the traffic light라고 했어요."
+],
+[
+"역의 위치는?",
+"우체국 맞은편",
+[
+"은행 옆",
+"빵집 뒤",
+"병원 앞"
+],
+"across from the post office라고 했어요."
+]
+]
+},
+"e6-2": {
+"v": [
+[
+"pilot",
+"조종사"
+],
+[
+"chef",
+"요리사"
+],
+[
+"artist",
+"화가"
+],
+[
+"writer",
+"작가"
+],
+[
+"engineer",
+"기술자"
+],
+[
+"because",
+"~ 때문에"
+],
+[
+"so",
+"그래서"
+],
+[
+"if",
+"만약 ~라면"
+],
+[
+"when",
+"~할 때"
+],
+[
+"become",
+"~이 되다"
+],
+[
+"hard",
+"열심히"
+],
+[
+"brave",
+"용감한"
+]
+],
+"p": [
+[
+"I want to become a pilot.",
+"나는 조종사가 되고 싶습니다.",
+"to",
+[
+"for",
+"in",
+"of"
+],
+"want 뒤에 to + 동사원형을 써요."
+],
+[
+"I study hard because I want to be a doctor.",
+"나는 의사가 되고 싶기 때문에 열심히 공부합니다.",
+"because",
+[
+"but",
+"so",
+"or"
+],
+"이유를 말할 때 because를 써요."
+],
+[
+"It rained, so we stayed home.",
+"비가 와서 우리는 집에 있었습니다.",
+"so",
+[
+"because",
+"but",
+"if"
+],
+"결과를 말할 때 so를 써요."
+],
+[
+"If you practice, you can do it.",
+"연습하면 너는 할 수 있어.",
+"If",
+[
+"But",
+"So",
+"Because"
+],
+"조건을 말할 때 If를 써요."
+],
+[
+"When I grow up, I will be a chef.",
+"나는 커서 요리사가 될 거예요.",
+"When",
+[
+"What",
+"Where",
+"Who"
+],
+"~할 때는 When을 써요."
+],
+[
+"She wants to be a writer.",
+"그녀는 작가가 되고 싶어 합니다.",
+"wants",
+[
+"want",
+"wanting",
+"to want"
+],
+"She 뒤 현재 동사에는 s를 붙여요."
+],
+[
+"I believe that I can do it.",
+"나는 내가 해낼 수 있다고 믿습니다.",
+"that",
+[
+"what",
+"who",
+"where"
+],
+"생각·믿음의 내용은 that 절로 써요."
+]
+],
+"passage": "My dream is to become an engineer. I like making robots, so I practice every day. When I have a problem, my teacher helps me. I believe I can make a robot that helps people.",
+"r": [
+[
+"글쓴이의 꿈은?",
+"기술자",
+[
+"요리사",
+"화가",
+"조종사"
+],
+"to become an engineer라고 했어요."
+],
+[
+"글쓴이가 매일 연습하는 이유는?",
+"로봇 만드는 것을 좋아해서",
+[
+"시험이 있어서",
+"선생님이 시켜서",
+"친구와 약속해서"
+],
+"I like making robots, so I practice라고 했어요."
+],
+[
+"문제가 생기면 도와주는 사람은?",
+"선생님",
+[
+"부모님",
+"친구",
+"형"
+],
+"my teacher helps me라고 했어요."
+]
+]
+},
+"m1-1": {
+"v": [
+[
+"principal",
+"교장"
+],
+[
+"cafeteria",
+"구내식당"
+],
+[
+"uniform",
+"교복"
+],
+[
+"locker",
+"사물함"
+],
+[
+"semester",
+"학기"
+],
+[
+"exam",
+"시험"
+],
+[
+"homeroom",
+"담임 학급"
+],
+[
+"gym",
+"체육관"
+],
+[
+"science",
+"과학"
+],
+[
+"history",
+"역사"
+],
+[
+"favorite",
+"가장 좋아하는"
+],
+[
+"nervous",
+"긴장한"
+]
+],
+"p": [
+[
+"I am interested in science.",
+"나는 과학에 관심이 있습니다.",
+"interested",
+[
+"interesting",
+"interest",
+"interests"
+],
+"사람이 관심을 느낄 때는 interested in을 써요."
+],
+[
+"She is good at history.",
+"그녀는 역사를 잘합니다.",
+"at",
+[
+"in",
+"on",
+"for"
+],
+"~을 잘하다는 be good at이에요."
+],
+[
+"We have lunch in the cafeteria.",
+"우리는 구내식당에서 점심을 먹습니다.",
+"have",
+[
+"has",
+"having",
+"to have"
+],
+"We 뒤에는 동사원형을 써요."
+],
+[
+"What is your favorite subject?",
+"네가 가장 좋아하는 과목은 무엇이니?",
+"What",
+[
+"Who",
+"Where",
+"When"
+],
+"무엇인지 물을 때 What을 써요."
+],
+[
+"I was nervous on the first day.",
+"나는 첫날에 긴장했습니다.",
+"was",
+[
+"were",
+"am",
+"be"
+],
+"I의 과거 be동사는 was예요."
+],
+[
+"You don't have to wear a uniform today.",
+"오늘은 교복을 입지 않아도 됩니다.",
+"have",
+[
+"has",
+"must",
+"had"
+],
+"~할 필요가 없다는 don't have to예요."
+],
+[
+"Which club did you join?",
+"너는 어느 동아리에 가입했니?",
+"Which",
+[
+"Who",
+"Where",
+"How"
+],
+"정해진 것 중 고를 때 Which를 써요."
+]
+],
+"passage": "Today was my first day at middle school. I was nervous, but my homeroom teacher was kind. I joined the science club because I am interested in experiments. After school, I put my books in my locker.",
+"r": [
+[
+"글쓴이의 첫날 기분은?",
+"긴장했다",
+[
+"지루했다",
+"화가 났다",
+"졸렸다"
+],
+"I was nervous라고 했어요."
+],
+[
+"글쓴이가 가입한 동아리는?",
+"과학 동아리",
+[
+"축구 동아리",
+"미술 동아리",
+"독서 동아리"
+],
+"I joined the science club이라고 했어요."
+],
+[
+"방과 후에 책을 둔 곳은?",
+"사물함",
+[
+"가방",
+"책상 서랍",
+"구내식당"
+],
+"put my books in my locker라고 했어요."
+]
+]
+},
+"m1-2": {
+"v": [
+[
+"abroad",
+"해외로"
+],
+[
+"airport",
+"공항"
+],
+[
+"flight",
+"비행편"
+],
+[
+"luggage",
+"수하물"
+],
+[
+"delay",
+"지연"
+],
+[
+"explore",
+"탐험하다"
+],
+[
+"local",
+"현지의"
+],
+[
+"unforgettable",
+"잊을 수 없는"
+],
+[
+"reserve",
+"예약하다"
+],
+[
+"itinerary",
+"여행 일정"
+],
+[
+"ever",
+"한 번이라도"
+],
+[
+"already",
+"이미"
+]
+],
+"p": [
+[
+"Have you ever been abroad?",
+"너는 해외에 가 본 적이 있니?",
+"been",
+[
+"be",
+"being",
+"was"
+],
+"경험을 물을 때 Have you ever been ~?을 써요."
+],
+[
+"I have already packed my luggage.",
+"나는 이미 짐을 다 쌌습니다.",
+"packed",
+[
+"pack",
+"packing",
+"packs"
+],
+"현재완료는 have + 과거분사예요."
+],
+[
+"The flight was delayed because of the storm.",
+"폭풍 때문에 비행편이 지연되었습니다.",
+"delayed",
+[
+"delay",
+"delaying",
+"delays"
+],
+"비행편이 지연된 것이므로 수동태 was delayed를 써요."
+],
+[
+"We are going to explore the old town.",
+"우리는 구시가지를 탐험할 예정입니다.",
+"explore",
+[
+"explores",
+"explored",
+"exploring"
+],
+"be going to 뒤에는 동사원형을 써요."
+],
+[
+"I will never forget this trip.",
+"나는 이 여행을 절대 잊지 않을 것입니다.",
+"forget",
+[
+"forgot",
+"forgets",
+"forgetting"
+],
+"will 뒤에는 동사원형을 써요."
+],
+[
+"She reserved a room before she left.",
+"그녀는 떠나기 전에 방을 예약했습니다.",
+"before",
+[
+"after",
+"until",
+"while"
+],
+"먼저 한 일을 말할 때 before를 써요."
+],
+[
+"I have visited Japan twice.",
+"나는 일본에 두 번 가 본 적이 있습니다.",
+"visited",
+[
+"visit",
+"visiting",
+"visits"
+],
+"경험은 현재완료 have + p.p.예요."
+]
+],
+"passage": "Last winter, I traveled abroad for the first time. Our flight was delayed for two hours, so we waited at the airport. In Vietnam, we explored a local market and tried new food. It was an unforgettable experience.",
+"r": [
+[
+"글쓴이가 처음 해외여행을 간 때는?",
+"지난겨울",
+[
+"지난여름",
+"올봄",
+"작년 가을"
+],
+"Last winter라고 했어요."
+],
+[
+"비행편은 얼마나 지연되었나요?",
+"두 시간",
+[
+"30분",
+"하루",
+"다섯 시간"
+],
+"delayed for two hours라고 했어요."
+],
+[
+"베트남에서 한 일은?",
+"현지 시장 구경",
+[
+"박물관 관람",
+"등산",
+"수영 강습"
+],
+"explored a local market이라고 했어요."
+]
+]
+},
+"m2-1": {
+"v": [
+[
+"protect",
+"보호하다"
+],
+[
+"nature",
+"자연"
+],
+[
+"climate",
+"기후"
+],
+[
+"temperature",
+"기온"
+],
+[
+"diet",
+"식단"
+],
+[
+"vegetable",
+"채소"
+],
+[
+"sugar",
+"설탕"
+],
+[
+"stress",
+"스트레스"
+],
+[
+"harmful",
+"해로운"
+],
+[
+"save",
+"절약하다"
+],
+[
+"trash can",
+"쓰레기통"
+],
+[
+"global warming",
+"지구 온난화"
+]
+],
+"p": [
+[
+"We should protect nature.",
+"우리는 자연을 보호해야 합니다.",
+"should",
+[
+"shoulds",
+"are",
+"does"
+],
+"의무·충고는 should + 동사원형이에요."
+],
+[
+"Eating too much sugar is harmful.",
+"설탕을 너무 많이 먹는 것은 해롭습니다.",
+"is",
+[
+"are",
+"be",
+"being"
+],
+"동명사 주어는 단수 취급해요."
+],
+[
+"Turn off the lights to save energy.",
+"에너지를 절약하기 위해 불을 끄세요.",
+"to",
+[
+"for",
+"so",
+"and"
+],
+"목적을 나타낼 때 to + 동사원형을 써요."
+],
+[
+"If we recycle more, we can reduce waste.",
+"우리가 더 많이 재활용하면 쓰레기를 줄일 수 있습니다.",
+"If",
+[
+"Because",
+"Although",
+"Unless"
+],
+"조건을 말할 때 If를 써요."
+],
+[
+"Plastic bags are used by many people.",
+"비닐봉지는 많은 사람들이 사용합니다.",
+"used",
+[
+"use",
+"using",
+"uses"
+],
+"수동태는 be + 과거분사예요."
+],
+[
+"Vegetables are good for your health.",
+"채소는 건강에 좋습니다.",
+"for",
+[
+"to",
+"at",
+"with"
+],
+"~에 좋다는 be good for예요."
+],
+[
+"Too much stress makes us tired.",
+"너무 많은 스트레스는 우리를 피곤하게 합니다.",
+"makes",
+[
+"make",
+"making",
+"to make"
+],
+"단수 주어 뒤에는 makes를 써요."
+]
+],
+"passage": "Global warming is changing our climate. The temperature is rising every year. To protect the earth, we can save energy, use less plastic, and recycle. Small habits can make a big difference.",
+"r": [
+[
+"이 글의 주제는?",
+"지구 온난화와 우리가 할 수 있는 일",
+[
+"건강한 식단",
+"운동하는 방법",
+"쓰레기통의 종류"
+],
+"지구 온난화와 지구를 지키는 방법을 말해요."
+],
+[
+"매년 오르고 있다고 한 것은?",
+"기온",
+[
+"물가",
+"인구",
+"바다의 높이"
+],
+"The temperature is rising every year라고 했어요."
+],
+[
+"지구를 지키는 방법으로 언급되지 않은 것은?",
+"나무 심기",
+[
+"에너지 절약",
+"플라스틱 덜 쓰기",
+"재활용"
+],
+"나무 심기는 나오지 않아요."
+]
+]
+},
+"m2-2": {
+"v": [
+[
+"bow",
+"절하다"
+],
+[
+"gesture",
+"몸짓"
+],
+[
+"polite",
+"예의 바른"
+],
+[
+"rude",
+"무례한"
+],
+[
+"translate",
+"번역하다"
+],
+[
+"symbol",
+"상징"
+],
+[
+"celebrate",
+"기념하다"
+],
+[
+"holiday",
+"휴일"
+],
+[
+"costume",
+"의상"
+],
+[
+"diverse",
+"다양한"
+],
+[
+"misunderstanding",
+"오해"
+],
+[
+"exchange",
+"교환"
+]
+],
+"p": [
+[
+"In Korea, people bow to greet each other.",
+"한국에서는 사람들이 서로 인사하려고 절을 합니다.",
+"bow",
+[
+"bows",
+"bowing",
+"bowed"
+],
+"people 뒤 현재 동사는 원형이에요."
+],
+[
+"It is rude to point at people.",
+"사람을 손가락으로 가리키는 것은 무례합니다.",
+"to",
+[
+"for",
+"of",
+"at"
+],
+"It is ~ to + 동사원형 구문이에요."
+],
+[
+"English is spoken in many countries.",
+"영어는 많은 나라에서 사용됩니다.",
+"spoken",
+[
+"speak",
+"spoke",
+"speaking"
+],
+"수동태는 be + 과거분사예요."
+],
+[
+"This gesture means 'okay'.",
+"이 몸짓은 '좋아'를 뜻합니다.",
+"means",
+[
+"mean",
+"meaning",
+"meant to"
+],
+"단수 주어 뒤 현재 동사에는 s를 붙여요."
+],
+[
+"Learning about other cultures helps us understand people.",
+"다른 문화를 배우는 것은 사람들을 이해하는 데 도움이 됩니다.",
+"helps",
+[
+"help",
+"helping",
+"to help"
+],
+"동명사 주어는 단수 취급해 helps를 써요."
+],
+[
+"We should be polite to everyone.",
+"우리는 모두에게 예의 바르게 대해야 합니다.",
+"polite",
+[
+"politely",
+"politeness",
+"polites"
+],
+"be동사 뒤에는 형용사를 써요."
+],
+[
+"People celebrate the holiday by wearing costumes.",
+"사람들은 의상을 입고 그 휴일을 기념합니다.",
+"by",
+[
+"with",
+"for",
+"at"
+],
+"방법을 나타낼 때 by + -ing를 써요."
+]
+],
+"passage": "Gestures can have different meanings in different cultures. In some countries, a thumbs-up means 'good,' but in other places it can be rude. To avoid misunderstanding, it is important to learn about other cultures.",
+"r": [
+[
+"이 글의 요지는?",
+"몸짓의 의미는 문화마다 다를 수 있다",
+[
+"엄지척은 어디서나 좋은 뜻이다",
+"외국어는 배우기 어렵다",
+"축제는 문화마다 같다"
+],
+"Gestures can have different meanings in different cultures가 핵심이에요."
+],
+[
+"어떤 곳에서 엄지척이 될 수 있는 것은?",
+"무례한 표현",
+[
+"행운의 상징",
+"숫자 1",
+"인사"
+],
+"in other places it can be rude라고 했어요."
+],
+[
+"오해를 피하기 위해 중요한 것은?",
+"다른 문화에 대해 배우기",
+[
+"몸짓을 쓰지 않기",
+"크게 말하기",
+"번역기 사용하기"
+],
+"it is important to learn about other cultures라고 했어요."
+]
+]
+},
+"m3-1": {
+"v": [
+[
+"artificial intelligence",
+"인공지능"
+],
+[
+"device",
+"기기"
+],
+[
+"battery",
+"배터리"
+],
+[
+"solar",
+"태양의"
+],
+[
+"satellite",
+"인공위성"
+],
+[
+"planet",
+"행성"
+],
+[
+"gravity",
+"중력"
+],
+[
+"predict",
+"예측하다"
+],
+[
+"develop",
+"개발하다"
+],
+[
+"microscope",
+"현미경"
+],
+[
+"chemical",
+"화학 물질"
+],
+[
+"invent",
+"발명하다"
+]
+],
+"p": [
+[
+"The telephone was invented by Bell.",
+"전화기는 벨에 의해 발명되었습니다.",
+"invented",
+[
+"invent",
+"invents",
+"inventing"
+],
+"수동태는 be + 과거분사예요."
+],
+[
+"Scientists use microscopes to observe cells.",
+"과학자들은 세포를 관찰하기 위해 현미경을 사용합니다.",
+"to",
+[
+"for",
+"so",
+"with"
+],
+"목적을 나타낼 때 to + 동사원형을 써요."
+],
+[
+"This device is smaller than that one.",
+"이 기기는 저것보다 더 작습니다.",
+"smaller",
+[
+"small",
+"smallest",
+"more small"
+],
+"비교급 -er than을 써요."
+],
+[
+"Gravity is the force that pulls things down.",
+"중력은 물체를 아래로 끌어당기는 힘입니다.",
+"that",
+[
+"who",
+"what",
+"where"
+],
+"사물을 꾸미는 관계대명사는 that/which예요."
+],
+[
+"AI can predict the weather more accurately.",
+"인공지능은 날씨를 더 정확하게 예측할 수 있습니다.",
+"accurately",
+[
+"accurate",
+"accuracy",
+"accurater"
+],
+"동사를 꾸밀 때는 부사를 써요."
+],
+[
+"The satellite has been in space since 2015.",
+"그 인공위성은 2015년부터 우주에 있습니다.",
+"since",
+[
+"for",
+"from",
+"ago"
+],
+"시작 시점은 since로 나타내요."
+],
+[
+"The planet, which is far from the sun, is very cold.",
+"태양에서 멀리 떨어진 그 행성은 매우 춥습니다.",
+"which",
+[
+"who",
+"what",
+"where"
+],
+"사물에 대한 계속적 용법은 which예요."
+]
+],
+"passage": "Solar panels change sunlight into electricity. The energy can be stored in a battery and used at night. Scientists are developing new devices that collect more energy from the sun.",
+"r": [
+[
+"태양광 패널이 하는 일은?",
+"햇빛을 전기로 바꾼다",
+[
+"물을 데운다",
+"바람을 모은다",
+"날씨를 예측한다"
+],
+"change sunlight into electricity라고 했어요."
+],
+[
+"에너지를 저장하는 곳은?",
+"배터리",
+[
+"인공위성",
+"실험실",
+"현미경"
+],
+"stored in a battery라고 했어요."
+],
+[
+"과학자들이 개발하고 있는 것은?",
+"태양 에너지를 더 많이 모으는 기기",
+[
+"새로운 행성 지도",
+"더 작은 로봇",
+"화학 물질 측정기"
+],
+"devices that collect more energy from the sun이라고 했어요."
+]
+]
+},
+"m3-2": {
+"v": [
+[
+"vote",
+"투표하다"
+],
+[
+"law",
+"법"
+],
+[
+"right",
+"권리"
+],
+[
+"equal",
+"평등한"
+],
+[
+"poverty",
+"가난"
+],
+[
+"charity",
+"자선 단체"
+],
+[
+"elderly",
+"노인들"
+],
+[
+"neighborhood",
+"동네"
+],
+[
+"campaign",
+"캠페인"
+],
+[
+"participate",
+"참여하다"
+],
+[
+"solve",
+"해결하다"
+],
+[
+"kindness",
+"친절"
+]
+],
+"p": [
+[
+"Citizens have the right to vote.",
+"시민은 투표할 권리가 있습니다.",
+"to",
+[
+"for",
+"of",
+"on"
+],
+"the right to + 동사원형: ~할 권리예요."
+],
+[
+"Everyone should be treated equally.",
+"모든 사람은 평등하게 대우받아야 합니다.",
+"treated",
+[
+"treat",
+"treating",
+"treats"
+],
+"수동태 be + 과거분사예요."
+],
+[
+"I volunteered at a charity, which helps poor families.",
+"나는 자선 단체에서 봉사했는데, 그곳은 가난한 가족들을 돕습니다.",
+"which",
+[
+"who",
+"what",
+"where"
+],
+"사물에 대한 계속적 용법은 which를 써요."
+],
+[
+"If I were a mayor, I would build more parks.",
+"내가 시장이라면 공원을 더 지을 텐데.",
+"were",
+[
+"am",
+"is",
+"be"
+],
+"현재 사실과 반대되는 가정은 If I were ~를 써요."
+],
+[
+"Many people participated in the campaign.",
+"많은 사람들이 그 캠페인에 참여했습니다.",
+"in",
+[
+"at",
+"on",
+"to"
+],
+"~에 참여하다는 participate in이에요."
+],
+[
+"It is important to help the elderly.",
+"노인들을 돕는 것은 중요합니다.",
+"to",
+[
+"for",
+"of",
+"at"
+],
+"It is ~ to + 동사원형 구문이에요."
+],
+[
+"We need to solve the problem together.",
+"우리는 함께 그 문제를 해결해야 합니다.",
+"to",
+[
+"for",
+"of",
+"at"
+],
+"need 뒤에는 to + 동사원형이 와요."
+]
+],
+"passage": "Our neighborhood started a campaign to help the elderly. Volunteers visit them every Saturday and help with shopping. Some people donate food to a local charity. When people participate, the community becomes stronger.",
+"r": [
+[
+"캠페인의 목적은?",
+"노인들을 돕기",
+[
+"투표 참여 늘리기",
+"공원 짓기",
+"법 바꾸기"
+],
+"a campaign to help the elderly라고 했어요."
+],
+[
+"자원봉사자들이 방문하는 때는?",
+"매주 토요일",
+[
+"매일 아침",
+"한 달에 한 번",
+"방학 때만"
+],
+"every Saturday라고 했어요."
+],
+[
+"사람들이 참여하면 어떻게 되나요?",
+"공동체가 더 강해진다",
+[
+"시장이 바뀐다",
+"가게가 문을 닫는다",
+"세금이 줄어든다"
+],
+"the community becomes stronger라고 했어요."
+]
+]
+},
+"h1-1": {
+"v": [
+[
+"argue",
+"주장하다"
+],
+[
+"approach",
+"접근법"
+],
+[
+"attitude",
+"태도"
+],
+[
+"concept",
+"개념"
+],
+[
+"enhance",
+"향상시키다"
+],
+[
+"essential",
+"필수적인"
+],
+[
+"factor",
+"요인"
+],
+[
+"maintain",
+"유지하다"
+],
+[
+"overcome",
+"극복하다"
+],
+[
+"potential",
+"잠재력"
+],
+[
+"require",
+"요구하다"
+],
+[
+"motivate",
+"동기를 부여하다"
+],
+[
+"constant",
+"끊임없는"
+],
+[
+"specific",
+"구체적인"
+],
+[
+"gradually",
+"점차"
+],
+[
+"achieve",
+"성취하다"
+],
+[
+"aspect",
+"측면"
+],
+[
+"encourage",
+"장려하다"
+],
+[
+"involve",
+"포함하다"
+],
+[
+"rely",
+"의존하다"
+],
+[
+"distract",
+"산만하게 하다"
+],
+[
+"perceive",
+"인식하다"
+],
+[
+"priority",
+"우선순위"
+],
+[
+"crucial",
+"결정적인"
+]
+],
+"p": [
+[
+"Regular exercise helps students focus better.",
+"규칙적인 운동은 학생들이 더 잘 집중하도록 돕는다.",
+"focus",
+[
+"focusing",
+"focused",
+"to focusing"
+],
+"help + 목적어 + (to) 동사원형 구조예요."
+],
+[
+"The key to success is setting clear goals.",
+"성공의 열쇠는 분명한 목표를 세우는 것이다.",
+"is",
+[
+"are",
+"being",
+"have"
+],
+"주어 The key가 단수이므로 is를 써요."
+],
+[
+"Students who read widely tend to write well.",
+"폭넓게 읽는 학생들은 글을 잘 쓰는 경향이 있다.",
+"who",
+[
+"which",
+"what",
+"whom they"
+],
+"사람 선행사를 꾸미는 주격 관계대명사는 who예요."
+],
+[
+"What matters most is your attitude.",
+"가장 중요한 것은 너의 태도이다.",
+"What",
+[
+"That",
+"Which",
+"It"
+],
+"'~하는 것'을 뜻하는 관계대명사 What이에요."
+],
+[
+"Not only does practice improve skills, but it also builds confidence.",
+"연습은 기술을 향상시킬 뿐만 아니라 자신감도 길러 준다.",
+"does",
+[
+"do",
+"is",
+"has"
+],
+"부정어 Not only가 앞에 오면 조동사 도치가 일어나요."
+],
+[
+"The more you practice, the more confident you become.",
+"연습할수록 너는 더 자신감이 생긴다.",
+"more",
+[
+"most",
+"much",
+"many"
+],
+"the 비교급, the 비교급 구문이에요."
+],
+[
+"It is essential that every student have a chance to speak.",
+"모든 학생이 말할 기회를 갖는 것이 필수적이다.",
+"have",
+[
+"has",
+"having",
+"had"
+],
+"essential that 뒤에는 (should) 동사원형을 써요."
+],
+[
+"She spent hours analyzing the data.",
+"그녀는 자료를 분석하는 데 몇 시간을 보냈다.",
+"analyzing",
+[
+"analyze",
+"to analyze",
+"analyzed"
+],
+"spend + 시간 + -ing 구조예요."
+],
+[
+"The results were so clear that no one doubted them.",
+"결과가 너무 분명해서 아무도 의심하지 않았다.",
+"that",
+[
+"what",
+"which",
+"as"
+],
+"so ~ that 구문이에요."
+],
+[
+"Having finished the report, he took a short break.",
+"보고서를 끝낸 후 그는 잠시 쉬었다.",
+"Having",
+[
+"Have",
+"Had",
+"Being"
+],
+"주절보다 앞선 일은 완료 분사구문 Having p.p.로 나타내요."
+],
+[
+"Motivation is what keeps learners going.",
+"동기는 학습자들을 계속 나아가게 하는 것이다.",
+"what",
+[
+"that",
+"which",
+"it"
+],
+"선행사 없는 '~하는 것'은 what이에요."
+]
+],
+"passage": "Many students believe that studying for long hours is the best way to learn. However, research suggests that short, focused sessions with regular breaks are more effective. When learners take breaks, their brains have time to organize new information. Therefore, the quality of study time matters more than its length.",
+"r": [
+[
+"[주제] 글의 주제로 가장 적절한 것은?",
+"효과적인 공부 시간의 질",
+[
+"장시간 공부의 장점",
+"시험 불안 극복법",
+"뇌의 구조"
+],
+"공부 시간의 길이보다 질이 중요하다는 내용이에요."
+],
+[
+"[요지] 필자의 주장은?",
+"짧고 집중된 공부가 더 효과적이다",
+[
+"오래 공부할수록 좋다",
+"휴식은 시간 낭비다",
+"정보는 외우지 않아도 된다"
+],
+"short, focused sessions ... are more effective가 핵심이에요."
+],
+[
+"[세부] 휴식 시간에 뇌가 하는 일은?",
+"새 정보를 정리한다",
+[
+"정보를 모두 잊는다",
+"잠을 잔다",
+"다음 시험을 예측한다"
+],
+"brains have time to organize new information이라고 했어요."
+],
+[
+"[연결어] However의 역할은?",
+"앞의 통념과 반대되는 내용을 이끈다",
+[
+"예시를 든다",
+"결론을 요약한다",
+"원인을 나열한다"
+],
+"통념(long hours) 뒤에 반박이 이어져요."
+],
+[
+"[결론] Therefore 뒤 문장이 말하는 것은?",
+"공부 시간의 질이 길이보다 중요하다",
+[
+"휴식은 짧을수록 좋다",
+"공부는 밤에 해야 한다",
+"연구 결과는 믿기 어렵다"
+],
+"the quality of study time matters more than its length라고 했어요."
+],
+[
+"[어휘] 글의 effective와 뜻이 가장 가까운 것은?",
+"효과적인",
+[
+"비싼",
+"오래된",
+"위험한"
+],
+"effective는 '효과적인'이에요."
+]
+]
+},
+"h1-2": {
+"v": [
+[
+"authentic",
+"진짜의"
+],
+[
+"fabricate",
+"조작하다"
+],
+[
+"rumor",
+"소문"
+],
+[
+"spread",
+"퍼뜨리다"
+],
+[
+"headline",
+"기사 제목"
+],
+[
+"distort",
+"왜곡하다"
+],
+[
+"objective",
+"객관적인"
+],
+[
+"subjective",
+"주관적인"
+],
+[
+"opinion",
+"의견"
+],
+[
+"fact",
+"사실"
+],
+[
+"statistic",
+"통계"
+],
+[
+"expert",
+"전문가"
+],
+[
+"audience",
+"청중"
+],
+[
+"platform",
+"플랫폼"
+],
+[
+"anonymous",
+"익명의"
+],
+[
+"deceive",
+"속이다"
+],
+[
+"filter",
+"걸러내다"
+],
+[
+"exaggerate",
+"과장하다"
+],
+[
+"assess",
+"평가하다"
+],
+[
+"reference",
+"참고 자료"
+],
+[
+"misinformation",
+"잘못된 정보"
+],
+[
+"viral",
+"빠르게 퍼지는"
+],
+[
+"skeptical",
+"회의적인"
+],
+[
+"credibility",
+"신뢰성"
+],
+[
+"manipulate",
+"교묘히 다루다"
+],
+[
+"journalism",
+"언론"
+]
+],
+"p": [
+[
+"Not every source you find online is reliable.",
+"온라인에서 찾는 모든 출처가 신뢰할 만한 것은 아니다.",
+"is",
+[
+"are",
+"be",
+"being"
+],
+"every + 단수 명사는 단수 동사를 써요."
+],
+[
+"The article was written by an anonymous author.",
+"그 기사는 익명의 저자가 썼다.",
+"written",
+[
+"wrote",
+"writing",
+"write"
+],
+"수동태는 be + 과거분사예요."
+],
+[
+"Readers should check whether the claim is true.",
+"독자는 그 주장이 사실인지 확인해야 한다.",
+"whether",
+[
+"what",
+"which",
+"who"
+],
+"'~인지 아닌지'는 whether예요."
+],
+[
+"The rumor spread quickly, misleading many people.",
+"그 소문은 빠르게 퍼져 많은 사람을 오도했다.",
+"misleading",
+[
+"misled",
+"mislead",
+"to misleading"
+],
+"결과를 나타내는 분사구문 -ing예요."
+],
+[
+"It was the expert who verified the data.",
+"그 자료를 검증한 사람은 바로 그 전문가였다.",
+"who",
+[
+"which",
+"what",
+"whom"
+],
+"사람을 강조하는 It was ~ who 구문이에요."
+],
+[
+"Facts differ from opinions in that they can be checked.",
+"사실은 확인될 수 있다는 점에서 의견과 다르다.",
+"that",
+[
+"what",
+"which",
+"who"
+],
+"'~라는 점에서'는 in that이에요."
+],
+[
+"Had the editor checked the source, the error would not have spread.",
+"편집자가 출처를 확인했더라면 오류는 퍼지지 않았을 것이다.",
+"Had",
+[
+"Has",
+"Have",
+"Do"
+],
+"If가 생략되면 Had + 주어 + p.p.로 도치해요."
+],
+[
+"The headline was exaggerated to attract readers.",
+"그 기사 제목은 독자를 끌기 위해 과장되었다.",
+"exaggerated",
+[
+"exaggerating",
+"exaggerate",
+"exaggerates"
+],
+"제목이 과장된 것이므로 수동태 과거분사를 써요."
+],
+[
+"Hardly had the news been posted when it went viral.",
+"그 소식은 게시되자마자 빠르게 퍼졌다.",
+"had",
+[
+"has",
+"did",
+"was"
+],
+"Hardly가 문두에 오면 had + 주어 + p.p.로 도치해요."
+],
+[
+"Statistics can be used to deceive as well as to inform.",
+"통계는 정보를 주는 데뿐 아니라 속이는 데도 쓰일 수 있다.",
+"used",
+[
+"using",
+"use",
+"uses"
+],
+"can be + 과거분사 수동태예요."
+],
+[
+"The more skeptical readers are, the less easily they are fooled.",
+"독자가 회의적일수록 덜 쉽게 속는다.",
+"less",
+[
+"least",
+"fewer",
+"little"
+],
+"the 비교급, the 비교급 구문이에요."
+]
+],
+"passage": "A photo that went viral last year showed a shark swimming on a flooded highway. Millions of people shared it, but experts later found that the image had been fabricated. Before sharing a surprising post, readers should check the original source and look for reports from credible news organizations.",
+"r": [
+[
+"[내용 일치] 글의 내용과 일치하는 것은?",
+"그 사진은 조작된 것이었다",
+[
+"사진은 전문가가 찍었다",
+"상어는 실제로 고속도로에 있었다",
+"사진은 거의 공유되지 않았다"
+],
+"the image had been fabricated라고 했어요."
+],
+[
+"[요지] 필자가 독자에게 권하는 것은?",
+"공유 전에 원래 출처를 확인하라",
+[
+"놀라운 게시물은 바로 공유하라",
+"뉴스를 보지 마라",
+"사진만 믿어라"
+],
+"check the original source라고 했어요."
+],
+[
+"[세부] 사진에 나온 장면은?",
+"물에 잠긴 고속도로의 상어",
+[
+"바다의 고래",
+"하늘의 비행기",
+"도시의 홍수 대피"
+],
+"a shark swimming on a flooded highway라고 했어요."
+],
+[
+"[어휘] fabricated의 뜻은?",
+"조작된",
+[
+"복원된",
+"인쇄된",
+"확대된"
+],
+"fabricate는 '조작하다'예요."
+],
+[
+"[함축] went viral이 뜻하는 것은?",
+"빠르게 널리 퍼졌다",
+[
+"바이러스에 감염됐다",
+"삭제되었다",
+"상을 받았다"
+],
+"go viral은 온라인에서 빠르게 퍼진다는 뜻이에요."
+],
+[
+"[세부] 믿을 만한 정보를 찾는 곳으로 제시된 것은?",
+"신뢰할 만한 언론사의 보도",
+[
+"익명의 댓글",
+"친구의 메시지",
+"광고 게시물"
+],
+"reports from credible news organizations라고 했어요."
+]
+]
+},
+"h2-1": {
+"v": [
+[
+"collect",
+"수집하다"
+],
+[
+"surveillance",
+"감시"
+],
+[
+"personal",
+"개인의"
+],
+[
+"policy",
+"정책"
+],
+[
+"safeguard",
+"안전장치"
+],
+[
+"violate",
+"위반하다"
+],
+[
+"permission",
+"허락"
+],
+[
+"threat",
+"위협"
+],
+[
+"harm",
+"해"
+],
+[
+"fairness",
+"공정성"
+],
+[
+"discrimination",
+"차별"
+],
+[
+"algorithm",
+"알고리즘"
+],
+[
+"automate",
+"자동화하다"
+],
+[
+"oversight",
+"감독"
+],
+[
+"restrict",
+"제한하다"
+],
+[
+"guideline",
+"지침"
+],
+[
+"obligation",
+"의무"
+],
+[
+"misuse",
+"오용"
+],
+[
+"trust",
+"신뢰"
+],
+[
+"prevent",
+"예방하다"
+],
+[
+"impose",
+"부과하다"
+],
+[
+"compromise",
+"타협하다"
+],
+[
+"dilemma",
+"딜레마"
+],
+[
+"legitimate",
+"정당한"
+],
+[
+"disclose",
+"공개하다"
+]
+],
+"p": [
+[
+"Companies must ask permission before they collect personal data.",
+"기업은 개인 정보를 수집하기 전에 허락을 구해야 한다.",
+"before",
+[
+"after",
+"unless",
+"until"
+],
+"먼저 해야 할 일은 before 절로 나타내요."
+],
+[
+"The information that was collected was used without consent.",
+"수집된 정보는 동의 없이 사용되었다.",
+"was",
+[
+"were",
+"be",
+"been"
+],
+"선행사 information은 셀 수 없는 명사라 was를 써요."
+],
+[
+"Algorithms can be unfair if they are trained on biased data.",
+"알고리즘은 편향된 자료로 학습되면 불공정할 수 있다.",
+"trained",
+[
+"training",
+"train",
+"trains"
+],
+"수동태 are + 과거분사예요."
+],
+[
+"Without oversight, new technologies could be misused.",
+"감독이 없다면 새로운 기술은 오용될 수 있다.",
+"Without",
+[
+"With",
+"Despite",
+"Because"
+],
+"'~이 없다면'은 Without으로 나타내요."
+],
+[
+"It is the government that must regulate the use of surveillance cameras.",
+"감시 카메라 사용을 규제해야 하는 것은 바로 정부이다.",
+"that",
+[
+"what",
+"which",
+"where"
+],
+"It is ~ that 강조 구문이에요."
+],
+[
+"Users are rarely told how their information is used.",
+"사용자들은 자신의 정보가 어떻게 쓰이는지 거의 듣지 못한다.",
+"how",
+[
+"what",
+"which",
+"whose"
+],
+"방법을 묻는 간접의문문은 how로 시작해요."
+],
+[
+"If the rule had been clearer, fewer people would have broken it.",
+"규칙이 더 분명했더라면 더 적은 사람들이 그것을 어겼을 것이다.",
+"had",
+[
+"has",
+"have",
+"was"
+],
+"과거 사실 반대 가정은 If + had p.p.예요."
+],
+[
+"Protecting vulnerable groups is one of the main goals of the law.",
+"취약한 집단을 보호하는 것은 그 법의 주요 목표 중 하나이다.",
+"is",
+[
+"are",
+"be",
+"being"
+],
+"동명사 주어는 단수 취급해요."
+],
+[
+"Some argue that privacy should be sacrificed for safety, while others disagree.",
+"어떤 사람들은 안전을 위해 사생활이 희생되어야 한다고 주장하지만, 다른 사람들은 반대한다.",
+"while",
+[
+"because",
+"so",
+"unless"
+],
+"대조를 나타낼 때 while을 써요."
+],
+[
+"The policy requires that each company disclose how it uses data.",
+"그 정책은 각 기업이 자료를 어떻게 쓰는지 공개할 것을 요구한다.",
+"disclose",
+[
+"discloses",
+"disclosed",
+"disclosing"
+],
+"require that 뒤에는 (should) 동사원형을 써요."
+],
+[
+"Little did they know that their messages were being recorded.",
+"그들은 자신의 메시지가 녹음되고 있다는 것을 전혀 몰랐다.",
+"did",
+[
+"do",
+"were",
+"had"
+],
+"부정어 Little이 문두에 오면 did + 주어 + 동사원형으로 도치해요."
+]
+],
+"passage": "Smart devices make our lives convenient, but they also collect large amounts of personal information. Many users accept privacy policies without reading them. As a result, they may not know who can access their data. Experts argue that companies should explain their policies in simple language so that users can make informed choices.",
+"r": [
+[
+"[세부] 사용자들이 정책을 읽지 않고 하는 일은?",
+"정책에 동의한다",
+[
+"정책을 거절한다",
+"기기를 판매한다",
+"자료를 삭제한다"
+],
+"accept privacy policies without reading them이라고 했어요."
+],
+[
+"[결과] As a result 뒤의 내용은?",
+"누가 자료에 접근하는지 모를 수 있다",
+[
+"기기가 더 싸진다",
+"정보가 안전해진다",
+"정책이 짧아진다"
+],
+"may not know who can access their data라고 했어요."
+],
+[
+"[요지] 전문가들의 주장은?",
+"기업은 정책을 쉬운 말로 설명해야 한다",
+[
+"스마트 기기를 쓰지 말아야 한다",
+"사용자가 법을 만들어야 한다",
+"정보 수집을 늘려야 한다"
+],
+"explain their policies in simple language라고 했어요."
+],
+[
+"[어휘] informed choices의 뜻에 가까운 것은?",
+"충분히 알고 내리는 선택",
+[
+"강요된 선택",
+"무작위 선택",
+"빠른 선택"
+],
+"informed는 '정보를 알고 있는'이에요."
+],
+[
+"[세부] 스마트 기기의 두 가지 면으로 제시된 것은?",
+"편리함과 개인 정보 수집",
+[
+"가격과 디자인",
+"속도와 크기",
+"재미와 교육"
+],
+"convenient, but they also collect ... personal information이라고 했어요."
+],
+[
+"[연결] so that의 의미는?",
+"~하도록",
+[
+"~에도 불구하고",
+"~하자마자",
+"~ 대신에"
+],
+"so that은 목적을 나타내요."
+]
+]
+},
+"h2-2": {
+"v": [
+[
+"market",
+"시장"
+],
+[
+"price",
+"가격"
+],
+[
+"cost",
+"비용"
+],
+[
+"profit",
+"이윤"
+],
+[
+"budget",
+"예산"
+],
+[
+"income",
+"소득"
+],
+[
+"trade",
+"무역"
+],
+[
+"export",
+"수출하다"
+],
+[
+"import",
+"수입하다"
+],
+[
+"inflation",
+"물가 상승"
+],
+[
+"consumer",
+"소비자"
+],
+[
+"producer",
+"생산자"
+],
+[
+"competition",
+"경쟁"
+],
+[
+"industry",
+"산업"
+],
+[
+"labor",
+"노동"
+],
+[
+"renewable",
+"재생 가능한"
+],
+[
+"crisis",
+"위기"
+],
+[
+"decline",
+"감소하다"
+],
+[
+"expand",
+"확대하다"
+],
+[
+"estimate",
+"추정하다"
+],
+[
+"distribute",
+"분배하다"
+],
+[
+"economy",
+"경제"
+],
+[
+"surplus",
+"잉여"
+],
+[
+"tax",
+"세금"
+]
+],
+"p": [
+[
+"When prices rise, consumers tend to buy less.",
+"가격이 오르면 소비자들은 덜 사는 경향이 있다.",
+"tend",
+[
+"tends",
+"tending",
+"tended to"
+],
+"복수 주어 consumers 뒤에는 tend를 써요."
+],
+[
+"The factory, which was built in 1990, has closed.",
+"1990년에 지어진 그 공장은 문을 닫았다.",
+"which",
+[
+"that",
+"what",
+"where"
+],
+"콤마 뒤 계속적 용법에는 that을 쓸 수 없어요."
+],
+[
+"Renewable energy is becoming cheaper than fossil fuels.",
+"재생 가능 에너지는 화석 연료보다 더 저렴해지고 있다.",
+"cheaper",
+[
+"cheap",
+"cheapest",
+"more cheap"
+],
+"비교급 -er than을 써요."
+],
+[
+"Neither the producers nor the government expected the crisis.",
+"생산자들도 정부도 그 위기를 예상하지 못했다.",
+"nor",
+[
+"or",
+"and",
+"but"
+],
+"neither A nor B 구문이에요."
+],
+[
+"Taxes are used to fund public services.",
+"세금은 공공 서비스에 자금을 대는 데 쓰인다.",
+"used",
+[
+"using",
+"use",
+"uses"
+],
+"be used to + 동사원형: ~하는 데 쓰이다."
+],
+[
+"The company expanded so quickly that it ran out of workers.",
+"그 회사는 너무 빨리 확장해서 일손이 부족해졌다.",
+"that",
+[
+"what",
+"which",
+"as"
+],
+"so ~ that 구문이에요."
+],
+[
+"Exports have increased since the trade agreement was signed.",
+"무역 협정이 체결된 이후 수출이 증가해 왔다.",
+"since",
+[
+"for",
+"during",
+"ago"
+],
+"시작 시점은 since로 나타내요."
+],
+[
+"It is estimated that labor costs will rise next year.",
+"내년에 인건비가 오를 것으로 추정된다.",
+"estimated",
+[
+"estimating",
+"estimate",
+"estimates"
+],
+"It is + p.p. + that 가주어 구문이에요."
+],
+[
+"Competition encourages companies to improve their products.",
+"경쟁은 기업이 제품을 개선하도록 장려한다.",
+"to",
+[
+"for",
+"on",
+"in"
+],
+"encourage + 목적어 + to + 동사원형이에요."
+],
+[
+"Had the budget been larger, the project would have succeeded.",
+"예산이 더 많았더라면 그 프로젝트는 성공했을 것이다.",
+"Had",
+[
+"Has",
+"Have",
+"Did"
+],
+"If 생략 가정법 과거완료 도치예요."
+],
+[
+"The surplus was distributed among the workers.",
+"잉여금은 노동자들에게 분배되었다.",
+"among",
+[
+"along",
+"across",
+"into"
+],
+"셋 이상 사이의 분배는 among을 써요."
+]
+],
+"passage": "A small town had too much food left in its markets every week. At the same time, many families could not afford enough to eat. The town decided to collect the surplus food and distribute it through local charities. As a result, waste declined and fewer people went hungry.",
+"r": [
+[
+"[순서] 글의 흐름으로 올바른 것은?",
+"문제 제시 → 해결책 → 결과",
+[
+"결과 → 문제 → 해결책",
+"해결책 → 결과 → 문제",
+"결과 → 해결책 → 문제"
+],
+"남는 음식과 굶는 가정(문제), 잉여 식량 분배(해결), 결과 순이에요."
+],
+[
+"[세부] 마을의 문제는?",
+"음식이 남는데 굶는 가정이 있다",
+[
+"시장에 음식이 부족했다",
+"자선 단체가 없었다",
+"가격이 너무 낮았다"
+],
+"too much food left / could not afford enough라고 했어요."
+],
+[
+"[세부] 잉여 식량을 나눈 방법은?",
+"지역 자선 단체를 통해",
+[
+"시장에서 팔아서",
+"외국에 수출해서",
+"학교 급식으로"
+],
+"distribute it through local charities라고 했어요."
+],
+[
+"[결과] As a result 뒤 내용은?",
+"낭비가 줄고 굶는 사람이 줄었다",
+[
+"물가가 올랐다",
+"시장이 문을 닫았다",
+"마을 인구가 늘었다"
+],
+"waste declined and fewer people went hungry라고 했어요."
+],
+[
+"[문장 삽입] At the same time이 이끄는 문장의 역할은?",
+"같은 시기의 다른 문제를 덧붙인다",
+[
+"반대 의견을 제시한다",
+"결론을 내린다",
+"예시를 마무리한다"
+],
+"남는 음식과 동시에 굶는 가정이 있다는 문제를 더해요."
+],
+[
+"[어휘] surplus의 뜻은?",
+"잉여",
+[
+"부족",
+"가격",
+"세금"
+],
+"surplus는 '남는 것, 잉여'예요."
+]
+]
+},
+"h3-1": {
+"v": [
+[
+"participant",
+"참가자"
+],
+[
+"survey",
+"설문 조사"
+],
+[
+"phenomenon",
+"현상"
+],
+[
+"trend",
+"추세"
+],
+[
+"anticipate",
+"예상하다"
+],
+[
+"confirm",
+"확인하다"
+],
+[
+"contradict",
+"모순되다"
+],
+[
+"deduce",
+"연역하다"
+],
+[
+"generalize",
+"일반화하다"
+],
+[
+"outcome",
+"성과"
+],
+[
+"method",
+"방법"
+],
+[
+"random",
+"무작위의"
+],
+[
+"distribution",
+"분포"
+],
+[
+"average",
+"평균"
+],
+[
+"ratio",
+"비율"
+],
+[
+"evident",
+"분명한"
+],
+[
+"speculate",
+"추측하다"
+],
+[
+"replicate",
+"재현하다"
+],
+[
+"control group",
+"통제 집단"
+],
+[
+"quantify",
+"수치화하다"
+],
+[
+"probability",
+"확률"
+],
+[
+"premise",
+"전제"
+],
+[
+"flaw",
+"결함"
+],
+[
+"valid",
+"타당한"
+],
+[
+"estimate",
+"어림하다"
+],
+[
+"consensus",
+"합의"
+]
+],
+"p": [
+[
+"The participants, most of whom were students, completed the survey.",
+"참가자들은 대부분 학생이었는데, 설문 조사를 완료했다.",
+"whom",
+[
+"who",
+"them",
+"which"
+],
+"전치사 of 뒤 사람 관계대명사는 whom이에요."
+],
+[
+"The result is consistent with what the theory predicts.",
+"그 결과는 이론이 예측하는 것과 일치한다.",
+"what",
+[
+"that",
+"which",
+"whose"
+],
+"선행사 없는 '~하는 것'은 what이에요."
+],
+[
+"Had the sample been larger, the findings would be more reliable.",
+"표본이 더 컸더라면 결과가 더 믿을 만할 것이다.",
+"Had",
+[
+"Has",
+"Have",
+"Were"
+],
+"If 생략 도치: Had + 주어 + p.p.예요."
+],
+[
+"The data suggest that the trend will continue.",
+"그 자료는 추세가 계속될 것임을 시사한다.",
+"continue",
+[
+"continues to",
+"continuing",
+"be continued"
+],
+"will 뒤에는 동사원형이 와요."
+],
+[
+"It is unclear whether the effect was caused by chance.",
+"그 효과가 우연에 의해 일어났는지는 불분명하다.",
+"whether",
+[
+"what",
+"which",
+"whose"
+],
+"'~인지 아닌지'는 whether예요."
+],
+[
+"No sooner had the study been published than it was criticized.",
+"그 연구는 발표되자마자 비판을 받았다.",
+"than",
+[
+"when",
+"then",
+"as"
+],
+"No sooner ~ than 구문이에요."
+],
+[
+"The researchers concluded that sleep affects memory.",
+"연구자들은 수면이 기억에 영향을 미친다고 결론지었다.",
+"affects",
+[
+"effects",
+"affect",
+"affecting"
+],
+"주어 sleep(단수) 뒤 현재 동사에 s를 붙여요. affect는 '영향을 미치다'예요."
+],
+[
+"Only after the experiment was replicated did scientists accept the result.",
+"실험이 재현된 후에야 과학자들은 그 결과를 받아들였다.",
+"did",
+[
+"do",
+"were",
+"had"
+],
+"Only after ~가 문두에 오면 주절이 도치돼요."
+],
+[
+"A correlation between two variables does not prove that one causes the other.",
+"두 변수 사이의 상관관계가 하나가 다른 하나를 일으킨다는 것을 증명하지는 않는다.",
+"does",
+[
+"do",
+"is",
+"are"
+],
+"주어 A correlation이 단수이므로 does를 써요."
+],
+[
+"The survey, conducted in 2020, included 500 participants.",
+"2020년에 실시된 그 설문 조사에는 500명의 참가자가 포함되었다.",
+"conducted",
+[
+"conducting",
+"conduct",
+"conducts"
+],
+"설문이 실시된 것이므로 과거분사로 꾸며요."
+],
+[
+"The premise is so flawed that the conclusion cannot be valid.",
+"전제에 결함이 너무 많아서 결론이 타당할 수 없다.",
+"that",
+[
+"what",
+"which",
+"as"
+],
+"so ~ that 구문이에요."
+]
+],
+"passage": "Researchers noticed that people who drink more coffee tend to live longer. Some news articles concluded that coffee causes long life. However, coffee drinkers may also differ in income, exercise, or diet. Without controlling these variables, we cannot say that coffee itself is the cause.",
+"r": [
+[
+"[요지] 필자의 핵심 주장은?",
+"상관관계만으로 인과관계를 단정할 수 없다",
+[
+"커피는 수명을 늘린다",
+"운동이 가장 중요하다",
+"뉴스 기사는 모두 틀렸다"
+],
+"Without controlling these variables, we cannot say ... the cause가 핵심이에요."
+],
+[
+"[세부] 연구자들이 발견한 것은?",
+"커피를 많이 마시는 사람이 더 오래 사는 경향",
+[
+"커피가 수면을 방해한다",
+"커피는 소득을 높인다",
+"커피를 마시지 않으면 병에 걸린다"
+],
+"people who drink more coffee tend to live longer라고 했어요."
+],
+[
+"[추론] 일부 기사의 문제점은?",
+"다른 변수를 고려하지 않았다",
+[
+"표본이 너무 컸다",
+"커피 가격을 무시했다",
+"연구를 인용하지 않았다"
+],
+"소득·운동·식단 같은 변수를 통제하지 않았어요."
+],
+[
+"[세부] 글에서 변수의 예로 들지 않은 것은?",
+"커피 잔의 색",
+[
+"소득",
+"운동",
+"식단"
+],
+"income, exercise, or diet가 변수 예시예요."
+],
+[
+"[연결] However의 역할은?",
+"앞의 결론에 대한 문제를 제기한다",
+[
+"예시를 추가한다",
+"같은 의견을 강조한다",
+"글을 요약한다"
+],
+"기사의 결론을 반박하는 내용이 이어져요."
+],
+[
+"[빈칸] coffee itself is the cause에서 cause의 뜻은?",
+"원인",
+[
+"결과",
+"표본",
+"가설"
+],
+"cause는 '원인'이에요."
+]
+]
+},
+"h3-2": {
+"v": [
+[
+"assert",
+"단언하다"
+],
+[
+"refute",
+"논박하다"
+],
+[
+"objection",
+"이의"
+],
+[
+"logic",
+"논리"
+],
+[
+"fallacy",
+"오류"
+],
+[
+"nuance",
+"미묘한 차이"
+],
+[
+"persuasive",
+"설득력 있는"
+],
+[
+"rhetoric",
+"수사법"
+],
+[
+"contrast",
+"대조"
+],
+[
+"criterion",
+"기준"
+],
+[
+"compelling",
+"강력한"
+],
+[
+"dismiss",
+"일축하다"
+],
+[
+"elaborate",
+"상세히 설명하다"
+],
+[
+"framework",
+"틀"
+],
+[
+"generalization",
+"일반화"
+],
+[
+"irrelevant",
+"무관한"
+],
+[
+"paradox",
+"역설"
+],
+[
+"reasoning",
+"추론 과정"
+],
+[
+"stance",
+"입장"
+],
+[
+"subtle",
+"미묘한"
+],
+[
+"trade-off",
+"상충 관계"
+],
+[
+"underlying",
+"근본적인"
+],
+[
+"concise",
+"간결한"
+],
+[
+"redundant",
+"불필요한"
+]
+],
+"p": [
+[
+"Although the author concedes some points, she maintains her thesis.",
+"필자는 몇 가지 점을 인정하지만 자신의 논지를 유지한다.",
+"Although",
+[
+"Because",
+"Despite",
+"Unless"
+],
+"양보의 접속사 Although예요. Despite 뒤에는 명사가 와요."
+],
+[
+"The argument would be stronger if it were supported by data.",
+"그 논증은 자료로 뒷받침된다면 더 강력할 것이다.",
+"were",
+[
+"is",
+"be",
+"been"
+],
+"현재 사실 반대 가정은 if + were예요."
+],
+[
+"What the critics overlook is the long-term benefit.",
+"비평가들이 간과하는 것은 장기적인 이익이다.",
+"What",
+[
+"That",
+"Which",
+"It"
+],
+"'~하는 것'은 What이에요."
+],
+[
+"The essay, whose conclusion is weak, fails to persuade readers.",
+"결론이 약한 그 에세이는 독자를 설득하지 못한다.",
+"whose",
+[
+"which",
+"who",
+"that"
+],
+"소유를 나타내는 관계대명사는 whose예요."
+],
+[
+"Rarely does a single study settle a debate.",
+"단 하나의 연구가 논쟁을 끝내는 경우는 드물다.",
+"does",
+[
+"do",
+"is",
+"has"
+],
+"부정어 Rarely 문두 → 조동사 도치예요."
+],
+[
+"The writer dismisses the objection without explaining why.",
+"필자는 이유를 설명하지 않고 그 이의를 일축한다.",
+"explaining",
+[
+"explain",
+"explained",
+"to explain"
+],
+"전치사 without 뒤에는 동명사가 와요."
+],
+[
+"It is not the length but the logic that makes an essay persuasive.",
+"에세이를 설득력 있게 만드는 것은 길이가 아니라 논리이다.",
+"that",
+[
+"what",
+"which",
+"who"
+],
+"It is ~ that 강조 구문이에요."
+],
+[
+"Readers should evaluate an argument rather than accept it blindly.",
+"독자는 논증을 맹목적으로 받아들이기보다 평가해야 한다.",
+"rather",
+[
+"instead",
+"better",
+"more"
+],
+"A rather than B: B하기보다 A하다."
+],
+[
+"The more concise the summary is, the easier it is to understand.",
+"요약이 간결할수록 이해하기 더 쉽다.",
+"easier",
+[
+"easy",
+"easiest",
+"more easy"
+],
+"the 비교급, the 비교급 구문이에요."
+],
+[
+"Having considered both sides, the author reaches a balanced conclusion.",
+"양쪽을 모두 고려한 후 필자는 균형 잡힌 결론에 이른다.",
+"Having",
+[
+"Have",
+"Had",
+"To have"
+],
+"완료 분사구문 Having p.p.예요."
+],
+[
+"The counterargument is irrelevant to the main issue.",
+"그 반론은 핵심 쟁점과 무관하다.",
+"to",
+[
+"for",
+"with",
+"at"
+],
+"be irrelevant to: ~와 무관하다."
+]
+],
+"passage": "Some people argue that homework should be banned because it causes stress. The author concedes that too much homework can be harmful. However, she asserts that a small amount of meaningful homework helps students practice skills and build responsibility. She concludes that schools should limit, not eliminate, homework.",
+"r": [
+[
+"[요약] 글의 내용을 가장 잘 요약한 것은?",
+"숙제는 없애기보다 양을 줄여야 한다",
+[
+"숙제는 완전히 금지해야 한다",
+"숙제는 많을수록 좋다",
+"숙제는 스트레스와 무관하다"
+],
+"limit, not eliminate가 결론이에요."
+],
+[
+"[논증] 필자가 인정하는 점은?",
+"숙제가 너무 많으면 해로울 수 있다",
+[
+"숙제는 항상 쓸모없다",
+"학생들은 책임감이 없다",
+"학교는 숙제를 내지 말아야 한다"
+],
+"concedes that too much homework can be harmful이라고 했어요."
+],
+[
+"[세부] 의미 있는 숙제의 장점으로 제시된 것은?",
+"기술 연습과 책임감 형성",
+[
+"성적 자동 상승",
+"놀이 시간 증가",
+"교사의 업무 감소"
+],
+"practice skills and build responsibility라고 했어요."
+],
+[
+"[관점] 필자와 다른 입장은?",
+"숙제를 금지해야 한다",
+[
+"숙제를 제한해야 한다",
+"숙제를 늘려야 한다",
+"숙제를 의미 있게 바꿔야 한다"
+],
+"Some people argue that homework should be banned가 반대 입장이에요."
+],
+[
+"[연결] However의 역할은?",
+"양보 뒤 필자의 주장을 이끈다",
+[
+"예시를 나열한다",
+"반론을 강화한다",
+"글을 끝맺는다"
+],
+"concede 뒤 However로 자신의 주장을 펼쳐요."
+],
+[
+"[어휘] eliminate의 뜻은?",
+"없애다",
+[
+"늘리다",
+"평가하다",
+"제한하다"
+],
+"eliminate는 '없애다, 제거하다'예요."
+]
+]
+}
+}
