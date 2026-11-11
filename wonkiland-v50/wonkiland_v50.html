@@ -7118,4 +7118,11 @@ const previous=window.wonkiGrade21Portrait;window.wonkiGrade21Portrait=function(
  document.addEventListener('wonki-main-map-ready',all);
 })();
 </script>
+<!-- 50차 업데이트 카드: 최신 카드 한 장만 표시 -->
+<style id="wk50-update-card-style">#wonki48Update,#wonki53Update{display:none!important}</style>
+<aside id="wonki50Update" role="status" style="position:fixed;right:16px;bottom:18px;z-index:99999;max-width:min(380px,calc(100vw - 32px));max-height:calc(100dvh - 36px);overflow:auto;padding:16px 18px;border:3px solid #f3c75d;border-radius:18px;background:linear-gradient(145deg,#fff9e9,#eaf6ff);box-shadow:0 10px 30px #0004;color:#243e69;font:600 14px/1.65 system-ui,sans-serif">
+<button type="button" onclick="this.closest('aside').remove()" aria-label="업데이트 안내 닫기" style="float:right;border:0;border-radius:50%;background:#d84949;color:white;font-size:18px;width:29px;height:29px;cursor:pointer">×</button>
+<strong style="font-size:19px">🎡 원기랜드 50차 업데이트</strong><div>🏗️ 건물을 설치하면 지도에 바로 표시<br>✋ 건물을 누르면 축소·확대·이동·삭제<br>🧹 노란 테두리·흐린 부분 제거<br>🗺️ 확장 지도를 원본 지도와 자연스럽게 연결<br>🏰 건물 종류 1,000종 (색 테마 10가지)<br>💬 방명록 버튼을 방문자 수 옆에 고정</div>
+</aside>
+<script>setTimeout(()=>document.getElementById('wonki50Update')?.remove(),15000)</script>
 
