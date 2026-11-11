@@ -1,0 +1,65 @@
+<!-- 70차: 방문 기록 — 일반회원은 닉네임·방문 시각, 방문자는 들어온 곳·기기 숫자만 -->
+<style id="wk70-style">
+#wk70Visits{margin:10px 0;padding:10px;border-radius:14px;background:#fff8ec;border:2px solid #f3cf8e}
+#wk70Visits h3{margin:0 0 6px;font-size:16px;color:#6b3a00}
+#wk70Visits ol{list-style:none;margin:0;padding:0;max-height:260px;overflow:auto}
+#wk70Visits li{display:flex;justify-content:space-between;gap:8px;padding:6px 4px;border-bottom:1px dashed #f0d9b0;font:600 13px/1.4 system-ui;color:#3a2a10}
+#wk70Visits li b{font-size:14px}
+#wk70Visits li small{color:#7a6a50;white-space:nowrap;text-align:right}
+#wk70Visits .chips{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
+#wk70Visits .chips span{background:#fff;border:1px solid #f0d9b0;border-radius:999px;padding:3px 9px;font:700 12px system-ui;color:#5a3a00}
+#wk70Visits .note{font:12px system-ui;color:#7a6a50;margin-top:4px}
+.wk70-notice{margin:8px 0 0;padding:8px 10px;border-radius:10px;background:#fff8ec;border:1px solid #f3cf8e;color:#6b3a00;font:700 12px/1.5 system-ui;text-align:left}
+</style>
+<script id="wk70-visit-log">
+(function(){
+ 'use strict';
+ var ENDPOINT='https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec';
+ var NOTICE='🔔 로그인하면 주인장에게 방문 기록(닉네임·방문 시각)이 보여요.';
+ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+ function post1(action,extra){var nonce='wk70_'+Date.now()+'_'+Math.random().toString(36).slice(2);return new Promise(function(resolve,reject){
+  var f=document.createElement('iframe');f.name='wk70_'+nonce;f.style.cssText='display:none;width:0;height:0;border:0';
+  var fm=document.createElement('form');fm.method='POST';fm.action=ENDPOINT;fm.target=f.name;fm.style.display='none';
+  var ta=document.createElement('textarea');ta.name='payload';ta.value=JSON.stringify(Object.assign({action:action,_wonkiNonce:nonce},extra||{}));fm.appendChild(ta);
+  var done=false;function fin(fn,v){if(done)return;done=true;clearTimeout(tm);window.removeEventListener('message',on);fm.remove();f.remove();fn(v);}
+  function on(e){var d=e.data;if(!d||d.type!=='wonki-cloud-response'||d.nonce!==nonce)return;var v=d.payload||{};v.success?fin(resolve,v):fin(reject,new Error(v.message||'서버 요청 실패'));}
+  var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},20000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
+ function session(){try{return JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');}catch(_){return null;}}
+ function device(){var ua=navigator.userAgent||'';if(/iPad|Tablet/i.test(ua)||(/Android/i.test(ua)&&!/Mobile/i.test(ua))||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1))return '태블릿';return /Mobi|Android|iPhone|iPod/i.test(ua)?'휴대폰':'컴퓨터';}
+ function source(){try{return sessionStorage.getItem('wk70_src')||'직접 입력·즐겨찾기';}catch(_){return '직접 입력·즐겨찾기';}}
+ function ownerDevice(){try{return localStorage.getItem('wk65_admin_device')==='1';}catch(_){return false;}}
+ /* 방문 알리기: 한 번 연 화면(탭)마다 한 번, 로그인하면 회원으로 한 번 더 */
+ function send(){if(!/^https:$/.test(location.protocol))return;var s=session(),tok=s&&s.token||'';
+  if(!tok&&ownerDevice())return; /* 주인장 기기의 방문은 세지 않음 */
+  var key='wk70_sent_'+(tok?'m':'g');try{if(sessionStorage.getItem(key)===(tok||'1'))return;sessionStorage.setItem(key,tok||'1');}catch(_){}
+  var vid='';try{vid=localStorage.getItem('wonkiLand_daily_visitor_id_v1')||'';}catch(_){}
+  post1('visit_log',{sessionToken:tok,source:source(),device:device(),visitorId:vid}).catch(function(e){console.warn('WonkiLand: 방문 기록 실패',e&&e.message);});}
+ /* 로그인 창·가입 화면에 안내 */
+ function notice(){var btn=document.getElementById('wkgaLogin');if(btn&&!document.getElementById('wk70LoginNote')){var n=document.createElement('p');n.id='wk70LoginNote';n.className='wk70-notice';n.textContent=NOTICE;(btn.parentElement||btn).after(n);}
+  var bf=document.getElementById('wk66Benefit');if(bf&&!document.getElementById('wk70JoinNote')){var m=document.createElement('div');m.id='wk70JoinNote';m.className='wk70-notice';m.textContent=NOTICE;bf.appendChild(m);}
+  if(document.getElementById('wk70LoginNote')&&document.getElementById('wk70JoinNote'))try{nt.disconnect();}catch(_){}}
+ /* 관리자 메뉴: 최근 방문한 회원 · 들어온 곳 */
+ function ago(t){var d=new Date(t),s=(Date.now()-d)/1000;if(s<60)return '방금';if(s<3600)return Math.floor(s/60)+'분 전';if(s<86400)return Math.floor(s/3600)+'시간 전';if(s<86400*7)return Math.floor(s/86400)+'일 전';return d.toLocaleDateString('ko-KR');}
+ function chips(o){var k=Object.keys(o||{}).sort(function(a,b){return o[b]-o[a];});return k.length?'<div class="chips">'+k.map(function(x){return '<span>'+esc(x)+' '+o[x]+'</span>';}).join('')+'</div>':'<div class="note">아직 기록이 없어요.</div>';}
+ function paint(el,r){var m=r.members||[];
+  var h='<h3>👀 최근 방문한 회원</h3>';
+  if(!m.length)h+='<div class="note">아직 로그인해서 들어온 회원이 없어요.</div>';
+  else h+='<ol>'+m.slice(0,50).map(function(v){return '<li><span><b>'+esc(v.nickname||v.name||'회원')+'</b>'+(v.name&&v.nickname?' · '+esc(v.name):'')+'</span><small>'+esc(ago(v.time))+'<br>'+esc(v.source)+' · '+esc(v.device)+'</small></li>';}).join('')+'</ol>';
+  h+='<h3 style="margin-top:10px">📍 들어온 곳 (최근 30일 · '+Number(r.total30||0)+'번)</h3>'+chips(r.sources)+'<h3 style="margin-top:6px">📱 기기</h3>'+chips(r.devices);
+  h+='<div class="note">회원이 아닌 방문자는 누군지 알 수 없고, 들어온 곳·기기 숫자만 셉니다. 같은 회원은 30분에 한 번만 기록됩니다.</div>';
+  el.innerHTML=h;}
+ function cachedToken(){try{var t=sessionStorage.getItem('wk64_admin_token');if(!t)return '';var e=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000;return e-Date.now()>300000?t:'';}catch(_){return '';}}
+ async function load(el,login){var tok=cachedToken();
+  if(!tok&&login){try{tok=await window.wonkiLandAdminLogin();}catch(e){el.querySelector('.note').textContent='관리자 Google 로그인 실패: '+(e&&e.message||e);return;}}
+  if(!tok){el.innerHTML='<h3>👀 최근 방문한 회원</h3><button type="button" data-wk70>👀 방문 기록 보기 (관리자 Google 로그인)</button><div class="note">로그인한 일반회원의 닉네임·방문 시각과, 들어온 곳(카톡·인스타 등)을 보여 줍니다.</div>';el.querySelector('[data-wk70]').onclick=function(){load(el,true);};return;}
+  el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">불러오는 중…</div>';
+  try{paint(el,await post1('admin_visit_log',{idToken:tok}));}
+  catch(e){el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">'+(/지원하지 않는/.test(String(e.message))?'서버 업데이트(70차 Code.gs) 후에 보입니다.':'불러오지 못했어요: '+esc(e.message))+'</div>';}}
+ function adminMenu(box){if(box.querySelector('#wk70Visits'))return;var el=document.createElement('div');el.id='wk70Visits';var st=box.querySelector('#wk65Stats');if(st)st.after(el);else box.appendChild(el);load(el,false);}
+ window.WonkiVisitLog70={adminMenu:adminMenu,send:send,source:source,device:device};
+ window.addEventListener('wonki-member-changed37',function(){setTimeout(send,300);});
+ var nt=new MutationObserver(function(){notice();});
+ function start(){notice();try{nt.observe(document.body,{childList:true,subtree:true});}catch(_){}setTimeout(send,2500);}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
+})();
+</script>

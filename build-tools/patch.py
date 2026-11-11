@@ -359,6 +359,8 @@ _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='
 final = final + '\n' + _pv64
 _pr66=open(sys.argv[2].replace('world_final.webp','park-roles.html'),encoding='utf-8').read()
 final = final + '\n' + _pr66
+_vl70=open(sys.argv[2].replace('world_final.webp','visit-log.html'),encoding='utf-8').read()
+final = final + '\n' + _vl70
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

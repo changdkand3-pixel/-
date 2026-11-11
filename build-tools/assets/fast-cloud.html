@@ -39,3 +39,9 @@
  };
 })();
 </script>
+<script id="wk70-visit-source">
+/* 70차: 어디서 들어왔는지(카톡·인스타 등)를 첫 화면에서 기억. 페이지가 스스로 새로 고쳐도 유지되게 세션에 저장 */
+(function(){try{if(sessionStorage.getItem('wk70_src'))return;var ua=navigator.userAgent||'',r='';try{r=document.referrer?new URL(document.referrer).hostname:'';}catch(_){}
+ var s=/KAKAOTALK/i.test(ua)||/kakao/i.test(r)?'카카오톡':/Instagram/i.test(ua)||/instagram/i.test(r)?'인스타그램':/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)||/facebook|(^|\.)fb\.(com|me)$/i.test(r)?'페이스북':/NAVER\(|NAVER/i.test(ua)||/naver/i.test(r)?'네이버':/BAND\//i.test(ua)||/band\.us/i.test(r)?'밴드':/google\./i.test(r)?'구글':/daum\.|kakao\.com/i.test(r)?'다음':(r&&r!==location.hostname?'기타 링크':'직접 입력·즐겨찾기');
+ sessionStorage.setItem('wk70_src',s);}catch(_){}})();
+</script>

@@ -173,6 +173,7 @@
   loadStats(st,false);
   var sv=document.createElement('div');sv.id='wk68Server';sv.className='wk68-server';sv.textContent='🖥 회원 서버 상태 확인 중…';st.before(sv);
   checkServer().then(function(r){sv.className='wk68-server '+(r.ok?'ok':'bad');sv.innerHTML=r.ok?'🖥 회원 서버: 최신 코드 ✅ (63~66차 기능 사용 가능)':'🖥 회원 서버: <b>예전 코드 ⚠</b> — 회원 공원 구경하기·회원 기록 저장·주인장 공원·7일 통계가 안 돼요. 66차 Code.gs를 붙여넣고 <b>배포 관리 → 수정 → 새 버전</b>을 해 주세요.';});
+  try{window.WonkiVisitLog70&&window.WonkiVisitLog70.adminMenu(box);}catch(e){console.warn(e);}
   try{window.WonkiParkRoles66&&window.WonkiParkRoles66.adminMenu(box,closeEditor);}catch(e){console.warn(e);}}
  function showPark(title,sub,list){data=null;paintOne(title,sub,list,[]);}
  window.WonkiParkViewer={showOff:showOff,viewer:viewer,adminMenu:adminMenu,showPark:showPark,_render:function(d){data=d;tab='members';paintList();}};
