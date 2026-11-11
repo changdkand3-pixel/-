@@ -8,6 +8,9 @@ body:not(.wk66-view) #wk66Join{display:none!important}
 body:not(.wk66-owner) #wk66OwnerUpload{display:none!important}
 body.wk66-member #wonkiDockNewMember{display:none!important}
 #wk66Join{background:linear-gradient(180deg,#ff8a3d,#e8541c)!important;color:#fff!important;border:2px solid #fff!important;box-shadow:0 0 0 3px #ffb37a,0 4px 12px #e8541c66!important;font-weight:900!important;animation:wk66pulse 2.2s ease-in-out infinite}
+#wonkiParkEditor36 .wk79-now{margin:8px 0;padding:10px 12px;border-radius:12px;background:#fff8e1;border:2px solid #ffd54d;font:600 13px/1.5 system-ui;color:#5a3a00}
+#wonkiParkEditor36 .wk79-now b,#wonkiParkEditor36 .wk79-now span,#wonkiParkEditor36 .wk79-now small{display:block}
+#wonkiParkEditor36 .wk79-now small{color:#7a6a50}
 #wk66Owner{background:linear-gradient(180deg,#ffe27a,#ffc93d)!important;color:#5a3a00!important;border:2px solid #e0a800!important;font-weight:900!important}
 #wonkiDockNewMember{background:linear-gradient(180deg,#ff8a3d,#e8541c)!important;color:#fff!important;border:2px solid #fff!important;box-shadow:0 0 0 3px #ffb37a!important;font-weight:900!important;animation:wk66pulse 2.2s ease-in-out infinite}
 @keyframes wk66pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
@@ -65,16 +68,24 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
   catch(e){console.warn('WonkiLand: 주인장 공원 불러오기 실패',e&&e.message);}
  }
  function ownerDraft(){var raw=ls('wonkiParkDraft37_guest');var st=parseState(raw);if(!st)return null;var C=window.WonkiParkCore36;try{return C&&C.clean?C.clean(st):st;}catch(_){return st;}}
+ function names(list){var n=list.map(function(b){return '· '+(b.name||'건물');});return n.length>12?n.slice(0,12).join('\n')+'\n… 외 '+(n.length-12)+'개':n.join('\n');}
+ /* 79차: 올리기 전에 무엇이 올라가는지 이름으로 보여 주고, 건물이 없으면 "주인장 공원 비우기"로 올림 */
  async function uploadOwner(){
-  var st=ownerDraft();
-  if(!st||!st.buildings.length){alert('이 기기에 지은 주인장 건물이 없어요.\n🔒 관리자 → 🏗 건물 짓기로 공원을 꾸민 뒤 올려 주세요.');return;}
-  if(!confirm('🏰 이 기기에 지은 건물 '+st.buildings.length+'개를 "주인장 공원"으로 올립니다.\n방문자와 일반회원이 주인장 공원 둘러보기에서 보게 됩니다.'))return;
+  var st=ownerDraft()||{version:1,revision:0,courses:[],buildings:[]};
+  var cur=ownerPark(),curN=cur?cur.buildings.length:0;
+  var msg=st.buildings.length?('🏰 "주인장 공원"으로 올릴 건물 '+st.buildings.length+'개:\n'+names(st.buildings)+'\n\n방문자와 일반회원 지도에 이대로 보이게 됩니다. 올릴까요?'):('🧹 이 기기에 지은 주인장 건물이 없어요.\n지금 방문자에게 보이는 주인장 공원(건물 '+curN+'개)을 비울까요?\n방문자 지도에서 주인장 건물이 모두 사라집니다.');
+  if(!confirm(msg))return;
   var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){say('🏰 관리자 로그인 실패: '+(e&&e.message||e),true);return;}
-  say('🏰 주인장 공원을 올리는 중이에요…');
+  say(st.buildings.length?'🏰 주인장 공원을 올리는 중이에요…':'🧹 주인장 공원을 비우는 중이에요…');
   var text=JSON.stringify(st);
-  try{var r=await post('owner_park_save',{idToken:tok,park:text});ls(CACHE,JSON.stringify({park:text,savedAt:r.savedAt||new Date().toISOString()}));say('🏰 주인장 공원을 올렸어요! (건물 '+st.buildings.length+'개)');}
+  try{var r=await post('owner_park_save',{idToken:tok,park:text});ls(CACHE,JSON.stringify({park:text,savedAt:r.savedAt||new Date().toISOString()}));say(st.buildings.length?'🏰 주인장 공원을 올렸어요! (건물 '+st.buildings.length+'개)':'🧹 주인장 공원을 비웠어요. 방문자 지도에 주인장 건물이 안 보여요.');paintNow();}
   catch(e){say(/지원하지 않는/.test(String(e.message))?'🏰 서버가 아직 주인장 공원 올리기를 지원하지 않아요 (Code_66 서버 업데이트 필요)':'🏰 올리지 못했어요: '+e.message,true);}
  }
+ /* 관리자 메뉴: 지금 방문자에게 보이는 주인장 공원 */
+ function paintNow(){var el=document.getElementById('wk79Now');if(!el)return;var c=null;try{c=JSON.parse(ls(CACHE)||'null');}catch(_){}var st=ownerPark(),list=st?st.buildings:[];
+  var here=ownerDraft(),hn=here?here.buildings.length:0;
+  el.innerHTML='<b>🏰 지금 방문자에게 보이는 주인장 공원</b><span>'+(list.length?'건물 '+list.length+'개: '+list.slice(0,8).map(function(b){return String(b.name||'건물').replace(/[<>&"]/g,'');}).join(', ')+(list.length>8?' …':''):'비어 있음 (건물 없음)')+'</span><small>'+(c&&c.savedAt?'올린 시각 '+new Date(c.savedAt).toLocaleString('ko-KR')+' · ':'')+'이 기기에 지은 주인장 건물 '+hn+'개</small>';}
+ async function refreshNow(){await refresh();paintNow();}
  function showOwner(){
   var st=mode()==='owner'?(ownerDraft()||ownerPark()):ownerPark();
   var list=st?st.buildings:[];var c=null;try{c=JSON.parse(ls(CACHE)||'null');}catch(_){}
@@ -102,8 +113,9 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
   o.querySelector('.join').focus();
  }
  function adminMenu(box){
-  var up=document.createElement('button');up.type='button';up.textContent='🏰 주인장 공원 올리기 (방문자에게 보이기)';up.onclick=uploadOwner;
+  var up=document.createElement('button');up.type='button';up.textContent='🏰 주인장 공원 올리기·비우기 (방문자에게 보이기)';up.onclick=uploadOwner;
   var see=box.querySelector('button');box.insertBefore(up,see?see.nextSibling:null);
+  var now=document.createElement('div');now.id='wk79Now';now.className='wk79-now';up.before(now);paintNow();refreshNow();
   apply();
  }
  function apply(){var m=mode();var b=document.body;if(!b)return;
