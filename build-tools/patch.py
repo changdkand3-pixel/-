@@ -350,6 +350,9 @@ _fc68=open(sys.argv[2].replace('world_final.webp','fast-cloud.html'),encoding='u
 _h=t.find('<head>')+len('<head>')
 t=t[:_h]+'\n'+_fc68+t[_h:]
 
+# ---------- 20. 73차: 관리자 Google 로그인 창을 맨 위로 (구경하기·관리자 메뉴 화면 뒤에 가려지던 문제)
+rep("""overlay.style.cssText='position:fixed;inset:0;z-index:2147483000;background:rgba(0,0,0,.68)""","""overlay.id='wk73GoogleLogin';overlay.style.cssText='position:fixed;inset:0;z-index:2147483640;background:rgba(0,0,0,.68)""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

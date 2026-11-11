@@ -136,6 +136,7 @@
    if(cache&&cache.members){data={members:cache.members,showcases:cache.showcases||[],status:'⏳ 최신 자료를 불러오는 중… (지난번 '+new Date(cache.t).toLocaleString('ko-KR')+' 자료를 먼저 보여 줘요)'};}
    else data={members:[],showcases:[],partial:true,status:'⏳ 회원 명단을 불러오는 중…'};
    paintList();
+   if(!sessionStorage.getItem('wk64_admin_token'))setStatus('🔐 관리자 Google 로그인 창에서 계정을 선택해 주세요');
    var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){if(cache)setStatus('⚠ 관리자 로그인 실패: '+(e&&e.message||e)+' (지난 자료를 보여 주는 중)',true);else showError('관리자 로그인 실패: '+(e&&e.message||e));return;}
    var pDone=false;
    var fr=post('admin_friend_list',{idToken:tok},30000).then(function(r){return r;},function(e){return {members:[],err:e};});

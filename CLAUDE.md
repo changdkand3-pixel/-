@@ -22,3 +22,5 @@
 - 63차부터 일반회원 진행 기록(공원 건물·수학·영어)은 `assets/member-progress.html`이 로그인 시 불러오고 자동 저장합니다. 새 게임 기록 키가 생기면 그 파일의 `FIXED` 목록에 추가합니다.
 - **66차부터 공원 권한** (`assets/park-roles.html`): 방문자(로그인 안 함)는 주인장 공원(서버 `owner_park_load`)만 보기, 일반회원은 자기 공원만 짓고 보기, 주인장 기기(`wk65_admin_device`)는 손님 키 공원을 짓고 `owner_park_save`로 올리기.
 - **68차부터 서버 요청 방식** (`assets/fast-cloud.html`, `<head>` 바로 뒤): 숨은 창(iframe) 폼 전송을 가로채 `fetch`로 바로 주고받고(서버는 `_wonkiNonce`가 없으면 JSON+CORS로 답함), 실패하면 예전 iframe 방식으로 전환. 읽기 요청(`_list/_load/_count/_stats`, `admin_visit_log`)은 5초 뒤 한 번 더 보냄(읽기는 40초까지 기다림). 새 읽기 요청 이름이 이 규칙에 안 맞으면 fast-cloud.html의 `read` 정규식에 추가. 새 요청 코드도 기존처럼 iframe+폼 방식으로 쓰면 자동 적용됨.
+- **73차부터 업데이트 안내 공개/관리자 구분:** `final.html`의 `WONKI_PUBLIC`에 차수별 방문자·일반회원용 쉬운 말 내용(`p/c/s/m`)을 넣습니다. 그 차수가 관리자 기능(구경하기·통계·방문 기록·서버 등)을 바꿨다면 새 차수마다 `WONKI_PUBLIC["NN"]`도 같이 씁니다. 주인장 기기(`wk65_admin_device`)에서는 원래 내용 + "🔒 관리자 내용 포함"이 보입니다.
+- 관리자 화면 위에 새로 띄우는 창은 z-index를 2147483600 이상으로 둡니다(관리자 메뉴·구경하기 창이 2147483500). Google 관리자 로그인 창은 2147483640.
