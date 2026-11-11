@@ -383,6 +383,10 @@ rep("""const remoteById=new Map(remote.members.map(m=>[String(m.id),m]));""","""
 rep("""if(b.dataset.suspend){m.suspended=true;persist();render()}""","""if(b.dataset.suspend){m.suspended=true;m.updatedAt=new Date().toISOString();persist();render();const wk84s=document.getElementById('memberSaveStatus');if(wk84s){wk84s.textContent='💤 '+(m.name||'회원')+' 휴회 이동 · 다음 동기화 때 클라우드에도 반영돼요';wk84s.style.color='#b26a00';}}""")
 rep("""if(b.dataset.resume){m.suspended=false;persist();render()}""","""if(b.dataset.resume){m.suspended=false;m.updatedAt=new Date().toISOString();persist();render();const wk84s=document.getElementById('memberSaveStatus');if(wk84s){wk84s.textContent='✅ '+(m.name||'회원')+' 재원 복귀 · 다음 동기화 때 클라우드에도 반영돼요';wk84s.style.color='#16834a';}}""")
 
+# ---------- 26. 85차: 동기화 완료 표시의 상상코칭 회원 수를 현재회원(휴회 제외)과 휴회회원으로 나눠 보여 주기
+rep("""setStatus('✓ 동기화 완료 (상상코칭 '+merged.length+'명 · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""","""const wk85Now=merged.filter(x=>x&&!x.suspended).length,wk85Rest=merged.length-wk85Now;setStatus('✓ 동기화 완료 (상상코칭 현재 '+wk85Now+'명'+(wk85Rest?' · 휴회 '+wk85Rest+'명':'')+' · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""")
+rep("""alert('회원자료 동기화가 완료되었습니다.\\n상상코칭 회원 '+merged.length+'명\\n일반회원 '""","""alert('회원자료 동기화가 완료되었습니다.\\n상상코칭 현재회원 '+wk85Now+'명'+(wk85Rest?' (휴회 '+wk85Rest+'명 따로)':'')+'\\n일반회원 '""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
