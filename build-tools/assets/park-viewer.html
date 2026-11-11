@@ -22,6 +22,10 @@
 #wk64Viewer .wk64-item em{font-style:normal;font-size:12px;color:#6c3fcf;white-space:nowrap}
 #wk64Viewer .wk64-item:hover,#wk64Viewer .wk64-item:focus-visible{border-color:#6c3fcf!important;background:#f1eaff!important}
 #wk64Viewer .wk64-item.wk67-none{background:#f6f7f9!important;border-color:#d5dbe3!important}
+#wk64Viewer .wk68-warn,.wk68-server.bad{margin:8px 0;padding:10px 12px;border-radius:12px;background:#fff4e5;border:2px solid #f0a64a;color:#6b3a00;font:600 13px/1.6 system-ui}
+#wk64Viewer .wk68-warn b.t{display:block;font-size:14px}
+.wk68-server{margin:8px 0;padding:8px 12px;border-radius:12px;background:#eef2f7;color:#334;font:700 13px/1.5 system-ui}
+.wk68-server.ok{background:#e6f9e8;color:#1d5e2c}
 #wk64Viewer .wk67-note{grid-column:1/-1;font:700 12px system-ui;color:#5b6577}
 #wk65Stats{margin:10px 0;padding:10px;border-radius:14px;background:#f2f8ff;border:2px solid #bcd8f5}
 #wk65Stats h3{margin:0 0 8px;font-size:16px;color:#173b63}
@@ -92,10 +96,11 @@
  function paintList(){view='list';var c=box().querySelector('.wk36-card');var mem=data.members||[],sh=data.showcases||[];
   var withRec=mem.filter(function(m){return m.progress;}).length;
   var h=head('🔍 회원 공원 구경하기')+'<p class="wk36-status">회원 이름을 누르면 그 회원의 공원과 기록을 볼 수 있어요. (관리자 전용)</p>';
+  if(data.oldServer)h+='<div class="wk68-warn"><b class="t">⚠ 회원 서버가 아직 예전 코드예요</b>그래서 회원 명단만 보이고, 회원 공원·게임 기록·공유한 공원은 안 보여요.<br>66차 안내의 <b>Code.gs(서버에 붙여넣기)</b>를 붙여넣고 <b>배포 관리 → 연필(수정) → 새 버전 → 배포</b>를 해 주세요. ("새 배포"를 누르면 주소가 바뀌어 연결이 안 돼요.)</div>';else if(data.error)h+='<div class="wk68-warn">⚠ 회원 공원 기록을 불러오지 못했어요: '+esc(data.error)+'</div>';
   h+='<div class="wk64-tabs"><button type="button" data-tab="members" class="'+(tab==='members'?'on':'')+'">👤 일반회원 '+mem.length+'명</button><button type="button" data-tab="show" class="'+(tab==='show'?'on':'')+'">📣 공유한 공원 '+sh.length+'개</button></div><div class="wk64-list">';
   if(tab==='members'){if(!mem.length)h+='<div class="wk64-empty">아직 가입한 일반회원이 없어요.</div>';else h+='<div class="wk67-note">기록 있음 '+withRec+'명 · 아직 로그인 기록 없음 '+(mem.length-withRec)+'명</div>';
    mem.forEach(function(m,i){var r=parkList(m);var info=[m.name&&m.nickname&&m.name!==m.nickname?m.name:'',m.relationship||''].filter(Boolean).join(' · ');
-    h+='<button type="button" class="wk64-item'+(m.progress?'':' wk67-none')+'" data-m="'+i+'"><b>'+esc(m.nickname||m.name||m.id)+'<em>보기 ▶</em></b>'+(info?'<small>'+esc(info)+'</small>':'')+(m.progress?'<small>🏗 건물 '+r.list.length+'개 · '+esc(when(m.savedAt))+'</small><small>'+esc(stats(r.keys).join(' / ')||'게임 기록 없음')+'</small>':'<small>아직 로그인해서 저장한 기록이 없어요</small>')+'</button>';});}
+    h+='<button type="button" class="wk64-item'+(m.progress?'':' wk67-none')+'" data-m="'+i+'"><b>'+esc(m.nickname||m.name||m.id)+'<em>보기 ▶</em></b>'+(info?'<small>'+esc(info)+'</small>':'')+(m.progress?'<small>🏗 건물 '+r.list.length+'개 · '+esc(when(m.savedAt))+'</small><small>'+esc(stats(r.keys).join(' / ')||'게임 기록 없음')+'</small>':(data.oldServer?'<small>서버 업데이트 후 공원·기록이 보여요</small>':'<small>아직 로그인해서 저장한 기록이 없어요</small>'))+'</button>';});}
   else{if(!sh.length)h+='<div class="wk64-empty">아직 공유된 공원이 없어요.</div>';
    sh.forEach(function(s,i){h+='<button type="button" class="wk64-item" data-s="'+i+'"><b>'+esc(s.name)+'<em>보기 ▶</em></b><small>건물 '+Number(s.count||0)+'개 · '+esc(when(s.time))+'</small>'+(s.message?'<small>💬 '+esc(s.message)+'</small>':'')+'</button>';});}
   c.innerHTML=h+'</div>'+foot(false);c.scrollTop=0;bind(c);}
@@ -104,6 +109,7 @@
  function bind(c){c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=exitAll;});c.querySelectorAll('[data-back]').forEach(function(b){b.onclick=paintList;});
   c.querySelectorAll('[data-tab]').forEach(function(b){b.onclick=function(){tab=b.dataset.tab;paintList();};});
   c.querySelectorAll('[data-m]').forEach(function(b){b.onclick=function(){var m=data.members[+b.dataset.m],r=parkList(m);var info=[m.name,m.relationship].filter(Boolean).join(' · ');
+   if(!m.progress&&data.oldServer){paintOne('👤 '+(m.nickname||m.name||m.id)+'님의 공원',(info?info+' · ':'')+'서버 업데이트가 필요해요',[],[],'회원 서버가 예전 코드라 이 회원의 공원과 기록을 아직 불러올 수 없어요. 서버 코드를 바꾸면 보입니다.');return;}
    if(!m.progress){paintOne('👤 '+(m.nickname||m.name||m.id)+'님의 공원',(info?info+' · ':'')+'아직 저장된 기록이 없어요',[],[],'이 회원은 아직 로그인해서 공원·게임 기록을 저장하지 않았어요. 회원이 로그인하면 자동으로 저장됩니다.');return;}
    paintOne('👤 '+(m.nickname||m.name||m.id)+'님의 공원',(info?info+' · ':'')+'저장 시각 '+when(m.savedAt)+' · 건물 '+r.list.length+'개',r.list,stats(r.keys));};});
   c.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){var s=data.showcases[+b.dataset.s],list=parkOf(s.park);paintOne('📣 '+s.name+'님이 공유한 공원',when(s.time)+(s.message?' · 💬 '+s.message:'')+' · 건물 '+list.length+'개',list,[]);};});}
@@ -116,9 +122,19 @@
   if(location.protocol!=='https:'){alert('Neocities의 https:// 주소에서 열어 주세요.');return;}
   var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){say('🔍 관리자 로그인 실패: '+(e&&e.message||e),true);return;}
   say('🔍 회원 공원을 불러오는 중이에요…');
-  try{var fr=post('admin_friend_list',{idToken:tok}).catch(function(){return {members:[]};});data=await post('admin_park_list',{idToken:tok});data.members=mergeMembers(data.members,(await fr).members);markAdmin();tab='members';paintList();say('🔍 일반회원 '+(data.members||[]).length+'명 · 공유한 공원 '+(data.showcases||[]).length+'개');}
-  catch(e){say(/지원하지 않는/.test(String(e.message))?'🔍 서버가 아직 구경하기를 지원하지 않아요 (서버 업데이트 필요)':'🔍 불러오지 못했어요: '+e.message,true);}
+  var fr=post('admin_friend_list',{idToken:tok}).then(function(r){return r;},function(e){return {members:[],err:e};});
+  var pr=post('admin_park_list',{idToken:tok}).then(function(r){return r;},function(e){return {err:e};});
+  var p=await pr,f=await fr;
+  var oldServer=p.err&&/지원하지 않는/.test(String(p.err.message));
+  if(p.err&&!oldServer&&f.err){showError('회원 목록을 불러오지 못했어요: '+(p.err.message||p.err));return;}
+  data=p.err?{members:[],showcases:[],oldServer:oldServer,error:oldServer?'':String(p.err.message||p.err)}:p;
+  data.members=mergeMembers(data.members,f.members);markAdmin();tab='members';paintList();
+  say(oldServer?'🔍 회원 명단만 보여요 · 서버 코드 업데이트가 필요해요':'🔍 일반회원 '+(data.members||[]).length+'명 · 공유한 공원 '+(data.showcases||[]).length+'개',oldServer);
  }
+ function showError(msg){data=null;view='one';var c=box().querySelector('.wk36-card');c.innerHTML=head('🔍 회원 공원 구경하기')+'<div class="wk68-warn">⚠ '+esc(msg)+'</div>'+foot(false);bind(c);}
+ /* 서버가 몇 차 기능까지 지원하는지 (공개 요청으로 확인) */
+ var serverInfo=null;
+ async function checkServer(){if(serverInfo)return serverInfo;try{await post('owner_park_load',{});serverInfo={ok:true};}catch(e){serverInfo={ok:!/지원하지 않는/.test(String(e.message)),msg:String(e.message)};}return serverInfo;}
  function install(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');if(!tools||document.getElementById('wk64ShowOff'))return;
   var a=document.createElement('button');a.type='button';a.id='wk64ShowOff';a.textContent='📣 내 공원 공유하기';a.onclick=showOff;tools.appendChild(a);
   var v=document.createElement('button');v.type='button';v.id='wk64Viewer_btn';v.textContent='🔒 회원 공원 구경하기';v.title='관리자 Google 계정 전용';v.onclick=viewer;v.hidden=!isAdminDevice();tools.appendChild(v);}
@@ -155,6 +171,8 @@
   paintStats(st,{today:base.today,total:base.total},s?'페이지의 방문 집계 기준 ('+(base.day||'')+')':c?'저장된 마지막 집계 ('+(c.day||'')+')':'방문 집계를 아직 불러오지 못했어요.');
   if(!s)document.addEventListener('wonki-visitor-summary31',function f(e){if(document.body.contains(st)&&!st.dataset.full)paintStats(st,e.detail,'페이지의 방문 집계 기준 ('+(e.detail.day||'')+')');},{once:true});
   loadStats(st,false);
+  var sv=document.createElement('div');sv.id='wk68Server';sv.className='wk68-server';sv.textContent='🖥 회원 서버 상태 확인 중…';st.before(sv);
+  checkServer().then(function(r){sv.className='wk68-server '+(r.ok?'ok':'bad');sv.innerHTML=r.ok?'🖥 회원 서버: 최신 코드 ✅ (63~66차 기능 사용 가능)':'🖥 회원 서버: <b>예전 코드 ⚠</b> — 회원 공원 구경하기·회원 기록 저장·주인장 공원·7일 통계가 안 돼요. 66차 Code.gs를 붙여넣고 <b>배포 관리 → 수정 → 새 버전</b>을 해 주세요.';});
   try{window.WonkiParkRoles66&&window.WonkiParkRoles66.adminMenu(box,closeEditor);}catch(e){console.warn(e);}}
  function showPark(title,sub,list){data=null;paintOne(title,sub,list,[]);}
  window.WonkiParkViewer={showOff:showOff,viewer:viewer,adminMenu:adminMenu,showPark:showPark,_render:function(d){data=d;tab='members';paintList();}};
