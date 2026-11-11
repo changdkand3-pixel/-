@@ -363,6 +363,11 @@ rep(""" function wk64Cached(){try{const t=sessionStorage.getItem('wk64_admin_tok
  async function wk80Exchange(jwt){try{const r=await fetch('https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec',{method:'POST',body:JSON.stringify({action:'admin_session_start',idToken:jwt}),credentials:'omit',cache:'no-store'});const j=JSON.parse(await r.text());if(j&&j.success&&j.token)return j.token;}catch(_){}return jwt;}""")
 rep(""" function wk64Store(t){try{if(t&&wk64Exp(t))sessionStorage.setItem('wk64_admin_token',t);}catch(_){}}""",""" function wk64Store(t){try{if(t&&wk64Exp(t)){sessionStorage.setItem('wk64_admin_token',t);if(/^wkadm[.]/.test(t))localStorage.setItem('wk80_admin_token',t);}}catch(_){}}""")
 
+# ---------- 23. 81차: 이 기기 관리자 비밀번호 4자리부터 가능 + 5번 틀리면 5분 잠금
+rep("""if(password.length<8||password.length>128)throw Error('비밀번호는8~128자로 적어 주세요.');""","""if(password.length<4||password.length>128)throw Error('비밀번호는 4~128자로 적어 주세요. (숫자 4자리도 돼요)');""")
+rep("""newPw=(!existing||change)?field('새 비밀번호 ·8자 이상','new'):null""","""newPw=(!existing||change)?field('새 비밀번호 · 4자 이상 (숫자 4자리도 돼요)','new'):null""")
+rep("""try{if(existing&&!await verify(old.value))throw Error('비밀번호가 올바르지 않습니다.');""","""try{if(existing){let lf={};try{lf=JSON.parse(localStorage.getItem('wk81_lock_fail')||'{}')||{};}catch(_){}if(lf.until&&lf.until>Date.now())throw Error('비밀번호를 여러 번 틀렸어요. '+Math.ceil((lf.until-Date.now())/60000)+'분 뒤에 다시 해 주세요.');if(!await verify(old.value)){lf.n=(lf.n||0)+1;if(lf.n>=5){lf={until:Date.now()+5*60000};}try{localStorage.setItem('wk81_lock_fail',JSON.stringify(lf));}catch(_){}throw Error(lf.until?'비밀번호를 5번 틀렸어요. 5분 뒤에 다시 해 주세요.':'비밀번호가 올바르지 않습니다. ('+lf.n+'/5)');}try{localStorage.removeItem('wk81_lock_fail');}catch(_){}}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
