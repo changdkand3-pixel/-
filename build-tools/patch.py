@@ -384,8 +384,13 @@ rep("""if(b.dataset.suspend){m.suspended=true;persist();render()}""","""if(b.dat
 rep("""if(b.dataset.resume){m.suspended=false;persist();render()}""","""if(b.dataset.resume){m.suspended=false;m.updatedAt=new Date().toISOString();persist();render();const wk84s=document.getElementById('memberSaveStatus');if(wk84s){wk84s.textContent='✅ '+(m.name||'회원')+' 재원 복귀 · 다음 동기화 때 클라우드에도 반영돼요';wk84s.style.color='#16834a';}}""")
 
 # ---------- 26. 85차: 동기화 완료 표시의 상상코칭 회원 수를 현재회원(휴회 제외)과 휴회회원으로 나눠 보여 주기
-rep("""setStatus('✓ 동기화 완료 (상상코칭 '+merged.length+'명 · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""","""const wk85Now=merged.filter(x=>x&&!x.suspended).length,wk85Rest=merged.length-wk85Now;setStatus('✓ 동기화 완료 (상상코칭 현재 '+wk85Now+'명'+(wk85Rest?' · 휴회 '+wk85Rest+'명':'')+' · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""")
+rep("""setStatus('✓ 동기화 완료 (상상코칭 '+merged.length+'명 · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""","""const wk85Now=merged.filter(x=>x&&!x.deletedAt&&!x.suspended).length,wk85Rest=merged.filter(x=>x&&!x.deletedAt&&x.suspended).length;setStatus('✓ 동기화 완료 (상상코칭 현재 '+wk85Now+'명'+(wk85Rest?' · 휴회 '+wk85Rest+'명':'')+' · 일반회원 '+mergedFriends.filter(x=>!x.deletedAt).length+'명)');""")
 rep("""alert('회원자료 동기화가 완료되었습니다.\\n상상코칭 회원 '+merged.length+'명\\n일반회원 '""","""alert('회원자료 동기화가 완료되었습니다.\\n상상코칭 현재회원 '+wk85Now+'명'+(wk85Rest?' (휴회 '+wk85Rest+'명 따로)':'')+'\\n일반회원 '""")
+
+# ---------- 27. 86차: 예전 버전이 남긴 삭제 표시(deletedAt)가 있는 상상코칭 회원도 삭제한 것으로 처리 (목록에서 숨기고, 동기화 때 서버에서도 지움)
+rep("""const wk83T=(()=>{try{const a=JSON.parse(localStorage.getItem('wk83_deleted_members')||'[]');return Array.isArray(a)?a:[];}catch(_){return [];}})();""","""const wk83T=(()=>{try{const a=JSON.parse(localStorage.getItem('wk83_deleted_members')||'[]');return Array.isArray(a)?a:[];}catch(_){return [];}})();
+   [...local,...remote.members].forEach(m=>{if(m&&m.id&&m.deletedAt&&!wk83T.some(x=>String(x.id)===String(m.id)))wk83T.push({id:String(m.id),name:m.name||'',at:String(m.deletedAt)});});""")
+rep("""const list=members.filter(m=>!!m.suspended===(view==='suspended'));""","""const list=members.filter(m=>!m.deletedAt&&!!m.suspended===(view==='suspended'));""")
 
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
