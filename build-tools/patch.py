@@ -318,7 +318,9 @@ rep("""<title>원기랜드 50차 · 연결지도 적용 | 웰컴투 원기랜드
 
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
+_mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
 final = _g32html + '\n' + _g31html + '\n' + final
+final = final + '\n' + _mp63
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

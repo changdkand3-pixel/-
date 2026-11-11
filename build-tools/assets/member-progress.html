@@ -1,0 +1,52 @@
+<!-- 63차: 일반회원 진행 기록(공원 건물·수학·영어) 클라우드 저장·복원 -->
+<script id="wk63-member-progress">
+(function(){
+ 'use strict';
+ var ENDPOINT='https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec';
+ var SESSION='wonkiLand_general_session_v1';
+ var FIXED=['wonki_dbz_math_v2','wonki_dbz_math_v2_slot_1','wonki_dbz_math_v2_slot_2','wonki_dbz_math_v2_slot_3','wonki_dbz_math_ch1_progress_v1','wonkiland_dbz_english_v1','wonkiland_dbz_english_slots_v1'];
+ var STASH='wk63_guest_stash';
+ function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v);}catch(_){return null;}}
+ function session(){try{return JSON.parse(sessionStorage.getItem(SESSION)||'null');}catch(_){return null;}}
+ function mkey(s){var m=s&&s.member||{};return encodeURIComponent(String(m.id||m.nickname||m.name||'guest'));}
+ function parkKeys(s){var k='wonkiParkDraft37_'+mkey(s);return [k,k+'_focus'];}
+ function snapshot(s){var keys={};FIXED.concat(parkKeys(s)).forEach(function(k){var v=ls(k);if(v!==null&&v!==undefined)keys[k]=v;});return {v:1,keys:keys};}
+ function applyKeys(data,s){FIXED.forEach(function(k){ls(k,null);});(data&&data.keys?Object.keys(data.keys):[]).forEach(function(k){if(FIXED.indexOf(k)>=0||parkKeys(s).indexOf(k)>=0||/^wonkiParkDraft37_/.test(k))ls(k,data.keys[k]);});}
+ function say(t,ok){var n=document.getElementById('wk63Note');if(!n){n=document.createElement('div');n.id='wk63Note';n.setAttribute('role','status');n.style.cssText='position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:2147483300;max-width:calc(100vw - 32px);border-radius:12px;padding:10px 16px;font:700 14px system-ui,sans-serif;box-shadow:0 6px 20px #0006;text-align:center;color:#fff';document.body.appendChild(n);}n.style.background=ok===false?'#8a2b2b':'#173b5c';n.textContent=t;clearTimeout(say.t);say.t=setTimeout(function(){n.remove();},6000);}
+ function post1(action,extra){var nonce='wk63_'+Date.now()+'_'+Math.random().toString(36).slice(2);return new Promise(function(resolve,reject){
+  var f=document.createElement('iframe');f.name='wk63_'+nonce;f.style.cssText='display:none;width:0;height:0;border:0';
+  var fm=document.createElement('form');fm.method='POST';fm.action=ENDPOINT;fm.target=f.name;fm.style.display='none';
+  var ta=document.createElement('textarea');ta.name='payload';ta.value=JSON.stringify(Object.assign({action:action,_wonkiNonce:nonce},extra||{}));fm.appendChild(ta);
+  var done=false;function fin(fn,v){if(done)return;done=true;clearTimeout(tm);window.removeEventListener('message',on);fm.remove();f.remove();fn(v);}
+  function on(e){var d=e.data;if(!d||d.type!=='wonki-cloud-response'||d.nonce!==nonce)return;var v=d.payload||{};v.success?fin(resolve,v):fin(reject,new Error(v.message||'서버 요청 실패'));}
+  var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},20000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
+ async function post(action,extra){for(var i=0;i<3;i++){try{return await post1(action,extra);}catch(e){if(i===2||!/시간/.test(String(e&&e.message)))throw e;}}}
+ var current=null,lastUploaded='',busy=false;
+ async function upload(s,quiet){if(!s||!s.token||busy)return false;var text=JSON.stringify(snapshot(s));if(text===lastUploaded)return true;busy=true;
+  try{var r=await post('general_member_progress_save',{sessionToken:s.token,progress:text});lastUploaded=text;ls('wk63_meta_'+mkey(s),JSON.stringify({savedAt:r.savedAt}));if(!quiet)say('☁ 내 기록(건물·수학·영어)을 클라우드에 저장했어요');return true;}
+  catch(e){if(!quiet)say('☁ 내 기록 클라우드 저장 실패: '+(e&&e.message||e),false);return false;}finally{busy=false;}}
+ async function onLogin(s){
+  var flag='wk63_applied_'+mkey(s);
+  if(sessionStorage.getItem(flag)){current=s;lastUploaded=JSON.stringify(snapshot(s));return;}
+  var r;try{r=await post('general_member_progress_load',{sessionToken:s.token});}
+  catch(e){current=s;say(/지원하지 않는/.test(String(e&&e.message))?'☁ 서버가 아직 진행 기록 저장을 지원하지 않아요 (서버 업데이트 필요)':'☁ 내 기록을 불러오지 못했어요: '+(e&&e.message||e),false);current=null;return;}
+  if(ls(STASH)===null||ls(STASH)===undefined)ls(STASH,JSON.stringify(snapshot(null)));
+  sessionStorage.setItem(flag,'1');current=s;
+  if(r.progress){var data;try{data=JSON.parse(r.progress);}catch(_){data=null;}
+   if(data){applyKeys(data,s);lastUploaded=JSON.stringify(snapshot(s));ls('wk63_meta_'+mkey(s),JSON.stringify({savedAt:r.savedAt}));say('☁ '+((s.member&&s.member.nickname)||'회원')+'님의 기록을 불러왔어요. 화면을 새로 고칩니다…');setTimeout(function(){location.reload();},600);return;}}
+  await upload(s,true);say('☁ 지금 기록을 '+((s.member&&s.member.nickname)||'회원')+'님 계정에 처음 저장했어요');}
+ async function onLogout(prev){
+  await upload(prev,true);
+  var st=ls(STASH);var data=null;try{data=JSON.parse(st||'null');}catch(_){}
+  FIXED.forEach(function(k){ls(k,null);});if(data)applyKeys(data,null);ls(STASH,null);
+  Object.keys(sessionStorage).forEach(function(k){if(/^wk63_applied_/.test(k))sessionStorage.removeItem(k);});
+  current=null;say('☁ 내 기록을 저장하고 로그아웃했어요. 화면을 새로 고칩니다…');setTimeout(function(){location.reload();},1200);}
+ function check(){var s=session();if(s&&s.token){if(!current||current.token!==s.token)onLogin(s);}else if(current){var prev=current;current=null;onLogout(prev);}}
+ window.addEventListener('wonki-member-changed37',function(){setTimeout(check,50);});
+ setInterval(function(){if(current)upload(current,true);},45000);
+ document.addEventListener('visibilitychange',function(){if(document.hidden&&current)upload(current,true);});
+ window.addEventListener('click',function(e){if(current&&e.target.closest&&e.target.closest('[data-wonki-save],.wk55-save,.wk50-saveexit,[data-eng-action="save-slot"]'))setTimeout(function(){upload(current,false);},800);},true);
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',check,{once:true});else setTimeout(check,0);
+ window.WonkiMemberProgress={upload:function(){return upload(current,false);},snapshot:function(){return snapshot(session());}};
+})();
+</script>

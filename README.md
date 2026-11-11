@@ -1,12 +1,13 @@
 # 원기랜드
 
-## ⬇️ 최신 62차 다운로드
+## ⬇️ 최신 63차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v62/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v63/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-`드래곤볼 수학게임` 폴더에 올리세요. 이번에는 미리보기 그림 [wonkiland-share.jpg](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v62/wonkiland-share.jpg) 1개를 `작업장` 폴더에 추가로 올립니다. 자세한 내용은 [62차 안내](wonkiland-v62/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 올리세요. 이번에는 **회원 서버 코드(Code.gs)도 바꿔야** 일반회원 기록이 클라우드에 저장됩니다. 방법은 [63차 안내](wonkiland-v63/README.md)를 보세요.
 
-- [62차 바뀐 점](wonkiland-v62/README.md)
+- [63차 할 일·바뀐 점](wonkiland-v63/README.md)
+- [62차 안내](wonkiland-v62/README.md)
 - [61차 안내](wonkiland-v61/README.md)
 - [60차 안내](wonkiland-v60/README.md)
 - [59차 안내](wonkiland-v59/README.md)
