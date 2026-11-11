@@ -59,6 +59,7 @@
  function parkOf(raw){try{var d=JSON.parse(raw||'null');var b=d&&d.state&&d.state.buildings;return Array.isArray(b)?b:[];}catch(_){return [];}}
  /* ---- 방문자: 내 공원 공유하기 ---- */
  async function showOff(){
+  if(window.WonkiParkGallery74){return window.WonkiParkGallery74.share();} /* 74차: 공원 공유 게시판으로 */
   if(window.WonkiParkRoles66&&!window.WonkiParkRoles66.canBuild()){window.WonkiParkRoles66.askJoin('share');return;}
   var raw=null;try{raw=localStorage.getItem('wonkiParkDraft37_'+mkey());}catch(_){}
   var list=parkOf(raw);
@@ -204,6 +205,6 @@
   try{window.WonkiVisitLog70&&window.WonkiVisitLog70.adminMenu(box);}catch(e){console.warn(e);}
   try{window.WonkiParkRoles66&&window.WonkiParkRoles66.adminMenu(box,closeEditor);}catch(e){console.warn(e);}}
  function showPark(title,sub,list){data=null;paintOne(title,sub,list,[]);}
- window.WonkiParkViewer={showOff:showOff,viewer:viewer,adminMenu:adminMenu,showPark:showPark,_render:function(d){data=d;tab='members';paintList();}};
+ window.WonkiParkViewer={mapSVG:mapSVG,showOff:showOff,viewer:viewer,adminMenu:adminMenu,showPark:showPark,_render:function(d){data=d;tab='members';paintList();}};
 })();
 </script>

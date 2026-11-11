@@ -1,0 +1,124 @@
+<!-- 74차: 🖼 공원 공유 게시판 — 일반회원이 내 공원을 올리고, 누구나 둘러보기 -->
+<style id="wk74-style">
+#wk74Gallery .wk36-card{width:min(1100px,98vw);max-height:94dvh;overflow:auto;padding-top:0!important;padding-bottom:0!important}
+#wk74Gallery .g-head{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;padding:14px 0 8px;border-bottom:1px solid #e3e9f2}
+#wk74Gallery .g-head h2{margin:0;font-size:19px;min-width:0;overflow-wrap:anywhere}
+#wk74Gallery .g-head span{display:flex;gap:4px;flex:none;flex-wrap:wrap;justify-content:flex-end}
+#wk74Gallery .g-foot{position:sticky;bottom:0;z-index:5;display:flex;gap:8px;flex-wrap:wrap;background:#fff;padding:10px 0 14px;margin-top:12px;border-top:1px solid #e3e9f2}
+#wk74Gallery .g-foot button{flex:1 1 140px;min-height:46px!important;font-size:14px!important}
+#wk74Gallery button.g-x{background:#e04848!important;color:#fff!important;border-color:#c43232!important;font-weight:900!important}
+#wk74Gallery button.g-pri{background:#6c3fcf!important;color:#fff!important;border-color:#5a30b5!important;font-weight:900!important}
+#wk74Gallery .g-st{margin:8px 0;padding:8px 10px;border-radius:10px;background:#eef5ff;color:#173b63;font:700 13px/1.5 system-ui}
+#wk74Gallery .g-st.bad{background:#fff4e5;color:#6b3a00}
+#wk74Gallery .g-mine{margin:8px 0;padding:10px 12px;border-radius:14px;background:linear-gradient(135deg,#fff6d8,#ffe9f4);border:2px solid #ffcf5a}
+#wk74Gallery .g-mine b{display:block;font-size:15px;color:#7a4a00}
+#wk74Gallery .g-mine small{display:block;color:#6b5a40;margin:2px 0 6px}
+#wk74Gallery .g-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+#wk74Gallery .g-card{display:block;text-align:left;padding:8px!important;margin:0!important;border:2px solid #c9b6f0!important;border-radius:14px!important;background:#faf7ff!important;cursor:pointer}
+#wk74Gallery .g-card.mine{border-color:#ffb300!important;background:#fffaf0!important}
+#wk74Gallery .g-card svg{display:block;width:100%;height:auto;border-radius:10px;background:#9fd08a;pointer-events:none}
+#wk74Gallery .g-card b{display:flex;justify-content:space-between;gap:6px;margin-top:6px;font-size:15px;color:#3c2280}
+#wk74Gallery .g-card b em{font-style:normal;font-size:12px;color:#b07a00}
+#wk74Gallery .g-card small{display:block;color:#5b6577;font-size:12px;line-height:1.5}
+#wk74Gallery .g-big svg{display:block;width:100%;height:auto;border-radius:12px;background:#9fd08a}
+#wk74Gallery .g-empty{padding:24px;text-align:center;color:#5b6577}
+#wk74Gallery .g-msg{margin:8px 0;padding:10px 12px;border-radius:12px;background:#f6f1ff;color:#3c2280;font:600 14px/1.6 system-ui}
+#wk74Board{background:linear-gradient(180deg,#a98bff,#6c3fcf)!important;color:#fff!important;border:2px solid #fff!important;font-weight:900!important}
+</style>
+<script id="wk74-park-gallery">
+(function(){
+ 'use strict';
+ var ENDPOINT='https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec';
+ var CACHE='wk74_gallery_cache';
+ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+ function post1(action,extra,wait){var nonce='wk74_'+Date.now()+'_'+Math.random().toString(36).slice(2);return new Promise(function(resolve,reject){
+  var f=document.createElement('iframe');f.name='wk74_'+nonce;f.style.cssText='display:none;width:0;height:0;border:0';
+  var fm=document.createElement('form');fm.method='POST';fm.action=ENDPOINT;fm.target=f.name;fm.style.display='none';
+  var ta=document.createElement('textarea');ta.name='payload';ta.value=JSON.stringify(Object.assign({action:action,_wonkiNonce:nonce},extra||{}));fm.appendChild(ta);
+  var done=false;function fin(fn,v){if(done)return;done=true;clearTimeout(tm);window.removeEventListener('message',on);fm.remove();f.remove();fn(v);}
+  function on(e){var d=e.data;if(!d||d.type!=='wonki-cloud-response'||d.nonce!==nonce)return;var v=d.payload||{};v.success?fin(resolve,v):fin(reject,new Error(v.message||'서버 요청 실패'));}
+  var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},wait||45000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
+ function session(){try{return JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');}catch(_){return null;}}
+ function owner(){try{return localStorage.getItem('wk65_admin_device')==='1';}catch(_){return false;}}
+ function mkey(){var s=session(),m=s&&s.member||{};return s?encodeURIComponent(String(m.id||m.nickname||m.name||'guest')):'guest';}
+ function parkOf(raw){try{var d=JSON.parse(raw||'null');var b=d&&d.state&&d.state.buildings;return Array.isArray(b)?b:[];}catch(_){return [];}}
+ function when(t){if(!t)return '';var d=new Date(t),s=(Date.now()-d)/1000;if(isNaN(d))return String(t);if(s<60)return '방금';if(s<3600)return Math.floor(s/60)+'분 전';if(s<86400)return Math.floor(s/3600)+'시간 전';if(s<86400*7)return Math.floor(s/86400)+'일 전';return d.toLocaleDateString('ko-KR');}
+ /* 건물이 있는 곳을 중심으로 확대해서 보여 주기 (지도 전체는 2350×1154) */
+ function fit(list){if(!list.length)return null;var xs=list.map(function(b){return (Number(b.x)||0)*1000;}),ys=list.map(function(b){return (Number(b.y)||0)*563;});
+  var x0=Math.min.apply(null,xs)-160,x1=Math.max.apply(null,xs)+160,y0=Math.min.apply(null,ys)-170,y1=Math.max.apply(null,ys)+110;
+  var w=Math.max(560,x1-x0),h=Math.max(w/2.036,y1-y0);w=Math.max(w,h*2.036);var cx=(x0+x1)/2,cy=(y0+y1)/2;
+  var L=Math.max(-600,Math.min(1750-w,cx-w/2)),T=Math.max(-225.2,Math.min(929-h,cy-h/2));if(w>=2350){L=-600;w=2350;}if(h>=1154.2){T=-225.2;h=1154.2;}
+  return L.toFixed(1)+' '+T.toFixed(1)+' '+w.toFixed(1)+' '+h.toFixed(1);}
+ function map(list){var V=window.WonkiParkViewer;if(!V||!V.mapSVG)return '';var svg=V.mapSVG(list),vb=fit(list);return vb?svg.replace('viewBox="-600 -225.2 2350 1154.2"','viewBox="'+vb+'"'):svg;}
+ function say(t,bad){var n=document.getElementById('wk74Note');if(!n){n=document.createElement('div');n.id='wk74Note';n.setAttribute('role','status');n.style.cssText='position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:2147483620;max-width:calc(100vw - 32px);border-radius:12px;padding:10px 16px;font:700 14px system-ui,sans-serif;box-shadow:0 6px 20px #0006;text-align:center;color:#fff';document.body.appendChild(n);}n.style.background=bad?'#8a2b2b':'#173b5c';n.textContent=t;clearTimeout(say.t);say.t=setTimeout(function(){n.remove();},6000);}
+ var data=null,view='list',current=null,busy=false;
+ function box(){var o=document.getElementById('wk74Gallery');if(o)return o;o=document.createElement('div');o.id='wk74Gallery';o.className='wk36-modal';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.setAttribute('aria-label','공원 공유 게시판');o.innerHTML='<section class="wk36-card"></section>';document.body.appendChild(o);
+  o.addEventListener('click',function(e){if(e.target===o)exit();});
+  try{history.pushState({wk74:1},'',location.href);}catch(_){}return o;}
+ function exit(){var o=document.getElementById('wk74Gallery');if(o)o.remove();view='list';if(history.state&&history.state.wk74)try{history.back();}catch(_){}}
+ document.addEventListener('keydown',function(e){if(e.key!=='Escape'||!document.getElementById('wk74Gallery'))return;e.preventDefault();e.stopPropagation();view==='one'?paintList():exit();},true);
+ window.addEventListener('popstate',function(){var o=document.getElementById('wk74Gallery');if(!o)return;if(view==='one'){paintList();try{history.pushState({wk74:1},'',location.href);}catch(_){}}else{o.remove();view='list';}});
+ function head(t,one){return '<header class="g-head"><h2>'+esc(t)+'</h2><span>'+(one?'<button type="button" data-back>◀ 목록</button>':'')+'<button type="button" class="g-x" data-x>✕ 나가기</button></span></header>';}
+ function foot(one){return '<div class="g-foot">'+(one?'<button type="button" data-back>◀ 게시판 목록으로</button>':(session()&&session().token?'<button type="button" class="g-pri" data-share>📣 내 공원 공유하기</button>':''))+'<button type="button" class="g-x" data-x>✕ 게시판 나가기</button></div>';}
+ function paintList(){view='list';var c=box().querySelector('.wk36-card'),items=(data&&data.items)||[],mine=items.filter(function(x){return x.mine;})[0];
+  var h=head('🖼 공원 공유 게시판')+'<p class="wk36-status">원기랜드 회원들이 공유한 공원이에요. 카드를 누르면 크게 볼 수 있어요.</p>';
+  if(data&&data.status)h+='<div class="g-st'+(data.bad?' bad':'')+'">'+esc(data.status)+'</div>';
+  var s=session();
+  if(s&&s.token){if(mine)h+='<div class="g-mine"><b>⭐ 내가 공유한 공원</b><small>'+esc(mine.name)+' · 건물 '+mine.count+'개 · '+esc(when(mine.time))+' 공유</small><button type="button" data-mine>🔍 내 공원 보기</button><button type="button" data-share>🔄 지금 공원으로 다시 공유</button><button type="button" data-unshare>🗑 공유 내리기</button></div>';
+   else if(data&&!data.loading)h+='<div class="g-mine"><b>⭐ 아직 내 공원을 공유하지 않았어요</b><small>내가 지은 공원을 게시판에 올려 모두에게 보여 줄 수 있어요.</small><button type="button" class="g-pri" data-share>📣 내 공원 공유하기</button></div>';}
+  else h+='<div class="g-msg">🎟 일반회원으로 로그인하면 내 공원을 지어서 이 게시판에 공유할 수 있어요.</div>';
+  if(!items.length)h+='<div class="g-empty">'+(data&&data.loading?'⏳ 불러오는 중이에요…':'아직 공유된 공원이 없어요. 첫 번째로 공유해 보세요!')+'</div>';
+  else{h+='<div class="g-grid">';items.forEach(function(it,i){var list=parkOf(it.park);h+='<button type="button" class="g-card'+(it.mine?' mine':'')+'" data-i="'+i+'">'+map(list)+'<b>'+esc(it.name)+(it.mine?'<em>⭐ 내 공원</em>':'')+'</b><small>🏗 건물 '+it.count+'개 · '+esc(when(it.time))+'</small>'+(it.message?'<small>💬 '+esc(it.message)+'</small>':'')+'</button>';});h+='</div>';}
+  c.innerHTML=h+foot(false);c.scrollTop=0;bind(c);}
+ function paintOne(it){view='one';current=it;var c=box().querySelector('.wk36-card'),list=parkOf(it.park);
+  var h=head('🖼 '+it.name+'님의 공원',true)+'<p class="wk36-status">🏗 건물 '+it.count+'개 · '+esc(when(it.time))+' 공유'+(it.mine?' · ⭐ 내가 공유한 공원':'')+'</p>'+(it.message?'<div class="g-msg">💬 '+esc(it.message)+'</div>':'')+'<div class="g-big">'+(list.length?map(list):'<div class="g-empty">건물이 없어요.</div>')+'</div>';
+  if(it.mine)h+='<div class="g-mine"><button type="button" data-share>🔄 지금 공원으로 다시 공유</button><button type="button" data-unshare>🗑 공유 내리기</button></div>';
+  if(owner())h+='<div class="g-mine"><b>🔒 주인장 전용</b><small>알맞지 않은 공원이면 게시판에서 내릴 수 있어요. (관리자 Google 로그인)</small><button type="button" data-hide>🚫 게시판에서 내리기</button></div>';
+  c.innerHTML=h+foot(true);c.scrollTop=0;bind(c);}
+ function bind(c){c.querySelectorAll('[data-x]').forEach(function(b){b.onclick=exit;});c.querySelectorAll('[data-back]').forEach(function(b){b.onclick=paintList;});
+  c.querySelectorAll('[data-i]').forEach(function(b){b.onclick=function(){paintOne(data.items[+b.dataset.i]);};});
+  c.querySelectorAll('[data-mine]').forEach(function(b){b.onclick=function(){var m=data.items.filter(function(x){return x.mine;})[0];if(m)paintOne(m);};});
+  c.querySelectorAll('[data-share]').forEach(function(b){b.onclick=share;});
+  c.querySelectorAll('[data-unshare]').forEach(function(b){b.onclick=unshare;});
+  c.querySelectorAll('[data-hide]').forEach(function(b){b.onclick=hide;});}
+ function setStatus(t,bad){if(!data)data={items:[]};data.status=t;data.bad=!!bad;var n=document.querySelector('#wk74Gallery .g-st');if(n){n.textContent=t;n.classList.toggle('bad',!!bad);}else if(view==='list'&&document.getElementById('wk74Gallery'))paintList();}
+ async function load(){if(busy)return;busy=true;var t0=Date.now();
+  try{var s=session();var r=await post1('park_gallery_list',{sessionToken:s&&s.token||''},45000);
+   data={items:r.items||[],mine:r.mine,status:'✓ 공유된 공원 '+(r.items||[]).length+'개 · '+Math.max(1,Math.round((Date.now()-t0)/1000))+'초 걸림'};
+   try{var t=JSON.stringify({t:Date.now(),items:data.items.map(function(x){return Object.assign({},x,{mine:false});})});if(t.length<2000000)localStorage.setItem(CACHE,t);}catch(_){}
+   if(document.getElementById('wk74Gallery')&&view==='list')paintList();}
+  catch(e){var msg=/지원하지 않는/.test(String(e.message))?'공원 공유 게시판은 서버 업데이트(74차 Code.gs) 후에 열려요.':'게시판을 불러오지 못했어요: '+e.message;if(data)data.loading=false;setStatus('⚠ '+msg,true);}
+  finally{busy=false;}}
+ function open(){var cache=null;try{cache=JSON.parse(localStorage.getItem(CACHE)||'null');}catch(_){}
+  if(cache&&cache.items)data={items:cache.items,status:'⏳ 새 공원을 불러오는 중… (지난번 '+new Date(cache.t).toLocaleTimeString('ko-KR')+' 목록을 먼저 보여 줘요)'};
+  else data={items:[],loading:true,status:'⏳ 공원 공유 게시판을 불러오는 중…'};
+  paintList();load();}
+ async function share(){
+  var s=session();
+  if(!s||!s.token){if(window.WonkiParkRoles66)window.WonkiParkRoles66.askJoin('share');else alert('일반회원 로그인 후 공유할 수 있어요.');return;}
+  var raw=null;try{raw=localStorage.getItem('wonkiParkDraft37_'+mkey());}catch(_){}
+  var list=parkOf(raw);
+  if(!list.length){alert('아직 지은 건물이 없어요. 🏗 건물 짓기로 공원을 꾸민 뒤 공유해 주세요!');return;}
+  var def=(s.member&&(s.member.nickname||s.member.name))||'';
+  var name=prompt('📣 내 공원 공유하기\n\n건물 '+list.length+'개가 있는 내 공원을 "공원 공유 게시판"에 올립니다.\n원기랜드에 오는 사람 누구나 볼 수 있어요. (다시 공유하면 바뀌고, 언제든 내릴 수 있어요)\n\n게시판에 보일 이름(별명):',def);if(name===null)return;name=String(name).trim();if(!name){alert('이름을 적어 주세요.');return;}
+  var msg=prompt('공원 소개 한마디 (없어도 돼요)','');if(msg===null)return;
+  say('📣 공원을 게시판에 올리는 중이에요…');
+  try{var r=await post1('park_gallery_share',{sessionToken:s.token,name:name,message:msg,park:raw},45000);say('📣 '+(r.message||'공유했어요!'));
+   if(!document.getElementById('wk74Gallery'))open();else{setStatus('⏳ 방금 올린 공원을 불러오는 중…');load();}}
+  catch(e){say(/지원하지 않는/.test(String(e.message))?'📣 공원 공유 게시판은 서버 업데이트 후에 쓸 수 있어요':'📣 공유하지 못했어요: '+e.message,true);}
+ }
+ async function unshare(){var s=session();if(!s||!s.token)return;if(!confirm('내 공원을 공원 공유 게시판에서 내릴까요?\n(내 공원 건물은 그대로 남아요)'))return;
+  try{var r=await post1('park_gallery_unshare',{sessionToken:s.token},45000);say('🗑 '+(r.message||'내렸어요'));setStatus('⏳ 목록을 새로 불러오는 중…');view='list';load();}
+  catch(e){say('🗑 내리지 못했어요: '+e.message,true);}}
+ async function hide(){if(!current)return;if(!confirm('"'+current.name+'"님의 공원을 게시판에서 내릴까요?'))return;
+  var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){say('🔒 관리자 로그인 실패: '+(e&&e.message||e),true);return;}
+  try{var r=await post1('admin_gallery_hide',{idToken:tok,key:current.key,hide:true},45000);say('🚫 '+(r.message||'내렸어요'));data.items=data.items.filter(function(x){return x.key!==current.key;});paintList();load();}
+  catch(e){say('🚫 내리지 못했어요: '+e.message,true);}}
+ function install(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');if(!tools||document.getElementById('wk74Board'))return;
+  var b=document.createElement('button');b.type='button';b.id='wk74Board';b.textContent='🖼 공원 공유 게시판';b.onclick=open;
+  var after=document.getElementById('wk66Owner');if(after&&after.parentNode===tools)tools.insertBefore(b,after.nextSibling);else tools.appendChild(b);}
+ window.WonkiParkGallery74={open:open,share:share,load:load};
+ document.addEventListener('wonki-main-map-ready',install);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
+ window.addEventListener('load',install,{once:true});
+})();
+</script>
