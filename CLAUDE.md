@@ -7,11 +7,11 @@
   - 페이지를 열면 가운데에 크게 뜨고, ×·확인·바깥 누르기·Esc로 닫힙니다. "오늘 하루 보지 않기"와 지도 도구의 "📢 NN차 업데이트 안내" 다시 보기 버튼이 있습니다.
   - 오른쪽 위에는 원기랜드 토끼 캐릭터(흰 토끼, 왕관, W 망토)를 그대로 씁니다. 그림은 `ART.rabbit`에 들어 있습니다. 왼쪽 위에는 관람차 메달을 씁니다.
   - 다른 작품의 캐릭터 그림은 새로 그려 넣지 않습니다.
-- **56차부터는 나눠서 배포합니다 (Neocities 한 파일 80MB 제한 대비).** `build-tools/patch.py`로 만든 HTML을 `build-tools/split.py`로 나눠, `wonkiland-vNN/` 폴더에 다음을 넣습니다.
-  - `wonkiland_vNN.html` (약 6MB) + `images/` 폴더 + `music/` 폴더
-  - 위 세 가지를 한 번에 받을 수 있는 `wonkiland_vNN_neocities.zip`
-  - README.md: 바뀐 점, zip 다운로드 링크, 올리는 방법(HTML과 images·music 폴더를 Neocities의 같은 폴더에 올리기), 이번에 새로 생긴 그림·음악 파일 목록
-  - 파일 이름은 내용으로 정해지므로, 이전 차수에서 이미 올린 그림·음악은 다시 올릴 필요가 없다고 안내합니다.
+- **57차부터 배포 방식** (Neocities 무료 계정: mp3 불가, 폴더째 올리기 불가). `build-tools/patch.py`로 만든 HTML을 `build-tools/split.py`로 나눕니다(기본값: 그림은 폴더 없이 HTML 옆, 음악은 HTML 안). `wonkiland-vNN/` 폴더에 다음을 넣습니다.
+  - `wonkiland_vNN.html` (약 12MB) + 그림 파일들(폴더 없이)
+  - HTML과 그림을 한 번에 받는 `wonkiland_vNN_neocities.zip`
+  - README.md: 바뀐 점, HTML 다운로드 링크, zip 링크, 올리는 방법, **이번에 새로 생긴 그림 파일 목록**(이전 차수 폴더와 비교). 새 그림이 없으면 "HTML 하나만 올리면 됨"이라고 안내합니다.
+  - 파일 이름은 내용으로 정해지므로 이미 올린 그림은 다시 올릴 필요가 없습니다.
 - 루트 README.md의 다운로드 링크를 최신 차수(zip)로 바꿉니다.
 - 원기랜드 HTML은 `build-tools/`로 만듭니다. 배포된 HTML을 직접 고치지 말고 `build-tools/patch.py`에 새 단계를 추가한 뒤 다시 만듭니다. 방법은 `build-tools/README.md`에 있습니다.
 - 수학 학년 추가는 `PACKS['학년']`(문제 그림·정답·단원·캐릭터)과 목차 그림 대결판을 초3-1(`assets/g31/`)처럼 만듭니다. 문제 PDF와 그림은 사용자의 구글 드라이브(`문제파일`, 학년 폴더)에 있습니다.

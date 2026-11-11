@@ -1,7 +1,13 @@
-"""원기랜드 HTML 안의 큰 그림·음악을 images/, music/ 폴더의 파일로 꺼냅니다.
+"""원기랜드 HTML 안의 큰 그림을 HTML과 같은 폴더의 파일로 꺼냅니다. (57차부터)
+
+Neocities 무료 계정은 폴더째 올리기가 안 되고 mp3도 막혀 있어서:
+- 그림은 하위 폴더 없이 HTML 옆에 바로 둡니다 (파일만 모두 선택해 올리면 됨)
+- 음악은 HTML 안에 그대로 둡니다
+
+(56차 처음 방식: images/, music/ 폴더)
 
 사용법:  python3 build-tools/split.py 입력.html 출력폴더
-결과:    출력폴더/wonkiland.html (작아진 HTML), 출력폴더/images/*, 출력폴더/music/*
+결과:    출력폴더/wonkiland.html (작아진 HTML), 출력폴더/*.webp 등 그림 파일
 같은 그림은 한 파일만 만듭니다. 파일 이름은 내용으로 정해져서, 내용이 같으면 차수가 바뀌어도 이름이 같습니다.
 """
 import base64, hashlib, os, re, sys
@@ -11,28 +17,31 @@ EXT = {'webp': 'webp', 'png': 'png', 'jpeg': 'jpg', 'jpg': 'jpg', 'gif': 'gif', 
 MIN_CHARS = 8000  # 이보다 작은 그림(아이콘 등)은 HTML에 그대로 둡니다
 
 
-def split(src, out_dir, html_name='wonkiland.html'):
+def split(src, out_dir, html_name='wonkiland.html', flat=True, keep_audio=True):
     t = open(src, encoding='utf-8').read()
-    os.makedirs(os.path.join(out_dir, 'images'), exist_ok=True)
-    os.makedirs(os.path.join(out_dir, 'music'), exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
+    if not flat:
+        os.makedirs(os.path.join(out_dir, 'images'), exist_ok=True)
+        os.makedirs(os.path.join(out_dir, 'music'), exist_ok=True)
     made = {}
     stats = {'images': [0, 0], 'music': [0, 0]}
 
     def repl(m):
         kind, sub, data = m.group(1), m.group(2), m.group(3)
-        if len(m.group(0)) < MIN_CHARS or sub not in EXT:
+        if len(m.group(0)) < MIN_CHARS or sub not in EXT or (keep_audio and kind == 'audio'):
             return m.group(0)
         if m.group(0) in made:
             return made[m.group(0)]
         raw = base64.b64decode(data + '=' * (-len(data) % 4))
         folder = 'images' if kind == 'image' else 'music'
         name = hashlib.sha1(raw).hexdigest()[:14] + '.' + EXT[sub]
-        path = os.path.join(out_dir, folder, name)
+        rel = name if flat else folder + '/' + name
+        path = os.path.join(out_dir, rel)
         if not os.path.exists(path):
             open(path, 'wb').write(raw)
             stats[folder][0] += 1
             stats[folder][1] += len(raw)
-        made[m.group(0)] = folder + '/' + name
+        made[m.group(0)] = rel
         return made[m.group(0)]
 
     t2 = re.sub(r'data:(image|audio)/([a-z0-9.+-]+);base64,([A-Za-z0-9+/=]+)', repl, t)
