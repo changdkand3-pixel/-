@@ -17,7 +17,7 @@ EXT = {'webp': 'webp', 'png': 'png', 'jpeg': 'jpg', 'jpg': 'jpg', 'gif': 'gif', 
 MIN_CHARS = 8000  # 이보다 작은 그림(아이콘 등)은 HTML에 그대로 둡니다
 
 
-def split(src, out_dir, html_name='wonkiland.html', flat=True, keep_audio=True):
+def split(src, out_dir, html_name='wonkiland.html', flat=True, keep_audio=True, prefix=''):
     t = open(src, encoding='utf-8').read()
     os.makedirs(out_dir, exist_ok=True)
     if not flat:
@@ -41,7 +41,7 @@ def split(src, out_dir, html_name='wonkiland.html', flat=True, keep_audio=True):
             open(path, 'wb').write(raw)
             stats[folder][0] += 1
             stats[folder][1] += len(raw)
-        made[m.group(0)] = rel
+        made[m.group(0)] = prefix + rel
         return made[m.group(0)]
 
     t2 = re.sub(r'data:(image|audio)/([a-z0-9.+-]+);base64,([A-Za-z0-9+/=]+)', repl, t)
@@ -52,6 +52,7 @@ def split(src, out_dir, html_name='wonkiland.html', flat=True, keep_audio=True):
 if __name__ == '__main__':
     src, out = sys.argv[1], sys.argv[2]
     name = sys.argv[3] if len(sys.argv) > 3 else os.path.basename(src)
-    before, after, st = split(src, out, name)
+    prefix = sys.argv[4] if len(sys.argv) > 4 else ''  # 예: /작업장/ (61차부터: 그림은 항상 작업장 폴더에서 찾음)
+    before, after, st = split(src, out, name, prefix=prefix)
     print('HTML %.1fMB → %.1fMB' % (before / 1e6, after / 1e6))
     print('images %d개 %.1fMB · music %d개 %.1fMB' % (st['images'][0], st['images'][1] / 1e6, st['music'][0], st['music'][1] / 1e6))
