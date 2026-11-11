@@ -1,12 +1,13 @@
 # 원기랜드
 
-## ⬇️ 최신 59차 다운로드
+## ⬇️ 최신 60차 다운로드
 
-### **[👉 wonkiland_v59.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v59/wonkiland_v59.html)**
+### **[👉 wonkiland_v60.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v60/wonkiland_v60.html)**
 
-58차 그림을 올리셨다면 이 HTML 하나만 올리면 됩니다 (새 그림 없음). 자세한 내용은 [59차 안내](wonkiland-v59/README.md)를 보세요.
+58차 그림을 올리셨다면 이 HTML 하나만 올리면 됩니다 (새 그림 없음). 자세한 내용은 [60차 안내](wonkiland-v60/README.md)를 보세요.
 
-- [59차 바뀐 점](wonkiland-v59/README.md)
+- [60차 바뀐 점](wonkiland-v60/README.md)
+- [59차 안내](wonkiland-v59/README.md)
 - [58차 안내](wonkiland-v58/README.md)
 - [57차 안내](wonkiland-v57/README.md)
 - [56차 안내](wonkiland-v56/README.md)

@@ -296,6 +296,10 @@ _a=t.index("  if(s.semester==='e3-1'&&window.WonkiGrade31){");_b=t.index("\n  if
 _eb32=t[_a:_b].replace('WonkiGrade31','WonkiGrade32').replace("'e3-1'","'e3-2'").replace("goku31","goku32").replace('초3-1','초3-2')
 t=t[:_a]+_eb32+'\n'+t[_a:]
 
+
+# ---------- 14. 60차: 회원 동기화의 ① 서버 연결 확인(JSONP)이 막혀도 멈추지 않기 (실패하면 건너뛰고 로그인으로)
+rep("""currentStage='① 서버 연결 확인';setStatus(currentStage+' 중…');await ping();""","""currentStage='① 서버 연결 확인';setStatus(currentStage+' 중…');try{await ping();}catch(_e1){console.warn('WonkiLand: 연결 확인 건너뜀',_e1);}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 final = _g32html + '\n' + _g31html + '\n' + final
