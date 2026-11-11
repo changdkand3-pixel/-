@@ -1,13 +1,14 @@
 # 원기랜드
 
-## ⬇️ 최신 83차 다운로드
+## ⬇️ 최신 84차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v83/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v83_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v83/wonkiland_v83_neocities.zip)
+그림까지 한 번에: [wonkiland_v84_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v84/wonkiland_v84_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. 회원 삭제가 되살아나지 않게 하려면 서버 Code.gs도 바꿔 주세요. 자세한 것은 [83차 안내](wonkiland-v83/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. 84차는 서버 변경 없음(83차 서버 Code.gs는 필요). 자세한 것은 [84차 안내](wonkiland-v84/README.md)를 보세요.
 
+- [84차 안내 (휴회 이동 · 코스 바로가기 바)](wonkiland-v84/README.md)
 - [83차 안내 (삭제한 회원 되살아남 해결 · 서버 Code_83)](wonkiland-v83/README.md)
 - [82차 안내 (광고 없는 짧은 주소 /w)](wonkiland-v82/README.md)
 - [81차 안내 (관리자 비밀번호 4자리)](wonkiland-v81/README.md)

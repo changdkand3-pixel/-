@@ -379,6 +379,10 @@ rep("""const remoteById=new Map(remote.members.map(m=>[String(m.id),m]));""","""
    for(let wi=local.length-1;wi>=0;wi--)if(local[wi]&&wk83Del.has(String(local[wi].id)))local.splice(wi,1);
    const remoteById=new Map(remote.members.map(m=>[String(m.id),m]));""")
 
+# ---------- 25. 84차: 휴회 이동·재원 복귀가 동기화 뒤 되돌아가지 않게 (수정 시각 남기기)
+rep("""if(b.dataset.suspend){m.suspended=true;persist();render()}""","""if(b.dataset.suspend){m.suspended=true;m.updatedAt=new Date().toISOString();persist();render();const wk84s=document.getElementById('memberSaveStatus');if(wk84s){wk84s.textContent='💤 '+(m.name||'회원')+' 휴회 이동 · 다음 동기화 때 클라우드에도 반영돼요';wk84s.style.color='#b26a00';}}""")
+rep("""if(b.dataset.resume){m.suspended=false;persist();render()}""","""if(b.dataset.resume){m.suspended=false;m.updatedAt=new Date().toISOString();persist();render();const wk84s=document.getElementById('memberSaveStatus');if(wk84s){wk84s.textContent='✅ '+(m.name||'회원')+' 재원 복귀 · 다음 동기화 때 클라우드에도 반영돼요';wk84s.style.color='#16834a';}}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
