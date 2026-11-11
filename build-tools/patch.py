@@ -337,6 +337,10 @@ rep("""window.WonkiParkEditor36={open,close,""","""window.WonkiParkEditor36={ope
 # ---------- 17. 65차: 관리자 메뉴에 방문자 통계·회원 공원 구경하기 넣기
 rep("""const analysis=el('a','📊 Google 관리자 분석 열기',box);analysis.className='wk36-link';analysis.href=analysisURL;analysis.target='_blank';analysis.rel='noopener noreferrer';}""","""const analysis=el('a','📊 Google 관리자 분석 열기',box);analysis.className='wk36-link';analysis.href=analysisURL;analysis.target='_blank';analysis.rel='noopener noreferrer';try{window.WonkiParkViewer?.adminMenu?.(box,close);}catch(e65){console.warn(e65);}}""")
 
+# ---------- 18. 66차: 방문자는 주인장 공원 둘러보기만, 일반회원은 자기 공원만 짓고 보기
+rep(""" function personalState(){try{const saved=JSON.parse(localStorage.getItem(key())||'null');""",""" function personalState(){const r66=window.WonkiParkRoles66;if(r66&&r66.mode()==='visitor'){try{return C.clean(r66.ownerPark()||published);}catch(_){return published;}}try{const saved=JSON.parse(localStorage.getItem(key())||'null');""")
+rep(""" async function open(view){if(view==='menu'&&!await window.WonkiAdminLock36.unlock())return;""",""" async function open(view){if(view!=='menu'&&window.WonkiParkRoles66&&!window.WonkiParkRoles66.canBuild()){window.WonkiParkRoles66.askJoin();return;}if(view==='menu'&&!await window.WonkiAdminLock36.unlock())return;""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
@@ -344,6 +348,8 @@ final = _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64
+_pr66=open(sys.argv[2].replace('world_final.webp','park-roles.html'),encoding='utf-8').read()
+final = final + '\n' + _pr66
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))
