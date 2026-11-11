@@ -1,13 +1,14 @@
 # 원기랜드
 
-## ⬇️ 최신 81차 다운로드
+## ⬇️ 최신 82차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v81/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v81_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v81/wonkiland_v81_neocities.zip)
+그림까지 한 번에: [wonkiland_v82_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/wonkiland_v82_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리면 됩니다(81차는 서버 변경 없음, 6시간 로그인은 80차 서버 Code.gs 필요). 자세한 것은 [81차 안내](wonkiland-v81/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. 자세한 것은 [82차 안내](wonkiland-v82/README.md)를 보세요.
 
+- [82차 안내 (광고 없는 짧은 주소 /w)](wonkiland-v82/README.md)
 - [81차 안내 (관리자 비밀번호 4자리)](wonkiland-v81/README.md)
 - [80차 안내 (주인장 공원 기기끼리 공유 · 로그인 6시간 · 서버 Code_80)](wonkiland-v80/README.md)
 - [79차 안내 (회전찻잔 · 주인장 공원 비우기)](wonkiland-v79/README.md)

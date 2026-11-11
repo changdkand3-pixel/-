@@ -52,6 +52,8 @@
 (function(){try{if(sessionStorage.getItem('wk70_src'))return;var ua=navigator.userAgent||'',host='',path='';
  try{if(document.referrer){var u=new URL(document.referrer);host=u.hostname.replace(/^www\.|^m\./,'');path=u.pathname;}}catch(_){}
  if(host===location.hostname)host='';
+ /* 82차: 짧은 주소 /w 를 거쳐 오면 처음 사이트를 wkref로 받음 */
+ try{var wr=new URL(location.href).searchParams.get('wkref');if(!host&&wr&&wr!==location.hostname)host=String(wr).replace(/^www\.|^m\./,'').slice(0,60);}catch(_){}
  var tag='';try{tag=(new URL(location.href).searchParams.get('src')||'').replace(/[<>"'=]/g,'').trim().slice(0,30);}catch(_){}
  var src='',det='';
  if(/KAKAOTALK/i.test(ua)){src='카카오톡';det='카톡 앱에서 열림';}
