@@ -334,6 +334,9 @@ rep(""" function getClientId(){""","""function wk64Exp(t){try{return JSON.parse(
 rep("""const saved=await post('guestbook_save',{items:merged});const finalItems=merge(merged,saved.items||[]);""","""const saved=merged.length>(cloud.items||[]).length?await post('guestbook_save',{items:merged}):{items:[]};const finalItems=merge(merged,saved.items||[]);""")
 rep("""window.WonkiParkEditor36={open,close,""","""window.WonkiParkEditor36={open,close,art,""")
 
+# ---------- 17. 65차: 관리자 메뉴에 방문자 통계·회원 공원 구경하기 넣기
+rep("""const analysis=el('a','📊 Google 관리자 분석 열기',box);analysis.className='wk36-link';analysis.href=analysisURL;analysis.target='_blank';analysis.rel='noopener noreferrer';}""","""const analysis=el('a','📊 Google 관리자 분석 열기',box);analysis.className='wk36-link';analysis.href=analysisURL;analysis.target='_blank';analysis.rel='noopener noreferrer';try{window.WonkiParkViewer?.adminMenu?.(box,close);}catch(e65){console.warn(e65);}}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
