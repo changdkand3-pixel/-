@@ -12,6 +12,14 @@ python3 build-tools/patch.py build-tools/base/wonkiland_original_49.html build-t
 
 `ok`가 나오면 완성입니다. (55차 기준으로 `wonkiland-v55/wonkiland_v55.html`과 똑같은 파일이 나옵니다.)
 
+## 나눠서 배포하기 (56차부터)
+
+```bash
+python3 build-tools/split.py 결과.html 배포폴더 wonkiland_vNN.html
+```
+
+`배포폴더`에 작은 HTML(약 6MB)과 `images/`, `music/` 폴더가 생깁니다. 셋을 Neocities의 **같은 폴더**에 올리면 됩니다. 8KB보다 작은 그림(아이콘 등)과 수학 초1-1·1-2 문제 그림(코드 안에 다른 형식으로 들어 있음)은 HTML에 그대로 남습니다. 55차로 시험한 결과: HTML 30.4MB → 6.0MB, images 312개(13.8MB), music 40개(4.4MB), 모든 자동 시험 통과.
+
 ## 폴더 안내
 
 | 위치 | 내용 |
@@ -23,6 +31,7 @@ python3 build-tools/patch.py build-tools/base/wonkiland_original_49.html build-t
 | `assets/eng51.json` | 영어 추가 문제 (학기별 단어·문장·독해) |
 | `assets/g31/math31.json` | 수학 초3-1 문제 100개(그림)·정답·단원·캐릭터 |
 | `assets/g31/g31.html` | 초3-1 목차 그림·캐릭터 그림·대결판 |
+| `split.py` | 큰 그림·음악을 images/, music/ 폴더 파일로 꺼내는 프로그램 |
 | `tests/` | 브라우저 자동 시험 (Playwright). 예: `node build-tools/tests/t56.js $PWD/결과.html $PWD/화면` |
 | `scripts/` | 그림·문제를 만들 때 쓴 참고용 프로그램 (임시 폴더 경로가 들어 있어 그대로는 실행되지 않을 수 있음) |
 
