@@ -341,6 +341,15 @@ rep("""const analysis=el('a','📊 Google 관리자 분석 열기',box);analysis
 rep(""" function personalState(){try{const saved=JSON.parse(localStorage.getItem(key())||'null');""",""" function personalState(){const r66=window.WonkiParkRoles66;if(r66&&r66.mode()==='visitor'){try{return C.clean(r66.ownerPark()||published);}catch(_){return published;}}try{const saved=JSON.parse(localStorage.getItem(key())||'null');""")
 rep(""" async function open(view){if(view==='menu'&&!await window.WonkiAdminLock36.unlock())return;""",""" async function open(view){if(view!=='menu'&&window.WonkiParkRoles66&&!window.WonkiParkRoles66.canBuild()){window.WonkiParkRoles66.askJoin();return;}if(view==='menu'&&!await window.WonkiAdminLock36.unlock())return;""")
 
+# ---------- 19. 68차: 서버 요청 바로 주고받기 + 관리자 기기가 아니면 전체 동기화에서 관리자 회원자료 건너뛰기
+rep("""const memberJob=(async()=>{if(typeof window.wonkiLandRunMemberSync!=='function')""","""const wk68Admin=(()=>{try{return localStorage.getItem('wk65_admin_device')==='1';}catch(_){return false;}})();let wk68Note='';
+   const memberJob=!wk68Admin?(async()=>{let s=null;try{s=JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');}catch(_){}if(s&&s.token&&window.WonkiMemberProgress){const ok=await window.WonkiMemberProgress.upload();wk68Note=ok?'✅ 내 기록(공원·수학·영어): 클라우드 저장 완료':'';if(!ok)window.__wonkiMemberSyncError={stage:'내 기록 저장',message:'내 기록을 클라우드에 저장하지 못했습니다.'};return ok;}wk68Note='ℹ 회원자료: 관리자 기기에서만 동기화합니다 (건너뜀)';return true;})():(async()=>{if(typeof window.wonkiLandRunMemberSync!=='function')""")
+rep("""if(memberOK)lines.push('✅ 회원자료(상상코칭·일반회원·가구 배치): 완료');""","""if(memberOK)lines.push(wk68Note||'✅ 회원자료(상상코칭·일반회원·가구 배치): 완료');""")
+rep("""alert('전체 동기화가 완료되었습니다.\\n상상코칭 회원·일반회원·회원별 가구 배치·방명록을 확인했습니다.');""","""alert(wk68Admin?'전체 동기화가 완료되었습니다.\\n상상코칭 회원·일반회원·회원별 가구 배치·방명록을 확인했습니다.':'전체 동기화가 완료되었습니다.\\n'+lines.join('\\n'));""")
+_fc68=open(sys.argv[2].replace('world_final.webp','fast-cloud.html'),encoding='utf-8').read()
+_h=t.find('<head>')+len('<head>')
+t=t[:_h]+'\n'+_fc68+t[_h:]
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

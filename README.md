@@ -1,14 +1,15 @@
 # 원기랜드
 
-## ⬇️ 최신 67차 다운로드
+## ⬇️ 최신 68차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v67/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v68/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v67_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v67/wonkiland_v67_neocities.zip)
+그림까지 한 번에: [wonkiland_v68_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v68/wonkiland_v68_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). 이번에는 서버 코드를 바꿀 것이 없습니다(66차 Code_66은 필요). 방법은 [67차 안내](wonkiland-v67/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). 이번에는 서버 코드를 바꿀 것이 없습니다(66차 Code_66은 필요). 방법은 [68차 안내](wonkiland-v68/README.md)를 보세요.
 
-- [67차 바뀐 점](wonkiland-v67/README.md)
+- [68차 바뀐 점 (동기화 빠르게)](wonkiland-v68/README.md)
+- [67차 안내](wonkiland-v67/README.md)
 - [66차 안내 (서버 Code_66)](wonkiland-v66/README.md)
 - [65차 안내](wonkiland-v65/README.md)
 - [64차 안내](wonkiland-v64/README.md)
