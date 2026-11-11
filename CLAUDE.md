@@ -32,3 +32,4 @@
 - **84차**: 상상코칭 회원의 휴회 이동·재원 복귀도 `updatedAt`을 새로 적어야 동기화 때 서버 쪽 옛 상태에 덮이지 않음(회원 자료를 바꾸는 새 버튼을 만들 때도 같음). 코스 창(`.modal.open`)이 열리면 `.wonki-course-picker`(z-index 40)를 낮춰 창 위로 안 뜨게 함.
 - **86차**: 예전 버전이 상상코칭 회원에 남긴 `deletedAt` 표시도 삭제로 처리(목록·회원 수에서 빼고, 동기화 때 `admin_member_delete`로 서버에서도 지움).
 - **88차**: 회원관리 창 `#memberManagerModal.open`은 z-index 999990이라, 그 안에서 여는 새 창은 1000001 이상으로 둠(final.html `wk88-member-modal-order`).
+- **89차**: 코스 창(`.modal.open`, z-index 20)이 열리면 지도 스크롤 막대 `.wk44-sb`와 방문자 정보 줄 `#wonkiExtraMainMount`를 숨김(final.html `wk89-course-modal-clean`). 메인 지도 위에 새로 띄우는 요소도 코스 창이 열렸을 때 겹치는지 확인할 것.

@@ -1,13 +1,14 @@
 # 원기랜드
 
-## ⬇️ 최신 88차 다운로드
+## ⬇️ 최신 89차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v88/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v89/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v88_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v88/wonkiland_v88_neocities.zip)
+그림까지 한 번에: [wonkiland_v89_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v89/wonkiland_v89_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. 88차는 서버 변경 없음(83차 서버 Code.gs는 필요). 자세한 것은 [88차 안내](wonkiland-v88/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. 89차는 서버 변경 없음(83차 서버 Code.gs는 필요). 자세한 것은 [89차 안내](wonkiland-v89/README.md)를 보세요.
 
+- [89차 안내 (코스 창 위 스크롤 막대 가림 해결)](wonkiland-v89/README.md)
 - [88차 안내 (숙제·성적 창 가림 해결)](wonkiland-v88/README.md)
 - [87차 안내 (가입 화면 제목 정리)](wonkiland-v87/README.md)
 - [86차 안내 (정윤서 회원 다시 생김 해결)](wonkiland-v86/README.md)
