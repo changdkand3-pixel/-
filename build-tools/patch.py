@@ -368,6 +368,17 @@ rep("""if(password.length<8||password.length>128)throw Error('비밀번호는8~1
 rep("""newPw=(!existing||change)?field('새 비밀번호 ·8자 이상','new'):null""","""newPw=(!existing||change)?field('새 비밀번호 · 4자 이상 (숫자 4자리도 돼요)','new'):null""")
 rep("""try{if(existing&&!await verify(old.value))throw Error('비밀번호가 올바르지 않습니다.');""","""try{if(existing){let lf={};try{lf=JSON.parse(localStorage.getItem('wk81_lock_fail')||'{}')||{};}catch(_){}if(lf.until&&lf.until>Date.now())throw Error('비밀번호를 여러 번 틀렸어요. '+Math.ceil((lf.until-Date.now())/60000)+'분 뒤에 다시 해 주세요.');if(!await verify(old.value)){lf.n=(lf.n||0)+1;if(lf.n>=5){lf={until:Date.now()+5*60000};}try{localStorage.setItem('wk81_lock_fail',JSON.stringify(lf));}catch(_){}throw Error(lf.until?'비밀번호를 5번 틀렸어요. 5분 뒤에 다시 해 주세요.':'비밀번호가 올바르지 않습니다. ('+lf.n+'/5)');}try{localStorage.removeItem('wk81_lock_fail');}catch(_){}}""")
 
+# ---------- 24. 83차: 상상코칭 회원 삭제가 동기화 뒤 되살아나지 않게 (삭제 기록 → 동기화 때 서버에서도 삭제, 서버의 삭제 목록은 다른 기기에서도 빼기)
+rep("""if(b.dataset.delete&&confirm('이 회원 정보를 삭제할까요?')){members=members.filter(x=>x.id!==id);persist();render()}""","""if(b.dataset.delete&&confirm('이 회원 정보를 삭제할까요?')){const wk83g=members.find(x=>x.id===id);members=members.filter(x=>x.id!==id);persist();try{const t=JSON.parse(localStorage.getItem('wk83_deleted_members')||'[]');if(!t.some(x=>String(x.id)===String(id)))t.push({id:String(id),name:(wk83g&&wk83g.name)||'',at:new Date().toISOString()});localStorage.setItem('wk83_deleted_members',JSON.stringify(t));}catch(_){}render();const wk83s=document.getElementById('memberSaveStatus');if(wk83s){wk83s.textContent='🗑 삭제됨 · 다음 동기화 때 클라우드에서도 지워져요';wk83s.style.color='#c62828';}}""")
+rep("""const remoteById=new Map(remote.members.map(m=>[String(m.id),m]));""","""const wk83T=(()=>{try{const a=JSON.parse(localStorage.getItem('wk83_deleted_members')||'[]');return Array.isArray(a)?a:[];}catch(_){return [];}})();
+   const wk83Del=new Set([...(Array.isArray(remote.deletedIds)?remote.deletedIds:[]).map(String),...wk83T.map(x=>String(x.id))]);
+   if(wk83T.length){currentStage='③-1 삭제한 회원 클라우드에서 지우기';setStatus(currentStage+' 중…');
+    try{const dr=await post({action:'admin_member_delete',idToken:adminToken,ids:wk83T.map(x=>String(x.id))});if(dr&&dr.success!==false)localStorage.removeItem('wk83_deleted_members');}
+    catch(e83){if(!/지원하지 않는/.test(String(e83&&e83.message)))throw e83;console.warn('WonkiLand: 서버가 아직 회원 삭제를 지원하지 않아요 (Code_83 필요)');}}
+   remote.members=remote.members.filter(m=>!wk83Del.has(String(m&&m.id)));
+   for(let wi=local.length-1;wi>=0;wi--)if(local[wi]&&wk83Del.has(String(local[wi].id)))local.splice(wi,1);
+   const remoteById=new Map(remote.members.map(m=>[String(m.id),m]));""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
