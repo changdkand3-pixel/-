@@ -6,7 +6,7 @@
 
 **56차 때 그림 파일을 이미 올리셨다면 이 HTML 파일 하나만 올리면 됩니다.** (이번에 새로 생긴 그림: 없음)
 
-처음 올리거나 그림을 다시 올려야 하면: [wonkiland_v57_neocities.zip (HTML + 그림 312개, 약 16MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v57/wonkiland_v57_neocities.zip)
+처음 올리거나 그림을 다시 올려야 하면: [wonkiland_v57_neocities.zip (HTML + 그림 312개, 약 22MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v57/wonkiland_v57_neocities.zip)
 
 ## Neocities에 올리는 방법
 
