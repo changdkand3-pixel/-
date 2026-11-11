@@ -316,11 +316,31 @@ _og=('<meta name="description" content="'+_desc+'">'
 rep("""<html lang="ko"><head><meta charset="utf-8">""","""<html lang="ko"><head><meta charset="utf-8">"""+_og)
 rep("""<title>원기랜드 50차 · 연결지도 적용 | 웰컴투 원기랜드 · 수정 38</title>""","""<title>웰컴투 원기랜드</title>""")
 
+
+# ---------- 16. 64차: 휴대폰 동기화 빠르게 + 관리자 로그인 1시간 기억 + 건물 그림 함수 공개(구경하기용)
+rep("""try{await ping();}catch(_e1){console.warn('WonkiLand: 연결 확인 건너뜀',_e1);}""","""/* 64차: 연결 확인 생략(실제 요청이 확인 역할) */""")
+rep("""currentStage='② 관리자 Google 로그인';setStatus(currentStage+' 중…');adminToken=await googleCredential(clientId);window.wonkiLandAdminToken=adminToken;""","""currentStage='② 관리자 Google 로그인';setStatus(currentStage+' 중…');adminToken=wk64Cached()||await googleCredential(clientId);wk64Store(adminToken);window.wonkiLandAdminToken=adminToken;""")
+rep("""const remote=await post({action:'admin_list',idToken:adminToken});""","""const wk64Friends=post({action:'admin_friend_list',idToken:adminToken});wk64Friends.catch(()=>{});
+   const remote=await post({action:'admin_list',idToken:adminToken});""")
+rep("""const remoteFriendsResult=await post({action:'admin_friend_list',idToken:adminToken});""","""const remoteFriendsResult=await wk64Friends;let wk64Changed=false;""")
+rep("""if(!r || (Date.parse(l.updatedAt||l.date||0)||0)>(Date.parse(r.updatedAt||r.date||0)||0))friendMap.set(id,{...(r||{}),...l,id});""","""if(!r || (Date.parse(l.updatedAt||l.date||0)||0)>(Date.parse(r.updatedAt||r.date||0)||0)){friendMap.set(id,{...(r||{}),...l,id});wk64Changed=true;}""")
+rep("""const friendSaved=await post({action:'admin_friend_save',idToken:adminToken,members:mergedFriends});""","""const friendSaved=wk64Changed?await post({action:'admin_friend_save',idToken:adminToken,members:mergedFriends}):{success:true};""")
+rep("""window.wonkiLandRunMemberSync=sync;""","""window.wonkiLandRunMemberSync=sync;
+ window.wonkiLandAdminLogin=async function(){const c=wk64Cached();if(c)return c;const id=getClientId();if(!id)throw new Error('Google Client ID 입력이 취소되었습니다.');const t=await googleCredential(id);wk64Store(t);window.wonkiLandAdminToken=t;return t;};""")
+rep(""" function getClientId(){""","""function wk64Exp(t){try{return JSON.parse(atob(String(t).split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000||0;}catch(_){return 0;}}
+ function wk64Cached(){try{const t=sessionStorage.getItem('wk64_admin_token');return t&&wk64Exp(t)-Date.now()>5*60*1000?t:'';}catch(_){return '';}}
+ function wk64Store(t){try{if(t&&wk64Exp(t))sessionStorage.setItem('wk64_admin_token',t);}catch(_){}}
+ function getClientId(){""")
+rep("""const saved=await post('guestbook_save',{items:merged});const finalItems=merge(merged,saved.items||[]);""","""const saved=merged.length>(cloud.items||[]).length?await post('guestbook_save',{items:merged}):{items:[]};const finalItems=merge(merged,saved.items||[]);""")
+rep("""window.WonkiParkEditor36={open,close,""","""window.WonkiParkEditor36={open,close,art,""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
 final = _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
+_pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
+final = final + '\n' + _pv64
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))
