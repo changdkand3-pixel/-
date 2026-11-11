@@ -17,13 +17,13 @@
  var ENDPOINT='https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec';
  var NOTICE='🔔 로그인하면 주인장에게 방문 기록(닉네임·방문 시각)이 보여요.';
  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
- function post1(action,extra){var nonce='wk70_'+Date.now()+'_'+Math.random().toString(36).slice(2);return new Promise(function(resolve,reject){
+ function post1(action,extra,wait){var nonce='wk70_'+Date.now()+'_'+Math.random().toString(36).slice(2);return new Promise(function(resolve,reject){
   var f=document.createElement('iframe');f.name='wk70_'+nonce;f.style.cssText='display:none;width:0;height:0;border:0';
   var fm=document.createElement('form');fm.method='POST';fm.action=ENDPOINT;fm.target=f.name;fm.style.display='none';
   var ta=document.createElement('textarea');ta.name='payload';ta.value=JSON.stringify(Object.assign({action:action,_wonkiNonce:nonce},extra||{}));fm.appendChild(ta);
   var done=false;function fin(fn,v){if(done)return;done=true;clearTimeout(tm);window.removeEventListener('message',on);fm.remove();f.remove();fn(v);}
   function on(e){var d=e.data;if(!d||d.type!=='wonki-cloud-response'||d.nonce!==nonce)return;var v=d.payload||{};v.success?fin(resolve,v):fin(reject,new Error(v.message||'서버 요청 실패'));}
-  var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},20000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
+  var tm=setTimeout(function(){fin(reject,new Error('서버 응답 시간 초과'));},wait||20000);window.addEventListener('message',on);document.body.append(f,fm);fm.submit();});}
  function session(){try{return JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');}catch(_){return null;}}
  function device(){var ua=navigator.userAgent||'';if(/iPad|Tablet/i.test(ua)||(/Android/i.test(ua)&&!/Mobile/i.test(ua))||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1))return '태블릿';return /Mobi|Android|iPhone|iPod/i.test(ua)?'휴대폰':'컴퓨터';}
  function source(){try{return sessionStorage.getItem('wk70_src')||'직접 입력·즐겨찾기';}catch(_){return '직접 입력·즐겨찾기';}}
@@ -52,9 +52,17 @@
  async function load(el,login){var tok=cachedToken();
   if(!tok&&login){try{tok=await window.wonkiLandAdminLogin();}catch(e){el.querySelector('.note').textContent='관리자 Google 로그인 실패: '+(e&&e.message||e);return;}}
   if(!tok){el.innerHTML='<h3>👀 최근 방문한 회원</h3><button type="button" data-wk70>👀 방문 기록 보기 (관리자 Google 로그인)</button><div class="note">로그인한 일반회원의 닉네임·방문 시각과, 들어온 곳(카톡·인스타 등)을 보여 줍니다.</div>';el.querySelector('[data-wk70]').onclick=function(){load(el,true);};return;}
-  el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">불러오는 중…</div>';
-  try{paint(el,await post1('admin_visit_log',{idToken:tok}));}
-  catch(e){el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">'+(/지원하지 않는/.test(String(e.message))?'서버 업데이트(70차 Code.gs) 후에 보입니다.':'불러오지 못했어요: '+esc(e.message))+'</div>';}}
+  var saved=null;try{saved=JSON.parse(localStorage.getItem(CACHE)||'null');}catch(_){}
+  if(saved&&saved.r){paint(el,saved.r);status(el,'⏳ 새 기록을 불러오는 중… (지난번 '+new Date(saved.t).toLocaleTimeString('ko-KR')+' 기록을 먼저 보여 줘요)');}
+  else el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">⏳ 불러오는 중… 구글 서버가 느리면 30초쯤 걸릴 수 있어요.</div>';
+  var t0=Date.now();
+  try{var r=await post1('admin_visit_log',{idToken:tok},45000);try{localStorage.setItem(CACHE,JSON.stringify({t:Date.now(),r:r}));}catch(_){}paint(el,r);status(el,'✓ '+new Date().toLocaleTimeString('ko-KR')+' 기준 · '+Math.max(1,Math.round((Date.now()-t0)/1000))+'초 걸림');}
+  catch(e){var msg=/지원하지 않는/.test(String(e.message))?'서버 업데이트(70차 Code.gs) 후에 보입니다.':'불러오지 못했어요: '+e.message;
+   if(saved&&saved.r)status(el,'⚠ '+msg+' (지난 기록을 보여 주는 중)',true);else{el.innerHTML='<h3>👀 최근 방문한 회원</h3><div class="note">⚠ '+esc(msg)+'</div>';}
+   retry(el);}}
+ var CACHE='wk70_visit_cache';
+ function status(el,t,bad){var n=el.querySelector('.wk70-st');if(!n){n=document.createElement('div');n.className='note wk70-st';el.insertBefore(n,el.children[1]||null);}n.textContent=t;n.style.color=bad?'#9a2a00':'';}
+ function retry(el){if(el.querySelector('[data-wk70r]'))return;var b=document.createElement('button');b.type='button';b.dataset.wk70r='1';b.textContent='🔄 다시 불러오기';b.onclick=function(){load(el,true);};el.appendChild(b);}
  function adminMenu(box){if(box.querySelector('#wk70Visits'))return;var el=document.createElement('div');el.id='wk70Visits';var st=box.querySelector('#wk65Stats');if(st)st.after(el);else box.appendChild(el);load(el,false);}
  window.WonkiVisitLog70={adminMenu:adminMenu,send:send,source:source,device:device};
  window.addEventListener('wonki-member-changed37',function(){setTimeout(send,300);});
