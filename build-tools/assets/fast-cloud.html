@@ -6,7 +6,7 @@
  'use strict';
  var EP=/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec(\?|$)/;
  var orig=HTMLFormElement.prototype.submit;
- var broken=false;
+ var broken=false,netFails=0;
  window.WonkiFastCloud68={stats:{fetch:0,fallback:0}};
  HTMLFormElement.prototype.submit=function(){
   var f=this;
@@ -17,16 +17,20 @@
      delete body._wonkiNonce;
      /* 읽기 요청은 5초 안에 답이 없으면 같은 요청을 하나 더 보내고 먼저 온 답을 씁니다(구글 서버가 가끔 한 요청만 늦게 답함) */
      var read=/(_list|_load|_count|_stats)$|^admin_visit_log$/.test(String(body.action||''));
-     var text=JSON.stringify(body),done=false,live=0,ctls=[],failErr=null,tm2=null;
-     function one(){live++;var ctl=window.AbortController?new AbortController():null;if(ctl)ctls.push(ctl);
+     var text=JSON.stringify(body),done=false,live=0,ctls=[],tm2=null,tries=0;
+     /* 75차: 구글이 가끔 보내는 오류 페이지(JSON 아님)나 일시적인 오류는 바로 주고받기로 다시 시도.
+        연결 자체가 막힌 경우(TypeError)만 세고, 두 번 연속일 때만 이 화면에서 숨은 창 방식으로 바꿈 */
+     function one(){live++;tries++;var ctl=window.AbortController?new AbortController():null;if(ctl)ctls.push(ctl);
       return fetch(f.action,{method:'POST',body:text,credentials:'omit',cache:'no-store',redirect:'follow',signal:ctl?ctl.signal:undefined})
-       .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
-       .then(function(j){if(done)return;done=true;clearTimeout(tm);clearTimeout(tm2);ctls.forEach(function(c){try{c.abort();}catch(_){}});window.WonkiFastCloud68.stats.fetch++;window.postMessage({type:'wonki-cloud-response',nonce:nonce,payload:j},'*');})
-       .catch(function(e){live--;failErr=e;if(done||live>0)return;fail(e);});}
+       .then(function(r){if(!r.ok){var he=new Error('HTTP '+r.status);he.name='BadReply';throw he;}return r.text();})
+       .then(function(t){var j;try{j=JSON.parse(t);}catch(_){var pe=new Error('JSON 아님');pe.name='BadReply';throw pe;}
+        if(done)return;done=true;netFails=0;clearTimeout(tm);clearTimeout(tm2);ctls.forEach(function(c){try{c.abort();}catch(_){}});window.WonkiFastCloud68.stats.fetch++;window.postMessage({type:'wonki-cloud-response',nonce:nonce,payload:j},'*');})
+       .catch(function(e){live--;if(done)return;
+        if(e&&e.name==='BadReply'&&tries<4){window.WonkiFastCloud68.stats.retry=(window.WonkiFastCloud68.stats.retry||0)+1;setTimeout(function(){if(!done)one();},700);return;}
+        if(live>0)return;fail(e);});}
      function fail(e){if(done)return;done=true;clearTimeout(tm);clearTimeout(tm2);
-      /* 서버가 답을 못 읽게 했거나 연결이 막힌 경우: 예전 방식으로 한 번 더 */
-      if(!(e&&e.name==='AbortError'))broken=true;
-      window.WonkiFastCloud68.stats.fallback++;console.warn('WonkiLand: 바로 주고받기 실패, 숨은 창 방식으로 전환',e&&e.message);
+      if(e&&e.name==='TypeError'){netFails++;if(netFails>=2)broken=true;}
+      window.WonkiFastCloud68.stats.fallback++;console.warn('WonkiLand: 바로 주고받기 실패, 이번 요청만 숨은 창 방식으로',e&&e.name,e&&e.message);
       if(document.documentElement.contains(f)){f.dataset.wk68iframe='1';try{orig.call(f);}catch(_){}}}
      var tm=setTimeout(function(){ctls.forEach(function(c){try{c.abort();}catch(_){}});},read?40000:15000);
      if(read)tm2=setTimeout(function(){if(!done){window.WonkiFastCloud68.stats.hedge=(window.WonkiFastCloud68.stats.hedge||0)+1;one();}},5000);

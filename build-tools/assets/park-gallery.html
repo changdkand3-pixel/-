@@ -82,13 +82,18 @@
   c.querySelectorAll('[data-unshare]').forEach(function(b){b.onclick=unshare;});
   c.querySelectorAll('[data-hide]').forEach(function(b){b.onclick=hide;});}
  function setStatus(t,bad){if(!data)data={items:[]};data.status=t;data.bad=!!bad;var n=document.querySelector('#wk74Gallery .g-st');if(n){n.textContent=t;n.classList.toggle('bad',!!bad);}else if(view==='list'&&document.getElementById('wk74Gallery'))paintList();}
- async function load(){if(busy)return;busy=true;var t0=Date.now();
-  try{var s=session();var r=await post1('park_gallery_list',{sessionToken:s&&s.token||''},45000);
+ var seq=0,tick=null;
+ async function load(force){if(busy&&!force)return;busy=true;var my=++seq,t0=Date.now(),base=(data&&data.status)||'⏳ 불러오는 중…';
+  clearInterval(tick);tick=setInterval(function(){if(my!==seq){clearInterval(tick);return;}var sec=Math.round((Date.now()-t0)/1000);if(sec<3)return;
+   var n=document.querySelector('#wk74Gallery .g-st');if(n)n.textContent=base.replace(/ · \d+초째.*$/,'')+' · '+sec+'초째';
+   if(sec>=15&&!document.querySelector('#wk74Gallery [data-reload]')){var host=document.querySelector('#wk74Gallery .g-st');if(host){var rb=document.createElement('button');rb.type='button';rb.dataset.reload='1';rb.textContent='🔄 다시 불러오기';rb.style.marginLeft='8px';rb.onclick=function(){rb.remove();load(true);};host.appendChild(rb);}}},1000);
+  try{var s=session();var r=await post1('park_gallery_list',{sessionToken:s&&s.token||''},45000);if(my!==seq)return;
    data={items:r.items||[],mine:r.mine,status:'✓ 공유된 공원 '+(r.items||[]).length+'개 · '+Math.max(1,Math.round((Date.now()-t0)/1000))+'초 걸림'};
    try{var t=JSON.stringify({t:Date.now(),items:data.items.map(function(x){return Object.assign({},x,{mine:false});})});if(t.length<2000000)localStorage.setItem(CACHE,t);}catch(_){}
    if(document.getElementById('wk74Gallery')&&view==='list')paintList();}
-  catch(e){var msg=/지원하지 않는/.test(String(e.message))?'공원 공유 게시판은 서버 업데이트(74차 Code.gs) 후에 열려요.':'게시판을 불러오지 못했어요: '+e.message;if(data)data.loading=false;setStatus('⚠ '+msg,true);}
-  finally{busy=false;}}
+  catch(e){if(my!==seq)return;var msg=/지원하지 않는/.test(String(e.message))?'공원 공유 게시판은 서버 업데이트(74차 Code.gs) 후에 열려요.':'게시판을 불러오지 못했어요: '+e.message;if(data)data.loading=false;setStatus('⚠ '+msg,true);
+   var host=document.querySelector('#wk74Gallery .g-st');if(host&&!host.querySelector('[data-reload]')){var rb=document.createElement('button');rb.type='button';rb.dataset.reload='1';rb.textContent='🔄 다시 불러오기';rb.style.marginLeft='8px';rb.onclick=function(){load(true);};host.appendChild(rb);}}
+  finally{if(my===seq){busy=false;clearInterval(tick);}}}
  function open(){var cache=null;try{cache=JSON.parse(localStorage.getItem(CACHE)||'null');}catch(_){}
   if(cache&&cache.items)data={items:cache.items,status:'⏳ 새 공원을 불러오는 중… (지난번 '+new Date(cache.t).toLocaleTimeString('ko-KR')+' 목록을 먼저 보여 줘요)'};
   else data={items:[],loading:true,status:'⏳ 공원 공유 게시판을 불러오는 중…'};
