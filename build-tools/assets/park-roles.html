@@ -20,6 +20,11 @@ body.wk66-member #wonkiDockNewMember{display:none!important}
 #wonkiFriendRegisterModal .member-shell{background:#fff!important;border:4px solid #ffd54d!important;border-radius:22px!important;box-shadow:0 0 0 3px #fff8,0 18px 50px #0008!important;padding:18px 18px 16px!important;box-sizing:border-box}
 #wonkiFriendRegisterModal .member-shell>p{color:#1d2f55!important;font-size:15px!important;font-weight:700;opacity:1!important}
 #wonkiFriendRegisterModal .member-field{background:#fffbea!important}
+#wonkiFriendRegisterModal .member-title{display:block!important;width:auto!important;max-width:calc(100% - 56px)!important;margin:2px auto 10px!important;padding:10px 22px!important;line-height:1.2!important;word-break:keep-all!important;text-align:center!important}
+#wonkiFriendRegisterModal .member-title .wk87-t1{display:block;font-size:clamp(14px,3.6vw,18px);font-weight:800;opacity:.92;letter-spacing:.02em}
+#wonkiFriendRegisterModal .member-title .wk87-t2{display:block;font-size:clamp(22px,6.2vw,32px);font-weight:900;white-space:nowrap}
+#wonkiFriendRegisterModal .member-shell>p{word-break:keep-all}
+
 #wk66Benefit{margin:8px 0 12px;padding:12px 14px;border-radius:14px;background:linear-gradient(135deg,#e3f2ff,#f6e9ff);border:2px solid #c9b6f0;color:#1d2f55;font:700 14px/1.6 system-ui,sans-serif}
 #wk66Benefit b{display:block;font-size:16px;color:#6c3fcf;margin-bottom:2px}
 #wk66Benefit button{margin-top:6px;border:0;border-radius:10px;padding:8px 12px;background:#173b5c;color:#fff;font:800 13px system-ui;cursor:pointer}
@@ -101,7 +106,7 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
   var old=document.getElementById('wk66Ask');if(old)old.remove();
   var o=document.createElement('div');o.id='wk66Ask';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');
   var what=why==='share'?'내 공원 공유하기는':'건물 짓기는';
-  o.innerHTML='<section><h2>🎟 일반회원 전용이에요</h2><p>'+what+' <b>일반회원</b>만 할 수 있어요.<br>가입하면 <b>나만의 공원</b>을 짓고,<br>어느 기기에서나 내 기록을 이어 할 수 있어요.</p><div class="row"><button type="button" class="join">🎟 일반회원 가입하기</button><button type="button" class="login">👤 이미 회원이에요 (로그인)</button><button type="button" class="owner">🏰 주인장 공원 둘러보기</button><button type="button" class="later">나중에 할게요</button></div></section>';
+  o.innerHTML='<section><h2>🎫 일반회원 전용이에요</h2><p>'+what+' <b>일반회원</b>만 할 수 있어요.<br>가입하면 <b>나만의 공원</b>을 짓고,<br>어느 기기에서나 내 기록을 이어 할 수 있어요.</p><div class="row"><button type="button" class="join">🎫 일반회원 가입하기</button><button type="button" class="login">👤 이미 회원이에요 (로그인)</button><button type="button" class="owner">🏰 주인장 공원 둘러보기</button><button type="button" class="later">나중에 할게요</button></div></section>';
   document.body.appendChild(o);
   function close(){o.remove();}
   o.addEventListener('click',function(e){if(e.target===o)close();});
@@ -120,15 +125,15 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
  }
  function apply(){var m=mode();var b=document.body;if(!b)return;
   b.classList.toggle('wk66-view',m==='visitor');b.classList.toggle('wk66-member',m==='member');b.classList.toggle('wk66-owner',m==='owner');
-  var dock=document.getElementById('wonkiDockNewMember');if(dock&&!dock.dataset.wk66){dock.dataset.wk66='1';dock.textContent='🎟 일반회원 가입';dock.title='가입하면 나만의 공원을 지을 수 있어요';}}
+  var dock=document.getElementById('wonkiDockNewMember');if(dock&&!dock.dataset.wk66){dock.dataset.wk66='1';dock.textContent='🎫 일반회원 가입';dock.title='가입하면 나만의 공원을 지을 수 있어요';}}
  function benefit(){var m=document.getElementById('wonkiFriendRegisterModal');if(!m||document.getElementById('wk66Benefit'))return;
-  var h=m.querySelector('.member-title');if(h)h.textContent='🎟 원기랜드 일반회원 가입';
+  var h=m.querySelector('.member-title');if(h)h.innerHTML='<span class="wk87-t1">🎡 원기랜드</span><span class="wk87-t2">일반회원 가입</span>';
   var p=m.querySelector('.member-shell>p');if(p)p.textContent='이름·닉네임·비밀번호를 적고, 주인장과의 관계를 골라 주세요.';
-  var d=document.createElement('div');d.id='wk66Benefit';d.innerHTML='<b>가입하면 이런 걸 할 수 있어요!</b>🏗 나만의 공원에 건물 짓기<br>☁ 어느 기기에서나 공원·수학·영어 기록 이어 하기<br>📣 내 공원을 주인장에게 공유하기<br><button type="button">👤 이미 회원이면 로그인</button>';
+  var d=document.createElement('div');d.id='wk66Benefit';d.innerHTML='<b>가입하면 이런 걸 할 수 있어요!</b>🏗 나만의 공원에 건물 짓기<br>☁️ 어느 기기에서나 공원·수학·영어 기록 이어 하기<br>📣 내 공원을 주인장에게 공유하기<br><button type="button">👤 이미 회원이면 로그인</button>';
   (p||h).after(d);d.querySelector('button').onclick=function(){m.style.display='none';m.classList.remove('open');openLogin();};}
  function install(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');apply();benefit();
   if(!tools||document.getElementById('wk66Owner'))return;
-  var j=document.createElement('button');j.type='button';j.id='wk66Join';j.textContent='🎟 일반회원 가입하고 내 공원 짓기';j.onclick=function(){askJoin();};
+  var j=document.createElement('button');j.type='button';j.id='wk66Join';j.textContent='🎫 일반회원 가입하고 내 공원 짓기';j.onclick=function(){askJoin();};
   var o=document.createElement('button');o.type='button';o.id='wk66Owner';o.textContent='🏰 주인장 공원 둘러보기';o.onclick=showOwner;
   var u=document.createElement('button');u.type='button';u.id='wk66OwnerUpload';u.textContent='☁ 주인장 공원';u.title='주인장 기기 전용';u.onclick=ownerButton;
   tools.insertBefore(j,tools.firstChild);tools.insertBefore(o,j.nextSibling);tools.appendChild(u);
