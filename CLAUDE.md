@@ -22,7 +22,7 @@
 - 63차부터 일반회원 진행 기록(공원 건물·수학·영어)은 `assets/member-progress.html`이 로그인 시 불러오고 자동 저장합니다. 새 게임 기록 키가 생기면 그 파일의 `FIXED` 목록에 추가합니다.
 - **66차부터 공원 권한** (`assets/park-roles.html`): 방문자(로그인 안 함)는 주인장 공원(서버 `owner_park_load`)만 보기, 일반회원은 자기 공원만 짓고 보기, 주인장 기기(`wk65_admin_device`)는 손님 키 공원을 짓고 `owner_park_save`로 올리기.
 - **68차부터 서버 요청 방식** (`assets/fast-cloud.html`, `<head>` 바로 뒤): 숨은 창(iframe) 폼 전송을 가로채 `fetch`로 바로 주고받고(서버는 `_wonkiNonce`가 없으면 JSON+CORS로 답함), 실패하면 그 요청만 예전 iframe 방식으로 보냄(75차부터: JSON이 아닌 구글 오류 페이지는 fetch로 다시 시도, 연결 막힘(TypeError)이 두 번 연속일 때만 그 화면에서 iframe으로 고정). 읽기 요청(`_list/_load/_count/_stats`, `admin_visit_log`)은 5초 뒤 한 번 더 보냄(읽기는 40초까지 기다림). 새 읽기 요청 이름이 이 규칙에 안 맞으면 fast-cloud.html의 `read` 정규식에 추가. 새 요청 코드도 기존처럼 iframe+폼 방식으로 쓰면 자동 적용됨.
-- **73차부터 업데이트 안내 공개/관리자 구분:** `final.html`의 `WONKI_PUBLIC`에 차수별 방문자·일반회원용 쉬운 말 내용(`p/c/s/m`)을 넣습니다. 그 차수가 관리자 기능(구경하기·통계·방문 기록·서버 등)을 바꿨다면 새 차수마다 `WONKI_PUBLIC["NN"]`도 같이 씁니다. 주인장 기기(`wk65_admin_device`)에서는 원래 내용 + "🔒 관리자 내용 포함"이 보입니다. 78차부터 `WONKI_ADMIN_ONLY`에 넣은 차수(77~83, 85, 86)는 방문자에게 아예 안 보이고 그 앞 차수가 최신으로 보입니다. 관리자 전용 기능만 바꾼 새 차수는 여기에 번호를 추가합니다.
+- **73차부터 업데이트 안내 공개/관리자 구분:** `final.html`의 `WONKI_PUBLIC`에 차수별 방문자·일반회원용 쉬운 말 내용(`p/c/s/m`)을 넣습니다. 그 차수가 관리자 기능(구경하기·통계·방문 기록·서버 등)을 바꿨다면 새 차수마다 `WONKI_PUBLIC["NN"]`도 같이 씁니다. 주인장 기기(`wk65_admin_device`)에서는 원래 내용 + "🔒 관리자 내용 포함"이 보입니다. 78차부터 `WONKI_ADMIN_ONLY`에 넣은 차수(77~83, 85, 86, 88)는 방문자에게 아예 안 보이고 그 앞 차수가 최신으로 보입니다. 관리자 전용 기능만 바꾼 새 차수는 여기에 번호를 추가합니다.
 - 관리자 화면 위에 새로 띄우는 창은 z-index를 2147483600 이상으로 둡니다(관리자 메뉴·구경하기 창이 2147483500). Google 관리자 로그인 창은 2147483640.
 - **76차부터 메인 지도 풍경** (`assets/scenery.html`): `#wk44World` 안에 `#wk76Sky`(z-index 29, 건물 층 `#wk44Origin` 30 아래)를 깔아 시간대(오전 6~12·오후 12~17·저녁 17~20·밤 20~6, 한국 시간) 색을 덧입히고, 날씨는 Open-Meteo 서울 실시간(20분마다, 실패하면 계절 무작위 3시간 단위)으로 캔버스 눈·비·낙엽·꽃잎을 그림. 달 모양은 실제 달의 나이로 계산. 그림 파일은 쓰지 않음.
 - **77차부터 방문 경로**: 들어온 곳은 `fast-cloud.html`의 `wk70-visit-source`가 첫 화면에서 `wk70_src`(들어온 곳)·`wk77_det`(상세)로 세션에 저장, `?src=이름`이면 "추적 링크". 서버 집계 시험은 `node build-tools/tests/gas77.js build-tools/server/Code_NN.gs`(가짜 구글 환경).
@@ -31,3 +31,4 @@
 - **83차부터 상상코칭 회원 삭제**: 삭제하면 `localStorage.wk83_deleted_members`에 기록 → 전체 동기화 때 `admin_member_delete`로 서버에서도 지우고, `admin_list`의 `deletedIds`로 다른 기기에서도 뺌. 일반회원은 예전부터 `deletedAt` 표시로 처리. 서버 시험: `node build-tools/tests/gas83.js build-tools/server/Code_NN.gs`.
 - **84차**: 상상코칭 회원의 휴회 이동·재원 복귀도 `updatedAt`을 새로 적어야 동기화 때 서버 쪽 옛 상태에 덮이지 않음(회원 자료를 바꾸는 새 버튼을 만들 때도 같음). 코스 창(`.modal.open`)이 열리면 `.wonki-course-picker`(z-index 40)를 낮춰 창 위로 안 뜨게 함.
 - **86차**: 예전 버전이 상상코칭 회원에 남긴 `deletedAt` 표시도 삭제로 처리(목록·회원 수에서 빼고, 동기화 때 `admin_member_delete`로 서버에서도 지움).
+- **88차**: 회원관리 창 `#memberManagerModal.open`은 z-index 999990이라, 그 안에서 여는 새 창은 1000001 이상으로 둠(final.html `wk88-member-modal-order`).
