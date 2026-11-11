@@ -366,6 +366,8 @@ _vl70=open(sys.argv[2].replace('world_final.webp','visit-log.html'),encoding='ut
 final = final + '\n' + _vl70
 _pg74=open(sys.argv[2].replace('world_final.webp','park-gallery.html'),encoding='utf-8').read()
 final = final + '\n' + _pg74
+_sc76=open(sys.argv[2].replace('world_final.webp','scenery.html'),encoding='utf-8').read()
+final = final + '\n' + _sc76
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

@@ -1,0 +1,146 @@
+<!-- 76차: 시간에 따라 메인 지도 풍경이 바뀜 (한국 시간: 오전·오후·저녁·밤) + 서울 실시간 날씨(안 되면 계절 무작위) + 실제 달 모양 -->
+<style id="wk76-style">
+#wk76Sky{position:absolute;inset:0;z-index:29;pointer-events:none;overflow:hidden}
+#wk76Sky>.l{position:absolute;inset:0;opacity:0;transition:opacity 2.5s ease}
+#wk76Sky>.l.on{opacity:1}
+/* 오전: 맑고 상쾌한 아침 햇살 */
+#wk76Sky .am{background:radial-gradient(ellipse 55% 45% at 15% 0%,rgba(255,240,190,.75),transparent 70%),linear-gradient(160deg,rgba(255,226,170,.38),rgba(200,235,255,.22) 50%,rgba(255,255,255,0) 80%);mix-blend-mode:soft-light}
+/* 오후: 지금 지도 그대로 (아주 살짝 따뜻하게) */
+#wk76Sky .pm{background:linear-gradient(180deg,rgba(255,250,235,.08),rgba(255,255,255,0))}
+/* 저녁: 노을 */
+#wk76Sky .eve{background:linear-gradient(180deg,rgba(255,100,40,.62) 0%,rgba(255,140,70,.50) 40%,rgba(170,80,140,.48) 100%);mix-blend-mode:multiply}
+#wk76Sky .eve2{background:radial-gradient(ellipse 45% 30% at 82% 8%,rgba(255,190,110,.45),transparent 70%);mix-blend-mode:screen}
+/* 밤: 어두운 남색 + 별 + 불빛 */
+#wk76Sky .night{background:linear-gradient(180deg,rgba(8,14,55,.78) 0%,rgba(20,30,90,.62) 45%,rgba(25,25,70,.58) 100%);mix-blend-mode:multiply}
+#wk76Sky .moon{position:absolute;right:7%;top:3.5%;width:4.6%;aspect-ratio:1;overflow:visible;filter:drop-shadow(0 0 14px rgba(255,245,200,.75))}
+#wk76Sky .star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;box-shadow:0 0 6px 2px rgba(255,255,255,.8);animation:wk76tw 3s ease-in-out infinite}
+#wk76Sky .lamp{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:radial-gradient(circle,#fff6c8 0,#ffd257 35%,rgba(255,190,60,0) 70%);box-shadow:0 0 18px 8px rgba(255,200,80,.35);animation:wk76glow 4s ease-in-out infinite}
+@keyframes wk76tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes wk76glow{0%,100%{opacity:.75}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){#wk76Sky .star,#wk76Sky .lamp{animation:none}}
+/* 밤에는 건물에 따뜻한 불빛 */
+body.wk76-night #wonkiCustomBuildings36 .wk-built36 svg{filter:drop-shadow(0 0 6px rgba(255,214,110,.9)) brightness(.95)}
+body.wk76-eve #wonkiCustomBuildings36 .wk-built36 svg{filter:drop-shadow(0 0 3px rgba(255,170,90,.7))}
+#wk76Btn,#wk76Wx{font-weight:800!important}
+#wk76Sky .cloudy{background:linear-gradient(180deg,rgba(120,130,145,.42),rgba(160,170,180,.22) 60%,rgba(170,175,185,.18));mix-blend-mode:multiply}
+#wk76Sky .rainy{background:linear-gradient(180deg,rgba(80,95,120,.45),rgba(110,125,145,.25));mix-blend-mode:multiply}
+#wk76Sky .snowy{background:linear-gradient(180deg,rgba(225,235,250,.35),rgba(255,255,255,.12));mix-blend-mode:screen}
+#wk76Fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#wk76Badge{position:absolute;left:10px;top:10px;z-index:45;pointer-events:none;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.85);color:#173b5c;font:800 13px system-ui;box-shadow:0 2px 8px #0003}
+body.wk76-night #wk76Badge{background:rgba(20,30,80,.85);color:#ffe9a6}
+</style>
+<script id="wk76-scenery">
+(function(){
+ 'use strict';
+ var KEY='wk76_scene_mode'; /* auto | am | pm | eve | night | off */
+ var NAMES={am:'☀️ 오전',pm:'🌤 오후',eve:'🌇 저녁',night:'🌙 밤'};
+ var ORDER=['auto','am','pm','eve','night','off'];
+ function kstHour(){try{return Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',hour:'numeric',hourCycle:'h23'}).format(new Date()));}catch(_){return new Date().getHours();}}
+ /* 오전 6~12시 · 오후 12~17시 · 저녁 17~20시 · 밤 20~6시 */
+ function periodOf(h){return h>=6&&h<12?'am':h>=12&&h<17?'pm':h>=17&&h<20?'eve':'night';}
+ function mode(){try{var m=localStorage.getItem(KEY);return ORDER.indexOf(m)>=0?m:'auto';}catch(_){return 'auto';}}
+ function setMode(m){try{localStorage.setItem(KEY,m);}catch(_){}apply();}
+ function current(){var m=mode();return m==='off'?'off':m==='auto'?periodOf(kstHour()):m;}
+ var rnd=(function(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};})(20261111);
+ function build(world){var sky=document.getElementById('wk76Sky');if(sky)return sky;
+  sky=document.createElement('div');sky.id='wk76Sky';sky.setAttribute('aria-hidden','true');
+  ['am','pm','eve','eve2','night','cloudy','rainy','snowy'].forEach(function(k){var d=document.createElement('div');d.className='l '+k;d.dataset.k=k;sky.appendChild(d);});
+  var night=document.createElement('div');night.className='l nightdeco';night.dataset.k='nightdeco';
+  var moon=document.createElementNS('http://www.w3.org/2000/svg','svg');moon.setAttribute('class','moon');moon.setAttribute('viewBox','-50 -50 100 100');night.appendChild(moon);
+  for(var i=0;i<46;i++){var s=document.createElement('i');s.className='star';s.style.left=(rnd()*100).toFixed(2)+'%';s.style.top=(rnd()*22).toFixed(2)+'%';s.style.animationDelay=(rnd()*3).toFixed(2)+'s';var z=1+rnd()*2;s.style.width=s.style.height=z.toFixed(1)+'px';night.appendChild(s);}
+  for(var j=0;j<34;j++){var l=document.createElement('i');l.className='lamp';l.style.left=(6+rnd()*88).toFixed(2)+'%';l.style.top=(38+rnd()*56).toFixed(2)+'%';l.style.animationDelay=(rnd()*4).toFixed(2)+'s';night.appendChild(l);}
+  sky.appendChild(night);
+  var fx=document.createElement('canvas');fx.id='wk76Fx';sky.appendChild(fx);
+  var badge=document.createElement('div');badge.id='wk76Badge';
+  world.appendChild(sky);world.appendChild(badge);return sky;}
+ /* ---- 날씨: 계절에 맞춰 3시간마다 무작위 (같은 시간엔 누구나 같은 날씨) ---- */
+ var WKEY='wk76_weather_mode'; /* auto(서울 실시간) | random(계절 무작위) | clear | cloudy | rain | snow | leaves | petals | off */
+ var WNAMES={clear:'☀️ 맑음',cloudy:'☁️ 흐림',rain:'🌧 비',snow:'❄️ 눈',leaves:'🍁 낙엽',petals:'🌸 꽃잎'};
+ var WORDER=['auto','random','clear','cloudy','rain','snow','leaves','petals','off'];
+ /* ---- 서울 실시간 날씨 (Open-Meteo, 무료·키 없음). 20분마다 새로 받고, 안 되면 계절 무작위 날씨 ---- */
+ var RKEY='wk76_seoul_weather',RURL='https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.978&current=weather_code,temperature_2m,is_day&timezone=Asia%2FSeoul';
+ function codeKind(c){c=Number(c);if(c>=71&&c<=77||c===85||c===86)return 'snow';if(c>=51&&c<=67||c>=80&&c<=82||c>=95)return 'rain';if(c===2||c===3||c===45||c===48)return 'cloudy';return 'clear';}
+ function realWx(){try{var r=JSON.parse(localStorage.getItem(RKEY)||'null');if(r&&Date.now()-r.t<90*60000)return r;}catch(_){}return null;}
+ var fetching=false;
+ function fetchReal(force){var r=realWx();if(fetching||(!force&&r&&Date.now()-r.t<20*60000)||!window.fetch)return;fetching=true;
+  var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){if(ctl)ctl.abort();},8000);
+  fetch(RURL,{cache:'no-store',credentials:'omit',signal:ctl?ctl.signal:undefined}).then(function(x){if(!x.ok)throw new Error('HTTP '+x.status);return x.json();})
+   .then(function(j){var c=j&&j.current;if(!c||c.weather_code==null)throw new Error('형식');try{localStorage.setItem(RKEY,JSON.stringify({t:Date.now(),code:c.weather_code,temp:c.temperature_2m,kind:codeKind(c.weather_code)}));}catch(_){}apply();})
+   .catch(function(e){console.warn('WonkiLand: 서울 날씨를 받지 못해 계절 날씨로 보여요',e&&e.message);})
+   .then(function(){clearTimeout(tm);fetching=false;});}
+ function kstParts(){var d=new Date(Date.now()+9*3600000);return {y:d.getUTCFullYear(),m:d.getUTCMonth()+1,d:d.getUTCDate(),h:d.getUTCHours()};}
+ function seasonTable(m){
+  if(m>=3&&m<=5)return [['clear',50],['cloudy',20],['rain',15],['petals',15]];
+  if(m>=6&&m<=8)return [['clear',45],['cloudy',20],['rain',35]];
+  if(m>=9&&m<=10)return [['clear',50],['cloudy',20],['rain',12],['leaves',18]];
+  if(m===11)return [['clear',38],['cloudy',20],['rain',10],['leaves',17],['snow',15]];
+  return [['clear',38],['cloudy',20],['rain',5],['snow',37]];}
+ function hash01(str){var h=2166136261>>>0;for(var i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}
+  h^=h>>>16;h=Math.imul(h,2246822507)>>>0;h^=h>>>13;h=Math.imul(h,3266489909)>>>0;h^=h>>>16;return (h>>>0)/4294967296;}
+ function autoWeather(){var k=kstParts(),block=Math.floor(k.h/3);
+  var r=hash01('wonki|'+k.y+'-'+k.m+'-'+k.d+'|'+block),t=seasonTable(k.m),sum=0,x=r*100;
+  for(var i=0;i<t.length;i++){sum+=t[i][1];if(x<sum)return t[i][0];}return 'clear';}
+ function wmode(){try{var m=localStorage.getItem(WKEY);return WORDER.indexOf(m)>=0?m:'auto';}catch(_){return 'auto';}}
+ function wcurrent(){var m=wmode();if(m==='off')return 'off';if(m==='auto'){var r=realWx();return r?r.kind:autoWeather();}if(m==='random')return autoWeather();return m;}
+ var fxKind='',parts=[],raf=0,last=0;
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function makePart(w,h,first){var r=Math.random;
+  if(fxKind==='rain')return {x:r()*w,y:first?r()*h:-20,v:9+r()*6,l:10+r()*10};
+  if(fxKind==='snow')return {x:r()*w,y:first?r()*h:-10,v:.6+r()*1.2,s:1.5+r()*3,ph:r()*6.3};
+  return {x:r()*w,y:first?r()*h:-15,v:.7+r()*1,s:5+r()*5,ph:r()*6.3,rot:r()*6.3,c:fxKind==='leaves'?['#d9531e','#e88a1a','#c23b22','#f2b632'][Math.floor(r()*4)]:['#ffc6d9','#ffb3cc','#ffe0ea'][Math.floor(r()*3)]};}
+ function startFx(kind){var cv=document.getElementById('wk76Fx');if(!cv)return;fxKind=(kind==='rain'||kind==='snow'||kind==='leaves'||kind==='petals')&&!reduce?kind:'';
+  cancelAnimationFrame(raf);var ctx=cv.getContext('2d');
+  function size(){var dpr=Math.min(window.devicePixelRatio||1,1.5),w=cv.clientWidth,h=cv.clientHeight;if(cv.width!==Math.round(w*dpr)||cv.height!==Math.round(h*dpr)){cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);}ctx.setTransform(dpr,0,0,dpr,0,0);return [w,h];}
+  var wh=size();ctx.clearRect(0,0,wh[0],wh[1]);if(!fxKind){parts=[];return;}
+  var mobile=Math.min(innerWidth,innerHeight)<700,n={rain:mobile?70:130,snow:mobile?55:100,leaves:mobile?26:44,petals:mobile?28:48}[fxKind];
+  parts=[];for(var i=0;i<n;i++)parts.push(makePart(wh[0],wh[1],true));
+  function step(t){raf=requestAnimationFrame(step);if(document.hidden)return;if(t-last<30)return;last=t;wh=size();var w=wh[0],h=wh[1];ctx.clearRect(0,0,w,h);
+   for(var i=0;i<parts.length;i++){var p=parts[i];
+    if(fxKind==='rain'){p.y+=p.v;p.x-=p.v*.18;ctx.strokeStyle='rgba(210,225,255,.55)';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x+p.l*.18,p.y-p.l);ctx.stroke();}
+    else if(fxKind==='snow'){p.y+=p.v;p.ph+=.03;p.x+=Math.sin(p.ph)*.6;ctx.fillStyle='rgba(255,255,255,.92)';ctx.beginPath();ctx.arc(p.x,p.y,p.s,0,6.283);ctx.fill();}
+    else{p.y+=p.v;p.ph+=.025;p.x+=Math.sin(p.ph)*1.1;p.rot+=.03;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.fillStyle=p.c;ctx.beginPath();ctx.ellipse(0,0,p.s,p.s*.55,0,0,6.283);ctx.fill();ctx.restore();}
+    if(p.y>h+20||p.x<-30||p.x>w+30)parts[i]=makePart(w,h,false);}}
+  raf=requestAnimationFrame(step);}
+ function setWMode(m){try{localStorage.setItem(WKEY,m);}catch(_){}apply();}
+ /* ---- 달 모양: 실제 달의 나이(삭에서 지난 날 수)를 따라 매일 바뀜 ---- */
+ var SYN=29.530588853,NEW0=Date.UTC(2000,0,6,18,14)/86400000;
+ function moonAge(){return (((Date.now()/86400000-NEW0)%SYN)+SYN)%SYN;}
+ var moonOverride=null;
+ function moonInfo(){var a=moonOverride!=null?moonOverride:moonAge();
+  var name=a<1.85?'그믐·초승달':a<6.4?'초승달':a<9.2?'반달(상현달)':a<13.3?'차오르는 달':a<16.2?'보름달':a<20.3?'기우는 달':a<23.1?'반달(하현달)':a<27.7?'그믐달':'그믐·초승달';
+  var icon=a<6.4||a>=27.7?'🌒':a<9.2?'🌓':a<13.3?'🌔':a<16.2?'🌕':a<20.3?'🌖':a<23.1?'🌗':'🌘';
+  return {age:a,name:name,icon:icon};}
+ function moonSVG(a){/* 밝은 쪽: 차오를 때 오른쪽, 기울 때 왼쪽 */
+  var ph=a/SYN,k=Math.cos(ph*2*Math.PI); /* 1=삭, -1=보름 */
+  if(k>0.97)k=0.97; /* 삭 무렵에도 가는 달이 보이게 */
+  var r=40,waxing=ph<0.5,rx=Math.abs(k)*r,lit='#fff6cf';
+  var sweepOuter=waxing?1:0,sweepInner=(k>0)===waxing?0:1;
+  var d='M0,-'+r+' A'+r+','+r+' 0 0 '+sweepOuter+' 0,'+r+' A'+rx.toFixed(2)+','+r+' 0 0 '+sweepInner+' 0,-'+r+' Z';
+  return '<circle r="'+r+'" fill="rgba(90,100,140,.35)"/><path d="'+d+'" fill="'+lit+'"/><circle cx="-12" cy="-10" r="5" fill="rgba(200,190,150,.35)"/><circle cx="10" cy="12" r="7" fill="rgba(200,190,150,.3)"/>';}
+ function apply(){var world=document.getElementById('wk44World');if(!world)return;var sky=build(world),p=current();
+  var on=({am:['am'],pm:['pm'],eve:['eve','eve2'],night:['night','nightdeco'],off:[]}[p]||[]).slice(),w=wcurrent();
+  if(w==='cloudy')on.push('cloudy');if(w==='rain')on.push('rainy');if(w==='snow'&&p!=='night')on.push('snowy');
+  if((w==='cloudy'||w==='rain')&&p==='night')on=on.filter(function(k){return k!=='nightdeco';}).concat(['nightdeco']);
+  sky.querySelectorAll('.l').forEach(function(l){l.classList.toggle('on',on.indexOf(l.dataset.k)>=0);});
+  document.body.classList.toggle('wk76-night',p==='night');document.body.classList.toggle('wk76-eve',p==='eve');
+  var mo=sky.querySelector('.moon'),mi=moonInfo();if(mo&&mo.dataset.age!==mi.age.toFixed(2)){mo.dataset.age=mi.age.toFixed(2);mo.innerHTML=moonSVG(mi.age);}
+  if(w!==fxKind||(w==='off'&&fxKind))startFx(w);
+  var stars=sky.querySelector('.nightdeco');if(stars)stars.style.opacity=(w==='cloudy'||w==='rain')&&p==='night'?'.35':'';
+  var badge=document.getElementById('wk76Badge');if(badge){var rw=wmode()==='auto'&&realWx();var txt=[p!=='off'?NAMES[p]:'',p==='night'?mi.icon+' '+mi.name:'',w!=='off'?WNAMES[w]+(rw&&rw.temp!=null?' '+Math.round(rw.temp)+'°C':''):''].filter(Boolean).join(' · ')+(rw?' (서울)':'');badge.hidden=!txt;badge.textContent=txt+((mode()!=='auto'||(['auto','random','off'].indexOf(wmode())<0))?' (미리 보기)':'');}
+  var wb=document.getElementById('wk76Wx');if(wb){var wm=wmode();var rr=realWx();wb.textContent='🌦 날씨: '+(wm==='auto'?(rr?'서울 실시간 · ':'자동(계절) · ')+WNAMES[w]:wm==='random'?'계절 무작위 · '+WNAMES[w]:wm==='off'?'끄기':WNAMES[wm]);wb.title='누를 때마다 서울 실시간 → 계절 무작위 → 맑음 → 흐림 → 비 → 눈 → 낙엽 → 꽃잎 → 끄기';}
+  var btn=document.getElementById('wk76Btn');if(btn){var m=mode();btn.textContent='🌗 풍경: '+(m==='auto'?'자동 · '+NAMES[p]:m==='off'?'끄기':NAMES[m]);btn.title='누를 때마다 자동 → 오전 → 오후 → 저녁 → 밤 → 끄기 순서로 바뀌어요';}}
+ function install(){var tools=document.querySelector('#wonkiScrollMap .wonki-map-buttons');
+  if(tools&&!document.getElementById('wk76Btn')){var b=document.createElement('button');b.type='button';b.id='wk76Btn';b.onclick=function(){var m=mode();setMode(ORDER[(ORDER.indexOf(m)+1)%ORDER.length]);};
+   var ref=document.getElementById('wkUpdateReopen');if(ref&&ref.parentNode===tools)tools.insertBefore(b,ref.nextSibling);else tools.appendChild(b);
+   var wx=document.createElement('button');wx.type='button';wx.id='wk76Wx';wx.onclick=function(){var m=wmode();setWMode(WORDER[(WORDER.indexOf(m)+1)%WORDER.length]);};b.after(wx);}
+  apply();}
+ window.WonkiScenery76={apply:apply,setMode:setMode,mode:mode,setWeather:setWMode,weather:function(){return wcurrent();},period:function(){return current();},auto:autoWeather,moon:function(){return moonInfo();},setMoonAge:function(a){moonOverride=a==null?null:Number(a);apply();},refreshSeoul:function(){fetchReal(true);}};
+ document.addEventListener('wonki-main-map-ready',install);
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
+ window.addEventListener('load',install,{once:true});
+ setInterval(function(){if(document.hidden)return;if(wmode()==='auto')fetchReal(false);apply();},60000);
+ fetchReal(false);
+ document.addEventListener('visibilitychange',function(){if(!document.hidden){fetchReal(false);apply();}});
+ var tries=0,t=setInterval(function(){if(document.getElementById('wk76Sky')||++tries>20){clearInterval(t);return;}install();},1000);
+})();
+</script>
