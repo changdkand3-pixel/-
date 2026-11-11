@@ -356,6 +356,13 @@ rep("""overlay.style.cssText='position:fixed;inset:0;z-index:2147483000;backgrou
 # ---------- 21. 77차: 원기랜드 카톡·링크 공유 버튼 링크에 추적 이름(src=공유버튼) 붙이기
 rep("""const URL='https://hinsrolin.neocities.org/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C';function install(){""","""const URL='https://hinsrolin.neocities.org/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C?src=%EA%B3%B5%EC%9C%A0%EB%B2%84%ED%8A%BC';function install(){""")
 
+# ---------- 22. 80차: 관리자 로그인 6시간 기억 (Google 로그인 → 서버가 6시간짜리 관리자 표 발급, 기기에 기억)
+rep("""adminToken=wk64Cached()||await googleCredential(clientId);wk64Store(adminToken);""","""adminToken=wk64Cached()||await wk80Exchange(await googleCredential(clientId));wk64Store(adminToken);""")
+rep("""const t=await googleCredential(id);wk64Store(t);""","""const t=await wk80Exchange(await googleCredential(id));wk64Store(t);""")
+rep(""" function wk64Cached(){try{const t=sessionStorage.getItem('wk64_admin_token');return t&&wk64Exp(t)-Date.now()>5*60*1000?t:'';}catch(_){return '';}}""",""" function wk64Cached(){try{const a=localStorage.getItem('wk80_admin_token'),b=sessionStorage.getItem('wk64_admin_token');const t=[a,b].filter(x=>x&&wk64Exp(x)-Date.now()>5*60*1000).sort((x,y)=>wk64Exp(y)-wk64Exp(x))[0];return t||'';}catch(_){return '';}}
+ async function wk80Exchange(jwt){try{const r=await fetch('https://script.google.com/macros/s/AKfycbyIWLNPDMsJjpZqJv_GxctUHtInNss9xs9ZT7SWMCE--uxVu4JcDupuiXp89XwEGAHY/exec',{method:'POST',body:JSON.stringify({action:'admin_session_start',idToken:jwt}),credentials:'omit',cache:'no-store'});const j=JSON.parse(await r.text());if(j&&j.success&&j.token)return j.token;}catch(_){}return jwt;}""")
+rep(""" function wk64Store(t){try{if(t&&wk64Exp(t))sessionStorage.setItem('wk64_admin_token',t);}catch(_){}}""",""" function wk64Store(t){try{if(t&&wk64Exp(t)){sessionStorage.setItem('wk64_admin_token',t);if(/^wkadm[.]/.test(t))localStorage.setItem('wk80_admin_token',t);}}catch(_){}}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

@@ -78,7 +78,7 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
   var tok;try{tok=await window.wonkiLandAdminLogin();}catch(e){say('🏰 관리자 로그인 실패: '+(e&&e.message||e),true);return;}
   say(st.buildings.length?'🏰 주인장 공원을 올리는 중이에요…':'🧹 주인장 공원을 비우는 중이에요…');
   var text=JSON.stringify(st);
-  try{var r=await post('owner_park_save',{idToken:tok,park:text});ls(CACHE,JSON.stringify({park:text,savedAt:r.savedAt||new Date().toISOString()}));say(st.buildings.length?'🏰 주인장 공원을 올렸어요! (건물 '+st.buildings.length+'개)':'🧹 주인장 공원을 비웠어요. 방문자 지도에 주인장 건물이 안 보여요.');paintNow();}
+  try{var r=await post('owner_park_save',{idToken:tok,park:text});ls(CACHE,JSON.stringify({park:text,savedAt:r.savedAt||new Date().toISOString()}));markSynced(r.savedAt||'');say(st.buildings.length?'🏰 주인장 공원을 올렸어요! (건물 '+st.buildings.length+'개)':'🧹 주인장 공원을 비웠어요. 방문자 지도에 주인장 건물이 안 보여요.');paintNow();}
   catch(e){say(/지원하지 않는/.test(String(e.message))?'🏰 서버가 아직 주인장 공원 올리기를 지원하지 않아요 (Code_66 서버 업데이트 필요)':'🏰 올리지 못했어요: '+e.message,true);}
  }
  /* 관리자 메뉴: 지금 방문자에게 보이는 주인장 공원 */
@@ -130,14 +130,61 @@ body:not(.wk66-owner) #wonkiFriendSavedList{display:none!important}
   if(!tools||document.getElementById('wk66Owner'))return;
   var j=document.createElement('button');j.type='button';j.id='wk66Join';j.textContent='🎟 일반회원 가입하고 내 공원 짓기';j.onclick=function(){askJoin();};
   var o=document.createElement('button');o.type='button';o.id='wk66Owner';o.textContent='🏰 주인장 공원 둘러보기';o.onclick=showOwner;
-  var u=document.createElement('button');u.type='button';u.id='wk66OwnerUpload';u.textContent='📤 주인장 공원 올리기';u.title='주인장 기기 전용';u.onclick=uploadOwner;
+  var u=document.createElement('button');u.type='button';u.id='wk66OwnerUpload';u.textContent='☁ 주인장 공원';u.title='주인장 기기 전용';u.onclick=ownerButton;
   tools.insertBefore(j,tools.firstChild);tools.insertBefore(o,j.nextSibling);tools.appendChild(u);
   render();}
- window.WonkiParkRoles66={mode:mode,canBuild:canBuild,ownerPark:ownerPark,askJoin:askJoin,showOwner:showOwner,uploadOwner:uploadOwner,adminMenu:adminMenu,refresh:refresh,apply:apply};
+ /* ===== 80차: 주인장 공원 기기끼리 공유 =====
+  주인장 기기에서는 서버의 주인장 공원을 불러와 고치고, 고치면 자동으로 서버에 저장(관리자 표가 있을 때).
+  wk80_owner_base = 이 기기 공원이 맞춰진 서버 저장 시각, wk80_owner_sent = 마지막으로 서버와 같았던 공원 */
+ var BASE='wk80_owner_base',SENT='wk80_owner_sent',synced=false,syncing=false,upTimer=null,state80='';
+ function blankState(){return {version:1,revision:0,courses:[],buildings:[]};}
+ function norm(st){st=st||blankState();var C=window.WonkiParkCore36;try{if(C&&C.clean)st=C.clean(st);}catch(_){}
+  return JSON.stringify({b:(st.buildings||[]).map(function(b){return [b.id,b.type,b.name,Math.round((+b.x||0)*1e4),Math.round((+b.y||0)*1e4),Math.round((+b.scale||1)*100),Math.round(+b.rotation||0),b.courseId||''];}),c:(st.courses||[]).map(function(c){return [c.id,c.name,c.content||''];})});}
+ function markSynced(savedAt){ls(BASE,savedAt||'');ls(SENT,norm(ownerDraft()));setBtn();}
+ function tokenOK(){try{var t=sessionStorage.getItem('wk64_admin_token')||localStorage.getItem('wk80_admin_token');if(!t)return '';var e=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000;return e-Date.now()>300000?t:'';}catch(_){return '';}}
+ function editorOpen(){return !!document.querySelector('#wonkiParkEditor36 .wk36-editor,#wonkiParkEditor36 canvas,#wonkiParkEditor36 svg.wk36-canvas');}
+ function setBtn(){var u=document.getElementById('wk66OwnerUpload');if(!u||mode()!=='owner')return;var dirty=ls(SENT)!==null&&norm(ownerDraft())!==ls(SENT);
+  u.textContent=state80==='saving'?'☁ 주인장 공원 저장 중…':dirty?'☁ 저장 안 됨 · 눌러서 저장':'☁ 주인장 공원 저장됨';u.title=dirty?'눌러서 주인장 공원을 서버에 저장 (다른 기기·방문자에게 보이게)':'모든 주인장 기기와 방문자가 같은 공원을 봐요';}
+ function namesOf(st){return names((st&&st.buildings)||[])||'· (건물 없음)';}
+ function applyServer(sv,savedAt){ls('wonkiParkDraft37_guest',JSON.stringify({state:sv||blankState()}));markSynced(savedAt);render();}
+ async function autoUpload(){
+  if(mode()!=='owner'||state80==='saving')return;var tok=tokenOK();if(!tok){setBtn();return;}
+  await refresh();var c=null;try{c=JSON.parse(ls(CACHE)||'null');}catch(_){}
+  if(c&&c.savedAt&&c.savedAt!==ls(BASE)&&norm(parseState(c.park))!==ls(SENT)){synced=false;return ownerSync();} /* 그 사이 다른 기기가 바꿈 */
+  var st=ownerDraft()||blankState(),text=JSON.stringify(st);state80='saving';setBtn();
+  try{var r=await post('owner_park_save',{idToken:tok,park:text});ls(CACHE,JSON.stringify({park:text,savedAt:r.savedAt||new Date().toISOString()}));state80='';markSynced(r.savedAt||'');say('☁ 주인장 공원을 저장했어요 (건물 '+st.buildings.length+'개) · 다른 기기·방문자에게도 보여요');paintNow();}
+  catch(e){state80='';setBtn();say('☁ 주인장 공원 저장 실패: '+e.message+' · ☁ 버튼을 눌러 다시 저장해 주세요',true);}}
+ async function ownerSync(){
+  if(mode()!=='owner'||syncing||editorOpen())return;syncing=true;
+  try{await refresh();var c=null;try{c=JSON.parse(ls(CACHE)||'null');}catch(_){}
+   if(!c){return;}
+   var local=ownerDraft()||blankState(),sv=parseState(c.park)||blankState(),base=ls(BASE),sent=ls(SENT);
+   var ln=norm(local),sn=norm(sv);
+   if(ln===sn){markSynced(c.savedAt);return;}
+   var dirty=sent!==null?ln!==sent:local.buildings.length>0||(local.courses||[]).length>0;
+   if(c.savedAt!==base||sent===null){
+    if(!dirty){applyServer(sv,c.savedAt);if(sent!==null||sv.buildings.length)say('☁ 다른 기기에서 저장한 주인장 공원을 불러왔어요 (건물 '+sv.buildings.length+'개)');return;}
+    var when=c.savedAt?new Date(c.savedAt).toLocaleString('ko-KR'):'';
+    var take=confirm('☁ 주인장 공원이 이 기기와 달라요.\n\n[서버(다른 기기·방문자에게 보이는 것)] '+when+'\n건물 '+sv.buildings.length+'개\n'+namesOf(sv)+'\n\n[이 기기] 건물 '+local.buildings.length+'개\n'+namesOf(local)+'\n\n확인 = 서버 것으로 바꾸기 (이 기기 건물은 사라짐)\n취소 = 이 기기 것을 서버에 저장');
+    if(take){applyServer(sv,c.savedAt);say('☁ 서버의 주인장 공원으로 바꿨어요');}
+    else{ls(BASE,c.savedAt);ls(SENT,sn);synced=true;await autoUpload();if(!tokenOK())say('☁ 이 기기 것을 저장하려면 ☁ 버튼을 눌러 관리자 로그인해 주세요',true);}
+    return;}
+   if(dirty)await autoUpload();
+  }finally{syncing=false;synced=true;setBtn();}}
+ setInterval(function(){if(mode()!=='owner'||!synced||document.hidden)return;var dirty=ls(SENT)!==null&&norm(ownerDraft())!==ls(SENT);setBtn();
+  if(dirty&&!editorOpen()&&tokenOK()&&!upTimer)upTimer=setTimeout(function(){upTimer=null;autoUpload();},2500);},2000);
+ setInterval(function(){if(mode()==='owner'&&!document.hidden&&synced)ownerSync();},120000);
+ document.addEventListener('visibilitychange',function(){if(!document.hidden&&mode()==='owner')ownerSync();});
+ async function ownerButton(){var dirty=ls(SENT)!==null&&norm(ownerDraft())!==ls(SENT);
+  if(!dirty&&ls(SENT)!==null){showOwner();return;}
+  if(!tokenOK()){try{await window.wonkiLandAdminLogin();}catch(e){say('🔒 관리자 로그인 실패: '+(e&&e.message||e),true);return;}}
+  if(ls(SENT)===null){synced=false;return ownerSync();}
+  return autoUpload();}
+ window.WonkiParkRoles66={ownerSync:ownerSync,autoUpload:autoUpload,mode:mode,canBuild:canBuild,ownerPark:ownerPark,askJoin:askJoin,showOwner:showOwner,uploadOwner:uploadOwner,adminMenu:adminMenu,refresh:refresh,apply:apply};
  window.addEventListener('wonki-member-changed37',function(){setTimeout(function(){apply();render();},60);});
  window.addEventListener('storage',function(e){if(e.key==='wk65_admin_device'){apply();render();}});
  document.addEventListener('wonki-main-map-ready',install);
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
- window.addEventListener('load',function(){install();refresh();},{once:true});
+ window.addEventListener('load',function(){install();if(mode()==='owner')setTimeout(ownerSync,1500);else refresh();},{once:true});
 })();
 </script>

@@ -7,6 +7,8 @@
  var EP=/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec(\?|$)/;
  var orig=HTMLFormElement.prototype.submit;
  var broken=false,netFails=0;
+ /* 80차: 6시간 관리자 표를 이 화면(탭)에서도 쓰게 */
+ try{var at=localStorage.getItem('wk80_admin_token');if(at){var ae=JSON.parse(atob(at.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).exp*1000;if(ae-Date.now()>300000)sessionStorage.setItem('wk64_admin_token',at);else localStorage.removeItem('wk80_admin_token');}}catch(_){}
  window.WonkiFastCloud68={stats:{fetch:0,fallback:0}};
  HTMLFormElement.prototype.submit=function(){
   var f=this;
@@ -24,6 +26,7 @@
       return fetch(f.action,{method:'POST',body:text,credentials:'omit',cache:'no-store',redirect:'follow',signal:ctl?ctl.signal:undefined})
        .then(function(r){if(!r.ok){var he=new Error('HTTP '+r.status);he.name='BadReply';throw he;}return r.text();})
        .then(function(t){var j;try{j=JSON.parse(t);}catch(_){var pe=new Error('JSON 아님');pe.name='BadReply';throw pe;}
+        if(j&&j.success===false&&/관리자 로그인이 만료/.test(String(j.message||'')))try{localStorage.removeItem('wk80_admin_token');sessionStorage.removeItem('wk64_admin_token');}catch(_){}
         if(done)return;done=true;netFails=0;clearTimeout(tm);clearTimeout(tm2);ctls.forEach(function(c){try{c.abort();}catch(_){}});window.WonkiFastCloud68.stats.fetch++;window.postMessage({type:'wonki-cloud-response',nonce:nonce,payload:j},'*');})
        .catch(function(e){live--;if(done)return;
         if(e&&e.name==='BadReply'&&tries<4){window.WonkiFastCloud68.stats.retry=(window.WonkiFastCloud68.stats.retry||0)+1;setTimeout(function(){if(!done)one();},700);return;}
