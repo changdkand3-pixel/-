@@ -264,9 +264,41 @@ rep("""body.innerHTML=head(UNITS[unit-1][0]+'. '+UNITS[unit-1][1])+'<div class="
 # English problem screen: the same bar
 rep("""return '<div class="we-arena"><div class="we-fighter">'+portraitFor(s.player)""","""return '<div class="wk55-bar">'+button('◀ 상대 선택으로','enemies','','wk55-up')+button('📚 단원 목록','units')+button('💾 저장','save-menu',game.privateMode?'disabled':'','wk55-save')+'</div><div class="we-arena"><div class="we-fighter">'+portraitFor(s.player)""")
 
+
+# ---------- 13. 58차: 초3-2 (수학 원본 91문항 + 드라이브 목차·캐릭터 그림, 영어 e3-2 대결판)
+_g32dir=sys.argv[2].replace('world_final.webp','g32/')
+_math32=open(_g32dir+'math32.json',encoding='utf-8').read()
+_g32html=open(_g32dir+'g32.html',encoding='utf-8').read()
+rep("""'초2-2','초3-1'].includes(S.activeGrade)""","""'초2-2','초3-1','초3-2'].includes(S.activeGrade)""")
+rep("""if(S.g31){SS['초3-1']=S.g31;delete S.g31}""","""if(S.g31){SS['초3-1']=S.g31;delete S.g31}if(S.g32){SS['초3-2']=S.g32;delete S.g32}""")
+rep("""delete o.g31;o.activeGrade=GR;""","""delete o.g31;delete o.g32;o.activeGrade=GR;""")
+rep("""if(SS['초3-1'])o.g31=SS['초3-1'];""","""if(SS['초3-1'])o.g31=SS['초3-1'];if(SS['초3-2'])o.g32=SS['초3-2'];""")
+rep("""g31=data.g31,""","""g31=data.g31,g32=data.g32,""")
+rep("""delete d2.g31;""","""delete d2.g31;delete d2.g32;""")
+rep("""else delete SS['초3-1'];applyPack(target);""","""else delete SS['초3-1'];if(g32)SS['초3-2']=Object.assign(newState(),g32);else delete SS['초3-2'];applyPack(target);""")
+rep("""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1')""","""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2')""",10)
+rep("""function roster(){if(GR==='초3-1'&&!privateSession)""","""function roster(){if((GR==='초3-1'||GR==='초3-2')&&!privateSession)""")
+_a=t.index("if(GR==='초3-1'&&window.WonkiGrade31){body.innerHTML=head(");_b=t.index("\n if(GR==='초2-2'){body.innerHTML=head(",_a)
+_board32=t[_a:_b].replace('WonkiGrade31','WonkiGrade32').replace('초3-1','초3-2').replace('원본 100문항','원본 91문항')
+t=t[:_a]+_board32+'\n '+t[_a:]
+rep("""PACKS['초3-1']=""","""PACKS['초3-2']="""+_math32+""";
+PACKS['초3-1']=""")
+rep("""return ['초3-1','초2-2',""","""return ['초3-2','초3-1','초2-2',""")
+rep("""||st.includes('초3-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1입니다.""","""||st.includes('초3-1')||st.includes('초3-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2입니다.""")
+rep("""'초2-2','초3-1'].includes(grade.dataset.grade))return;""","""'초2-2','초3-1','초3-2'].includes(grade.dataset.grade))return;""")
+_m32=_j.loads(_math32)
+_eng32="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m32['CH'].items()},ensure_ascii=False)+");const GRADE32_CAST="+_j.dumps(_m32['CAST'],ensure_ascii=False)+";const GRADE32_STARTERS="+_j.dumps(_m32['PICK'])+";const GRADE32_ENEMIES={};{const s32=SEMESTERS.find(s=>s.key==='e3-2');if(s32)s32.units.forEach((id,i)=>{const ids=Array.from(new Set([...(GRADE32_CAST[String(i*2+1)]||[]),...(GRADE32_CAST[String(i*2+2)]||[])])).filter(x=>x!=='goku32');GRADE32_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng32+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE31_ENEMIES[u]||""","""function enemies(u){return(GRADE32_ENEMIES[u]||GRADE31_ENEMIES[u]||""")
+rep("""state.semester==='e3-1'?[...GRADE31_STARTERS,...state.friends]:""","""state.semester==='e3-2'?[...GRADE32_STARTERS,...state.friends]:state.semester==='e3-1'?[...GRADE31_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e3-1'&&GRADE31_STARTERS.includes(saved.player))""","""||(out.semester==='e3-1'&&GRADE31_STARTERS.includes(saved.player))||(out.semester==='e3-2'&&GRADE32_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e3-1'&&window.WonkiGrade31){");_b=t.index("\n  if(s.semester==='e2-2'){const rows=currentUnits()",_a)
+_eb32=t[_a:_b].replace('WonkiGrade31','WonkiGrade32').replace("'e3-1'","'e3-2'").replace("goku31","goku32").replace('초3-1','초3-2')
+t=t[:_a]+_eb32+'\n'+t[_a:]
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
-final = _g31html + '\n' + final
+final = _g32html + '\n' + _g31html + '\n' + final
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

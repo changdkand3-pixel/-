@@ -1,0 +1,13 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1100,height:1000}});const errs=[];p.on('pageerror',e=>errs.push(e.message));await p.route(/^https?:/,r=>r.abort());
+await p.goto('file://'+process.argv[2],{waitUntil:'load'});await p.waitForTimeout(1000);
+const t=()=>p.evaluate(()=>document.querySelector('#wkUpdatePoster .wkp-title span').textContent);
+console.log('처음',await t());
+await p.click('#wkUpdatePoster [data-wkp="prev"]');console.log('이전',await t());
+await p.click('#wkUpdatePoster [data-wkp="list"]');console.log('목록 버튼 수',await p.$$eval('#wkUpdatePoster [data-wkp-no]',a=>a.length),'회색',await p.$$eval('#wkUpdatePoster [data-wkp-no].none',a=>a.length));
+await p.screenshot({path:process.argv[3]+'_list.png'});
+await p.click('#wkUpdatePoster [data-wkp-no="1"]');console.log('1차',await t(),await p.textContent('#wkUpdatePoster .wkp-empty'));
+await p.click('#wkUpdatePoster [data-wkp="list"]');await p.click('#wkUpdatePoster [data-wkp-no="50"]');console.log('50차',await t(),await p.$$eval('#wkUpdatePoster .wkp-sec li',a=>a.length)+'줄');
+await p.click('#wkUpdatePoster [data-wkp="latest"]');console.log('최신',await t());
+await p.click('#wkUpdatePoster .wkp-ok');await p.click('#wkUpdateReopen');console.log('다시보기',await t());
+console.log('오류',errs);await b.close();})();
