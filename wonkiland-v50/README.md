@@ -1,8 +1,12 @@
 # 원기랜드 50차
 
-**사용할 파일: [wonkiland_v50.html](wonkiland_v50.html)** (약 27MB, 그림·음악 모두 들어 있음)
+## ⬇️ 다운로드
 
-파일 페이지에서 **Download raw file**로 받은 뒤 Neocities에 올리면 됩니다. 49차 파일을 바탕으로 아래만 바꿨습니다.
+### **[👉 wonkiland_v50.html 바로 받기 (약 27MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v50/wonkiland_v50.html)**
+
+링크를 누르면 파일이 바로 내려받아집니다. 브라우저에 글자가 가득한 화면이 나오면 그 화면에서 **마우스 오른쪽 버튼 → 다른 이름으로 저장**(휴대폰은 공유 → 파일에 저장)을 눌러 `wonkiland_v50.html`로 저장하세요. 압축을 풀거나 파일을 합칠 필요는 없습니다. 그림과 음악이 모두 들어 있습니다.
+
+받은 파일을 Neocities에 올리면 됩니다. 49차 파일을 바탕으로 아래만 바꿨습니다.
 
 ## 바뀐 점
 
