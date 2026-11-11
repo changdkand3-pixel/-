@@ -300,6 +300,22 @@ t=t[:_a]+_eb32+'\n'+t[_a:]
 # ---------- 14. 60차: 회원 동기화의 ① 서버 연결 확인(JSONP)이 막혀도 멈추지 않기 (실패하면 건너뛰고 로그인으로)
 rep("""currentStage='① 서버 연결 확인';setStatus(currentStage+' 중…');await ping();""","""currentStage='① 서버 연결 확인';setStatus(currentStage+' 중…');try{await ping();}catch(_e1){console.warn('WonkiLand: 연결 확인 건너뜀',_e1);}""")
 
+
+# ---------- 15. 62차: 링크 미리보기(페이스북·카톡·인스타) + 탭 제목 "웰컴투 원기랜드"
+_site='https://hinsrolin.neocities.org'
+_share=_site+'/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20%EC%88%98%ED%95%99%EA%B2%8C%EC%9E%84/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C'
+_ogimg=_site+'/%EC%9E%91%EC%97%85%EC%9E%A5/wonkiland-share.jpg'
+_desc='웃음과 행복이 가득한 원기랜드! 드래곤볼 수학·영어 코스로 대결하고, 나만의 놀이공원을 지어 보세요.'
+_og=('<meta name="description" content="'+_desc+'">'
+ '<meta property="og:type" content="website"><meta property="og:site_name" content="웰컴투 원기랜드">'
+ '<meta property="og:title" content="웰컴투 원기랜드 🎡"><meta property="og:description" content="'+_desc+'">'
+ '<meta property="og:url" content="'+_share+'"><meta property="og:image" content="'+_ogimg+'">'
+ '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="원기랜드 놀이공원 지도">'
+ '<meta property="og:locale" content="ko_KR"><meta name="twitter:card" content="summary_large_image">'
+ '<meta name="twitter:title" content="웰컴투 원기랜드 🎡"><meta name="twitter:description" content="'+_desc+'"><meta name="twitter:image" content="'+_ogimg+'">')
+rep("""<html lang="ko"><head><meta charset="utf-8">""","""<html lang="ko"><head><meta charset="utf-8">"""+_og)
+rep("""<title>원기랜드 50차 · 연결지도 적용 | 웰컴투 원기랜드 · 수정 38</title>""","""<title>웰컴투 원기랜드</title>""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 final = _g32html + '\n' + _g31html + '\n' + final
