@@ -522,6 +522,69 @@ rep("""(win?'<strong>🤝 친구 합류! · 선두 1개 획득</strong>'""","""(
 rep("""정답을 맞히면 상대 체력이 줄어요. 상대 체력 7칸을 모두 줄이면 승리해요!""","""정답을 맞히면 상대 체력이 줄어요. 단원마다 스테이지가 7개 있고, 이길 때마다 다음 스테이지로 올라가요(상대 체력 5칸 → 11칸).""")
 rep("""전투당 최대 10문제 · 내 체력 5칸""","""전투당 최대 15문제 · 내 체력 5칸""")
 
+# ---------- 39. 107차: 영어 학기마다 7단원(단어 뜻·단어 고르기·철자·문법 빈칸·문장 뜻·영작·독해), 드래곤볼 1~7성구, 첫 보기 미리 선택돼 보이던 것, 상위메뉴는 한 단계 위로, 아이템 100가지, 아이템 획득 창 누르면 닫힘
+_a=t.index(" const names=course.listening?");_b=t.index(" SEMESTERS.push(semester);\n}",_a)
+_old=t[_a:_b]
+_ctx=_old[_old.index(" {const wkPs="):_old.index(" if(course.listening){")]
+_new=r"""const L=!!course.listening;
+ const names=L?['수능 어휘 뜻','수능 어휘 고르기','어휘 철자','수능 어법','구문 해석','수능 유형 독해','수능 듣기 대비']:['단어 뜻','영어 단어 고르기','철자 연습','문법 빈칸','문장 뜻','영작하기','독해·문맥'];
+ names.forEach((name,i)=>{
+  const id=base+i;semester.units.push(id);const model=UNITS[i%5];
+  UNITS.push({id,name,semester:course.key,order:i+1,en:course.theme,icon:['Aa','🔤','✍️','✏️','💬',L?'📖':'📝',L?'🎧':'📖'][i],color:['#58cf96','#5fd0c4','#7fd36a','#73baff','#8fa6ff','#ffb86c','#c09aff'][i],area:['어휘 수련장','단어 숲','철자 계곡','표현 수련장','문장 다리',L?'독해 신전':'영작 탑',L?'듣기 수련장':'독해 신전'][i],enemies:model.enemies.slice(),x:[14,50,84,22,70,28,74][i],y:[86,78,68,56,45,32,17][i]});
+ });
+ const [uMean,uWord,uSpell,uGram,uSent,u6,u7]=semester.units;const uTrans=L?uSent:u6,reading=L?u6:u7;
+ [uMean,uWord,uSpell].forEach(u=>{LEXICON[u]=course.vocab;});
+ for(const [en,ko] of course.vocab){
+  add(uMean,'meaning',en,ko,ko,course.vocab.map(x=>x[1]),{prompt:'이 영어 단어의 뜻을 고르세요.',voice:en,explanation:en+' = '+ko});
+  add(uWord,'word',ko,en,en,course.vocab.map(x=>x[0]),{prompt:'뜻에 맞는 영어 단어를 고르세요.',voice:en,explanation:ko+' → '+en});
+  {const miss=wk51Misspell(en);if(miss)add(uSpell,'spell',ko,en,en,[en,...miss],{prompt:'뜻에 맞는 영어 단어의 철자를 바르게 고르세요.',voice:en,explanation:ko+' → '+en+' (철자: '+en.split('').join('-')+')'});}
+ }
+ if(BANK.filter(q=>q.unit===uSpell).length<8)for(const [en,ko] of course.vocab)add(uSpell,'word',ko,en,en,course.vocab.map(x=>x[0]),{prompt:'뜻에 맞는 영어 단어를 고르세요. (철자도 함께 봐요)',voice:en,explanation:ko+' → '+en+' (철자: '+en.split('').join('-')+')'});
+ {const pat=course.patterns.map(x=>[x.en,x.ko+' · '+x.rule]);[uGram,uSent,uTrans].forEach(u=>{LEXICON[u]=pat;});}
+ for(const row of course.patterns){
+  add(uGram,'grammar',row.en.replace(row.target,'___'),row.ko,row.target,[row.target,...row.wrong],{prompt:'빈칸에 알맞은 표현을 고르세요.',voice:row.en,explanation:row.en+' / '+row.ko+' · '+row.rule});
+  add(uSent,'sentence',row.en,row.ko,row.ko,course.patterns.map(x=>x.ko),{prompt:'문장의 뜻을 고르세요.',voice:row.en,explanation:row.ko+' · '+row.rule});add(uTrans,'translate',row.ko,row.en,row.en,course.patterns.map(x=>x.en),{prompt:'우리말에 맞는 영어 문장을 고르세요.',voice:row.en,explanation:row.ko+' → '+row.en+' · '+row.rule});
+ }
+ LEXICON[reading]=[[course.passage,'지문을 읽고 어휘와 내용을 함께 확인하세요.'],...course.vocab];
+ for(const row of course.reading)add(reading,'reading','',row.answer,row.answer,[row.answer,...row.wrong],{passage:row.passage||course.passage,prompt:row.prompt,voice:row.passage||course.passage,explanation:row.explanation});
+"""+_ctx+r""" if(L){
+  const listening=u7;LEXICON[listening]=course.listening.filter((_,i)=>i%2===0).map(row=>[row.script.map(t=>t.speaker+': '+t.text).join('\n'),'먼저 음성을 듣고 문제에서 내용을 확인하세요.']);
+  for(const row of course.listening)add(listening,'listening','',row.answer,row.answer,[row.answer,...row.wrong],{script:row.script,prompt:row.prompt,voice:row.script.map(t=>t.text).join(' '),explanation:row.explanation});
+ }
+"""
+t=t[:_a]+' '+_new+t[_b:]
+rep("""const pool=BANK.filter(q=>q.unit===u&&(!unitById(u).semester.startsWith('h')||!['sentence','context','translate'].includes(q.kind)));""","""let pool=BANK.filter(q=>q.unit===u&&(!unitById(u).semester.startsWith('h')||!['sentence','context','translate'].includes(q.kind)));if(pool.length<4)pool=BANK.filter(q=>q.unit===u);""")
+# 대결판: 단원 7개 → 그림 칸 6개에 나눠 앉힘(7단원은 6번째 칸을 같이 씀)
+rep("""currentUnits().flatMap((unit,i)=>[0,1].map(part=>{const scene=i*2+part;return{scene,title:unit.name+' · '+(part+1),""","""currentUnits().flatMap((unit,i)=>[0].map(part=>{const scene=[0,1,2,3,4,5,5][i]??5;return{scene,title:unit.order+'. '+unit.name,""",4)
+rep("""String(i*2+1)""","""String(([0,1,2,3,4,5,5][i]??5)+1)""",3)
+rep("""String(i*2+2)""","""String(([0,1,2,3,4,5,5][i]??5)+1)""",3)
+rep("""][i];UNITS.find(u=>u.id===id).enemies=GRADE22_ENEMIES[id];""","""][[0,0,1,1,2,2,2][i]??2];UNITS.find(u=>u.id===id).enemies=GRADE22_ENEMIES[id];""")
+rep("""[['silver2','metallic2'],['murasaki2','buyon2'],['white2','metallic2']][i];""","""[['silver2','metallic2'],['murasaki2','buyon2'],['white2','metallic2']][[0,0,1,1,2,2,2][i]??2];""")
+rep("""allies:[['goku','goku_kame2'],['goku','hatchan2'],['goku','hatchan2','chief2','suno2']][i]""","""allies:[['goku','goku_kame2'],['goku','hatchan2'],['goku','hatchan2','chief2','suno2']][[0,0,1,1,2,2,2][i]??2]""")
+_n=t.count("['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ'][i]");assert _n>=1,_n
+t=t.replace("['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ'][i]","['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ','Ⅶ'][i]")
+# 예전 저장(학기당 3~4단원)의 단원 기록은 번호가 달라져서 비움(공·소원·승리·정답·친구·아이템은 그대로)
+rep("""stages:{},battle:null};}""","""stages:{},layout:7,battle:null};}""")
+rep("""out.cleared[u.id]={};for(const enemy of u.enemies)if(saved.cleared?.[u.id]?.[enemy]===true)""","""out.cleared[u.id]={};for(const enemy of u.enemies)if((saved.layout===7||u.id<=5)&&saved.cleared?.[u.id]?.[enemy]===true)""")
+rep("""const n=integer(saved.stages?.[u.id],0,7);""","""const n=integer(saved.layout===7||u.id<=5?saved.stages?.[u.id]:0,0,7);""")
+rep("""
+ const b=saved.battle;
+ if(out.player&&b&&""","""
+ const b=saved.layout===7||(saved.battle&&saved.battle.unit<=5)?saved.battle:null;
+ if(out.player&&b&&""")
+# 첫 보기에 자동으로 초점이 가서 이미 고른 것처럼 보이던 것
+rep("""ui.view==='battle'?(game.state.battle?.answered?'[data-eng-action="next"],[data-eng-action="result"]':'.we-choice:not(:disabled)'):""","""ui.view==='battle'?(game.state.battle?.answered?'[data-eng-action="next"],[data-eng-action="result"]':'.we-header [data-eng-action="back"]'):""")
+# 상위메뉴: 문제 푸는 중이면 바로 윗단계로
+rep("""function act(action,d={}){""","""function act(action,d={}){if(action==='title'&&ui.view!=='course'&&ui.view!=='semesters'){back();return;}""")
+rep("""button('🏠 상위메뉴 · 처음 타이틀','title','aria-label="상위메뉴 · 영어 처음 타이틀"')""","""button('⬆ 상위메뉴','title','aria-label="한 단계 위 메뉴로"')""")
+rep("""<button type="button" data-eng-action="title">🏠 상위메뉴 · 처음 타이틀</button>""","""<button type="button" data-eng-action="title">⬆ 상위메뉴 (한 단계 위로)</button>""")
+# 드래곤볼 1~7성구
+rep("""'<span class="'+(i<s.balls?'on':'')+'">★</span>'""","""'<span class="'+(i<s.balls?'on':'')+'" title="'+(i+1)+'성구">'+(window.wk107Ball?window.wk107Ball(i+1):'★')+'</span>'""")
+# 아이템 100가지
+_it=open(sys.argv[2].replace('world_final.webp','items107.json'),encoding='utf-8').read()
+rep("""function createGame(saved=null,rng=Math.random){""","""Object.assign(ITEMS,"""+_it+""");
+function createGame(saved=null,rng=Math.random){""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
