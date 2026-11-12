@@ -1,0 +1,1268 @@
+/**
+ * 원기랜드 클라우드 연결 사전 점검
+ * 회원정보를 읽거나 수정하지 않는 진단용 코드
+ */
+function cloudSyncCheckConfig() {
+  const props = PropertiesService.getScriptProperties();
+
+  const spreadsheetId = props.getProperty('SPREADSHEET_ID');
+  const adminEmail = props.getProperty('ADMIN_EMAIL');
+  const clientId = props.getProperty('GOOGLE_CLIENT_ID');
+
+  const result = {
+    spreadsheetId: !!spreadsheetId,
+    adminEmail: !!adminEmail,
+    googleClientId: !!clientId,
+    sheetExists: false,
+    headerCount: 0,
+    message: ''
+  };
+
+  if (!spreadsheetId || !adminEmail || !clientId) {
+    result.message = '필수 스크립트 속성이 누락되었습니다.';
+    Logger.log(JSON.stringify(result));
+    return;
+  }
+
+  const ss = SpreadsheetApp.openById(spreadsheetId);
+  const sheet = ss.getSheetByName('회원정보');
+
+  if (!sheet) {
+    result.message = '회원정보 시트를 찾을 수 없습니다. 시트 이름을 확인해 주세요.';
+    Logger.log(JSON.stringify(result));
+    return;
+  }
+
+  result.sheetExists = true;
+  result.headerCount = sheet.getLastColumn();
+  result.message = '설정 및 회원정보 시트 확인 완료';
+
+  Logger.log(JSON.stringify(result));
+}
+
+/**
+ * 원기랜드 회원 전체자료 저장 공간 준비
+ * 기존 회원정보 시트는 수정하거나 삭제하지 않습니다.
+ */
+function cloudSyncPrepareStore() {
+  const props = PropertiesService.getScriptProperties();
+  const spreadsheetId = props.getProperty('SPREADSHEET_ID');
+
+  if (!spreadsheetId) {
+    throw new Error('SPREADSHEET_ID 설정을 확인해 주세요.');
+  }
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try {
+    const ss = SpreadsheetApp.openById(spreadsheetId);
+    const sheetName = '회원데이터_JSON';
+    let sheet = ss.getSheetByName(sheetName);
+
+    const headers = [
+      '회원ID',
+      '회원명',
+      '비밀번호솔트',
+      '비밀번호해시',
+      '회원전체자료_JSON',
+      '로그인실패횟수',
+      '로그인잠금시각',
+      '최종수정일'
+    ];
+
+    if (!sheet) {
+      sheet = ss.insertSheet(sheetName);
+      sheet.getRange(1, 1, 1, headers.length)
+        .setValues([headers]);
+      sheet.setFrozenRows(1);
+      sheet.getRange(1, 1, 1, headers.length)
+        .setFontWeight('bold');
+    } else {
+      const existing = sheet.getRange(1, 1, 1, headers.length)
+        .getDisplayValues()[0];
+
+      if (existing.join('|') !== headers.join('|')) {
+        throw new Error(
+          '회원데이터_JSON 시트의 기존 열 제목이 다릅니다. 자동 변경하지 않았습니다.'
+        );
+      }
+    }
+
+    return {
+      ok: true,
+      sheetName: sheetName,
+      columns: headers.length,
+      message: '회원 전체자료 저장 공간 준비 완료'
+    };
+
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+/* 전역 웹앱 GET: JSONP ping */
+function doGet(e) {
+  var p = (e && e.parameter) || {};
+  var data = { success:true, ok:true, message:'원기랜드 연결 성공' };
+  var callback = String(p.callback || '');
+  if (callback && /^[A-Za-z0-9_$\.]+$/.test(callback)) {
+    return ContentService.createTextOutput(callback + '(' + JSON.stringify(data) + ')')
+      .setMimeType(ContentService.MimeType.JAVASCRIPT);
+  }
+  return cloudSyncJson(data);
+}
+
+/* 전역 웹앱 POST: JSON과 숨김 iframe form(payload) 모두 처리 */
+function doPost(e) {
+  var raw = '';
+  if (e && e.parameter && e.parameter.payload) raw = e.parameter.payload;
+  else if (e && e.postData && e.postData.contents) raw = e.postData.contents;
+  var request = {};
+  var nonce = '';
+  var response;
+  try {
+    request = raw ? JSON.parse(raw) : {};
+    nonce = String(request._wonkiNonce || '');
+    delete request._wonkiNonce;
+    response = cloudSyncHandleRequest_(request);
+  } catch (err) {
+    response = { success:false, message:'서버 처리 오류: ' + String(err && err.message ? err.message : err) };
+  }
+  if (nonce) return cloudSyncIframeReply_(response, nonce);
+  return cloudSyncJson(response);
+}
+
+function cloudSyncHandleRequest_(body) {
+  var action = String(body.action || '');
+  if (action === 'ping') return {success:true, message:'서버 연결 성공'};
+  if (action === 'visitor_register') return cloudSyncDailyVisitorRegister_(body.visitorId);
+  if (action === 'visitor_count') return cloudSyncDailyVisitorCount_();
+  if (action === 'guestbook_list') return cloudSyncGuestbookList_();
+  if (action === 'guestbook_save') return cloudSyncGuestbookSave_(body.items);
+  if (action === 'owner_message_save') return cloudSyncOwnerMessageSave_(body.name, body.message);
+  if (action === 'member_login') {
+    var loginResult = cloudSyncMemberLogin(body.name, body.pin).getContent();
+    return JSON.parse(loginResult);
+  }
+  if (action === 'member_layout_save') return cloudSyncMemberLayoutSave_(body.name, body.pin, body.layout);
+  if (action === 'general_member_register') return cloudSyncGeneralMemberRegister_(body.member, body.nickname, body.password);
+  if (action === 'general_member_login') return cloudSyncGeneralMemberLogin_(body.nickname, body.password);
+  if (action === 'general_member_layout_save') return cloudSyncGeneralMemberLayoutSave_(body.sessionToken, body.layout);
+  if (action === 'general_member_progress_load') return cloudSyncGeneralMemberProgressLoad_(body.sessionToken);
+  if (action === 'general_member_progress_save') return cloudSyncGeneralMemberProgressSave_(body.sessionToken, body.progress);
+  if (action === 'owner_park_load') return cloudSyncOwnerParkLoad_();
+  if (action === 'admin_session_start') return cloudSyncAdminSessionStart80_(body.idToken);
+  if (action === 'visit_log') return cloudSyncVisitLog_(body);
+  if (action === 'park_gallery_list') return cloudSyncGalleryList_(body.sessionToken);
+  if (action === 'park_gallery_share') return cloudSyncGalleryShare_(body);
+  if (action === 'park_gallery_unshare') return cloudSyncGalleryUnshare_(body.sessionToken);
+  if (action === 'park_showcase_save') return cloudSyncParkShowcaseSave_(body.name, body.message, body.park, body.visitorId);
+  if (action === 'public_config') return cloudSyncPublicConfig104_();
+  if (action === 'admin_lock_check') return cloudSyncAdminLockCheck104_(body.password);
+  if (action === 'admin_lock_set') {
+    var adm104 = cloudSyncAdminCheck80_(body.idToken);
+    if (!adm104.success) return adm104;
+    return cloudSyncAdminLockSet104_(body.password);
+  }
+  var protectedActions = ['admin_list','admin_save','admin_friend_list','admin_friend_save','owner_message_list','admin_park_list','admin_visitor_stats','owner_park_save','admin_visit_log','admin_gallery_hide','admin_member_delete'];
+  if (protectedActions.indexOf(action) >= 0) {
+    var admin = cloudSyncAdminCheck80_(body.idToken);
+    if (!admin.success) return admin;
+    if (action === 'admin_list') return cloudSyncAdminListLive83_();
+    if (action === 'admin_save') return cloudSyncAdminSaveLive83_(body.members);
+    if (action === 'admin_member_delete') return cloudSyncAdminMemberDelete83_(body.ids);
+    if (action === 'admin_friend_list') return cloudSyncAdminFriendList_();
+    if (action === 'admin_friend_save') return cloudSyncAdminFriendSave_(body.members);
+    if (action === 'owner_message_list') return cloudSyncOwnerMessageList_();
+    if (action === 'admin_park_list') return cloudSyncAdminParkList_();
+    if (action === 'admin_visitor_stats') return cloudSyncAdminVisitorStats_();
+    if (action === 'owner_park_save') return cloudSyncOwnerParkSave_(body.park);
+    if (action === 'admin_visit_log') return cloudSyncAdminVisitLog_();
+    if (action === 'admin_gallery_hide') return cloudSyncGalleryHide_(body.key, body.hide !== false);
+  }
+  return {success:false, message:'지원하지 않는 요청입니다: ' + action};
+}
+
+function cloudSyncIframeReply_(payload, nonce) {
+  var safePayload = JSON.stringify(payload).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');
+  var safeNonce = JSON.stringify(String(nonce || ''));
+  var page = '<!doctype html><html><head><meta charset="utf-8"></head><body><script>' +
+    'top.postMessage({type:"wonki-cloud-response",nonce:' + safeNonce + ',payload:' + safePayload + '},"*");' +
+    '<\/script></body></html>';
+  return HtmlService.createHtmlOutput(page).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+function cloudSyncGetAuxSheet_(name, headers) {
+  var id = PropertiesService.getScriptProperties().getProperty('SPREADSHEET_ID');
+  if (!id) throw new Error('SPREADSHEET_ID 설정이 없습니다.');
+  var ss = SpreadsheetApp.openById(id);
+  var sh = ss.getSheetByName(name);
+  if (!sh) { sh = ss.insertSheet(name); sh.getRange(1,1,1,headers.length).setValues([headers]); sh.setFrozenRows(1); }
+  else if (sh.getLastRow() === 0) sh.getRange(1,1,1,headers.length).setValues([headers]);
+  return sh;
+}
+
+/* 일반회원 전용 시트: 기존 상상코칭 회원 시트와 분리 */
+function cloudSyncAdminFriendList_() {
+  var sh = cloudSyncGetAuxSheet_('일반회원정보',['회원 ID','저장일시','일반회원 데이터']);
+  var last = sh.getLastRow(), members=[];
+  if (last >= 2) sh.getRange(2,1,last-1,3).getValues().forEach(function(row){
+    if (!row[0]) return;
+    try { var m=JSON.parse(row[2] || '{}'); m.id=String(row[0]); members.push(m); } catch (_) {}
+  });
+  return {success:true,members:members};
+}
+function cloudSyncAdminFriendSave_(members) {
+  if (!Array.isArray(members) || members.length > 3000) return {success:false,message:'일반회원 자료 형식 또는 회원 수를 확인해 주세요.'};
+  var lock=LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh=cloudSyncGetAuxSheet_('일반회원정보',['회원 ID','저장일시','일반회원 데이터']);
+    var last=sh.getLastRow(), rowMap={};
+    if(last>=2) sh.getRange(2,1,last-1,3).getValues().forEach(function(row,i){if(row[0])rowMap[String(row[0])]=i+2;});
+    var added=0,updated=0;
+    members.forEach(function(m){
+      if(!m || !m.id) return;
+      var id=String(m.id), values=[id,new Date(),JSON.stringify(m)];
+      if(rowMap[id]) { sh.getRange(rowMap[id],1,1,3).setValues([values]); updated++; }
+      else { sh.appendRow(values); added++; }
+    });
+    return {success:true,addedCount:added,updatedCount:updated,message:'일반회원 클라우드 저장 완료'};
+  } finally { lock.releaseLock(); }
+}
+
+
+/* 최초 1회 편집기에서 실행하여 방명록 이메일 알림 권한을 승인합니다. */
+function cloudSyncAuthorizeEmail() {
+  var quota = MailApp.getRemainingDailyQuota();
+  Logger.log('이메일 발송 가능 잔여 수신자 수: ' + quota);
+  return quota;
+}
+
+/* 공개 방명록 시트. 신규 글만 관리자에게 이메일 알림 */
+function cloudSyncGuestbookList_() {
+  var sh=cloudSyncGetAuxSheet_('방명록',['글 ID','작성일시','이름','내용','표시일자']);
+  var last=sh.getLastRow(), items=[];
+  if(last>=2) sh.getRange(2,1,last-1,5).getValues().forEach(function(r){
+    if(!r[0])return;
+    items.push({id:String(r[0]),createdAt:r[1] instanceof Date?r[1].toISOString():String(r[1]||''),name:String(r[2]||'익명'),message:String(r[3]||''),date:String(r[4]||'')});
+  });
+  items.sort(function(a,b){return String(a.createdAt).localeCompare(String(b.createdAt));});
+  return {success:true,items:items};
+}
+function cloudSyncGuestbookSave_(items) {
+  if(!Array.isArray(items) || items.length>500) return {success:false,message:'방명록 자료 형식을 확인해 주세요.'};
+  var lock=LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh=cloudSyncGetAuxSheet_('방명록',['글 ID','작성일시','이름','내용','표시일자']);
+    var last=sh.getLastRow(), ids={};
+    if(last>=2) sh.getRange(2,1,last-1,1).getDisplayValues().forEach(function(r){if(r[0])ids[String(r[0])]=true;});
+    var added=[];
+    items.forEach(function(x){
+      if(!x || typeof x.message!=='string')return;
+      var id=String(x.id || '').trim(); if(!id || ids[id])return;
+      var name=String(x.name||'익명').slice(0,80), message=String(x.message).slice(0,3000);
+      if(!message.trim())return;
+      var created=String(x.createdAt||x.date||new Date().toISOString());
+      sh.appendRow([id,new Date(),name,message,String(x.date||created)]);
+      ids[id]=true; added.push({id:id,name:name,message:message,date:String(x.date||created),createdAt:created});
+    });
+    if(added.length) cloudSyncNotifyGuestbook_(added);
+    return {success:true,items:cloudSyncGuestbookList_().items,addedCount:added.length};
+  } finally { lock.releaseLock(); }
+}
+function cloudSyncNotifyGuestbook_(items) {
+  var props=PropertiesService.getScriptProperties();
+  var recipients=String(props.getProperty('ADMIN_EMAILS')||props.getProperty('ADMIN_EMAIL')||'').split(',').map(function(x){return x.trim();}).filter(Boolean);
+  if(!recipients.length)return;
+  var body=items.map(function(x){return '작성자: '+x.name+'\\n작성일: '+x.date+'\\n내용: '+x.message;}).join('\\n\\n---\\n\\n');
+  recipients.forEach(function(to){try{MailApp.sendEmail(to,'[원기랜드] 새 방명록 글이 등록되었습니다',body);}catch(err){Logger.log('방명록 알림 이메일 실패: '+err);}});
+}
+
+
+/* 방문자 집계: 브라우저별 고유 ID를 기준으로 한국시간 날짜마다 1회만 누적 */
+function cloudSyncDailyVisitorSheet_(){
+  return cloudSyncGetAuxSheet_('일일방문자기록',['방문자 ID','방문일(KST)','최초 방문시각']);
+}
+function cloudSyncDailyVisitorCount_(){
+  var sh=cloudSyncDailyVisitorSheet_();
+  var last=sh.getLastRow();
+  return {success:true,total:Math.max(0,last-1)};
+}
+function cloudSyncDailyVisitorRegister_(visitorId){
+  visitorId=String(visitorId||'').trim();
+  if(!/^[a-zA-Z0-9_-]{16,100}$/.test(visitorId))return {success:false,message:'방문자 식별값이 올바르지 않습니다.'};
+  var lock=LockService.getScriptLock();
+  lock.waitLock(20000);
+  try{
+    var sh=cloudSyncDailyVisitorSheet_();
+    var today=Utilities.formatDate(new Date(),'Asia/Seoul','yyyy-MM-dd');
+    var last=sh.getLastRow();
+    if(last>=2){
+      var rows=sh.getRange(2,1,last-1,2).getDisplayValues();
+      for(var i=0;i<rows.length;i++){
+        if(String(rows[i][0])===visitorId && String(rows[i][1])===today){
+          return {success:true, counted:false, total:last-1, date:today, message:'오늘은 이미 방문 집계되었습니다.'};
+        }
+      }
+    }
+    sh.appendRow([visitorId,today,new Date()]);
+    return {success:true,counted:true,total:sh.getLastRow()-1,date:today,message:'오늘 방문이 집계되었습니다.'};
+  } finally { lock.releaseLock(); }
+}
+
+/* 주인장에게 한마디: Google Sheets에 저장하여 기기 간 공유 */
+function cloudSyncOwnerMessageSheet_(){return cloudSyncGetAuxSheet_('주인장메시지함',['메시지 ID','작성일시','닉네임','메시지','확인여부']);}
+function cloudSyncOwnerMessageSave_(name,message){name=String(name||'').trim().slice(0,30);message=String(message||'').trim().slice(0,500);if(!name||!message)return {success:false,message:'닉네임과 메시지를 입력해 주세요.'};var lock=LockService.getScriptLock();lock.waitLock(20000);try{var sh=cloudSyncOwnerMessageSheet_(),id='msg_'+Utilities.getUuid(),created=new Date();sh.appendRow([id,created,name,message,'미확인']);return {success:true,item:{id:id,createdAt:created.toISOString(),name:name,message:message,read:false}};}finally{lock.releaseLock();}}
+function cloudSyncOwnerMessageList_(){var sh=cloudSyncOwnerMessageSheet_(),last=sh.getLastRow(),items=[];if(last>=2)sh.getRange(2,1,last-1,5).getValues().forEach(function(r){if(!r[0])return;items.push({id:String(r[0]),createdAt:r[1] instanceof Date?r[1].toISOString():String(r[1]||''),name:String(r[2]||'익명'),message:String(r[3]||''),read:String(r[4]||'')==='확인'});});items.sort(function(a,b){return String(a.createdAt).localeCompare(String(b.createdAt));});return {success:true,items:items};}
+
+/* JSON 응답 */
+function cloudSyncJson(data) {
+  return ContentService
+    .createTextOutput(JSON.stringify(data))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+/* 저장 시트 확인 */
+function cloudSyncGetStore() {
+  var id = PropertiesService
+    .getScriptProperties()
+    .getProperty('SPREADSHEET_ID');
+
+  if (!id) {
+    throw new Error('SPREADSHEET_ID 설정이 없습니다.');
+  }
+
+  var ss = SpreadsheetApp.openById(id);
+  var sheet = ss.getSheetByName('회원데이터_JSON');
+
+  if (!sheet) {
+    throw new Error('회원데이터_JSON 시트가 없습니다.');
+  }
+
+  return sheet;
+}
+
+
+/* 구글 관리자 계정 인증 */
+function cloudSyncVerifyAdmin(idToken) {
+  if (!idToken) return { success:false, message:'구글 로그인이 필요합니다.' };
+  var props = PropertiesService.getScriptProperties();
+  var clientId = props.getProperty('GOOGLE_CLIENT_ID');
+  var allowed = String(props.getProperty('ADMIN_EMAILS') || props.getProperty('ADMIN_EMAIL') || '')
+    .split(',').map(function(x){ return x.trim().toLowerCase(); }).filter(Boolean);
+  if (!clientId || !allowed.length) return { success:false, message:'관리자 인증 설정(GOOGLE_CLIENT_ID, ADMIN_EMAIL 또는 ADMIN_EMAILS)을 확인해 주세요.' };
+  var response = UrlFetchApp.fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + encodeURIComponent(idToken), { muteHttpExceptions:true });
+  if (response.getResponseCode() !== 200) return { success:false, message:'구글 로그인 인증에 실패했습니다.' };
+  var info = JSON.parse(response.getContentText());
+  var email = String(info.email || '').toLowerCase();
+  if (info.aud !== clientId || allowed.indexOf(email) < 0 || String(info.email_verified) !== 'true' || Number(info.exp) <= Math.floor(Date.now()/1000)) {
+    return { success:false, message:'관리자 계정이 확인되지 않았습니다.' };
+  }
+  return { success:true, email:info.email };
+}
+
+/* 회원 데이터 불러오기 */
+function cloudSyncAdminList() {
+  var sheet = cloudSyncGetStore();
+  var lastRow = sheet.getLastRow();
+  var members = [];
+
+  if (lastRow >= 2) {
+    var rows = sheet.getRange(2, 1, lastRow - 1, 8).getValues();
+
+    rows.forEach(function(row) {
+      if (!row[0]) return;
+
+      var data = {};
+
+      try {
+        data = JSON.parse(row[4] || '{}');
+      } catch (err) {
+        data = {};
+      }
+
+      data.id = String(row[0]);
+      data.name = String(row[1]);
+
+      members.push(data);
+    });
+  }
+
+  return cloudSyncJson({
+    success: true,
+    members: members
+  });
+}
+
+
+/* 회원 데이터 저장 */
+
+function cloudSyncAdminSave(members) {
+  if (!Array.isArray(members)) {
+    return cloudSyncJson({
+      success: false,
+      message: '회원 자료 형식이 올바르지 않습니다.'
+    });
+  }
+
+  if (members.length > 500) {
+    return cloudSyncJson({
+      success: false,
+      message: '한 번에 저장할 수 있는 회원 수를 초과했습니다.'
+    });
+  }
+
+  var lock = LockService.getScriptLock();
+  lock.waitLock(20000);
+
+  try {
+    var sheet = cloudSyncGetStore();
+    var lastRow = sheet.getLastRow();
+    var rowMap = {};
+
+    // 기존 회원의 행 번호 확인
+    if (lastRow >= 2) {
+      var existing = sheet.getRange(
+        2, 1, lastRow - 1, 8
+      ).getValues();
+
+      existing.forEach(function(row, index) {
+        if (row[0]) {
+          rowMap[String(row[0])] = {
+            rowNumber: index + 2,
+            data: row
+          };
+        }
+      });
+    }
+
+    var savedCount = 0;
+    var addedCount = 0;
+    var updatedCount = 0;
+
+    members.forEach(function(member) {
+      if (!member || !member.name) return;
+
+      var id = String(member.id || '').trim();
+
+      if (!id) {
+        throw new Error('회원 ID가 없는 자료가 있습니다.');
+      }
+
+      var old = rowMap[id];
+      var oldData = old ? old.data : [];
+
+      var pin = String(member.memberPassword || '');
+      var salt = old ? String(oldData[2] || '') : '';
+      var hash = old ? String(oldData[3] || '') : '';
+
+      // 새 비밀번호가 입력된 경우에만 해시 갱신
+      
+if (pin) {
+  if (pin.length < 4 || pin.length > 128) {
+    throw new Error('회원 비밀번호는 4자리 이상 입력해 주세요.');
+  }
+
+  salt = Utilities.getUuid();
+  hash = cloudSyncHash(pin, salt);
+}
+
+
+      var safeData = JSON.parse(JSON.stringify(member));
+      delete safeData.memberPassword;
+
+      var rowValues = [
+        id,
+        String(member.name),
+        salt,
+        hash,
+        JSON.stringify(safeData),
+        old ? Number(oldData[5] || 0) : 0,
+        old ? oldData[6] : '',
+        new Date()
+      ];
+
+      if (old) {
+        sheet.getRange(old.rowNumber, 1, 1, 8)
+          .setValues([rowValues]);
+        updatedCount++;
+      } else {
+        sheet.appendRow(rowValues);
+        addedCount++;
+      }
+
+      savedCount++;
+    });
+
+    return cloudSyncJson({
+      success: true,
+      savedCount: savedCount,
+      addedCount: addedCount,
+      updatedCount: updatedCount,
+      message: '회원 자료 저장 완료. 기존 회원 자료는 보존되었습니다.'
+    });
+
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+    
+
+/* 회원 비밀번호 해시 */
+function cloudSyncHash(pin, salt) {
+  var bytes = Utilities.computeDigest(
+    Utilities.DigestAlgorithm.SHA_256,
+    salt + ':' + pin,
+    Utilities.Charset.UTF_8
+  );
+
+  return bytes.map(function(b) {
+    var v = (b + 256) % 256;
+    return ('0' + v.toString(16)).slice(-2);
+  }).join('');
+}
+
+
+/* 회원 본인 로그인 */
+function cloudSyncMemberLogin(name, pin) {
+  name = String(name || '').trim();
+  pin = String(pin || '');
+
+ if (!name || pin.length < 4 || pin.length > 128) {
+    return cloudSyncJson({
+      success: false,
+      message: '이름과 회원 비밀번호를 확인해 주세요.'
+    });
+  }
+
+  var lock = LockService.getScriptLock();
+  lock.waitLock(20000);
+
+  try {
+    var sheet = cloudSyncGetStore();
+    var lastRow = sheet.getLastRow();
+
+    if (lastRow < 2) {
+      return cloudSyncJson({
+        success: false,
+        message: '등록된 회원 자료가 없습니다.'
+      });
+    }
+
+    var rows = sheet.getRange(
+      2, 1, lastRow - 1, 8
+    ).getValues();
+
+    for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+
+      if (String(row[1]).trim() !== name) continue;
+
+      var now = Date.now();
+      var lockedUntil = row[6] ? new Date(row[6]).getTime() : 0;
+
+      if (lockedUntil > now) {
+        return cloudSyncJson({
+          success: false,
+          message: '로그인 시도가 잠시 제한되었습니다.'
+        });
+      }
+
+      var correct = cloudSyncHash(pin, String(row[2])) ===
+        String(row[3]);
+
+      var sheetRow = i + 2;
+
+      if (!correct) {
+        var failures = Number(row[5] || 0) + 1;
+        var lockUntil = '';
+
+        if (failures >= 5) {
+          failures = 0;
+          lockUntil = new Date(now + 15 * 60 * 1000);
+        }
+
+        sheet.getRange(sheetRow, 6).setValue(failures);
+        sheet.getRange(sheetRow, 7).setValue(lockUntil);
+
+        return cloudSyncJson({
+          success: false,
+          message: '회원 비밀번호가 일치하지 않습니다.'
+        });
+      }
+
+      sheet.getRange(sheetRow, 6).setValue(0);
+      sheet.getRange(sheetRow, 7).clearContent();
+
+      var data = JSON.parse(row[4] || '{}');
+
+      return cloudSyncJson({
+        success: true,
+        member: data
+      });
+    }
+
+    return cloudSyncJson({
+      success: false,
+      message: '회원 정보를 찾을 수 없습니다.'
+    });
+
+  } finally {
+    lock.releaseLock();
+  }
+}
+function cloudSyncTestGetResponse() {
+  Logger.log('전역 doGet 연결 확인은 웹 앱 주소에서 ?action=ping 으로 확인하세요.');
+}
+
+
+function cloudSyncTestSafeSave() {
+  var result = cloudSyncAdminSave([]);
+  Logger.log(result.getContent());
+}
+
+function cloudSyncTestAdminSecurity() {
+  var result = cloudSyncVerifyAdmin('');
+
+  Logger.log(JSON.stringify({
+    test: '로그인하지 않은 사용자의 관리자 접근',
+    success: result.success,
+    message: result.message,
+    expected: false,
+    passed: result.success === false
+  }));
+}
+
+
+
+
+
+
+/* 회원 본인 인증 후 가구 배치도만 갱신: 다른 개인정보와 비밀번호 해시는 보존 */
+function cloudSyncMemberLayoutSave_(name, pin, layout) {
+  name = String(name || '').trim(); pin = String(pin || '');
+  if (!name || pin.length < 4 || pin.length > 128) return {success:false,message:'회원 이름과 비밀번호를 확인해 주세요.'};
+  if (typeof layout !== 'string' || layout.length > 200000) return {success:false,message:'가구 배치 자료 형식 또는 크기를 확인해 주세요.'};
+  var parsed;
+  try { parsed = JSON.parse(layout); } catch (e) { return {success:false,message:'가구 배치 자료를 해석할 수 없습니다.'}; }
+  if (!parsed || typeof parsed !== 'object' || !parsed.layouts) return {success:false,message:'가구 배치 자료에 방 정보가 없습니다.'};
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sheet = cloudSyncGetStore(), last = sheet.getLastRow();
+    if (last < 2) return {success:false,message:'등록된 회원 자료가 없습니다.'};
+    var rows = sheet.getRange(2,1,last-1,8).getValues();
+    for (var i=0;i<rows.length;i++) {
+      var row=rows[i]; if (String(row[1]).trim() !== name) continue;
+      var lockedUntil = row[6] ? new Date(row[6]).getTime() : 0;
+      if (lockedUntil > Date.now()) return {success:false,message:'로그인 시도가 잠시 제한되었습니다.'};
+      if (cloudSyncHash(pin,String(row[2])) !== String(row[3])) {
+        var failures=Number(row[5]||0)+1, lockUntil='';
+        if (failures>=5) { failures=0; lockUntil=new Date(Date.now()+15*60*1000); }
+        sheet.getRange(i+2,6).setValue(failures); sheet.getRange(i+2,7).setValue(lockUntil);
+        return {success:false,message:'회원 비밀번호가 일치하지 않습니다.'};
+      }
+      var data=JSON.parse(row[4]||'{}'); data.layout=JSON.stringify(parsed); data.updatedAt=new Date().toISOString();
+      sheet.getRange(i+2,5).setValue(JSON.stringify(data));
+      sheet.getRange(i+2,6).setValue(0); sheet.getRange(i+2,7).clearContent(); sheet.getRange(i+2,8).setValue(new Date());
+      return {success:true,member:data,message:'가구 배치가 클라우드에 저장되었습니다.'};
+    }
+    return {success:false,message:'회원 정보를 찾을 수 없습니다.'};
+  } finally { lock.releaseLock(); }
+}
+
+
+/* 일반회원 닉네임/비밀번호 계정 및 본인 가구배치 저장 */
+function cloudSyncGeneralMemberSheet_() {
+  var sh = cloudSyncGetAuxSheet_('일반회원정보',
+    ['회원 ID','저장일시','일반회원 데이터','로그인 닉네임','비밀번호 솔트','비밀번호 해시','로그인 실패횟수','로그인 잠금시각']);
+  var headers = ['회원 ID','저장일시','일반회원 데이터','로그인 닉네임','비밀번호 솔트','비밀번호 해시','로그인 실패횟수','로그인 잠금시각'];
+  if (sh.getMaxColumns() < headers.length) sh.insertColumnsAfter(sh.getMaxColumns(), headers.length-sh.getMaxColumns());
+  var current = sh.getRange(1,1,1,headers.length).getDisplayValues()[0];
+  if (current[0] !== headers[0] || current[1] !== headers[1] || current[2] !== headers[2]) {
+    throw new Error('일반회원정보 시트의 기존 열 제목이 달라 자동 변경하지 않았습니다.');
+  }
+  // 기존 3열 구조를 유지하면서 추가 인증 열만 준비
+  sh.getRange(1,4,1,5).setValues([headers.slice(3)]);
+  return sh;
+}
+function cloudSyncGeneralMemberRegister_(member, nickname, password) {
+  if (!member || !member.id || !member.name) return {success:false,message:'일반회원 등록 정보가 부족합니다.'};
+  nickname = String(nickname || '').trim();
+  password = String(password || '');
+  if (!/^[가-힣a-zA-Z0-9_]{2,20}$/.test(nickname)) return {success:false,message:'닉네임은 한글·영문·숫자·밑줄로 2~20자 입력해 주세요.'};
+  if (!/^\d{4,8}$/.test(password)) return {success:false,message:'비밀번호는 숫자 4~8자리로 입력해 주세요.'};
+  var lock=LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh=cloudSyncGeneralMemberSheet_(), last=sh.getLastRow();
+    var rows=last>=2?sh.getRange(2,1,last-1,8).getValues():[];
+    var id=String(member.id);
+    for(var i=0;i<rows.length;i++){
+      if(String(rows[i][3]||'').toLowerCase()===nickname.toLowerCase() && String(rows[i][0])!==id)
+        return {success:false,message:'이미 사용 중인 닉네임입니다. 다른 닉네임을 선택해 주세요.'};
+      if(String(rows[i][0])===id && rows[i][5])
+        return {success:false,message:'이미 계정이 등록된 회원입니다. 로그인해 주세요.'};
+    }
+    var salt=Utilities.getUuid();
+    var safe=JSON.parse(JSON.stringify(member));
+    delete safe.password; delete safe.memberPassword; delete safe.pin;
+    sh.appendRow([id,new Date(),JSON.stringify(safe),nickname,salt,cloudSyncHash(password,salt),0,'']);
+    return {success:true,message:'일반회원 계정 등록 완료',nickname:nickname};
+  } finally {lock.releaseLock();}
+}
+function cloudSyncGeneralMemberLogin_(nickname,password) {
+  nickname=String(nickname||'').trim(); password=String(password||'');
+  if(!nickname || !/^\d{4,8}$/.test(password)) return {success:false,message:'닉네임과 숫자 4~8자리 비밀번호를 확인해 주세요.'};
+  var lock=LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh=cloudSyncGeneralMemberSheet_(), last=sh.getLastRow();
+    if(last<2)return {success:false,message:'등록된 일반회원 계정이 없습니다.'};
+    var rows=sh.getRange(2,1,last-1,8).getValues();
+    for(var i=0;i<rows.length;i++){
+      var r=rows[i];
+      if(String(r[3]||'').toLowerCase()!==nickname.toLowerCase())continue;
+      var now=Date.now(), until=r[7]?new Date(r[7]).getTime():0;
+      if(until>now)return {success:false,message:'로그인 시도가 잠시 제한되었습니다. 15분 후 다시 시도해 주세요.'};
+      if(cloudSyncHash(password,String(r[4]||''))!==String(r[5]||'')){
+        var fails=Number(r[6]||0)+1, lockUntil='';
+        if(fails>=5){fails=0;lockUntil=new Date(now+15*60*1000);}
+        sh.getRange(i+2,7,1,2).setValues([[fails,lockUntil]]);
+        return {success:false,message:'닉네임 또는 비밀번호가 일치하지 않습니다.'};
+      }
+      sh.getRange(i+2,7,1,2).setValues([[0,'']]);
+      var token=Utilities.getUuid()+Utilities.getUuid();
+      CacheService.getScriptCache().put('general_session_'+token,String(r[0]),21600);
+      var member=JSON.parse(r[2]||'{}'); member.id=String(r[0]); member.nickname=String(r[3]);
+      return {success:true,sessionToken:token,member:member,message:'로그인되었습니다.'};
+    }
+    return {success:false,message:'닉네임 또는 비밀번호가 일치하지 않습니다.'};
+  } finally {lock.releaseLock();}
+}
+function cloudSyncGeneralMemberLayoutSave_(sessionToken,layout) {
+  sessionToken=String(sessionToken||'');
+  var memberId=CacheService.getScriptCache().get('general_session_'+sessionToken);
+  if(!memberId)return {success:false,message:'로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  if(typeof layout!=='string'||layout.length>200000)return {success:false,message:'가구 배치 자료 형식 또는 크기를 확인해 주세요.'};
+  var parsed; try{parsed=JSON.parse(layout);}catch(e){return {success:false,message:'가구 배치 자료를 해석할 수 없습니다.'};}
+  if(!parsed||typeof parsed!=='object'||!parsed.layouts)return {success:false,message:'가구 배치 자료에 방 정보가 없습니다.'};
+  var lock=LockService.getScriptLock();lock.waitLock(20000);
+  try{
+    var sh=cloudSyncGeneralMemberSheet_(),last=sh.getLastRow();
+    if(last<2)return {success:false,message:'일반회원 자료가 없습니다.'};
+    var rows=sh.getRange(2,1,last-1,8).getValues();
+    for(var i=0;i<rows.length;i++){
+      if(String(rows[i][0])!==memberId)continue;
+      var data=JSON.parse(rows[i][2]||'{}');
+      data.layout=JSON.stringify(parsed);data.updatedAt=new Date().toISOString();
+      sh.getRange(i+2,2).setValue(new Date());
+      sh.getRange(i+2,3).setValue(JSON.stringify(data));
+      return {success:true,member:data,message:'내 집 꾸미기 배치가 클라우드에 저장되었습니다.'};
+    }
+    return {success:false,message:'회원 계정을 찾을 수 없습니다.'};
+  } finally {lock.releaseLock();}
+}
+/* 1단계: 확인만 합니다. 아무것도 바꾸지 않습니다. */
+function wonkiPreviewOwnerMadeGeneralMembers() {
+  var sh = cloudSyncGeneralMemberSheet_();
+  var last = sh.getLastRow();
+  if (last < 2) { Logger.log('일반회원 자료가 없습니다.'); return; }
+  var rows = sh.getRange(2, 1, last - 1, 8).getValues();
+  rows.forEach(function (r, i) {
+    var data = {}; try { data = JSON.parse(r[2] || '{}'); } catch (e) {}
+    var hasAccount = !!String(r[5] || '').trim();
+    Logger.log('행' + (i + 2) + ' | 이름: ' + (data.name || '') +
+      ' | 닉네임: ' + (r[3] || '(없음)') + ' | ' +
+      (hasAccount ? '계정 있음 - 변경하지 않음' : '계정 없음 - 대상 가능'));
+  });
+}
+
+/* 2단계: 목록에 적은 이름 중 "계정이 없는" 회원에게만 닉네임(=이름)과 비밀번호 0000을 설정합니다. */
+function wonkiCreateAccountsForOwnerMade() {
+  var TARGET_NAMES = ['노송희'];   // 직접 만드신 회원 이름을 여기에 추가하세요
+  var INITIAL_PASSWORD = '0000';
+
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh = cloudSyncGeneralMemberSheet_();
+    var last = sh.getLastRow();
+    if (last < 2) { Logger.log('일반회원 자료가 없습니다.'); return; }
+    var rows = sh.getRange(2, 1, last - 1, 8).getValues();
+
+    var used = {};
+    rows.forEach(function (r) {
+      var n = String(r[3] || '').trim().toLowerCase();
+      if (n) used[n] = true;
+    });
+
+    rows.forEach(function (r, i) {
+      var data = {}; try { data = JSON.parse(r[2] || '{}'); } catch (e) {}
+      var name = String(data.name || '').trim();
+      if (TARGET_NAMES.indexOf(name) < 0) return;
+
+      if (String(r[5] || '').trim() || String(r[3] || '').trim()) {
+        Logger.log('건너뜀(이미 계정 있음): 행' + (i + 2) + ' ' + name);
+        return;
+      }
+      if (!/^[가-힣a-zA-Z0-9_]{2,20}$/.test(name) || used[name.toLowerCase()]) {
+        Logger.log('건너뜀(닉네임 사용 불가 또는 중복): 행' + (i + 2) + ' ' + name);
+        return;
+      }
+      var salt = Utilities.getUuid();
+      sh.getRange(i + 2, 4, 1, 5).setValues([[
+        name, salt, cloudSyncHash(INITIAL_PASSWORD, salt), 0, ''
+      ]]);
+      used[name.toLowerCase()] = true;
+      Logger.log('설정 완료: 행' + (i + 2) + ' 닉네임 ' + name + ' / 비밀번호 ' + INITIAL_PASSWORD);
+    });
+  } finally { lock.releaseLock(); }
+}
+
+/* ===== 63차: 일반회원 진행 기록(공원 건물·수학·영어) 클라우드 저장 =====
+ * 회원 서버 Apps Script 프로젝트(Code.gs가 있는 프로젝트)에 이 파일을 새 스크립트 파일로 추가합니다.
+ * 그리고 Code.gs의 cloudSyncHandleRequest_ 안,
+ *   if (action === 'general_member_layout_save') ...
+ * 줄 바로 아래에 다음 두 줄을 넣습니다.
+ *   if (action === 'general_member_progress_load') return cloudSyncGeneralMemberProgressLoad_(body.sessionToken);
+ *   if (action === 'general_member_progress_save') return cloudSyncGeneralMemberProgressSave_(body.sessionToken, body.progress);
+ * 저장 장소: 같은 스프레드시트의 새 시트 '일반회원진행기록' (회원 ID 한 줄에 자료를 4만 자씩 나눠 저장)
+ */
+var WONKI_PROGRESS_SHEET_ = '일반회원진행기록';
+var WONKI_PROGRESS_CHUNK_ = 40000;
+var WONKI_PROGRESS_MAX_ = 1600000;
+
+function cloudSyncProgressSheet_() {
+  return cloudSyncGetAuxSheet_(WONKI_PROGRESS_SHEET_, ['회원 ID', '저장일시', '조각 수', '진행 기록']);
+}
+
+function cloudSyncProgressMember_(sessionToken) {
+  var memberId = CacheService.getScriptCache().get('general_session_' + String(sessionToken || ''));
+  return memberId ? String(memberId) : '';
+}
+
+function cloudSyncGeneralMemberProgressLoad_(sessionToken) {
+  var memberId = cloudSyncProgressMember_(sessionToken);
+  if (!memberId) return {success: false, message: '로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  var sh = cloudSyncProgressSheet_(), last = sh.getLastRow();
+  if (last < 2) return {success: true, progress: '', savedAt: ''};
+  var ids = sh.getRange(2, 1, last - 1, 1).getValues();
+  for (var i = 0; i < ids.length; i++) {
+    if (String(ids[i][0]) !== memberId) continue;
+    var head = sh.getRange(i + 2, 2, 1, 2).getValues()[0];
+    var n = Number(head[1] || 0), text = '';
+    if (n > 0) text = sh.getRange(i + 2, 4, 1, n).getValues()[0].map(function (c) { c = String(c); return c.charAt(0) === '~' ? c.slice(1) : c; }).join('');
+    var savedAt = head[0] instanceof Date ? head[0].toISOString() : String(head[0] || '');
+    return {success: true, progress: text, savedAt: savedAt};
+  }
+  return {success: true, progress: '', savedAt: ''};
+}
+
+function cloudSyncGeneralMemberProgressSave_(sessionToken, progress) {
+  var memberId = cloudSyncProgressMember_(sessionToken);
+  if (!memberId) return {success: false, message: '로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  if (typeof progress !== 'string' || progress.length > WONKI_PROGRESS_MAX_) return {success: false, message: '진행 기록 형식 또는 크기를 확인해 주세요.'};
+  try { var parsed = JSON.parse(progress); if (!parsed || typeof parsed !== 'object' || !parsed.keys) throw new Error(); }
+  catch (e) { return {success: false, message: '진행 기록을 해석할 수 없습니다.'}; }
+  var chunks = [];
+  for (var p = 0; p < progress.length; p += WONKI_PROGRESS_CHUNK_) chunks.push('~' + progress.slice(p, p + WONKI_PROGRESS_CHUNK_)); /* ~ : 칸이 수식으로 바뀌지 않게 */
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh = cloudSyncProgressSheet_(), last = sh.getLastRow(), row = 0;
+    if (last >= 2) {
+      var ids = sh.getRange(2, 1, last - 1, 1).getValues();
+      for (var i = 0; i < ids.length; i++) if (String(ids[i][0]) === memberId) { row = i + 2; break; }
+    }
+    if (!row) { row = sh.getLastRow() + 1; }
+    var need = 3 + chunks.length;
+    if (sh.getMaxColumns() < need) sh.insertColumnsAfter(sh.getMaxColumns(), need - sh.getMaxColumns());
+    var width = Math.max(sh.getLastColumn(), need);
+    var values = [memberId, new Date(), chunks.length].concat(chunks);
+    while (values.length < width) values.push('');
+    sh.getRange(row, 1, 1, width).setValues([values]);
+    return {success: true, savedAt: new Date().toISOString(), message: '진행 기록이 클라우드에 저장되었습니다.'};
+  } finally { lock.releaseLock(); }
+}
+
+/* ===== 64차: 방문자 "내 공원 자랑하기" + 관리자 "회원 공원 구경하기" ===== */
+var WONKI_SHOWCASE_SHEET_ = '공원자랑';
+function cloudSyncShowcaseSheet_() {
+  return cloudSyncGetAuxSheet_(WONKI_SHOWCASE_SHEET_, ['보낸 시각', '이름', '한마디', '방문자 ID', '건물 수', '조각 수', '공원 자료']);
+}
+function cloudSyncParkShowcaseSave_(name, message, park, visitorId) {
+  name = String(name || '').trim().slice(0, 20); message = String(message || '').trim().slice(0, 100);
+  visitorId = String(visitorId || '').slice(0, 80);
+  if (!name) return {success: false, message: '이름을 적어 주세요.'};
+  if (typeof park !== 'string' || park.length > 200000) return {success: false, message: '공원 자료 형식 또는 크기를 확인해 주세요.'};
+  var count = 0;
+  try { var p = JSON.parse(park); var list = p && p.state && p.state.buildings; if (!Array.isArray(list) || !list.length || list.length > 1000) throw new Error(); count = list.length; }
+  catch (e) { return {success: false, message: '보낼 건물이 없습니다.'}; }
+  var cache = CacheService.getScriptCache(), ck = 'showcase_' + (visitorId || name);
+  if (cache.get(ck)) return {success: false, message: '조금 전에 보냈어요. 1분 뒤에 다시 보내 주세요.'};
+  var chunks = [];
+  for (var i = 0; i < park.length; i += 40000) chunks.push('~' + park.slice(i, i + 40000));
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh = cloudSyncShowcaseSheet_(), need = 6 + chunks.length;
+    if (sh.getMaxColumns() < need) sh.insertColumnsAfter(sh.getMaxColumns(), need - sh.getMaxColumns());
+    var row = [new Date(), name, message, visitorId, count, chunks.length].concat(chunks);
+    sh.getRange(sh.getLastRow() + 1, 1, 1, row.length).setValues([row]);
+  } finally { lock.releaseLock(); }
+  cache.put(ck, '1', 60);
+  return {success: true, message: '공원을 원기랜드 관리자에게 보냈어요!'};
+}
+function cloudSyncJoinChunks_(cells) {
+  return cells.map(function (c) { c = String(c); return c.charAt(0) === '~' ? c.slice(1) : c; }).join('');
+}
+function cloudSyncAdminParkList_() {
+  var nick = {};
+  try {
+    var ms = cloudSyncGeneralMemberSheet_(), ml = ms.getLastRow();
+    if (ml >= 2) ms.getRange(2, 1, ml - 1, 4).getValues().forEach(function (r) {
+      var d = {}; try { d = JSON.parse(r[2] || '{}'); } catch (_) {}
+      nick[String(r[0])] = {nickname: String(r[3] || ''), name: String(d.name || '')};
+    });
+  } catch (_) {}
+  var members = [], ps = cloudSyncProgressSheet_(), pl = ps.getLastRow();
+  if (pl >= 2) {
+    var width = Math.max(4, ps.getLastColumn());
+    ps.getRange(2, 1, pl - 1, width).getValues().forEach(function (r) {
+      if (!r[0]) return; var n = Number(r[2] || 0);
+      var info = nick[String(r[0])] || {};
+      members.push({id: String(r[0]), nickname: info.nickname || '', name: info.name || '', savedAt: r[1] instanceof Date ? r[1].toISOString() : String(r[1] || ''), progress: cloudSyncJoinChunks_(r.slice(3, 3 + n))});
+    });
+  }
+  var showcases = [], ss = cloudSyncShowcaseSheet_(), sl = ss.getLastRow();
+  if (sl >= 2) {
+    var from = Math.max(2, sl - 99), w2 = Math.max(7, ss.getLastColumn());
+    ss.getRange(from, 1, sl - from + 1, w2).getValues().forEach(function (r) {
+      if (!r[1]) return; var n = Number(r[5] || 0);
+      showcases.push({time: r[0] instanceof Date ? r[0].toISOString() : String(r[0] || ''), name: String(r[1]), message: String(r[2] || ''), count: Number(r[4] || 0), park: cloudSyncJoinChunks_(r.slice(6, 6 + n))});
+    });
+    showcases.reverse();
+  }
+  return {success: true, members: members, showcases: showcases};
+}
+
+/* ===== 65차: 관리자 메뉴 방문자 통계 (오늘·7일·30일·전체, 최근 30일 날짜별) ===== */
+function cloudSyncAdminVisitorStats_() {
+  var sh = cloudSyncDailyVisitorSheet_(), last = sh.getLastRow(), byDay = {};
+  if (last >= 2) sh.getRange(2, 2, last - 1, 1).getDisplayValues().forEach(function (r) {
+    var d = String(r[0] || '').trim(); if (d) byDay[d] = (byDay[d] || 0) + 1;
+  });
+  var days = [], week = 0, month = 0, now = Date.now();
+  for (var i = 29; i >= 0; i--) {
+    var d = Utilities.formatDate(new Date(now - i * 86400000), 'Asia/Seoul', 'yyyy-MM-dd'), c = byDay[d] || 0;
+    days.push({day: d, count: c}); month += c; if (i < 7) week += c;
+  }
+  return {success: true, today: days[29].count, week: week, month: month, total: Math.max(0, last - 1), days: days};
+}
+
+/* ===== 66차: 주인장 공원 (주인장만 올리기, 누구나 둘러보기) ===== */
+var WONKI_OWNER_PARK_SHEET_ = '주인장공원';
+function cloudSyncOwnerParkSheet_() {
+  return cloudSyncGetAuxSheet_(WONKI_OWNER_PARK_SHEET_, ['저장일시', '조각 수', '공원']);
+}
+function cloudSyncOwnerParkLoad_() {
+  var cache = CacheService.getScriptCache(), hit = cache.get('wk66_owner_park');
+  if (hit) { try { return JSON.parse(hit); } catch (_) {} }
+  var sh = cloudSyncOwnerParkSheet_(), result = {success: true, park: '', savedAt: ''};
+  if (sh.getLastRow() >= 2) {
+    var head = sh.getRange(2, 1, 1, 2).getValues()[0], n = Number(head[1] || 0);
+    if (n > 0) result.park = cloudSyncJoinChunks_(sh.getRange(2, 3, 1, n).getValues()[0]);
+    result.savedAt = head[0] instanceof Date ? head[0].toISOString() : String(head[0] || '');
+  }
+  var text = JSON.stringify(result);
+  if (text.length < 90000) cache.put('wk66_owner_park', text, 600);
+  return result;
+}
+function cloudSyncOwnerParkSave_(park) {
+  if (typeof park !== 'string' || park.length > 1000000) return {success: false, message: '주인장 공원 형식 또는 크기를 확인해 주세요.'};
+  try { var d = JSON.parse(park); if (!d || !Array.isArray(d.buildings)) throw new Error(); }
+  catch (e) { return {success: false, message: '주인장 공원 자료를 해석할 수 없습니다.'}; }
+  var chunks = [];
+  for (var p = 0; p < park.length; p += 40000) chunks.push('~' + park.slice(p, p + 40000));
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh = cloudSyncOwnerParkSheet_(), need = 2 + chunks.length;
+    if (sh.getMaxColumns() < need) sh.insertColumnsAfter(sh.getMaxColumns(), need - sh.getMaxColumns());
+    var width = Math.max(sh.getLastColumn(), need), now = new Date();
+    var values = [now, chunks.length].concat(chunks);
+    while (values.length < width) values.push('');
+    sh.getRange(2, 1, 1, width).setValues([values]);
+    CacheService.getScriptCache().remove('wk66_owner_park');
+    return {success: true, savedAt: now.toISOString(), message: '주인장 공원을 올렸습니다.'};
+  } finally { lock.releaseLock(); }
+}
+
+/* ===== 70차: 방문 기록 (일반회원은 닉네임·시각, 방문자는 들어온 곳·기기만) ===== */
+var WONKI_VISIT_SHEET_ = '방문기록';
+var WONKI_VISIT_SOURCES_ = ['카카오톡','인스타그램','페이스북','네이버','다음','구글','유튜브','밴드','X(트위터)','스레드','기타 사이트','기타 링크','추적 링크','직접 입력·즐겨찾기'];
+var WONKI_VISIT_DEVICES_ = ['휴대폰','태블릿','컴퓨터'];
+var WONKI_VISIT_BROWSERS_ = ['카카오톡 앱','인스타그램 앱','페이스북 앱','네이버 앱','밴드 앱','삼성 인터넷','웨일','엣지','크롬','사파리','파이어폭스','기타'];
+var WONKI_VISIT_OS_ = ['안드로이드','아이폰·아이패드','윈도우','맥','기타'];
+/* 77차: 방문기록 열 8~11 추가 (상세 경로 · 브라우저 · 운영체제 · 방문자 표시) */
+function cloudSyncVisitSheet_() {
+  var sh = cloudSyncGetAuxSheet_(WONKI_VISIT_SHEET_, ['방문시각', '구분', '회원 ID', '닉네임', '이름', '들어온 곳', '기기', '상세 경로', '브라우저', '운영체제', '방문자']);
+  if (sh.getMaxColumns() < 11) sh.insertColumnsAfter(sh.getMaxColumns(), 11 - sh.getMaxColumns());
+  if (!sh.getRange(1, 8).getValue()) sh.getRange(1, 8, 1, 4).setValues([['상세 경로', '브라우저', '운영체제', '방문자']]);
+  return sh;
+}
+function cloudSyncVisitPick_(v, list, def) { v = String(v || ''); return list.indexOf(v) >= 0 ? v : def; }
+function cloudSyncVisitLog_(body) {
+  var source = cloudSyncVisitPick_(body.source, WONKI_VISIT_SOURCES_, '기타 링크');
+  var device = cloudSyncVisitPick_(body.device, WONKI_VISIT_DEVICES_, '컴퓨터');
+  var browser = cloudSyncVisitPick_(body.browser, WONKI_VISIT_BROWSERS_, '기타');
+  var os = cloudSyncVisitPick_(body.os, WONKI_VISIT_OS_, '기타');
+  var detail = String(body.detail || '').replace(/[\u0000-\u001f<>"'=]/g, '').trim().slice(0, 40);
+  if (/^[+\-@]/.test(detail)) detail = ' ' + detail; /* 칸이 수식으로 바뀌지 않게 */
+  var cache = CacheService.getScriptCache(), memberId = '';
+  if (body.sessionToken) memberId = String(cache.get('general_session_' + String(body.sessionToken)) || '');
+  var visitor = String(body.visitorId || '').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 100);
+  var vtag = visitor ? Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, 'wk77|' + visitor)).slice(0, 10) : '';
+  /* 같은 회원은 30분, 같은 방문자는 6시간에 한 번만 기록 (추적 링크로 새로 들어오면 다시 기록) */
+  var dedupe = memberId ? 'wk70_m_' + memberId : (visitor ? 'wk70_v_' + visitor + (source === '추적 링크' ? '_' + detail : '') : '');
+  if (dedupe && cache.get(dedupe)) return {success: true, logged: false};
+  var nickname = '', name = '';
+  if (memberId) {
+    try {
+      var ms = cloudSyncGeneralMemberSheet_(), ml = ms.getLastRow();
+      if (ml >= 2) {
+        var rows = ms.getRange(2, 1, ml - 1, 4).getValues();
+        for (var i = 0; i < rows.length; i++) if (String(rows[i][0]) === memberId) {
+          var d = {}; try { d = JSON.parse(rows[i][2] || '{}'); } catch (_) {}
+          nickname = String(rows[i][3] || d.nickname || ''); name = String(d.name || ''); break;
+        }
+      }
+    } catch (_) {}
+  }
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var sh = cloudSyncVisitSheet_();
+    sh.getRange(sh.getLastRow() + 1, 1, 1, 11).setValues([[new Date(), memberId ? '회원' : '방문자', memberId, nickname, name, source, device, detail, browser, os, vtag]]);
+  } finally { lock.releaseLock(); }
+  if (dedupe) cache.put(dedupe, '1', memberId ? 1800 : 21600);
+  return {success: true, logged: true};
+}
+function cloudSyncAdminVisitLog_() {
+  var sh = cloudSyncVisitSheet_(), last = sh.getLastRow(), now = Date.now();
+  var tz = 'Asia/Seoul', today = Utilities.formatDate(new Date(), tz, 'yyyy-MM-dd');
+  var members = [], first = {}, rows = [];
+  if (last >= 2) rows = sh.getRange(Math.max(2, last - 7999), 1, Math.min(last - 1, 8000), 11).getValues();
+  /* 방문자마다 처음 본 시각 (신규·재방문 구분) */
+  rows.forEach(function (r) { var t = r[0] instanceof Date ? r[0].getTime() : Date.parse(r[0]); var k = r[2] ? 'm:' + r[2] : (r[10] ? 'v:' + r[10] : ''); if (t && k && !(k in first)) first[k] = t; });
+  function blank() { return {total: 0, uniq: 0, members: 0, guests: 0, fresh: 0, back: 0, unknown: 0, sources: {}, details: {}, tags: {}, devices: {}, browsers: {}, os: {}, hours: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], days: {}, _seen: {}}; }
+  var P = {d1: blank(), d7: blank(), d30: blank()};
+  function add(o, k) { o[k] = (o[k] || 0) + 1; }
+  for (var i = rows.length - 1; i >= 0; i--) {
+    var r = rows[i], t = r[0] instanceof Date ? r[0].getTime() : Date.parse(r[0]);
+    if (!t) continue;
+    var dt = new Date(t), day = Utilities.formatDate(dt, tz, 'yyyy-MM-dd'), hour = Number(Utilities.formatDate(dt, tz, 'H'));
+    var src = String(r[5] || '기타 링크'), det = String(r[7] || '').trim(), key = r[2] ? 'm:' + r[2] : (r[10] ? 'v:' + r[10] : '');
+    if (r[1] === '회원' && members.length < 200) members.push({time: dt.toISOString(), nickname: String(r[3] || ''), name: String(r[4] || ''), source: src, detail: det, device: String(r[6] || ''), browser: String(r[8] || '')});
+    ['d1', 'd7', 'd30'].forEach(function (k) {
+      var ok = k === 'd1' ? day === today : now - t <= (k === 'd7' ? 7 : 30) * 86400000;
+      if (!ok) return;
+      var o = P[k]; o.total++;
+      /* 78차: 77차 전 기록(방문자 표시 없음)은 처음/다시 온 사람을 알 수 없음으로 셈 */
+      if (!key) { o.uniq++; o.unknown++; }
+      else if (!o._seen[key]) { o._seen[key] = 1; o.uniq++; var f = first[key]; if (f && now - f <= (k === 'd1' ? 86400000 : (k === 'd7' ? 7 : 30) * 86400000) && (k !== 'd1' || Utilities.formatDate(new Date(f), tz, 'yyyy-MM-dd') === today)) o.fresh++; else o.back++; }
+      if (r[1] === '회원') o.members++; else o.guests++;
+      add(o.sources, src); if (det) add(o.details, src + ' › ' + det); if (src === '추적 링크' && det) add(o.tags, det.replace(/ \([^)]*\)$/, ''));
+      add(o.devices, String(r[6] || '컴퓨터')); add(o.browsers, String(r[8] || '알 수 없음')); add(o.os, String(r[9] || '알 수 없음'));
+      o.hours[hour]++; add(o.days, day);
+    });
+  }
+  ['d1', 'd7', 'd30'].forEach(function (k) { delete P[k]._seen; });
+  /* 70차 화면과 맞추기 */
+  return {success: true, members: members, sources: P.d30.sources, devices: P.d30.devices, total30: P.d30.total, periods: P, today: today};
+}
+
+/* ===== 74차: 공원 공유 게시판 (일반회원이 올리고, 누구나 둘러보기) =====
+ * 시트 '공원공유게시판': 회원 한 명당 한 줄(다시 공유하면 바뀜). 상태가 '공개'인 것만 게시판에 보임. */
+var WONKI_GALLERY_SHEET_ = '공원공유게시판';
+function cloudSyncGallerySheet_() {
+  return cloudSyncGetAuxSheet_(WONKI_GALLERY_SHEET_, ['공유 시각', '회원 ID', '이름', '한마디', '건물 수', '상태', '조각 수', '공원 자료']);
+}
+function cloudSyncGalleryKey_(memberId) {
+  return Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, 'wk74|' + memberId)).slice(0, 16);
+}
+function cloudSyncGalleryRows_() {
+  var sh = cloudSyncGallerySheet_(), last = sh.getLastRow();
+  if (last < 2) return {sh: sh, rows: []};
+  var width = Math.max(8, sh.getLastColumn());
+  return {sh: sh, rows: sh.getRange(2, 1, last - 1, width).getValues()};
+}
+function cloudSyncGalleryList_(sessionToken) {
+  var me = sessionToken ? String(CacheService.getScriptCache().get('general_session_' + String(sessionToken)) || '') : '';
+  var g = cloudSyncGalleryRows_(), items = [];
+  g.rows.forEach(function (r) {
+    if (!r[1] || String(r[5]) !== '공개') return;
+    var n = Number(r[6] || 0);
+    items.push({key: cloudSyncGalleryKey_(String(r[1])), mine: !!me && String(r[1]) === me, time: r[0] instanceof Date ? r[0].toISOString() : String(r[0] || ''), name: String(r[2] || ''), message: String(r[3] || ''), count: Number(r[4] || 0), park: cloudSyncJoinChunks_(r.slice(7, 7 + n))});
+  });
+  items.sort(function (a, b) { return String(b.time).localeCompare(String(a.time)); });
+  var mine = null;
+  if (me) g.rows.forEach(function (r) { if (String(r[1]) === me) mine = {status: String(r[5] || ''), time: r[0] instanceof Date ? r[0].toISOString() : String(r[0] || '')}; });
+  return {success: true, items: items.slice(0, 80), mine: mine, member: !!me};
+}
+function cloudSyncGalleryShare_(body) {
+  var memberId = String(CacheService.getScriptCache().get('general_session_' + String(body.sessionToken || '')) || '');
+  if (!memberId) return {success: false, message: '일반회원 로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  var name = String(body.name || '').trim().slice(0, 20), message = String(body.message || '').trim().slice(0, 100), park = body.park;
+  if (!name) return {success: false, message: '이름(별명)을 적어 주세요.'};
+  if (typeof park !== 'string' || park.length > 300000) return {success: false, message: '공원 자료 형식 또는 크기를 확인해 주세요.'};
+  var count = 0;
+  try { var p = JSON.parse(park); var list = p && p.state && p.state.buildings; if (!Array.isArray(list) || !list.length || list.length > 1000) throw new Error(); count = list.length; }
+  catch (e) { return {success: false, message: '공유할 건물이 없습니다.'}; }
+  var cache = CacheService.getScriptCache(), ck = 'wk74_share_' + memberId;
+  if (cache.get(ck)) return {success: false, message: '조금 전에 공유했어요. 30초 뒤에 다시 해 주세요.'};
+  var chunks = [];
+  for (var i = 0; i < park.length; i += 40000) chunks.push('~' + park.slice(i, i + 40000));
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var g = cloudSyncGalleryRows_(), sh = g.sh, row = 0;
+    for (var k = 0; k < g.rows.length; k++) if (String(g.rows[k][1]) === memberId) { row = k + 2; break; }
+    if (row && String(g.rows[row - 2][5]) === '관리자 내림') return {success: false, message: '주인장이 게시판에서 내린 공원이에요. 주인장에게 문의해 주세요.'};
+    if (!row) row = sh.getLastRow() + 1;
+    var need = 7 + chunks.length;
+    if (sh.getMaxColumns() < need) sh.insertColumnsAfter(sh.getMaxColumns(), need - sh.getMaxColumns());
+    var width = Math.max(sh.getLastColumn(), need);
+    var values = [new Date(), memberId, name, message, count, '공개', chunks.length].concat(chunks);
+    while (values.length < width) values.push('');
+    sh.getRange(row, 1, 1, width).setValues([values]);
+  } finally { lock.releaseLock(); }
+  cache.put(ck, '1', 30);
+  return {success: true, message: '공원 공유 게시판에 올렸어요!', count: count};
+}
+function cloudSyncGalleryUnshare_(sessionToken) {
+  var memberId = String(CacheService.getScriptCache().get('general_session_' + String(sessionToken || '')) || '');
+  if (!memberId) return {success: false, message: '일반회원 로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var g = cloudSyncGalleryRows_();
+    for (var k = 0; k < g.rows.length; k++) if (String(g.rows[k][1]) === memberId) {
+      if (String(g.rows[k][5]) === '공개') g.sh.getRange(k + 2, 6).setValue('내림');
+      return {success: true, message: '내 공원을 게시판에서 내렸어요.'};
+    }
+  } finally { lock.releaseLock(); }
+  return {success: true, message: '게시판에 올린 공원이 없어요.'};
+}
+function cloudSyncGalleryHide_(key, hide) {
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var g = cloudSyncGalleryRows_();
+    for (var k = 0; k < g.rows.length; k++) if (g.rows[k][1] && cloudSyncGalleryKey_(String(g.rows[k][1])) === String(key || '')) {
+      g.sh.getRange(k + 2, 6).setValue(hide ? '관리자 내림' : '공개');
+      return {success: true, message: hide ? '게시판에서 내렸어요.' : '게시판에 다시 올렸어요.'};
+    }
+  } finally { lock.releaseLock(); }
+  return {success: false, message: '그 공원을 찾지 못했어요.'};
+}
+
+/* ===== 80차: 관리자 로그인 6시간 기억 =====
+ * Google 로그인 표(1시간)를 한 번 확인한 뒤, 6시간 동안 쓸 수 있는 원기랜드 관리자 표(wkadm.…)를 발급합니다.
+ * 표는 서버 캐시에만 기록되고, 6시간이 지나면 저절로 사라집니다. */
+var WONKI_ADMIN_SESSION_SEC_ = 21600;
+function cloudSyncAdminSessionStart80_(idToken) {
+  var a = cloudSyncVerifyAdmin(idToken);
+  if (!a.success) return a;
+  var exp = Math.floor(Date.now() / 1000) + WONKI_ADMIN_SESSION_SEC_;
+  var mid = Utilities.base64EncodeWebSafe(JSON.stringify({exp: exp, k: 'wkadm'})).replace(/=+$/, '');
+  var key = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
+  var token = 'wkadm.' + mid + '.' + key;
+  CacheService.getScriptCache().put('wk80adm_' + key, String(exp), WONKI_ADMIN_SESSION_SEC_);
+  return {success: true, token: token, exp: exp};
+}
+function cloudSyncAdminCheck80_(token) {
+  token = String(token || '');
+  if (token.indexOf('wkadm.') === 0) {
+    var key = token.split('.')[2] || '';
+    var exp = Number(CacheService.getScriptCache().get('wk80adm_' + key) || 0);
+    if (key.length === 64 && exp > Math.floor(Date.now() / 1000)) return {success: true};
+    return {success: false, message: '관리자 로그인이 만료되었습니다. 다시 로그인해 주세요.'};
+  }
+  return cloudSyncVerifyAdmin(token);
+}
+
+/* ===== 83차: 상상코칭 회원 삭제가 동기화 뒤 되살아나지 않게 =====
+ * 지운 회원은 '삭제된회원' 시트에 원본 자료와 함께 옮겨 두고(되살릴 때 쓰는 백업), 회원 목록(회원데이터_JSON)에서 뺍니다.
+ * 목록 읽기는 삭제된 회원을 빼고 deletedIds를 함께 돌려주며, 저장은 삭제된 회원을 다시 넣지 않습니다. */
+function cloudSyncDeletedSheet83_() {
+  return cloudSyncGetAuxSheet_('삭제된회원', ['회원 ID', '회원명', '삭제일시', '원본 자료(JSON)']);
+}
+function cloudSyncDeletedIds83_() {
+  var sh = cloudSyncDeletedSheet83_(), last = sh.getLastRow(), out = {};
+  if (last >= 2) sh.getRange(2, 1, last - 1, 1).getValues().forEach(function (r) { if (r[0]) out[String(r[0])] = 1; });
+  return out;
+}
+function cloudSyncAdminListLive83_() {
+  var r = JSON.parse(cloudSyncAdminList().getContent()), del = cloudSyncDeletedIds83_();
+  if (r && Array.isArray(r.members)) r.members = r.members.filter(function (m) { return !(m && del[String(m.id)]); });
+  r.deletedIds = Object.keys(del);
+  return r;
+}
+function cloudSyncAdminSaveLive83_(members) {
+  if (!Array.isArray(members)) return JSON.parse(cloudSyncAdminSave(members).getContent());
+  var del = cloudSyncDeletedIds83_(), skipped = 0;
+  var keep = members.filter(function (m) { var gone = m && del[String(m.id)]; if (gone) skipped++; return !gone; });
+  var r = JSON.parse(cloudSyncAdminSave(keep).getContent());
+  if (r) r.skippedDeleted = skipped;
+  return r;
+}
+function cloudSyncAdminMemberDelete83_(ids) {
+  if (!Array.isArray(ids) || !ids.length) return {success: true, deleted: 0};
+  if (ids.length > 200) return {success: false, message: '한 번에 지울 수 있는 회원 수를 넘었습니다.'};
+  var want = {}; ids.forEach(function (x) { x = String(x || '').trim(); if (x) want[x] = 1; });
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    var store = cloudSyncGetStore(), last = store.getLastRow(), del = cloudSyncDeletedSheet83_(), already = cloudSyncDeletedIds83_(), now = new Date(), n = 0;
+    var rows = last >= 2 ? store.getRange(2, 1, last - 1, Math.max(8, store.getLastColumn())).getValues() : [];
+    /* 아래 줄부터 지워야 줄 번호가 밀리지 않음 */
+    for (var i = rows.length - 1; i >= 0; i--) {
+      var id = String(rows[i][0] || '');
+      if (!want[id]) continue;
+      if (!already[id]) { del.appendRow([id, String(rows[i][1] || ''), now, String(rows[i][4] || '')]); already[id] = 1; }
+      store.deleteRow(i + 2); n++;
+    }
+    Object.keys(want).forEach(function (id) { if (!already[id]) { del.appendRow([id, '', now, '']); already[id] = 1; } });
+    return {success: true, deleted: n, message: '회원 ' + Object.keys(want).length + '명을 삭제했습니다.'};
+  } finally { lock.releaseLock(); }
+}
+
+/* ===== 104차: 어느 브라우저·기기에서 열어도 같은 관리자 설정 =====
+ * public_config: Google 로그인용 공개 Client ID(비밀 아님, GOOGLE_CLIENT_ID 속성)와 관리자 비밀번호가 서버에 정해져 있는지 알려 줌.
+ *   → 새 브라우저(카톡·인스타 안 브라우저, 다른 브라우저)에서도 Client ID를 묻지 않음.
+ * admin_lock_check: 관리자 비밀번호 확인(서버에는 소금+SHA-256 해시만 저장, 5번 틀리면 5분 잠금).
+ * admin_lock_set: 관리자 비밀번호 저장(관리자 Google 로그인 필요). */
+var WK104_LOCK_KEY_ = 'ADMIN_LOCK_104';
+function cloudSyncLockHash104_(salt, pw) {
+  var bytes = Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, String(salt) + ':' + String(pw), Utilities.Charset.UTF_8);
+  return bytes.map(function (b) { var v = (b < 0 ? b + 256 : b).toString(16); return v.length < 2 ? '0' + v : v; }).join('');
+}
+function cloudSyncLockRecord104_() {
+  try { var r = JSON.parse(PropertiesService.getScriptProperties().getProperty(WK104_LOCK_KEY_) || 'null'); return r && r.salt && r.hash ? r : null; } catch (e) { return null; }
+}
+function cloudSyncPublicConfig104_() {
+  return {success: true, clientId: String(PropertiesService.getScriptProperties().getProperty('GOOGLE_CLIENT_ID') || ''), lockSet: !!cloudSyncLockRecord104_()};
+}
+function cloudSyncAdminLockCheck104_(password) {
+  var rec = cloudSyncLockRecord104_();
+  if (!rec) return {success: true, set: false};
+  var cache = CacheService.getScriptCache(), until = Number(cache.get('wk104lock_until') || 0), now = Date.now();
+  if (until > now) return {success: true, set: true, ok: false, wait: Math.ceil((until - now) / 60000), message: '비밀번호를 여러 번 틀렸어요. ' + Math.ceil((until - now) / 60000) + '분 뒤에 다시 해 주세요.'};
+  var ok = cloudSyncLockHash104_(rec.salt, String(password || '')) === rec.hash;
+  if (ok) { cache.remove('wk104lock_fail'); return {success: true, set: true, ok: true}; }
+  var n = Number(cache.get('wk104lock_fail') || 0) + 1;
+  if (n >= 5) { cache.put('wk104lock_until', String(now + 5 * 60000), 300); cache.remove('wk104lock_fail'); return {success: true, set: true, ok: false, wait: 5, message: '비밀번호를 5번 틀렸어요. 5분 뒤에 다시 해 주세요.'}; }
+  cache.put('wk104lock_fail', String(n), 300);
+  return {success: true, set: true, ok: false, fails: n, message: '비밀번호가 올바르지 않습니다. (' + n + '/5)'};
+}
+function cloudSyncAdminLockSet104_(password) {
+  password = String(password || '');
+  if (password.length < 4 || password.length > 128) return {success: false, message: '비밀번호는 4~128자로 적어 주세요.'};
+  var salt = Utilities.getUuid().replace(/-/g, '');
+  PropertiesService.getScriptProperties().setProperty(WK104_LOCK_KEY_, JSON.stringify({salt: salt, hash: cloudSyncLockHash104_(salt, password), at: new Date().toISOString()}));
+  CacheService.getScriptCache().remove('wk104lock_fail'); CacheService.getScriptCache().remove('wk104lock_until');
+  return {success: true, message: '관리자 비밀번호를 서버에 저장했습니다. 이제 어느 기기에서나 이 비밀번호로 열립니다.'};
+}

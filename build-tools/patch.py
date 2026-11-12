@@ -479,6 +479,26 @@ rep("""else pick=mainSpots[Math.floor(Math.random()*mainSpots.length)];
 rep("""const sub=faithSpots[Math.floor(Math.random()*faithSpots.length)]; sub.classList.add('selected'); faithSub=sub.dataset.faith; faithModal.classList.add('open');""","""const sub=faithSpots[Math.floor(Math.random()*faithSpots.length)]; sub.classList.add('selected'); faithSub=sub.dataset.faith; faithModal.classList.add('open');
    {const dm=document.getElementById({church:'churchModal',youth:'youthModal',rosary:'rosaryModal',prayer:'prayerModal',faithquiz:'quizModal',faithother:'faithOtherModal'}[sub.id]);const ds=dm?[...dm.querySelectorAll('.churchspot')]:[];if(ds.length){const d=ds[Math.floor(Math.random()*ds.length)];d.classList.add('selected');window.wk91ChurchSub=d.dataset.church;dm.classList.add('open');}}""")
 
+# ---------- 37. 104차: 관리자 비밀번호·Google Client ID를 서버에서 받아 어느 브라우저·기기에서나 같게 (서버 Code_104.gs: public_config, admin_lock_check, admin_lock_set)
+rep("""const existing=!!record(),""","""const existing=!!record()||window.wk104LockSet===true,""")
+rep("""if(!await verify(old.value)){""","""if(!await (window.wk104Verify?window.wk104Verify(old.value,verify):verify(old.value))){""")
+rep("""if(newPw)await set(newPw.value,confirm.value);finish(true);""","""if(newPw){await set(newPw.value,confirm.value);if(window.wk104Save){status.textContent='서버에 저장하는 중… (Google 관리자 로그인)';const sv=await window.wk104Save(newPw.value);if(!sv.ok)alert('이 기기에는 저장했지만 서버 저장은 못 했어요: '+sv.message+' / 다음에 다시 변경해 주세요.');}}finish(true);""")
+rep("""heading.textContent=change?'이 기기 비밀번호 변경':existing?'관리자 비밀번호':'이 기기 관리자 비밀번호 설정';""","""heading.textContent=change?'관리자 비밀번호 변경':existing?'관리자 비밀번호':'관리자 비밀번호 설정';""")
+rep("""이 브라우저에만 저장되는 추가 잠금입니다. 분석은 Google 계정, 공식 홈페이지 게시는 네오시티 계정으로 보호됩니다.""","""관리자 비밀번호는 서버에 저장되어 어느 기기·브라우저에서나 같습니다. 서버 자료는 Google 관리자 로그인으로 한 번 더 보호됩니다.""")
+rep("""['🔒 이 기기 비밀번호 변경',""","""['🔒 관리자 비밀번호 변경',""")
+rep("""let id=localStorage.getItem(CLIENT_KEY)||'';""","""let id=localStorage.getItem(CLIENT_KEY)||window.wk104ClientId||'';if(id&&!localStorage.getItem(CLIENT_KEY)){try{localStorage.setItem(CLIENT_KEY,id);}catch(_){}}""")
+rep("""const clientId=getClientId();""","""if(window.wk104Ready)await window.wk104Ready;const clientId=getClientId();""")
+rep("""const id=getClientId();""","""if(window.wk104Ready)await window.wk104Ready;const id=getClientId();""")
+rep("""function tryMemberPassword(){""","""async function tryMemberPassword(){""")
+rep("""if(passwordInput.value===getAdminPassword()){""","""if(passwordInput.value===getAdminPassword()||(window.wk104Check&&await window.wk104Check(passwordInput.value))){""")
+rep("""del.addEventListener('click',()=>{
+          const adminPw=prompt(""","""del.addEventListener('click',async()=>{
+          const adminPw=prompt(""")
+rep("""if(adminPw!==savedPw){""","""if(adminPw!==savedPw&&!(window.wk104Check&&await window.wk104Check(adminPw))){""")
+rep("""document.getElementById('saveAdminPasswordChange').addEventListener('click',()=>{""","""document.getElementById('saveAdminPasswordChange').addEventListener('click',async()=>{""")
+rep("""if(old!==getAdminPassword()){""","""if(old!==getAdminPassword()&&!(window.wk104Check&&await window.wk104Check(old))){""")
+rep("""localStorage.setItem(ADMIN_STORE,next);""","""localStorage.setItem(ADMIN_STORE,next);if(window.wk104Save)window.wk104Save(next).then(r=>{if(!r.ok)alert('이 기기에는 저장했지만 서버 저장은 못 했어요: '+r.message);});""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
