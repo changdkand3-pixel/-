@@ -1,13 +1,14 @@
 # 원기랜드
 
-## ⬇️ 최신 94차 다운로드
+## ⬇️ 최신 95차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v94/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v95/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v94_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v94/wonkiland_v94_neocities.zip)
+그림까지 한 번에: [wonkiland_v95_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v95/wonkiland_v95_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. **94차는 새 그림 `b8e7e25fe101f0.webp`(90~93차 그림도)를 `작업장` 폴더에 올려야 합니다.** 서버 변경 없음. 자세한 것은 [94차 안내](wonkiland-v94/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. **95차는 새 그림 `283f8403963323.webp`(90~94차 그림도)를 `작업장` 폴더에 올려야 합니다.** 서버 변경 없음. 자세한 것은 [95차 안내](wonkiland-v95/README.md)를 보세요.
 
+- [95차 안내 (가톨릭 퀴즈 세부 메뉴)](wonkiland-v95/README.md)
 - [94차 안내 (개인 영적활동 및 영적 예물봉헌 세부 메뉴)](wonkiland-v94/README.md)
 - [93차 안내 (로사리오 도미니코 기도모임 세부 메뉴)](wonkiland-v93/README.md)
 - [92차 안내 (가톨릭 청년 성서모임 세부 메뉴)](wonkiland-v92/README.md)

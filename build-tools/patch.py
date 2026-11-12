@@ -423,6 +423,12 @@ rep('<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-labe
 rep("""||faithSub==='로사리오 도미니코 기도모임')&&window.wk91ChurchSub)""","""||faithSub==='로사리오 도미니코 기도모임'||faithSub==='개인 영적활동 및 영적예물봉헌')&&window.wk91ChurchSub)""")
 rep("""if(s.id==='rosary')document.getElementById('rosaryModal')?.classList.add('open');""","""if(s.id==='rosary')document.getElementById('rosaryModal')?.classList.add('open');if(s.id==='prayer')document.getElementById('prayerModal')?.classList.add('open');""")
 
+# ---------- 33. 95차: 가톨릭 퀴즈를 누르면 세부 메뉴(2가지) 창이 열림 (93차와 같은 방식)
+_quiz95='data:image/webp;base64,'+__import__('base64').b64encode(open(sys.argv[2].replace('world_final.webp','quiz_course_95.webp'),'rb').read()).decode()
+rep('<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">','<div class="modal wk91-deep" id="quizModal" role="dialog" aria-modal="true" aria-label="가톨릭 퀴즈 세부 선택"><div class="modal-inner"><img alt="가톨릭 퀴즈 세부 선택 화면" src="'+_quiz95+'"><button class="close" id="closeQuizModal" aria-label="가톨릭 퀴즈 메뉴 닫기">×</button><button class="churchspot quizspot" id="quiz1" data-church="가톨릭 일일공부 퀴즈" aria-label="가톨릭 일일공부 퀴즈 선택" title="가톨릭 일일공부 퀴즈"></button><button class="churchspot quizspot" id="quiz2" data-church="가톨릭 퀴즈 전광판" aria-label="가톨릭 퀴즈 전광판 선택" title="가톨릭 퀴즈 전광판"></button></div></div>\n<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">')
+rep("""||faithSub==='개인 영적활동 및 영적예물봉헌')&&window.wk91ChurchSub)""","""||faithSub==='개인 영적활동 및 영적예물봉헌'||faithSub==='가톨릭 퀴즈')&&window.wk91ChurchSub)""")
+rep("""if(s.id==='prayer')document.getElementById('prayerModal')?.classList.add('open');""","""if(s.id==='prayer')document.getElementById('prayerModal')?.classList.add('open');if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

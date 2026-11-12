@@ -38,3 +38,4 @@
 - **92차**: 종교코스 세부 메뉴 창은 `.modal.wk91-deep`로 묶음(혜화동성당 `#churchModal`, 청년 성서모임 `#youthModal`). 새 세부 메뉴는 patch.py에서 창(칸 class `churchspot`, `data-church`)을 넣고, update()의 faithSub 조건과 faith 클릭에서 창 열기만 추가하면 됨.
 - **93차**: 로사리오 도미니코 기도모임(`#rosary`) → `#rosaryModal`(세로 그림 `rosary_course_93.webp` 1199×1312, 칸 `rosary1~6`). 세로 그림 창은 `.modal-inner` 너비를 `min(100%,86vh,860px)`로 둬서 화면 높이에 맞춤.
 - **94차**: 개인 영적활동(`#prayer`, data-faith "개인 영적활동 및 영적예물봉헌") → `#prayerModal`(세로 그림 `prayer_course_94.webp`, 칸 `prayer1~13`: 왼쪽 4·오른쪽 4·아래 5).
+- **95차**: 가톨릭 퀴즈(`#faithquiz`, data-faith "가톨릭 퀴즈") → `#quizModal`(세로 그림 `quiz_course_95.webp`, 칸 `quiz1` 일일공부 퀴즈·`quiz2` 퀴즈 전광판). 실제 퀴즈 화면은 아직 없음(선택 표시만).
