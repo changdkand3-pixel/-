@@ -39,3 +39,4 @@
 - **93차**: 로사리오 도미니코 기도모임(`#rosary`) → `#rosaryModal`(세로 그림 `rosary_course_93.webp` 1199×1312, 칸 `rosary1~6`). 세로 그림 창은 `.modal-inner` 너비를 `min(100%,86vh,860px)`로 둬서 화면 높이에 맞춤.
 - **94차**: 개인 영적활동(`#prayer`, data-faith "개인 영적활동 및 영적예물봉헌") → `#prayerModal`(세로 그림 `prayer_course_94.webp`, 칸 `prayer1~13`: 왼쪽 4·오른쪽 4·아래 5).
 - **95차**: 가톨릭 퀴즈(`#faithquiz`, data-faith "가톨릭 퀴즈") → `#quizModal`(세로 그림 `quiz_course_95.webp`, 칸 `quiz1` 일일공부 퀴즈·`quiz2` 퀴즈 전광판). 실제 퀴즈 화면은 아직 없음(선택 표시만).
+- **96차**: 종교코스 기타 메뉴(`#faithother`, data-faith "종교코스 기타 메뉴") → `#otherModal`(그림 `other_course_96.webp`, 그림에 칸이 없어 글자가 보이는 버튼 `.otherspot` `other1~6`을 아래 꽃길 자리에 얹음, 600px 이하에서는 이모지 숨김). 이제 종교코스 ①~⑥ 모두 세부 메뉴 있음.
