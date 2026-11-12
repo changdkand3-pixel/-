@@ -431,9 +431,9 @@ rep("""if(s.id==='prayer')document.getElementById('prayerModal')?.classList.add(
 
 # ---------- 34. 96차: 기타 메뉴를 누르면 세부 메뉴(6가지, 그림 위 글자 버튼) 창이 열림
 _other96='data:image/webp;base64,'+__import__('base64').b64encode(open(sys.argv[2].replace('world_final.webp','other_course_96.webp'),'rb').read()).decode()
-rep('<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">','<div class="modal wk91-deep" id="otherModal" role="dialog" aria-modal="true" aria-label="종교코스 기타 메뉴 세부 선택"><div class="modal-inner"><img alt="종교코스 기타 메뉴 세부 선택 화면" src="'+_other96+'"><button class="close" id="closeOtherModal" aria-label="기타 메뉴 닫기">×</button><button class="churchspot otherspot" id="other1" data-church="오늘의 성인" aria-label="오늘의 성인 선택" title="오늘의 성인"><b>😇</b>오늘의 성인</button><button class="churchspot otherspot" id="other2" data-church="전례력·축일 안내" aria-label="전례력·축일 안내 선택" title="전례력·축일 안내"><b>📅</b>전례력·축일 안내</button><button class="churchspot otherspot" id="other3" data-church="성지순례 안내" aria-label="성지순례 안내 선택" title="성지순례 안내"><b>⛪</b>성지순례 안내</button><button class="churchspot otherspot" id="other4" data-church="가톨릭 성가" aria-label="가톨릭 성가 선택" title="가톨릭 성가"><b>🎵</b>가톨릭 성가</button><button class="churchspot otherspot" id="other5" data-church="가톨릭 용어 사전" aria-label="가톨릭 용어 사전 선택" title="가톨릭 용어 사전"><b>📖</b>가톨릭 용어 사전</button><button class="churchspot otherspot" id="other6" data-church="문의·건의하기" aria-label="문의·건의하기 선택" title="문의·건의하기"><b>💌</b>문의·건의하기</button></div></div>\n<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">')
+rep('<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">','<div class="modal wk91-deep" id="faithOtherModal" role="dialog" aria-modal="true" aria-label="종교코스 기타 메뉴 세부 선택"><div class="modal-inner"><img alt="종교코스 기타 메뉴 세부 선택 화면" src="'+_other96+'"><button class="close" id="closeFaithOtherModal" aria-label="기타 메뉴 닫기">×</button><button class="churchspot fotherspot" id="fother1" data-church="오늘의 성인" aria-label="오늘의 성인 선택" title="오늘의 성인"><b>😇</b>오늘의 성인</button><button class="churchspot fotherspot" id="fother2" data-church="전례력·축일 안내" aria-label="전례력·축일 안내 선택" title="전례력·축일 안내"><b>📅</b>전례력·축일 안내</button><button class="churchspot fotherspot" id="fother3" data-church="성지순례 안내" aria-label="성지순례 안내 선택" title="성지순례 안내"><b>⛪</b>성지순례 안내</button><button class="churchspot fotherspot" id="fother4" data-church="가톨릭 성가" aria-label="가톨릭 성가 선택" title="가톨릭 성가"><b>🎵</b>가톨릭 성가</button><button class="churchspot fotherspot" id="fother5" data-church="가톨릭 용어 사전" aria-label="가톨릭 용어 사전 선택" title="가톨릭 용어 사전"><b>📖</b>가톨릭 용어 사전</button><button class="churchspot fotherspot" id="fother6" data-church="문의·건의하기" aria-label="문의·건의하기 선택" title="문의·건의하기"><b>💌</b>문의·건의하기</button></div></div>\n<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-label="모임코스 세부 선택">')
 rep("""||faithSub==='가톨릭 퀴즈')&&window.wk91ChurchSub)""","""||faithSub==='가톨릭 퀴즈'||faithSub==='종교코스 기타 메뉴')&&window.wk91ChurchSub)""")
-rep("""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');""","""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');if(s.id==='faithother')document.getElementById('otherModal')?.classList.add('open');""")
+rep("""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');""","""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');if(s.id==='faithother')document.getElementById('faithOtherModal')?.classList.add('open');""")
 
 # ---------- 35. 97차: 초4-1 (수학 원본 100문항 + 드라이브 목차·캐릭터 그림, 영어 e4-1 대결판) — 13단계(초3-2)와 같은 방식
 _g41dir=sys.argv[2].replace('world_final.webp','g41/')
@@ -467,6 +467,17 @@ _a=t.index("  if(s.semester==='e3-2'&&window.WonkiGrade32){");_b=t.index("\n  if
 _eb41=t[_a:_b].replace('WonkiGrade32','WonkiGrade41').replace("'e3-2'","'e4-1'").replace("goku32","goku41").replace('초3-2','초4-1')
 assert 'WonkiGrade41' in _eb41
 t=t[:_a]+_eb41+'\n'+t[_a:]
+
+# ---------- 36. 99차: 랜덤 뽑기 — 6개 코스를 똑같은 확률로 고르고(예전엔 취미코스가 90%), 종교코스면 세부 메뉴(①~⑥ 안의 항목)까지 뽑음
+rep("""closeAll();
+ const roll=Math.random();""","""closeAll();document.querySelectorAll('.modal.wk91-deep').forEach(m=>m.classList.remove('open'));document.querySelectorAll('.churchspot').forEach(x=>x.classList.remove('selected'));window.wk91ChurchSub=null;
+ const wk99Main=mainSpots[Math.floor(Math.random()*mainSpots.length)];
+ const roll=wk99Main.id==='hobby'?Math.random():0.95;""")
+rep("""else pick=mainSpots[Math.floor(Math.random()*mainSpots.length)];
+ pick.classList.add('selected');""","""else pick=wk99Main;
+ pick.classList.add('selected');""")
+rep("""const sub=faithSpots[Math.floor(Math.random()*faithSpots.length)]; sub.classList.add('selected'); faithSub=sub.dataset.faith; faithModal.classList.add('open');""","""const sub=faithSpots[Math.floor(Math.random()*faithSpots.length)]; sub.classList.add('selected'); faithSub=sub.dataset.faith; faithModal.classList.add('open');
+   {const dm=document.getElementById({church:'churchModal',youth:'youthModal',rosary:'rosaryModal',prayer:'prayerModal',faithquiz:'quizModal',faithother:'faithOtherModal'}[sub.id]);const ds=dm?[...dm.querySelectorAll('.churchspot')]:[];if(ds.length){const d=ds[Math.floor(Math.random()*ds.length)];d.classList.add('selected');window.wk91ChurchSub=d.dataset.church;dm.classList.add('open');}}""")
 
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
