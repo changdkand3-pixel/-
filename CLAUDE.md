@@ -40,3 +40,4 @@
 - **94차**: 개인 영적활동(`#prayer`, data-faith "개인 영적활동 및 영적예물봉헌") → `#prayerModal`(세로 그림 `prayer_course_94.webp`, 칸 `prayer1~13`: 왼쪽 4·오른쪽 4·아래 5).
 - **95차**: 가톨릭 퀴즈(`#faithquiz`, data-faith "가톨릭 퀴즈") → `#quizModal`(세로 그림 `quiz_course_95.webp`, 칸 `quiz1` 일일공부 퀴즈·`quiz2` 퀴즈 전광판). 실제 퀴즈 화면은 아직 없음(선택 표시만).
 - **96차**: 종교코스 기타 메뉴(`#faithother`, data-faith "종교코스 기타 메뉴") → `#otherModal`(그림 `other_course_96.webp`, 그림에 칸이 없어 글자가 보이는 버튼 `.otherspot` `other1~6`을 아래 꽃길 자리에 얹음, 600px 이하에서는 이모지 숨김). 이제 종교코스 ①~⑥ 모두 세부 메뉴 있음.
+- **97차 초4-1**: `build-tools/scripts/build41.py`(+`probs41.json`, `ans41.txt`)로 `assets/g41/`(math41.json·g41.html) 만듦. 목차 그림은 양옆 흰 여백을 잘라 980×1625로 씀(칸 좌표는 원본 x−108). patch.py 35단계(13단계 초3-2와 같은 방식)에 수학 `PACKS['초4-1']`·영어 `e4-1` 대결판 추가. park-viewer 학년 목록에 `g41` 추가. 시험: `node build-tools/tests/m41.js 결과.html 접두어`, `e41.js`.

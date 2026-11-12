@@ -435,10 +435,43 @@ rep('<div class="modal" id="meetModal" role="dialog" aria-modal="true" aria-labe
 rep("""||faithSub==='가톨릭 퀴즈')&&window.wk91ChurchSub)""","""||faithSub==='가톨릭 퀴즈'||faithSub==='종교코스 기타 메뉴')&&window.wk91ChurchSub)""")
 rep("""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');""","""if(s.id==='faithquiz')document.getElementById('quizModal')?.classList.add('open');if(s.id==='faithother')document.getElementById('otherModal')?.classList.add('open');""")
 
+# ---------- 35. 97차: 초4-1 (수학 원본 100문항 + 드라이브 목차·캐릭터 그림, 영어 e4-1 대결판) — 13단계(초3-2)와 같은 방식
+_g41dir=sys.argv[2].replace('world_final.webp','g41/')
+_math41=open(_g41dir+'math41.json',encoding='utf-8').read()
+_g41html=open(_g41dir+'g41.html',encoding='utf-8').read()
+rep("""'초3-1','초3-2'].includes(S.activeGrade)""","""'초3-1','초3-2','초4-1'].includes(S.activeGrade)""")
+rep("""if(S.g32){SS['초3-2']=S.g32;delete S.g32}""","""if(S.g32){SS['초3-2']=S.g32;delete S.g32}if(S.g41){SS['초4-1']=S.g41;delete S.g41}""")
+rep("""delete o.g32;o.activeGrade=GR;""","""delete o.g32;delete o.g41;o.activeGrade=GR;""")
+rep("""if(SS['초3-2'])o.g32=SS['초3-2'];""","""if(SS['초3-2'])o.g32=SS['초3-2'];if(SS['초4-1'])o.g41=SS['초4-1'];""")
+rep("""g32=data.g32,""","""g32=data.g32,g41=data.g41,""")
+rep("""delete d2.g32;""","""delete d2.g32;delete d2.g41;""")
+rep("""else delete SS['초3-2'];applyPack(target);""","""else delete SS['초3-2'];if(g41)SS['초4-1']=Object.assign(newState(),g41);else delete SS['초4-1'];applyPack(target);""")
+rep("""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2')""","""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1')""",10)
+rep("""function roster(){if((GR==='초3-1'||GR==='초3-2')&&!privateSession)""","""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1')&&!privateSession)""")
+_a=t.index("if(GR==='초3-2'&&window.WonkiGrade32){body.innerHTML=head(");_b=t.index("\n if(GR==='초3-1'&&window.WonkiGrade31){body.innerHTML=head(",_a)
+_board41=t[_a:_b].replace('WonkiGrade32','WonkiGrade41').replace('초3-2','초4-1').replace('원본 91문항','원본 100문항')
+assert 'WonkiGrade41' in _board41
+t=t[:_a]+_board41+'\n '+t[_a:]
+rep("""PACKS['초3-2']=""","""PACKS['초4-1']="""+_math41+""";
+PACKS['초3-2']=""")
+rep("""return ['초3-2','초3-1','초2-2',""","""return ['초4-1','초3-2','초3-1','초2-2',""")
+rep("""||st.includes('초3-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2입니다.""","""||st.includes('초3-2')||st.includes('초4-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1입니다.""")
+rep("""'초3-1','초3-2'].includes(grade.dataset.grade))return;""","""'초3-1','초3-2','초4-1'].includes(grade.dataset.grade))return;""")
+_m41=_j.loads(_math41)
+_eng41="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m41['CH'].items()},ensure_ascii=False)+");const GRADE41_CAST="+_j.dumps(_m41['CAST'],ensure_ascii=False)+";const GRADE41_STARTERS="+_j.dumps(_m41['PICK'])+";const GRADE41_ENEMIES={};{const s41=SEMESTERS.find(s=>s.key==='e4-1');if(s41)s41.units.forEach((id,i)=>{const ids=Array.from(new Set([...(GRADE41_CAST[String(i*2+1)]||[]),...(GRADE41_CAST[String(i*2+2)]||[])])).filter(x=>x!=='goku41');GRADE41_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng41+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE32_ENEMIES[u]||""","""function enemies(u){return(GRADE41_ENEMIES[u]||GRADE32_ENEMIES[u]||""")
+rep("""state.semester==='e3-2'?[...GRADE32_STARTERS,...state.friends]:""","""state.semester==='e4-1'?[...GRADE41_STARTERS,...state.friends]:state.semester==='e3-2'?[...GRADE32_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e3-2'&&GRADE32_STARTERS.includes(saved.player))""","""||(out.semester==='e3-2'&&GRADE32_STARTERS.includes(saved.player))||(out.semester==='e4-1'&&GRADE41_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e3-2'&&window.WonkiGrade32){");_b=t.index("\n  if(s.semester==='e3-1'&&window.WonkiGrade31){",_a)
+_eb41=t[_a:_b].replace('WonkiGrade32','WonkiGrade41').replace("'e3-2'","'e4-1'").replace("goku32","goku41").replace('초3-2','초4-1')
+assert 'WonkiGrade41' in _eb41
+t=t[:_a]+_eb41+'\n'+t[_a:]
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
-final = _g32html + '\n' + _g31html + '\n' + final
+final = _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64
