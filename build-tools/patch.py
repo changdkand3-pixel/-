@@ -392,6 +392,12 @@ rep("""const wk83T=(()=>{try{const a=JSON.parse(localStorage.getItem('wk83_delet
    [...local,...remote.members].forEach(m=>{if(m&&m.id&&m.deletedAt&&!wk83T.some(x=>String(x.id)===String(m.id)))wk83T.push({id:String(m.id),name:m.name||'',at:String(m.deletedAt)});});""")
 rep("""const list=members.filter(m=>!!m.suspended===(view==='suspended'));""","""const list=members.filter(m=>!m.deletedAt&&!!m.suspended===(view==='suspended'));""")
 
+# ---------- 28. 90차: 종교코스 메뉴 그림 바꾸기 (6칸: 혜화동성당·청년 성서모임·로사리오·개인 영적활동·가톨릭 퀴즈·기타)
+_faith90='data:image/webp;base64,'+__import__('base64').b64encode(open(sys.argv[2].replace('world_final.webp','faith_course_90.webp'),'rb').read()).decode()
+rep('<img alt="가톨릭 십자가가 포함된 종교코스 세부 선택 화면" src="https://lh3.googleusercontent.com/d/1L4C4ZtEnzUE9nyinaTawToP6ZFqF9DQP">','<img alt="2. 종교코스 세부 선택 화면 (6가지)" src="'+_faith90+'">')
+rep('data-faith="해화동성당 교리봉사·사회활동" aria-label="해화동성당 교리봉사·사회활동 선택" title="해화동성당 교리봉사·사회활동"','data-faith="혜화동성당 교리봉사·사회활동" aria-label="혜화동성당 교리봉사·사회활동 선택" title="혜화동성당 교리봉사·사회활동"')
+rep('<button class="faithspot" id="faithother" data-faith="종교코스 기타" aria-label="종교코스 기타 선택" title="종교코스 기타"></button>','<button class="faithspot" id="faithquiz" data-faith="가톨릭 퀴즈" aria-label="가톨릭 퀴즈 선택" title="가톨릭 퀴즈"></button>\n    <button class="faithspot" id="faithother" data-faith="종교코스 기타 메뉴" aria-label="종교코스 기타 메뉴 선택" title="기타 메뉴"></button>')
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

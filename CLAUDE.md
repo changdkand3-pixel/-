@@ -33,3 +33,4 @@
 - **86차**: 예전 버전이 상상코칭 회원에 남긴 `deletedAt` 표시도 삭제로 처리(목록·회원 수에서 빼고, 동기화 때 `admin_member_delete`로 서버에서도 지움).
 - **88차**: 회원관리 창 `#memberManagerModal.open`은 z-index 999990이라, 그 안에서 여는 새 창은 1000001 이상으로 둠(final.html `wk88-member-modal-order`).
 - **89차**: 코스 창(`.modal.open`, z-index 20)이 열리면 지도 스크롤 막대 `.wk44-sb`와 방문자 정보 줄 `#wonkiExtraMainMount`를 숨김(final.html `wk89-course-modal-clean`). 메인 지도 위에 새로 띄우는 요소도 코스 창이 열렸을 때 겹치는지 확인할 것.
+- **90차**: 코스 메뉴 그림을 바꿀 때는 그림을 `build-tools/assets/`에 webp로 두고 patch.py에서 data URI로 넣음(나눌 때 새 그림 파일이 생겨 작업장에 올려야 함). 누르는 칸 위치는 그림 크기 기준 %로 final.html에 `!important`로 덮어씀. 그림 안에 ✕가 그려져 있으면 닫기 버튼을 그 위에 투명하게 겹침. 2번 종교코스 = `faith_course_90.webp`(6칸, `#faithquiz` 추가).
