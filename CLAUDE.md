@@ -35,3 +35,4 @@
 - **89차**: 코스 창(`.modal.open`, z-index 20)이 열리면 지도 스크롤 막대 `.wk44-sb`와 방문자 정보 줄 `#wonkiExtraMainMount`를 숨김(final.html `wk89-course-modal-clean`). 메인 지도 위에 새로 띄우는 요소도 코스 창이 열렸을 때 겹치는지 확인할 것.
 - **90차**: 코스 메뉴 그림을 바꿀 때는 그림을 `build-tools/assets/`에 webp로 두고 patch.py에서 data URI로 넣음(나눌 때 새 그림 파일이 생겨 작업장에 올려야 함). 누르는 칸 위치는 그림 크기 기준 %로 final.html에 `!important`로 덮어씀. 그림 안에 ✕가 그려져 있으면 닫기 버튼을 그 위에 투명하게 겹침. 2번 종교코스 = `faith_course_90.webp`(6칸, `#faithquiz` 추가).
 - **91차**: 한 단계 더 들어가는 메뉴 예시 — 종교코스 ①(`#church`)을 누르면 `#churchModal`(그림 `church_course_91.webp`, 칸 `.churchspot` 6개)이 열리고, 고른 값은 `window.wk91ChurchSub`로 결과 글자 `update()`에 한 줄 더 붙음(`window.wk91Update`).
+- **92차**: 종교코스 세부 메뉴 창은 `.modal.wk91-deep`로 묶음(혜화동성당 `#churchModal`, 청년 성서모임 `#youthModal`). 새 세부 메뉴는 patch.py에서 창(칸 class `churchspot`, `data-church`)을 넣고, update()의 faithSub 조건과 faith 클릭에서 창 열기만 추가하면 됨.
