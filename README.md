@@ -1,13 +1,14 @@
 # 원기랜드
 
-## ⬇️ 최신 101차 다운로드
+## ⬇️ 최신 102차 다운로드
 
-### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v101/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
+### **[👉 웰컴투 원기랜드.html 바로 받기 (약 12MB)](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v102/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)**
 
-그림까지 한 번에: [wonkiland_v101_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v101/wonkiland_v101_neocities.zip)
+그림까지 한 번에: [wonkiland_v102_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v102/wonkiland_v102_neocities.zip)
 
-`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. **101차는 HTML 하나만 올리면 됩니다(새 그림 없음).** 종교코스 랜덤 버튼 아래로·계속 뽑기·효과음, [101차 안내](wonkiland-v101/README.md). 98차는 새 그림 `50f44ca8fd8f6a.webp`(초4-1 목차, 푸알 전투력 수정) 1개를 `작업장` 폴더에 올려야 합니다.** 자세한 것은 [98차 안내](wonkiland-v98/README.md)를 보세요. 97차는 새 그림 112개(초4-1 문제·목차·캐릭터, [새 그림만 모은 zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v97/wonkiland_v97_%EC%83%88%EA%B7%B8%EB%A6%BC112%EA%B0%9C.zip))를 `작업장` 폴더에 올려야 합니다.** 서버 변경 없음. 자세한 것은 [97차 안내](wonkiland-v97/README.md)를 보세요.
+`드래곤볼 수학게임` 폴더에 HTML 하나만 올리면 됩니다(새 그림 없음). `드래곤볼 수학게임` 폴더에 `웰컴투 원기랜드.html` 이름 그대로 덮어 올리고, 광고 없는 짧은 주소용 [w.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v82/w.html)을 사이트 맨 위 폴더에 올려 주세요. **102차는 HTML 하나만 올리면 됩니다(새 그림 없음).** 종교코스 세부 창 테두리·랜덤 버튼 고침, [102차 안내](wonkiland-v102/README.md). 98차는 새 그림 `50f44ca8fd8f6a.webp`(초4-1 목차, 푸알 전투력 수정) 1개를 `작업장` 폴더에 올려야 합니다.** 자세한 것은 [98차 안내](wonkiland-v98/README.md)를 보세요. 97차는 새 그림 112개(초4-1 문제·목차·캐릭터, [새 그림만 모은 zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v97/wonkiland_v97_%EC%83%88%EA%B7%B8%EB%A6%BC112%EA%B0%9C.zip))를 `작업장` 폴더에 올려야 합니다.** 서버 변경 없음. 자세한 것은 [97차 안내](wonkiland-v97/README.md)를 보세요.
 
+- [102차 안내 (종교코스 테두리·랜덤 버튼 고침)](wonkiland-v102/README.md)
 - [101차 안내 (종교코스 랜덤 버튼 아래로·효과음)](wonkiland-v101/README.md)
 - [100차 안내 (종교코스 🎲 랜덤 버튼)](wonkiland-v100/README.md)
 - [99차 안내 (랜덤 뽑기에 종교코스·기타 메뉴 겹침 수정)](wonkiland-v99/README.md)
