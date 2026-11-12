@@ -71,7 +71,7 @@
   var vid='';try{vid=localStorage.getItem('wonkiLand_daily_visitor_id_v1')||'';}catch(_){}
   post1('visit_log',{sessionToken:tok,source:source(),device:device(),browser:browser(),os:osName(),detail:detail(),visitorId:vid}).catch(function(e){console.warn('WonkiLand: 방문 기록 실패',e&&e.message);});}
  /* 로그인 창·가입 화면에 안내 */
- function notice(){var btn=document.getElementById('wkgaLogin');if(btn&&!document.getElementById('wk70LoginNote')){var n=document.createElement('p');n.id='wk70LoginNote';n.className='wk70-notice';n.textContent=NOTICE;(btn.parentElement||btn).after(n);}
+ function notice(){var btn=document.getElementById('wkgaLogin');if(btn&&!document.getElementById('wk70LoginNote')){var n=document.createElement('p');n.id='wk70LoginNote';n.className='wk70-notice';n.textContent=NOTICE;/* 103차: 카드 안(로그인 버튼 바로 아래)에 넣음 — 예전엔 카드 옆에 붙어 휴대폰에서 카드가 좁아졌음 */var card=btn.closest('.wkga-card');if(card&&btn.parentElement!==card)btn.parentElement.after(n);else btn.after(n);}
   var bf=document.getElementById('wk66Benefit');if(bf&&!document.getElementById('wk70JoinNote')){var m=document.createElement('div');m.id='wk70JoinNote';m.className='wk70-notice';m.textContent=NOTICE;bf.appendChild(m);}
   if(document.getElementById('wk70LoginNote')&&document.getElementById('wk70JoinNote'))try{nt.disconnect();}catch(_){}}
  /* 관리자 메뉴: 최근 방문한 회원 · 들어온 곳 */
