@@ -626,20 +626,53 @@ rep("""function add(unit,kind,""","""const ADDN={};function add(unit,kind,""")
 rep("""BANK.filter(q=>q.unit===unit).length""","""((ADDN[unit]=(ADDN[unit]||0)+1)-1)""")
 rep("""pool:Object.freeze(pool.slice())""","""pool:Object.isFrozen(pool)?pool:Object.freeze(pool.slice())""")
 rep(""" const L=!!course.listening;""",""" const L=!!course.listening;const VKO=Object.freeze(course.vocab.map(x=>x[1])),VEN=Object.freeze(course.vocab.map(x=>x[0])),PKO=Object.freeze(course.patterns.map(x=>x.ko)),PEN=Object.freeze(course.patterns.map(x=>x.en));""")
-_i=t.index(" const L=!!course.listening;");_j=t.index(" SEMESTERS.push(semester);",_i)
-_seg=t[_i:_j];_seg0=_seg
+_i41=t.index(" const L=!!course.listening;");_j41=t.index(" SEMESTERS.push(semester);",_i41)
+_seg=t[_i41:_j41];_seg0=_seg
 _seg=_seg.replace("Object.freeze(course.vocab.map(x=>x[1]))","@A@").replace("Object.freeze(course.vocab.map(x=>x[0]))","@B@").replace("Object.freeze(course.patterns.map(x=>x.ko))","@C@").replace("Object.freeze(course.patterns.map(x=>x.en))","@D@")
 _seg=_seg.replace("course.vocab.map(x=>x[1])","VKO").replace("course.vocab.map(x=>x[0])","VEN").replace("course.patterns.map(x=>x.ko)","PKO").replace("course.patterns.map(x=>x.en)","PEN")
 _seg=_seg.replace("@A@","Object.freeze(course.vocab.map(x=>x[1]))").replace("@B@","Object.freeze(course.vocab.map(x=>x[0]))").replace("@C@","Object.freeze(course.patterns.map(x=>x.ko))").replace("@D@","Object.freeze(course.patterns.map(x=>x.en))")
 assert _seg!=_seg0
-t=t[:_i]+_seg+t[_j:]
+t=t[:_i41]+_seg+t[_j41:]
 rep("""const ps=wkPs.find(t=>wkIn(en,t));""","""const ps=wkIn(en,wkPs.join(' \\n '))?wkPs.find(t=>wkIn(en,t)):null;""")
 rep(""" if(BANK.filter(q=>q.unit===uSpell).length<8)for(const [en,ko] of course.vocab)add(uSpell,'word',ko,en,en,VEN,{""",""" for(const [en,ko] of course.vocab.filter(v=>!wk51Misspell(v[0])).slice(0,Math.max(0,300-BANK.filter(q=>q.unit===uSpell).length)))add(uSpell,'word',ko,en,en,VEN,{""")
+
+# ---------- 42. 109차: 초5-1 (수학 원본 100문항 + 드라이브 목차·캐릭터 그림, 영어 e5-1 대결판) — 40단계(초4-2)와 같은 방식(39단계 뒤라 7단원 대결판 기준)
+_g51dir=sys.argv[2].replace('world_final.webp','g51/')
+_math51=open(_g51dir+'math51.json',encoding='utf-8').read()
+_g51html=open(_g51dir+'g51.html',encoding='utf-8').read()
+rep("""'초4-1','초4-2'].includes(S.activeGrade)""","""'초4-1','초4-2','초5-1'].includes(S.activeGrade)""")
+rep("""if(S.g42){SS['초4-2']=S.g42;delete S.g42}""","""if(S.g42){SS['초4-2']=S.g42;delete S.g42}if(S.g51){SS['초5-1']=S.g51;delete S.g51}""")
+rep("""delete o.g42;o.activeGrade=GR;""","""delete o.g42;delete o.g51;o.activeGrade=GR;""")
+rep("""if(SS['초4-2'])o.g42=SS['초4-2'];""","""if(SS['초4-2'])o.g42=SS['초4-2'];if(SS['초5-1'])o.g51=SS['초5-1'];""")
+rep("""g42=data.g42,""","""g42=data.g42,g51=data.g51,""")
+rep("""delete d2.g42;""","""delete d2.g42;delete d2.g51;""")
+rep("""else delete SS['초4-2'];applyPack(target);""","""else delete SS['초4-2'];if(g51)SS['초5-1']=Object.assign(newState(),g51);else delete SS['초5-1'];applyPack(target);""")
+rep("""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2')""","""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1')""",10)
+rep("""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2')&&!privateSession)""","""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1')&&!privateSession)""")
+_a=t.index("if(GR==='초4-2'&&window.WonkiGrade42){body.innerHTML=head(");_b=t.index("\n if(GR==='초4-1'&&window.WonkiGrade41){body.innerHTML=head(",_a)
+_board51=t[_a:_b].replace('WonkiGrade42','WonkiGrade51').replace('초4-2','초5-1').replace('원본 100문항','원본 100문항')
+assert 'WonkiGrade51' in _board51
+t=t[:_a]+_board51+'\n '+t[_a:]
+rep("""PACKS['초4-2']=""","""PACKS['초5-1']="""+_math51+""";
+PACKS['초4-2']=""")
+rep("""return ['초4-2','초4-1','초3-2','초3-1','초2-2',""","""return ['초5-1','초4-2','초4-1','초3-2','초3-1','초2-2',""")
+rep("""||st.includes('초4-1')||st.includes('초4-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2입니다.""","""||st.includes('초4-1')||st.includes('초4-2')||st.includes('초5-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1입니다.""")
+rep("""'초4-1','초4-2'].includes(grade.dataset.grade))return;""","""'초4-1','초4-2','초5-1'].includes(grade.dataset.grade))return;""")
+_m51=_j.loads(_math51)
+_eng51="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m51['CH'].items()},ensure_ascii=False)+");const GRADE51_CAST="+_j.dumps(_m51['CAST'],ensure_ascii=False)+";const GRADE51_STARTERS="+_j.dumps(_m51['PICK'])+";const GRADE51_ENEMIES={};{const s41=SEMESTERS.find(s=>s.key==='e5-1');if(s41)s41.units.forEach((id,i)=>{const ids=Array.from(new Set([...(GRADE51_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[]),...(GRADE51_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[])])).filter(x=>x!=='goku51');GRADE51_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng51+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE42_ENEMIES[u]||""","""function enemies(u){return(GRADE51_ENEMIES[u]||GRADE42_ENEMIES[u]||""")
+rep("""state.semester==='e4-2'?[...GRADE42_STARTERS,...state.friends]:""","""state.semester==='e5-1'?[...GRADE51_STARTERS,...state.friends]:state.semester==='e4-2'?[...GRADE42_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e4-2'&&GRADE42_STARTERS.includes(saved.player))""","""||(out.semester==='e4-2'&&GRADE42_STARTERS.includes(saved.player))||(out.semester==='e5-1'&&GRADE51_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e4-2'&&window.WonkiGrade42){");_b=t.index("\n  if(s.semester==='e4-1'&&window.WonkiGrade41){",_a)
+_eb51=t[_a:_b].replace('WonkiGrade42','WonkiGrade51').replace("'e4-2'","'e5-1'").replace("goku42","goku51").replace('초4-2','초5-1')
+assert 'WonkiGrade51' in _eb51
+t=t[:_a]+_eb51+'\n'+t[_a:]
 
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
-final = _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
+final = _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64
