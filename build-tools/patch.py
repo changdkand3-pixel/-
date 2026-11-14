@@ -669,6 +669,11 @@ _eb51=t[_a:_b].replace('WonkiGrade42','WonkiGrade51').replace("'e4-2'","'e5-1'")
 assert 'WonkiGrade51' in _eb51
 t=t[:_a]+_eb51+'\n'+t[_a:]
 
+# ---------- 43. 110차: 모임코스에서 ③ 김가영 응원 모임 빼기 — 그림에서 그 칸을 지우고 나머지 3칸을 가운데로 모은 그림(assets/meet_course_110.webp, 기타영역 번호 4→3)
+_meet110='data:image/webp;base64,'+__import__('base64').b64encode(open(sys.argv[2].replace('world_final.webp','meet_course_110.webp'),'rb').read()).decode()
+rep("""<img alt="모임코스 세부 선택 화면" src="https://lh3.googleusercontent.com/d/1JJA7x-1WxsK6vv92HqVsAEsct5_dwOi-">""","""<img alt="모임코스 세부 선택 화면" src=\""""+_meet110+"""">""")
+rep("""<button class="meetspot" id="meet3" data-meet="김가영 응원 모임" aria-label="김가영 응원 모임 선택" title="김가영 응원 모임"></button>""","""""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
