@@ -684,6 +684,11 @@ rep("""if(top.id==='meet'&&meetSub)sub='\\n└ '+meetSub;""","""if(top.id==='mee
 rep("""const sub=meetSpots[Math.floor(Math.random()*meetSpots.length)]; sub.classList.add('selected'); meetSub=sub.dataset.meet; meetModal.classList.add('open');""","""const sub=meetSpots[Math.floor(Math.random()*meetSpots.length)]; sub.classList.add('selected'); meetSub=sub.dataset.meet; meetModal.classList.add('open');
    {const jm=document.getElementById('jjamModal');const js=sub.id==='meet1'&&jm?[...jm.querySelectorAll('.churchspot')]:[];if(js.length){const d=js[Math.floor(Math.random()*js.length)];jm.querySelectorAll('.churchspot').forEach(x=>x.classList.toggle('selected',x.dataset.church===d.dataset.church));window.wk91ChurchSub=d.dataset.church;jm.classList.add('open');}}""")
 
+# ---------- 45. 113차: 취미짬뽕전형 인형뽑기과 → "오늘은 어떤 것을 뽑을까?" 그림 창(#clawModal, assets/claw_page_113.webp), 누르면 네오시티 뽑기 페이지로. 메인 랜덤에서 인형뽑기과가 나와도 열림
+_claw113='data:image/webp;base64,'+__import__('base64').b64encode(open(sys.argv[2].replace('world_final.webp','claw_page_113.webp'),'rb').read()).decode()
+rep('<div class="modal wk91-deep" id="jjamModal"','<div id="clawModal" role="dialog" aria-modal="true" aria-label="오늘은 어떤 것을 뽑을까?" hidden><div class="claw-card"><div class="claw-bar"><a class="claw-go" id="clawGo" href="https://hinsrolin.neocities.org/%EB%AC%B4%EC%97%87%EC%9D%84%20%EB%BD%91%EC%9D%84%EA%B9%8C%3F" target="_blank" rel="noopener">🎮 뽑기 페이지 열기</a><button type="button" class="claw-x" id="clawClose" aria-label="닫기">✕</button></div><a class="claw-img" href="https://hinsrolin.neocities.org/%EB%AC%B4%EC%97%87%EC%9D%84%20%EB%BD%91%EC%9D%84%EA%B9%8C%3F" target="_blank" rel="noopener"><img alt="오늘은 어떤 것을 뽑을까? 뽑기 페이지 미리보기 (누르면 페이지가 열려요)" src="'+_claw113+'"></a></div></div>\n<div class="modal wk91-deep" id="jjamModal"')
+rep("""jm.classList.add('open');}}""","""jm.classList.add('open');if(d.dataset.church==='인형뽑기과'&&window.wk113Claw)window.wk113Claw();}}""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
