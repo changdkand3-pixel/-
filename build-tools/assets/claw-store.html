@@ -1,0 +1,91 @@
+<!-- 114차: 뽑은 물건 보유창고 · 전시장 (인형뽑기과 창 → 🧸 내 보유창고). 목록은 localStorage.wk114_claw_items(일반회원은 진행 기록과 함께 클라우드 저장), 사진은 이 기기에만 wk114_claw_photos -->
+<style id="wk114-store-style">
+#wk114Store{position:fixed;inset:0;z-index:100010;background:#000c;display:flex;align-items:center;justify-content:center;padding:10px;font-family:system-ui,'Malgun Gothic',sans-serif}
+#wk114Store[hidden]{display:none}
+#wk114Store .s-card{width:min(100%,760px);max-height:96vh;display:flex;flex-direction:column;background:#17153a;color:#fff;border:3px solid #ffb84d;border-radius:18px;overflow:hidden;box-shadow:0 14px 60px #000a}
+#wk114Store .s-head{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(90deg,#ff4fa8,#7b5cff)}
+#wk114Store .s-head h2{margin:0;flex:1;font-size:clamp(17px,4.4vw,22px);font-weight:900}
+#wk114Store .s-x{border:0;border-radius:10px;width:40px;height:40px;background:#0004;color:#fff;font-size:20px;font-weight:900;cursor:pointer}
+#wk114Store .s-tabs{display:flex;gap:6px;padding:10px 12px 0;flex-wrap:wrap}
+#wk114Store .s-tabs button{flex:1;min-width:110px;border:2px solid #4b4690;background:#24215a;color:#dcd8ff;border-radius:12px;padding:10px;font-weight:900;font-size:15px;cursor:pointer}
+#wk114Store .s-tabs button.on{background:#ffd54d;color:#3a2b00;border-color:#ffd54d}
+#wk114Store .s-body{overflow:auto;padding:12px;flex:1}
+#wk114Store .s-sum{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+#wk114Store .s-sum span{background:#2a2766;border-radius:10px;padding:7px 11px;font-size:13px;font-weight:800}
+#wk114Store .shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:14px;border-radius:16px;background:linear-gradient(#3b2a1b,#2a1d12);box-shadow:inset 0 0 0 4px #6b4a2b}
+#wk114Store .item{position:relative;background:#fff;color:#222;border-radius:14px;padding:8px;box-shadow:0 6px 0 #c4a07a,0 8px 16px #0006;display:flex;flex-direction:column;gap:4px}
+#wk114Store .item .ph{aspect-ratio:1;border-radius:10px;background:#f2eefc center/cover no-repeat;display:grid;place-items:center;font-size:52px}
+#wk114Store .item b{font-size:15px;line-height:1.3;overflow-wrap:anywhere}
+#wk114Store .item small{font-size:12px;color:#665}
+#wk114Store .item .star{position:absolute;right:6px;top:6px;border:0;border-radius:50%;width:34px;height:34px;background:#fff9;font-size:18px;cursor:pointer}
+#wk114Store .item .acts{display:flex;gap:4px;margin-top:2px}
+#wk114Store .item .acts button{flex:1;border:0;border-radius:8px;padding:6px 0;font-weight:800;font-size:12px;cursor:pointer;background:#ece8ff;color:#3d2f99}
+#wk114Store .item .acts .del{background:#ffe1e1;color:#b11}
+#wk114Store .empty{padding:30px 10px;text-align:center;color:#d0ccff;line-height:1.8}
+#wk114Store form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#wk114Store form label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:800;color:#dcd8ff}
+#wk114Store form .wide{grid-column:1/-1}
+#wk114Store input,#wk114Store select{font-size:16px;padding:10px;border-radius:10px;border:2px solid #4b4690;background:#fff;color:#222;box-sizing:border-box;width:100%}
+#wk114Store .s-save{grid-column:1/-1;border:0;border-radius:12px;padding:14px;background:linear-gradient(90deg,#ff4fa8,#9b5cff);color:#fff;font-size:17px;font-weight:900;cursor:pointer}
+#wk114Store .s-filter{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+#wk114Store .s-filter button{border:1px solid #5a55a8;background:#24215a;color:#dcd8ff;border-radius:999px;padding:6px 12px;font-weight:800;font-size:13px;cursor:pointer}
+#wk114Store .s-filter button.on{background:#7b5cff;color:#fff}
+#wk114Store .s-prev{width:90px;height:90px;border-radius:10px;background:#eee center/cover no-repeat;display:none}
+@media (max-width:520px){#wk114Store form{grid-template-columns:1fr}#wk114Store .shelf{grid-template-columns:repeat(2,1fr);gap:9px;padding:9px}}
+#clawModal .claw-store{border:0;border-radius:12px;padding:0 12px;background:#ffd54d;color:#3a2b00;font:900 15px system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+</style>
+<script id="wk114-store-js">
+(function(){'use strict';
+ var KEY='wk114_claw_items',PKEY='wk114_claw_photos';
+ var KINDS=[['인형','🧸'],['피규어','🦸'],['굿즈','🔑'],['기타','🎁']];
+ var WAYS=['집게 인형뽑기 (대형)','집게 인형뽑기 (중형)','집게 인형뽑기 (소형)','가챠 뽑기 (캡슐토이)','이치방쿠지','열쇠뽑기','크레인 UFO 기계','기타'];
+ function rd(k,d){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v==null?d:v;}catch(_){return d;}}
+ function wr(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(_){return false;}}
+ function items(){var a=rd(KEY,[]);return Array.isArray(a)?a.filter(function(x){return x&&x.id&&!x.deletedAt;}):[];}
+ function allRaw(){var a=rd(KEY,[]);return Array.isArray(a)?a:[];}
+ function photos(){var p=rd(PKEY,{});return p&&typeof p==='object'?p:{};}
+ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+ function won(n){n=Math.max(0,Math.round(+n||0));return n.toLocaleString('ko-KR')+'원';}
+ function icon(k){for(var i=0;i<KINDS.length;i++)if(KINDS[i][0]===k)return KINDS[i][1];return '🎁';}
+ function today(){var d=new Date(Date.now()+9*3600000);return d.toISOString().slice(0,10);}
+ var tab='show',filter='전체',editing=null,photoData=null,root=null;
+ function build(){if(root)return root;root=document.createElement('div');root.id='wk114Store';root.hidden=true;root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');root.setAttribute('aria-label','내 뽑기 보유창고·전시장');
+  root.innerHTML='<div class="s-card"><div class="s-head"><h2>🧸 내 뽑기 보유창고 · 전시장</h2><button type="button" class="s-x" data-s="close" aria-label="닫기">✕</button></div><div class="s-tabs"><button type="button" data-tab="show">🏆 전시장</button><button type="button" data-tab="store">📦 보유창고</button><button type="button" data-tab="add">➕ 뽑은 물건 등록</button></div><div class="s-body"></div></div>';
+  document.body.appendChild(root);
+  root.addEventListener('click',function(e){var t=e.target;if(t===root){close();return;}var b=t.closest&&t.closest('button');if(!b)return;
+   if(b.dataset.s==='close'){close();return;}
+   if(b.dataset.tab){tab=b.dataset.tab;if(tab==='add'){editing=null;photoData=null;}render();return;}
+   if(b.dataset.f){filter=b.dataset.f;render();return;}
+   var id=b.dataset.id;if(!id)return;var a=allRaw(),it=a.find(function(x){return x.id===id;});if(!it)return;
+   if(b.dataset.a==='star'){it.show=!it.show;it.updatedAt=Date.now();wr(KEY,a);render();}
+   else if(b.dataset.a==='edit'){editing=id;photoData=null;tab='add';render();}
+   else if(b.dataset.a==='del'){if(!confirm('"'+it.name+'"을(를) 보유창고에서 지울까요?'))return;it.deletedAt=Date.now();it.updatedAt=Date.now();wr(KEY,a);var p=photos();delete p[id];wr(PKEY,p);render();}
+  });
+  root.addEventListener('change',function(e){if(e.target.id!=='wk114Photo')return;var f=e.target.files&&e.target.files[0];if(!f)return;var fr=new FileReader();fr.onload=function(){var img=new Image();img.onload=function(){var s=Math.min(1,360/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);c.getContext('2d').drawImage(img,0,0,c.width,c.height);photoData=c.toDataURL('image/jpeg',.72);var pv=root.querySelector('.s-prev');if(pv){pv.style.display='block';pv.style.backgroundImage='url('+photoData+')';}};img.src=fr.result;};fr.readAsDataURL(f);});
+  root.addEventListener('submit',function(e){e.preventDefault();var f=e.target,name=f.name.value.trim();if(!name){alert('물건 이름을 적어 주세요.');return;}
+   var a=allRaw(),it=editing&&a.find(function(x){return x.id===editing;});
+   if(!it){it={id:'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),createdAt:Date.now()};a.unshift(it);}
+   it.name=name.slice(0,40);it.kind=f.kind.value;it.way=f.way.value;it.cost=Math.max(0,Math.round(+f.cost.value||0));it.tries=Math.max(1,Math.round(+f.tries.value||1));it.date=f.date.value||today();it.place=f.place.value.trim().slice(0,40);it.show=f.show.checked;it.updatedAt=Date.now();
+   wr(KEY,a);if(photoData){var p=photos();p[it.id]=photoData;if(!wr(PKEY,p))alert('사진은 저장 공간이 모자라 빼고 저장했어요.');}
+   editing=null;photoData=null;tab=it.show?'show':'store';render();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&root&&!root.hidden){e.stopPropagation();close();}},true);
+  return root;}
+ function card(it,ph,store){var bg=ph[it.id]?' style="background-image:url('+ph[it.id]+')"':'';
+  return '<div class="item"><button type="button" class="star" data-a="star" data-id="'+esc(it.id)+'" title="'+(it.show?'전시장에서 내리기':'전시장에 올리기')+'">'+(it.show?'⭐':'☆')+'</button><div class="ph"'+bg+'>'+(ph[it.id]?'':icon(it.kind))+'</div><b>'+esc(it.name)+'</b><small>'+icon(it.kind)+' '+esc(it.kind)+' · '+esc(it.way)+'</small><small>📅 '+esc(it.date)+(it.place?' · 📍'+esc(it.place):'')+'</small><small>💰 '+won(it.cost)+' · '+(it.tries||1)+'번 만에</small>'+(store?'<div class="acts"><button type="button" data-a="edit" data-id="'+esc(it.id)+'">고치기</button><button type="button" class="del" data-a="del" data-id="'+esc(it.id)+'">지우기</button></div>':'')+'</div>';}
+ function render(){var b=root.querySelector('.s-body'),all=items(),ph=photos();
+  [].forEach.call(root.querySelectorAll('[data-tab]'),function(x){x.classList.toggle('on',x.dataset.tab===tab);});
+  var cost=all.reduce(function(s,x){return s+(+x.cost||0);},0),shown=all.filter(function(x){return x.show;});
+  var sum='<div class="s-sum"><span>📦 보유 '+all.length+'개</span><span>⭐ 전시 '+shown.length+'개</span><span>💰 모두 '+won(cost)+'</span>'+KINDS.map(function(k){var n=all.filter(function(x){return x.kind===k[0];}).length;return n?'<span>'+k[1]+' '+k[0]+' '+n+'</span>':'';}).join('')+'</div>';
+  if(tab==='show'){b.innerHTML=sum+(shown.length?'<div class="shelf">'+shown.map(function(x){return card(x,ph,false);}).join('')+'</div>':'<div class="empty">아직 전시한 물건이 없어요.<br>📦 보유창고에서 ☆을 누르면 전시장에 올라가요.</div>');}
+  else if(tab==='store'){var list=filter==='전체'?all:all.filter(function(x){return x.kind===filter;});
+   b.innerHTML=sum+'<div class="s-filter">'+['전체'].concat(KINDS.map(function(k){return k[0];})).map(function(k){return '<button type="button" data-f="'+k+'" class="'+(filter===k?'on':'')+'">'+(k==='전체'?'전체':icon(k)+' '+k)+'</button>';}).join('')+'</div>'+(list.length?'<div class="shelf">'+list.map(function(x){return card(x,ph,true);}).join('')+'</div>':'<div class="empty">보유창고가 비어 있어요.<br>➕ 뽑은 물건 등록에서 넣어 주세요.</div>');}
+  else{var it=editing&&allRaw().find(function(x){return x.id===editing;})||{};
+   b.innerHTML='<form autocomplete="off"><label class="wide">물건 이름<input name="name" maxlength="40" placeholder="예: 피카츄 인형" value="'+esc(it.name||'')+'"></label><label>종류<select name="kind">'+KINDS.map(function(k){return '<option'+(it.kind===k[0]?' selected':'')+'>'+k[0]+'</option>';}).join('')+'</select></label><label>뽑은 방법<select name="way">'+WAYS.map(function(w){return '<option'+(it.way===w?' selected':'')+'>'+w+'</option>';}).join('')+'</select></label><label>쓴 돈 (원)<input name="cost" type="number" inputmode="numeric" min="0" step="100" value="'+(it.cost!=null?it.cost:'')+'" placeholder="예: 3000"></label><label>몇 번 만에?<input name="tries" type="number" inputmode="numeric" min="1" value="'+(it.tries||1)+'"></label><label>뽑은 날<input name="date" type="date" value="'+esc(it.date||today())+'"></label><label>뽑은 곳<input name="place" maxlength="40" placeholder="예: 영등포 오락실" value="'+esc(it.place||'')+'"></label><label class="wide">사진 (선택, 이 기기에만 저장)<input id="wk114Photo" type="file" accept="image/*"><span class="s-prev"'+(it.id&&photos()[it.id]?' style="display:block;background-image:url('+photos()[it.id]+')"':'')+'></span></label><label class="wide" style="flex-direction:row;align-items:center;gap:8px"><input name="show" type="checkbox" style="width:22px;height:22px"'+(it.show!==false?' checked':'')+'> ⭐ 전시장에도 올리기</label><button type="submit" class="s-save">'+(editing?'고친 내용 저장':'보유창고에 넣기')+'</button></form>';}
+ }
+ function open(t){build();tab=t||'show';editing=null;photoData=null;root.hidden=false;render();}
+ function close(){if(root)root.hidden=true;}
+ window.wk114Store={open:open,close:close,items:items};
+ function addBtn(){var bar=document.querySelector('#clawModal .claw-bar');if(!bar||bar.querySelector('.claw-store'))return;var b=document.createElement('button');b.type='button';b.className='claw-store';b.id='clawStoreBtn';b.textContent='🧸 내 보유창고';b.addEventListener('click',function(){open('show');});bar.insertBefore(b,bar.querySelector('.claw-x'));}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',addBtn,{once:true});else addBtn();
+})();
+</script>

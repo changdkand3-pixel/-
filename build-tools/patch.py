@@ -704,6 +704,8 @@ _pg74=open(sys.argv[2].replace('world_final.webp','park-gallery.html'),encoding=
 final = final + '\n' + _pg74
 _sc76=open(sys.argv[2].replace('world_final.webp','scenery.html'),encoding='utf-8').read()
 final = final + '\n' + _sc76
+_cs114=open(sys.argv[2].replace('world_final.webp','claw-store.html'),encoding='utf-8').read()  # 114차: 뽑은 물건 보유창고·전시장
+final = final + '\n' + _cs114
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))
