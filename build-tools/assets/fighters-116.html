@@ -23,11 +23,14 @@ body:has(.modal.open) #wk116Arena{visibility:hidden}
 #wk116Fighters .f-pw{display:block;margin:0 auto 12px;width:min(220px,80%);padding:11px 14px;border-radius:12px;border:2px solid #ffc94d;background:#0d0f2a;color:#fff;font-size:22px;letter-spacing:.3em;text-align:center}
 #wk116Fighters .f-go{border:0;cursor:pointer;font-family:inherit}
 #wk116Fighters .f-err{min-height:1.2em;margin:10px 0 0;color:#ff9b9b;font-weight:700;font-size:14px}
+#wk116Fighters .f-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+#wk116Fighters .f-op{background:linear-gradient(#9ee7ff,#3aa0ff);color:#06264a;box-shadow:0 4px 0 #1d5fb0,0 6px 16px #0007}
+#wk116Fighters .f-music{margin:6px auto 0;max-width:460px;text-align:left;font-size:13px;line-height:1.55;color:#d9f2ff;background:#ffffff12;border-radius:10px;padding:8px 10px}
 #wk116Fighters .f-note{margin:8px 0 0;font-size:13px;color:#ffd0d0}
 </style>
 <script id="wk116-fighters-js">(function(){'use strict';
 /* 117차: 게임 주소는 비밀번호로 잠가 둠(URLX = patch.py가 비밀번호로 섞어 넣음). 주소·비밀번호를 바꿀 때는 patch.py 116 부분의 _fi_url·_fi_pw */
-var GAME={name:"원기랜드의 파이터즈 2026",version:"v0.46.0"},URLX="__URLX__";
+var GAME={name:"원기랜드의 파이터즈 2026",version:"v0.46.0"},URLX="__URLX__",URLX2="__URLX2__";
 var SIGN="__SIGN__",LOGO="__LOGO__";
 var ARENA='<svg viewBox="0 0 200 110" aria-hidden="true"><defs><linearGradient id="wk116w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#e2b77a"/></linearGradient><linearGradient id="wk116r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a4e"/><stop offset="1" stop-color="#b8171f"/></linearGradient></defs>'
  +'<ellipse cx="100" cy="100" rx="96" ry="10" fill="#0003"/>'
@@ -48,19 +51,20 @@ function modal(){var m=document.getElementById('wk116Fighters');if(m)return m;
   +'<div class="f-tags"><span>💻 Windows PC용</span><span>🏷️ '+GAME.version+'</span><span>⌨️ 키보드</span><span>🕹️ 조이스틱 지원</span></div>'
   +'<div class="f-lock" data-v="visitor"><p class="f-lk">🔒 방문자는 입장할 수 없어요.<br><b>일반회원 로그인</b> 후 이용할 수 있어요.</p><button type="button" class="f-go f-login">👤 일반회원 로그인</button></div>'
   +'<form class="f-lock" data-v="pw" autocomplete="off"><p class="f-lk">🔑 입장 비밀번호를 넣어 주세요.</p><input class="f-pw" type="password" inputmode="numeric" maxlength="12" aria-label="입장 비밀번호" placeholder="비밀번호"><button type="submit" class="f-go">입장</button><p class="f-err" aria-live="polite"></p></form>'
-  +'<div class="f-lock" data-v="ok"><a class="f-go f-dl" target="_blank" rel="noopener">⬇️ 게임 받으러 가기</a>'
-  +'<ol><li>버튼을 누르면 구글 드라이브가 열려요. 오른쪽 위 <b>다운로드</b>를 누르세요.</li><li>받은 zip 파일을 <b>압축 풀기</b> 하세요.</li><li>압축을 푼 폴더에서 게임 실행 파일을 두 번 눌러 시작!</li></ol></div>'
+  +'<div class="f-lock" data-v="ok"><div class="f-btns"><a class="f-go f-dl" target="_blank" rel="noopener">① ⬇️ 게임 받기</a><a class="f-go f-op" target="_blank" rel="noopener">② 🎬 오프닝 영상 받기</a></div>'
+  +'<ol><li><b>①</b>을 누르면 구글 드라이브가 열려요. 오른쪽 위 <b>다운로드</b>로 받은 뒤 zip을 <b>압축 풀기</b> 하세요.</li><li><b>②</b>도 같은 방법으로 받으세요. 압축을 푼 게임 폴더(<b>WongilandFighters2026.exe</b>가 있는 곳)에 <b>opening</b> 폴더를 새로 만들고 받은 영상을 그 안에 넣으세요.</li><li><b>WongilandFighters2026.exe</b>를 두 번 눌러 시작!</li></ol>'
+  +'<p class="f-music">🎵 음악 파일은 들어 있지 않아요. 게임 폴더의 <b>music</b> 폴더 안 01~08 칸에 갖고 있는 MP3를 넣으면 그 화면에서 나와요(칸마다 「여기에 음악을 넣으세요」 안내가 있어요).</p></div>'
   +'<p class="f-note">📱 휴대폰·태블릿에서는 실행되지 않아요. Windows 컴퓨터에서 받아 주세요.</p></div>';
  document.body.appendChild(m);
  m.addEventListener('click',function(e){if(e.target===m||e.target.closest('.f-x'))close();else if(e.target.closest('.f-login')){close();var lb=document.getElementById('wonkiGeneralAccountButton');if(lb)lb.click();else alert('메인 화면의 [👤 일반회원 로그인]을 눌러 주세요.');}});
- m.querySelector('form').addEventListener('submit',function(e){e.preventDefault();var i=m.querySelector('.f-pw'),u=unlock(i.value.trim());if(u){m.querySelector('.f-dl').href=u;show('ok');}else{m.querySelector('.f-err').textContent='비밀번호가 맞지 않아요.';i.value='';i.focus();}});
+ m.querySelector('form').addEventListener('submit',function(e){e.preventDefault();var i=m.querySelector('.f-pw'),u=unlock(i.value.trim());if(u){m.querySelector('.f-dl').href=u;var u2=unlock(i.value.trim(),URLX2);if(u2)m.querySelector('.f-op').href=u2;show('ok');}else{m.querySelector('.f-err').textContent='비밀번호가 맞지 않아요.';i.value='';i.focus();}});
  return m;}
 function who(){try{if(localStorage.getItem('wk65_admin_device')==='1')return 'owner';}catch(_){}try{var s=JSON.parse(sessionStorage.getItem('wonkiLand_general_session_v1')||'null');if(s&&s.token)return 'member';}catch(_){}return 'visitor';}
 /* 비밀번호로 게임 주소 풀기: FNV-1a 씨앗 + xorshift32 (patch.py와 같은 방법) */
-function unlock(pw){var t='wk116|'+pw,h=0x811c9dc5,b=new TextEncoder().encode(t),i;for(i=0;i<b.length;i++){h^=b[i];h=Math.imul(h,0x01000193)>>>0;}var x=h||1,out=[];for(i=0;i<URLX.length;i+=2){x^=x<<13;x>>>=0;x^=x>>>17;x^=x<<5;x>>>=0;out.push(parseInt(URLX.substr(i,2),16)^(x&255));}var u;try{u=new TextDecoder('utf-8',{fatal:true}).decode(new Uint8Array(out));}catch(_){return null;}return /^https:\/\/drive\.google\.com\//.test(u)?u:null;}
+function unlock(pw,X){X=X||URLX;var t='wk116|'+pw,h=0x811c9dc5,b=new TextEncoder().encode(t),i;for(i=0;i<b.length;i++){h^=b[i];h=Math.imul(h,0x01000193)>>>0;}var x=h||1,out=[];for(i=0;i<X.length;i+=2){x^=x<<13;x>>>=0;x^=x>>>17;x^=x<<5;x>>>=0;out.push(parseInt(X.substr(i,2),16)^(x&255));}var u;try{u=new TextDecoder('utf-8',{fatal:true}).decode(new Uint8Array(out));}catch(_){return null;}return /^https:\/\/drive\.google\.com\//.test(u)?u:null;}
 function show(v){var m=modal();m.querySelectorAll('.f-lock').forEach(function(n){n.hidden=n.getAttribute('data-v')!==v;});var f=m.querySelector('.f-note');f.hidden=v!=='ok';if(v==='pw'){m.querySelector('.f-err').textContent='';var i=m.querySelector('.f-pw');i.value='';setTimeout(function(){try{i.focus({preventScroll:true});}catch(_){}},30);}}
 var last=null;
-function open(){var m=modal();last=document.activeElement;m.querySelector('.f-dl').removeAttribute('href');m.hidden=false;var v=who()==='visitor'?'visitor':'pw';show(v);if(v==='visitor'){try{m.querySelector('.f-x').focus({preventScroll:true});}catch(_){}}}
+function open(){var m=modal();last=document.activeElement;m.querySelector('.f-dl').removeAttribute('href');m.querySelector('.f-op').removeAttribute('href');m.hidden=false;var v=who()==='visitor'?'visitor':'pw';show(v);if(v==='visitor'){try{m.querySelector('.f-x').focus({preventScroll:true});}catch(_){}}}
 function close(){var m=document.getElementById('wk116Fighters');if(!m||m.hidden)return;m.hidden=true;try{last&&last.focus&&last.focus({preventScroll:true});}catch(_){}}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 function place(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk116Arena'))return;

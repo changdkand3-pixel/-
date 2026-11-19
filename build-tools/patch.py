@@ -753,7 +753,9 @@ def _fi_mix(url,pw):
         x^=(x<<13)&0xffffffff;x^=x>>17;x^=(x<<5)&0xffffffff
         out.append('%02x'%(c^(x&255)))
     return ''.join(out)
+_fi_url2='https://drive.google.com/file/d/11QULVDk4mCKFnTGIfdR6uJnLtxp4Sq5y/view?usp=drive_link'  # 119차: 오프닝 영상(원기랜드의 파이터즈 2026 오프닝 최종수정본.mp4)
 _fi116=_fi116.replace('__URLX__',_fi_mix(_fi_url,_fi_pw))
+_fi116=_fi116.replace('__URLX2__',_fi_mix(_fi_url2,_fi_pw))
 final = final + '\n' + _fi116
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
