@@ -1,5 +1,5 @@
 <style id="wk116-fighters-style">
-#wk116Arena{position:absolute;left:78.5%;top:70.5%;width:19%;z-index:56;padding:0;margin:0;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#wk116Arena{position:absolute;left:79.5%;top:68.5%;width:17%;z-index:56;padding:0;margin:0;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 #wk116Arena img{display:block;width:100%;height:auto;margin-bottom:-9%;position:relative;z-index:2;filter:drop-shadow(0 2px 3px #0008);transition:transform .2s}
 #wk116Arena svg{display:block;width:78%;height:auto;position:relative;z-index:1}
 #wk116Arena .wk116-label{position:relative;z-index:3;margin-top:-8%;padding:.25em .8em;border-radius:999px;background:linear-gradient(#7a3b1d,#4f220d);color:#fff;border:2px solid #ffe7a8;font:900 clamp(8px,1.25vw,15px)/1.2 system-ui,'Malgun Gothic',sans-serif;white-space:nowrap;box-shadow:0 2px 4px #0007}
@@ -45,7 +45,7 @@ function modal(){var m=document.getElementById('wk116Fighters');if(m)return m;
  m.innerHTML='<div class="f-card"><button type="button" class="f-x" aria-label="닫기">✕</button>'
   +'<img class="f-logo" alt="'+GAME.name+'" src="'+LOGO+'">'
   +'<h2>🥊 원기랜드 격투 대회 개막!</h2><p class="f-sub">원기랜드가 주최하는 격투 게임 「'+GAME.name+'」</p>'
-  +'<div class="f-tags"><span>💻 Windows PC용</span><span>🏷️ '+GAME.version+'</span><span>🎮 키보드로 플레이</span></div>'
+  +'<div class="f-tags"><span>💻 Windows PC용</span><span>🏷️ '+GAME.version+'</span><span>⌨️ 키보드</span><span>🕹️ 조이스틱 지원</span></div>'
   +'<div class="f-lock" data-v="visitor"><p class="f-lk">🔒 방문자는 입장할 수 없어요.<br><b>일반회원 로그인</b> 후 이용할 수 있어요.</p><button type="button" class="f-go f-login">👤 일반회원 로그인</button></div>'
   +'<form class="f-lock" data-v="pw" autocomplete="off"><p class="f-lk">🔑 입장 비밀번호를 넣어 주세요.</p><input class="f-pw" type="password" inputmode="numeric" maxlength="12" aria-label="입장 비밀번호" placeholder="비밀번호"><button type="submit" class="f-go">입장</button><p class="f-err" aria-live="polite"></p></form>'
   +'<div class="f-lock" data-v="ok"><a class="f-go f-dl" target="_blank" rel="noopener">⬇️ 게임 받으러 가기</a>'
@@ -64,8 +64,8 @@ function open(){var m=modal();last=document.activeElement;m.querySelector('.f-dl
 function close(){var m=document.getElementById('wk116Fighters');if(!m||m.hidden)return;m.hidden=true;try{last&&last.focus&&last.focus({preventScroll:true});}catch(_){}}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 function place(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk116Arena'))return;
- var b=el('button');b.type='button';b.id='wk116Arena';b.setAttribute('aria-label','9. '+GAME.name+' 경기장');
- b.innerHTML='<img alt="" src="'+SIGN+'" draggable="false">'+ARENA+'<span class="wk116-label">9. 파이터즈 2026</span>';
+ var b=el('button');b.type='button';b.id='wk116Arena';b.setAttribute('aria-label',GAME.name+' 경기장');
+ b.innerHTML='<img alt="" src="'+SIGN+'" draggable="false">'+ARENA+'<span class="wk116-label">원기랜드의 파이터즈 2026</span>';
  b.addEventListener('pointerdown',function(e){e.stopPropagation();});
  b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open();});
  st.appendChild(b);}
