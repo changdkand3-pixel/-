@@ -53,7 +53,7 @@ function modal(){var m=document.getElementById('wk116Fighters');if(m)return m;
   +'<form class="f-lock" data-v="pw" autocomplete="off"><p class="f-lk">🔑 입장 비밀번호를 넣어 주세요.</p><input class="f-pw" type="password" inputmode="numeric" maxlength="12" aria-label="입장 비밀번호" placeholder="비밀번호"><button type="submit" class="f-go">입장</button><p class="f-err" aria-live="polite"></p></form>'
   +'<div class="f-lock" data-v="ok"><div class="f-btns"><a class="f-go f-dl" target="_blank" rel="noopener">① ⬇️ 게임 받기</a><a class="f-go f-op" target="_blank" rel="noopener">② 🎬 오프닝 영상 받기</a></div>'
   +'<ol><li><b>①</b>을 누르면 구글 드라이브가 열려요. 오른쪽 위 <b>다운로드</b>로 받은 뒤 zip을 <b>압축 풀기</b> 하세요.</li><li><b>②</b>도 같은 방법으로 받으세요. 압축을 푼 게임 폴더(<b>WongilandFighters2026.exe</b>가 있는 곳)에 <b>opening</b> 폴더를 새로 만들고 받은 영상을 그 안에 넣으세요.</li><li><b>WongilandFighters2026.exe</b>를 두 번 눌러 시작!</li></ol>'
-  +'<p class="f-music">🎵 음악 파일은 들어 있지 않아요. 게임 폴더의 <b>music</b> 폴더 안 01~08 칸에 갖고 있는 MP3를 넣으면 그 화면에서 나와요(칸마다 「여기에 음악을 넣으세요」 안내가 있어요).</p></div>'
+  +'<p class="f-music">🎵 <b>음악은 따로 받을 수 있어요.</b> 게임 zip에는 음악 파일이 들어 있지 않아요. 음악이 필요하면 <b>주인장에게 방명록이나 카톡으로 문의</b>해 주세요. 받은 MP3는 게임 폴더의 <b>music</b> 폴더 안 01~08 칸(오프닝·캐릭터 선택·VS·경기·결과·엔딩·보너스·게임오버)에 넣으면 그 화면에서 나와요.</p></div>'
   +'<p class="f-note">📱 휴대폰·태블릿에서는 실행되지 않아요. Windows 컴퓨터에서 받아 주세요.</p></div>';
  document.body.appendChild(m);
  m.addEventListener('click',function(e){if(e.target===m||e.target.closest('.f-x'))close();else if(e.target.closest('.f-login')){close();var lb=document.getElementById('wonkiGeneralAccountButton');if(lb)lb.click();else alert('메인 화면의 [👤 일반회원 로그인]을 눌러 주세요.');}});
