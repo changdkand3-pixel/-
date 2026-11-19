@@ -739,6 +739,10 @@ _sc76=open(sys.argv[2].replace('world_final.webp','scenery.html'),encoding='utf-
 final = final + '\n' + _sc76
 _cs114=open(sys.argv[2].replace('world_final.webp','claw-store.html'),encoding='utf-8').read()  # 114차: 뽑은 물건 보유창고·전시장
 final = final + '\n' + _cs114
+_fi116=open(sys.argv[2].replace('world_final.webp','fighters-116.html'),encoding='utf-8').read()  # 116차: 메인 지도에 '9. 파이터즈 2026' 경기장 건물 → 게임 소개·받기 창
+import base64 as _b116
+_fi116=_fi116.replace('__SIGN__','data:image/webp;base64,'+_b116.b64encode(open(sys.argv[2].replace('world_final.webp','fighters_sign_116.webp'),'rb').read()).decode()).replace('__LOGO__','data:image/webp;base64,'+_b116.b64encode(open(sys.argv[2].replace('world_final.webp','fighters_logo_116.webp'),'rb').read()).decode())
+final = final + '\n' + _fi116
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

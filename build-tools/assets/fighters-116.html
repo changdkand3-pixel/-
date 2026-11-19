@@ -1,0 +1,62 @@
+<style id="wk116-fighters-style">
+#wk116Arena{position:absolute;left:78.5%;top:70.5%;width:19%;z-index:56;padding:0;margin:0;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#wk116Arena img{display:block;width:100%;height:auto;margin-bottom:-9%;position:relative;z-index:2;filter:drop-shadow(0 2px 3px #0008);transition:transform .2s}
+#wk116Arena svg{display:block;width:78%;height:auto;position:relative;z-index:1}
+#wk116Arena .wk116-label{position:relative;z-index:3;margin-top:-8%;padding:.25em .8em;border-radius:999px;background:linear-gradient(#7a3b1d,#4f220d);color:#fff;border:2px solid #ffe7a8;font:900 clamp(8px,1.25vw,15px)/1.2 system-ui,'Malgun Gothic',sans-serif;white-space:nowrap;box-shadow:0 2px 4px #0007}
+#wk116Arena:hover img,#wk116Arena:focus-visible img{transform:scale(1.06) translateY(-3%)}
+#wk116Arena:focus-visible{outline:3px solid #ffe259;outline-offset:2px;border-radius:12px}
+body:has(.modal.open) #wk116Arena{visibility:hidden}
+#wk116Fighters{position:fixed;inset:0;z-index:100020;background:#000c;display:flex;align-items:center;justify-content:center;padding:12px;font-family:system-ui,'Malgun Gothic',sans-serif}
+#wk116Fighters[hidden]{display:none}
+#wk116Fighters .f-card{position:relative;width:min(100%,640px);max-height:94vh;overflow:auto;background:radial-gradient(circle at 50% 0,#2b2f6b,#0f1230 70%);color:#fff;border:3px solid #ffc94d;border-radius:20px;box-shadow:0 14px 40px #000a;text-align:center;padding:14px 16px 18px}
+#wk116Fighters .f-logo{display:block;width:100%;height:auto;border-radius:12px}
+#wk116Fighters .f-x{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:2px solid #fff6;background:#0008;color:#fff;font-size:20px;cursor:pointer;z-index:2}
+#wk116Fighters h2{margin:8px 0 4px;font-size:clamp(18px,4.8vw,24px);font-weight:900;color:#ffe08a}
+#wk116Fighters .f-sub{margin:0 0 12px;color:#d9ddff;font-size:14px}
+#wk116Fighters .f-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:14px}
+#wk116Fighters .f-tags span{background:#ffffff1c;border:1px solid #ffffff40;border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700}
+#wk116Fighters .f-go{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:14px;background:linear-gradient(#ffd34d,#ff8a1f);color:#3a1600;font-weight:900;font-size:17px;text-decoration:none;box-shadow:0 4px 0 #b35500,0 6px 16px #0007}
+#wk116Fighters .f-go:active{transform:translateY(2px);box-shadow:0 2px 0 #b35500}
+#wk116Fighters ol{text-align:left;margin:16px auto 6px;padding-left:22px;max-width:440px;font-size:14px;line-height:1.6;color:#eef}
+#wk116Fighters .f-note{margin:8px 0 0;font-size:13px;color:#ffd0d0}
+</style>
+<script id="wk116-fighters-js">(function(){'use strict';
+var GAME={name:"원기랜드의 파이터즈 2026",version:"v0.46.0",url:"https://drive.google.com/file/d/1T14cUvXahPmucf3IrHwHUskoUJDMQGT9/view?usp=drive_link"};
+var SIGN="__SIGN__",LOGO="__LOGO__";
+var ARENA='<svg viewBox="0 0 200 110" aria-hidden="true"><defs><linearGradient id="wk116w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#e2b77a"/></linearGradient><linearGradient id="wk116r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a4e"/><stop offset="1" stop-color="#b8171f"/></linearGradient></defs>'
+ +'<ellipse cx="100" cy="100" rx="96" ry="10" fill="#0003"/>'
+ +'<path d="M8 44 Q100 18 192 44 L188 98 Q100 112 12 98Z" fill="url(#wk116w)" stroke="#8a5523" stroke-width="2.5"/>'
+ +'<path d="M10 58 Q100 36 190 58" fill="none" stroke="#c98a3d" stroke-width="2"/><path d="M11 74 Q100 54 189 74" fill="none" stroke="#c98a3d" stroke-width="2"/>'
+ +[24,44,64,84,116,136,156,176].map(function(x){var y=x<100?47-(x-8)*0.22:47-(192-x)*0.22;return '<rect x="'+(x-5)+'" y="'+(y+18)+'" width="10" height="14" rx="5" fill="#5a2f14"/><rect x="'+(x-5)+'" y="'+(y+38)+'" width="10" height="14" rx="5" fill="#5a2f14"/>';}).join('')
+ +'<path d="M76 101 L76 72 Q100 56 124 72 L124 103Z" fill="#3a1a0a" stroke="#8a5523" stroke-width="2.5"/><path d="M84 101 L84 76 Q100 66 116 76 L116 102Z" fill="#ffcf4d" opacity=".85"/>'
+ +'<path d="M70 70 Q100 52 130 70 L130 62 Q100 44 70 62Z" fill="url(#wk116r)" stroke="#7a0f12" stroke-width="1.5"/>'
+ +'<g stroke="#5a2f14" stroke-width="2"><line x1="14" y1="44" x2="14" y2="14"/><line x1="186" y1="44" x2="186" y2="14"/><line x1="100" y1="24" x2="100" y2="4"/></g>'
+ +'<path d="M14 14 L34 19 L14 25Z" fill="#2f6bff"/><path d="M186 14 L166 19 L186 25Z" fill="#c33cff"/><path d="M100 4 L118 9 L100 15Z" fill="#ff3b3b"/>'
+ +'</svg>';
+function el(t,c,p){var e=document.createElement(t);if(c)e.className=c;if(p)p.appendChild(e);return e;}
+function modal(){var m=document.getElementById('wk116Fighters');if(m)return m;
+ m=el('div');m.id='wk116Fighters';m.hidden=true;m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label',GAME.name);
+ m.innerHTML='<div class="f-card"><button type="button" class="f-x" aria-label="닫기">✕</button>'
+  +'<img class="f-logo" alt="'+GAME.name+'" src="'+LOGO+'">'
+  +'<h2>🥊 원기랜드 격투 대회 개막!</h2><p class="f-sub">원기랜드가 주최하는 격투 게임 「'+GAME.name+'」</p>'
+  +'<div class="f-tags"><span>💻 Windows PC용</span><span>🏷️ '+GAME.version+'</span><span>🎮 키보드로 플레이</span></div>'
+  +'<a class="f-go" href="'+GAME.url+'" target="_blank" rel="noopener">⬇️ 게임 받으러 가기</a>'
+  +'<ol><li>버튼을 누르면 구글 드라이브가 열려요. 오른쪽 위 <b>다운로드</b>를 누르세요.</li><li>받은 zip 파일을 <b>압축 풀기</b> 하세요.</li><li>압축을 푼 폴더에서 게임 실행 파일을 두 번 눌러 시작!</li></ol>'
+  +'<p class="f-note">📱 휴대폰·태블릿에서는 실행되지 않아요. Windows 컴퓨터에서 받아 주세요.</p></div>';
+ document.body.appendChild(m);
+ m.addEventListener('click',function(e){if(e.target===m||e.target.closest('.f-x'))close();});
+ return m;}
+var last=null;
+function open(){var m=modal();last=document.activeElement;m.hidden=false;var x=m.querySelector('.f-x');try{x.focus({preventScroll:true});}catch(_){}}
+function close(){var m=document.getElementById('wk116Fighters');if(!m||m.hidden)return;m.hidden=true;try{last&&last.focus&&last.focus({preventScroll:true});}catch(_){}}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+function place(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk116Arena'))return;
+ var b=el('button');b.type='button';b.id='wk116Arena';b.setAttribute('aria-label','9. '+GAME.name+' 경기장');
+ b.innerHTML='<img alt="" src="'+SIGN+'" draggable="false">'+ARENA+'<span class="wk116-label">9. 파이터즈 2026</span>';
+ b.addEventListener('pointerdown',function(e){e.stopPropagation();});
+ b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open();});
+ st.appendChild(b);}
+window.wk116Fighters={open:open,close:close,game:GAME};
+function boot(){place();setInterval(place,2000);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();</script>
