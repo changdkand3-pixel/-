@@ -742,6 +742,18 @@ final = final + '\n' + _cs114
 _fi116=open(sys.argv[2].replace('world_final.webp','fighters-116.html'),encoding='utf-8').read()  # 116차: 메인 지도에 '9. 파이터즈 2026' 경기장 건물 → 게임 소개·받기 창
 import base64 as _b116
 _fi116=_fi116.replace('__SIGN__','data:image/webp;base64,'+_b116.b64encode(open(sys.argv[2].replace('world_final.webp','fighters_sign_116.webp'),'rb').read()).decode()).replace('__LOGO__','data:image/webp;base64,'+_b116.b64encode(open(sys.argv[2].replace('world_final.webp','fighters_logo_116.webp'),'rb').read()).decode())
+_fi_url='https://drive.google.com/file/d/1T14cUvXahPmucf3IrHwHUskoUJDMQGT9/view?usp=drive_link'  # 117차: 게임 받기 주소(비밀번호로 섞어 넣음)
+_fi_pw='4288'  # 117차: 게임 받으러 가기 비밀번호
+def _fi_mix(url,pw):
+    h=0x811c9dc5
+    for c in ('wk116|'+pw).encode('utf-8'):
+        h^=c;h=(h*0x01000193)&0xffffffff
+    x=h or 1;out=[]
+    for c in url.encode('utf-8'):
+        x^=(x<<13)&0xffffffff;x^=x>>17;x^=(x<<5)&0xffffffff
+        out.append('%02x'%(c^(x&255)))
+    return ''.join(out)
+_fi116=_fi116.replace('__URLX__',_fi_mix(_fi_url,_fi_pw))
 final = final + '\n' + _fi116
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
