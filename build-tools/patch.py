@@ -762,6 +762,9 @@ _fi116=_fi116.replace('__URLX__',_fi_mix(_fi_url,_fi_pw))
 _fi116=_fi116.replace('__URLX2__',_fi_mix(_fi_url2,_fi_pw))
 final = final + '\n' + _fi116
 _lf121=open(sys.argv[2].replace('world_final.webp','life-121.html'),encoding='utf-8').read()  # 121차: 메인 지도 구름·새·동물·직원
+import base64 as _b128  # 128차: 원래 그림 구름(하늘 바탕·구름 조각·연못 물 모양) — build-tools/scripts/sky128.py로 만듦
+_u128=lambda n,m:'data:'+m+';base64,'+_b128.b64encode(open(sys.argv[2].replace('world_final.webp',n),'rb').read()).decode()
+_lf121=_lf121.replace('__SKYBAND__',_u128('sky_band_128.webp','image/webp')).replace('__SKYCLOUDS__',_u128('sky_clouds_128.webp','image/webp')).replace('__PONDMASK__',_u128('pond_mask_128.png','image/png')).replace('__SKYMETA__',open(sys.argv[2].replace('world_final.webp','sky_128.json'),encoding='utf-8').read().strip())
 final = final + '\n' + _lf121
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))

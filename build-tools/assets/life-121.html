@@ -40,6 +40,19 @@
 @keyframes wk121tail{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
 @keyframes wk121sway{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
 @media (prefers-reduced-motion:reduce){#wk121Life *{animation:none!important}}
+/* 128차: 원래 그림의 구름이 하늘에서만 흘러감 · 다리 밑 연못 물이 흐름 */
+#mainStage>#wk128Sky{position:absolute!important;left:0;top:0;width:100%;height:21.2539%;z-index:21!important;pointer-events:none!important;overflow:hidden;-webkit-mask-image:url("__SKYBAND__");mask-image:url("__SKYBAND__");-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+#wk128Sky>.band{position:absolute;inset:0;background:url("__SKYBAND__") 0 0/100% 100% no-repeat}
+#wk128Sky>.pc{position:absolute;background-image:url("__SKYCLOUDS__");background-repeat:no-repeat;will-change:transform}
+#mainStage>#wk128Pond{position:absolute!important;left:0;width:100%;bottom:0;z-index:21!important;pointer-events:none!important;overflow:hidden;-webkit-mask-image:url("__PONDMASK__");mask-image:url("__PONDMASK__");-webkit-mask-size:100% 100%;mask-size:100% 100%}
+#wk128Pond>i{position:absolute;inset:-20% -60%;display:block;background:repeating-linear-gradient(168deg,rgba(255,255,255,0) 0 7px,rgba(255,255,255,.5) 9px,rgba(255,255,255,0) 11px 19px);animation:wk128flow 3.2s linear infinite;mix-blend-mode:screen}
+#wk128Pond>i+i{background:repeating-linear-gradient(-170deg,rgba(150,225,255,0) 0 10px,rgba(200,245,255,.45) 13px,rgba(150,225,255,0) 16px 29px);animation-duration:5s;animation-direction:reverse;opacity:.8}
+#wk128Pond>b{position:absolute;inset:0;background:radial-gradient(circle at 20% 40%,rgba(255,255,255,.9) 0 1.5px,transparent 2.5px) 0 0/34px 22px,radial-gradient(circle at 70% 70%,rgba(255,255,255,.8) 0 1.2px,transparent 2.2px) 0 0/27px 19px;animation:wk128spark 1.6s steps(2) infinite}
+#wk128Pond.wk121-off *,#wk128Sky.wk121-off *{animation-play-state:paused!important}
+@keyframes wk128flow{from{transform:translateX(0)}to{transform:translateX(90px)}}
+@keyframes wk128spark{0%{opacity:.2}50%{opacity:1}100%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){#wk128Pond *{animation:none!important}}
+
 </style>
 <script id="wk121-life-js">(function(){'use strict';
 var W=1672,H=941,NS='http://www.w3.org/2000/svg';
@@ -114,6 +127,8 @@ var R={
  topRight:[[.78,.505],[.84,.5],[.9,.505],[.95,.52]],
  farLeft:[[.06,.62],[.08,.7],[.1,.78],[.12,.86]],
  bottomMid:[[.36,.97],[.44,.955],[.5,.95],[.56,.955],[.64,.97]],
+ pondL:[[.11,.938],[.13,.942],[.155,.944],[.18,.942],[.2,.937]],
+ pondR:[[.9,.958],[.915,.962],[.935,.96]],
  pond:[[.418,.5],[.435,.507],[.46,.511],[.5,.513],[.54,.511],[.565,.507],[.582,.5]]
 };
 var ACTORS=[
@@ -135,6 +150,7 @@ var ACTORS=[
  {a:'dog',r:'left',sp:34,o:.75},{a:'dog',r:'plazaTop',sp:36,o:.3},{a:'dog',r:'mid',sp:30,o:.6},{a:'cat',r:'right',sp:26,o:.15},{a:'cat',r:'topLeft',sp:20,o:.5},
  {a:'duck',r:'pond',sp:16,o:.3},{a:'duckling',r:'pond',sp:16,o:.3,lag:-13},{a:'duckling',r:'pond',sp:16,o:.3,lag:-23},{a:'duckling',r:'pond',sp:16,o:.3,lag:-33},
  {a:'duck',r:'pond',sp:13,o:.85},{a:'duckling',r:'pond',sp:13,o:.85,lag:-13},{a:'duckling',r:'pond',sp:13,o:.85,lag:-23},
+ {a:'duck',r:'pondL',sp:9,o:.2},{a:'duckling',r:'pondL',sp:9,o:.2,lag:-13},{a:'duckling',r:'pondL',sp:9,o:.2,lag:-23},{a:'duck',r:'pondR',sp:8,o:.6},{a:'duckling',r:'pondR',sp:8,o:.6,lag:-13},
  {a:'bunny',r:'left',sp:22,o:.85},{a:'bunny',r:'farLeft',sp:20,o:.3},{a:'squirrel',r:'topRight',sp:26,o:.45},{a:'squirrel',r:'topLeft',sp:24,o:.9},
  {a:'pigeon',r:'gate',sp:5,o:.1},{a:'pigeon',r:'gate',sp:5,o:.1,lag:-14},{a:'pigeon',r:'gate',sp:5,o:.1,lag:-25},{a:'pigeon',r:'plazaLow',sp:4,o:.5},{a:'pigeon',r:'plazaLow',sp:4,o:.5,lag:-12}
 ];
@@ -177,6 +193,12 @@ function stylize(root){
    if(r>=6&&hx(fill))shine(n,t==='circle'?r:+n.getAttribute('rx'));
   }else if((!fill||fill==='none')&&st&&hx(st)){var w=+n.getAttribute('stroke-width')||1;n.setAttribute('stroke',mix(soft(hx(st)),[0,0,0],.04));if(w>=1.8){var c=n.cloneNode(false);c.setAttribute('data-w125','1');c.setAttribute('stroke',ink(st));c.setAttribute('stroke-opacity','.95');c.setAttribute('stroke-width',(w+1.5).toFixed(1));c.setAttribute('stroke-linecap','round');n.parentNode.insertBefore(c,n);}}
  });}
+
+var SKY=__SKYMETA__,sky128=null,pond128=null;
+function buildSky(st){if(document.getElementById('wk128Sky'))return;var d=document.createElement('div');d.id='wk128Sky';d.setAttribute('aria-hidden','true');d.innerHTML='<div class="band"></div>';var B=200,sw=SKY.sheet[0],sh=SKY.sheet[1];
+ SKY.clouds.forEach(function(c,k){var e=document.createElement('div');e.className='pc';e.style.left=(c[0]/W*100)+'%';e.style.top=(c[1]/B*100)+'%';e.style.width=(c[2]/W*100)+'%';e.style.height=(c[3]/B*100)+'%';e.style.backgroundSize=(sw/c[2]*100)+'% '+(sh/c[3]*100)+'%';e.style.backgroundPosition='0 '+(sh===c[3]?0:c[4]/(sh-c[3])*100)+'%';d.appendChild(e);items.push({k:'pc',n:e,x:c[0],w:c[2],sp:7+((k*37)%9)});});
+ st.appendChild(d);sky128=d;
+ var p=document.createElement('div');p.id='wk128Pond';p.setAttribute('aria-hidden','true');p.style.height=(SKY.pondH/941*100)+'%';p.innerHTML='<i></i><i></i><b></b>';st.appendChild(p);pond128=p;}
 var layer,items=[],raf=0,last=0,t=0,motionOn=true,reduced=false;
 function el(tag,attrs,html){var n=document.createElementNS(NS,tag);for(var k in attrs)n.setAttribute(k,attrs[k]);if(html)n.innerHTML=html;return n;}
 function prep(path){var d=[0];for(var i=1;i<path.length;i++)d.push(d[i-1]+Math.hypot((path[i][0]-path[i-1][0])*W,(path[i][1]-path[i-1][1])*H));return d;}
@@ -207,10 +229,11 @@ function build(){var st=document.getElementById('mainStage');if(!st||document.ge
  ACTORS.forEach(function(A,i){var path=R[A.r],d=prep(path),len=d[d.length-1];var g=el('g',{'data-who':A.a});var inner=el('g',{},ART[A.a]);g.appendChild(inner);layer.appendChild(g);stylize(inner);
   inner.querySelectorAll('[class]').forEach(function(n){n.style.animationDelay=(-(i*.13)%1)+'s';});
   items.push({k:'walk',n:g,inner:inner,path:path,d:d,len:len,sp:A.sp,o:A.o,lag:A.lag||0});});
- st.appendChild(layer);return true;}
+ st.appendChild(layer);buildSky(st);return true;}
 function sc(){var st=document.getElementById('mainStage');return Math.max(1,Math.min(2,650/((st&&st.clientWidth)||1400)));}
 function place(it,time){
  if(it.k==='cloud'){var x=((it.x*W+time*it.sp)%(W+260))-130;it.n.setAttribute('transform','translate('+x.toFixed(1)+' '+(it.y*H).toFixed(1)+')');return;}
+ if(it.k==='pc'){var span=W+it.w+40,nx=((it.x+time*it.sp+it.w+20)%span+span)%span-it.w-20;it.n.style.transform='translateX('+((nx-it.x)/it.w*100).toFixed(2)+'%)';return;}
  if(it.k==='drop'){var a=it.a,u=((time/it.per)+it.ph)%1,x0=a[0],y0=a[1],cx=a[2],cy=a[3],x1=a[4],y1=a[5],ix=(1-u)*(1-u)*x0+2*(1-u)*u*cx+u*u*x1,iy=(1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y1;it.n.setAttribute('transform','translate('+(ix*W).toFixed(1)+' '+(iy*H).toFixed(1)+') scale('+(sc()*(.6+.6*Math.sin(u*Math.PI))).toFixed(2)+')');it.n.style.opacity=(u>.92?(1-u)/.08:1).toFixed(2);return;}
  if(it.k==='petal'){var px2=((it.x*W+time*it.vx+Math.sin(time*.9+it.ph)*26)%(W+60)+W+60)%(W+60)-30,py2=((it.y*H+time*it.vy+Math.sin(time*1.3+it.ph)*10)%(H*.95+40))-20;it.n.setAttribute('transform','translate('+px2.toFixed(1)+' '+py2.toFixed(1)+') scale('+sc()+')');return;}
  if(it.k==='plane'){var span2=W+600,px=((time*it.sp)%(span2*3));if(px>span2){it.n.setAttribute('transform','translate(-999 -999)');return;}it.n.setAttribute('transform','translate('+(px-150).toFixed(1)+' '+(it.y*H+Math.sin(time*.5)*6).toFixed(1)+') scale('+sc()+')');return;}
@@ -223,13 +246,13 @@ function place(it,time){
  it.n.setAttribute('transform','translate('+((a[0]+(b[0]-a[0])*f)*W).toFixed(1)+' '+((a[1]+(b[1]-a[1])*f)*H).toFixed(1)+') scale('+(s*flip).toFixed(2)+' '+s.toFixed(2)+')');}
 function frame(now){raf=0;if(!running())return;if(last)t+=Math.min(now-last,100)/1000;last=now;for(var i=0;i<items.length;i++)place(items[i],t);raf=requestAnimationFrame(frame);}
 function running(){return motionOn&&!reduced&&!document.hidden&&layer&&layer.isConnected;}
-function sync(){if(!layer)return;var on=running();layer.classList.toggle('wk121-off',!on);if(on&&!raf){last=0;raf=requestAnimationFrame(frame);}else if(!on&&raf){cancelAnimationFrame(raf);raf=0;}}
+function sync(){if(!layer)return;var on=running();layer.classList.toggle('wk121-off',!on);if(sky128)sky128.classList.toggle('wk121-off',!on);if(pond128)pond128.classList.toggle('wk121-off',!on);if(on&&!raf){last=0;raf=requestAnimationFrame(frame);}else if(!on&&raf){cancelAnimationFrame(raf);raf=0;}}
 document.addEventListener('wonki-park-motion35',function(e){motionOn=e.active!==false;sync();});
 document.addEventListener('visibilitychange',sync);
 function boot(){try{reduced=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);}catch(_){}
  try{if(localStorage.getItem('wonkiParkLife31')==='off')motionOn=false;}catch(_){}
  if(build()){for(var i=0;i<items.length;i++)place(items[i],0);sync();}
- setInterval(function(){if(!document.getElementById('wk121Life')){layer=null;items=[];if(build()){sync();}}},3000);}
+ setInterval(function(){if(!document.getElementById('wk121Life')){layer=null;items=[];var o1=document.getElementById('wk128Sky'),o2=document.getElementById('wk128Pond');if(o1)o1.remove();if(o2)o2.remove();if(build()){sync();}}},3000);}
 /* 원래 다니던 방문객(#wonkiParkLife)도 같은 그림체로: 새로 그려질 때마다 꾸밈 */
 function styleGuests(){var L=document.getElementById('wonkiParkLife');if(!L)return;var d=L.querySelector('defs[data-wk122]');if(!d){d=document.createElementNS(NS,'defs');d.setAttribute('data-wk122','1');L.insertBefore(d,L.firstChild);L.__wk122g={};}
  var keep=defs,keepG=GR;defs=d;GR=L.__wk122g||(L.__wk122g={});
