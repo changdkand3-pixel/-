@@ -2,7 +2,7 @@
 <style id="wk121-life-style">
 #mainStage>#wk121Life{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;pointer-events:none!important;z-index:25!important;overflow:hidden!important}
 #wk121Life *{pointer-events:none!important}
-#wk121Life .c121{opacity:.62}
+#wk121Life .c121{opacity:.88}
 #wk121Life .flap{animation:wk121flap .32s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
 #wk121Life .legL{animation:wk121leg .55s ease-in-out infinite;transform-box:fill-box;transform-origin:center top}
 #wk121Life .legR{animation:wk121leg .55s ease-in-out infinite reverse;transform-box:fill-box;transform-origin:center top}
@@ -16,11 +16,21 @@
 #wk121Life .flash{animation:wk121flash 2.6s steps(1) infinite}
 #wk121Life .peck{animation:wk121peck .9s ease-in-out infinite;transform-box:fill-box;transform-origin:left bottom}
 #wk121Life .wing{animation:wk121wing .18s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+#wk121Life .wake{animation:wk126wake 1.2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+#wk121Life .paddle{animation:wk126pad 1.1s ease-in-out infinite}
+#wk121Life .rip{animation:wk126rip 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}
+#wk121Life .shim{animation:wk126shim 3.2s ease-in-out infinite alternate}
+#wk121Life .spin{animation:wk126spin 2.2s linear infinite;transform-box:fill-box;transform-origin:center}
 #wk121Life.wk121-off,#wk121Life.wk121-off *{animation-play-state:paused!important}
 @keyframes wk121jug{from{transform:rotate(-30deg) translateY(2px)}to{transform:rotate(30deg) translateY(-2px)}}
 @keyframes wk121flash{0%,88%{opacity:0}90%,94%{opacity:1}96%,100%{opacity:0}}
 @keyframes wk121peck{0%,60%,100%{transform:rotate(0)}75%{transform:rotate(22deg)}}
 @keyframes wk121wing{from{transform:scaleX(1)}to{transform:scaleX(.2)}}
+@keyframes wk126wake{0%{transform:scale(.55);opacity:.85}100%{transform:scale(1.35);opacity:0}}
+@keyframes wk126pad{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-.8px) rotate(2deg)}}
+@keyframes wk126rip{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+@keyframes wk126shim{from{transform:translateX(-14px);opacity:.15}to{transform:translateX(14px);opacity:.6}}
+@keyframes wk126spin{from{transform:rotate(0deg) scaleX(1)}50%{transform:rotate(180deg) scaleX(.35)}to{transform:rotate(360deg) scaleX(1)}}
 @keyframes wk121flap{from{transform:scaleY(1)}to{transform:scaleY(-.55)}}
 @keyframes wk121leg{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
 @keyframes wk121bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.4px)}}
@@ -56,8 +66,8 @@ var ART={
  /* 고양이 */
  cat:'<ellipse cy="2" rx="9" ry="2.4" fill="#16293f" opacity=".18"/><g class="bob"><path class="legL" d="M-5-4 L-5 0" stroke="#666b7a" stroke-width="2.2" stroke-linecap="round"/><path class="legR" d="M5-4 L5 0" stroke="#666b7a" stroke-width="2.2" stroke-linecap="round"/><ellipse cy="-6" rx="7.5" ry="3.8" fill="#8a90a0"/><g class="tail"><path d="M-7-7 Q-14-8 -13-17" stroke="#8a90a0" stroke-width="2" fill="none" stroke-linecap="round"/></g><circle cx="8" cy="-10" r="4" fill="#8a90a0"/><path d="M5-12 L5.6-16.5 L8-13 M9-13 L11-16.5 L11.4-12" fill="#8a90a0"/><circle cx="9.6" cy="-10.6" r=".8" fill="#2f2"/><circle cx="7" cy="-10.6" r=".8" fill="#2f2"/></g>',
  /* 오리 (엄마) */
- duck:'<ellipse cy="1.5" rx="8" ry="2.2" fill="#16293f" opacity=".16"/><g class="bob"><path class="legL" d="M-2-3 L-2 0" stroke="#ff9f1a" stroke-width="1.8"/><path class="legR" d="M2-3 L2 0" stroke="#ff9f1a" stroke-width="1.8"/><ellipse cy="-6" rx="7" ry="4.4" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M-6-8 L-10-10 L-7-5Z" fill="#fff"/><circle cx="5" cy="-12" r="3.6" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M8-12.4 L12-11.6 L8-10.6Z" fill="#ff9f1a"/><circle cx="6" cy="-13" r=".8" fill="#222"/></g>',
- duckling:'<g class="bob"><path class="legL" d="M-1-2 L-1 0" stroke="#ff9f1a" stroke-width="1.2"/><path class="legR" d="M1-2 L1 0" stroke="#ff9f1a" stroke-width="1.2"/><ellipse cy="-3.6" rx="3.8" ry="2.6" fill="#ffe14d"/><circle cx="3" cy="-7" r="2.2" fill="#ffe14d"/><path d="M5-7.2 L7-6.8 L5-6.2Z" fill="#ff9f1a"/></g>',
+ duck:'<ellipse class="wake" cy="-1" rx="10" ry="2.4" fill="none" stroke="#ffffff" stroke-width="1" opacity=".8"/><g class="paddle"><g transform="translate(0 3)"><ellipse cy="-6" rx="7" ry="4.4" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M-6-8 L-10-10 L-7-5Z" fill="#fff"/><circle cx="5" cy="-12" r="3.6" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M8-12.4 L12-11.6 L8-10.6Z" fill="#ff9f1a"/><circle cx="6" cy="-13" r=".8" fill="#222"/></g></g></g>',
+ duckling:'<ellipse class="wake" cy="-.5" rx="5.5" ry="1.4" fill="none" stroke="#ffffff" stroke-width=".8" opacity=".8"/><g class="paddle"><g transform="translate(0 1.6)"><ellipse cy="-3.6" rx="3.8" ry="2.6" fill="#ffe14d"/><circle cx="3" cy="-7" r="2.2" fill="#ffe14d"/><path d="M5-7.2 L7-6.8 L5-6.2Z" fill="#ff9f1a"/></g></g></g>',
  /* 토끼 (동물) */
  bunny:'<ellipse cy="2" rx="7" ry="2" fill="#16293f" opacity=".16"/><g class="hop"><ellipse cy="-5" rx="6" ry="4.4" fill="#f3efe9"/><circle cx="-6" cy="-6" r="2" fill="#fff"/><circle cx="5" cy="-9" r="3.6" fill="#f3efe9"/><ellipse cx="4" cy="-15" rx="1.4" ry="4" fill="#f3efe9"/><ellipse cx="6.4" cy="-15" rx="1.4" ry="4" fill="#f3efe9"/><circle cx="6.6" cy="-9.4" r=".8" fill="#c0392b"/></g>' ,
  /* 아이스크림 판매원 + 수레 */
@@ -104,7 +114,7 @@ var R={
  topRight:[[.78,.505],[.84,.5],[.9,.505],[.95,.52]],
  farLeft:[[.06,.62],[.08,.7],[.1,.78],[.12,.86]],
  bottomMid:[[.36,.97],[.44,.955],[.5,.95],[.56,.955],[.64,.97]],
- pond:[[.37,.535],[.42,.555],[.5,.565],[.58,.555],[.63,.535]]
+ pond:[[.418,.5],[.435,.507],[.46,.511],[.5,.513],[.54,.511],[.565,.507],[.582,.5]]
 };
 var ACTORS=[
  /* 탈인형 */
@@ -123,8 +133,8 @@ var ACTORS=[
  {a:'walker',r:'right',sp:16,o:.3},{a:'walker',r:'plazaTop',sp:17,o:.4},
  /* 동물 */
  {a:'dog',r:'left',sp:34,o:.75},{a:'dog',r:'plazaTop',sp:36,o:.3},{a:'dog',r:'mid',sp:30,o:.6},{a:'cat',r:'right',sp:26,o:.15},{a:'cat',r:'topLeft',sp:20,o:.5},
- {a:'duck',r:'pond',sp:12,o:.3},{a:'duckling',r:'pond',sp:12,o:.3,lag:-12},{a:'duckling',r:'pond',sp:12,o:.3,lag:-21},{a:'duckling',r:'pond',sp:12,o:.3,lag:-30},
- {a:'duck',r:'pond',sp:10,o:.85},{a:'duckling',r:'pond',sp:10,o:.85,lag:-12},
+ {a:'duck',r:'pond',sp:16,o:.3},{a:'duckling',r:'pond',sp:16,o:.3,lag:-13},{a:'duckling',r:'pond',sp:16,o:.3,lag:-23},{a:'duckling',r:'pond',sp:16,o:.3,lag:-33},
+ {a:'duck',r:'pond',sp:13,o:.85},{a:'duckling',r:'pond',sp:13,o:.85,lag:-13},{a:'duckling',r:'pond',sp:13,o:.85,lag:-23},
  {a:'bunny',r:'left',sp:22,o:.85},{a:'bunny',r:'farLeft',sp:20,o:.3},{a:'squirrel',r:'topRight',sp:26,o:.45},{a:'squirrel',r:'topLeft',sp:24,o:.9},
  {a:'pigeon',r:'gate',sp:5,o:.1},{a:'pigeon',r:'gate',sp:5,o:.1,lag:-14},{a:'pigeon',r:'gate',sp:5,o:.1,lag:-25},{a:'pigeon',r:'plazaLow',sp:4,o:.5},{a:'pigeon',r:'plazaLow',sp:4,o:.5,lag:-12}
 ];
@@ -173,7 +183,7 @@ function prep(path){var d=[0];for(var i=1;i<path.length;i++)d.push(d[i-1]+Math.h
 function build(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk121Life'))return false;
  layer=el('svg',{id:'wk121Life',viewBox:'0 0 '+W+' '+H,preserveAspectRatio:'none','aria-hidden':'true'});defs=el('defs',{});layer.appendChild(defs);GR={};
  /* 구름 */
- [[.1,.05,1.1,9],[.45,.1,.8,13],[.75,.04,1.3,7],[.3,.15,.65,16],[.9,.13,.9,11],[.6,.02,1.5,5],[.18,.19,.55,18],[.82,.2,.6,15]].forEach(function(c,i){var g=el('g',{},cloud(c[2]));layer.appendChild(g);items.push({k:'cloud',n:g,x:c[0],y:c[1],sp:c[3]});});
+ [[.1,.05,1.1,24],[.45,.1,.8,32],[.75,.04,1.3,20],[.3,.15,.65,38],[.9,.13,.9,28],[.6,.02,1.5,16],[.18,.19,.55,42],[.82,.2,.6,35],[.02,.11,1,26]].forEach(function(c,i){var g=el('g',{},cloud(c[2]));layer.appendChild(g);items.push({k:'cloud',n:g,x:c[0],y:c[1],sp:c[3]});});
  /* 새 무리 */
  [[.0,.08,60,3],[.35,.18,48,4],[.7,.06,70,2],[.5,.12,55,5],[.15,.03,75,3],[.85,.16,50,2]].forEach(function(b,i){var g=el('g',{});for(var j=0;j<b[3];j++){var one=el('g',{transform:'translate('+(-j*16)+' '+((j%2)*9)+')'},bird());one.firstChild.childNodes[0].style.animationDelay=one.firstChild.childNodes[1].style.animationDelay=(-j*.11)+'s';g.appendChild(one);}layer.appendChild(g);items.push({k:'bird',n:g,x:b[0],y:b[1],sp:b[2],ph:i*1.7});});
 
@@ -185,6 +195,14 @@ function build(){var st=document.getElementById('mainStage');if(!st||document.ge
  ['#ff5a5a','#ffd34d','#3aa0ff','#59d17a','#ff8ab8','#b06be6','#ff9f1a'].forEach(function(c,i){var g=el('g',{},upb(c));layer.appendChild(g);items.push({k:'rise',n:g,x:.25+i*.08,y0:.62-(i%3)*.05,ph:i*4.3,per:26+i*3});});
  /* 꽃밭 위 나비 */
  [[.38,.58],[.62,.58],[.2,.66],[.8,.66],[.5,.86],[.12,.4],[.88,.4],[.3,.9],[.7,.9]].forEach(function(f,i){var g=el('g',{},fly(['#ffd34d','#ff8ab8','#9ee7ff','#fff','#b06be6'][i%5]));layer.appendChild(g);items.push({k:'flutter',n:g,x:f[0],y:f[1],ph:i*1.3,rx:22+(i%3)*8,ry:10+(i%2)*6});});
+
+ /* 126차: 분수 물 — 물줄기 물방울·떨어지는 곳 물결·물 위 반짝임 */
+ var W0=el('g',{id:'wk126Water'});layer.appendChild(W0);
+ [[.468,.481,.447,.446,.426,.496],[.474,.481,.459,.452,.443,.503],[.532,.481,.553,.446,.574,.496],[.526,.481,.541,.452,.557,.503],[.492,.47,.49,.43,.478,.484],[.508,.47,.51,.43,.522,.484]].forEach(function(a,k){for(var d=0;d<6;d++){var g=el('g',{},'<circle r="2.1" fill="#f2fbff" stroke="#9fdcff" stroke-width=".5"/><circle cx="-.6" cy="-.6" r=".7" fill="#fff"/>');W0.appendChild(g);items.push({k:'drop',n:g,a:a,ph:d/6+k*.07,per:1.25+(k%2)*.2});}});
+ [[.426,.496],[.443,.503],[.574,.496],[.557,.503],[.478,.486],[.522,.486],[.44,.49],[.56,.49],[.47,.505],[.53,.505],[.415,.5],[.585,.5]].forEach(function(r,k){var g=el('ellipse',{class:'rip',cx:(r[0]*W).toFixed(1),cy:(r[1]*H).toFixed(1),rx:'9',ry:'2.6',fill:'none',stroke:'#ffffff','stroke-width':'1.1'});g.style.animationDelay=(-k*.37)+'s';W0.appendChild(g);});
+ [[.43,.493,22],[.47,.508,30],[.53,.508,26],[.57,.493,20],[.5,.502,34]].forEach(function(r,k){var g=el('ellipse',{class:'shim',cx:(r[0]*W).toFixed(1),cy:(r[1]*H).toFixed(1),rx:String(r[2]),ry:'1.2',fill:'#ffffff'});g.style.animationDelay=(-k*.8)+'s';W0.appendChild(g);});
+ /* 126차: 흩날리는 꽃잎 */
+ for(var q=0;q<34;q++){var col=['#ffc2d6','#ffd9e6','#ffffff','#ffb0c8','#ffe3ec'][q%5];var g=el('g',{},'<path class="spin" d="M0-3.6 C2.6-3 3-0.4 0 3.4 C-3-0.4 -2.6-3 0-3.6Z" fill="'+col+'" stroke="#f08aa8" stroke-width=".45"/>');g.firstChild.style.animationDelay=(-q*.31)+'s';g.firstChild.style.animationDuration=(1.6+(q%5)*.35)+'s';layer.appendChild(g);items.push({k:'petal',n:g,x:((q*0.6180339)%1),y:((q*0.381966)%1)*.95,vx:28+(q%7)*6,vy:16+(q%5)*5,ph:q*1.9});}
  /* 동물·직원 */
  ACTORS.forEach(function(A,i){var path=R[A.r],d=prep(path),len=d[d.length-1];var g=el('g',{'data-who':A.a});var inner=el('g',{},ART[A.a]);g.appendChild(inner);layer.appendChild(g);stylize(inner);
   inner.querySelectorAll('[class]').forEach(function(n){n.style.animationDelay=(-(i*.13)%1)+'s';});
@@ -193,6 +211,8 @@ function build(){var st=document.getElementById('mainStage');if(!st||document.ge
 function sc(){var st=document.getElementById('mainStage');return Math.max(1,Math.min(2,650/((st&&st.clientWidth)||1400)));}
 function place(it,time){
  if(it.k==='cloud'){var x=((it.x*W+time*it.sp)%(W+260))-130;it.n.setAttribute('transform','translate('+x.toFixed(1)+' '+(it.y*H).toFixed(1)+')');return;}
+ if(it.k==='drop'){var a=it.a,u=((time/it.per)+it.ph)%1,x0=a[0],y0=a[1],cx=a[2],cy=a[3],x1=a[4],y1=a[5],ix=(1-u)*(1-u)*x0+2*(1-u)*u*cx+u*u*x1,iy=(1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y1;it.n.setAttribute('transform','translate('+(ix*W).toFixed(1)+' '+(iy*H).toFixed(1)+') scale('+(sc()*(.6+.6*Math.sin(u*Math.PI))).toFixed(2)+')');it.n.style.opacity=(u>.92?(1-u)/.08:1).toFixed(2);return;}
+ if(it.k==='petal'){var px2=((it.x*W+time*it.vx+Math.sin(time*.9+it.ph)*26)%(W+60)+W+60)%(W+60)-30,py2=((it.y*H+time*it.vy+Math.sin(time*1.3+it.ph)*10)%(H*.95+40))-20;it.n.setAttribute('transform','translate('+px2.toFixed(1)+' '+py2.toFixed(1)+') scale('+sc()+')');return;}
  if(it.k==='plane'){var span2=W+600,px=((time*it.sp)%(span2*3));if(px>span2){it.n.setAttribute('transform','translate(-999 -999)');return;}it.n.setAttribute('transform','translate('+(px-150).toFixed(1)+' '+(it.y*H+Math.sin(time*.5)*6).toFixed(1)+') scale('+sc()+')');return;}
  if(it.k==='rise'){var q=((time+it.ph)%it.per)/it.per,yy=(it.y0-q*(it.y0+.12))*H,xx=(it.x+Math.sin(q*9+it.ph)*.015)*W;it.n.setAttribute('transform','translate('+xx.toFixed(1)+' '+yy.toFixed(1)+') scale('+(sc()*(1-q*.5)).toFixed(2)+')');it.n.style.opacity=(q>.85?(1-q)/.15:1).toFixed(2);return;}
  if(it.k==='flutter'){var u=time*1.1+it.ph,fx=it.x*W+Math.sin(u)*it.rx+Math.sin(u*2.3)*6,fy=it.y*H+Math.sin(u*1.7)*it.ry-Math.abs(Math.sin(u*3))*4;it.n.setAttribute('transform','translate('+fx.toFixed(1)+' '+fy.toFixed(1)+') scale('+sc()+')');return;}
