@@ -757,6 +757,8 @@ _fi_url2='https://drive.google.com/file/d/11QULVDk4mCKFnTGIfdR6uJnLtxp4Sq5y/view
 _fi116=_fi116.replace('__URLX__',_fi_mix(_fi_url,_fi_pw))
 _fi116=_fi116.replace('__URLX2__',_fi_mix(_fi_url2,_fi_pw))
 final = final + '\n' + _fi116
+_lf121=open(sys.argv[2].replace('world_final.webp','life-121.html'),encoding='utf-8').read()  # 121차: 메인 지도 구름·새·동물·직원
+final = final + '\n' + _lf121
 t = t.rstrip('\n') + '\n' + final + '\n'
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

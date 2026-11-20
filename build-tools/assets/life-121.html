@@ -1,0 +1,111 @@
+<!-- 121차: 메인 지도에 구름·새·동물·직원(탈인형·정비사·청소부·안내원·풍선 판매원) — 그림 파일 없이 SVG로 그림 -->
+<style id="wk121-life-style">
+#mainStage>#wk121Life{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;pointer-events:none!important;z-index:25!important;overflow:hidden!important}
+#wk121Life *{pointer-events:none!important}
+#wk121Life .c121{opacity:.62}
+#wk121Life .flap{animation:wk121flap .32s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
+#wk121Life .legL{animation:wk121leg .55s ease-in-out infinite;transform-box:fill-box;transform-origin:center top}
+#wk121Life .legR{animation:wk121leg .55s ease-in-out infinite reverse;transform-box:fill-box;transform-origin:center top}
+#wk121Life .bob{animation:wk121bob .55s ease-in-out infinite}
+#wk121Life .hop{animation:wk121hop .5s ease-in-out infinite}
+#wk121Life .wave{animation:wk121wave .8s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:left bottom}
+#wk121Life .sweep{animation:wk121sweep .7s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center top}
+#wk121Life .tail{animation:wk121tail .4s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:left center}
+#wk121Life .sway{animation:wk121sway 1.6s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
+#wk121Life.wk121-off,#wk121Life.wk121-off *{animation-play-state:paused!important}
+@keyframes wk121flap{from{transform:scaleY(1)}to{transform:scaleY(-.55)}}
+@keyframes wk121leg{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+@keyframes wk121bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.4px)}}
+@keyframes wk121hop{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes wk121wave{from{transform:rotate(-25deg)}to{transform:rotate(30deg)}}
+@keyframes wk121sweep{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
+@keyframes wk121tail{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+@keyframes wk121sway{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+@media (prefers-reduced-motion:reduce){#wk121Life *{animation:none!important}}
+</style>
+<script id="wk121-life-js">(function(){'use strict';
+var W=1672,H=941,NS='http://www.w3.org/2000/svg';
+/* ---------- 그림 (모두 새로 그린 원기랜드 그림, 발밑이 0,0) ---------- */
+function legs(c){return '<path class="legL" d="M-3-9 L-4 0" stroke="'+c+'" stroke-width="4" stroke-linecap="round"/><path class="legR" d="M3-9 L4 0" stroke="'+c+'" stroke-width="4" stroke-linecap="round"/>';}
+var SH='<ellipse cy="2" rx="10" ry="3" fill="#16293f" opacity=".2"/>';
+var ART={
+ /* 원기랜드 토끼 탈인형: 흰 토끼 · 왕관 · 빨간 W 망토 */
+ rabbit:SH+legs('#f4f4f4')+'<g class="bob"><path d="M-9-22 Q-13-6 -8-8 L8-8 Q13-6 9-22Z" fill="#d8282f"/><text x="0" y="-11" text-anchor="middle" font-size="8" font-weight="900" fill="#ffd34d" font-family="system-ui">W</text><ellipse cy="-16" rx="7" ry="8" fill="#fff" stroke="#ccd" stroke-width=".8"/><g class="wave"><path d="M6-19 L13-27" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g><path d="M-6-19 L-11-12" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cy="-32" r="10" fill="#fff" stroke="#ccd" stroke-width=".8"/><ellipse cx="-4.5" cy="-49" rx="3.2" ry="10" fill="#fff" stroke="#ccd" stroke-width=".8"/><ellipse cx="4.5" cy="-49" rx="3.2" ry="10" fill="#fff" stroke="#ccd" stroke-width=".8"/><ellipse cx="-4.5" cy="-49" rx="1.5" ry="7" fill="#ffb6c8"/><ellipse cx="4.5" cy="-49" rx="1.5" ry="7" fill="#ffb6c8"/><path d="M-6-40 L-6-45 L-3-42 L0-46 L3-42 L6-45 L6-40Z" fill="#ffd34d" stroke="#d99a00" stroke-width=".6"/><circle cx="-3.5" cy="-33" r="1.4" fill="#2a2a3a"/><circle cx="3.5" cy="-33" r="1.4" fill="#2a2a3a"/><ellipse cy="-29" rx="1.6" ry="1.1" fill="#ff7d9a"/><circle cx="-6.5" cy="-29" r="1.8" fill="#ffc0cf" opacity=".8"/><circle cx="6.5" cy="-29" r="1.8" fill="#ffc0cf" opacity=".8"/></g>',
+ /* 곰 탈인형 */
+ bear:SH+legs('#8a5a32')+'<g class="bob"><ellipse cy="-16" rx="8" ry="9" fill="#9b6838"/><ellipse cy="-15" rx="5" ry="6" fill="#e8c79c"/><g class="wave"><path d="M6-20 L13-28" stroke="#9b6838" stroke-width="4.5" stroke-linecap="round"/></g><path d="M-6-20 L-11-12" stroke="#9b6838" stroke-width="4.5" stroke-linecap="round"/><path d="M-4-25 L0-23 L4-25 L4-21 L0-23 L-4-21Z" fill="#3aa0ff"/><circle cy="-34" r="10" fill="#9b6838"/><circle cx="-8" cy="-42" r="4" fill="#9b6838"/><circle cx="8" cy="-42" r="4" fill="#9b6838"/><circle cx="-8" cy="-42" r="2" fill="#e8c79c"/><circle cx="8" cy="-42" r="2" fill="#e8c79c"/><ellipse cy="-31" rx="5" ry="3.6" fill="#e8c79c"/><circle cx="-3.6" cy="-36" r="1.3" fill="#222"/><circle cx="3.6" cy="-36" r="1.3" fill="#222"/><ellipse cy="-32.5" rx="1.8" ry="1.2" fill="#3a2516"/></g>',
+ /* 정비사: 노란 안전모 · 파란 작업복 · 스패너 · 공구상자 */
+ mech:SH+legs('#1f4f9a')+'<g class="bob"><path d="M-6-21 L6-21 L7-8 L-7-8Z" fill="#2a63c4"/><path d="M-4-21 L-4-14 L4-14 L4-21" fill="none" stroke="#163f86" stroke-width="1.2"/><path d="M-6-18 L-11-10" stroke="#2a63c4" stroke-width="4" stroke-linecap="round"/><rect x="-16" y="-11" width="9" height="6" rx="1" fill="#e2412f" stroke="#8d1e12" stroke-width=".6"/><g class="sway"><path d="M6-18 L11-11" stroke="#2a63c4" stroke-width="4" stroke-linecap="round"/><path d="M11-11 L16-18" stroke="#9aa6b2" stroke-width="2.2" stroke-linecap="round"/><circle cx="16.5" cy="-19" r="2.2" fill="none" stroke="#9aa6b2" stroke-width="1.5"/></g><circle cy="-27" r="6.5" fill="#f2c39c"/><path d="M-8-29 Q-7-38 0-38 Q7-38 8-29Z" fill="#ffcc1d" stroke="#c99600" stroke-width=".7"/><rect x="-9" y="-30" width="18" height="2" rx="1" fill="#ffcc1d"/></g>',
+ /* 청소부: 초록 작업복 · 모자 · 빗자루 */
+ clean:SH+legs('#2f6b3d')+'<g class="bob"><path d="M-6-21 L6-21 L7-8 L-7-8Z" fill="#3fa65a"/><path d="M-7-14 L7-14" stroke="#e9f78c" stroke-width="1.6"/><path d="M-6-18 L-9-10" stroke="#3fa65a" stroke-width="4" stroke-linecap="round"/><path d="M6-18 L10-11" stroke="#3fa65a" stroke-width="4" stroke-linecap="round"/><g class="sweep"><path d="M10-14 L15 0" stroke="#a7743c" stroke-width="2" stroke-linecap="round"/><path d="M11 0 L19 0 L17-4 L13-4Z" fill="#e7c25a" stroke="#a27b20" stroke-width=".6"/></g><circle cy="-27" r="6.5" fill="#dba87c"/><path d="M-7-29 Q-6-36 0-36 Q6-36 7-29Z" fill="#2f7d45"/><path d="M5-30 L11-29" stroke="#2f7d45" stroke-width="2.2" stroke-linecap="round"/></g>',
+ /* 쓰레기 수레 */
+ cart:'<ellipse cy="2" rx="12" ry="3" fill="#16293f" opacity=".2"/><rect x="-10" y="-17" width="20" height="14" rx="2" fill="#3fa65a" stroke="#22663a" stroke-width="1"/><path d="M-6-17 L-6-21 L6-21 L6-17" fill="none" stroke="#22663a" stroke-width="1.4"/><text x="0" y="-7" text-anchor="middle" font-size="7" fill="#fff" font-family="system-ui">♻</text><circle cx="-6" cy="-2" r="3" fill="#333"/><circle cx="6" cy="-2" r="3" fill="#333"/>',
+ /* 안내원: 빨간 조끼 · 깃발 */
+ guide:SH+legs('#33415c')+'<g class="bob"><path d="M-6-21 L6-21 L7-8 L-7-8Z" fill="#ffffff"/><path d="M-6-21 L-2-21 L-3-8 L-7-8Z M6-21 L2-21 L3-8 L7-8Z" fill="#e8413a"/><path d="M-6-18 L-10-11" stroke="#f5c8a5" stroke-width="3.6" stroke-linecap="round"/><path d="M6-18 L10-25" stroke="#f5c8a5" stroke-width="3.6" stroke-linecap="round"/><g class="sway"><path d="M10-24 L10-46" stroke="#555" stroke-width="1.4"/><path d="M10-46 L22-42 L10-38Z" fill="#ffd34d" stroke="#d99a00" stroke-width=".6"/></g><circle cy="-27" r="6.5" fill="#f5c8a5"/><path d="M-6-28 Q-5-35 1-34 Q7-33 6-27 L3-30 L-5-28Z" fill="#2a2a3a"/><path d="M-7-31 L7-31 L6-34 L-6-34Z" fill="#e8413a"/></g>',
+ /* 풍선 판매원 */
+ balloon:SH+legs('#5a3d7a')+'<g class="bob"><path d="M-6-21 L6-21 L7-8 L-7-8Z" fill="#ff8ab8"/><path d="M-6-18 L-10-11" stroke="#dba87c" stroke-width="3.6" stroke-linecap="round"/><path d="M6-18 L10-24" stroke="#dba87c" stroke-width="3.6" stroke-linecap="round"/><g class="sway"><path d="M10-24 Q8-40 2-52 M10-24 Q12-42 12-56 M10-24 Q14-38 21-50" stroke="#fff" stroke-width=".7" fill="none"/><ellipse cx="2" cy="-56" rx="5" ry="6" fill="#ff5a5a"/><ellipse cx="12" cy="-60" rx="5" ry="6" fill="#ffd34d"/><ellipse cx="21" cy="-54" rx="5" ry="6" fill="#3aa0ff"/><ellipse cx="7" cy="-50" rx="4" ry="5" fill="#59d17a"/></g><circle cy="-27" r="6.5" fill="#dba87c"/><path d="M-7-28 Q-6-36 0-36 Q6-36 7-28 Q4-31 0-31 Q-4-31 -7-28Z" fill="#7a4b2a"/><circle cy="-37" r="2.5" fill="#ff8ab8"/></g>',
+ /* 강아지 */
+ dog:'<ellipse cy="2" rx="11" ry="2.6" fill="#16293f" opacity=".18"/><g class="bob"><path class="legL" d="M-6-5 L-6 0" stroke="#b9773d" stroke-width="2.6" stroke-linecap="round"/><path class="legR" d="M6-5 L6 0" stroke="#b9773d" stroke-width="2.6" stroke-linecap="round"/><ellipse cy="-7" rx="9" ry="4.6" fill="#d38f4f"/><g class="tail"><path d="M-8-9 Q-13-14 -12-17" stroke="#d38f4f" stroke-width="2.4" fill="none" stroke-linecap="round"/></g><circle cx="9" cy="-12" r="4.6" fill="#d38f4f"/><path d="M6-15 Q5-9 8-11" fill="#8a5528"/><ellipse cx="13" cy="-11" rx="2" ry="1.6" fill="#e8b98a"/><circle cx="14.6" cy="-11.4" r=".9" fill="#222"/><circle cx="10" cy="-13.4" r=".9" fill="#222"/><path d="M4-9 L13-9" stroke="#e8413a" stroke-width="1.4"/></g>',
+ /* 고양이 */
+ cat:'<ellipse cy="2" rx="9" ry="2.4" fill="#16293f" opacity=".18"/><g class="bob"><path class="legL" d="M-5-4 L-5 0" stroke="#666b7a" stroke-width="2.2" stroke-linecap="round"/><path class="legR" d="M5-4 L5 0" stroke="#666b7a" stroke-width="2.2" stroke-linecap="round"/><ellipse cy="-6" rx="7.5" ry="3.8" fill="#8a90a0"/><g class="tail"><path d="M-7-7 Q-14-8 -13-17" stroke="#8a90a0" stroke-width="2" fill="none" stroke-linecap="round"/></g><circle cx="8" cy="-10" r="4" fill="#8a90a0"/><path d="M5-12 L5.6-16.5 L8-13 M9-13 L11-16.5 L11.4-12" fill="#8a90a0"/><circle cx="9.6" cy="-10.6" r=".8" fill="#2f2"/><circle cx="7" cy="-10.6" r=".8" fill="#2f2"/></g>',
+ /* 오리 (엄마) */
+ duck:'<ellipse cy="1.5" rx="8" ry="2.2" fill="#16293f" opacity=".16"/><g class="bob"><path class="legL" d="M-2-3 L-2 0" stroke="#ff9f1a" stroke-width="1.8"/><path class="legR" d="M2-3 L2 0" stroke="#ff9f1a" stroke-width="1.8"/><ellipse cy="-6" rx="7" ry="4.4" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M-6-8 L-10-10 L-7-5Z" fill="#fff"/><circle cx="5" cy="-12" r="3.6" fill="#fff" stroke="#d7dde6" stroke-width=".6"/><path d="M8-12.4 L12-11.6 L8-10.6Z" fill="#ff9f1a"/><circle cx="6" cy="-13" r=".8" fill="#222"/></g>',
+ duckling:'<g class="bob"><path class="legL" d="M-1-2 L-1 0" stroke="#ff9f1a" stroke-width="1.2"/><path class="legR" d="M1-2 L1 0" stroke="#ff9f1a" stroke-width="1.2"/><ellipse cy="-3.6" rx="3.8" ry="2.6" fill="#ffe14d"/><circle cx="3" cy="-7" r="2.2" fill="#ffe14d"/><path d="M5-7.2 L7-6.8 L5-6.2Z" fill="#ff9f1a"/></g>',
+ /* 토끼 (동물) */
+ bunny:'<ellipse cy="2" rx="7" ry="2" fill="#16293f" opacity=".16"/><g class="hop"><ellipse cy="-5" rx="6" ry="4.4" fill="#f3efe9"/><circle cx="-6" cy="-6" r="2" fill="#fff"/><circle cx="5" cy="-9" r="3.6" fill="#f3efe9"/><ellipse cx="4" cy="-15" rx="1.4" ry="4" fill="#f3efe9"/><ellipse cx="6.4" cy="-15" rx="1.4" ry="4" fill="#f3efe9"/><circle cx="6.6" cy="-9.4" r=".8" fill="#c0392b"/></g>'
+};
+/* ---------- 다니는 길 (지도 비율 0~1) ---------- */
+var R={
+ plazaTop:[[.24,.47],[.31,.495],[.39,.485],[.45,.455],[.5,.44],[.55,.455],[.62,.485],[.7,.495],[.77,.47]],
+ fountain:[[.36,.6],[.43,.625],[.5,.635],[.57,.625],[.64,.6]],
+ left:[[.15,.5],[.21,.515],[.255,.58],[.255,.68],[.25,.78],[.25,.84]],
+ right:[[.85,.5],[.79,.515],[.755,.58],[.755,.68],[.758,.78]],
+ mid:[[.5,.6],[.5,.7],[.5,.8],[.5,.92]],
+ gate:[[.43,.41],[.47,.425],[.53,.425],[.57,.41]],
+ lower:[[.46,.95],[.5,.94],[.54,.95]],
+ pond:[[.37,.535],[.42,.555],[.5,.565],[.58,.555],[.63,.535]]
+};
+var ACTORS=[
+ {a:'rabbit',r:'plazaTop',sp:18,o:0},{a:'bear',r:'fountain',sp:16,o:.45},{a:'rabbit',r:'right',sp:17,o:.6},
+ {a:'mech',r:'left',sp:20,o:.2,with:'',tag:1},{a:'mech',r:'gate',sp:14,o:.7},
+ {a:'clean',r:'mid',sp:11,o:.1},{a:'cart',r:'mid',sp:11,o:.1,lag:-24},{a:'clean',r:'right',sp:12,o:.55},
+ {a:'guide',r:'plazaTop',sp:15,o:.55},{a:'balloon',r:'fountain',sp:13,o:.05},
+ {a:'dog',r:'left',sp:34,o:.75},{a:'dog',r:'plazaTop',sp:36,o:.3},{a:'cat',r:'right',sp:26,o:.15},
+ {a:'duck',r:'pond',sp:12,o:.3},{a:'duckling',r:'pond',sp:12,o:.3,lag:-12},{a:'duckling',r:'pond',sp:12,o:.3,lag:-21},{a:'duckling',r:'pond',sp:12,o:.3,lag:-30},
+ {a:'bunny',r:'left',sp:22,o:.85}
+];
+function cloud(s){return '<g class="c121" transform="scale('+s+')"><ellipse cx="0" cy="0" rx="46" ry="16" fill="#fff"/><circle cx="-20" cy="-8" r="16" fill="#fff"/><circle cx="6" cy="-16" r="21" fill="#fff"/><circle cx="28" cy="-6" r="14" fill="#fff"/></g>';}
+function bird(){return '<g><path class="flap" d="M-7 0 Q-3.5-5 0 0" stroke="#2c3550" stroke-width="1.8" fill="none" stroke-linecap="round"/><path class="flap" d="M0 0 Q3.5-5 7 0" stroke="#2c3550" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>';}
+var layer,items=[],raf=0,last=0,t=0,motionOn=true,reduced=false;
+function el(tag,attrs,html){var n=document.createElementNS(NS,tag);for(var k in attrs)n.setAttribute(k,attrs[k]);if(html)n.innerHTML=html;return n;}
+function prep(path){var d=[0];for(var i=1;i<path.length;i++)d.push(d[i-1]+Math.hypot((path[i][0]-path[i-1][0])*W,(path[i][1]-path[i-1][1])*H));return d;}
+function build(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk121Life'))return false;
+ layer=el('svg',{id:'wk121Life',viewBox:'0 0 '+W+' '+H,preserveAspectRatio:'none','aria-hidden':'true'});
+ /* 구름 */
+ [[.1,.05,1.1,9],[.45,.1,.8,13],[.75,.04,1.3,7],[.3,.15,.65,16],[.9,.13,.9,11]].forEach(function(c,i){var g=el('g',{},cloud(c[2]));layer.appendChild(g);items.push({k:'cloud',n:g,x:c[0],y:c[1],sp:c[3]});});
+ /* 새 무리 */
+ [[.0,.08,60,3],[.35,.18,48,4],[.7,.06,70,2]].forEach(function(b,i){var g=el('g',{});for(var j=0;j<b[3];j++){var one=el('g',{transform:'translate('+(-j*16)+' '+((j%2)*9)+')'},bird());one.firstChild.childNodes[0].style.animationDelay=one.firstChild.childNodes[1].style.animationDelay=(-j*.11)+'s';g.appendChild(one);}layer.appendChild(g);items.push({k:'bird',n:g,x:b[0],y:b[1],sp:b[2],ph:i*1.7});});
+ /* 동물·직원 */
+ ACTORS.forEach(function(A,i){var path=R[A.r],d=prep(path),len=d[d.length-1];var g=el('g',{'data-who':A.a});var inner=el('g',{},ART[A.a]);g.appendChild(inner);layer.appendChild(g);
+  inner.querySelectorAll('[class]').forEach(function(n){n.style.animationDelay=(-(i*.13)%1)+'s';});
+  items.push({k:'walk',n:g,inner:inner,path:path,d:d,len:len,sp:A.sp,o:A.o,lag:A.lag||0});});
+ st.appendChild(layer);return true;}
+function sc(){var st=document.getElementById('mainStage');return Math.max(1,Math.min(2,650/((st&&st.clientWidth)||1400)));}
+function place(it,time){
+ if(it.k==='cloud'){var x=((it.x*W+time*it.sp)%(W+260))-130;it.n.setAttribute('transform','translate('+x.toFixed(1)+' '+(it.y*H).toFixed(1)+')');return;}
+ if(it.k==='bird'){var span=W+400,x2=((it.x*W+time*it.sp)%span)-200,y=it.y*H+Math.sin(time*.6+it.ph)*10;it.n.setAttribute('transform','translate('+x2.toFixed(1)+' '+y.toFixed(1)+') scale('+sc()+')');return;}
+ var L=it.len,dist=((it.o*L*2+time*it.sp+it.lag)%(2*L)+2*L)%(2*L),back=dist>L;if(back)dist=2*L-dist;
+ var i=1;while(i<it.d.length-1&&it.d[i]<dist)i++;var a=it.path[i-1],b=it.path[i],f=(dist-it.d[i-1])/((it.d[i]-it.d[i-1])||1);
+ var dx=(b[0]-a[0])*(back?-1:1),flip=dx<0?-1:1,s=sc()*1.2;
+ it.n.setAttribute('transform','translate('+((a[0]+(b[0]-a[0])*f)*W).toFixed(1)+' '+((a[1]+(b[1]-a[1])*f)*H).toFixed(1)+') scale('+(s*flip).toFixed(2)+' '+s.toFixed(2)+')');}
+function frame(now){raf=0;if(!running())return;if(last)t+=Math.min(now-last,100)/1000;last=now;for(var i=0;i<items.length;i++)place(items[i],t);raf=requestAnimationFrame(frame);}
+function running(){return motionOn&&!reduced&&!document.hidden&&layer&&layer.isConnected;}
+function sync(){if(!layer)return;var on=running();layer.classList.toggle('wk121-off',!on);if(on&&!raf){last=0;raf=requestAnimationFrame(frame);}else if(!on&&raf){cancelAnimationFrame(raf);raf=0;}}
+document.addEventListener('wonki-park-motion35',function(e){motionOn=e.active!==false;sync();});
+document.addEventListener('visibilitychange',sync);
+function boot(){try{reduced=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);}catch(_){}
+ try{if(localStorage.getItem('wonkiParkLife31')==='off')motionOn=false;}catch(_){}
+ if(build()){for(var i=0;i<items.length;i++)place(items[i],0);sync();}
+ setInterval(function(){if(!document.getElementById('wk121Life')){layer=null;items=[];if(build()){sync();}}},3000);}
+window.wk121Life={count:function(){return items.length;},who:function(){return items.filter(function(i){return i.k==='walk';}).map(function(i){return i.n.getAttribute('data-who');});}};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();</script>
