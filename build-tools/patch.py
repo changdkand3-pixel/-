@@ -726,6 +726,9 @@ t=t[:_a]+_eb52+'\n'+t[_a:]
 rep(""" const routes=[[[.32,.53],[.39,.58],[.5,.63],[.61,.58],[.68,.53],[.62,.61],[.5,.69],[.38,.61],[.32,.53]],[[.49,.94],[.5,.83],[.45,.76],[.37,.69],[.29,.64],[.37,.69],[.45,.76],[.5,.83],[.49,.94]],[[.51,.93],[.51,.82],[.57,.75],[.65,.69],[.74,.63],[.65,.69],[.57,.75],[.51,.82],[.51,.93]],[[.22,.46],[.3,.49],[.38,.48],[.45,.45],[.5,.43],[.55,.45],[.62,.48],[.7,.49],[.79,.46],[.7,.49],[.62,.48],[.55,.45],[.5,.43],[.45,.45],[.38,.48],[.3,.49],[.22,.46]]];""",""" const routes=[[[.33,.6],[.4,.625],[.5,.635],[.6,.625],[.67,.6],[.6,.625],[.5,.635],[.4,.625],[.33,.6]],[[.15,.5],[.21,.515],[.255,.58],[.255,.68],[.25,.78],[.25,.84],[.25,.78],[.255,.68],[.255,.58],[.21,.515],[.15,.5]],[[.85,.5],[.79,.515],[.755,.58],[.755,.68],[.758,.78],[.755,.68],[.755,.58],[.79,.515],[.85,.5]],[[.22,.46],[.3,.49],[.38,.48],[.45,.45],[.5,.43],[.55,.45],[.62,.48],[.7,.49],[.79,.46],[.7,.49],[.62,.48],[.55,.45],[.5,.43],[.45,.45],[.38,.48],[.3,.49],[.22,.46]],[[.5,.6],[.5,.7],[.5,.8],[.5,.92],[.5,.8],[.5,.7],[.5,.6]],[[.2,.5],[.28,.52],[.36,.51],[.42,.47],[.5,.455],[.58,.47],[.64,.51],[.72,.52],[.8,.5],[.72,.52],[.64,.51],[.58,.47],[.5,.455],[.42,.47],[.36,.51],[.28,.52],[.2,.5]]];""")
 rep("""path=routes[i%4]""","""path=routes[i%routes.length]""")
 
+# ---------- 48. 131차: 지하철 천하통일 문제 전투에서 수학 문제를 쓰려고 학년별 문제 묶음(PACKS)을 window.WK_PACKS로 열어 둠
+rep("""const PACKS={};""","""const PACKS={};window.WK_PACKS=PACKS;""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
@@ -767,7 +770,10 @@ _u128=lambda n,m:'data:'+m+';base64,'+_b128.b64encode(open(sys.argv[2].replace('
 _lf121=_lf121.replace('__SKYBAND__',_u128('sky_band_128.webp','image/webp')).replace('__SKYCLOUDS__',_u128('sky_clouds_128.webp','image/webp')).replace('__PONDMASK__',_u128('pond_mask_128.png','image/png')).replace('__SKYMETA__',open(sys.argv[2].replace('world_final.webp','sky_128.json'),encoding='utf-8').read().strip())
 final = final + '\n' + _lf121
 _vc129=open(sys.argv[2].replace('world_final.webp','version-check.html'),encoding='utf-8').read()  # 129차: 새 버전 알림
-_sw130=open(sys.argv[2].replace('world_final.webp','subway-130.html'),encoding='utf-8').read().replace('__SUBWAY__',open(sys.argv[2].replace('world_final.webp','subway130.json'),encoding='utf-8').read())  # 130차: 지하철 천하통일(지도 자료 scripts/subway130/build.py)
+_wd131={}
+for _k131 in 'emh':
+    _wd131[_k131]=[[p.split('=',1)[0].strip(),p.split('=',1)[1].strip()] for p in open(sys.argv[2].replace('assets/world_final.webp','scripts/english108/words_'+_k131+'.txt'),encoding='utf-8').read().replace('\n',';').split(';') if '=' in p]
+_sw130=open(sys.argv[2].replace('world_final.webp','subway-130.html'),encoding='utf-8').read().replace('__SUBWAY__',open(sys.argv[2].replace('world_final.webp','subway130.json'),encoding='utf-8').read()).replace('__WORDS__',_j.dumps(_wd131,ensure_ascii=False))  # 130차: 지하철 천하통일(지도 자료 scripts/subway130/build.py)
 final = final + '\n' + _sw130
 final = final + '\n' + _vc129
 t = t.rstrip('\n') + '\n' + final + '\n'

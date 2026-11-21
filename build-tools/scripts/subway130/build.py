@@ -25,7 +25,7 @@ for s in st:
         k=(r**0.62)/r;x*=k;y*=k
     pts.append([x,y])
 mnx=min(p[0] for p in pts);mxx=max(p[0] for p in pts);mny=min(p[1] for p in pts);mxy=max(p[1] for p in pts)
-W=2000;Hh=round(W*(mxy-mny)/(mxx-mnx));pad=40
+W=3200;Hh=round(W*(mxy-mny)/(mxx-mnx));pad=40
 P=[[round(pad+(p[0]-mnx)/(mxx-mnx)*(W-2*pad),1),round(pad+(p[1]-mny)/(mxy-mny)*(Hh-2*pad),1)] for p in pts]
 E=set();edges=[]
 adj=collections.defaultdict(dict)

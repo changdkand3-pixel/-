@@ -28,7 +28,11 @@ for(const vw of [{width:1280,height:860},{width:390,height:800}]){
  ok(await p.evaluate(()=>wk130Game.state().gold[0])===g0-40,vw.width+' 개발하면 금 -40');
  const r=await p.evaluate(()=>{const G=wk130Game.state(),D=wk130Game.data;const adj={};D.e.forEach(e=>{(adj[e[0]]=adj[e[0]]||[]).push(e[1]);(adj[e[1]]=adj[e[1]]||[]).push(e[0]);});
   for(let i=0;i<G.o.length;i++){if(G.o[i]!==0||G.act[i])continue;const en=(adj[i]||[]).filter(j=>G.o[j]!==0);if(en.length){G.t[i]=900;return [i,en[0]];}}return null;});
- await p.evaluate(i=>wk130Game.tap(i),r[0]);await p.waitForTimeout(100);await p.click('#wk130Game .side [data-a="atk"]');await p.evaluate(i=>wk130Game.tap(i),r[1]);await p.waitForTimeout(200);
+ await p.evaluate(i=>wk130Game.tap(i),r[0]);await p.waitForTimeout(100);await p.click('#wk130Game .side [data-a="atk"]');await p.evaluate(i=>wk130Game.tap(i),r[1]);await p.waitForTimeout(400);
+ const qq=await p.evaluate(()=>{const ov=document.querySelector('#wk130Game [data-ov="quiz"]');const Q=document.getElementById('wk130Game')._q;return {shown:!ov.hidden,t:Q&&Q.t,img:!!(Q&&Q.img),ans:Q&&Q.ans};});
+ ok(qq.shown,vw.width+' 공격 전 문제 ('+qq.t+(qq.img?' 그림':'')+')');await p.screenshot({path:pre+'_'+vw.width+'_quiz.png'});
+ if(qq.t==='eng')await p.click('#wk130Game [data-q="opt"][data-v="'+qq.ans+'"]');else{await p.fill('#wk130Game [data-ov="quiz"] input',qq.ans);await p.click('#wk130Game [data-q="ok"]');}
+ await p.waitForTimeout(300);ok(await p.evaluate(()=>/정답/.test(document.querySelector('#wk130Game .qres').textContent)),vw.width+' 정답 처리');await p.waitForTimeout(900);
  ok(await p.evaluate(i=>wk130Game.state().o[i],r[1])===0,vw.width+' 공격으로 '+r[1]+'번 역 점령');
  if(vw.width===1280){await p.evaluate(i=>wk130Game.tap(i),r[1]);await p.waitForTimeout(200);await p.screenshot({path:pre+'_1280_game.png'});}
  for(let k=0;k<5;k++){await p.click('#wk130Game [data-a="end"]');await p.waitForTimeout(50);}
