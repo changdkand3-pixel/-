@@ -1,0 +1,37 @@
+<!-- 129차: 새 버전 알림 — 열려 있는 화면이 가끔 올라와 있는 HTML 맨 앞(약 4KB)만 읽어 <meta name="wonki-version">을 비교, 더 새 차수면 아래에 작은 안내 -->
+<style id="wk129-ver-style">
+#wk129Ver{position:fixed;left:50%;bottom:16px;transform:translate(-50%,140%);z-index:2147483000;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;max-width:calc(100% - 24px);box-sizing:border-box;padding:10px 12px 10px 16px;border-radius:16px;background:linear-gradient(135deg,#fff7d6,#ffe1f0);border:2px solid #ffb84d;box-shadow:0 8px 26px #0005;font:700 14px/1.4 system-ui,'Malgun Gothic',sans-serif;color:#4a2a10;transition:transform .35s ease}
+#wk129Ver.show{transform:translate(-50%,0)}
+#wk129Ver[hidden]{display:none}
+#wk129Ver button{border:0;border-radius:999px;padding:7px 14px;font:800 13px system-ui,'Malgun Gothic',sans-serif;cursor:pointer}
+#wk129Ver .go{background:linear-gradient(#ffd34d,#ff8a1f);color:#3a1600;box-shadow:0 2px 0 #b35500}
+#wk129Ver .later{background:#fff;color:#7a5a3a;border:1px solid #e4c9a8}
+@media (max-width:480px){#wk129Ver{font-size:13px;bottom:10px}}
+</style>
+<script id="wk129-ver-js">(function(){'use strict';
+var me=0;try{me=+(document.querySelector('meta[name="wonki-version"]')||{}).content||0;}catch(_){}
+if(!me)return;
+var shown=0,busy=false,snooze=0,KEY='wk129_expect';
+function cur(){return location.href.split('#')[0];}
+function bust(u){return u+(u.indexOf('?')<0?'?':'&')+'_wkv='+Date.now();}
+/* HTML이 12MB라 앞부분만 받아서 읽고 끊음 */
+function remote(){var ctl=window.AbortController?new AbortController():null;var tm=setTimeout(function(){try{ctl&&ctl.abort();}catch(_){}},15000);
+ return fetch(bust(cur()),{cache:'no-store',headers:{Range:'bytes=0-8191'},signal:ctl&&ctl.signal}).then(function(r){if(!r.ok&&r.status!==206)throw 0;
+  if(!r.body||!r.body.getReader)return r.text().then(find);
+  var rd=r.body.getReader(),dec=new TextDecoder(),txt='';
+  function step(){return rd.read().then(function(x){if(x.done)return find(txt);txt+=dec.decode(x.value,{stream:true});var v=find(txt);if(v||txt.length>65536){try{rd.cancel();}catch(_){}try{ctl&&ctl.abort();}catch(_){}return v;}return step();});}
+  return step();}).catch(function(){return 0;}).then(function(v){clearTimeout(tm);return v;});}
+function find(t){var m=/<meta name="wonki-version" content="(\d+)"/.exec(t||'');return m?+m[1]:0;}
+function box(){var b=document.getElementById('wk129Ver');if(b)return b;b=document.createElement('div');b.id='wk129Ver';b.hidden=true;b.setAttribute('role','status');
+ b.innerHTML='<span class="msg"></span><button type="button" class="go">🔄 새로고침</button><button type="button" class="later">나중에</button>';document.body.appendChild(b);
+ b.querySelector('.go').addEventListener('click',function(){try{sessionStorage.setItem(KEY,String(shown));}catch(_){}location.reload();});
+ b.querySelector('.later').addEventListener('click',function(){hide();snooze=Date.now()+30*60*1000;});return b;}
+function show(v){if(Date.now()<snooze&&v===shown)return;shown=v;var b=box();b.querySelector('.msg').textContent='🎉 원기랜드 '+v+'차 새 버전이 나왔어요! 새로고침하면 바로 바뀌어요.';b.hidden=false;requestAnimationFrame(function(){b.classList.add('show');});}
+function hide(){var b=document.getElementById('wk129Ver');if(!b)return;b.classList.remove('show');setTimeout(function(){b.hidden=true;},400);}
+function check(){if(busy||document.hidden||!/^https?:/.test(location.protocol))return Promise.resolve(0);busy=true;return remote().then(function(v){busy=false;if(v>me)show(v);return v;});}
+/* 새로고침했는데도 예전 화면이면(네오시티가 잠깐 기억) 주소를 바꿔 한 번 더 */
+try{var ex=+sessionStorage.getItem(KEY)||0;if(ex){sessionStorage.removeItem(KEY);if(ex>me&&!/[?&]_wkv=/.test(location.search)){location.replace(bust(cur()));}}}catch(_){}
+setTimeout(check,90*1000);setInterval(check,5*60*1000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)setTimeout(check,1500);});
+window.wk129Ver={me:me,check:check,show:show};
+})();</script>

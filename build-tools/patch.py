@@ -766,6 +766,12 @@ import base64 as _b128  # 128차: 원래 그림 구름(하늘 바탕·구름 조
 _u128=lambda n,m:'data:'+m+';base64,'+_b128.b64encode(open(sys.argv[2].replace('world_final.webp',n),'rb').read()).decode()
 _lf121=_lf121.replace('__SKYBAND__',_u128('sky_band_128.webp','image/webp')).replace('__SKYCLOUDS__',_u128('sky_clouds_128.webp','image/webp')).replace('__PONDMASK__',_u128('pond_mask_128.png','image/png')).replace('__SKYMETA__',open(sys.argv[2].replace('world_final.webp','sky_128.json'),encoding='utf-8').read().strip())
 final = final + '\n' + _lf121
+_vc129=open(sys.argv[2].replace('world_final.webp','version-check.html'),encoding='utf-8').read()  # 129차: 새 버전 알림
+final = final + '\n' + _vc129
 t = t.rstrip('\n') + '\n' + final + '\n'
+import re as _re129
+_no129=_re129.search(r'\n  no:(\d+),',open(sys.argv[4],encoding='utf-8').read()).group(1)  # final.html의 WONKI_UPDATE 차수
+assert t.count('<meta charset="utf-8">')>=1
+t=t.replace('<meta charset="utf-8">','<meta charset="utf-8"><meta name="wonki-version" content="'+_no129+'">',1)
 open(out, 'wb').write(t.encode('utf-8'))
 print('ok', len(t))

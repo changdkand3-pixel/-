@@ -1,0 +1,22 @@
+// 129차: 새 버전 알림 — 웹서버로 열고, 올라와 있는 HTML의 wonki-version을 바꾸면 안내가 뜨는지 (node tests/t129.js 결과.html)
+const {chromium}=require('playwright');const http=require('http');const fs=require('fs');
+(async()=>{let html=fs.readFileSync(process.argv[2],'utf8');const me=+/<meta name="wonki-version" content="(\d+)"/.exec(html)[1];let served=html;let bytes=0;
+const srv=http.createServer((q,s)=>{if(q.url.startsWith('/w.html')){const b=Buffer.from(served);bytes+=0;s.writeHead(200,{'content-type':'text/html; charset=utf-8'});s.end(b);}else{s.writeHead(404);s.end();}}).listen(0);
+const port=srv.address().port;const b=await chromium.launch();const p=await b.newPage({viewport:{width:1200,height:900}});
+await p.route(/^https?:\/\/(?!127\.0\.0\.1)/,r=>r.abort());const errs=[];p.on('pageerror',e=>errs.push(e.message));let bad=0;const ok=(c,m)=>{console.log((c?'OK ':'FAIL ')+m);if(!c)bad++;};
+await p.goto('http://127.0.0.1:'+port+'/w.html',{waitUntil:'load',timeout:120000});await p.waitForTimeout(1000);await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;});
+ok(await p.evaluate(()=>window.wk129Ver&&window.wk129Ver.me)===me,'이 화면 차수 '+me);
+let v=await p.evaluate(()=>window.wk129Ver.check());ok(v===me&&await p.evaluate(()=>{const b=document.getElementById('wk129Ver');return !b||b.hidden;}),'같은 차수면 안내 없음 ('+v+')');
+served=html.replace('<meta name="wonki-version" content="'+me+'">','<meta name="wonki-version" content="'+(me+1)+'">');
+v=await p.evaluate(()=>window.wk129Ver.check());await p.waitForTimeout(600);
+const box=await p.evaluate(()=>{const b=document.getElementById('wk129Ver');const r=b.getBoundingClientRect();return {hidden:b.hidden,txt:b.textContent,inView:r.bottom<=innerHeight&&r.top>0}});
+ok(v===me+1&&!box.hidden&&box.inView&&box.txt.includes((me+1)+'차'),'새 차수 올라오면 안내: '+box.txt);
+await p.screenshot({path:process.argv[2].replace(/\.html$/,'_ver.png')});
+await p.click('#wk129Ver .later');await p.waitForTimeout(500);ok(await p.evaluate(()=>document.getElementById('wk129Ver').hidden),'나중에 누르면 닫힘');
+await p.evaluate(()=>window.wk129Ver.check());await p.waitForTimeout(300);ok(await p.evaluate(()=>document.getElementById('wk129Ver').hidden),'나중에 뒤 30분은 다시 안 뜸');
+served=html.replace('<meta name="wonki-version" content="'+me+'">','<meta name="wonki-version" content="'+(me+2)+'">');
+await p.evaluate(()=>window.wk129Ver.check());await p.waitForTimeout(500);ok(!(await p.evaluate(()=>document.getElementById('wk129Ver').hidden)),'그 사이 또 새 차수면 다시 뜸');
+served=html.replace('<meta name="wonki-version" content="'+me+'">','<meta name="wonki-version" content="'+(me+2)+'">');
+await Promise.all([p.waitForNavigation({timeout:120000}),p.click('#wk129Ver .go')]);await p.waitForTimeout(800);
+ok(await p.evaluate(()=>window.wk129Ver&&window.wk129Ver.me)===me+2,'새로고침 누르면 새 차수 화면');
+ok(errs.length===0,'오류 '+JSON.stringify(errs));await b.close();srv.close();process.exit(bad?1:0);})();
