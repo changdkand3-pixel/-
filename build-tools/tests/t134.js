@@ -13,8 +13,8 @@ ok(await p.evaluate(()=>JSON.parse(localStorage.getItem('wk130_myq')).length)===
 // 장수 여러 명
 await p.click('#wk130Game [data-s="gens"]');await p.waitForTimeout(200);
 await p.evaluate(()=>{document.querySelector('#wk130Game [data-ov="gens"] details').open=true;});
-await p.fill('#wk130Game [data-g="bulk"]','지인하나\n지인둘, 90, 80, 70, 60\n지인셋');await p.click('#wk130Game [data-g="bulkadd"]');await p.click('#wk130Game [data-g="save"]');await p.waitForTimeout(200);
-const R=await p.evaluate(()=>JSON.parse(localStorage.getItem('wk130_generals')));ok(R.length===3&&R[1].war===90,'지인 3명 한꺼번에 '+JSON.stringify(R.map(g=>g.name)));
+await p.fill('#wk130Game [data-g="bulk"]','지인하나\n지인둘, 90, 80, 70, 60\n지인셋\n동명이\n동명이\n동명이');await p.click('#wk130Game [data-g="bulkadd"]');await p.click('#wk130Game [data-g="save"]');await p.waitForTimeout(200);
+const R=await p.evaluate(()=>JSON.parse(localStorage.getItem('wk130_generals')));ok(R.length===6&&R[1].war===90&&R.slice(3).map(g=>g.name).join()==='동명이A,동명이B,동명이C','지인 3명 한꺼번에 '+JSON.stringify(R.map(g=>g.name)));
 await p.screenshot({path:pre+'_gens.png'});await p.click('#wk130Game [data-g="close"]');await p.waitForTimeout(200);
 await p.click('#wk130Game [data-s="go"]');await p.waitForTimeout(600);
 const g=await p.evaluate(()=>{const G=wk130Game.state();const lords=G.gens.filter(x=>x.lord).map(x=>x.name);return {n:G.gens.length,placed:G.gens.filter(x=>x.st>=0).length,free:G.gens.filter(x=>x.f===-1).length,mine:G.gens.filter(x=>x.mine).map(x=>[x.name,x.st]),lords,dupAt:G.at.filter(x=>x>=0).length};});
