@@ -773,7 +773,7 @@ _vc129=open(sys.argv[2].replace('world_final.webp','version-check.html'),encodin
 _wd131={}
 for _k131 in 'emh':
     _wd131[_k131]=[[p.split('=',1)[0].strip(),p.split('=',1)[1].strip()] for p in open(sys.argv[2].replace('assets/world_final.webp','scripts/english108/words_'+_k131+'.txt'),encoding='utf-8').read().replace('\n',';').split(';') if '=' in p]
-_sw130=open(sys.argv[2].replace('world_final.webp','subway-130.html'),encoding='utf-8').read().replace('__SUBWAY__',open(sys.argv[2].replace('world_final.webp','subway130.json'),encoding='utf-8').read()).replace('__WORDS__',_j.dumps(_wd131,ensure_ascii=False)).replace('__PAPER__','data:image/webp;base64,'+base64.b64encode(open(sys.argv[2].replace('world_final.webp','paper_132.webp'),'rb').read()).decode())  # 130차: 지하철 천하통일(지도 자료 scripts/subway130/build.py)
+_sw130=open(sys.argv[2].replace('world_final.webp','subway-130.html'),encoding='utf-8').read().replace('__SUBWAY__',open(sys.argv[2].replace('world_final.webp','subway130.json'),encoding='utf-8').read()).replace('__WORDS__',_j.dumps(_wd131,ensure_ascii=False)).replace('__QBANK__',open(sys.argv[2].replace('world_final.webp','quiz133.json'),encoding='utf-8').read()).replace('__PAPER__','data:image/webp;base64,'+base64.b64encode(open(sys.argv[2].replace('world_final.webp','paper_132.webp'),'rb').read()).decode())  # 130차: 지하철 천하통일(지도 자료 scripts/subway130/build.py)
 final = final + '\n' + _sw130
 final = final + '\n' + _vc129
 t = t.rstrip('\n') + '\n' + final + '\n'

@@ -118,20 +118,30 @@ def cells(b):
         for gy in range(int(b[1]//G),int(b[3]//G)+1):yield (gx,gy)
 for i,b in enumerate(boxes):
     for c in cells(b):grid[c].append(('s',i,b))
+# 133b: 노선(선)도 피하기 — 선을 따라 작은 칸을 깔아 둠
+for a_,b_,l_ in edges:
+    (x1,y1),(x2,y2)=P[a_],P[b_];n=max(1,int(math.hypot(x2-x1,y2-y1)//10))
+    for k in range(n+1):
+        x=x1+(x2-x1)*k/n;y=y1+(y2-y1)*k/n;bb=(x-7,y-7,x+7,y+7)
+        for c in cells(bb):grid[c].append(('e',-1,bb))
 order=sorted(range(len(S)),key=lambda i:-(len(S[i][3])*10+icon(i)))
 LAB=[None]*len(S);bad=0
 for i in order:
     x,y=S[i][1],S[i][2];sz=icon(i);w=tw(S[i][0]);h=FS*1.15;g=sz*.5+3
     cand=[(x-w/2,y+sz*.45+2,'b'),(x-w/2,y-sz*.6-h-1,'t'),(x+g,y-h/2,'r'),(x-g-w,y-h/2,'l'),(x+g*.7,y+sz*.3,'br'),(x-g*.7-w,y+sz*.3,'bl'),(x+g*.7,y-sz*.5-h,'tr'),(x-g*.7-w,y-sz*.5-h,'tl'),(x-w/2,y+sz*.45+h+6,'bb'),(x-w/2,y-sz*.6-2*h-6,'tt'),(x+g+18,y-h/2,'rr'),(x-g-18-w,y-h/2,'ll')]
+    for rr in (30,45,60):
+        for ang in range(0,360,30):
+            cx=x+math.cos(math.radians(ang))*rr-w/2;cy=y+math.sin(math.radians(ang))*rr-h/2;cand.append((cx,cy,'f'))
     best=None
     for k,(cx,cy,tag) in enumerate(cand):
         b=(cx,cy,cx+w,cy+h);cost=k*0.5
         for c in set(cells(b)):
             for kind,j,bb in grid[c]:
                 if kind=='s' and j==i:continue
-                cost+=ov(b,bb)*(3 if kind=='l' else 1)
+                cost+=ov(b,bb)*(60 if kind=='l' else (0.35 if kind=='e' else 20))
         if best is None or cost<best[0]:best=(cost,b)
-    if best[0]>5:bad+=1;print('겹침',S[i][0],round(best[0]))
+    lb=best[1];lab_hit=sum(ov(lb,bb) for c in set(cells(lb)) for kind,j,bb in grid[c] if kind!='e' and not (kind=='s' and j==i))
+    if lab_hit>5:bad+=1;print('겹침',S[i][0],round(lab_hit))
     b=best[1];LAB[i]=[round(b[0]+w/2,1),round(b[1]+h*.82,1)]
     for c in cells(b):grid[c].append(('l',i,b))
 print('W',W,'겹치는 이름',bad)
