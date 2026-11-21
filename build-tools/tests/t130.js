@@ -2,7 +2,7 @@
 const {chromium}=require('playwright');
 (async()=>{const [,,file,pre]=process.argv;const b=await chromium.launch();let bad=0;const ok=(c,m)=>{console.log((c?'OK ':'FAIL ')+m);if(!c)bad++;};const errs=[];
 for(const vw of [{width:1280,height:860},{width:390,height:800}]){
- const p=await b.newPage({viewport:vw});p.on('pageerror',e=>errs.push(e.message));await p.route(/^https?:/,r=>r.abort());
+ const p=await b.newPage({viewport:vw});p.on('pageerror',e=>errs.push(e.message));await p.route(/^https?:/,r=>r.abort());await p.addInitScript(()=>{try{localStorage.setItem('wk65_admin_device','1')}catch(_){}});
  await p.goto('file://'+file,{waitUntil:'load',timeout:120000});await p.waitForTimeout(1500);
  await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;try{localStorage.setItem('wk130_save','');localStorage.setItem('wk130_generals','[]');}catch(_){}});
  const hall=await p.$('#wk130Hall');ok(!!hall,vw.width+' 메인 지도에 건물');

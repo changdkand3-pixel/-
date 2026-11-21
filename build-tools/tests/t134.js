@@ -1,7 +1,7 @@
 // 134차: 천하통일 — 기본 장수 1000명, 지인 여러 명 넣기, 9과목 문제(정답이 보기에 있는지), 내 문제, 등용, 노선 나란히 (node tests/t134.js 결과.html 사진접두어)
 const {chromium}=require('playwright');
 (async()=>{const [,,file,pre]=process.argv;const b=await chromium.launch();let bad=0;const ok=(c,m)=>{console.log((c?'OK ':'FAIL ')+m);if(!c)bad++;};const errs=[];
-const p=await b.newPage({viewport:{width:1280,height:900}});p.on('pageerror',e=>errs.push(e.message));await p.route(/^https?:/,r=>r.abort());
+const p=await b.newPage({viewport:{width:1280,height:900}});p.on('pageerror',e=>errs.push(e.message));await p.route(/^https?:/,r=>r.abort());await p.addInitScript(()=>{try{localStorage.setItem('wk65_admin_device','1')}catch(_){}});
 await p.goto('file://'+file,{waitUntil:'load',timeout:120000});await p.waitForTimeout(1500);
 await p.evaluate(()=>{document.getElementById('wkUpdatePoster').hidden=true;localStorage.setItem('wk130_save','');localStorage.setItem('wk130_generals','[]');localStorage.setItem('wk130_quiz','');localStorage.setItem('wk130_myq','');wk130Game.open();});await p.waitForTimeout(400);
 const cnt=await p.evaluate(()=>document.querySelector('#wk130Game [data-ov="start"]').textContent.match(/문제 ([\d,]+)개/)[1]);ok(+cnt.replace(/,/g,'')>=10000,'문제 수 '+cnt);
@@ -39,4 +39,5 @@ const par=await p.evaluate(()=>{const L=[...document.querySelectorAll('#wk130Gam
 await p.evaluate(()=>{wk130Game.tap(wk130Game.data.st.findIndex(s=>s[0]==='종로3가'));});await p.waitForTimeout(200);
 await p.evaluate(()=>wk130Game.focusName&&wk130Game.focusName('서울',900));await p.waitForTimeout(300);await p.screenshot({path:pre+'_lines.png'});
 for(let k=0;k<3;k++)await p.click('#wk130Game [data-a="end"]');ok(await p.evaluate(()=>wk130Game.state().turn)===3,'턴 3번');
-ok(errs.length===0,'오류 '+JSON.stringify(errs));await b.close();process.exit(bad?1:0);})();
+const p2=await b.newPage();await p2.route(/^https?:/,r=>r.abort());await p2.goto('file://'+file,{waitUntil:'load',timeout:120000});await p2.waitForTimeout(2500);ok(!(await p2.$('#wk130Hall')),'주인장 기기가 아니면 건물이 안 보임');
+ ok(errs.length===0,'오류 '+JSON.stringify(errs));await b.close();process.exit(bad?1:0);})();

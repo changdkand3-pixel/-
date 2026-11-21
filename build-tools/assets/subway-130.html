@@ -102,8 +102,8 @@ function setReg(a){ls(REGK,JSON.stringify(a));}
 /* ---------------- 수학·영어 문제 전투 ---------------- */
 var WORDS=__WORDS__,QB=__QBANK__;
 var GRADES=['초1-1','초1-2','초2-1','초2-2','초3-1','초3-2','초4-1','초4-2','초5-1','초5-2'];
-var CATS=[['kor','📖 국어'],['math','📐 수학'],['eng','🔤 영어'],['soc','🌏 사회'],['sci','🔬 과학'],['art','🎨 예체능'],['gen','🎬 영화·드라마·스포츠·상식'],['sub','🚇 지하철'],['my','📝 내 문제']];
-function qset(){var d={cats:['kor','math','eng','soc','sci','art','gen','sub','my'],grade:'초3-1',lv:'e',on:true};try{var a=JSON.parse(ls('wk130_quiz')||'null');if(a){if(!a.cats){a.cats=a.mode==='math'?['math']:a.mode==='eng'?['eng']:a.mode==='off'?[]:['math','eng'];a.on=a.mode!=='off';}return {cats:a.cats,grade:a.grade||d.grade,lv:a.lv||'e',on:a.on!==false&&a.cats.length>0};}}catch(_){}return d;}
+var CATS=[['kor','📖 국어'],['math','📐 수학'],['eng','🔤 영어'],['soc','🌏 사회'],['his','🏯 역사'],['sci','🔬 과학'],['art','🎨 예체능'],['gen','🎬 영화·드라마·스포츠·상식'],['sub','🚇 지하철'],['my','📝 내 문제']];
+function qset(){var d={cats:['kor','math','eng','soc','his','sci','art','gen','sub','my'],grade:'초3-1',lv:'e',on:true};try{var a=JSON.parse(ls('wk130_quiz')||'null');if(a){if(!a.cats){a.cats=a.mode==='math'?['math']:a.mode==='eng'?['eng']:a.mode==='off'?[]:['math','eng'];a.on=a.mode!=='off';}return {cats:a.cats,grade:a.grade||d.grade,lv:a.lv||'e',on:a.on!==false&&a.cats.length>0};}}catch(_){}return d;}
 function setQ(q){ls('wk130_quiz',JSON.stringify(q));if(G)G.q=q;}
 function myQ(){try{var a=JSON.parse(ls('wk130_myq')||'[]');return Array.isArray(a)?a:[];}catch(_){return [];}}
 function pk(a){return a[Math.floor(Math.random()*a.length)];}
@@ -126,12 +126,13 @@ function genQ(cat){var r=Math.random(),x;
  case 'sci':if(r<.45){x=pk(QB.elem);return Math.random()<.5?mc('🔬 원소 「'+x[0]+'」의 기호는?',x[1],opts4(x[1],QB.elem.map(function(y){return y[1];})),cat):mc('🔬 원소 기호 「'+x[1]+'」은(는) 무엇?',x[0],opts4(x[0],QB.elem.map(function(y){return y[0];})),cat);}return factQ('sci');
  case 'art':if(r<.4){x=pk(QB.inst);return mc('🎵 「'+x[0]+'」은(는) 어떤 악기?',x[1],['건반 악기','현악기','관악기','타악기'],cat);}return factQ('art');
  case 'gen':return factQ('gen');
+ case 'his':return Math.random()<.75?factQ('his'):factQ('wh');
  case 'sub':{var i=Math.floor(Math.random()*N),s=D.st[i];if(r<.5&&s[3].length===1){return mc('🚇 「'+s[0]+'」역이 있는 노선은?',LINES[s[3][0]][0],opts4(LINES[s[3][0]][0],LINES.map(function(l){return l[0];})),cat);}
   if(!ADJ[i].length)return genQ('sub');var nb=D.st[pk(ADJ[i])][0],far=D.st.filter(function(t,j){return j!==i&&ADJ[i].indexOf(j)<0;}).map(function(t){return t[0];});return mc('🚇 「'+s[0]+'」역과 노선으로 바로 이어진 역은?',nb,opts4(nb,far),cat);}
  case 'my':{var a=myQ();if(!a.length)return null;x=pk(a);if(x.w&&x.w.length)return mc('📝 '+x.q,x.a,[x.a].concat(x.w).slice(0,4).sort(function(){return Math.random()-.5;}),cat);return {t:'math',text:'📝 '+x.q,ans:x.a,cat:'my'};}}
  return null;}
 function qcount(){var w=WORDS.e.length+WORDS.m.length+WORDS.h.length,img=0;GRADES.forEach(function(g){var P=window.WK_PACKS&&window.WK_PACKS[g];if(P&&P.Q&&P.Q.images)img+=P.Q.images.length;});
- var c={kor:QB.proverb.length+QB.idiom.length*2+QB.spell.length,math:img+5000,eng:w*2,soc:QB.capital.length*2+QB.fact.soc.length,sci:QB.elem.length*2+QB.fact.sci.length,art:QB.inst.length+QB.fact.art.length,gen:QB.fact.gen.length,sub:N+D.e.length,my:myQ().length};
+ var c={kor:QB.proverb.length+QB.idiom.length*2+QB.spell.length,math:img+5000,eng:w*2,soc:QB.capital.length*2+QB.fact.soc.length,sci:QB.elem.length*2+QB.fact.sci.length,his:QB.fact.his.length+QB.fact.wh.length,art:QB.inst.length+QB.fact.art.length,gen:QB.fact.gen.length,sub:N+D.e.length,my:myQ().length};
  c.all=Object.keys(c).reduce(function(s,k){return s+c[k];},0);return c;}
 function norm(x){return String(x).replace(/[\s，]/g,'').replace(/[①②③④⑤]/g,function(c){return '①②③④⑤'.indexOf(c)+1;}).toLowerCase();}
 function same(inp,ans){var a=norm(ans),b=norm(inp);if(a===b)return true;if(a.indexOf(',')>=0){var A=a.split(',').sort().join(','),B=b.split(/[,]/).filter(Boolean).sort().join(',');return A===B;}return false;}
@@ -391,13 +392,13 @@ function showGens(){var ov=root.querySelector('[data-ov="gens"]'),R=reg();
   else if(s==='dice'){b.closest('tr').querySelectorAll('input[type=number]').forEach(function(inp){inp.value=Math.round(rnd(30,99));});}
   else if(s==='del'){b.closest('tr').remove();}
   else if(s==='save'){var a=collect();setReg(a);toastIn(ov,'💾 '+a.length+'명 저장했어요. 새 게임부터 나와요.');}
-  else if(s==='imp'){try{var a2=JSON.parse(ov.querySelector('textarea').value);if(!Array.isArray(a2))throw 0;setReg(a2.slice(0,200));showGens();}catch(_){alert('글 모양이 맞지 않아요.');}}
+  else if(s==='imp'){try{var a2=JSON.parse(ov.querySelector('textarea').value);if(!Array.isArray(a2))throw 0;setReg(a2.slice(0,5000));showGens();}catch(_){alert('글 모양이 맞지 않아요.');}}
   else if(s==='close'){ov.hidden=true;if(!G)showStart();}};}
 function toastIn(ov,m){var t=ov.querySelector('.okmsg');if(!t){t=document.createElement('div');t.className='okmsg hint';ov.querySelector('.card').appendChild(t);}t.textContent=m;}
 function showHelp(){var ov=root.querySelector('[data-ov="help"]');ov.innerHTML='<div class="card"><h3>❓ 도움말</h3><div style="line-height:1.8;font-size:14px">• 한 턴은 한 달이에요. 우리 역마다 한 달에 명령 하나(개발·징병·성벽·이동·공격)를 할 수 있어요.<br>• <b>공격</b>은 노선으로 이어진 이웃 적 역에만 할 수 있어요. 보낼 병력(%)을 정하고 빨간 테두리 역을 누르세요.<br>• 공격 병력×(1+무력) 이 방어 병력×(1+성벽)×(1+통솔)보다 크면 점령해요. 운도 조금 있어요.<br>• 태수가 있는 역에서 병력 절반 이상을 보내면 장수가 함께 가요.<br>• 매달 역마다 금(환승 노선이 많을수록·상권이 높을수록 많이)과 병사가 늘어요.<br>• 📋 명령의 <b>전선으로 모으기</b>로 뒤쪽 병력을 한 번에 앞으로 보낼 수 있어요.<br>• 모든 역을 차지하면 천하통일! 게임은 이 기기에 자동 저장돼요.</div><button class="sub" data-a="ovclose">닫기</button></div>';ov.hidden=false;}
 function showEnd(){var ov=root.querySelector('[data-ov="end"]');ov.innerHTML='<div class="card" style="text-align:center"><h3>'+(G.over===1?'🏆 천하통일!':'💥 패배…')+'</h3><p>'+ym()+' · '+esc(FN(G.me))+'</p><button class="big" data-a="newg">🔄 새 게임</button><button class="sub" data-a="ovclose">지도 보기</button></div>';ov.hidden=false;}
 var lastFocus=null;
-function open(){build();lastFocus=document.activeElement;root.hidden=false;document.documentElement.style.overflow='hidden';
+function open(){if(!ownerOK()){alert('지하철 천하통일은 지금 주인장 전용이에요.');return;}build();lastFocus=document.activeElement;root.hidden=false;document.documentElement.style.overflow='hidden';
  if(!G)G=load();if(!G){showStart();vb={x:0,y:0,w:D.w,h:D.h};setVB();}else{render();setTimeout(function(){focus(sel>=0?sel:FAC[G.me][1],1300);},30);}}
 function close(){if(!root)return;root.hidden=true;document.documentElement.style.overflow='';try{lastFocus&&lastFocus.focus({preventScroll:true});}catch(_){}}
 /* 메인 지도 건물 */
@@ -409,7 +410,9 @@ var HALL='<svg viewBox="0 0 200 120" aria-hidden="true"><ellipse cx="100" cy="11
  +'<circle cx="100" cy="38" r="11" fill="#fff" stroke="#1f4f8a" stroke-width="3"/><path d="M93 38 H107 M100 31 V45" stroke="#1f4f8a" stroke-width="3"/>'
  +'<g stroke-width="5" stroke-linecap="round" fill="none"><path d="M10 20 Q60 4 100 12" stroke="#00a23f"/><path d="M100 12 Q140 4 190 20" stroke="#ed6c00"/><path d="M14 30 Q60 14 100 22" stroke="#004a85" opacity=".9"/></g>'
  +'<path d="M24 50 V18 M176 50 V18" stroke="#5a2f14" stroke-width="2.5"/><path d="M24 18 L42 23 L24 28Z" fill="#ffd34d"/><path d="M176 18 L158 23 L176 28Z" fill="#7fe0ff"/></svg>';
-function place(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk130Hall'))return;var b=document.createElement('button');b.type='button';b.id='wk130Hall';b.setAttribute('aria-label','원기랜드 지하철 천하통일');b.innerHTML=HALL+'<span class="lab">🚇 지하철 천하통일</span>';
+/* 135차: 주인장 기기(관리자 로그인한 기기)에서만 보임 */
+function ownerOK(){try{return localStorage.getItem('wk65_admin_device')==='1';}catch(_){return false;}}
+function place(){var st=document.getElementById('mainStage'),old=document.getElementById('wk130Hall');if(!ownerOK()){if(old)old.remove();return;}if(!st||old)return;var b=document.createElement('button');b.type='button';b.id='wk130Hall';b.setAttribute('aria-label','원기랜드 지하철 천하통일');b.innerHTML=HALL+'<span class="lab">🚇 지하철 천하통일</span>';
  b.addEventListener('pointerdown',function(e){e.stopPropagation();});b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open();});st.appendChild(b);}
 window.wk130Game={selfTest:function(n){var r={};CATS.forEach(function(c){var k=c[0],bad=0,cnt=0,ex='';for(var i=0;i<n;i++){var Q=genQ(k);if(!Q)continue;cnt++;if(Q.t==='mc'){var dup=Q.opts.length!==new Set(Q.opts).size;if(Q.opts.indexOf(Q.ans)<0||dup||Q.opts.length<2){bad++;ex=Q.q;}}else if(!Q.ans){bad++;}}r[k]={n:cnt,bad:bad,ex:ex};});return r;},focusName:function(nm,w){var i=D.st.findIndex(function(s){return s[0]===nm;});if(i>=0)focus(i,w);},open:open,close:close,state:function(){return G;},endTurn:function(){endTurn();},tap:function(i){tapStation(i);},act:function(a){onClick({target:{closest:function(){return {getAttribute:function(){return a;}};}}});},N:N,data:D};
 function boot(){place();setInterval(place,2000);}
