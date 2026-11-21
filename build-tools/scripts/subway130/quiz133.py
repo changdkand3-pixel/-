@@ -26,7 +26,7 @@ G1 = '가 강 건 경 고 광 규 기 남 다 대 도 동 두 라 명 무 민 �
 G2 = '경 군 균 규 기 길 남 대 덕 도 동 란 래 령 리 린 림 만 명 모 문 미 민 범 별 빈 산 서 석 선 섭 성 솔 수 숙 순 식 아 안 언 연 열 영 오 옥 완 용 우 운 웅 원 월 율 은 의 이 익 인 일 자 재 전 정 제 조 주 준 중 지 진 찬 철 하 한 해 혁 현 호 화 환 효 후 훈 휘 희'.split()
 rnd = random.Random(133)
 virt = []; used = set(CELEB)
-while len(CELEB) + len(virt) < 1000:
+while False:  # 136차: 가상 이름 장수는 넣지 않음(연예인만)
     n = rnd.choice(SUR) + rnd.choice(G1) + rnd.choice(G2)
     if n in used: continue
     used.add(n); virt.append(n)

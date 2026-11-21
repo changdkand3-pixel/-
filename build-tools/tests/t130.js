@@ -39,7 +39,7 @@ for(const vw of [{width:1280,height:860},{width:390,height:800}]){
  const s2=await p.evaluate(()=>{const G=wk130Game.state();return {turn:G.turn,log:G.log.slice(0,3),own:new Set(G.o).size};});
  ok(s2.turn===5,vw.width+' 턴 5번 진행 '+JSON.stringify(s2));
  if(vw.width===390)await p.screenshot({path:pre+'_390_game.png'});
- await p.click('#wk130Game [data-a="close"]');await p.reload({waitUntil:'load'});await p.waitForTimeout(1500);
+ await p.click('#wk130Game [data-a="close"]');await p.waitForTimeout(2500);await p.reload({waitUntil:'load'});await p.waitForTimeout(1500);
  await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;wk130Game.open();});await p.waitForTimeout(300);
  ok(await p.evaluate(()=>wk130Game.state()&&wk130Game.state().turn)===5,vw.width+' 다시 열면 이어하기');
  const ms=await p.evaluate(()=>{const t=performance.now();for(let k=0;k<10;k++)wk130Game.endTurn();return (performance.now()-t)/10;});ok(ms<400,vw.width+' 턴 종료 한 번 '+ms.toFixed(0)+'ms');

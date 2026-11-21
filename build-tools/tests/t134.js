@@ -18,7 +18,7 @@ const R=await p.evaluate(()=>JSON.parse(localStorage.getItem('wk130_generals')))
 await p.screenshot({path:pre+'_gens.png'});await p.click('#wk130Game [data-g="close"]');await p.waitForTimeout(200);
 await p.click('#wk130Game [data-s="go"]');await p.waitForTimeout(600);
 const g=await p.evaluate(()=>{const G=wk130Game.state();const lords=G.gens.filter(x=>x.lord).map(x=>x.name);return {n:G.gens.length,placed:G.gens.filter(x=>x.st>=0).length,free:G.gens.filter(x=>x.f===-1).length,mine:G.gens.filter(x=>x.mine).map(x=>[x.name,x.st]),lords,dupAt:G.at.filter(x=>x>=0).length};});
-ok(g.n>=1003&&g.placed>400&&g.free>100,'장수 '+g.n+'명 · 태수 '+g.placed+' · 재야 '+g.free);ok(g.mine.every(x=>x[1]>=0),'지인 장수 배치 '+JSON.stringify(g.mine));ok(g.lords.length===10,'군주 10명 '+g.lords.join(','));
+ok(g.n>=575&&g.placed>400&&g.free>50,'장수 '+g.n+'명 · 태수 '+g.placed+' · 재야 '+g.free);ok(g.mine.every(x=>x[1]>=0),'지인 장수 배치 '+JSON.stringify(g.mine));ok(g.lords.length===10,'군주 10명 '+g.lords.join(','));
 // 문제 각 과목 200번씩 만들어 정답이 보기에 있는지
 const qs=await p.evaluate(()=>{const res={};const cats=['kor','math','eng','soc','sci','art','gen','sub','my'];const root=document.getElementById('wk130Game');
  cats.forEach(c=>{let n=0,badq=0,ex='';localStorage.setItem('wk130_quiz',JSON.stringify({cats:[c],grade:'초3-1',lv:'e',on:true}));wk130Game.state().q={cats:[c],grade:'초3-1',lv:'e',on:true};

@@ -172,8 +172,11 @@ function newGame(me,diff){
  addLog('🚇 '+ym()+' · '+FN(me)+' 세력('+D.f[me][0]+')으로 천하통일을 시작합니다!');save();}
 function ym(){return (2026+Math.floor(G.turn/12))+'년 '+(G.turn%12+1)+'월';}
 function addLog(m){G.log.unshift(m);if(G.log.length>40)G.log.length=40;}
-function save(){try{ls(SAVEK,JSON.stringify(G));}catch(_){}}
-function load(){try{var g=JSON.parse(ls(SAVEK)||'null');if(g&&g.v===1&&g.o&&g.o.length===N)return g;}catch(_){}return null;}
+/* 136차: 저장은 모아서(0.6초 뒤 한 번) — 브라우저가 너무 잦은 큰 저장을 늦게 쓰는 것을 막음. 창을 닫거나 숨길 때는 바로 저장 */
+var saveT=0;function saveNow(){clearTimeout(saveT);saveT=0;if(!G)return;try{var g=G.gens;G.gz=g.map(function(x){return [x.name,x.war,x.int,x.lead,x.pol,x.f,x.st,x.lord?1:0,x.mine?1:0];});delete G.gens;var txt=JSON.stringify(G);ls(SAVEK,txt);ls(SAVEK+'_b',txt);G.gens=g;delete G.gz;}catch(_){}}
+function save(){clearTimeout(saveT);saveT=setTimeout(saveNow,600);}
+window.addEventListener('pagehide',saveNow);document.addEventListener('visibilitychange',function(){if(document.hidden)saveNow();});
+function load(){try{var g=JSON.parse(ls(SAVEK)||ls(SAVEK+'_b')||'null');if(g&&g.gz&&!g.gens){g.gens=g.gz.map(function(x,i){return {id:i,name:x[0],war:x[1],int:x[2],lead:x[3],pol:x[4],f:x[5],st:x[6],lord:!!x[7],mine:!!x[8]};});delete g.gz;}if(g&&g.v===1&&g.o&&g.o.length===N)return g;}catch(_){}return null;}
 function genAt(s){var id=G.at[s];return id>=0?G.gens[id]:null;}
 function cnt(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c++;return c;}
 function troops(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c+=G.t[i];return c;}
@@ -213,7 +216,7 @@ function endTurn(){if(G.over)return;
  G.turn++;var mc=cnt(G.me);
  if(mc===N){G.over=1;addLog('🏆 천하통일 달성!');}else if(mc===0){G.over=2;addLog('💥 우리 세력이 무너졌습니다.');}
  else addLog('📅 '+ym()+' · 💰 +'+Math.round(inc[G.me])+' · 🚉 '+mc+'역');
- save();sel=-1;mode='';render();if(G.over)showEnd();}
+ saveNow();sel=-1;mode='';render();if(G.over)showEnd();}
 
 /* 132차: 옛 지도처럼 — 한지 바탕·바다 물결·한강·산·숲·지명·나침반·테두리 */
 function drawDeco(defs,g){var Z=D.deco,W=D.w,H=D.h,M=0,K=D.w/3200;defs.insertAdjacentHTML('beforeend','<clipPath id="wk132clip"><rect x="0" y="0" width="'+W+'" height="'+H+'" rx="30"/></clipPath>');g.setAttribute('clip-path','url(#wk132clip)');
@@ -379,7 +382,7 @@ function showStart(){var ov=root.querySelector('[data-ov="start"]'),sv=load(),qs
 function showGens(){var ov=root.querySelector('[data-ov="gens"]'),R=reg();
  function row(g,k){return '<tr data-k="'+k+'"><td><input data-f="name" maxlength="12" value="'+esc(g.name||'')+'" placeholder="이름"></td><td><select data-f="f"><option value="-1">무작위</option>'+FAC.map(function(f,fi){return '<option value="'+fi+'"'+(+g.f===fi?' selected':'')+'>'+esc(f[0])+'</option>';}).join('')+'</select></td>'
   +['war','int','lead','pol'].map(function(x){return '<td><input type="number" min="1" max="100" data-f="'+x+'" value="'+(+g[x]||50)+'"></td>';}).join('')+'<td><input type="checkbox" data-f="lord"'+(g.lord?' checked':'')+' style="width:auto"></td><td><button class="mini" data-g="dice" title="능력치 무작위">🎲</button> <button class="mini" data-g="del" title="지우기">🗑</button></td></tr>';}
- ov.innerHTML='<div class="card"><h3>👥 장수 등록</h3><p style="margin:0 0 8px;font-size:13px;line-height:1.6">기본 장수 '+QB.gens.length+'명(연예인 '+QB.celeb+'명 + 가상 이름)이 이미 들어 있어요. 여기에는 <b>지인</b>을 넣으세요. 지인 이름과 능력치(1~100)를 넣으면 <b>새 게임부터</b> 장수로 나와 역의 태수가 돼요. 무력=공격, 지력=적 장수 등용, 통솔=방어, 정치=수입. 군주에 체크하면 그 세력 수도에 있어요. 이 기기에 저장되고, 일반회원으로 로그인하면 회원 기록과 함께 저장돼요.</p>'
+ ov.innerHTML='<div class="card"><h3>👥 장수 등록</h3><p style="margin:0 0 8px;font-size:13px;line-height:1.6">기본 장수로 연예인 '+QB.gens.length+'명이 이미 들어 있어요. 여기에는 <b>지인</b>을 넣으세요. 지인 이름과 능력치(1~100)를 넣으면 <b>새 게임부터</b> 장수로 나와 역의 태수가 돼요. 무력=공격, 지력=적 장수 등용, 통솔=방어, 정치=수입. 군주에 체크하면 그 세력 수도에 있어요. 이 기기에 저장되고, 일반회원으로 로그인하면 회원 기록과 함께 저장돼요.</p>'
   +'<div style="overflow:auto"><table><thead><tr><th>이름</th><th>소속</th><th>무력</th><th>지력</th><th>통솔</th><th>정치</th><th>군주</th><th></th></tr></thead><tbody>'+R.map(row).join('')+'</tbody></table></div>'
   +'<details style="margin-top:8px"><summary style="font-weight:900;cursor:pointer">📋 여러 명 한꺼번에 넣기</summary><p style="font-size:12px;margin:6px 0">한 줄에 한 명: <b>이름</b> 또는 <b>이름, 무력, 지력, 통솔, 정치</b> (능력치를 안 쓰면 무작위)</p><textarea data-g="bulk" style="height:110px" placeholder="홍길동&#10;김철수, 80, 60, 70, 50"></textarea><button class="sub" data-g="bulkadd">➕ 목록에 넣기</button></details>'+'<button class="sub" data-g="add">➕ 장수 추가</button><button class="big" data-g="save">💾 저장</button>'
   +'<details style="margin-top:10px"><summary>📤 내보내기 · 📥 가져오기 (다른 기기로 옮기기)</summary><textarea data-g="io">'+esc(JSON.stringify(R))+'</textarea><button class="sub" data-g="imp">📥 위 글로 바꾸기</button></details>'
@@ -400,7 +403,7 @@ function showEnd(){var ov=root.querySelector('[data-ov="end"]');ov.innerHTML='<d
 var lastFocus=null;
 function open(){if(!ownerOK()){alert('지하철 천하통일은 지금 주인장 전용이에요.');return;}build();lastFocus=document.activeElement;root.hidden=false;document.documentElement.style.overflow='hidden';
  if(!G)G=load();if(!G){showStart();vb={x:0,y:0,w:D.w,h:D.h};setVB();}else{render();setTimeout(function(){focus(sel>=0?sel:FAC[G.me][1],1300);},30);}}
-function close(){if(!root)return;root.hidden=true;document.documentElement.style.overflow='';try{lastFocus&&lastFocus.focus({preventScroll:true});}catch(_){}}
+function close(){saveNow();if(!root)return;root.hidden=true;document.documentElement.style.overflow='';try{lastFocus&&lastFocus.focus({preventScroll:true});}catch(_){}}
 /* 메인 지도 건물 */
 var HALL='<svg viewBox="0 0 200 120" aria-hidden="true"><ellipse cx="100" cy="112" rx="92" ry="7" fill="#0003"/>'
  +'<path d="M20 50 L100 22 L180 50 Z" fill="#c0392b" stroke="#7a1a12" stroke-width="2"/><rect x="28" y="50" width="144" height="58" rx="4" fill="#f5efe2" stroke="#8a6a3a" stroke-width="2"/>'
