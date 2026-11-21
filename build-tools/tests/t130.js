@@ -16,7 +16,7 @@ for(const vw of [{width:1280,height:860},{width:390,height:800}]){
  for(let k=0;k<3;k++){await p.click('#wk130Game [data-g="add"]');}
  const rows=await p.$$('#wk130Game [data-ov="gens"] tbody tr');
  const names=['장수가','장수나','장수다'];for(let k=0;k<3;k++){await rows[k].$eval('input[data-f="name"]',(e,v)=>e.value=v,names[k]);}
- await rows[0].$eval('select',e=>e.value='0');await rows[0].$eval('input[data-f="lord"]',e=>e.checked=true);await rows[0].$eval('input[data-f="war"]',e=>e.value='95');
+ await rows[0].$eval('select[data-f="f"]',e=>e.value='0');await rows[0].$eval('input[data-f="lord"]',e=>e.checked=true);await rows[0].$eval('input[data-f="war"]',e=>e.value='95');
  await p.click('#wk130Game [data-g="save"]');await p.waitForTimeout(150);
  ok(await p.evaluate(()=>JSON.parse(localStorage.getItem('wk130_generals')).length)===3,vw.width+' 장수 3명 저장');
  if(vw.width===390)await p.screenshot({path:pre+'_390_gens.png'});
@@ -42,6 +42,7 @@ for(const vw of [{width:1280,height:860},{width:390,height:800}]){
  await p.click('#wk130Game [data-a="close"]');await p.waitForTimeout(2500);await p.reload({waitUntil:'load'});await p.waitForTimeout(1500);
  await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;wk130Game.open();});await p.waitForTimeout(300);
  ok(await p.evaluate(()=>wk130Game.state()&&wk130Game.state().turn)===5,vw.width+' 다시 열면 이어하기');
+ if(!(await p.evaluate(()=>!!wk130Game.state()))){await p.evaluate(()=>{document.querySelector('#wk130Game [data-s="fac"][data-f="0"]').click();document.querySelector('#wk130Game [data-s="go"]').click();});}
  const ms=await p.evaluate(()=>{const t=performance.now();for(let k=0;k<10;k++)wk130Game.endTurn();return (performance.now()-t)/10;});ok(ms<400,vw.width+' 턴 종료 한 번 '+ms.toFixed(0)+'ms');
  await p.close();}
 ok(errs.length===0,'오류 '+JSON.stringify(errs));await b.close();process.exit(bad?1:0);})();
