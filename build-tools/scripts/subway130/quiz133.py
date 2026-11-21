@@ -20,6 +20,8 @@ CELEB = """유재석 강호동 신동엽 이경규 김구라 박명수 정준하
 에릭 이민우 김동완 전진 앤디 박준형 데니안 손호영 김태우 문희준 토니안 강타 장우혁 이재원 은지원 이재진 김재덕 장수원 유노윤호 최강창민 닉쿤 찬성 준케이 윤두준 양요섭 이기광 손동운 김성규 남우현 엘
 타블로 미쓰라 투컷 개코 최자 자이언티 크러쉬 딘 헤이즈 이하이 백예린 청하 전소미 현아""".split()
 seen = set(); CELEB = [c for c in CELEB if not (c in seen or seen.add(c))]
+CELEB = [c for c in CELEB if c not in ('멜로망스','십센치','볼빨간사춘기','악뮤')]  # 138차: 그룹 이름은 뺌
+FEMALE = set(open(os.path.join(H, 'celeb_female.txt'), encoding='utf-8').read().split())
 
 SUR = '김 이 박 최 정 강 조 윤 장 임 한 오 서 신 권 황 안 송 전 홍 유 고 문 양 손 배 백 허 남 심 노 하 곽 성 차 주 우 구 민 나 진 지 엄 채 원 천 방 공 현 함 변 염 여 추 도 소 석 선 설 마 길 연 위 표 명 기 반 왕 금 옥 육 인 맹 제 모'.split()
 G1 = '가 강 건 경 고 광 규 기 남 다 대 도 동 두 라 명 무 민 범 병 보 상 서 석 성 세 소 수 승 시 아 연 영 예 용 우 원 유 윤 은 의 인 재 정 종 주 준 지 진 찬 창 채 철 태 하 한 해 현 형 혜 호 홍 화 효 희'.split()
@@ -31,7 +33,7 @@ while False:  # 136차: 가상 이름 장수는 넣지 않음(연예인만)
     if n in used: continue
     used.add(n); virt.append(n)
 def stats(r, lo, hi): return [r.randint(lo, hi) for _ in range(4)]
-gens = [[c] + stats(rnd, 45, 85) for c in CELEB] + [[v] + stats(rnd, 20, 90) for v in virt]
+gens = [[c] + stats(rnd, 45, 85) + ['f' if c in FEMALE else 'm'] for c in CELEB]  # 138차: 끝에 성별
 
 PROVERB = """가는 말이 고와야|오는 말이 곱다
 낮말은 새가 듣고|밤말은 쥐가 듣는다

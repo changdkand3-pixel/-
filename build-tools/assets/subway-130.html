@@ -59,6 +59,9 @@ body:has(.modal.open) #wk130Hall{visibility:hidden}
 #wk130Game .qopts{display:grid;grid-template-columns:1fr 1fr;gap:8px}#wk130Game .qres{margin-top:10px;font-weight:900;font-size:18px;text-align:center;min-height:1.3em}#wk130Game .qres.good{color:#7dff9b}#wk130Game .qres.bad{color:#ff9b9b}
 #wk130Game .sel{width:100%;border-radius:10px;padding:8px;background:#0d1b2a;color:#fff;border:1px solid #5b7aa8;font:inherit;font-size:14px}
 #wk130Game .fnin{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}#wk130Game .fnin label{font-size:12px}#wk130Game .fnin input{width:100%;box-sizing:border-box;border-radius:8px;border:1px solid #5b7aa8;background:#0d1b2a;color:#fff;padding:6px;font:inherit}
+#wk130Game .gcard{display:flex;gap:10px;align-items:center;margin:6px 0;padding:6px;border-radius:12px;background:#fff6d8;border:1px solid #d9a53a}
+#wk130Game .gcard small{color:#5a3a1a}
+#wk130Game td.fc{width:32px;padding:2px}
 #wk130Game .src{font-size:10px;opacity:.6;margin-top:10px}
 @media (max-width:760px){#wk130Game .log{max-height:16%;font-size:11px;max-width:80%}#wk130Game .log div:nth-child(n+4){display:none}#wk130Game .body{flex-direction:column}#wk130Game .side{width:auto;max-width:none;max-height:42%;border-left:0;border-top:2px solid #2c4f7c}#wk130Game .chip.hide-m{display:none}}
 
@@ -147,6 +150,25 @@ function quiz(cb){var q=(G&&G.q)||qset();if(!q.on||!q.cats.length){cb(1);return;
  ov.onclick=function(e){var b=e.target.closest('[data-q]');if(!b)return;var a=b.getAttribute('data-q');
   if(a==='ok'){fin(same(inp.value,Q.ans));}else if(a==='opt'){fin(b.getAttribute('data-v')===Q.ans);}else if(a==='skip'){done=true;ov.hidden=true;cb(1);}};
  if(inp)inp.onkeydown=function(e){if(e.key==='Enter')fin(same(inp.value,Q.ans));};}
+
+/* 138차: 장수 얼굴 그림 — 이름으로 정해지는 새로 그린 얼굴(실제 인물 사진·닮은 그림 아님). 성별 m·f·''에 따라 머리 모양 */
+function hsh(t){var h=2166136261;for(var i=0;i<t.length;i++){h^=t.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}return h;}
+function face(name,g,sz){var h=hsh(String(name)),r=function(n){var v=h%n;h=Math.imul(h^(h>>>13),1103515245)+12345>>>0;return v;};sz=sz||56;
+ var bg=['#f7d9a8','#cfe8c8','#c9dcf2','#f2c9d6','#e3d3f0','#f5e3b3','#c8ecea','#f1d0b8'][r(8)],skin=['#f8d9bf','#f1c7a3','#e5b48c','#d29b72','#fbe3cc'][r(5)],hair=['#2b1d16','#3d2a1f','#1b1b22','#5a3a22','#6b4a2a','#2a2230'][r(6)],
+  f=g==='f'?1:g==='m'?0:r(2),st=r(4),gl=r(7)===0,sm=r(3),ey=r(3),bl=f||r(4)===0;
+ var s='<svg viewBox="0 0 100 100" width="'+sz+'" height="'+sz+'" class="wkface" aria-hidden="true"><circle cx="50" cy="50" r="49" fill="'+bg+'" stroke="#5a3a1a" stroke-width="2"/>';
+ if(f){if(st===0)s+='<path d="M20 52 Q18 18 50 16 Q82 18 80 52 L84 92 L16 92Z" fill="'+hair+'"/>';else if(st===1)s+='<path d="M22 55 Q20 18 50 16 Q80 18 78 55 L80 70 L20 70Z" fill="'+hair+'"/>';else if(st===2)s+='<circle cx="50" cy="16" r="11" fill="'+hair+'"/><path d="M24 50 Q22 20 50 20 Q78 20 76 50Z" fill="'+hair+'"/>';else s+='<path d="M22 50 Q20 18 50 17 Q80 18 78 50Z" fill="'+hair+'"/><path d="M76 40 Q92 60 80 86 Q74 66 72 48Z" fill="'+hair+'"/>';}
+ s+='<rect x="42" y="68" width="16" height="14" rx="5" fill="'+skin+'"/><path d="M22 100 Q24 80 50 78 Q76 80 78 100Z" fill="'+['#e8413a','#2f6fd6','#3cb44b','#911eb4','#f58231','#14b8c4','#555'][r(7)]+'"/>';
+ s+='<ellipse cx="25" cy="52" rx="5" ry="7" fill="'+skin+'"/><ellipse cx="75" cy="52" rx="5" ry="7" fill="'+skin+'"/><ellipse cx="50" cy="50" rx="25" ry="28" fill="'+skin+'" stroke="#8a5a3a" stroke-width="1.2"/>';
+ if(!f){if(st===0)s+='<path d="M24 46 Q22 20 50 20 Q78 20 76 46 Q66 32 50 32 Q34 32 24 46Z" fill="'+hair+'"/>';else if(st===1)s+='<path d="M24 46 Q24 18 52 20 Q78 22 76 44 Q60 28 40 34 Q30 36 24 46Z" fill="'+hair+'"/>';else if(st===2)s+='<path d="M27 40 Q30 23 50 23 Q70 23 73 40 Q60 31 50 31 Q40 31 27 40Z" fill="'+hair+'"/>';else s+='<path d="M24 46 Q20 22 34 20 Q40 12 52 16 Q64 12 70 20 Q82 24 76 46 Q70 30 50 30 Q30 30 24 46Z" fill="'+hair+'"/>';}
+ else s+='<path d="M26 44 Q30 26 50 25 Q70 26 74 44 Q64 33 50 33 Q36 33 26 44Z" fill="'+hair+'"/>';
+ s+='<path d="M35 43 Q40 40 45 43 M55 43 Q60 40 65 43" stroke="'+hair+'" stroke-width="2.4" fill="none" stroke-linecap="round"/>';
+ if(ey===0)s+='<circle cx="40" cy="51" r="3.2" fill="#2a1d14"/><circle cx="60" cy="51" r="3.2" fill="#2a1d14"/><circle cx="41" cy="50" r="1" fill="#fff"/><circle cx="61" cy="50" r="1" fill="#fff"/>';else if(ey===1)s+='<path d="M36 51 Q40 47 44 51 M56 51 Q60 47 64 51" stroke="#2a1d14" stroke-width="2.4" fill="none" stroke-linecap="round"/>';else s+='<ellipse cx="40" cy="51" rx="2.6" ry="3.6" fill="#2a1d14"/><ellipse cx="60" cy="51" rx="2.6" ry="3.6" fill="#2a1d14"/>';
+ if(gl)s+='<circle cx="40" cy="51" r="7" fill="none" stroke="#333" stroke-width="1.8"/><circle cx="60" cy="51" r="7" fill="none" stroke="#333" stroke-width="1.8"/><path d="M47 51 H53" stroke="#333" stroke-width="1.8"/>';
+ s+='<path d="M49 55 Q48 60 51 60" stroke="#a8704a" stroke-width="1.6" fill="none"/>';
+ if(bl)s+='<ellipse cx="33" cy="60" rx="4.5" ry="2.6" fill="#ff8f8f" opacity=".45"/><ellipse cx="67" cy="60" rx="4.5" ry="2.6" fill="#ff8f8f" opacity=".45"/>';
+ s+=sm===0?'<path d="M42 65 Q50 72 58 65" stroke="#8a2a1a" stroke-width="2.4" fill="none" stroke-linecap="round"/>':sm===1?'<path d="M42 65 Q50 72 58 65Z" fill="#a83a2a"/>':'<path d="M44 66 H56" stroke="#8a2a1a" stroke-width="2.4" stroke-linecap="round"/>';
+ return s+'</svg>';}
 /* ---------------- 게임 상태 ---------------- */
 var G=null;
 function newGame(me,diff){
@@ -154,10 +176,10 @@ function newGame(me,diff){
  /* 133차: 장수 = 내가 등록한 장수(지인) + 기본 장수 1000명(연예인 + 가상 이름). 군주는 세력 이름과 같은 장수 */
  var fn=fnames(),gens=[],at=[];for(var i2=0;i2<N;i2++)at.push(-1);
  function add(g){g.id=gens.length;gens.push(g);return g;}
- reg().forEach(function(g,k){add({name:String(g.name||('장수'+(k+1))).slice(0,12),war:+g.war||50,int:+g.int||50,lead:+g.lead||50,pol:+g.pol||50,f:(g.f>=0&&g.f<FAC.length)?+g.f:-2,lord:!!g.lord,st:-1,mine:1});});
+ reg().forEach(function(g,k){add({sex:g.sex==='m'||g.sex==='f'?g.sex:'',name:String(g.name||('장수'+(k+1))).slice(0,12),war:+g.war||50,int:+g.int||50,lead:+g.lead||50,pol:+g.pol||50,f:(g.f>=0&&g.f<FAC.length)?+g.f:-2,lord:!!g.lord,st:-1,mine:1});});
  var names={};gens.forEach(function(g){names[g.name]=1;});
- FAC.forEach(function(f,fi){if(!gens.some(function(g){return g.f===fi&&g.lord;})&&!names[fn[fi]]){names[fn[fi]]=1;add({name:fn[fi],war:85,int:80,lead:88,pol:82,f:fi,lord:true,st:-1});}});
- var pool=QB.gens.filter(function(g){return !names[g[0]];}).map(function(g){return {name:g[0],war:g[1],int:g[2],lead:g[3],pol:g[4],f:-2,lord:false,st:-1};});
+ FAC.forEach(function(f,fi){if(!gens.some(function(g){return g.f===fi&&g.lord;})&&!names[fn[fi]]){names[fn[fi]]=1;var cg=QB.gens.filter(function(x){return x[0]===fn[fi];})[0];add({name:fn[fi],sex:cg?cg[5]:'',war:85,int:80,lead:88,pol:82,f:fi,lord:true,st:-1});}});
+ var pool=QB.gens.filter(function(g){return !names[g[0]];}).map(function(g){return {name:g[0],war:g[1],int:g[2],lead:g[3],pol:g[4],sex:g[5]||'',f:-2,lord:false,st:-1};});
  for(var k=pool.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1)),tt=pool[k];pool[k]=pool[j];pool[j]=tt;}
  FAC.forEach(function(f,fi){var spots=[];for(var s2=0;s2<N;s2++)if(o[s2]===fi)spots.push(s2);spots.sort(function(a,b){return (b===f[1]?99:NL[b])-(a===f[1]?99:NL[a])||Math.random()-.5;});
   var mine=gens.filter(function(g){return g.f===fi;});mine.sort(function(a,b){return (b.lord?1:0)-(a.lord?1:0);});
@@ -173,10 +195,10 @@ function newGame(me,diff){
 function ym(){return (2026+Math.floor(G.turn/12))+'년 '+(G.turn%12+1)+'월';}
 function addLog(m){G.log.unshift(m);if(G.log.length>40)G.log.length=40;}
 /* 136차: 저장은 모아서(0.6초 뒤 한 번) — 브라우저가 너무 잦은 큰 저장을 늦게 쓰는 것을 막음. 창을 닫거나 숨길 때는 바로 저장 */
-var saveT=0;function saveNow(){clearTimeout(saveT);saveT=0;if(!G)return;try{var g=G.gens;G.gz=g.map(function(x){return [x.name,x.war,x.int,x.lead,x.pol,x.f,x.st,x.lord?1:0,x.mine?1:0];});delete G.gens;var txt=JSON.stringify(G);ls(SAVEK,txt);ls(SAVEK+'_b',txt);G.gens=g;delete G.gz;}catch(_){}}
+var saveT=0;function saveNow(){clearTimeout(saveT);saveT=0;if(!G)return;try{var g=G.gens;G.gz=g.map(function(x){return [x.name,x.war,x.int,x.lead,x.pol,x.f,x.st,x.lord?1:0,x.mine?1:0,x.sex||''];});delete G.gens;var txt=JSON.stringify(G);ls(SAVEK,txt);ls(SAVEK+'_b',txt);G.gens=g;delete G.gz;}catch(_){}}
 function save(){clearTimeout(saveT);saveT=setTimeout(saveNow,600);}
 window.addEventListener('pagehide',saveNow);document.addEventListener('visibilitychange',function(){if(document.hidden)saveNow();});
-function load(){try{var g=JSON.parse(ls(SAVEK)||ls(SAVEK+'_b')||'null');if(g&&g.gz&&!g.gens){g.gens=g.gz.map(function(x,i){return {id:i,name:x[0],war:x[1],int:x[2],lead:x[3],pol:x[4],f:x[5],st:x[6],lord:!!x[7],mine:!!x[8]};});delete g.gz;}if(g&&g.v===1&&g.o&&g.o.length===N)return g;}catch(_){}return null;}
+function load(){try{var g=JSON.parse(ls(SAVEK)||ls(SAVEK+'_b')||'null');if(g&&g.gz&&!g.gens){g.gens=g.gz.map(function(x,i){return {id:i,name:x[0],war:x[1],int:x[2],lead:x[3],pol:x[4],f:x[5],st:x[6],lord:!!x[7],mine:!!x[8],sex:x[9]||''};});delete g.gz;}if(g&&g.v===1&&g.o&&g.o.length===N)return g;}catch(_){}return null;}
 function genAt(s){var id=G.at[s];return id>=0?G.gens[id]:null;}
 function cnt(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c++;return c;}
 function troops(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c+=G.t[i];return c;}
@@ -320,7 +342,7 @@ function panel(){if(sel<0)return '<div class="hint">지도에서 역(성)을 눌
  var i=sel,s=D.st[i],own=G.o[i],mine=own===G.me,g=genAt(i),done=G.act[i];
  var h='<div class="st-name">'+esc(s[0])+(CAP[i]!==undefined?' ★':'')+'</div><div>'+s[3].map(function(l){return '<span class="lchip" style="background:'+LINES[l][1]+'">'+esc(LINES[l][0])+'</span>';}).join('')+'</div>'
   +'<div class="row"><span>세력</span><b style="color:'+FAC[own][2]+'">'+esc(FN(own))+'</b></div><div class="row"><span>🪖 병사</span><b>'+G.t[i]+'</b></div><div class="row"><span>🧱 성벽</span><b>'+G.df[i]+'</b></div><div class="row"><span>🛍️ 상권</span><b>'+G.dv[i]+'</b></div>'
-  +'<div class="row"><span>👤 태수</span><b>'+(g?esc(g.name)+' <small>(무'+g.war+'·지'+g.int+'·통'+g.lead+'·정'+g.pol+')</small>':'없음')+'</b></div>';
+  +(g?'<div class="gcard">'+face(g.name,g.sex,64)+'<div><b>👤 '+esc(g.name)+'</b>'+(g.lord?' 👑':'')+(g.sex?' <small>'+(g.sex==='f'?'여':'남')+'</small>':'')+'<br><small>무력 '+g.war+' · 지력 '+g.int+' · 통솔 '+g.lead+' · 정치 '+g.pol+'</small></div></div>':'<div class="row"><span>👤 태수</span><b>없음</b></div>');
  if(mine){var en=ADJ[i].some(function(j){return G.o[j]!==G.me;}),fr=ADJ[i].some(function(j){return G.o[j]===G.me;});
   h+='<div class="acts"><button data-a="dev" '+(done||G.gold[G.me]<40?'disabled':'')+'>🛍️ 개발 (40)</button><button data-a="rec" '+(done||G.gold[G.me]<30?'disabled':'')+'>🪖 징병 (30)</button><button data-a="wall" '+(done||G.gold[G.me]<40||G.df[i]>=200?'disabled':'')+'>🧱 성벽 (40)</button><button data-a="mov" '+(done||!fr||G.t[i]<2?'disabled':'')+'>🚃 이동</button><button class="atk" data-a="atk" '+(done||!en||G.t[i]<2?'disabled':'')+'>⚔️ 공격</button><button data-a="hire" '+(done||g||G.gold[G.me]<50||!G.gens.some(function(x){return x.f===-1;})?'disabled':'')+'>👤 등용 (50)</button><button data-a="cancel" '+(mode?'':'disabled')+'>↩ 취소</button></div>'
    +'<div style="margin-top:8px">보낼 병력 <b data-k="pct">'+pct+'%</b> ('+Math.round(G.t[i]*pct/100)+'명)<input type="range" min="10" max="100" step="10" value="'+pct+'" data-a="pct"></div>';
@@ -380,17 +402,19 @@ function showStart(){var ov=root.querySelector('[data-ov="start"]'),sv=load(),qs
   else if(s==='gens')showGens();else if(s==='close')close();};}
 /* 장수 등록 화면 */
 function showGens(){var ov=root.querySelector('[data-ov="gens"]'),R=reg();
- function row(g,k){return '<tr data-k="'+k+'"><td><input data-f="name" maxlength="12" value="'+esc(g.name||'')+'" placeholder="이름"></td><td><select data-f="f"><option value="-1">무작위</option>'+FAC.map(function(f,fi){return '<option value="'+fi+'"'+(+g.f===fi?' selected':'')+'>'+esc(f[0])+'</option>';}).join('')+'</select></td>'
+ function row(g,k){return '<tr data-k="'+k+'"><td class="fc">'+(k<300?face(g.name||'?',g.sex,30):'')+'</td><td><input data-f="name" maxlength="12" value="'+esc(g.name||'')+'" placeholder="이름"></td><td><select data-f="sex"><option value="">?</option><option value="m"'+(g.sex==='m'?' selected':'')+'>남</option><option value="f"'+(g.sex==='f'?' selected':'')+'>여</option></select></td><td><select data-f="f"><option value="-1">무작위</option>'+FAC.map(function(f,fi){return '<option value="'+fi+'"'+(+g.f===fi?' selected':'')+'>'+esc(f[0])+'</option>';}).join('')+'</select></td>'
   +['war','int','lead','pol'].map(function(x){return '<td><input type="number" min="1" max="100" data-f="'+x+'" value="'+(+g[x]||50)+'"></td>';}).join('')+'<td><input type="checkbox" data-f="lord"'+(g.lord?' checked':'')+' style="width:auto"></td><td><button class="mini" data-g="dice" title="능력치 무작위">🎲</button> <button class="mini" data-g="del" title="지우기">🗑</button></td></tr>';}
  ov.innerHTML='<div class="card"><h3>👥 장수 등록</h3><p style="margin:0 0 8px;font-size:13px;line-height:1.6">기본 장수로 연예인 '+QB.gens.length+'명이 이미 들어 있어요. 여기에는 <b>지인</b>을 넣으세요. 지인 이름과 능력치(1~100)를 넣으면 <b>새 게임부터</b> 장수로 나와 역의 태수가 돼요. 무력=공격, 지력=적 장수 등용, 통솔=방어, 정치=수입. 군주에 체크하면 그 세력 수도에 있어요. 이 기기에 저장되고, 일반회원으로 로그인하면 회원 기록과 함께 저장돼요.</p>'
-  +'<div style="overflow:auto"><table><thead><tr><th>이름</th><th>소속</th><th>무력</th><th>지력</th><th>통솔</th><th>정치</th><th>군주</th><th></th></tr></thead><tbody>'+R.map(row).join('')+'</tbody></table></div>'
-  +'<details style="margin-top:8px"><summary style="font-weight:900;cursor:pointer">📋 여러 명 한꺼번에 넣기</summary><p style="font-size:12px;margin:6px 0">한 줄에 한 명: <b>이름</b> 또는 <b>이름, 무력, 지력, 통솔, 정치</b> (능력치를 안 쓰면 무작위 · 같은 이름은 A·B·C…로 나눔)</p><textarea data-g="bulk" style="height:110px" placeholder="홍길동&#10;김철수, 80, 60, 70, 50"></textarea><button class="sub" data-g="bulkadd">➕ 목록에 넣기</button></details>'+'<button class="sub" data-g="add">➕ 장수 추가</button><button class="big" data-g="save">💾 저장</button>'
+  +'<div style="overflow:auto"><table><thead><tr><th></th><th>이름</th><th>성별</th><th>소속</th><th>무력</th><th>지력</th><th>통솔</th><th>정치</th><th>군주</th><th></th></tr></thead><tbody>'+R.map(row).join('')+'</tbody></table></div>'
+  +'<details style="margin-top:8px"><summary style="font-weight:900;cursor:pointer">📋 여러 명 한꺼번에 넣기</summary><p style="font-size:12px;margin:6px 0">한 줄에 한 명: <b>이름</b>, <b>이름, 남</b> 또는 <b>이름, 여, 무력, 지력, 통솔, 정치</b> (능력치를 안 쓰면 무작위 · 같은 이름은 A·B·C…로 나눔)</p><textarea data-g="bulk" style="height:110px" placeholder="홍길동&#10;김철수, 80, 60, 70, 50"></textarea><button class="sub" data-g="bulkadd">➕ 목록에 넣기</button></details>'+'<button class="sub" data-g="add">➕ 장수 추가</button><button class="big" data-g="save">💾 저장</button>'
   +'<details style="margin-top:10px"><summary>📤 내보내기 · 📥 가져오기 (다른 기기로 옮기기)</summary><textarea data-g="io">'+esc(JSON.stringify(R))+'</textarea><button class="sub" data-g="imp">📥 위 글로 바꾸기</button></details>'
   +'<button class="sub" data-g="close" style="background:#ffffff22">닫기</button></div>';
  ov.hidden=false;
- function collect(){var a=[];ov.querySelectorAll('tbody tr').forEach(function(tr){var g={};tr.querySelectorAll('[data-f]').forEach(function(inp){var f=inp.getAttribute('data-f');g[f]=f==='name'?inp.value.trim():f==='lord'?inp.checked:(function(v){return isNaN(v)?(f==='f'?-1:50):Math.max(f==='f'?-1:1,Math.min(100,v));})(parseInt(inp.value,10));});if(g.name)a.push(g);});return a;}
+ function collect(){var a=[];ov.querySelectorAll('tbody tr').forEach(function(tr){var g={};tr.querySelectorAll('[data-f]').forEach(function(inp){var f=inp.getAttribute('data-f');g[f]=f==='name'?inp.value.trim():f==='sex'?inp.value:f==='lord'?inp.checked:(function(v){return isNaN(v)?(f==='f'?-1:50):Math.max(f==='f'?-1:1,Math.min(100,v));})(parseInt(inp.value,10));});if(g.name)a.push(g);});return a;}
  ov.onclick=function(e){var b=e.target.closest('[data-g]');if(!b)return;var s=b.getAttribute('data-g');
-  if(s==='bulkadd'){var tb2=ov.querySelector('tbody');ov.querySelector('[data-g="bulk"]').value.split('\n').forEach(function(l){var p=l.split(/[,，\t]/).map(function(x){return x.trim();});if(!p[0])return;var R2=function(i){var v=parseInt(p[i],10);return isNaN(v)?Math.round(rnd(30,95)):Math.max(1,Math.min(100,v));};tb2.insertAdjacentHTML('beforeend',row({name:sameName(tb2,p[0].slice(0,10)),f:-1,war:R2(1),int:R2(2),lead:R2(3),pol:R2(4)},tb2.children.length));});ov.querySelector('[data-g="bulk"]').value='';toastIn(ov,'목록에 넣었어요. 💾 저장을 눌러 주세요.');return;}
+  if(s==='bulkadd'){var tb2=ov.querySelector('tbody'),cur=collectAll(tb2),add=[];
+   ov.querySelector('[data-g="bulk"]').value.split('\n').forEach(function(l){var p=l.split(/[,，\t]/).map(function(x){return x.trim();});if(!p[0])return;var sx='';if(p[1]&&/^(남|여|m|f|M|F|남자|여자)$/.test(p[1])){sx=/^(남|m|M|남자)$/.test(p[1])?'m':'f';p.splice(1,1);}var R2=function(i){var v=parseInt(p[i],10);return isNaN(v)?Math.round(rnd(30,95)):Math.max(1,Math.min(100,v));};add.push({name:p[0].replace(/\s+/g,'').slice(0,10),sex:sx,f:-1,war:R2(1),int:R2(2),lead:R2(3),pol:R2(4)});});
+   var all=dedupe(cur.concat(add));tb2.innerHTML=all.map(row).join('');ov.querySelector('[data-g="bulk"]').value='';toastIn(ov,add.length+'명을 목록에 넣었어요(모두 '+all.length+'명). 💾 저장을 눌러 주세요.');return;}
   if(s==='add'){var tb=ov.querySelector('tbody');tb.insertAdjacentHTML('beforeend',row({name:'',f:-1,war:50,int:50,lead:50,pol:50},tb.children.length));tb.lastElementChild.querySelector('input').focus();}
   else if(s==='dice'){b.closest('tr').querySelectorAll('input[type=number]').forEach(function(inp){inp.value=Math.round(rnd(30,99));});}
   else if(s==='del'){b.closest('tr').remove();}
@@ -405,6 +429,9 @@ function sameName(tb,n){var inputs=[].slice.call(tb.querySelectorAll('input[data
  if(!plain.length&&!used.length)return n;
  if(plain.length){plain.forEach(function(x){var k=0;while(used.indexOf(sfx(k))>=0)k++;used.push(sfx(k));x.value=n+sfx(k);});}
  var k2=0;while(used.indexOf(sfx(k2))>=0)k2++;return n+sfx(k2);}
+function collectAll(tb){return [].slice.call(tb.querySelectorAll('tr')).map(function(tr){var g={};tr.querySelectorAll('[data-f]').forEach(function(inp){var f=inp.getAttribute('data-f');g[f]=f==='name'?inp.value.trim():f==='sex'?inp.value:f==='lord'?inp.checked:parseInt(inp.value,10);});return g;}).filter(function(g){return g.name;});}
+/* 동명이인: 같은 이름(뒤 A·B… 뺀 이름)이 둘 이상이면 순서대로 A·B·C… */
+function dedupe(a){var base=function(n){var m=/^(.*?[가-힣])([A-Z]{1,2})$/.exec(n);return m?m[1]:n;},cnt={},seen={};a.forEach(function(g){var b=base(g.name);cnt[b]=(cnt[b]||0)+1;});a.forEach(function(g){var b=base(g.name);if(cnt[b]>1){g.name=b+sfx(seen[b]||0);seen[b]=(seen[b]||0)+1;}else g.name=b;});return a;}
 function toastIn(ov,m){var t=ov.querySelector('.okmsg');if(!t){t=document.createElement('div');t.className='okmsg hint';ov.querySelector('.card').appendChild(t);}t.textContent=m;}
 function showHelp(){var ov=root.querySelector('[data-ov="help"]');ov.innerHTML='<div class="card"><h3>❓ 도움말</h3><div style="line-height:1.8;font-size:14px">• 한 턴은 한 달이에요. 우리 역마다 한 달에 명령 하나(개발·징병·성벽·이동·공격)를 할 수 있어요.<br>• <b>공격</b>은 노선으로 이어진 이웃 적 역에만 할 수 있어요. 보낼 병력(%)을 정하고 빨간 테두리 역을 누르세요.<br>• 공격 병력×(1+무력) 이 방어 병력×(1+성벽)×(1+통솔)보다 크면 점령해요. 운도 조금 있어요.<br>• 태수가 있는 역에서 병력 절반 이상을 보내면 장수가 함께 가요.<br>• 매달 역마다 금(환승 노선이 많을수록·상권이 높을수록 많이)과 병사가 늘어요.<br>• 📋 명령의 <b>전선으로 모으기</b>로 뒤쪽 병력을 한 번에 앞으로 보낼 수 있어요.<br>• 모든 역을 차지하면 천하통일! 게임은 이 기기에 자동 저장돼요.</div><button class="sub" data-a="ovclose">닫기</button></div>';ov.hidden=false;}
 function showEnd(){var ov=root.querySelector('[data-ov="end"]');ov.innerHTML='<div class="card" style="text-align:center"><h3>'+(G.over===1?'🏆 천하통일!':'💥 패배…')+'</h3><p>'+ym()+' · '+esc(FN(G.me))+'</p><button class="big" data-a="newg">🔄 새 게임</button><button class="sub" data-a="ovclose">지도 보기</button></div>';ov.hidden=false;}
