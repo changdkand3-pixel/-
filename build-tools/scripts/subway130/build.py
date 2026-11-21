@@ -25,7 +25,8 @@ for s in st:
         k=(r**0.62)/r;x*=k;y*=k
     pts.append([x,y])
 mnx=min(p[0] for p in pts);mxx=max(p[0] for p in pts);mny=min(p[1] for p in pts);mxy=max(p[1] for p in pts)
-W=3200;Hh=round(W*(mxy-mny)/(mxx-mnx));pad=40
+import sys as _sys
+W=int(_sys.argv[1]) if len(_sys.argv)>1 else 7200;Hh=round(W*(mxy-mny)/(mxx-mnx));pad=40
 P=[[round(pad+(p[0]-mnx)/(mxx-mnx)*(W-2*pad),1),round(pad+(p[1]-mny)/(mxy-mny)*(Hh-2*pad),1)] for p in pts]
 E=set();edges=[]
 adj=collections.defaultdict(dict)
@@ -37,9 +38,9 @@ for e in d['edges']:
     E.add(key);edges.append(list(key))
     dist=math.hypot(st[a]['lat']-st[b]['lat'],(st[a]['lon']-st[b]['lon'])*cos)
     adj[a][b]=min(adj[a].get(b,9),dist);adj[b][a]=adj[a][b]
-F=[['서울 도심','시청','#e8413a'],['서울 동북','노원','#2f80ed'],['서울 동남','강남','#9b51e0'],['서울 서남','신도림','#27ae60'],
-   ['인천','인천시청','#f2994a'],['경기 남부','수원','#d4a017'],['경기 북부','의정부','#219ebc'],['고양·파주','대화','#8e6c3a'],
-   ['경기 동부','구리','#11998e'],['경기 서남','안산','#d35d9a']]
+F=[['서울 도심','시청','#e6194b'],['서울 동북','노원','#4363d8'],['서울 동남','강남','#911eb4'],['서울 서남','신도림','#3cb44b'],
+   ['인천','인천시청','#f58231'],['경기 남부','수원','#e6b800'],['경기 북부','의정부','#f032e6'],['고양·파주','대화','#9a6324'],
+   ['경기 동부','구리','#14b8c4'],['경기 서남','안산','#1b2a80']]
 for f in F:assert f[1] in idx,f
 dist=[9e9]*len(st);own=[-1]*len(st);pq=[]
 for fi,f in enumerate(F):
@@ -100,6 +101,41 @@ while len(trees)<320 and tries<20000:
 deco['trees']=trees
 wet=[s0['ko'] for i,s0 in enumerate(st) if inpoly(P[i][0],P[i][1],sea) and not inpoly(P[i][0],P[i][1],deco['isle'])]
 print('바다에 빠진 역',wet)
+
+# ---- 133차: 역 이름 자리 정하기(겹치지 않게) — 글자 크기 FS(지도 단위), 8방향 후보 중 겹침이 가장 적은 곳
+FS=14
+def icon(i):
+    s0=S[i];cap=any(f[1]==st[i]['ko'] for f in F);sz=46 if cap else (30 if len(s0[3])>1 else 20);return sz
+boxes=[]
+for i,s0 in enumerate(S):
+    sz=icon(i);boxes.append((s0[1]-sz/2,s0[2]-sz*.6,s0[1]+sz/2,s0[2]+sz*.45))
+def tw(t):return sum(FS*(0.55 if ord(c)<128 else 1.0) for c in t)
+def ov(a,b):return max(0,min(a[2],b[2])-max(a[0],b[0]))*max(0,min(a[3],b[3])-max(a[1],b[1]))
+import itertools
+grid=collections.defaultdict(list);G=60
+def cells(b):
+    for gx in range(int(b[0]//G),int(b[2]//G)+1):
+        for gy in range(int(b[1]//G),int(b[3]//G)+1):yield (gx,gy)
+for i,b in enumerate(boxes):
+    for c in cells(b):grid[c].append(('s',i,b))
+order=sorted(range(len(S)),key=lambda i:-(len(S[i][3])*10+icon(i)))
+LAB=[None]*len(S);bad=0
+for i in order:
+    x,y=S[i][1],S[i][2];sz=icon(i);w=tw(S[i][0]);h=FS*1.15;g=sz*.5+3
+    cand=[(x-w/2,y+sz*.45+2,'b'),(x-w/2,y-sz*.6-h-1,'t'),(x+g,y-h/2,'r'),(x-g-w,y-h/2,'l'),(x+g*.7,y+sz*.3,'br'),(x-g*.7-w,y+sz*.3,'bl'),(x+g*.7,y-sz*.5-h,'tr'),(x-g*.7-w,y-sz*.5-h,'tl'),(x-w/2,y+sz*.45+h+6,'bb'),(x-w/2,y-sz*.6-2*h-6,'tt'),(x+g+18,y-h/2,'rr'),(x-g-18-w,y-h/2,'ll')]
+    best=None
+    for k,(cx,cy,tag) in enumerate(cand):
+        b=(cx,cy,cx+w,cy+h);cost=k*0.5
+        for c in set(cells(b)):
+            for kind,j,bb in grid[c]:
+                if kind=='s' and j==i:continue
+                cost+=ov(b,bb)*(3 if kind=='l' else 1)
+        if best is None or cost<best[0]:best=(cost,b)
+    if best[0]>5:bad+=1;print('겹침',S[i][0],round(best[0]))
+    b=best[1];LAB[i]=[round(b[0]+w/2,1),round(b[1]+h*.82,1)]
+    for c in cells(b):grid[c].append(('l',i,b))
+print('W',W,'겹치는 이름',bad)
+for i,s0 in enumerate(S):s0.append(LAB[i])
 out={'v':130,'w':W,'h':Hh,'lines':[[l['ko'],l['colour']] for l in L],'st':S,'e':edges,'f':[[f[0],idx[f[1]],f[2]] for f in F],
      'src':'지하철 자료: © OpenStreetMap contributors (ODbL), korea-mcp','deco':deco}
 p=os.path.join(H,'..','..','assets','subway130.json')
