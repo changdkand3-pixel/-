@@ -1,0 +1,257 @@
+<!-- 130차: 원기랜드 지하철 천하통일 — 수도권 지하철역(서울·경기·인천 661역)을 성으로 삼는 땅따먹기 전략 게임. 지도 자료: © OpenStreetMap contributors(ODbL) -->
+<style id="wk130-style">
+#wk130Hall{position:absolute;left:89.6%;top:41.5%;width:9.6%;z-index:56;padding:0;margin:0;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#wk130Hall svg{display:block;width:100%;height:auto;filter:drop-shadow(0 2px 3px #0007);transition:transform .2s}
+#wk130Hall:hover svg,#wk130Hall:focus-visible svg{transform:scale(1.06) translateY(-3%)}
+#wk130Hall .lab{margin-top:-6%;padding:.25em .7em;border-radius:999px;background:linear-gradient(#1d4f91,#0f2e5c);color:#fff;border:2px solid #ffd34d;font:900 clamp(7px,1.05vw,13px)/1.2 system-ui,'Malgun Gothic',sans-serif;white-space:nowrap;box-shadow:0 2px 4px #0007}
+body:has(.modal.open) #wk130Hall{visibility:hidden}
+#wk130Game{position:fixed;inset:0;z-index:100030;background:#0d1b2a;color:#fff;display:flex;flex-direction:column;font-family:system-ui,'Malgun Gothic',sans-serif;user-select:none;-webkit-user-select:none}
+#wk130Game[hidden]{display:none}
+#wk130Game button{font-family:inherit;cursor:pointer}
+#wk130Game .top{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px 8px;background:linear-gradient(90deg,#14325c,#1f4f8a);border-bottom:2px solid #ffd34d}
+#wk130Game .top h2{margin:0 6px 0 0;font-size:clamp(14px,3.6vw,18px);font-weight:900;color:#ffe08a;white-space:nowrap}
+#wk130Game .chip{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:999px;background:#ffffff1a;font-size:13px;font-weight:800;white-space:nowrap}
+#wk130Game .tb{border:0;border-radius:10px;padding:6px 10px;font-size:13px;font-weight:800;background:#fff;color:#14325c}
+#wk130Game .tb.go{background:linear-gradient(#ffd34d,#ff9b1f);color:#3a1600}
+#wk130Game .tb.x{background:#ffffff26;color:#fff;margin-left:auto}
+#wk130Game .body{position:relative;flex:1;min-height:0;display:flex}
+#wk130Game .mapw{position:relative;flex:1;min-width:0;overflow:hidden;background:radial-gradient(circle at 50% 45%,#1d3557,#0d1b2a);touch-action:none}
+#wk130Game svg.map{width:100%;height:100%;display:block}
+#wk130Game .side{width:300px;max-width:42%;overflow:auto;background:#13263f;border-left:2px solid #2c4f7c;padding:10px;box-sizing:border-box;font-size:14px}
+#wk130Game .zoom{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:6px}
+#wk130Game .zoom button{width:38px;height:38px;border-radius:10px;border:0;background:#ffffffe6;color:#14325c;font-size:20px;font-weight:900}
+#wk130Game .log{position:absolute;left:8px;bottom:8px;max-width:min(420px,70%);max-height:30%;overflow:auto;background:#000a;border-radius:10px;padding:6px 9px;font-size:12px;line-height:1.5;pointer-events:auto}
+#wk130Game .log div:first-child{color:#ffe08a;font-weight:800}
+#wk130Game .st-name{font-size:18px;font-weight:900;margin:0 0 4px}
+#wk130Game .lchip{display:inline-block;padding:1px 7px;border-radius:999px;font-size:11px;font-weight:800;color:#fff;margin:0 3px 3px 0;text-shadow:0 1px 1px #0008}
+#wk130Game .row{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #ffffff14}
+#wk130Game .acts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+#wk130Game .acts button{border:0;border-radius:10px;padding:9px 6px;font-size:13px;font-weight:800;background:#2a5ca8;color:#fff}
+#wk130Game .acts button:disabled{opacity:.4;cursor:default}
+#wk130Game .acts .atk{background:#c0392b}
+#wk130Game .hint{margin-top:8px;padding:8px;border-radius:10px;background:#ffd34d22;color:#ffe9a8;font-size:13px}
+#wk130Game input[type=range]{width:100%}
+#wk130Game .ov{position:absolute;inset:0;background:#0d1b2af2;display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:16px;box-sizing:border-box;z-index:5}
+#wk130Game .ov[hidden]{display:none}
+#wk130Game .card{width:min(100%,760px);background:#13263f;border:2px solid #ffd34d;border-radius:18px;padding:16px;box-sizing:border-box}
+#wk130Game .card h3{margin:0 0 10px;color:#ffe08a;font-size:20px}
+#wk130Game .facs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+#wk130Game .fac{border:3px solid transparent;border-radius:12px;padding:10px;color:#fff;text-align:left;font-weight:800;font-size:14px}
+#wk130Game .fac.on{border-color:#ffe08a;box-shadow:0 0 0 2px #ffe08a55}
+#wk130Game .fac small{display:block;font-weight:600;opacity:.9;margin-top:3px}
+#wk130Game .big{display:block;width:100%;margin-top:12px;border:0;border-radius:12px;padding:12px;font-size:16px;font-weight:900;background:linear-gradient(#ffd34d,#ff9b1f);color:#3a1600}
+#wk130Game .sub{display:block;width:100%;margin-top:8px;border:0;border-radius:12px;padding:10px;font-size:14px;font-weight:800;background:#2a5ca8;color:#fff}
+#wk130Game table{width:100%;border-collapse:collapse;font-size:13px}
+#wk130Game td,#wk130Game th{padding:4px;border-bottom:1px solid #ffffff1a;text-align:center}
+#wk130Game td input,#wk130Game td select{width:100%;box-sizing:border-box;border-radius:6px;border:1px solid #5b7aa8;background:#0d1b2a;color:#fff;padding:4px;font:inherit}
+#wk130Game td input[type=number]{width:54px}
+#wk130Game .mini{border:0;border-radius:8px;padding:4px 8px;font-weight:800;background:#ffffff22;color:#fff}
+#wk130Game textarea{width:100%;height:90px;box-sizing:border-box;border-radius:8px;background:#0d1b2a;color:#fff;border:1px solid #5b7aa8;font:12px monospace}
+#wk130Game .menu{position:absolute;top:44px;right:8px;background:#fff;color:#14325c;border-radius:12px;box-shadow:0 8px 24px #0008;padding:6px;z-index:6;display:flex;flex-direction:column;gap:4px;min-width:200px}
+#wk130Game .menu[hidden]{display:none}
+#wk130Game .menu button{border:0;border-radius:8px;padding:9px;text-align:left;font-weight:800;background:#eef3fb;color:#14325c}
+#wk130Game .toast{position:absolute;left:50%;top:12px;transform:translateX(-50%);background:#000c;color:#fff;padding:8px 14px;border-radius:12px;font-weight:800;font-size:14px;z-index:7;pointer-events:none;transition:opacity .4s}
+#wk130Game .src{font-size:10px;opacity:.6;margin-top:10px}
+@media (max-width:760px){#wk130Game .log{max-height:16%;font-size:11px;max-width:80%}#wk130Game .log div:nth-child(n+4){display:none}#wk130Game .body{flex-direction:column}#wk130Game .side{width:auto;max-width:none;max-height:42%;border-left:0;border-top:2px solid #2c4f7c}#wk130Game .chip.hide-m{display:none}}
+</style>
+<script id="wk130-js">(function(){'use strict';
+var D=__SUBWAY__;var NS='http://www.w3.org/2000/svg';
+var N=D.st.length,LINES=D.lines,FAC=D.f;
+var ADJ=[];for(var i=0;i<N;i++)ADJ.push([]);D.e.forEach(function(e){if(ADJ[e[0]].indexOf(e[1])<0)ADJ[e[0]].push(e[1]);if(ADJ[e[1]].indexOf(e[0])<0)ADJ[e[1]].push(e[0]);});
+var NL=D.st.map(function(s){return Math.max(1,s[3].length);});
+var CAP={};FAC.forEach(function(f,fi){CAP[f[1]]=fi;});
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v);}catch(_){return null;}}
+function rnd(a,b){return a+Math.random()*(b-a);}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+/* ---------------- 장수 등록(지인 이름) ---------------- */
+var REGK='wk130_generals',SAVEK='wk130_save';
+function reg(){try{var a=JSON.parse(ls(REGK)||'[]');return Array.isArray(a)?a:[];}catch(_){return [];}}
+function setReg(a){ls(REGK,JSON.stringify(a));}
+/* ---------------- 게임 상태 ---------------- */
+var G=null;
+function newGame(me,diff){
+ var o=[],t=[],df=[],dv=[];for(var i=0;i<N;i++){var cap=CAP[i]!==undefined;o.push(D.st[i][4]);t.push(cap?150:20+15*(NL[i]-1)+Math.round(rnd(0,10)));df.push(cap?60:10+10*(NL[i]-1));dv.push(10);}
+ var gens=reg().map(function(g,k){return {id:k,name:String(g.name||('장수'+(k+1))).slice(0,12),war:+g.war||50,int:+g.int||50,lead:+g.lead||50,pol:+g.pol||50,f:(g.f>=0&&g.f<FAC.length)?+g.f:Math.floor(Math.random()*FAC.length),lord:!!g.lord,st:-1};});
+ var at=[];for(var i2=0;i2<N;i2++)at.push(-1);
+ FAC.forEach(function(f,fi){var mine=gens.filter(function(g){return g.f===fi;});mine.sort(function(a,b){return (b.lord?1:0)-(a.lord?1:0);});
+  var spots=[];for(var s=0;s<N;s++)if(o[s]===fi)spots.push(s);spots.sort(function(a,b){return (b===f[1]?99:NL[b])-(a===f[1]?99:NL[a])||Math.random()-.5;});
+  mine.forEach(function(g,k){var s=spots[k%spots.length];if(at[s]>=0){for(var q=0;q<spots.length;q++)if(at[spots[q]]<0){s=spots[q];break;}}g.st=s;if(at[s]<0)at[s]=g.id;});});
+ G={v:1,turn:0,me:me,diff:diff,gold:FAC.map(function(){return 300;}),o:o,t:t,df:df,dv:dv,at:at,act:o.map(function(){return 0;}),gens:gens,log:[],over:0};
+ addLog('🚇 '+ym()+' · '+FAC[me][0]+' 세력으로 천하통일을 시작합니다!');save();}
+function ym(){return (2026+Math.floor(G.turn/12))+'년 '+(G.turn%12+1)+'월';}
+function addLog(m){G.log.unshift(m);if(G.log.length>40)G.log.length=40;}
+function save(){try{ls(SAVEK,JSON.stringify(G));}catch(_){}}
+function load(){try{var g=JSON.parse(ls(SAVEK)||'null');if(g&&g.v===1&&g.o&&g.o.length===N)return g;}catch(_){}return null;}
+function genAt(s){var id=G.at[s];return id>=0?G.gens[id]:null;}
+function cnt(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c++;return c;}
+function troops(f){var c=0;for(var i=0;i<N;i++)if(G.o[i]===f)c+=G.t[i];return c;}
+var MULT={easy:[1.6,.8],normal:[1.3,1],hard:[1.12,1.25]};
+/* 전투 */
+function battle(from,to,n){
+ var af=G.o[from],dfc=G.o[to],ga=genAt(from),gd=genAt(to),go=ga&&n>=G.t[from]*0.5;
+ var A=n*(1+(go?ga.war:0)/120)*rnd(.85,1.15),Dd=Math.max(1,G.t[to])*(1+G.df[to]/100)*(1+(gd?gd.lead:0)/150)*rnd(.85,1.15);
+ G.t[from]-=n;var name=D.st[to][0],msg;
+ if(A>Dd){var surv=Math.max(1,Math.round(n*(1-Dd/A*0.7)));G.o[to]=af;G.t[to]=surv;G.df[to]=Math.max(5,Math.round(G.df[to]*0.7));G.at[to]=-1;
+  if(go){G.at[from]=-1;G.at[to]=ga.id;ga.st=to;}
+  if(gd){var join=Math.random()*100<30+(go?ga.int:40)/2;
+   if(join){gd.f=af;var spot=G.at[to]<0?to:-1;if(spot<0){var sp=ADJ[to].concat([from]).filter(function(x){return G.o[x]===af&&G.at[x]<0;});spot=sp.length?sp[0]:-1;}gd.st=spot;if(spot>=0)G.at[spot]=gd.id;msg=' · '+gd.name+' 합류!';}
+   else{var fl=ADJ[to].filter(function(x){return G.o[x]===dfc&&G.at[x]<0;});if(fl.length){gd.st=fl[0];G.at[fl[0]]=gd.id;msg=' · '+gd.name+' 후퇴';}else{gd.st=-1;gd.f=-1;msg=' · '+gd.name+' 재야로';}}}
+  addLog('⚔️ '+FAC[af][0]+' → '+name+' 점령!'+(msg||''));
+  if(cnt(dfc)===0){addLog('🏳️ '+FAC[dfc][0]+' 세력이 무너졌습니다.');G.gens.forEach(function(g){if(g.f===dfc){g.f=-1;g.st=-1;}});}
+  return true;}
+ var back=Math.max(0,Math.round(n*0.35*(A/Dd)));G.t[from]+=back;G.t[to]=Math.max(1,Math.round(G.t[to]-G.t[to]*(A/Dd)*0.5));
+ addLog('🛡️ '+name+' 방어 성공 ('+FAC[dfc][0]+')');return false;}
+/* 컴퓨터 세력 */
+function frontDist(f){var d=new Array(N).fill(1e9),q=[];for(var i=0;i<N;i++)if(G.o[i]===f&&ADJ[i].some(function(j){return G.o[j]!==f;})){d[i]=0;q.push(i);}
+ for(var h=0;h<q.length;h++){var x=q[h];ADJ[x].forEach(function(y){if(G.o[y]===f&&d[y]>d[x]+1){d[y]=d[x]+1;q.push(y);}});}return d;}
+function aiTurn(f){var ratio=MULT[G.diff][0],d=frontDist(f),mine=[];for(var i=0;i<N;i++)if(G.o[i]===f)mine.push(i);mine.sort(function(){return Math.random()-.5;});
+ mine.forEach(function(s){if(G.o[s]!==f)return;var ga=genAt(s),pw=G.t[s]*(1+(ga?ga.war:0)/120);
+  if(d[s]===0){var best=-1,bv=1e9;ADJ[s].forEach(function(j){if(G.o[j]===f)return;var gd=genAt(j),v=G.t[j]*(1+G.df[j]/100)*(1+(gd?gd.lead:0)/150);if(v<bv){bv=v;best=j;}});
+   if(best>=0&&G.t[s]>15&&pw*0.8>bv*ratio){battle(s,best,Math.round(G.t[s]*0.8));return;}
+   if(G.gold[f]>=30){G.gold[f]-=30;G.t[s]+=30;}else if(G.gold[f]>=40&&G.df[s]<120&&Math.random()<.3){G.gold[f]-=40;G.df[s]+=10;}}
+  else{var nx=-1;ADJ[s].forEach(function(j){if(G.o[j]===f&&d[j]<d[s]&&(nx<0||d[j]<d[nx]))nx=j;});
+   if(nx>=0&&G.t[s]>10){var m=Math.round(G.t[s]*0.8);G.t[s]-=m;G.t[nx]+=m;if(ga&&G.at[nx]<0&&Math.random()<.5){G.at[s]=-1;G.at[nx]=ga.id;ga.st=nx;}}
+   if(G.gold[f]>=40&&G.dv[s]<100&&Math.random()<.25){G.gold[f]-=40;G.dv[s]+=10;}}});}
+function endTurn(){if(G.over)return;
+ FAC.forEach(function(f,fi){if(fi!==G.me&&cnt(fi)>0)aiTurn(fi);});
+ var inc=FAC.map(function(){return 0;});
+ for(var i=0;i<N;i++){var f=G.o[i],g=genAt(i);inc[f]+=4+4*NL[i]+G.dv[i]/5+(g?g.pol/10:0);G.t[i]=Math.min(3000,G.t[i]+1+NL[i]+Math.floor(G.dv[i]/20));G.act[i]=0;}
+ inc.forEach(function(v,f){G.gold[f]+=Math.round(v*(f===G.me?1:MULT[G.diff][1]));});
+ if(Math.random()<.2){var s=Math.floor(Math.random()*N);if(Math.random()<.5){G.t[s]+=60;addLog('🚉 '+D.st[s][0]+' 출퇴근 혼잡! 병사 +60');}else{G.dv[s]+=20;addLog('🛍️ '+D.st[s][0]+' 상권 호황! 상권 +20');}}
+ G.turn++;var mc=cnt(G.me);
+ if(mc===N){G.over=1;addLog('🏆 천하통일 달성!');}else if(mc===0){G.over=2;addLog('💥 우리 세력이 무너졌습니다.');}
+ else addLog('📅 '+ym()+' · 💰 +'+Math.round(inc[G.me])+' · 🚉 '+mc+'역');
+ save();sel=-1;mode='';render();if(G.over)showEnd();}
+/* ---------------- 화면 ---------------- */
+var root,svg,gE,gS,side,logEl,vb={x:0,y:0,w:D.w,h:D.h},sel=-1,mode='',pct=70,circles=[],labels=[];
+function el(t,a,p){var n=document.createElementNS(NS,t);for(var k in a)n.setAttribute(k,a[k]);if(p)p.appendChild(n);return n;}
+function build(){if(root)return;root=document.createElement('div');root.id='wk130Game';root.hidden=true;root.setAttribute('role','dialog');root.setAttribute('aria-label','원기랜드 지하철 천하통일');
+ root.innerHTML='<div class="top"><h2>🚇 지하철 천하통일</h2><span class="chip" data-k="date"></span><span class="chip" data-k="fac"></span><span class="chip" data-k="gold"></span><span class="chip hide-m" data-k="tro"></span><span class="chip" data-k="cnt"></span>'
+  +'<button class="tb go" data-a="end">⏭ 턴 종료</button><button class="tb" data-a="menu">📋 명령</button><button class="tb x" data-a="close" aria-label="닫기">✕</button></div>'
+  +'<div class="menu" hidden><button data-a="rally">🚩 후방 병력 전선으로 모으기</button><button data-a="allrec">🪖 모든 역 징병(금 허용 만큼)</button><button data-a="alldev">🛍️ 모든 역 상권 개발</button><button data-a="gens">👥 장수 등록·보기</button><button data-a="help">❓ 도움말</button><button data-a="newg">🔄 새 게임</button></div>'
+  +'<div class="body"><div class="mapw"><svg class="map" aria-label="수도권 지하철 지도"></svg><div class="zoom"><button data-a="zin" aria-label="확대">＋</button><button data-a="zout" aria-label="축소">－</button><button data-a="zhome" aria-label="우리 수도로">⌂</button></div><div class="log"></div></div><div class="side"></div></div>'
+  +'<div class="ov" data-ov="start" hidden></div><div class="ov" data-ov="gens" hidden></div><div class="ov" data-ov="help" hidden></div><div class="ov" data-ov="end" hidden></div>';
+ document.body.appendChild(root);svg=root.querySelector('svg.map');side=root.querySelector('.side');logEl=root.querySelector('.log');
+ gE=el('g',{},svg);gS=el('g',{},svg);
+ D.e.forEach(function(e){var a=D.st[e[0]],b=D.st[e[1]];el('line',{x1:a[1],y1:a[2],x2:b[1],y2:b[2],stroke:LINES[e[2]][1],'stroke-width':6,'stroke-linecap':'round',opacity:.8},gE);});
+ D.st.forEach(function(s,i){var r=CAP[i]!==undefined?13:NL[i]>1?9:6;var c=el('circle',{cx:s[1],cy:s[2],r:r,'stroke-width':2.5,stroke:'#fff','data-i':i},gS);el('circle',{cx:s[1],cy:s[2],r:r+10,fill:'transparent','data-i':i},gS);circles.push(c);
+  var t=el('text',{x:s[1],y:s[2]-r-5,'text-anchor':'middle','font-size':14,'font-weight':800,fill:'#fff',stroke:'#0d1b2a','stroke-width':3,'paint-order':'stroke','pointer-events':'none'},gS);t.textContent=s[0]+(CAP[i]!==undefined?' ★':'');labels.push(t);});
+ root.addEventListener('click',onClick);panzoom(svg.parentNode);
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!root.hidden){if(mode){mode='';render();}else close();}});}
+function setVB(){svg.setAttribute('viewBox',vb.x+' '+vb.y+' '+vb.w+' '+vb.h);var z=D.w/vb.w;labels.forEach(function(t,i){var show=z>=3.2||(z>=1.6&&(NL[i]>1||CAP[i]!==undefined))||(CAP[i]!==undefined);t.style.display=show?'':'none';t.setAttribute('font-size',Math.max(9,14/Math.sqrt(z)*1.2));});}
+function focus(i,w){var s=D.st[i],r=svg.getBoundingClientRect(),asp=(r.height||600)/(r.width||800);vb.w=w;vb.h=w*asp;vb.x=s[1]-w/2;vb.y=s[2]-vb.h/2;setVB();}
+function panzoom(box){var pts={},start=null,moved=false;
+ function zoomAt(f,cx,cy){var r=svg.getBoundingClientRect();var px=vb.x+(cx-r.left)/r.width*vb.w,py=vb.y+(cy-r.top)/r.height*vb.h;var nw=Math.max(120,Math.min(D.w*1.6,vb.w*f));var k=nw/vb.w;vb.x=px-(px-vb.x)*k;vb.y=py-(py-vb.y)*k;vb.w=nw;vb.h*=k;setVB();}
+ box.addEventListener('wheel',function(e){e.preventDefault();zoomAt(e.deltaY>0?1.18:1/1.18,e.clientX,e.clientY);},{passive:false});
+ box.addEventListener('pointerdown',function(e){if(e.target.closest('.zoom,.log'))return;pts[e.pointerId]={x:e.clientX,y:e.clientY};start={vb:{x:vb.x,y:vb.y,w:vb.w,h:vb.h},p:JSON.parse(JSON.stringify(pts))};moved=false;try{box.setPointerCapture(e.pointerId);}catch(_){}});
+ box.addEventListener('pointermove',function(e){if(!pts[e.pointerId])return;pts[e.pointerId]={x:e.clientX,y:e.clientY};var ids=Object.keys(pts),r=svg.getBoundingClientRect();
+  if(ids.length===1&&start.p[ids[0]]){var dx=e.clientX-start.p[ids[0]].x,dy=e.clientY-start.p[ids[0]].y;if(Math.abs(dx)+Math.abs(dy)>6)moved=true;if(moved){vb.x=start.vb.x-dx/r.width*vb.w;vb.y=start.vb.y-dy/r.height*vb.h;setVB();}}
+  else if(ids.length>=2&&start.p[ids[0]]&&start.p[ids[1]]){moved=true;var a=pts[ids[0]],b=pts[ids[1]],a0=start.p[ids[0]],b0=start.p[ids[1]];var d0=Math.hypot(a0.x-b0.x,a0.y-b0.y),d1=Math.hypot(a.x-b.x,a.y-b.y);if(d0>10&&d1>10){var k=d0/d1;vb.w=Math.max(120,Math.min(D.w*1.6,start.vb.w*k));vb.h=start.vb.h*(vb.w/start.vb.w);var cx=(a0.x+b0.x)/2,cy=(a0.y+b0.y)/2,px=start.vb.x+(cx-r.left)/r.width*start.vb.w,py=start.vb.y+(cy-r.top)/r.height*start.vb.h;vb.x=px-(cx-r.left)/r.width*vb.w;vb.y=py-(cy-r.top)/r.height*vb.h;setVB();}}});
+ function up(e){var wasTap=!moved&&Object.keys(pts).length===1;delete pts[e.pointerId];start={vb:{x:vb.x,y:vb.y,w:vb.w,h:vb.h},p:JSON.parse(JSON.stringify(pts))};
+  if(wasTap&&e.type==='pointerup'){var t=document.elementFromPoint(e.clientX,e.clientY),i=t&&t.getAttribute&&t.getAttribute('data-i');if(i!==null&&i!==undefined&&t.closest('svg.map'))tapStation(+i);}}
+ box.addEventListener('pointerup',up);box.addEventListener('pointercancel',up);
+ root._zoom=zoomAt;}
+function tapStation(i){if(!G||G.over)return;
+ if(mode&&sel>=0){var adj=ADJ[sel].indexOf(i)>=0;
+  if(mode==='atk'&&adj&&G.o[i]!==G.me){var n=Math.max(1,Math.round(G.t[sel]*pct/100));G.act[sel]=1;var ok=battle(sel,i,n);if(ok)G.act[i]=1;toast(ok?'⚔️ '+D.st[i][0]+' 점령!':'🛡️ 공격 실패…');mode='';var s0=sel;sel=ok?i:s0;save();render();if(cnt(G.me)===N){G.over=1;showEnd();}return;}
+  if(mode==='mov'&&adj&&G.o[i]===G.me){var m=Math.max(1,Math.round(G.t[sel]*pct/100));G.t[sel]-=m;G.t[i]+=m;var g=genAt(sel);if(g&&pct>=50&&G.at[i]<0){G.at[sel]=-1;G.at[i]=g.id;g.st=i;}G.act[sel]=1;addLog('🚃 '+D.st[sel][0]+' → '+D.st[i][0]+' 병력 '+m+' 이동');mode='';sel=i;save();render();return;}}
+ mode='';sel=i;render();}
+function toast(m){var t=root.querySelector('.toast');if(!t){t=document.createElement('div');t.className='toast';root.querySelector('.mapw').appendChild(t);}t.textContent=m;t.style.opacity=1;clearTimeout(t._h);t._h=setTimeout(function(){t.style.opacity=0;},1600);}
+function render(){if(!G)return;var me=G.me;
+ for(var i=0;i<N;i++){var c=circles[i];c.setAttribute('fill',FAC[G.o[i]][2]);var hi=(i===sel)?'#ffe08a':(mode&&sel>=0&&ADJ[sel].indexOf(i)>=0&&((mode==='atk'&&G.o[i]!==me)||(mode==='mov'&&G.o[i]===me)))?(mode==='atk'?'#ff5a5a':'#7fe0ff'):'#fff';c.setAttribute('stroke',hi);c.setAttribute('stroke-width',hi==='#fff'?2.5:7);}
+ var q=function(k){return root.querySelector('[data-k="'+k+'"]');};
+ q('date').textContent='📅 '+ym();q('fac').textContent='🚩 '+FAC[me][0];q('fac').style.background=FAC[me][2];q('gold').textContent='💰 '+G.gold[me];q('tro').textContent='🪖 '+troops(me);q('cnt').textContent='🚉 '+cnt(me)+'/'+N;
+ logEl.innerHTML=G.log.slice(0,6).map(function(m){return '<div>'+esc(m)+'</div>';}).join('');
+ side.innerHTML=panel();}
+function panel(){if(sel<0)return '<div class="hint">지도에서 역(성)을 눌러 보세요.<br>• 우리 역: 개발·징병·성벽·이동·공격<br>• 이웃 역으로만 쳐들어갈 수 있어요.<br>• 환승역은 길이 많아 요충지예요.<br>• 두 손가락·마우스 휠로 확대, 끌어서 이동</div>'+rank();
+ var i=sel,s=D.st[i],own=G.o[i],mine=own===G.me,g=genAt(i),done=G.act[i];
+ var h='<div class="st-name">'+esc(s[0])+(CAP[i]!==undefined?' ★':'')+'</div><div>'+s[3].map(function(l){return '<span class="lchip" style="background:'+LINES[l][1]+'">'+esc(LINES[l][0])+'</span>';}).join('')+'</div>'
+  +'<div class="row"><span>세력</span><b style="color:'+FAC[own][2]+'">'+esc(FAC[own][0])+'</b></div><div class="row"><span>🪖 병사</span><b>'+G.t[i]+'</b></div><div class="row"><span>🧱 성벽</span><b>'+G.df[i]+'</b></div><div class="row"><span>🛍️ 상권</span><b>'+G.dv[i]+'</b></div>'
+  +'<div class="row"><span>👤 태수</span><b>'+(g?esc(g.name)+' <small>(무'+g.war+'·지'+g.int+'·통'+g.lead+'·정'+g.pol+')</small>':'없음')+'</b></div>';
+ if(mine){var en=ADJ[i].some(function(j){return G.o[j]!==G.me;}),fr=ADJ[i].some(function(j){return G.o[j]===G.me;});
+  h+='<div class="acts"><button data-a="dev" '+(done||G.gold[G.me]<40?'disabled':'')+'>🛍️ 개발 (40)</button><button data-a="rec" '+(done||G.gold[G.me]<30?'disabled':'')+'>🪖 징병 (30)</button><button data-a="wall" '+(done||G.gold[G.me]<40||G.df[i]>=200?'disabled':'')+'>🧱 성벽 (40)</button><button data-a="mov" '+(done||!fr||G.t[i]<2?'disabled':'')+'>🚃 이동</button><button class="atk" data-a="atk" '+(done||!en||G.t[i]<2?'disabled':'')+'>⚔️ 공격</button><button data-a="cancel" '+(mode?'':'disabled')+'>↩ 취소</button></div>'
+   +'<div style="margin-top:8px">보낼 병력 <b data-k="pct">'+pct+'%</b> ('+Math.round(G.t[i]*pct/100)+'명)<input type="range" min="10" max="100" step="10" value="'+pct+'" data-a="pct"></div>';
+  if(done)h+='<div class="hint">이 역은 이번 달 명령을 마쳤어요. ⏭ 턴 종료를 누르세요.</div>';
+  else if(mode==='atk')h+='<div class="hint">빨간 테두리 역(이웃 적 역)을 누르면 공격해요.</div>';else if(mode==='mov')h+='<div class="hint">하늘색 테두리 역(이웃 우리 역)을 누르면 병력이 옮겨 가요.</div>';}
+ return h+rank();}
+function rank(){var a=FAC.map(function(f,fi){return [fi,cnt(fi)];}).filter(function(x){return x[1]>0;}).sort(function(a,b){return b[1]-a[1];});
+ return '<div style="margin-top:12px;font-weight:900;color:#ffe08a">세력 순위</div>'+a.map(function(x){return '<div class="row"><span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:'+FAC[x[0]][2]+'"></span> '+esc(FAC[x[0]][0])+(x[0]===G.me?' (나)':'')+'</span><b>'+x[1]+'역 · 💰'+G.gold[x[0]]+'</b></div>';}).join('')+'<div class="src">'+esc(D.src)+'</div>';}
+function onClick(e){var b=e.target.closest('[data-a]');if(!b)return;var a=b.getAttribute('data-a'),me=G&&G.me,i=sel;
+ if(a!=='menu')root.querySelector('.menu').hidden=true;
+ switch(a){
+ case 'close':close();break;
+ case 'menu':root.querySelector('.menu').hidden=!root.querySelector('.menu').hidden;break;
+ case 'end':endTurn();break;
+ case 'zin':root._zoom(1/1.4,svg.getBoundingClientRect().left+svg.clientWidth/2,svg.getBoundingClientRect().top+svg.clientHeight/2);break;
+ case 'zout':root._zoom(1.4,svg.getBoundingClientRect().left+svg.clientWidth/2,svg.getBoundingClientRect().top+svg.clientHeight/2);break;
+ case 'zhome':if(G)focus(FAC[G.me][1],700);break;
+ case 'dev':if(G.gold[me]>=40){G.gold[me]-=40;G.dv[i]+=10;G.act[i]=1;save();render();}break;
+ case 'rec':if(G.gold[me]>=30){G.gold[me]-=30;G.t[i]+=30+Math.round(NL[i]*5);G.act[i]=1;save();render();}break;
+ case 'wall':if(G.gold[me]>=40){G.gold[me]-=40;G.df[i]=Math.min(200,G.df[i]+10);G.act[i]=1;save();render();}break;
+ case 'atk':mode='atk';render();break;
+ case 'mov':mode='mov';render();break;
+ case 'cancel':mode='';render();break;
+ case 'rally':{var d=frontDist(me),n=0;for(var s=0;s<N;s++){if(G.o[s]!==me||G.act[s]||d[s]===0||G.t[s]<6)continue;var nx=-1;ADJ[s].forEach(function(j){if(G.o[j]===me&&d[j]<d[s]&&(nx<0||d[j]<d[nx]))nx=j;});if(nx>=0){var m=Math.round(G.t[s]*0.8);G.t[s]-=m;G.t[nx]+=m;G.act[s]=1;n++;}}addLog('🚩 후방 '+n+'역 병력을 전선 쪽으로 옮겼어요.');save();render();break;}
+ case 'allrec':{var n2=0,fr2=frontDist(me);var list=[];for(var s2=0;s2<N;s2++)if(G.o[s2]===me&&!G.act[s2])list.push(s2);list.sort(function(a,b){return fr2[a]-fr2[b];});list.forEach(function(s3){if(G.gold[me]>=30){G.gold[me]-=30;G.t[s3]+=30+NL[s3]*5;G.act[s3]=1;n2++;}});addLog('🪖 '+n2+'역에서 징병했어요.');save();render();break;}
+ case 'alldev':{var n3=0;for(var s4=0;s4<N;s4++)if(G.o[s4]===me&&!G.act[s4]&&G.gold[me]>=40&&G.dv[s4]<150){G.gold[me]-=40;G.dv[s4]+=10;G.act[s4]=1;n3++;}addLog('🛍️ '+n3+'역 상권을 개발했어요.');save();render();break;}
+ case 'gens':showGens();break;
+ case 'help':showHelp();break;
+ case 'newg':if(confirm('지금 게임을 지우고 새로 시작할까요?')){ls(SAVEK,null);G=null;showStart();}break;
+ case 'ovclose':b.closest('.ov').hidden=true;break;
+ }}
+root=null;
+/* 시작 화면 */
+var pick=0,diff='normal';
+function showStart(){var ov=root.querySelector('[data-ov="start"]'),sv=load();
+ var cnts=FAC.map(function(f,fi){return D.st.filter(function(s){return s[4]===fi;}).length;});
+ ov.innerHTML='<div class="card"><h3>🚇 원기랜드 지하철 천하통일</h3><p style="margin:0 0 10px;line-height:1.6">서울·경기·인천 지하철역 '+N+'곳이 모두 성이에요. 세력을 하나 골라, 이웃 역을 하나씩 차지해 수도권을 통일하세요!</p>'
+  +(sv?'<button class="big" data-s="cont">▶ 이어하기 ('+(2026+Math.floor(sv.turn/12))+'년 '+(sv.turn%12+1)+'월 · '+esc(FAC[sv.me][0])+')</button>':'')
+  +'<div style="margin:14px 0 6px;font-weight:900">세력 고르기</div><div class="facs">'+FAC.map(function(f,fi){return '<button class="fac'+(fi===pick?' on':'')+'" data-s="fac" data-f="'+fi+'" style="background:'+f[2]+'">'+esc(f[0])+'<small>수도 '+esc(D.st[f[1]][0])+' · '+cnts[fi]+'역</small></button>';}).join('')+'</div>'
+  +'<div style="margin:12px 0 6px;font-weight:900">난이도</div><div class="facs">'+[['easy','😊 쉬움'],['normal','🙂 보통'],['hard','😤 어려움']].map(function(x){return '<button class="fac'+(x[0]===diff?' on':'')+'" data-s="diff" data-d="'+x[0]+'" style="background:#2a5ca8">'+x[1]+'</button>';}).join('')+'</div>'
+  +'<button class="big" data-s="go">⚔️ 새 게임 시작</button><button class="sub" data-s="gens">👥 장수 등록 ('+reg().length+'명)</button><button class="sub" data-s="close" style="background:#ffffff22">닫기</button><div class="src">'+esc(D.src)+'</div></div>';
+ ov.hidden=false;
+ ov.onclick=function(e){var b=e.target.closest('[data-s]');if(!b)return;var s=b.getAttribute('data-s');
+  if(s==='fac'){pick=+b.getAttribute('data-f');showStart();}else if(s==='diff'){diff=b.getAttribute('data-d');showStart();}
+  else if(s==='go'){if(sv&&!confirm('저장된 게임이 지워져요. 새로 시작할까요?'))return;newGame(pick,diff);ov.hidden=true;sel=FAC[pick][1];render();setTimeout(function(){focus(FAC[pick][1],700);},30);}
+  else if(s==='cont'){G=sv;ov.hidden=true;sel=-1;render();setTimeout(function(){focus(FAC[G.me][1],700);},30);}
+  else if(s==='gens')showGens();else if(s==='close')close();};}
+/* 장수 등록 화면 */
+function showGens(){var ov=root.querySelector('[data-ov="gens"]'),R=reg();
+ function row(g,k){return '<tr data-k="'+k+'"><td><input data-f="name" maxlength="12" value="'+esc(g.name||'')+'" placeholder="이름"></td><td><select data-f="f"><option value="-1">무작위</option>'+FAC.map(function(f,fi){return '<option value="'+fi+'"'+(+g.f===fi?' selected':'')+'>'+esc(f[0])+'</option>';}).join('')+'</select></td>'
+  +['war','int','lead','pol'].map(function(x){return '<td><input type="number" min="1" max="100" data-f="'+x+'" value="'+(+g[x]||50)+'"></td>';}).join('')+'<td><input type="checkbox" data-f="lord"'+(g.lord?' checked':'')+' style="width:auto"></td><td><button class="mini" data-g="dice" title="능력치 무작위">🎲</button> <button class="mini" data-g="del" title="지우기">🗑</button></td></tr>';}
+ ov.innerHTML='<div class="card"><h3>👥 장수 등록</h3><p style="margin:0 0 8px;font-size:13px;line-height:1.6">지인 이름과 능력치(1~100)를 넣으면 <b>새 게임부터</b> 장수로 나와 역의 태수가 돼요. 무력=공격, 지력=적 장수 등용, 통솔=방어, 정치=수입. 군주에 체크하면 그 세력 수도에 있어요. 이 기기에 저장되고, 일반회원으로 로그인하면 회원 기록과 함께 저장돼요.</p>'
+  +'<div style="overflow:auto"><table><thead><tr><th>이름</th><th>소속</th><th>무력</th><th>지력</th><th>통솔</th><th>정치</th><th>군주</th><th></th></tr></thead><tbody>'+R.map(row).join('')+'</tbody></table></div>'
+  +'<button class="sub" data-g="add">➕ 장수 추가</button><button class="big" data-g="save">💾 저장</button>'
+  +'<details style="margin-top:10px"><summary>📤 내보내기 · 📥 가져오기 (다른 기기로 옮기기)</summary><textarea data-g="io">'+esc(JSON.stringify(R))+'</textarea><button class="sub" data-g="imp">📥 위 글로 바꾸기</button></details>'
+  +'<button class="sub" data-g="close" style="background:#ffffff22">닫기</button></div>';
+ ov.hidden=false;
+ function collect(){var a=[];ov.querySelectorAll('tbody tr').forEach(function(tr){var g={};tr.querySelectorAll('[data-f]').forEach(function(inp){var f=inp.getAttribute('data-f');g[f]=f==='name'?inp.value.trim():f==='lord'?inp.checked:(function(v){return isNaN(v)?(f==='f'?-1:50):Math.max(f==='f'?-1:1,Math.min(100,v));})(parseInt(inp.value,10));});if(g.name)a.push(g);});return a;}
+ ov.onclick=function(e){var b=e.target.closest('[data-g]');if(!b)return;var s=b.getAttribute('data-g');
+  if(s==='add'){var tb=ov.querySelector('tbody');tb.insertAdjacentHTML('beforeend',row({name:'',f:-1,war:50,int:50,lead:50,pol:50},tb.children.length));tb.lastElementChild.querySelector('input').focus();}
+  else if(s==='dice'){b.closest('tr').querySelectorAll('input[type=number]').forEach(function(inp){inp.value=Math.round(rnd(30,99));});}
+  else if(s==='del'){b.closest('tr').remove();}
+  else if(s==='save'){var a=collect();setReg(a);toastIn(ov,'💾 '+a.length+'명 저장했어요. 새 게임부터 나와요.');}
+  else if(s==='imp'){try{var a2=JSON.parse(ov.querySelector('textarea').value);if(!Array.isArray(a2))throw 0;setReg(a2.slice(0,200));showGens();}catch(_){alert('글 모양이 맞지 않아요.');}}
+  else if(s==='close'){ov.hidden=true;if(!G)showStart();}};}
+function toastIn(ov,m){var t=ov.querySelector('.okmsg');if(!t){t=document.createElement('div');t.className='okmsg hint';ov.querySelector('.card').appendChild(t);}t.textContent=m;}
+function showHelp(){var ov=root.querySelector('[data-ov="help"]');ov.innerHTML='<div class="card"><h3>❓ 도움말</h3><div style="line-height:1.8;font-size:14px">• 한 턴은 한 달이에요. 우리 역마다 한 달에 명령 하나(개발·징병·성벽·이동·공격)를 할 수 있어요.<br>• <b>공격</b>은 노선으로 이어진 이웃 적 역에만 할 수 있어요. 보낼 병력(%)을 정하고 빨간 테두리 역을 누르세요.<br>• 공격 병력×(1+무력) 이 방어 병력×(1+성벽)×(1+통솔)보다 크면 점령해요. 운도 조금 있어요.<br>• 태수가 있는 역에서 병력 절반 이상을 보내면 장수가 함께 가요.<br>• 매달 역마다 금(환승 노선이 많을수록·상권이 높을수록 많이)과 병사가 늘어요.<br>• 📋 명령의 <b>전선으로 모으기</b>로 뒤쪽 병력을 한 번에 앞으로 보낼 수 있어요.<br>• 모든 역을 차지하면 천하통일! 게임은 이 기기에 자동 저장돼요.</div><button class="sub" data-a="ovclose">닫기</button></div>';ov.hidden=false;}
+function showEnd(){var ov=root.querySelector('[data-ov="end"]');ov.innerHTML='<div class="card" style="text-align:center"><h3>'+(G.over===1?'🏆 천하통일!':'💥 패배…')+'</h3><p>'+ym()+' · '+esc(FAC[G.me][0])+'</p><button class="big" data-a="newg">🔄 새 게임</button><button class="sub" data-a="ovclose">지도 보기</button></div>';ov.hidden=false;}
+var lastFocus=null;
+function open(){build();lastFocus=document.activeElement;root.hidden=false;document.documentElement.style.overflow='hidden';
+ if(!G)G=load();if(!G){showStart();vb={x:0,y:0,w:D.w,h:D.h};setVB();}else{render();setTimeout(function(){focus(sel>=0?sel:FAC[G.me][1],700);},30);}}
+function close(){if(!root)return;root.hidden=true;document.documentElement.style.overflow='';try{lastFocus&&lastFocus.focus({preventScroll:true});}catch(_){}}
+/* 메인 지도 건물 */
+var HALL='<svg viewBox="0 0 200 120" aria-hidden="true"><ellipse cx="100" cy="112" rx="92" ry="7" fill="#0003"/>'
+ +'<path d="M20 50 L100 22 L180 50 Z" fill="#c0392b" stroke="#7a1a12" stroke-width="2"/><rect x="28" y="50" width="144" height="58" rx="4" fill="#f5efe2" stroke="#8a6a3a" stroke-width="2"/>'
+ +'<rect x="28" y="50" width="144" height="12" fill="#1f4f8a"/><g fill="#ffd34d">'+[40,64,88,112,136,160].map(function(x){return '<circle cx="'+x+'" cy="56" r="3"/>';}).join('')+'</g>'
+ +'<path d="M78 108 V82 Q100 66 122 82 V108Z" fill="#2c3e50"/><path d="M84 108 V86 Q100 74 116 86 V108Z" fill="#7fe0ff" opacity=".8"/>'
+ +'<rect x="40" y="72" width="26" height="22" rx="3" fill="#7fe0ff" stroke="#8a6a3a"/><rect x="134" y="72" width="26" height="22" rx="3" fill="#7fe0ff" stroke="#8a6a3a"/>'
+ +'<circle cx="100" cy="38" r="11" fill="#fff" stroke="#1f4f8a" stroke-width="3"/><path d="M93 38 H107 M100 31 V45" stroke="#1f4f8a" stroke-width="3"/>'
+ +'<g stroke-width="5" stroke-linecap="round" fill="none"><path d="M10 20 Q60 4 100 12" stroke="#00a23f"/><path d="M100 12 Q140 4 190 20" stroke="#ed6c00"/><path d="M14 30 Q60 14 100 22" stroke="#004a85" opacity=".9"/></g>'
+ +'<path d="M24 50 V18 M176 50 V18" stroke="#5a2f14" stroke-width="2.5"/><path d="M24 18 L42 23 L24 28Z" fill="#ffd34d"/><path d="M176 18 L158 23 L176 28Z" fill="#7fe0ff"/></svg>';
+function place(){var st=document.getElementById('mainStage');if(!st||document.getElementById('wk130Hall'))return;var b=document.createElement('button');b.type='button';b.id='wk130Hall';b.setAttribute('aria-label','원기랜드 지하철 천하통일');b.innerHTML=HALL+'<span class="lab">🚇 지하철 천하통일</span>';
+ b.addEventListener('pointerdown',function(e){e.stopPropagation();});b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open();});st.appendChild(b);}
+window.wk130Game={open:open,close:close,state:function(){return G;},endTurn:function(){endTurn();},tap:function(i){tapStation(i);},act:function(a){onClick({target:{closest:function(){return {getAttribute:function(){return a;}};}}});},N:N,data:D};
+function boot(){place();setInterval(place,2000);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();</script>

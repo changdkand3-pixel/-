@@ -767,6 +767,8 @@ _u128=lambda n,m:'data:'+m+';base64,'+_b128.b64encode(open(sys.argv[2].replace('
 _lf121=_lf121.replace('__SKYBAND__',_u128('sky_band_128.webp','image/webp')).replace('__SKYCLOUDS__',_u128('sky_clouds_128.webp','image/webp')).replace('__PONDMASK__',_u128('pond_mask_128.png','image/png')).replace('__SKYMETA__',open(sys.argv[2].replace('world_final.webp','sky_128.json'),encoding='utf-8').read().strip())
 final = final + '\n' + _lf121
 _vc129=open(sys.argv[2].replace('world_final.webp','version-check.html'),encoding='utf-8').read()  # 129차: 새 버전 알림
+_sw130=open(sys.argv[2].replace('world_final.webp','subway-130.html'),encoding='utf-8').read().replace('__SUBWAY__',open(sys.argv[2].replace('world_final.webp','subway130.json'),encoding='utf-8').read())  # 130차: 지하철 천하통일(지도 자료 scripts/subway130/build.py)
+final = final + '\n' + _sw130
 final = final + '\n' + _vc129
 t = t.rstrip('\n') + '\n' + final + '\n'
 import re as _re129
