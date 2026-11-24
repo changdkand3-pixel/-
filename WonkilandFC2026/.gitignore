@@ -1,0 +1,10 @@
+Backups/*.zip
+Backups/*.tar.gz
+node_modules/
+Tests/screenshots/
+UnrealProject/Binaries/
+UnrealProject/Intermediate/
+UnrealProject/Saved/
+UnrealProject/DerivedDataCache/
+UnrealProject/.vs/
+UnrealProject/*.sln

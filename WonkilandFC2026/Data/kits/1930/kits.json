@@ -1,0 +1,61 @@
+{
+ "schema": "wfc.kits.v1",
+ "kits": [
+  {
+   "kit_id": "kit-URU-1930-home",
+   "team_id": "URU",
+   "shirt": {
+    "pattern": "solid",
+    "colors": [
+     "#7fb8e6"
+    ]
+   },
+   "shorts": {
+    "colors": [
+     "#111111"
+    ]
+   },
+   "socks": {
+    "colors": [
+     "#111111"
+    ],
+    "verification": "unknown"
+   },
+   "collar": "lace_up_or_button",
+   "verification": {
+    "shirt": "needs_citation",
+    "shorts": "needs_citation"
+   },
+   "rights": "generic_recreation_no_crest"
+  },
+  {
+   "kit_id": "kit-ARG-1930-home",
+   "team_id": "ARG",
+   "shirt": {
+    "pattern": "vertical_stripes",
+    "colors": [
+     "#ffffff",
+     "#75aadb"
+    ]
+   },
+   "shorts": {
+    "colors": [
+     "#111111"
+    ]
+   },
+   "socks": {
+    "colors": [
+     "#111111"
+    ],
+    "verification": "unknown"
+   },
+   "collar": "lace_up_or_button",
+   "verification": {
+    "shirt": "needs_citation",
+    "shorts": "unknown"
+   },
+   "rights": "generic_recreation_no_crest"
+  }
+ ],
+ "note": "공식 엠블럼/로고는 사용하지 않음. 색상은 컬러 재현용 추정이며 사진 자료로 확인 필요."
+}

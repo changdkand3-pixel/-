@@ -1,0 +1,20 @@
+{
+ "schema": "wfc.rules.v1",
+ "id": "historical_1930",
+ "substitutions": 0,
+ "cards": false,
+ "offside": {
+  "opponents_required": 2,
+  "level_is_onside": false
+ },
+ "draw_resolution": "extra_time_then_replay",
+ "penalty_shootout": false,
+ "added_time_display": false,
+ "notes": [
+  "교체 불가(월드컵 교체 도입은 1970)",
+  "경고/퇴장 카드 없음(카드 도입은 1970). 심판 구두 경고/퇴장은 가능",
+  "오프사이드: 2인 규정(1925 개정), 동일선상은 오프사이드(동일선상 온사이드는 1990 개정)",
+  "승부차기 없음"
+ ],
+ "verification": "needs_citation"
+}

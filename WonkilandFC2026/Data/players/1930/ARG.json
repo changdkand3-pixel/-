@@ -1,0 +1,770 @@
+{
+ "schema": "wfc.squad.v1",
+ "team_id": "ARG",
+ "tournament_year": 1930,
+ "coaches_en": [
+  "Francisco Olazar",
+  "Juan José Tramutola"
+ ],
+ "coaches_ko": [
+  "프란시스코 올라사르",
+  "후안 호세 트라무톨라"
+ ],
+ "coaches_verification": "needs_citation",
+ "squad_completeness": "final_lineup_only",
+ "squad_note": "1930 대회 등록 22명 중 결승 선발 11명만 수록. 나머지 등록 선수는 출처 확보 후 추가(임의 생성 금지).",
+ "players": [
+  {
+   "version_id": "ARG-1930-BOTASSO",
+   "person_id": "person-botasso",
+   "name_ko": "후안 보타소",
+   "name_en": "Juan Botasso",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "GK",
+   "position_role_1930": "Goalkeeper",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 77,
+    "speed": 55,
+    "acceleration": 60,
+    "shooting": 20,
+    "finishing": 15,
+    "long_shots": 15,
+    "passing": 45,
+    "dribbling": 30,
+    "ball_control": 48,
+    "skill_moves": 30,
+    "heading": 40,
+    "defending": 30,
+    "tackling": 25,
+    "physical": 70,
+    "stamina": 70,
+    "jumping": 76,
+    "free_kick": 20,
+    "penalty": 25,
+    "goalkeeping": 77
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-DELLATORRE",
+   "person_id": "person-dellatorre",
+   "name_ko": "호세 델라 토레",
+   "name_en": "José Della Torre",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FB",
+   "position_role_1930": "Right back",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 78,
+    "speed": 70,
+    "acceleration": 71,
+    "shooting": 40,
+    "finishing": 35,
+    "long_shots": 42,
+    "passing": 62,
+    "dribbling": 56,
+    "ball_control": 64,
+    "skill_moves": 50,
+    "heading": 74,
+    "defending": 79,
+    "tackling": 80,
+    "physical": 78,
+    "stamina": 80,
+    "jumping": 72,
+    "free_kick": 45,
+    "penalty": 50,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-PATERNOSTER",
+   "person_id": "person-paternoster",
+   "name_ko": "페르난도 파테르노스테르",
+   "name_en": "Fernando Paternoster",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FB",
+   "position_role_1930": "Left back",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 80,
+    "speed": 71,
+    "acceleration": 71,
+    "shooting": 42,
+    "finishing": 36,
+    "long_shots": 45,
+    "passing": 64,
+    "dribbling": 58,
+    "ball_control": 66,
+    "skill_moves": 50,
+    "heading": 76,
+    "defending": 81,
+    "tackling": 82,
+    "physical": 80,
+    "stamina": 80,
+    "jumping": 74,
+    "free_kick": 48,
+    "penalty": 50,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-JEVARISTO",
+   "person_id": "person-jevaristo",
+   "name_ko": "후안 에바리스토",
+   "name_en": "Juan Evaristo",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "HB",
+   "position_role_1930": "Right half",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 78,
+    "speed": 72,
+    "acceleration": 72,
+    "shooting": 48,
+    "finishing": 44,
+    "long_shots": 50,
+    "passing": 70,
+    "dribbling": 64,
+    "ball_control": 70,
+    "skill_moves": 56,
+    "heading": 70,
+    "defending": 77,
+    "tackling": 78,
+    "physical": 76,
+    "stamina": 82,
+    "jumping": 70,
+    "free_kick": 46,
+    "penalty": 48,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-MONTI",
+   "person_id": "person-monti",
+   "name_ko": "루이스 몬티",
+   "name_en": "Luis Monti",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "HB",
+   "position_role_1930": "Centre half",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 87,
+    "speed": 72,
+    "acceleration": 72,
+    "shooting": 65,
+    "finishing": 60,
+    "long_shots": 70,
+    "passing": 82,
+    "dribbling": 72,
+    "ball_control": 82,
+    "skill_moves": 66,
+    "heading": 80,
+    "defending": 86,
+    "tackling": 88,
+    "physical": 90,
+    "stamina": 88,
+    "jumping": 78,
+    "free_kick": 65,
+    "penalty": 65,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-SUAREZ",
+   "person_id": "person-suarez",
+   "name_ko": "페드로 아리코 수아레스",
+   "name_en": "Pedro Arico Suárez",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "HB",
+   "position_role_1930": "Left half",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 78,
+    "speed": 72,
+    "acceleration": 72,
+    "shooting": 48,
+    "finishing": 44,
+    "long_shots": 50,
+    "passing": 70,
+    "dribbling": 64,
+    "ball_control": 70,
+    "skill_moves": 56,
+    "heading": 70,
+    "defending": 77,
+    "tackling": 78,
+    "physical": 76,
+    "stamina": 82,
+    "jumping": 70,
+    "free_kick": 46,
+    "penalty": 48,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-PEUCELLE",
+   "person_id": "person-peucelle",
+   "name_ko": "카를로스 페우셀레",
+   "name_en": "Carlos Peucelle",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FW",
+   "position_role_1930": "Outside right",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [
+      20
+     ],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 82,
+    "speed": 84,
+    "acceleration": 85,
+    "shooting": 78,
+    "finishing": 79,
+    "long_shots": 74,
+    "passing": 74,
+    "dribbling": 82,
+    "ball_control": 80,
+    "skill_moves": 78,
+    "heading": 62,
+    "defending": 36,
+    "tackling": 36,
+    "physical": 68,
+    "stamina": 82,
+    "jumping": 64,
+    "free_kick": 62,
+    "penalty": 65,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-VARALLO",
+   "person_id": "person-varallo",
+   "name_ko": "프란시스코 바라요",
+   "name_en": "Francisco Varallo",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FW",
+   "position_role_1930": "Inside right",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 81,
+    "speed": 79,
+    "acceleration": 80,
+    "shooting": 82,
+    "finishing": 82,
+    "long_shots": 80,
+    "passing": 72,
+    "dribbling": 76,
+    "ball_control": 77,
+    "skill_moves": 72,
+    "heading": 68,
+    "defending": 36,
+    "tackling": 38,
+    "physical": 72,
+    "stamina": 80,
+    "jumping": 70,
+    "free_kick": 66,
+    "penalty": 70,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-STABILE",
+   "person_id": "person-stabile",
+   "name_ko": "기예르모 스타빌레",
+   "name_en": "Guillermo Stábile",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FW",
+   "position_role_1930": "Centre forward",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [
+      37
+     ],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 86,
+    "speed": 82,
+    "acceleration": 83,
+    "shooting": 86,
+    "finishing": 89,
+    "long_shots": 78,
+    "passing": 70,
+    "dribbling": 80,
+    "ball_control": 82,
+    "skill_moves": 76,
+    "heading": 78,
+    "defending": 36,
+    "tackling": 38,
+    "physical": 74,
+    "stamina": 82,
+    "jumping": 76,
+    "free_kick": 62,
+    "penalty": 75,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-FERREIRA",
+   "person_id": "person-ferreira",
+   "name_ko": "마누엘 페레이라",
+   "name_en": "Manuel Ferreira",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": true,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FW",
+   "position_role_1930": "Inside left",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 84,
+    "speed": 76,
+    "acceleration": 77,
+    "shooting": 82,
+    "finishing": 82,
+    "long_shots": 78,
+    "passing": 82,
+    "dribbling": 80,
+    "ball_control": 83,
+    "skill_moves": 78,
+    "heading": 68,
+    "defending": 38,
+    "tackling": 40,
+    "physical": 70,
+    "stamina": 82,
+    "jumping": 68,
+    "free_kick": 72,
+    "penalty": 75,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  },
+  {
+   "version_id": "ARG-1930-MEVARISTO",
+   "person_id": "person-mevaristo",
+   "name_ko": "마리오 에바리스토",
+   "name_en": "Mario Evaristo",
+   "nationality": "ARG",
+   "tournament_year": 1930,
+   "captain": false,
+   "birth_date": null,
+   "age_at_tournament": null,
+   "height_cm": null,
+   "weight_kg": null,
+   "position_group": "FW",
+   "position_role_1930": "Outside left",
+   "shirt_number": null,
+   "preferred_foot": null,
+   "appearance": {
+    "face_model_id": null,
+    "hair_style": "era_1930_short_side_part",
+    "skin_tone_ref": null,
+    "notes": "실제 얼굴 모델은 사용 권리가 확인된 사진 자료 확보 후 제작"
+   },
+   "kit_ref": "kit-ARG-1930-home",
+   "match_records": [
+    {
+     "match_id": "WC1930-FINAL",
+     "started": true,
+     "goals": [],
+     "verification": "needs_citation"
+    }
+   ],
+   "ratings": {
+    "overall": 79,
+    "speed": 82,
+    "acceleration": 83,
+    "shooting": 74,
+    "finishing": 75,
+    "long_shots": 70,
+    "passing": 70,
+    "dribbling": 77,
+    "ball_control": 75,
+    "skill_moves": 72,
+    "heading": 60,
+    "defending": 35,
+    "tackling": 35,
+    "physical": 66,
+    "stamina": 80,
+    "jumping": 62,
+    "free_kick": 58,
+    "penalty": 60,
+    "goalkeeping": 10
+   },
+   "ratings_meta": {
+    "estimated": true,
+    "basis": "제작팀 추정치(공식 기록 아님). 1930년 당시 명성·역할 기반 게임 밸런스용."
+   },
+   "verification": {
+    "name": "needs_citation",
+    "in_final_lineup": "needs_citation",
+    "position_role_1930": "needs_citation",
+    "birth_date": "unknown",
+    "height_cm": "unknown",
+    "weight_kg": "unknown",
+    "preferred_foot": "unknown",
+    "shirt_number": "not_used_in_1930",
+    "appearance": "unknown"
+   }
+  }
+ ]
+}

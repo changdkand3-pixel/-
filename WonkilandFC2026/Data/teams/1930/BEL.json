@@ -1,0 +1,12 @@
+{
+ "schema": "wfc.team.v1",
+ "team_id": "BEL",
+ "name_ko": "벨기에",
+ "name_en": "Belgium",
+ "tournament_year": 1930,
+ "group": 4,
+ "kit_ref": "kit-BEL-1930-home",
+ "verification": {
+  "group": "needs_citation"
+ }
+}

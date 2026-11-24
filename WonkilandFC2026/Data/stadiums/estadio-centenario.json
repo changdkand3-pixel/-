@@ -1,0 +1,21 @@
+{
+ "schema": "wfc.stadium.v1",
+ "stadium_id": "estadio-centenario",
+ "name_ko": "에스타디오 센테나리오",
+ "name_en": "Estadio Centenario",
+ "city": "Montevideo",
+ "country": "URU",
+ "opened": 1930,
+ "pitch_m": {
+  "length": 105,
+  "width": 68,
+  "verification": "unknown_placeholder"
+ },
+ "capacity_1930": null,
+ "floodlights_1930": false,
+ "model": "Prototype: 절차적 생성 경기장(실제 구조 재현 아님). 실측 자료 확보 후 모델링.",
+ "verification": {
+  "opened": "needs_citation",
+  "floodlights_1930": "needs_citation"
+ }
+}

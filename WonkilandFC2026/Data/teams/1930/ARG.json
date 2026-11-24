@@ -1,0 +1,12 @@
+{
+ "schema": "wfc.team.v1",
+ "team_id": "ARG",
+ "name_ko": "아르헨티나",
+ "name_en": "Argentina",
+ "tournament_year": 1930,
+ "group": 1,
+ "kit_ref": "kit-ARG-1930-home",
+ "verification": {
+  "group": "needs_citation"
+ }
+}

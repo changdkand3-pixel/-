@@ -1,0 +1,12 @@
+{
+ "schema": "wfc.team.v1",
+ "team_id": "MEX",
+ "name_ko": "멕시코",
+ "name_en": "Mexico",
+ "tournament_year": 1930,
+ "group": 1,
+ "kit_ref": "kit-MEX-1930-home",
+ "verification": {
+  "group": "needs_citation"
+ }
+}

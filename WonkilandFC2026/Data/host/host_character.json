@@ -1,0 +1,42 @@
+{
+ "schema": "wfc.host.v1",
+ "character_id": "host-jang-wonki",
+ "name_ko": "장원기",
+ "name_en": "Jang Wonki",
+ "role": "대회 개최자",
+ "reference_images": [
+  "Assets/Host/reference/host_jang_wonki_reference_01.jpg"
+ ],
+ "face_texture": "Assets/Host/reference/host_face_crop.png",
+ "appearance": {
+  "hair": {
+   "style": "short_cropped_side",
+   "color": "#2a2a2e"
+  },
+  "skin_tone": "#c79a85",
+  "build": "stocky_broad",
+  "height_cm_estimate": null,
+  "expression_default": "broad_smile"
+ },
+ "outfit": {
+  "suit": "#1d2a44",
+  "shirt": "#f4f4f2",
+  "tie": "#9c1c2b",
+  "pocket_square": "#f4f4f2",
+  "shoes": "#111111"
+ },
+ "scenes": [
+  "main_title",
+  "opening",
+  "opening_declaration",
+  "group_draw",
+  "opening_ceremony",
+  "player_introduction",
+  "final_spectating",
+  "trophy_handover",
+  "awards",
+  "closing_ceremony"
+ ],
+ "consistency_rule": "모든 장면은 이 파일의 단일 캐릭터 정의와 동일 모델(buildHost)만 사용",
+ "rights": "사용자 본인 제공 사진. 공개 배포 전 초상 사용 동의서 보관 필요"
+}

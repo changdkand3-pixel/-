@@ -1,0 +1,30 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "wfc.player.v1",
+ "title": "WONKILAND FC 2026 player version",
+ "type": "object",
+ "required": ["version_id", "person_id", "name_ko", "name_en", "nationality", "tournament_year", "position_group", "ratings", "ratings_meta", "verification"],
+ "properties": {
+  "version_id": { "type": "string", "pattern": "^[A-Z]{3}-[0-9]{4}-[A-Z0-9]+$" },
+  "person_id": { "type": "string" },
+  "name_ko": { "type": "string" },
+  "name_en": { "type": "string" },
+  "nationality": { "type": "string" },
+  "tournament_year": { "type": "integer", "minimum": 1930, "maximum": 2026 },
+  "captain": { "type": "boolean" },
+  "birth_date": { "type": ["string", "null"], "format": "date" },
+  "age_at_tournament": { "type": ["integer", "null"] },
+  "height_cm": { "type": ["integer", "null"] },
+  "weight_kg": { "type": ["integer", "null"] },
+  "position_group": { "enum": ["GK", "FB", "HB", "FW", "DF", "MF"] },
+  "shirt_number": { "type": ["integer", "null"] },
+  "preferred_foot": { "enum": ["left", "right", "both", null] },
+  "kit_ref": { "type": "string" },
+  "ratings": {
+   "type": "object",
+   "additionalProperties": { "type": "integer", "minimum": 1, "maximum": 99 }
+  },
+  "ratings_meta": { "type": "object", "required": ["estimated"], "properties": { "estimated": { "type": "boolean" } } },
+  "verification": { "type": "object", "additionalProperties": { "enum": ["confirmed", "needs_citation", "unknown", "not_used_in_1930"] } }
+ }
+}

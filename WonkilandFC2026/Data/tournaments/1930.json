@@ -1,0 +1,205 @@
+{
+ "schema": "wfc.tournament.v1",
+ "id": "WC1930",
+ "edition": 1,
+ "year": 1930,
+ "host_country": "Uruguay",
+ "host_country_ko": "우루과이",
+ "teams": [
+  {
+   "team_id": "URU",
+   "name_ko": "우루과이",
+   "name_en": "Uruguay",
+   "group": 3,
+   "squad_file": "players/1930/URU.json",
+   "data_status": "final_lineup_only"
+  },
+  {
+   "team_id": "ARG",
+   "name_ko": "아르헨티나",
+   "name_en": "Argentina",
+   "group": 1,
+   "squad_file": "players/1930/ARG.json",
+   "data_status": "final_lineup_only"
+  },
+  {
+   "team_id": "USA",
+   "name_ko": "미국",
+   "name_en": "United States",
+   "group": 4,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "YUG",
+   "name_ko": "유고슬라비아",
+   "name_en": "Yugoslavia",
+   "group": 2,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "CHI",
+   "name_ko": "칠레",
+   "name_en": "Chile",
+   "group": 1,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "BRA",
+   "name_ko": "브라질",
+   "name_en": "Brazil",
+   "group": 2,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "FRA",
+   "name_ko": "프랑스",
+   "name_en": "France",
+   "group": 1,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "ROU",
+   "name_ko": "루마니아",
+   "name_en": "Romania",
+   "group": 3,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "PAR",
+   "name_ko": "파라과이",
+   "name_en": "Paraguay",
+   "group": 4,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "PER",
+   "name_ko": "페루",
+   "name_en": "Peru",
+   "group": 3,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "BEL",
+   "name_ko": "벨기에",
+   "name_en": "Belgium",
+   "group": 4,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "BOL",
+   "name_ko": "볼리비아",
+   "name_en": "Bolivia",
+   "group": 2,
+   "squad_file": null,
+   "data_status": "not_started"
+  },
+  {
+   "team_id": "MEX",
+   "name_ko": "멕시코",
+   "name_en": "Mexico",
+   "group": 1,
+   "squad_file": null,
+   "data_status": "not_started"
+  }
+ ],
+ "rules_profile": "rules/historical_1930.json",
+ "knockout": [
+  {
+   "round": "semi_final",
+   "home": "ARG",
+   "away": "USA",
+   "score": [
+    6,
+    1
+   ],
+   "verification": "needs_citation"
+  },
+  {
+   "round": "semi_final",
+   "home": "URU",
+   "away": "YUG",
+   "score": [
+    6,
+    1
+   ],
+   "verification": "needs_citation"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "WC1930-FINAL",
+   "round": "final",
+   "date": "1930-07-30",
+   "stadium_id": "estadio-centenario",
+   "home": "URU",
+   "away": "ARG",
+   "score": [
+    4,
+    2
+   ],
+   "half_time": [
+    1,
+    2
+   ],
+   "referee": {
+    "name_en": "John Langenus",
+    "nationality": "BEL"
+   },
+   "attendance": 68346,
+   "formation_home": "2-3-5",
+   "formation_away": "2-3-5",
+   "goals": [
+    {
+     "team": "URU",
+     "player": "URU-1930-DORADO",
+     "minute": 12
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-PEUCELLE",
+     "minute": 20
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "minute": 37
+    },
+    {
+     "team": "URU",
+     "player": "URU-1930-CEA",
+     "minute": 57
+    },
+    {
+     "team": "URU",
+     "player": "URU-1930-IRIARTE",
+     "minute": 68
+    },
+    {
+     "team": "URU",
+     "player": "URU-1930-CASTRO",
+     "minute": 89
+    }
+   ],
+   "notes": [
+    "전반은 아르헨티나 공, 후반은 우루과이 공을 사용했다는 기록이 널리 알려져 있음(출처 첨부 필요)."
+   ],
+   "verification": {
+    "score": "needs_citation",
+    "half_time": "needs_citation",
+    "goals": "needs_citation",
+    "referee": "needs_citation",
+    "attendance": "needs_citation",
+    "formations": "needs_citation"
+   }
+  }
+ ]
+}
