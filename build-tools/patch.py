@@ -729,6 +729,15 @@ rep("""path=routes[i%4]""","""path=routes[i%routes.length]""")
 # ---------- 48. 131차: 지하철 천하통일 문제 전투에서 수학 문제를 쓰려고 학년별 문제 묶음(PACKS)을 window.WK_PACKS로 열어 둠
 rep("""const PACKS={};""","""const PACKS={};window.WK_PACKS=PACKS;""")
 
+# ---------- 49. 141차: 메인 지도 두 손가락 확대 — 손가락이 움직이는 동안은 #wk44World에 CSS transform(늘이기)만, 손을 떼면 한 번 layout(휴대폰에서 움직임마다 layout하면 느림)
+rep("""if(event.touches.length>=2){if(gesture.kind!=='pinch')start(event.touches);event.preventDefault();const p=pair(event.touches),g=gesture;fit=false;layout(g.width*p.distance/g.distance);const dd=dimensions(),offset=Math.max(0,(dd.vw-dd.ww)/2);move(g.x*width+offset+dd.ox-p.x,g.y*width*ratio()+dd.oy-p.y);suppressUntil=Date.now()+700;}""","""if(event.touches.length>=2){if(gesture.kind!=='pinch')start(event.touches);event.preventDefault();wkPinchP=pair(event.touches);wkPinchG=gesture;suppressUntil=Date.now()+700;if(!wkPinchRaf)wkPinchRaf=requestAnimationFrame(wkPinchRun);}""")
+rep("""viewport.addEventListener('touchend',event=>{if(gesture?.moved||gesture?.kind==='pinch')suppressUntil=Date.now()+700;start(event.touches);});""","""function wkPinchTarget(g,p){const fw=Math.min((viewport.clientWidth||320)/(1+PAD.l+PAD.r),(viewport.clientHeight||420)/(ratio()*(1+PAD.t+PAD.b)));return Math.max(Math.min(160,fw),Math.min(4200,g.width*p.distance/g.distance));}
+ function wkPinchRun(){wkPinchRaf=0;const p=wkPinchP,g=wkPinchG;if(!p||!g)return;if(!wkPinchO||wkPinchO.g!==g){wkPinchO={g,x:viewport.scrollLeft+p.x,y:viewport.scrollTop+p.y,mx:p.x,my:p.y};world.style.transformOrigin=wkPinchO.x+'px '+wkPinchO.y+'px';world.style.willChange='transform';}const k=wkPinchTarget(g,p)/g.width;world.style.transform='translate('+(p.x-wkPinchO.mx)+'px,'+(p.y-wkPinchO.my)+'px) scale('+k+')';}
+ function wkPinchCommit(){if(wkPinchRaf){cancelAnimationFrame(wkPinchRaf);wkPinchRun();}const p=wkPinchP,g=wkPinchG;wkPinchP=null;if(!wkPinchO)return;wkPinchO=null;world.style.transform='';world.style.transformOrigin='';world.style.willChange='';if(!p||!g)return;fit=false;layout(wkPinchTarget(g,p));const dd=dimensions(),offset=Math.max(0,(dd.vw-dd.ww)/2);move(g.x*width+offset+dd.ox-p.x,g.y*width*ratio()+dd.oy-p.y);}
+ viewport.addEventListener('touchend',event=>{wkPinchCommit();if(gesture?.moved||gesture?.kind==='pinch')suppressUntil=Date.now()+700;start(event.touches);});""")
+rep("""viewport.addEventListener('touchcancel',()=>{if(gesture)""","""viewport.addEventListener('touchcancel',()=>{wkPinchCommit();if(gesture)""")
+rep("""let gesture=null,suppressUntil=0;""","""let gesture=null,suppressUntil=0,wkPinchRaf=0,wkPinchP=null,wkPinchG=null,wkPinchO=null;""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()

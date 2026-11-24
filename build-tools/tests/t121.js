@@ -7,7 +7,7 @@ for(const vw of [{width:1200,height:900},{width:390,height:800}]){
  await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;});
  const info=await p.evaluate(()=>({n:window.wk121Life&&window.wk121Life.count(),who:window.wk121Life&&window.wk121Life.who(),inStage:!!document.querySelector('#mainStage>#wk121Life')}));
  ok(info.inStage&&info.n>=25,vw.width+' 층 있음 · 움직이는 것 '+info.n+'개 '+JSON.stringify(info.who));
- const pos=()=>p.evaluate(()=>[...document.querySelectorAll('#wk121Life>g')].map(g=>g.getAttribute('transform')));
+ const pos=()=>p.evaluate(()=>[...document.querySelectorAll('#wk121Life>g:not([data-wk141])')].map(g=>g.getAttribute('transform')));
  const a=await pos();await p.waitForTimeout(1500);const c=await pos();
  ok(a.filter((x,i)=>x!==c[i]).length>=a.length-1,vw.width+' 1.5초 뒤 위치가 바뀜 ('+a.filter((x,i)=>x!==c[i]).length+'/'+a.length+')');
  const blk=await p.evaluate(()=>{const s=document.getElementById('mainStage').getBoundingClientRect();const e=document.elementFromPoint(s.left+s.width*.5,s.top+s.height*.6);return e&&e.closest&&e.closest('#wk121Life')?'막힘':'통과';});
