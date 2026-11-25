@@ -753,6 +753,8 @@ rep("""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1
 rep("""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2')&&!privateSession)""","""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2'||GR==='초6-1')&&!privateSession)""")
 _a=t.index("if(GR==='초5-2'&&window.WonkiGrade52){body.innerHTML=head(");_b=t.index("\n if(GR==='초5-1'&&window.WonkiGrade51){body.innerHTML=head(",_a)
 _board61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace('초5-2','초6-1')
+_board61=_board61.replace('enemies:r.enemies.filter(id=>id!==p)','enemies:r.enemies')  # 143차: 내 전사와 같은 캐릭터도 상대로(거울 대결)
+assert 'enemies:r.enemies}' in _board61 or 'enemies:r.enemies)' in _board61 or 'enemies:r.enemies' in _board61
 assert 'WonkiGrade61' in _board61
 t=t[:_a]+_board61+'\n '+t[_a:]
 rep("""PACKS['초5-2']=""","""PACKS['초6-1']="""+_math61+""";
@@ -761,14 +763,14 @@ rep("""return ['초5-2','초5-1','초4-2','초4-1','초3-2','초3-1','초2-2',""
 rep("""||st.includes('초4-2')||st.includes('초5-1')||st.includes('초5-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2입니다.""","""||st.includes('초4-2')||st.includes('초5-1')||st.includes('초5-2')||st.includes('초6-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1입니다.""")
 rep("""'초4-1','초4-2','초5-1','초5-2'].includes(grade.dataset.grade))return;""","""'초4-1','초4-2','초5-1','초5-2','초6-1'].includes(grade.dataset.grade))return;""")
 _m61=_j.loads(_math61)
-_eng61="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m61['CH'].items()},ensure_ascii=False)+");const GRADE61_CAST="+_j.dumps(_m61['CAST'],ensure_ascii=False)+";const GRADE61_STARTERS="+_j.dumps(_m61['PICK'])+";const GRADE61_ENEMIES={};{const s61=SEMESTERS.find(s=>s.key==='e6-1');if(s61)s61.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE61_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[])).filter(x=>x!=='goku61');GRADE61_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+_eng61="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m61['CH'].items()},ensure_ascii=False)+");const GRADE61_CAST="+_j.dumps(_m61['CAST'],ensure_ascii=False)+";const GRADE61_STARTERS="+_j.dumps(_m61['PICK'])+";const GRADE61_ENEMIES={};{const s61=SEMESTERS.find(s=>s.key==='e6-1');if(s61)s61.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE61_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[]));GRADE61_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
 rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng61+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
 rep("""function enemies(u){return(GRADE52_ENEMIES[u]||""","""function enemies(u){return(GRADE61_ENEMIES[u]||GRADE52_ENEMIES[u]||""")
 rep("""state.semester==='e5-2'?[...GRADE52_STARTERS,...state.friends]:""","""state.semester==='e6-1'?[...GRADE61_STARTERS,...state.friends]:state.semester==='e5-2'?[...GRADE52_STARTERS,...state.friends]:""")
 rep("""||(out.semester==='e5-2'&&GRADE52_STARTERS.includes(saved.player))""","""||(out.semester==='e5-2'&&GRADE52_STARTERS.includes(saved.player))||(out.semester==='e6-1'&&GRADE61_STARTERS.includes(saved.player))""")
 _a=t.index("  if(s.semester==='e5-2'&&window.WonkiGrade52){");_b=t.index("\n  if(s.semester==='e5-1'&&window.WonkiGrade51){",_a)
-_eb61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace("'e5-2'","'e6-1'").replace("id!=='goku52'&&id!=='goku260_52'","id!=='goku61'").replace('초5-2','초6-1')
-assert 'WonkiGrade61' in _eb61 and "id!=='goku61'" in _eb61
+_eb61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace("'e5-2'","'e6-1'").replace("id!=='goku52'&&id!=='goku260_52'","true").replace('초5-2','초6-1')
+assert 'WonkiGrade61' in _eb61
 t=t[:_a]+_eb61+'\n'+t[_a:]
 
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)

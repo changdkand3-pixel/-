@@ -18,7 +18,7 @@ ROWS = [
 SCENES = [[20, y - 5, 940, h + 10] for y, h, _ in ROWS]
 CELLS = [[[i, x0 - OX, y, x1 - x0, h] for i, x0, x1 in row] for y, h, row in ROWS]
 CAST = {str(i + 1): [c[0] for c in row] for i, row in enumerate(CELLS)}
-BOSSES = {k: [x for x in v if x != 'goku61'] for k, v in CAST.items()}
+BOSSES = {k: list(v) for k, v in CAST.items()}  # 143차: 손오공도 상대로 고를 수 있게
 
 def b64(path, mime):
     return 'data:' + mime + ';base64,' + base64.b64encode(open(path, 'rb').read()).decode()
