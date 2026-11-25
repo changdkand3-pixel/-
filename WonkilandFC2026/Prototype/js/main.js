@@ -40,6 +40,9 @@
     if (quality === 'high') {
       const sao = new AD.SAOPass(scene, camera, false, true);
       Object.assign(sao.params, { saoIntensity: 0.012, saoScale: 6, saoKernelRadius: 30, saoBlurRadius: 6, saoMinResolution: 0, saoBias: 0.5 });
+      // 비·눈·불꽃·별(점 입자)은 주변광 차폐 깊이 계산에서 제외 (큰 사각형 얼룩 방지). 최종 화면에는 그대로 보임.
+      const origRender = sao.render.bind(sao);
+      sao.render = (...args) => { const hidden = []; scene.traverse(o => { if (o.isPoints && o.visible) { o.visible = false; hidden.push(o); } }); origRender(...args); hidden.forEach(o => { o.visible = true; }); };
       c.addPass(sao); post.sao = sao;
     }
     post.bloom = new AD.UnrealBloomPass(new T.Vector2(innerWidth, innerHeight), 0.25, 0.6, 0.86); c.addPass(post.bloom);
