@@ -1,0 +1,2774 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2010",
+ "year": 2010,
+ "name": "2010 FIFA Men's World Cup",
+ "host_country": "South Africa",
+ "winner": "Spain",
+ "start_date": "2010-06-11",
+ "end_date": "2010-07-11",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group G",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CIV",
+   "fifa_code": "CIV",
+   "name_en": "Ivory Coast",
+   "name_ko": "코트디부아르",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group D",
+   "finish": 3
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DZA",
+   "fifa_code": "ALG",
+   "name_en": "Algeria",
+   "name_ko": "알제리",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group H",
+   "finish": 1
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "GHA",
+   "fifa_code": "GHA",
+   "name_en": "Ghana",
+   "name_ko": "가나",
+   "group": "Group D",
+   "finish": "QF"
+  },
+  {
+   "team_id": "GRC",
+   "fifa_code": "GRE",
+   "name_en": "Greece",
+   "name_ko": "그리스",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HND",
+   "fifa_code": "HON",
+   "name_en": "Honduras",
+   "name_ko": "온두라스",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NGA",
+   "fifa_code": "NGA",
+   "name_en": "Nigeria",
+   "name_ko": "나이지리아",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group E",
+   "finish": 2
+  },
+  {
+   "team_id": "NZL",
+   "fifa_code": "NZL",
+   "name_en": "New Zealand",
+   "name_ko": "뉴질랜드",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRK",
+   "fifa_code": "PRK",
+   "name_en": "North Korea",
+   "name_ko": "북한",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "SRB",
+   "fifa_code": "SRB",
+   "name_en": "Serbia",
+   "name_ko": "세르비아",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SVK",
+   "fifa_code": "SVK",
+   "name_en": "Slovakia",
+   "name_ko": "슬로바키아",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "SVN",
+   "fifa_code": "SVN",
+   "name_en": "Slovenia",
+   "name_ko": "슬로베니아",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group A",
+   "finish": 4
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ZAF",
+   "fifa_code": "RSA",
+   "name_en": "South Africa",
+   "name_ko": "남아프리카공화국",
+   "group": "Group A",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ESP"
+  },
+  {
+   "position": 2,
+   "team": "NLD"
+  },
+  {
+   "position": 3,
+   "team": "DEU"
+  },
+  {
+   "position": 4,
+   "team": "URY"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "URY-2010-FORLAN",
+   "team": "URY"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "NLD-2010-SNEIJDER",
+   "team": "NLD"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "ESP-2010-VILLA",
+   "team": "ESP"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "DEU-2010-MULLER",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ESP-2010-VILLA",
+   "team": "ESP"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "NLD-2010-SNEIJDER",
+   "team": "NLD"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "ESP-2010-CASILLAS",
+   "team": "ESP"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "DEU-2010-MULLER",
+   "team": "DEU"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2010-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-11",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "ZAF",
+   "away": "MEX",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ZAF",
+     "player": "ZAF-2010-TSHABALALA",
+     "name": "Siphiwe Tshabalala",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2010-MARQUEZ",
+     "name": "Rafael Márquez",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-02",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-11",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "URY",
+   "away": "FRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-03",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-12",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "KOR",
+   "away": "GRC",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-2010-LEEJUN",
+     "name": "Lee Jung-soo",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2010-PARK",
+     "name": "Park Ji-sung",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-12",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "ARG",
+   "away": "NGA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2010-HEINZE",
+     "name": "Gabriel Heinze",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-12",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "ENG",
+   "away": "USA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2010-GERRARD",
+     "name": "Steven Gerrard",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2010-DEMPSEY",
+     "name": "Clint Dempsey",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-06",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-13",
+   "stadium": "Peter Mokaba Stadium",
+   "city": "Polokwane",
+   "capacity": 42000,
+   "home": "DZA",
+   "away": "SVN",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SVN",
+     "player": "SVN-2010-KOREN",
+     "name": "Robert Koren",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-07",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-13",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "SRB",
+   "away": "GHA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2010-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-13",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "DEU",
+   "away": "AUS",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2010-PODOLSKI",
+     "name": "Lukas Podolski",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-MULLER",
+     "name": "Thomas Müller",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-CACAU",
+     "name": "Cacau",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-09",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-14",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "NLD",
+   "away": "DNK",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "DNK-2010-AGGER",
+     "name": "Daniel Agger",
+     "minute": "46'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-KUYT",
+     "name": "Dirk Kuyt",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-14",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "JPN",
+   "away": "CMR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2010-HONDA",
+     "name": "Honda Keisuke",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-11",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-14",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "ITA",
+   "away": "PRY",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-2010-ALCARAZ",
+     "name": "Antolín Alcaraz",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2010-DEROSSI",
+     "name": "Daniele De Rossi",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-12",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-15",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "NZL",
+   "away": "SVK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SVK",
+     "player": "SVK-2010-VITTEK",
+     "name": "Róbert Vittek",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NZL",
+     "player": "NZL-2010-REID",
+     "name": "Winston Reid",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-13",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-15",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "CIV",
+   "away": "PRT",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-14",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-15",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "BRA",
+   "away": "PRK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2010-MAICON",
+     "name": "Maicon",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2010-ELANO",
+     "name": "Elano",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRK",
+     "player": "PRK-2010-JI",
+     "name": "Ji Yun-nam",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-16",
+   "stadium": "Mbombela Stadium",
+   "city": "Nelspruit",
+   "capacity": 41000,
+   "home": "HND",
+   "away": "CHL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-2010-BEAUSEJOUR",
+     "name": "Jean Beausejour",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-16",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-16",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "ESP",
+   "away": "CHE",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2010-FERNANDES",
+     "name": "Gélson Fernandes",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-17",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-16",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "ZAF",
+   "away": "URY",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2010-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-PEREIRA",
+     "name": "Álvaro Pereira",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-18",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-17",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "ARG",
+   "away": "KOR",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "KOR-2010-PARKCHU",
+     "name": "Park Chu-young",
+     "minute": "17'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-HIGUAIN",
+     "name": "Gonzalo Higuaín",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2010-LEECHU",
+     "name": "Lee Chung-yong",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-HIGUAIN",
+     "name": "Gonzalo Higuaín",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-HIGUAIN",
+     "name": "Gonzalo Higuaín",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-19",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-17",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "GRC",
+   "away": "NGA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-2010-UCHE",
+     "name": "Kalu Uche",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GRC",
+     "player": "GRC-2010-SALPINGIDIS",
+     "name": "Dimitris Salpingidis",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GRC",
+     "player": "GRC-2010-TOROSIDIS",
+     "name": "Vasilis Torosidis",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-20",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-17",
+   "stadium": "Peter Mokaba Stadium",
+   "city": "Polokwane",
+   "capacity": 42000,
+   "home": "FRA",
+   "away": "MEX",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2010-HERNANDEZ",
+     "name": "Javier Hernández",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2010-BLANCO",
+     "name": "Cuauhtémoc Blanco",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-21",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-18",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "DEU",
+   "away": "SRB",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SRB",
+     "player": "SRB-2010-JOVANOVIC",
+     "name": "Milan Jovanović",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-22",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-18",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "SVN",
+   "away": "USA",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SVN",
+     "player": "SVN-2010-BIRSA",
+     "name": "Valter Birsa",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SVN",
+     "player": "SVN-2010-LJUBIJANKIC",
+     "name": "Zlatan Ljubijankić",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2010-DONOVAN",
+     "name": "Landon Donovan",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2010-BRADLEY",
+     "name": "Michael Bradley",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-23",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-18",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "ENG",
+   "away": "DZA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-24",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-19",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "NLD",
+   "away": "JPN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2010-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-25",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-19",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "GHA",
+   "away": "AUS",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUS",
+     "player": "AUS-2010-HOLMAN",
+     "name": "Brett Holman",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2010-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-26",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-19",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "CMR",
+   "away": "DNK",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-2010-ETOO",
+     "name": "Samuel Eto'o",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2010-BENDTNER",
+     "name": "Nicklas Bendtner",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2010-ROMMEDAHL",
+     "name": "Dennis Rommedahl",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-27",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-20",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "SVK",
+   "away": "PRY",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-2010-VERA",
+     "name": "Enrique Vera",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2010-RIVEROS",
+     "name": "Cristian Riveros",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-28",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-20",
+   "stadium": "Mbombela Stadium",
+   "city": "Nelspruit",
+   "capacity": 41000,
+   "home": "ITA",
+   "away": "NZL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NZL",
+     "player": "NZL-2010-SMELTZ",
+     "name": "Shane Smeltz",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2010-IAQUINTA",
+     "name": "Vincenzo Iaquinta",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-29",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-20",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "BRA",
+   "away": "CIV",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2010-FABIANO",
+     "name": "Luís Fabiano",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2010-FABIANO",
+     "name": "Luís Fabiano",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2010-ELANO",
+     "name": "Elano",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2010-DROGBA",
+     "name": "Didier Drogba",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-30",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-21",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "PRT",
+   "away": "PRK",
+   "score": [
+    7,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2010-MEIRELES",
+     "name": "Raul Meireles",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-SIMAO",
+     "name": "Simão",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-ALMEIDA",
+     "name": "Hugo Almeida",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-TIAGO",
+     "name": "Tiago",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-LIEDSON",
+     "name": "Liédson",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2010-TIAGO",
+     "name": "Tiago",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-31",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-21",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "CHL",
+   "away": "CHE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-2010-GONZALEZ",
+     "name": "Mark González",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-32",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-21",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "ESP",
+   "away": "HND",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-VILLA",
+     "name": "David Villa",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2010-VILLA",
+     "name": "David Villa",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-33",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-22",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "FRA",
+   "away": "ZAF",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ZAF",
+     "player": "ZAF-2010-KHUMALO",
+     "name": "Bongani Khumalo",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-2010-MPHELA",
+     "name": "Katlego Mphela",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2010-MALOUDA",
+     "name": "Florent Malouda",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-34",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2010-06-22",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "MEX",
+   "away": "URY",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2010-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-35",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-22",
+   "stadium": "Peter Mokaba Stadium",
+   "city": "Polokwane",
+   "capacity": 42000,
+   "home": "GRC",
+   "away": "ARG",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2010-DEMICHELIS",
+     "name": "Martín Demichelis",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-PALERMO",
+     "name": "Martín Palermo",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-36",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2010-06-22",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "NGA",
+   "away": "KOR",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-2010-UCHE",
+     "name": "Kalu Uche",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2010-LEEJUN",
+     "name": "Lee Jung-soo",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2010-PARKCHU",
+     "name": "Park Chu-young",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-2010-YAKUBU",
+     "name": "Yakubu",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-37",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-23",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "SVN",
+   "away": "ENG",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2010-DEFOE",
+     "name": "Jermain Defoe",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-38",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2010-06-23",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "USA",
+   "away": "DZA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2010-DONOVAN",
+     "name": "Landon Donovan",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-39",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-23",
+   "stadium": "Mbombela Stadium",
+   "city": "Nelspruit",
+   "capacity": 41000,
+   "home": "AUS",
+   "away": "SRB",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUS",
+     "player": "AUS-2010-CAHILL",
+     "name": "Tim Cahill",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2010-HOLMAN",
+     "name": "Brett Holman",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2010-PANTELIC",
+     "name": "Marko Pantelić",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-40",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2010-06-23",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "GHA",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2010-OZIL",
+     "name": "Mesut Özil",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-41",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-24",
+   "stadium": "Peter Mokaba Stadium",
+   "city": "Polokwane",
+   "capacity": 42000,
+   "home": "PRY",
+   "away": "NZL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-42",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2010-06-24",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "SVK",
+   "away": "ITA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SVK",
+     "player": "SVK-2010-VITTEK",
+     "name": "Róbert Vittek",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SVK",
+     "player": "SVK-2010-VITTEK",
+     "name": "Róbert Vittek",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2010-DINATALE",
+     "name": "Antonio Di Natale",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SVK",
+     "player": "SVK-2010-KOPUNEK",
+     "name": "Kamil Kopúnek",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2010-QUAGLIARELLA",
+     "name": "Fabio Quagliarella",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-43",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-24",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "CMR",
+   "away": "NLD",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2010-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-2010-ETOO",
+     "name": "Samuel Eto'o",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-HUNTELAAR",
+     "name": "Klaas-Jan Huntelaar",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-44",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2010-06-24",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "DNK",
+   "away": "JPN",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2010-HONDA",
+     "name": "Honda Keisuke",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2010-ENDO",
+     "name": "Endō Yasuhito",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2010-TOMASSON",
+     "name": "Jon Dahl Tomasson",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2010-OKAZAKI",
+     "name": "Okazaki Shinji",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-45",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-25",
+   "stadium": "Mbombela Stadium",
+   "city": "Nelspruit",
+   "capacity": 41000,
+   "home": "PRK",
+   "away": "CIV",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CIV",
+     "player": "CIV-2010-TOUREYAY",
+     "name": "Yaya Touré",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2010-ROMARIC",
+     "name": "Romaric",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2010-KALOU",
+     "name": "Salomon Kalou",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-46",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2010-06-25",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "PRT",
+   "away": "BRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-47",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-25",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "CHL",
+   "away": "ESP",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-VILLA",
+     "name": "David Villa",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2010-INIESTA",
+     "name": "Andrés Iniesta",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-2010-MILLAR",
+     "name": "Rodrigo Millar",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-48",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2010-06-25",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "CHE",
+   "away": "HND",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-26",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "URY",
+   "away": "KOR",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2010-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2010-LEECHU",
+     "name": "Lee Chung-yong",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-26",
+   "stadium": "Royal Bafokeng Stadium",
+   "city": "Rustenburg",
+   "capacity": 42000,
+   "home": "USA",
+   "away": "GHA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2010-BOATENGKEV",
+     "name": "Kevin-Prince Boateng",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2010-DONOVAN",
+     "name": "Landon Donovan",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2010-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-27",
+   "stadium": "Free State Stadium",
+   "city": "Bloemfontein",
+   "capacity": 41000,
+   "home": "DEU",
+   "away": "ENG",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2010-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-PODOLSKI",
+     "name": "Lukas Podolski",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2010-UPSON",
+     "name": "Matthew Upson",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-MULLER",
+     "name": "Thomas Müller",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-MULLER",
+     "name": "Thomas Müller",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-27",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "ARG",
+   "away": "MEX",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2010-TEVEZ",
+     "name": "Carlos Tevez",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-HIGUAIN",
+     "name": "Gonzalo Higuaín",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2010-TEVEZ",
+     "name": "Carlos Tevez",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2010-HERNANDEZ",
+     "name": "Javier Hernández",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-28",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "NLD",
+   "away": "SVK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2010-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SVK",
+     "player": "SVK-2010-VITTEK",
+     "name": "Róbert Vittek",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-28",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "BRA",
+   "away": "CHL",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2010-JUAN",
+     "name": "Juan",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2010-FABIANO",
+     "name": "Luís Fabiano",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2010-ROBINHO",
+     "name": "Robinho",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-29",
+   "stadium": "Loftus Versfeld Stadium",
+   "city": "Pretoria",
+   "capacity": 43000,
+   "home": "PRY",
+   "away": "JPN",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    5,
+    3
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2010-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2010-06-29",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "ESP",
+   "away": "PRT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-VILLA",
+     "name": "David Villa",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2010-07-02",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "NLD",
+   "away": "BRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2010-ROBINHO",
+     "name": "Robinho",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2010-07-02",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "URY",
+   "away": "GHA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    2
+   ],
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2010-MUNTARI",
+     "name": "Sulley Muntari",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2010-07-03",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "ARG",
+   "away": "DEU",
+   "score": [
+    0,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2010-MULLER",
+     "name": "Thomas Müller",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-FRIEDRICH",
+     "name": "Arne Friedrich",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2010-07-03",
+   "stadium": "Ellis Park Stadium",
+   "city": "Johannesburg",
+   "capacity": 56000,
+   "home": "PRY",
+   "away": "ESP",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-VILLA",
+     "name": "David Villa",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2010-07-06",
+   "stadium": "Cape Town Stadium",
+   "city": "Cape Town",
+   "capacity": 64000,
+   "home": "URY",
+   "away": "NLD",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2010-VANBRONCKHORST",
+     "name": "Giovanni van Bronckhorst",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2010-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-PEREIRAMAX",
+     "name": "Maxi Pereira",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2010-07-07",
+   "stadium": "Moses Mabhida Stadium",
+   "city": "Durban",
+   "capacity": 63000,
+   "home": "DEU",
+   "away": "ESP",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-PUYOL",
+     "name": "Carles Puyol",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2010-07-10",
+   "stadium": "Nelson Mandela Bay Stadium",
+   "city": "Port Elizabeth",
+   "capacity": 42000,
+   "home": "URY",
+   "away": "DEU",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2010-MULLER",
+     "name": "Thomas Müller",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-CAVANI",
+     "name": "Edinson Cavani",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2010-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-JANSEN",
+     "name": "Marcell Jansen",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2010-KHEDIRA",
+     "name": "Sami Khedira",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2010-64",
+   "stage": "final",
+   "group": null,
+   "date": "2010-07-11",
+   "stadium": "Soccer City",
+   "city": "Johannesburg",
+   "capacity": 84000,
+   "home": "NLD",
+   "away": "ESP",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2010-INIESTA",
+     "name": "Andrés Iniesta",
+     "minute": "116'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

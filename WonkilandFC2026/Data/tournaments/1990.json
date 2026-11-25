@@ -1,0 +1,2238 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1990",
+ "year": 1990,
+ "name": "1990 FIFA Men's World Cup",
+ "host_country": "Italy",
+ "winner": "West Germany",
+ "start_date": "1990-06-08",
+ "end_date": "1990-07-08",
+ "rules_profile": "historical_1990",
+ "teams": [
+  {
+   "team_id": "ARE",
+   "fifa_code": "UAE",
+   "name_en": "United Arab Emirates",
+   "name_ko": "아랍에미리트",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group B",
+   "finish": 2
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "COL",
+   "fifa_code": "COL",
+   "name_en": "Colombia",
+   "name_ko": "콜롬비아",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group A",
+   "finish": "QF"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group D",
+   "finish": 1
+  },
+  {
+   "team_id": "EGY",
+   "fifa_code": "EGY",
+   "name_en": "Egypt",
+   "name_ko": "이집트",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group F",
+   "finish": 4
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "IRL",
+   "fifa_code": "IRL",
+   "name_en": "Republic of Ireland",
+   "name_ko": "아일랜드",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group A",
+   "finish": 3
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group D",
+   "finish": "QF"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "DEU"
+  },
+  {
+   "position": 2,
+   "team": "ARG"
+  },
+  {
+   "position": 3,
+   "team": "ITA"
+  },
+  {
+   "position": 4,
+   "team": "ENG"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ITA-1990-SCHILLACI",
+   "team": "ITA"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "DEU-1990-MATTHAUS",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "ARG-1990-MARADONA",
+   "team": "ARG"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "ITA-1990-SCHILLACI",
+   "team": "ITA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "CSK-1990-SKUHRAVY",
+   "team": "CSK"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "ENG-1990-LINEKER",
+   "team": "ENG"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "CMR-1990-MILLA",
+   "team": "CMR"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "YUG-1990-PROSINECKI",
+   "team": "YUG"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1990-01",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-08",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "ARG",
+   "away": "CMR",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-1990-OMAMBIYIK",
+     "name": "François Omam-Biyik",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-02",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-09",
+   "stadium": "Stadio San Nicola",
+   "city": "Bari",
+   "capacity": 51000,
+   "home": "SUN",
+   "away": "ROU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1990-LACATUS",
+     "name": "Marius Lăcătuș",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1990-LACATUS",
+     "name": "Marius Lăcătuș",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-03",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-09",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "ARE",
+   "away": "COL",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-1990-REDIN",
+     "name": "Bernardo Redín",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1990-VALDERRAMA",
+     "name": "Carlos Valderrama",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-04",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-09",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "ITA",
+   "away": "AUT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-05",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-10",
+   "stadium": "Stadio Comunale",
+   "city": "Florence",
+   "capacity": 39000,
+   "home": "USA",
+   "away": "CSK",
+   "score": [
+    1,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1990-SKUHRAVY",
+     "name": "Tomáš Skuhravý",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-BILEK",
+     "name": "Michal Bílek",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-HASEK",
+     "name": "Ivan Hašek",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1990-CALIGIURI",
+     "name": "Paul Caligiuri",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-SKUHRAVY",
+     "name": "Tomáš Skuhravý",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-LUHOVY",
+     "name": "Milan Luhový",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-06",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-10",
+   "stadium": "Stadio delle Alpi",
+   "city": "Turin",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "SWE",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1990-CARECA",
+     "name": "Careca",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1990-CARECA",
+     "name": "Careca",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1990-BROLIN",
+     "name": "Tomas Brolin",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-07",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-10",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "YUG",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-MATTHAUS",
+     "name": "Lothar Matthäus",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1990-JOZIC",
+     "name": "Davor Jozić",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-MATTHAUS",
+     "name": "Lothar Matthäus",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-08",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-11",
+   "stadium": "Stadio Luigi Ferraris",
+   "city": "Genoa",
+   "capacity": 37000,
+   "home": "CRI",
+   "away": "SCO",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-1990-CAYASSO",
+     "name": "Juan Cayasso",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-09",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-11",
+   "stadium": "Stadio Sant'Elia",
+   "city": "Cagliari",
+   "capacity": 35000,
+   "home": "ENG",
+   "away": "IRL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1990-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-1990-SHEEDY",
+     "name": "Kevin Sheedy",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-12",
+   "stadium": "Stadio Marc'Antonio Bentegodi",
+   "city": "Verona",
+   "capacity": 36000,
+   "home": "BEL",
+   "away": "KOR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1990-DEGRYSE",
+     "name": "Marc Degryse",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1990-DEWOLF",
+     "name": "Michel De Wolf",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-11",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-12",
+   "stadium": "Stadio La Favorita",
+   "city": "Palermo",
+   "capacity": 33000,
+   "home": "NLD",
+   "away": "EGY",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1990-KIEFT",
+     "name": "Wim Kieft",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "EGY",
+     "player": "EGY-1990-ABDELGHANI",
+     "name": "Magdi Abdelghani",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-12",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-13",
+   "stadium": "Stadio Friuli",
+   "city": "Udine",
+   "capacity": 36000,
+   "home": "URY",
+   "away": "ESP",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1990-13",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-13",
+   "stadium": "Stadio San Paolo",
+   "city": "Naples",
+   "capacity": 60000,
+   "home": "ARG",
+   "away": "SUN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1990-TROGLIO",
+     "name": "Pedro Troglio",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1990-BURRUCHAGA",
+     "name": "Jorge Burruchaga",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-14",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-14",
+   "stadium": "Stadio San Nicola",
+   "city": "Bari",
+   "capacity": 51000,
+   "home": "CMR",
+   "away": "ROU",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-1990-MILLA",
+     "name": "Roger Milla",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1990-MILLA",
+     "name": "Roger Milla",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1990-BALINT",
+     "name": "Gabi Balint",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-15",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-14",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "YUG",
+   "away": "COL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1990-JOZIC",
+     "name": "Davor Jozić",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-16",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-14",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "ITA",
+   "away": "USA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-GIANNINI",
+     "name": "Giuseppe Giannini",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-17",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-15",
+   "stadium": "Stadio Comunale",
+   "city": "Florence",
+   "capacity": 39000,
+   "home": "AUT",
+   "away": "CSK",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1990-BILEK",
+     "name": "Michal Bílek",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-18",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-15",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "ARE",
+   "score": [
+    5,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARE",
+     "player": "ARE-1990-ISMAIL",
+     "name": "Khalid Ismaïl",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-MATTHAUS",
+     "name": "Lothar Matthäus",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-BEIN",
+     "name": "Uwe Bein",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-19",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-16",
+   "stadium": "Stadio delle Alpi",
+   "city": "Turin",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "CRI",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1990-MULLER",
+     "name": "Müller",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-20",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-16",
+   "stadium": "Stadio Luigi Ferraris",
+   "city": "Genoa",
+   "capacity": 37000,
+   "home": "SWE",
+   "away": "SCO",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1990-MCCALL",
+     "name": "Stuart McCall",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1990-JOHNSTON",
+     "name": "Mo Johnston",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1990-STROMBERG",
+     "name": "Glenn Strömberg",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-21",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-16",
+   "stadium": "Stadio Sant'Elia",
+   "city": "Cagliari",
+   "capacity": 35000,
+   "home": "ENG",
+   "away": "NLD",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1990-22",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-17",
+   "stadium": "Stadio La Favorita",
+   "city": "Palermo",
+   "capacity": 33000,
+   "home": "IRL",
+   "away": "EGY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1990-23",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-17",
+   "stadium": "Stadio Marc'Antonio Bentegodi",
+   "city": "Verona",
+   "capacity": 36000,
+   "home": "BEL",
+   "away": "URY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1990-CLIJSTERS",
+     "name": "Leo Clijsters",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1990-SCIFO",
+     "name": "Enzo Scifo",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1990-CEULEMANS",
+     "name": "Jan Ceulemans",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1990-BENGOECHEA",
+     "name": "Pablo Bengoechea",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-24",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-17",
+   "stadium": "Stadio Friuli",
+   "city": "Udine",
+   "capacity": 36000,
+   "home": "KOR",
+   "away": "ESP",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1990-MICHEL",
+     "name": "Míchel",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1990-HWANGBO",
+     "name": "Hwangbo Kwan",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1990-MICHEL",
+     "name": "Míchel",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1990-MICHEL",
+     "name": "Míchel",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-25",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-18",
+   "stadium": "Stadio San Paolo",
+   "city": "Naples",
+   "capacity": 60000,
+   "home": "ARG",
+   "away": "ROU",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1990-MONZON",
+     "name": "Pedro Monzón",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1990-BALINT",
+     "name": "Gabi Balint",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-26",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1990-06-18",
+   "stadium": "Stadio San Nicola",
+   "city": "Bari",
+   "capacity": 51000,
+   "home": "CMR",
+   "away": "SUN",
+   "score": [
+    0,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1990-PROTASOV",
+     "name": "Oleh Protasov",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1990-ZYGMANTOVICH",
+     "name": "Andrei Zygmantovich",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1990-ZAVAROV",
+     "name": "Oleksandr Zavarov",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1990-DOBROVOLSKI",
+     "name": "Igor Dobrovolski",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-27",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-19",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "COL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-LITTBARSKI",
+     "name": "Pierre Littbarski",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1990-RINCON",
+     "name": "Freddy Rincón",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-28",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1990-06-19",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "YUG",
+   "away": "ARE",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1990-SUSIC",
+     "name": "Safet Sušić",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1990-PANCEV",
+     "name": "Darko Pančev",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARE",
+     "player": "ARE-1990-JUMAA",
+     "name": "Ali Thani Jumaa",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1990-PANCEV",
+     "name": "Darko Pančev",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1990-PROSINECKI",
+     "name": "Robert Prosinečki",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-29",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-19",
+   "stadium": "Stadio Comunale",
+   "city": "Florence",
+   "capacity": 39000,
+   "home": "AUT",
+   "away": "USA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1990-OGRIS",
+     "name": "Andreas Ogris",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1990-RODAX",
+     "name": "Gerhard Rodax",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1990-MURRAY",
+     "name": "Bruce Murray",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-30",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1990-06-19",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "ITA",
+   "away": "CSK",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1990-BAGGIO",
+     "name": "Roberto Baggio",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-31",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-20",
+   "stadium": "Stadio delle Alpi",
+   "city": "Turin",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "SCO",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1990-MULLER",
+     "name": "Müller",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-32",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1990-06-20",
+   "stadium": "Stadio Luigi Ferraris",
+   "city": "Genoa",
+   "capacity": 37000,
+   "home": "SWE",
+   "away": "CRI",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1990-EKSTROM",
+     "name": "Johnny Ekström",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-1990-FLORES",
+     "name": "Róger Flores",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-1990-MEDFORD",
+     "name": "Hernán Medford",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-33",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-21",
+   "stadium": "Stadio Marc'Antonio Bentegodi",
+   "city": "Verona",
+   "capacity": 36000,
+   "home": "BEL",
+   "away": "ESP",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1990-MICHEL",
+     "name": "Míchel",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1990-VERVOORT",
+     "name": "Patrick Vervoort",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1990-GORRIZ",
+     "name": "Alberto Górriz",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-34",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1990-06-21",
+   "stadium": "Stadio Friuli",
+   "city": "Udine",
+   "capacity": 36000,
+   "home": "KOR",
+   "away": "URY",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1990-FONSECA",
+     "name": "Daniel Fonseca",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-35",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-21",
+   "stadium": "Stadio Sant'Elia",
+   "city": "Cagliari",
+   "capacity": 35000,
+   "home": "ENG",
+   "away": "EGY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1990-WRIGHT",
+     "name": "Mark Wright",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-36",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1990-06-21",
+   "stadium": "Stadio La Favorita",
+   "city": "Palermo",
+   "capacity": 33000,
+   "home": "IRL",
+   "away": "NLD",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1990-GULLIT",
+     "name": "Ruud Gullit",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-1990-QUINN",
+     "name": "Niall Quinn",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-37",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-23",
+   "stadium": "Stadio San Paolo",
+   "city": "Naples",
+   "capacity": 60000,
+   "home": "CMR",
+   "away": "COL",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-1990-MILLA",
+     "name": "Roger Milla",
+     "minute": "106'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1990-MILLA",
+     "name": "Roger Milla",
+     "minute": "108'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1990-REDIN",
+     "name": "Bernardo Redín",
+     "minute": "115'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-38",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-23",
+   "stadium": "Stadio San Nicola",
+   "city": "Bari",
+   "capacity": 51000,
+   "home": "CSK",
+   "away": "CRI",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1990-SKUHRAVY",
+     "name": "Tomáš Skuhravý",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-1990-GONZALEZBRENES",
+     "name": "Rónald González Brenes",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-SKUHRAVY",
+     "name": "Tomáš Skuhravý",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-KUBIK",
+     "name": "Luboš Kubík",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1990-SKUHRAVY",
+     "name": "Tomáš Skuhravý",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-39",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-24",
+   "stadium": "Stadio delle Alpi",
+   "city": "Turin",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "ARG",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1990-CANIGGIA",
+     "name": "Claudio Caniggia",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-40",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-24",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "NLD",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1990-BREHME",
+     "name": "Andreas Brehme",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1990-KOEMAN",
+     "name": "Ronald Koeman",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-41",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-25",
+   "stadium": "Stadio Luigi Ferraris",
+   "city": "Genoa",
+   "capacity": 37000,
+   "home": "IRL",
+   "away": "ROU",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    5,
+    4
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-1990-42",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-25",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "ITA",
+   "away": "URY",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SERENA",
+     "name": "Aldo Serena",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-43",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-26",
+   "stadium": "Stadio Marc'Antonio Bentegodi",
+   "city": "Verona",
+   "capacity": 36000,
+   "home": "ESP",
+   "away": "YUG",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1990-STOJKOVIC",
+     "name": "Dragan Stojković",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1990-SALINAS",
+     "name": "Julio Salinas",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1990-STOJKOVIC",
+     "name": "Dragan Stojković",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-44",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1990-06-26",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "ENG",
+   "away": "BEL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1990-PLATT",
+     "name": "David Platt",
+     "minute": "119'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-45",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1990-06-30",
+   "stadium": "Stadio Comunale",
+   "city": "Florence",
+   "capacity": 39000,
+   "home": "ARG",
+   "away": "YUG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    2
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-1990-46",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1990-06-30",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "IRL",
+   "away": "ITA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-47",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1990-07-01",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "CSK",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-MATTHAUS",
+     "name": "Lothar Matthäus",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-48",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1990-07-01",
+   "stadium": "Stadio San Paolo",
+   "city": "Naples",
+   "capacity": 60000,
+   "home": "CMR",
+   "away": "ENG",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1990-PLATT",
+     "name": "David Platt",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1990-KUNDE",
+     "name": "Emmanuel Kundé",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1990-EKEKE",
+     "name": "Eugène Ekéké",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1990-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1990-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "105'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-49",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1990-07-03",
+   "stadium": "Stadio San Paolo",
+   "city": "Naples",
+   "capacity": 60000,
+   "home": "ARG",
+   "away": "ITA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    3
+   ],
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1990-CANIGGIA",
+     "name": "Claudio Caniggia",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-50",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1990-07-04",
+   "stadium": "Stadio delle Alpi",
+   "city": "Turin",
+   "capacity": 63000,
+   "home": "DEU",
+   "away": "ENG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    3
+   ],
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-BREHME",
+     "name": "Andreas Brehme",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1990-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-51",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1990-07-07",
+   "stadium": "Stadio San Nicola",
+   "city": "Bari",
+   "capacity": 51000,
+   "home": "ITA",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1990-BAGGIO",
+     "name": "Roberto Baggio",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1990-PLATT",
+     "name": "David Platt",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1990-SCHILLACI",
+     "name": "Salvatore Schillaci",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1990-52",
+   "stage": "final",
+   "group": null,
+   "date": "1990-07-08",
+   "stadium": "Stadio Olimpico",
+   "city": "Rome",
+   "capacity": 74000,
+   "home": "DEU",
+   "away": "ARG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1990-BREHME",
+     "name": "Andreas Brehme",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

@@ -1,5 +1,10 @@
 # 데이터 형식 (Data/)
 
+> v0.2부터 `Data/players`, `Data/tournaments`는 `Tools/import_fjelstul.js`가 원본 CSV에서 **자동 생성**합니다. 직접 수정하지 말고 `Data/curated/`에 보정값을 넣으세요.
+> 팀 코드는 원본 데이터베이스 표기(예: 우루과이 `URY`, 독일 `DEU`), 화면 표시는 `nations.json`의 `fifa_code`.
+> 포지션은 GK/DF/MF/FW (1930 결승 보정값에는 당시 역할 `position_role`이 추가).
+> 스쿼드 파일 공통 정보(`source`, `field_status`, `ratings_meta`)는 파일 머리에 한 번만 기록하고, 선수는 1줄 1명입니다.
+
 프로토타입과 UE5가 **같은 JSON 원본**을 읽습니다. 수정 후 `node Tools/build_data.js`로 검증합니다.
 
 ## 선수 버전 (`Data/players/<연도>/<팀>.json` → `players[]`)
@@ -7,7 +12,7 @@
 
 | 필드 | 설명 | 미확인 시 |
 |---|---|---|
-| `version_id` | `<팀>-<연도>-<성>` 예: `URU-1930-NASAZZI` | 필수 |
+| `version_id` | `<팀>-<연도>-<성>` 예: `URY-1930-NASAZZI` | 필수 |
 | `person_id` | 연도 무관 동일인 ID | 필수 |
 | `name_ko`, `name_en` | 한글/영문 이름 | 필수 |
 | `nationality`, `tournament_year`, `captain` | | |

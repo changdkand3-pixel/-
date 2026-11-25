@@ -54,7 +54,7 @@
       const t = { i, id: squad.team_id, squad, side: i === 0 ? 1 : -1, score: 0, formation: this.o.formation[i], mentality: 'balanced', controller: null, controlled: null,
         stats: { shots: 0, onTarget: 0, passes: 0, passesOk: 0, possession: 0, fouls: 0, corners: 0, offsides: 0, yellow: 0, red: 0, saves: 0 }, bench: squad.players.slice(11) };
       t.players = players.map((pd, k) => ({
-        data: pd, r: pd.ratings, team: t, idx: k, gk: pd.position_group === 'GK', name: pd.name_ko,
+        data: pd, r: pd.ratings, team: t, idx: k, gk: k === 0, name: pd.display_name || pd.name_ko || pd.name_en,
         p: { x: 0, z: 0 }, v: { x: 0, z: 0 }, facing: 0, state: 'idle', stateT: 0, cd: 0, decideT: 0,
         anim: { state: 'idle', phase: this.R() * 6, speed: 0, t: 0 }, stamina: 100, injured: false, sentOff: false, yellow: 0,
         stats: { goals: 0, assists: 0, shots: 0, passes: 0, passesOk: 0, tackles: 0, saves: 0, fouls: 0 }, holdT: 0
@@ -505,8 +505,8 @@
       if (!this.subsAllowed(t)) return { ok: false, reason: t.bench.length === 0 ? 'bench_data_missing' : 'rules_forbid' };
       const out = t.players[outIdx], pd = t.bench.splice(benchIdx, 1)[0];
       t.bench.push(out.data);
-      out.data = pd; out.r = pd.ratings; out.name = pd.name_ko; out.injured = false; out.stamina = 100; out.stats = { goals: 0, assists: 0, shots: 0, passes: 0, passesOk: 0, tackles: 0, saves: 0, fouls: 0 };
-      t.subsUsed = (t.subsUsed || 0) + 1; this.emit('substitution', { team: t.id, in: pd.name_ko });
+      out.data = pd; out.r = pd.ratings; out.name = pd.display_name || pd.name_ko || pd.name_en; out.injured = false; out.stamina = 100; out.stats = { goals: 0, assists: 0, shots: 0, passes: 0, passesOk: 0, tackles: 0, saves: 0, fouls: 0 };
+      t.subsUsed = (t.subsUsed || 0) + 1; this.emit('substitution', { team: t.id, in: out.name, out: t.bench[t.bench.length - 1].display_name || t.bench[t.bench.length - 1].name_en });
       return { ok: true };
     }
 

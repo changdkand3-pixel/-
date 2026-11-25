@@ -15,7 +15,7 @@ class WONKILANDFC_API AWFCGameMode : public AGameModeBase
 public:
 	virtual void StartPlay() override;
 
-	UPROPERTY(EditAnywhere, Category = "WFC") FString HomeTeam = TEXT("URU");
+	UPROPERTY(EditAnywhere, Category = "WFC") FString HomeTeam = TEXT("URY");
 	UPROPERTY(EditAnywhere, Category = "WFC") FString AwayTeam = TEXT("ARG");
 	UPROPERTY(EditAnywhere, Category = "WFC") int32 Year = 1930;
 	UPROPERTY(EditAnywhere, Category = "WFC") FString RulesId = TEXT("historical_1930");

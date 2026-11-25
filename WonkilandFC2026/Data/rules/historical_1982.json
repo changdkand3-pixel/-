@@ -1,0 +1,19 @@
+{
+ "schema": "wfc.rules.v1",
+ "verification": "needs_citation",
+ "id": "historical_1982",
+ "era": "1982–1986",
+ "substitutions": 2,
+ "cards": true,
+ "offside": {
+  "opponents_required": 2,
+  "level_is_onside": false
+ },
+ "draw_resolution": "extra_time_then_penalties",
+ "penalty_shootout": true,
+ "added_time_display": true,
+ "notes": [
+  "승부차기 첫 도입(1982)",
+  "동일선상=오프사이드"
+ ]
+}

@@ -1,0 +1,2796 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2006",
+ "year": 2006,
+ "name": "2006 FIFA Men's World Cup",
+ "host_country": "Germany",
+ "winner": "Italy",
+ "start_date": "2006-06-09",
+ "end_date": "2006-07-09",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "AGO",
+   "fifa_code": "ANG",
+   "name_en": "Angola",
+   "name_ko": "앙골라",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group C",
+   "finish": "QF"
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CIV",
+   "fifa_code": "CIV",
+   "name_en": "Ivory Coast",
+   "name_ko": "코트디부아르",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CZE",
+   "fifa_code": "CZE",
+   "name_en": "Czech Republic",
+   "name_ko": "체코",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group A",
+   "finish": 3
+  },
+  {
+   "team_id": "ECU",
+   "fifa_code": "ECU",
+   "name_en": "Ecuador",
+   "name_ko": "에콰도르",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group G",
+   "finish": 2
+  },
+  {
+   "team_id": "GHA",
+   "fifa_code": "GHA",
+   "name_en": "Ghana",
+   "name_ko": "가나",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group E",
+   "finish": 1
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group D",
+   "finish": 4
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SAU",
+   "fifa_code": "KSA",
+   "name_en": "Saudi Arabia",
+   "name_ko": "사우디아라비아",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SCG",
+   "fifa_code": "SCG",
+   "name_en": "Serbia and Montenegro",
+   "name_ko": "세르비아 몬테네그로",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "TGO",
+   "fifa_code": "TOG",
+   "name_en": "Togo",
+   "name_ko": "토고",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TTO",
+   "fifa_code": "TRI",
+   "name_en": "Trinidad and Tobago",
+   "name_ko": "트리니다드 토바고",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "UKR",
+   "fifa_code": "UKR",
+   "name_en": "Ukraine",
+   "name_ko": "우크라이나",
+   "group": "Group H",
+   "finish": "QF"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group E",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ITA"
+  },
+  {
+   "position": 2,
+   "team": "FRA"
+  },
+  {
+   "position": 3,
+   "team": "DEU"
+  },
+  {
+   "position": 4,
+   "team": "PRT"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "FRA-2006-ZIDANE",
+   "team": "FRA"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "ITA-2006-CANNAVARO",
+   "team": "ITA"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "ITA-2006-PIRLO",
+   "team": "ITA"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "DEU-2006-KLOSE",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ARG-2006-CRESPO",
+   "team": "ARG"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "BRA-2006-RONALDO",
+   "team": "BRA"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "ITA-2006-BUFFON",
+   "team": "ITA"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "DEU-2006-PODOLSKI",
+   "team": "DEU"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2006-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-09",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "DEU",
+   "away": "CRI",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2006-LAHM",
+     "name": "Philipp Lahm",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2006-WANCHOPE",
+     "name": "Paulo Wanchope",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2006-WANCHOPE",
+     "name": "Paulo Wanchope",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-FRINGS",
+     "name": "Torsten Frings",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-02",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-09",
+   "stadium": "Arena AufShalke",
+   "city": "Gelsenkirchen",
+   "capacity": 52000,
+   "home": "POL",
+   "away": "ECU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2006-TENORIOCAR",
+     "name": "Carlos Tenorio",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2006-DELGADO",
+     "name": "Agustín Delgado",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-03",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-10",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "ENG",
+   "away": "PRY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "PRY-2006-GAMARRA",
+     "name": "Carlos Gamarra",
+     "minute": "3'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-10",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "TTO",
+   "away": "SWE",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-10",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "ARG",
+   "away": "CIV",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2006-CRESPO",
+     "name": "Hernán Crespo",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-SAVIOLA",
+     "name": "Javier Saviola",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2006-DROGBA",
+     "name": "Didier Drogba",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-06",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-11",
+   "stadium": "Zentralstadion",
+   "city": "Leipzig",
+   "capacity": 43000,
+   "home": "SCG",
+   "away": "NLD",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2006-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-07",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-11",
+   "stadium": "Frankenstadion",
+   "city": "Nuremberg",
+   "capacity": 41000,
+   "home": "MEX",
+   "away": "IRN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2006-BRAVO",
+     "name": "Omar Bravo",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2006-GOLMOHAMMADI",
+     "name": "Yahya Golmohammadi",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2006-BRAVO",
+     "name": "Omar Bravo",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2006-SINHA",
+     "name": "Sinha",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-11",
+   "stadium": "RheinEnergieStadion",
+   "city": "Cologne",
+   "capacity": 45000,
+   "home": "AGO",
+   "away": "PRT",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2006-PAULETA",
+     "name": "Pauleta",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-09",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-12",
+   "stadium": "Fritz-Walter-Stadion",
+   "city": "Kaiserslautern",
+   "capacity": 46000,
+   "home": "AUS",
+   "away": "JPN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2006-NAKAMURA",
+     "name": "Nakamura Shunsuke",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2006-CAHILL",
+     "name": "Tim Cahill",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2006-CAHILL",
+     "name": "Tim Cahill",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2006-ALOISI",
+     "name": "John Aloisi",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-12",
+   "stadium": "Arena AufShalke",
+   "city": "Gelsenkirchen",
+   "capacity": 52000,
+   "home": "USA",
+   "away": "CZE",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CZE",
+     "player": "CZE-2006-KOLLER",
+     "name": "Jan Koller",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CZE",
+     "player": "CZE-2006-ROSICKY",
+     "name": "Tomáš Rosický",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CZE",
+     "player": "CZE-2006-ROSICKY",
+     "name": "Tomáš Rosický",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-11",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-12",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "GHA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-PIRLO",
+     "name": "Andrea Pirlo",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-IAQUINTA",
+     "name": "Vincenzo Iaquinta",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-12",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-13",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "KOR",
+   "away": "TGO",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TGO",
+     "player": "TGO-2006-KADER",
+     "name": "Mohamed Kader",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2006-LEECHU",
+     "name": "Lee Chun-soo",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2006-AHN",
+     "name": "Ahn Jung-hwan",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-13",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-13",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "FRA",
+   "away": "CHE",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-14",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-13",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "BRA",
+   "away": "HRV",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2006-KAKA",
+     "name": "Kaká",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-14",
+   "stadium": "Zentralstadion",
+   "city": "Leipzig",
+   "capacity": 43000,
+   "home": "ESP",
+   "away": "UKR",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2006-ALONSO",
+     "name": "Xabi Alonso",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-VILLA",
+     "name": "David Villa",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-VILLA",
+     "name": "David Villa",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-TORRES",
+     "name": "Fernando Torres",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-16",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-14",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "TUN",
+   "away": "SAU",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUN",
+     "player": "TUN-2006-JAZIRI",
+     "name": "Ziad Jaziri",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2006-ALQAHTANI",
+     "name": "Yasser Al-Qahtani",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2006-ALJABER",
+     "name": "Sami Al-Jaber",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2006-JAIDI",
+     "name": "Radhi Jaïdi",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-17",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-14",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "DEU",
+   "away": "POL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2006-NEUVILLE",
+     "name": "Oliver Neuville",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-18",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-15",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "ECU",
+   "away": "CRI",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2006-TENORIOCAR",
+     "name": "Carlos Tenorio",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2006-DELGADO",
+     "name": "Agustín Delgado",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2006-KAVIEDES",
+     "name": "Iván Kaviedes",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-19",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-15",
+   "stadium": "Frankenstadion",
+   "city": "Nuremberg",
+   "capacity": 41000,
+   "home": "ENG",
+   "away": "TTO",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2006-CROUCH",
+     "name": "Peter Crouch",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2006-GERRARD",
+     "name": "Steven Gerrard",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-20",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-15",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "SWE",
+   "away": "PRY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2006-LJUNGBERG",
+     "name": "Freddie Ljungberg",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-21",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-16",
+   "stadium": "Arena AufShalke",
+   "city": "Gelsenkirchen",
+   "capacity": 52000,
+   "home": "ARG",
+   "away": "SCG",
+   "score": [
+    6,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2006-RODRIGUEZ",
+     "name": "Maxi Rodríguez",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-CAMBIASSO",
+     "name": "Esteban Cambiasso",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-RODRIGUEZ",
+     "name": "Maxi Rodríguez",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-CRESPO",
+     "name": "Hernán Crespo",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-TEVEZ",
+     "name": "Carlos Tevez",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-MESSI",
+     "name": "Lionel Messi",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-22",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-16",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "NLD",
+   "away": "CIV",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2006-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2006-VANNISTELROOY",
+     "name": "Ruud van Nistelrooy",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2006-KONEBAK",
+     "name": "Bakari Koné",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-23",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-16",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "MEX",
+   "away": "AGO",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-24",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-17",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "PRT",
+   "away": "IRN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2006-DECO",
+     "name": "Deco",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2006-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-25",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-17",
+   "stadium": "RheinEnergieStadion",
+   "city": "Cologne",
+   "capacity": 45000,
+   "home": "CZE",
+   "away": "GHA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2006-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2006-MUNTARI",
+     "name": "Sulley Muntari",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-26",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-17",
+   "stadium": "Fritz-Walter-Stadion",
+   "city": "Kaiserslautern",
+   "capacity": 46000,
+   "home": "ITA",
+   "away": "USA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-GILARDINO",
+     "name": "Alberto Gilardino",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "ITA-2006-ZACCARDO",
+     "name": "Cristian Zaccardo",
+     "minute": "27'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-27",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-18",
+   "stadium": "Frankenstadion",
+   "city": "Nuremberg",
+   "capacity": 41000,
+   "home": "JPN",
+   "away": "HRV",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-28",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-18",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "BRA",
+   "away": "AUS",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2006-ADRIANO",
+     "name": "Adriano",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-FRED",
+     "name": "Fred",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-29",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-18",
+   "stadium": "Zentralstadion",
+   "city": "Leipzig",
+   "capacity": 43000,
+   "home": "FRA",
+   "away": "KOR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2006-HENRY",
+     "name": "Thierry Henry",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2006-PARK",
+     "name": "Park Ji-sung",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-30",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-19",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "TGO",
+   "away": "CHE",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2006-FREI",
+     "name": "Alexander Frei",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2006-BARNETTA",
+     "name": "Tranquillo Barnetta",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-31",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-19",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "SAU",
+   "away": "UKR",
+   "score": [
+    0,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "UKR",
+     "player": "UKR-2006-RUSOL",
+     "name": "Andriy Rusol",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "UKR",
+     "player": "UKR-2006-REBROV",
+     "name": "Serhii Rebrov",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "UKR",
+     "player": "UKR-2006-SHEVCHENKO",
+     "name": "Andriy Shevchenko",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "UKR",
+     "player": "UKR-2006-KALYNYCHENKO",
+     "name": "Maksym Kalynychenko",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-32",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-19",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "ESP",
+   "away": "TUN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUN",
+     "player": "TUN-2006-MNARI",
+     "name": "Jawhar Mnari",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-RAUL",
+     "name": "Raúl",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-TORRES",
+     "name": "Fernando Torres",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2006-TORRES",
+     "name": "Fernando Torres",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-33",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-20",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "CRI",
+   "away": "POL",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-2006-GOMEZ",
+     "name": "Rónald Gómez",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2006-BOSACKI",
+     "name": "Bartosz Bosacki",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2006-BOSACKI",
+     "name": "Bartosz Bosacki",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-34",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2006-06-20",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "ECU",
+   "away": "DEU",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2006-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-PODOLSKI",
+     "name": "Lukas Podolski",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-35",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-20",
+   "stadium": "Fritz-Walter-Stadion",
+   "city": "Kaiserslautern",
+   "capacity": 46000,
+   "home": "PRY",
+   "away": "TTO",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "TTO-2006-SANCHO",
+     "name": "Brent Sancho",
+     "minute": "25'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2006-CUEVAS",
+     "name": "Nelson Cuevas",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-36",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2006-06-20",
+   "stadium": "RheinEnergieStadion",
+   "city": "Cologne",
+   "capacity": 45000,
+   "home": "SWE",
+   "away": "ENG",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2006-COLEJOE",
+     "name": "Joe Cole",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2006-ALLBACK",
+     "name": "Marcus Allbäck",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2006-GERRARD",
+     "name": "Steven Gerrard",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2006-LARSSON",
+     "name": "Henrik Larsson",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-37",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-21",
+   "stadium": "Zentralstadion",
+   "city": "Leipzig",
+   "capacity": 43000,
+   "home": "IRN",
+   "away": "AGO",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AGO",
+     "player": "AGO-2006-FLAVIO",
+     "name": "Flávio",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2006-BAKHTIARIZADEH",
+     "name": "Sohrab Bakhtiarizadeh",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-38",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2006-06-21",
+   "stadium": "Arena AufShalke",
+   "city": "Gelsenkirchen",
+   "capacity": 52000,
+   "home": "PRT",
+   "away": "MEX",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2006-MANICHE",
+     "name": "Maniche",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2006-SIMAO",
+     "name": "Simão",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2006-FONSECA",
+     "name": "Francisco Fonseca",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-39",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-21",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "CIV",
+   "away": "SCG",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCG",
+     "player": "SCG-2006-ZIGIC",
+     "name": "Nikola Žigić",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCG",
+     "player": "SCG-2006-ILIC",
+     "name": "Saša Ilić",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2006-DINDANE",
+     "name": "Aruna Dindane",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2006-DINDANE",
+     "name": "Aruna Dindane",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2006-KALOU",
+     "name": "Bonaventure Kalou",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-40",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2006-06-21",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "NLD",
+   "away": "ARG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-41",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-22",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "CZE",
+   "away": "ITA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-MATERAZZI",
+     "name": "Marco Materazzi",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-INZAGHI",
+     "name": "Filippo Inzaghi",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-42",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2006-06-22",
+   "stadium": "Frankenstadion",
+   "city": "Nuremberg",
+   "capacity": 41000,
+   "home": "GHA",
+   "away": "USA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2006-DRAMAN",
+     "name": "Haminu Draman",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2006-DEMPSEY",
+     "name": "Clint Dempsey",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2006-APPIAH",
+     "name": "Stephen Appiah",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-43",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-22",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "HRV",
+   "away": "AUS",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-2006-SRNA",
+     "name": "Darijo Srna",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2006-MOORE",
+     "name": "Craig Moore",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2006-KOVACNIK",
+     "name": "Niko Kovač",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2006-KEWELL",
+     "name": "Harry Kewell",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-44",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2006-06-22",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "JPN",
+   "away": "BRA",
+   "score": [
+    1,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2006-TAMADA",
+     "name": "Tamada Keiji",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-RONALDO",
+     "name": "Ronaldo",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-PERNAMBUCANO",
+     "name": "Juninho Pernambucano",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-GILBERTO",
+     "name": "Gilberto",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-RONALDO",
+     "name": "Ronaldo",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-45",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-23",
+   "stadium": "Fritz-Walter-Stadion",
+   "city": "Kaiserslautern",
+   "capacity": 46000,
+   "home": "SAU",
+   "away": "ESP",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2006-JUANITO",
+     "name": "Juanito",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-46",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2006-06-23",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "UKR",
+   "away": "TUN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "UKR",
+     "player": "UKR-2006-SHEVCHENKO",
+     "name": "Andriy Shevchenko",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-47",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-23",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "CHE",
+   "away": "KOR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2006-SENDEROS",
+     "name": "Philippe Senderos",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2006-FREI",
+     "name": "Alexander Frei",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-48",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2006-06-23",
+   "stadium": "RheinEnergieStadion",
+   "city": "Cologne",
+   "capacity": 45000,
+   "home": "TGO",
+   "away": "FRA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2006-VIEIRA",
+     "name": "Patrick Vieira",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2006-HENRY",
+     "name": "Thierry Henry",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-24",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "DEU",
+   "away": "SWE",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2006-PODOLSKI",
+     "name": "Lukas Podolski",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-PODOLSKI",
+     "name": "Lukas Podolski",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-24",
+   "stadium": "Zentralstadion",
+   "city": "Leipzig",
+   "capacity": 43000,
+   "home": "ARG",
+   "away": "MEX",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2006-MARQUEZ",
+     "name": "Rafael Márquez",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-CRESPO",
+     "name": "Hernán Crespo",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2006-RODRIGUEZ",
+     "name": "Maxi Rodríguez",
+     "minute": "98'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-25",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "ENG",
+   "away": "ECU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2006-BECKHAM",
+     "name": "David Beckham",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-25",
+   "stadium": "Frankenstadion",
+   "city": "Nuremberg",
+   "capacity": 41000,
+   "home": "PRT",
+   "away": "NLD",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2006-MANICHE",
+     "name": "Maniche",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-26",
+   "stadium": "Fritz-Walter-Stadion",
+   "city": "Kaiserslautern",
+   "capacity": 46000,
+   "home": "ITA",
+   "away": "AUS",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-TOTTI",
+     "name": "Francesco Totti",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-26",
+   "stadium": "RheinEnergieStadion",
+   "city": "Cologne",
+   "capacity": 45000,
+   "home": "CHE",
+   "away": "UKR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    0,
+    3
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-27",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "BRA",
+   "away": "GHA",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2006-RONALDO",
+     "name": "Ronaldo",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-ADRIANO",
+     "name": "Adriano",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2006-ZEROBERTO",
+     "name": "Zé Roberto",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2006-06-27",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "ESP",
+   "away": "FRA",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2006-VILLA",
+     "name": "David Villa",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2006-RIBERY",
+     "name": "Franck Ribéry",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2006-VIEIRA",
+     "name": "Patrick Vieira",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2006-ZIDANE",
+     "name": "Zinedine Zidane",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2006-06-30",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "DEU",
+   "away": "ARG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    2
+   ],
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2006-AYALA",
+     "name": "Roberto Ayala",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2006-06-30",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "ITA",
+   "away": "UKR",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-ZAMBROTTA",
+     "name": "Gianluca Zambrotta",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-TONI",
+     "name": "Luca Toni",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-TONI",
+     "name": "Luca Toni",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2006-07-01",
+   "stadium": "Arena AufShalke",
+   "city": "Gelsenkirchen",
+   "capacity": 52000,
+   "home": "ENG",
+   "away": "PRT",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    1,
+    3
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2006-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2006-07-01",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "BRA",
+   "away": "FRA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2006-HENRY",
+     "name": "Thierry Henry",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2006-07-04",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "DEU",
+   "away": "ITA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2006-GROSSO",
+     "name": "Fabio Grosso",
+     "minute": "119'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-DELPIERO",
+     "name": "Alessandro Del Piero",
+     "minute": "120'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2006-07-05",
+   "stadium": "Allianz Arena",
+   "city": "Munich",
+   "capacity": 66000,
+   "home": "PRT",
+   "away": "FRA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2006-ZIDANE",
+     "name": "Zinedine Zidane",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2006-07-08",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "DEU",
+   "away": "PRT",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2006-SCHWEINSTEIGER",
+     "name": "Bastian Schweinsteiger",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "PRT-2006-PETIT",
+     "name": "Petit",
+     "minute": "60'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2006-SCHWEINSTEIGER",
+     "name": "Bastian Schweinsteiger",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2006-GOMES",
+     "name": "Nuno Gomes",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2006-64",
+   "stage": "final",
+   "group": null,
+   "date": "2006-07-09",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "ITA",
+   "away": "FRA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    5,
+    3
+   ],
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2006-ZIDANE",
+     "name": "Zinedine Zidane",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2006-MATERAZZI",
+     "name": "Marco Materazzi",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

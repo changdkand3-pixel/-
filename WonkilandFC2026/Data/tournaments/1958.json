@@ -1,0 +1,1893 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1958",
+ "year": 1958,
+ "name": "1958 FIFA Men's World Cup",
+ "host_country": "Sweden",
+ "winner": "Brazil",
+ "start_date": "1958-06-08",
+ "end_date": "1958-06-29",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 4",
+   "finish": 1
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 1",
+   "finish": 4
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 2",
+   "finish": 3
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NIR",
+   "fifa_code": "NIR",
+   "name_en": "Northern Ireland",
+   "name_ko": "북아일랜드",
+   "group": "Group 1",
+   "finish": "QF"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group 3",
+   "finish": 2
+  },
+  {
+   "team_id": "WAL",
+   "fifa_code": "WAL",
+   "name_en": "Wales",
+   "name_ko": "웨일스",
+   "group": "Group 3",
+   "finish": "QF"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 2",
+   "finish": "QF"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "BRA"
+  },
+  {
+   "position": 2,
+   "team": "SWE"
+  },
+  {
+   "position": 3,
+   "team": "FRA"
+  },
+  {
+   "position": 4,
+   "team": "DEU"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "FRA-1958-FONTAINE",
+   "team": "FRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "BRA-1958-PELE",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-1958-RAHN",
+   "team": "DEU"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "BRA-1958-PELE",
+   "team": "BRA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1958-01",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-08",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "SWE",
+   "away": "MEX",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1958-SIMONSSON",
+     "name": "Agne Simonsson",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-LIEDHOLM",
+     "name": "Nils Liedholm",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-SIMONSSON",
+     "name": "Agne Simonsson",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-08",
+   "stadium": "Malmö Stadion",
+   "city": "Malmö",
+   "capacity": 30000,
+   "home": "ARG",
+   "away": "DEU",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1958-CORBATTA",
+     "name": "Oreste Corbatta",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-03",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-08",
+   "stadium": "Örjans Vall",
+   "city": "Halmstad",
+   "capacity": 15000,
+   "home": "NIR",
+   "away": "CSK",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1958-CUSH",
+     "name": "Wilbur Cush",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-04",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-08",
+   "stadium": "Idrottsparken",
+   "city": "Norrköping",
+   "capacity": 20000,
+   "home": "FRA",
+   "away": "PRY",
+   "score": [
+    7,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-1958-AMARILLA",
+     "name": "Florencio Amarilla",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-AMARILLA",
+     "name": "Florencio Amarilla",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-ROMERO",
+     "name": "Jorge Lino Romero",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-PIANTONI",
+     "name": "Roger Piantoni",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-WISNIESKI",
+     "name": "Maryan Wisnieski",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-KOPA",
+     "name": "Raymond Kopa",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-VINCENT",
+     "name": "Jean Vincent",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-05",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-08",
+   "stadium": "Arosvallen",
+   "city": "Västerås",
+   "capacity": 10000,
+   "home": "YUG",
+   "away": "SCO",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1958-PETAKOVIC",
+     "name": "Aleksandar Petaković",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1958-MURRAY",
+     "name": "Jimmy Murray",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-06",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-08",
+   "stadium": "Jernvallen",
+   "city": "Sandviken",
+   "capacity": 20000,
+   "home": "HUN",
+   "away": "WAL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1958-BOZSIK",
+     "name": "József Bozsik",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "WAL",
+     "player": "WAL-1958-CHARLESJOH",
+     "name": "John Charles",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-07",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-08",
+   "stadium": "Rimnersvallen",
+   "city": "Uddevalla",
+   "capacity": 18000,
+   "home": "BRA",
+   "away": "AUT",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1958-ALTAFINI",
+     "name": "José Altafini",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-SANTOSNIL",
+     "name": "Nílton Santos",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-ALTAFINI",
+     "name": "José Altafini",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-08",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "SUN",
+   "away": "ENG",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1958-SIMONYAN",
+     "name": "Nikita Simonyan",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1958-IVANOVALE",
+     "name": "Aleksandr Ivanov",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1958-KEVAN",
+     "name": "Derek Kevan",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1958-FINNEY",
+     "name": "Tom Finney",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-11",
+   "stadium": "Örjans Vall",
+   "city": "Halmstad",
+   "capacity": 15000,
+   "home": "ARG",
+   "away": "NIR",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1958-MCPARLAND",
+     "name": "Peter McParland",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1958-CORBATTA",
+     "name": "Oreste Corbatta",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1958-MENENDEZ",
+     "name": "Norberto Menéndez",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1958-AVIO",
+     "name": "Ludovico Avio",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-10",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-11",
+   "stadium": "Olympia",
+   "city": "Helsingborg",
+   "capacity": 27000,
+   "home": "DEU",
+   "away": "CSK",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1958-DVORAK",
+     "name": "Milan Dvořák",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-ZIKAN",
+     "name": "Zdeněk Zikán",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-11",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-11",
+   "stadium": "Idrottsparken",
+   "city": "Norrköping",
+   "capacity": 20000,
+   "home": "PRY",
+   "away": "SCO",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-1958-AGUERO",
+     "name": "Juan Bautista Agüero",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1958-MUDIE",
+     "name": "Jackie Mudie",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-RE",
+     "name": "Cayetano Ré",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-PARODI",
+     "name": "José Parodi",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1958-COLLINS",
+     "name": "Bobby Collins",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-12",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-11",
+   "stadium": "Arosvallen",
+   "city": "Västerås",
+   "capacity": 10000,
+   "home": "YUG",
+   "away": "FRA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1958-PETAKOVIC",
+     "name": "Aleksandar Petaković",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1958-VESELINOVIC",
+     "name": "Todor Veselinović",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1958-VESELINOVIC",
+     "name": "Todor Veselinović",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-13",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-11",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "MEX",
+   "away": "WAL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "WAL",
+     "player": "WAL-1958-ALLCHURCH",
+     "name": "Ivor Allchurch",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1958-BELMONTE",
+     "name": "Jaime Belmonte",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-14",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-11",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "BRA",
+   "away": "ENG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1958-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-11",
+   "stadium": "Ryavallen",
+   "city": "Borås",
+   "capacity": 15000,
+   "home": "SUN",
+   "away": "AUT",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1958-ILYIN",
+     "name": "Anatoli Ilyin",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1958-IVANOV",
+     "name": "Valentin Ivanov",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-16",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-12",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "SWE",
+   "away": "HUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1958-HAMRIN",
+     "name": "Kurt Hamrin",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-HAMRIN",
+     "name": "Kurt Hamrin",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1958-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-17",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-15",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "SWE",
+   "away": "WAL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1958-18",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-15",
+   "stadium": "Olympia",
+   "city": "Helsingborg",
+   "capacity": 27000,
+   "home": "CSK",
+   "away": "ARG",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1958-DVORAK",
+     "name": "Milan Dvořák",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-ZIKAN",
+     "name": "Zdeněk Zikán",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-ZIKAN",
+     "name": "Zdeněk Zikán",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1958-CORBATTA",
+     "name": "Oreste Corbatta",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-FEUREISL",
+     "name": "Jiří Feureisl",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-HOVORKA",
+     "name": "Václav Hovorka",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1958-HOVORKA",
+     "name": "Václav Hovorka",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-19",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-15",
+   "stadium": "Malmö Stadion",
+   "city": "Malmö",
+   "capacity": 30000,
+   "home": "DEU",
+   "away": "NIR",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1958-MCPARLAND",
+     "name": "Peter McParland",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1958-MCPARLAND",
+     "name": "Peter McParland",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-20",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-15",
+   "stadium": "Eyravallen",
+   "city": "Örebro",
+   "capacity": 13000,
+   "home": "FRA",
+   "away": "SCO",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1958-KOPA",
+     "name": "Raymond Kopa",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1958-BAIRD",
+     "name": "Sammy Baird",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-21",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1958-06-15",
+   "stadium": "Tunavallen",
+   "city": "Eskilstuna",
+   "capacity": 22000,
+   "home": "PRY",
+   "away": "YUG",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1958-OGNJANOVIC",
+     "name": "Radivoje Ognjanović",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-PARODI",
+     "name": "José Parodi",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1958-VESELINOVIC",
+     "name": "Todor Veselinović",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-AGUERO",
+     "name": "Juan Bautista Agüero",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1958-RAJKOV",
+     "name": "Zdravko Rajkov",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1958-ROMERO",
+     "name": "Jorge Lino Romero",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-22",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-15",
+   "stadium": "Jernvallen",
+   "city": "Sandviken",
+   "capacity": 20000,
+   "home": "HUN",
+   "away": "MEX",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1958-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1958-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1958-SANDOR",
+     "name": "Károly Sándor",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1958-BENCSICS",
+     "name": "József Bencsics",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-23",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-15",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "BRA",
+   "away": "SUN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1958-VAVA",
+     "name": "Vavá",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-VAVA",
+     "name": "Vavá",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-15",
+   "stadium": "Ryavallen",
+   "city": "Borås",
+   "capacity": 15000,
+   "home": "ENG",
+   "away": "AUT",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1958-KOLLER",
+     "name": "Karl Koller",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1958-HAYNES",
+     "name": "Johnny Haynes",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1958-KORNER",
+     "name": "Alfred Körner",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1958-KEVAN",
+     "name": "Derek Kevan",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-25",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1958-06-17",
+   "stadium": "Malmö Stadion",
+   "city": "Malmö",
+   "capacity": 30000,
+   "home": "NIR",
+   "away": "CSK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1958-ZIKAN",
+     "name": "Zdeněk Zikán",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1958-MCPARLAND",
+     "name": "Peter McParland",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1958-MCPARLAND",
+     "name": "Peter McParland",
+     "minute": "97'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-26",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1958-06-17",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "WAL",
+   "away": "HUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1958-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "WAL",
+     "player": "WAL-1958-ALLCHURCH",
+     "name": "Ivor Allchurch",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "WAL",
+     "player": "WAL-1958-MEDWIN",
+     "name": "Terry Medwin",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-27",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1958-06-17",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "SUN",
+   "away": "ENG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1958-ILYIN",
+     "name": "Anatoli Ilyin",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-28",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1958-06-19",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "BRA",
+   "away": "WAL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-29",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1958-06-19",
+   "stadium": "Idrottsparken",
+   "city": "Norrköping",
+   "capacity": 20000,
+   "home": "FRA",
+   "away": "NIR",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1958-WISNIESKI",
+     "name": "Maryan Wisnieski",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-PIANTONI",
+     "name": "Roger Piantoni",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-30",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1958-06-19",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "SWE",
+   "away": "SUN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1958-HAMRIN",
+     "name": "Kurt Hamrin",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-SIMONSSON",
+     "name": "Agne Simonsson",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-31",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1958-06-19",
+   "stadium": "Malmö Stadion",
+   "city": "Malmö",
+   "capacity": 30000,
+   "home": "DEU",
+   "away": "YUG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-32",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1958-06-24",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "BRA",
+   "away": "FRA",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1958-VAVA",
+     "name": "Vavá",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-DIDI",
+     "name": "Didi",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-PIANTONI",
+     "name": "Roger Piantoni",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-33",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1958-06-24",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "SWE",
+   "away": "DEU",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1958-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-SKOGLUND",
+     "name": "Lennart Skoglund",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-GREN",
+     "name": "Gunnar Gren",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-HAMRIN",
+     "name": "Kurt Hamrin",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-34",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1958-06-28",
+   "stadium": "Ullevi",
+   "city": "Gothenburg",
+   "capacity": 54000,
+   "home": "FRA",
+   "away": "DEU",
+   "score": [
+    6,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-CIESLARCZYK",
+     "name": "Hans Cieslarczyk",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-KOPA",
+     "name": "Raymond Kopa",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-DOUIS",
+     "name": "Yvon Douis",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1958-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1958-FONTAINE",
+     "name": "Just Fontaine",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1958-35",
+   "stage": "final",
+   "group": null,
+   "date": "1958-06-29",
+   "stadium": "Råsunda Stadium",
+   "city": "Solna",
+   "capacity": 52000,
+   "home": "BRA",
+   "away": "SWE",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1958-LIEDHOLM",
+     "name": "Nils Liedholm",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-VAVA",
+     "name": "Vavá",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-VAVA",
+     "name": "Vavá",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-ZAGALLO",
+     "name": "Mário Zagallo",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1958-SIMONSSON",
+     "name": "Agne Simonsson",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1958-PELE",
+     "name": "Pelé",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

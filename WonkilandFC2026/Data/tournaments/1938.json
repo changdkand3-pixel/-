@@ -1,0 +1,1211 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1938",
+ "year": 1938,
+ "name": "1938 FIFA Men's World Cup",
+ "host_country": "France",
+ "winner": "Italy",
+ "start_date": "1938-06-04",
+ "end_date": "1938-06-19",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": null,
+   "finish": 3
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "CUB",
+   "fifa_code": "CUB",
+   "name_en": "Cuba",
+   "name_ko": "쿠바",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": null,
+   "finish": 2
+  },
+  {
+   "team_id": "IDN",
+   "fifa_code": "INH",
+   "name_en": "Dutch East Indies",
+   "name_ko": "네덜란드령 동인도",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": null,
+   "finish": 1
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "NOR",
+   "fifa_code": "NOR",
+   "name_en": "Norway",
+   "name_ko": "노르웨이",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": null,
+   "finish": 4
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ITA"
+  },
+  {
+   "position": 2,
+   "team": "HUN"
+  },
+  {
+   "position": 3,
+   "team": "BRA"
+  },
+  {
+   "position": 4,
+   "team": "SWE"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "BRA-1938-LEONIDAS",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ITA-1938-PIOLA",
+   "team": "ITA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "HUN-1938-SAROSIGYO",
+   "team": "HUN"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "HUN-1938-ZSENGELLER",
+   "team": "HUN"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1938-01",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-04",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "CHE",
+   "away": "DEU",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1938-GAUCHEL",
+     "name": "Josef Gauchel",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1938-ABEGGLEN",
+     "name": "André Abegglen",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-02",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Stade du T.O.E.C.",
+   "city": "Toulouse",
+   "capacity": 15000,
+   "home": "CUB",
+   "away": "ROU",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1938-BINDEA",
+     "name": "Silviu Bindea",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CUB",
+     "player": "CUB-1938-SOCORRO",
+     "name": "Héctor Socorro",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CUB",
+     "player": "CUB-1938-MAGRINA",
+     "name": "José Magriñá",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1938-BARATKY",
+     "name": "Iuliu Baratky",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CUB",
+     "player": "CUB-1938-SOCORRO",
+     "name": "Héctor Socorro",
+     "minute": "103'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1938-DOBAY",
+     "name": "Ștefan Dobay",
+     "minute": "105'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-03",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Stade Olympique de Colombes",
+   "city": "Paris",
+   "capacity": 60000,
+   "home": "FRA",
+   "away": "BEL",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1938-VEINANTE",
+     "name": "Émile Veinante",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1938-NICOLAS",
+     "name": "Jean Nicolas",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1938-ISEMBORGHS",
+     "name": "Hendrik Isemborghs",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1938-NICOLAS",
+     "name": "Jean Nicolas",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-04",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Vélodrome Municipal",
+   "city": "Reims",
+   "capacity": 22000,
+   "home": "HUN",
+   "away": "IDN",
+   "score": [
+    6,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1938-KOHUT",
+     "name": "Vilmos Kohut",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-TOLDI",
+     "name": "Géza Toldi",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-SAROSIGYO",
+     "name": "György Sárosi",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-ZSENGELLER",
+     "name": "Gyula Zsengellér",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-ZSENGELLER",
+     "name": "Gyula Zsengellér",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-SAROSIGYO",
+     "name": "György Sárosi",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-05",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "NOR",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1938-FERRARIS",
+     "name": "Pietro Ferraris",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NOR",
+     "player": "NOR-1938-BRUSTAD",
+     "name": "Arne Brustad",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-PIOLA",
+     "name": "Silvio Piola",
+     "minute": "94'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-06",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Stade de la Meinau",
+   "city": "Strasbourg",
+   "capacity": 30000,
+   "home": "BRA",
+   "away": "POL",
+   "score": [
+    6,
+    5
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1938-SCHERFKE",
+     "name": "Fryderyk Scherfke",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-ROMEU",
+     "name": "Romeu",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-PERACIO",
+     "name": "Perácio",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1938-WILIMOWSKI",
+     "name": "Ernst Wilimowski",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1938-WILIMOWSKI",
+     "name": "Ernst Wilimowski",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-PERACIO",
+     "name": "Perácio",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1938-WILIMOWSKI",
+     "name": "Ernst Wilimowski",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "104'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1938-WILIMOWSKI",
+     "name": "Ernst Wilimowski",
+     "minute": "118'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-07",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-05",
+   "stadium": "Stade Jules Deschaseaux",
+   "city": "Le Havre",
+   "capacity": 22000,
+   "home": "CSK",
+   "away": "NLD",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1938-KOSTALEK",
+     "name": "Josef Košťálek",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1938-ZEMAN",
+     "name": "Josef Zeman",
+     "minute": "111'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1938-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "118'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-08",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-09",
+   "stadium": "Stade du T.O.E.C.",
+   "city": "Toulouse",
+   "capacity": 15000,
+   "home": "CUB",
+   "away": "ROU",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": true,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1938-DOBAY",
+     "name": "Ștefan Dobay",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CUB",
+     "player": "CUB-1938-SOCORRO",
+     "name": "Héctor Socorro",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CUB",
+     "player": "CUB-1938-FERNANDEZ",
+     "name": "Tomás Fernández",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-09",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1938-06-09",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "CHE",
+   "away": "DEU",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": true,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1938-HAHNEMANN",
+     "name": "Wilhelm Hahnemann",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "CHE-1938-LORTSCHER",
+     "name": "Ernst Lörtscher",
+     "minute": "22'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1938-WALASCHEK",
+     "name": "Eugen Walaschek",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1938-BICKEL",
+     "name": "Alfred Bickel",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1938-ABEGGLEN",
+     "name": "André Abegglen",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1938-ABEGGLEN",
+     "name": "André Abegglen",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-10",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1938-06-12",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "BRA",
+   "away": "CSK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1938-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-11",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1938-06-12",
+   "stadium": "Stade Victor Boucquey",
+   "city": "Lille",
+   "capacity": 15000,
+   "home": "HUN",
+   "away": "CHE",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1938-SAROSIGYO",
+     "name": "György Sárosi",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-ZSENGELLER",
+     "name": "Gyula Zsengellér",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-12",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1938-06-12",
+   "stadium": "Stade Olympique de Colombes",
+   "city": "Paris",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "FRA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1938-COLAUSSI",
+     "name": "Gino Colaussi",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1938-HEISSERER",
+     "name": "Oscar Heisserer",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-PIOLA",
+     "name": "Silvio Piola",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-PIOLA",
+     "name": "Silvio Piola",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-13",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1938-06-12",
+   "stadium": "Stade du Fort Carré",
+   "city": "Antibes",
+   "capacity": 7000,
+   "home": "SWE",
+   "away": "CUB",
+   "score": [
+    8,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1938-ANDERSSONHAR",
+     "name": "Harry Andersson",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-WETTERSTROM",
+     "name": "Gustav Wetterström",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-WETTERSTROM",
+     "name": "Gustav Wetterström",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-WETTERSTROM",
+     "name": "Gustav Wetterström",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-KELLER",
+     "name": "Tore Keller",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-ANDERSSONHAR",
+     "name": "Harry Andersson",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-NYBERG",
+     "name": "Arne Nyberg",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-ANDERSSONHAR",
+     "name": "Harry Andersson",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-14",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1938-06-14",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "BRA",
+   "away": "CSK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": true,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1938-KOPECKY",
+     "name": "Vlastimil Kopecký",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-ROBERTO",
+     "name": "Roberto",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-15",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1938-06-16",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "HUN",
+   "away": "SWE",
+   "score": [
+    5,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1938-NYBERG",
+     "name": "Arne Nyberg",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "SWE-1938-JACOBSSON",
+     "name": "Sven Jacobsson",
+     "minute": "19'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-TITKOS",
+     "name": "Pál Titkos",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-ZSENGELLER",
+     "name": "Gyula Zsengellér",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-SAROSIGYO",
+     "name": "György Sárosi",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-ZSENGELLER",
+     "name": "Gyula Zsengellér",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-16",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1938-06-16",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "BRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1938-COLAUSSI",
+     "name": "Gino Colaussi",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-MEAZZA",
+     "name": "Giuseppe Meazza",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-ROMEU",
+     "name": "Romeu",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-17",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1938-06-19",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "BRA",
+   "away": "SWE",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1938-JONASSON",
+     "name": "Sven Jonasson",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1938-NYBERG",
+     "name": "Arne Nyberg",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-ROMEU",
+     "name": "Romeu",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1938-PERACIO",
+     "name": "Perácio",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1938-18",
+   "stage": "final",
+   "group": null,
+   "date": "1938-06-19",
+   "stadium": "Stade Olympique de Colombes",
+   "city": "Paris",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "HUN",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1938-COLAUSSI",
+     "name": "Gino Colaussi",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-TITKOS",
+     "name": "Pál Titkos",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-PIOLA",
+     "name": "Silvio Piola",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-COLAUSSI",
+     "name": "Gino Colaussi",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1938-SAROSIGYO",
+     "name": "György Sárosi",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1938-PIOLA",
+     "name": "Silvio Piola",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

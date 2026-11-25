@@ -14,7 +14,14 @@
 
 설치 불필요 · 인터넷 불필요(라이브러리 포함) · 그래픽카드가 약하면 설정에서 그래픽 품질 "낮음".
 
-## 현재 단계: 플레이 가능한 3D 프로토타입 (v0.1)
+## v0.2: 역대 월드컵 선수 전원 + 드림팀
+- **1930–2022 월드컵 등록 선수 10,973명**(실제 인물 8,482명, 후보 포함, 연도별 별도 버전) — 출처: [Fjelstul World Cup Database](https://github.com/jfjelstul/worldcup) (CC-BY-SA 4.0, `Data/LICENSE-DATA.md`)
+- **★ 드림팀 만들기**: 국적·시대 상관없이 선수 검색 → 포메이션에 배치 → 저장 → 경기
+- **역대 월드컵 경기 재현**: 실제 964경기 중 선택, 실제 선발(1970~)과 당시 규칙으로 플레이 후 실제 결과와 비교
+- 시대 초월 대전, 국가별 역대 올스타, 도장깨기(역대 우승팀 22개 격파)
+- 능력치는 실제 기록으로 계산한 **추정치**입니다. 2026년 대회 선수는 아직 없습니다.
+
+## 현재 단계: 플레이 가능한 3D 프로토타입
 **실사형 그래픽이 아닙니다.** 게임 시스템(물리·규칙·AI·데이터 구조)을 먼저 검증하기 위한 저폴리 3D 프로토타입이며,
 최종 실사 그래픽은 Unreal Engine 5 단계에서 제작합니다. 무엇이 되고 무엇이 안 되는지는 **[docs/STATUS.md](docs/STATUS.md)** 에 정직하게 정리했습니다.
 
@@ -25,8 +32,11 @@ WonkilandFC2026/
 │  └─ js/            physics(공 물리) · match(경기 엔진/AI/규칙) · models(공통 인체 리그/개최자/경기장)
 │                    input(키보드·게임패드) · audio(효과음·음악) · commentary(해설) · main(화면/연출)
 ├─ Data/             게임 데이터 원본(JSON) — 프로토타입과 UE5가 함께 사용
-│  ├─ players/1930/  선수 버전 데이터 (URU, ARG)
-│  ├─ teams/ kits/ stadiums/ tournaments/ rules/ host/ schema/
+│  ├─ sources/       원본 데이터베이스 CSV (수정 금지)
+│  ├─ players/<연도>/ 선수 버전 데이터 (자동 생성, 팀별 1파일)
+│  ├─ tournaments/   대회·경기·득점 (자동 생성)
+│  ├─ curated/       수작업 보정값 (한글 이름 등)
+│  ├─ nations/ rules/ stadiums/ host/ schema/
 ├─ Assets/           3D 모델·애니메이션·유니폼·경기장·음악·효과음 (분야별 별도 폴더)
 ├─ UnrealProject/    UE5 C++ 프로젝트 골격 (Windows에서 열기 — 아직 컴파일 미검증)
 ├─ Tools/            데이터 빌드/검증, 재생목록 생성, 백업 스크립트
@@ -40,6 +50,9 @@ WonkilandFC2026/
 1. `Data/players/<연도>/<팀>.json` 작성 (형식: [docs/DATA_SPEC.md](docs/DATA_SPEC.md))
 2. `Data/tournaments/<연도>.json`, `Data/kits/<연도>/`, `Data/teams/<연도>/` 추가
 3. `node Tools/build_data.js` → 검증 + `Prototype/js/data_bundle.js` 재생성
+
+원본 데이터베이스 갱신: `Data/sources/fjelstul/*.csv` 교체 → `node Tools/import_fjelstul.js` → `node Tools/build_data.js`.
+한글 이름·능력치 보정은 `Data/curated/*.json` (편집 모드에서 내보내기 가능).
 
 ## 테스트
 `Run_Tests.bat` 또는 `node Tests/run_all.js` (Node.js 18+). 자세한 결과는 [docs/CHANGELOG.md](docs/CHANGELOG.md).

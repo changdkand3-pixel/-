@@ -1,0 +1,21 @@
+{
+ "schema": "wfc.match_notes.v1",
+ "match": "1930 final URY-ARG",
+ "referee": {
+  "name_en": "John Langenus",
+  "nationality": "BEL"
+ },
+ "attendance": 68346,
+ "half_time": [
+  1,
+  2
+ ],
+ "formations": [
+  "2-3-5",
+  "2-3-5"
+ ],
+ "notes": [
+  "전반은 아르헨티나 공, 후반은 우루과이 공을 사용했다는 기록이 널리 알려져 있음(출처 첨부 필요)."
+ ],
+ "verification": "needs_citation"
+}

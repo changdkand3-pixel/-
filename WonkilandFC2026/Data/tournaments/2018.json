@@ -1,0 +1,2978 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2018",
+ "year": 2018,
+ "name": "2018 FIFA Men's World Cup",
+ "host_country": "Russia",
+ "winner": "France",
+ "start_date": "2018-06-14",
+ "end_date": "2018-07-15",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group G",
+   "finish": 3
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group E",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "COL",
+   "fifa_code": "COL",
+   "name_en": "Colombia",
+   "name_ko": "콜롬비아",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "EGY",
+   "fifa_code": "EGY",
+   "name_en": "Egypt",
+   "name_ko": "이집트",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group G",
+   "finish": 4
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group C",
+   "finish": 1
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group D",
+   "finish": 2
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ISL",
+   "fifa_code": "ISL",
+   "name_en": "Iceland",
+   "name_ko": "아이슬란드",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MAR",
+   "fifa_code": "MAR",
+   "name_en": "Morocco",
+   "name_ko": "모로코",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NGA",
+   "fifa_code": "NGA",
+   "name_en": "Nigeria",
+   "name_ko": "나이지리아",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PAN",
+   "fifa_code": "PAN",
+   "name_en": "Panama",
+   "name_ko": "파나마",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PER",
+   "fifa_code": "PER",
+   "name_en": "Peru",
+   "name_ko": "페루",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "RUS",
+   "fifa_code": "RUS",
+   "name_en": "Russia",
+   "name_ko": "러시아",
+   "group": "Group A",
+   "finish": "QF"
+  },
+  {
+   "team_id": "SAU",
+   "fifa_code": "KSA",
+   "name_en": "Saudi Arabia",
+   "name_ko": "사우디아라비아",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SEN",
+   "fifa_code": "SEN",
+   "name_en": "Senegal",
+   "name_ko": "세네갈",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SRB",
+   "fifa_code": "SRB",
+   "name_en": "Serbia",
+   "name_ko": "세르비아",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group A",
+   "finish": "QF"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "FRA"
+  },
+  {
+   "position": 2,
+   "team": "HRV"
+  },
+  {
+   "position": 3,
+   "team": "BEL"
+  },
+  {
+   "position": 4,
+   "team": "ENG"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "HRV-2018-MODRIC",
+   "team": "HRV"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "BEL-2018-HAZARD",
+   "team": "BEL"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "FRA-2018-GRIEZMANN",
+   "team": "FRA"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "ENG-2018-KANE",
+   "team": "ENG"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "FRA-2018-GRIEZMANN",
+   "team": "FRA"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "BEL-2018-LUKAKU",
+   "team": "BEL"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "BEL-2018-COURTOIS",
+   "team": "BEL"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "FRA-2018-MBAPPE",
+   "team": "FRA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2018-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-14",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "RUS",
+   "away": "SAU",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "RUS",
+     "player": "RUS-2018-GAZINSKY",
+     "name": "Yury Gazinsky",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-CHERYSHEV",
+     "name": "Denis Cheryshev",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-DZYUBA",
+     "name": "Artem Dzyuba",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-CHERYSHEV",
+     "name": "Denis Cheryshev",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-GOLOVIN",
+     "name": "Aleksandr Golovin",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-02",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-15",
+   "stadium": "Central Stadium",
+   "city": "Yekaterinburg",
+   "capacity": 33000,
+   "home": "EGY",
+   "away": "URY",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2018-GIMENEZ",
+     "name": "José Giménez",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-03",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-15",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "MAR",
+   "away": "IRN",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "IRN",
+     "player": "MAR-2018-BOUHADDOUZ",
+     "name": "Aziz Bouhaddouz",
+     "minute": "90'+5'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-15",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "PRT",
+   "away": "ESP",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2018-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2018-COSTA",
+     "name": "Diego Costa",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2018-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2018-COSTA",
+     "name": "Diego Costa",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2018-NACHO",
+     "name": "Nacho",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2018-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-16",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "FRA",
+   "away": "AUS",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2018-GRIEZMANN",
+     "name": "Antoine Griezmann",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2018-JEDINAK",
+     "name": "Mile Jedinak",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "AUS-2018-BEHICH",
+     "name": "Aziz Behich",
+     "minute": "81'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-06",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-16",
+   "stadium": "Otkritie Arena",
+   "city": "Moscow",
+   "capacity": 44000,
+   "home": "ARG",
+   "away": "ISL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2018-AGUERO",
+     "name": "Sergio Agüero",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ISL",
+     "player": "ISL-2018-FINNBOGASON",
+     "name": "Alfreð Finnbogason",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-07",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-16",
+   "stadium": "Mordovia Arena",
+   "city": "Saransk",
+   "capacity": 42000,
+   "home": "PER",
+   "away": "DNK",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2018-POULSEN",
+     "name": "Yussuf Poulsen",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-16",
+   "stadium": "Kaliningrad Stadium",
+   "city": "Kaliningrad",
+   "capacity": 34000,
+   "home": "HRV",
+   "away": "NGA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "NGA-2018-ETEBO",
+     "name": "Peter Etebo",
+     "minute": "32'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-MODRIC",
+     "name": "Luka Modrić",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-09",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-17",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "CRI",
+   "away": "SRB",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SRB",
+     "player": "SRB-2018-KOLAROV",
+     "name": "Aleksandar Kolarov",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-10",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-17",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "DEU",
+   "away": "MEX",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2018-LOZANO",
+     "name": "Hirving Lozano",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-11",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-17",
+   "stadium": "Rostov Arena",
+   "city": "Rostov-on-Don",
+   "capacity": 43000,
+   "home": "BRA",
+   "away": "CHE",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2018-COUTINHO",
+     "name": "Philippe Coutinho",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2018-ZUBER",
+     "name": "Steven Zuber",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-12",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-18",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "SWE",
+   "away": "KOR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2018-GRANQVIST",
+     "name": "Andreas Granqvist",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-13",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-18",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "BEL",
+   "away": "PAN",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2018-MERTENS",
+     "name": "Dries Mertens",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-LUKAKU",
+     "name": "Romelu Lukaku",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-LUKAKU",
+     "name": "Romelu Lukaku",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-14",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-18",
+   "stadium": "Volgograd Arena",
+   "city": "Volgograd",
+   "capacity": 44000,
+   "home": "TUN",
+   "away": "ENG",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2018-SASSI",
+     "name": "Ferjani Sassi",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-19",
+   "stadium": "Mordovia Arena",
+   "city": "Saransk",
+   "capacity": 42000,
+   "home": "COL",
+   "away": "JPN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2018-KAGAWA",
+     "name": "Kagawa Shinji",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "COL",
+     "player": "COL-2018-QUINTERO",
+     "name": "Juan Fernando Quintero",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2018-OSAKO",
+     "name": "Osako Yuya",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-16",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-19",
+   "stadium": "Otkritie Arena",
+   "city": "Moscow",
+   "capacity": 44000,
+   "home": "POL",
+   "away": "SEN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "POL-2018-CIONEK",
+     "name": "Thiago Cionek",
+     "minute": "37'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2018-NIANG",
+     "name": "M'Baye Niang",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2018-KRYCHOWIAK",
+     "name": "Grzegorz Krychowiak",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-17",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-19",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "RUS",
+   "away": "EGY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "RUS",
+     "player": "EGY-2018-FATHY",
+     "name": "Ahmed Fathy",
+     "minute": "47'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-CHERYSHEV",
+     "name": "Denis Cheryshev",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-DZYUBA",
+     "name": "Artem Dzyuba",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "EGY",
+     "player": "EGY-2018-SALAH",
+     "name": "Mohamed Salah",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-18",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-20",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "PRT",
+   "away": "MAR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2018-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-19",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-20",
+   "stadium": "Rostov Arena",
+   "city": "Rostov-on-Don",
+   "capacity": 43000,
+   "home": "URY",
+   "away": "SAU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2018-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-20",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-20",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "IRN",
+   "away": "ESP",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2018-COSTA",
+     "name": "Diego Costa",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-21",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-21",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "DNK",
+   "away": "AUS",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2018-ERIKSEN",
+     "name": "Christian Eriksen",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2018-JEDINAK",
+     "name": "Mile Jedinak",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-22",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-21",
+   "stadium": "Central Stadium",
+   "city": "Yekaterinburg",
+   "capacity": 33000,
+   "home": "FRA",
+   "away": "PER",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2018-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-23",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-21",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "ARG",
+   "away": "HRV",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-2018-REBIC",
+     "name": "Ante Rebić",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-MODRIC",
+     "name": "Luka Modrić",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-RAKITIC",
+     "name": "Ivan Rakitić",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-24",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-22",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "BRA",
+   "away": "CRI",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2018-COUTINHO",
+     "name": "Philippe Coutinho",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2018-NEYMAR",
+     "name": "Neymar",
+     "minute": "90'+7'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-25",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-22",
+   "stadium": "Volgograd Arena",
+   "city": "Volgograd",
+   "capacity": 44000,
+   "home": "NGA",
+   "away": "ISL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-2018-MUSA",
+     "name": "Ahmed Musa",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-2018-MUSA",
+     "name": "Ahmed Musa",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-26",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-22",
+   "stadium": "Kaliningrad Stadium",
+   "city": "Kaliningrad",
+   "capacity": 34000,
+   "home": "SRB",
+   "away": "CHE",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SRB",
+     "player": "SRB-2018-MITROVIC",
+     "name": "Aleksandar Mitrović",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2018-XHAKA",
+     "name": "Granit Xhaka",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2018-SHAQIRI",
+     "name": "Xherdan Shaqiri",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-27",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-23",
+   "stadium": "Otkritie Arena",
+   "city": "Moscow",
+   "capacity": 44000,
+   "home": "BEL",
+   "away": "TUN",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2018-HAZARD",
+     "name": "Eden Hazard",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-LUKAKU",
+     "name": "Romelu Lukaku",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2018-BRONN",
+     "name": "Dylan Bronn",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-LUKAKU",
+     "name": "Romelu Lukaku",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-HAZARD",
+     "name": "Eden Hazard",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-BATSHUAYI",
+     "name": "Michy Batshuayi",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2018-KHAZRI",
+     "name": "Wahbi Khazri",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-28",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-23",
+   "stadium": "Rostov Arena",
+   "city": "Rostov-on-Don",
+   "capacity": 43000,
+   "home": "KOR",
+   "away": "MEX",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2018-VELA",
+     "name": "Carlos Vela",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2018-HERNANDEZ",
+     "name": "Javier Hernández",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2018-SON",
+     "name": "Son Heung-min",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-29",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-23",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "DEU",
+   "away": "SWE",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2018-TOIVONEN",
+     "name": "Ola Toivonen",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2018-REUS",
+     "name": "Marco Reus",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2018-KROOS",
+     "name": "Toni Kroos",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-30",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-24",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "ENG",
+   "away": "PAN",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2018-STONES",
+     "name": "John Stones",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-LINGARD",
+     "name": "Jesse Lingard",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-STONES",
+     "name": "John Stones",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PAN",
+     "player": "PAN-2018-BALOY",
+     "name": "Felipe Baloy",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-31",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-24",
+   "stadium": "Central Stadium",
+   "city": "Yekaterinburg",
+   "capacity": 33000,
+   "home": "JPN",
+   "away": "SEN",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "SEN-2018-MANE",
+     "name": "Sadio Mané",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2018-INUI",
+     "name": "Inui Takashi",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2018-WAGUE",
+     "name": "Moussa Wagué",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2018-HONDA",
+     "name": "Honda Keisuke",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-32",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-24",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "POL",
+   "away": "COL",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2018-MINA",
+     "name": "Yerry Mina",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2018-FALCAO",
+     "name": "Radamel Falcao",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2018-CUADRADO",
+     "name": "Juan Cuadrado",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-33",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-25",
+   "stadium": "Volgograd Arena",
+   "city": "Volgograd",
+   "capacity": 44000,
+   "home": "SAU",
+   "away": "EGY",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "EGY",
+     "player": "EGY-2018-SALAH",
+     "name": "Mohamed Salah",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2018-ALFARAJ",
+     "name": "Salman Al-Faraj",
+     "minute": "45'+6'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2018-ALDAWSARI",
+     "name": "Salem Al-Dawsari",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-34",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2018-06-25",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "URY",
+   "away": "RUS",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2018-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "RUS-2018-CHERYSHEV",
+     "name": "Denis Cheryshev",
+     "minute": "23'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2018-CAVANI",
+     "name": "Edinson Cavani",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-35",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-25",
+   "stadium": "Kaliningrad Stadium",
+   "city": "Kaliningrad",
+   "capacity": 34000,
+   "home": "ESP",
+   "away": "MAR",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-2018-BOUTAIB",
+     "name": "Khalid Boutaïb",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2018-ISCO",
+     "name": "Isco",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-2018-ENNESYRI",
+     "name": "Youssef En-Nesyri",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2018-ASPAS",
+     "name": "Iago Aspas",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-36",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2018-06-25",
+   "stadium": "Mordovia Arena",
+   "city": "Saransk",
+   "capacity": 42000,
+   "home": "IRN",
+   "away": "PRT",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2018-QUARESMA",
+     "name": "Ricardo Quaresma",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2018-ANSARIFARD",
+     "name": "Karim Ansarifard",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-37",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-26",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "AUS",
+   "away": "PER",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PER",
+     "player": "PER-2018-CARRILLO",
+     "name": "André Carrillo",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-2018-GUERRERO",
+     "name": "Paolo Guerrero",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-38",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2018-06-26",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "DNK",
+   "away": "FRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2018-39",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-26",
+   "stadium": "Rostov Arena",
+   "city": "Rostov-on-Don",
+   "capacity": 43000,
+   "home": "ISL",
+   "away": "HRV",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-2018-BADELJ",
+     "name": "Milan Badelj",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ISL",
+     "player": "ISL-2018-SIGURSSONGYL",
+     "name": "Gylfi Sigurðsson",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-40",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2018-06-26",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "NGA",
+   "away": "ARG",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2018-MESSI",
+     "name": "Lionel Messi",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-2018-MOSES",
+     "name": "Victor Moses",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2018-ROJO",
+     "name": "Marcos Rojo",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-41",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-27",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "KOR",
+   "away": "DEU",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-2018-KIMYOU",
+     "name": "Kim Young-gwon",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2018-SON",
+     "name": "Son Heung-min",
+     "minute": "90'+6'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-42",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2018-06-27",
+   "stadium": "Central Stadium",
+   "city": "Yekaterinburg",
+   "capacity": 33000,
+   "home": "MEX",
+   "away": "SWE",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2018-AUGUSTINSSON",
+     "name": "Ludwig Augustinsson",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2018-GRANQVIST",
+     "name": "Andreas Granqvist",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SWE",
+     "player": "MEX-2018-ALVAREZ",
+     "name": "Edson Álvarez",
+     "minute": "74'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-43",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-27",
+   "stadium": "Otkritie Arena",
+   "city": "Moscow",
+   "capacity": 44000,
+   "home": "SRB",
+   "away": "BRA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2018-PAULINHO",
+     "name": "Paulinho",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2018-SILVA",
+     "name": "Thiago Silva",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-44",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2018-06-27",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "CHE",
+   "away": "CRI",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2018-DZEMAILI",
+     "name": "Blerim Džemaili",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2018-WASTON",
+     "name": "Kendall Waston",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2018-DRMIC",
+     "name": "Josip Drmić",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CHE-2018-SOMMER",
+     "name": "Yann Sommer",
+     "minute": "90'+3'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-45",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-28",
+   "stadium": "Volgograd Arena",
+   "city": "Volgograd",
+   "capacity": 44000,
+   "home": "JPN",
+   "away": "POL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-2018-BEDNAREK",
+     "name": "Jan Bednarek",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-46",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2018-06-28",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "SEN",
+   "away": "COL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2018-MINA",
+     "name": "Yerry Mina",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-47",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-28",
+   "stadium": "Kaliningrad Stadium",
+   "city": "Kaliningrad",
+   "capacity": 34000,
+   "home": "ENG",
+   "away": "BEL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2018-JANUZAJ",
+     "name": "Adnan Januzaj",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-48",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2018-06-28",
+   "stadium": "Mordovia Arena",
+   "city": "Saransk",
+   "capacity": 42000,
+   "home": "PAN",
+   "away": "TUN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PAN",
+     "player": "TUN-2018-MERIAH",
+     "name": "Yassine Meriah",
+     "minute": "33'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2018-BENYOUSSEFFAK",
+     "name": "Fakhreddine Ben Youssef",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2018-KHAZRI",
+     "name": "Wahbi Khazri",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-06-30",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "FRA",
+   "away": "ARG",
+   "score": [
+    4,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2018-GRIEZMANN",
+     "name": "Antoine Griezmann",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2018-DIMARIA",
+     "name": "Ángel Di María",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2018-MERCADO",
+     "name": "Gabriel Mercado",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-PAVARD",
+     "name": "Benjamin Pavard",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2018-AGUERO",
+     "name": "Sergio Agüero",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-06-30",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "URY",
+   "away": "PRT",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2018-CAVANI",
+     "name": "Edinson Cavani",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2018-PEPE",
+     "name": "Pepe",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2018-CAVANI",
+     "name": "Edinson Cavani",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-01",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "ESP",
+   "away": "RUS",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "RUS-2018-IGNASHEVICH",
+     "name": "Sergei Ignashevich",
+     "minute": "12'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-DZYUBA",
+     "name": "Artem Dzyuba",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-01",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "HRV",
+   "away": "DNK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    2
+   ],
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2018-JORGENSENMAT",
+     "name": "Mathias Jørgensen",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-02",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "BRA",
+   "away": "MEX",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2018-NEYMAR",
+     "name": "Neymar",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2018-FIRMINO",
+     "name": "Roberto Firmino",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-02",
+   "stadium": "Rostov Arena",
+   "city": "Rostov-on-Don",
+   "capacity": 43000,
+   "home": "BEL",
+   "away": "JPN",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2018-HARAGUCHI",
+     "name": "Haraguchi Genki",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2018-INUI",
+     "name": "Inui Takashi",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-VERTONGHEN",
+     "name": "Jan Vertonghen",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-FELLAINI",
+     "name": "Marouane Fellaini",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-CHADLI",
+     "name": "Nacer Chadli",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-03",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "SWE",
+   "away": "CHE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2018-FORSBERG",
+     "name": "Emil Forsberg",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2018-07-03",
+   "stadium": "Otkritie Arena",
+   "city": "Moscow",
+   "capacity": 44000,
+   "home": "COL",
+   "away": "ENG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2018-KANE",
+     "name": "Harry Kane",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "COL",
+     "player": "COL-2018-MINA",
+     "name": "Yerry Mina",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2018-07-06",
+   "stadium": "Nizhny Novgorod Stadium",
+   "city": "Nizhny Novgorod",
+   "capacity": 43000,
+   "home": "URY",
+   "away": "FRA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2018-VARANE",
+     "name": "Raphaël Varane",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-GRIEZMANN",
+     "name": "Antoine Griezmann",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2018-07-06",
+   "stadium": "Kazan Arena",
+   "city": "Kazan",
+   "capacity": 43000,
+   "home": "BRA",
+   "away": "BEL",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BRA-2018-FERNANDINHO",
+     "name": "Fernandinho",
+     "minute": "13'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-DEBRUYNE",
+     "name": "Kevin De Bruyne",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2018-AUGUSTO",
+     "name": "Renato Augusto",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2018-07-07",
+   "stadium": "Samara Arena",
+   "city": "Samara",
+   "capacity": 42000,
+   "home": "SWE",
+   "away": "ENG",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2018-MAGUIRE",
+     "name": "Harry Maguire",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2018-ALLI",
+     "name": "Dele Alli",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2018-07-07",
+   "stadium": "Fisht Olympic Stadium",
+   "city": "Sochi",
+   "capacity": 44000,
+   "home": "RUS",
+   "away": "HRV",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": [
+    {
+     "team": "RUS",
+     "player": "RUS-2018-CHERYSHEV",
+     "name": "Denis Cheryshev",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-KRAMARIC",
+     "name": "Andrej Kramarić",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-VIDA",
+     "name": "Domagoj Vida",
+     "minute": "101'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2018-FERNANDES",
+     "name": "Mário Fernandes",
+     "minute": "115'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2018-07-10",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "FRA",
+   "away": "BEL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2018-UMTITI",
+     "name": "Samuel Umtiti",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2018-07-11",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "HRV",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2018-TRIPPIER",
+     "name": "Kieran Trippier",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "109'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2018-07-14",
+   "stadium": "Krestovsky Stadium",
+   "city": "Saint Petersburg",
+   "capacity": 64000,
+   "home": "BEL",
+   "away": "ENG",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2018-MEUNIER",
+     "name": "Thomas Meunier",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2018-HAZARD",
+     "name": "Eden Hazard",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2018-64",
+   "stage": "final",
+   "group": null,
+   "date": "2018-07-15",
+   "stadium": "Luzhniki Stadium",
+   "city": "Moscow",
+   "capacity": 78000,
+   "home": "FRA",
+   "away": "HRV",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "HRV-2018-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "18'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-GRIEZMANN",
+     "name": "Antoine Griezmann",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-POGBA",
+     "name": "Paul Pogba",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2018-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2018-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

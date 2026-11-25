@@ -21,7 +21,7 @@
 3. 빌드 오류가 나면 생성된 `WonkilandFC.sln`을 Visual Studio로 열어 **Development Editor / Win64** 로 빌드 후 오류 메시지를 알려주세요.
    - ⚠️ 이 C++ 코드는 작업 환경에 UE5가 없어 **컴파일 검증이 되지 않았습니다.** 첫 빌드에서 수정이 필요할 수 있습니다.
 4. 에디터에서 새 레벨 생성 → World Settings → GameMode Override = `WFCGameMode` → 플레이 → Output Log에
-   `[WFC] Loaded 2 squads ...`, `[WFC] URU 1930 vs ARG 1930 (historical_1930): loaded, players 11 / 11` 이 나오면 데이터 연동 성공.
+   `[WFC] Loaded 489 squads ...`, `[WFC] URY 1930 vs ARG 1930 (historical_1930): loaded, players 22 / 22` 이 나오면 데이터 연동 성공.
 
 ## 4. UE5 단계에서 할 일 (프로토타입 → 실사)
 1. 공통 인체 리그: MetaHuman 바디 + UE5 Mannequin 리타깃 → 모든 선수 공유

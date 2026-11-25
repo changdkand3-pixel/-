@@ -1,0 +1,2988 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2014",
+ "year": 2014,
+ "name": "2014 FIFA Men's World Cup",
+ "host_country": "Brazil",
+ "winner": "Germany",
+ "start_date": "2014-06-12",
+ "end_date": "2014-07-13",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group F",
+   "finish": 2
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group H",
+   "finish": "QF"
+  },
+  {
+   "team_id": "BIH",
+   "fifa_code": "BIH",
+   "name_en": "Bosnia and Herzegovina",
+   "name_ko": "보스니아 헤르체고비나",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group A",
+   "finish": 4
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CIV",
+   "fifa_code": "CIV",
+   "name_en": "Ivory Coast",
+   "name_ko": "코트디부아르",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "COL",
+   "fifa_code": "COL",
+   "name_en": "Colombia",
+   "name_ko": "콜롬비아",
+   "group": "Group C",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group D",
+   "finish": "QF"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group G",
+   "finish": 1
+  },
+  {
+   "team_id": "DZA",
+   "fifa_code": "ALG",
+   "name_en": "Algeria",
+   "name_ko": "알제리",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ECU",
+   "fifa_code": "ECU",
+   "name_en": "Ecuador",
+   "name_ko": "에콰도르",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group E",
+   "finish": "QF"
+  },
+  {
+   "team_id": "GHA",
+   "fifa_code": "GHA",
+   "name_en": "Ghana",
+   "name_ko": "가나",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "GRC",
+   "fifa_code": "GRE",
+   "name_en": "Greece",
+   "name_ko": "그리스",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "HND",
+   "fifa_code": "HON",
+   "name_en": "Honduras",
+   "name_ko": "온두라스",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NGA",
+   "fifa_code": "NGA",
+   "name_en": "Nigeria",
+   "name_ko": "나이지리아",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group B",
+   "finish": 3
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "RUS",
+   "fifa_code": "RUS",
+   "name_en": "Russia",
+   "name_ko": "러시아",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group G",
+   "finish": "R16"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "DEU"
+  },
+  {
+   "position": 2,
+   "team": "ARG"
+  },
+  {
+   "position": 3,
+   "team": "NLD"
+  },
+  {
+   "position": 4,
+   "team": "BRA"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ARG-2014-MESSI",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "DEU-2014-MULLER",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "NLD-2014-ROBBEN",
+   "team": "NLD"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "COL-2014-RODRIGUEZ",
+   "team": "COL"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-2014-MULLER",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "BRA-2014-NEYMAR",
+   "team": "BRA"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "DEU-2014-NEUER",
+   "team": "DEU"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "FRA-2014-POGBA",
+   "team": "FRA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2014-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-12",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "HRV",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "BRA-2014-MARCELO",
+     "name": "Marcelo",
+     "minute": "12'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-NEYMAR",
+     "name": "Neymar",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-NEYMAR",
+     "name": "Neymar",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-OSCAR",
+     "name": "Oscar",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-02",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-13",
+   "stadium": "Arena das Dunas",
+   "city": "Natal",
+   "capacity": 40000,
+   "home": "MEX",
+   "away": "CMR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2014-PERALTA",
+     "name": "Oribe Peralta",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-03",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-13",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "ESP",
+   "away": "NLD",
+   "score": [
+    1,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2014-ALONSO",
+     "name": "Xabi Alonso",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-DEVRIJ",
+     "name": "Stefan de Vrij",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-13",
+   "stadium": "Arena Pantanal",
+   "city": "Cuiabá",
+   "capacity": 41000,
+   "home": "CHL",
+   "away": "AUS",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-2014-SANCHEZ",
+     "name": "Alexis Sánchez",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-2014-VALDIVIA",
+     "name": "Jorge Valdivia",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2014-CAHILL",
+     "name": "Tim Cahill",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-2014-BEAUSEJOUR",
+     "name": "Jean Beausejour",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-14",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "COL",
+   "away": "GRC",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2014-ARMERO",
+     "name": "Pablo Armero",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-GUTIERREZ",
+     "name": "Teófilo Gutiérrez",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-06",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-14",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "URY",
+   "away": "CRI",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2014-CAVANI",
+     "name": "Edinson Cavani",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2014-CAMPBELL",
+     "name": "Joel Campbell",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2014-DUARTE",
+     "name": "Óscar Duarte",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2014-URENA",
+     "name": "Marco Ureña",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-07",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-14",
+   "stadium": "Arena da Amazônia",
+   "city": "Manaus",
+   "capacity": 41000,
+   "home": "ENG",
+   "away": "ITA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2014-MARCHISIO",
+     "name": "Claudio Marchisio",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2014-STURRIDGE",
+     "name": "Daniel Sturridge",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2014-BALOTELLI",
+     "name": "Mario Balotelli",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-08",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-14",
+   "stadium": "Arena Pernambuco",
+   "city": "Recife",
+   "capacity": 43000,
+   "home": "CIV",
+   "away": "JPN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2014-HONDA",
+     "name": "Honda Keisuke",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2014-BONY",
+     "name": "Wilfried Bony",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2014-GERVINHO",
+     "name": "Gervinho",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-09",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-15",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "CHE",
+   "away": "ECU",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2014-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-MEHMEDI",
+     "name": "Admir Mehmedi",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-SEFEROVIC",
+     "name": "Haris Seferovic",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-15",
+   "stadium": "Estádio Beira-Rio",
+   "city": "Porto Alegre",
+   "capacity": 43000,
+   "home": "FRA",
+   "away": "HND",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2014-BENZEMA",
+     "name": "Karim Benzema",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "HND-2014-VALLADARES",
+     "name": "Noel Valladares",
+     "minute": "48'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2014-BENZEMA",
+     "name": "Karim Benzema",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-11",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-15",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ARG",
+   "away": "BIH",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "BIH-2014-KOLASINAC",
+     "name": "Sead Kolašinac",
+     "minute": "3'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2014-MESSI",
+     "name": "Lionel Messi",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BIH",
+     "player": "BIH-2014-IBISEVIC",
+     "name": "Vedad Ibišević",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-12",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-16",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "DEU",
+   "away": "PRT",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-MULLER",
+     "name": "Thomas Müller",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-HUMMELS",
+     "name": "Mats Hummels",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-MULLER",
+     "name": "Thomas Müller",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-MULLER",
+     "name": "Thomas Müller",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-13",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-16",
+   "stadium": "Arena da Baixada",
+   "city": "Curitiba",
+   "capacity": 40000,
+   "home": "IRN",
+   "away": "NGA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-14",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-16",
+   "stadium": "Arena das Dunas",
+   "city": "Natal",
+   "capacity": 40000,
+   "home": "GHA",
+   "away": "USA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2014-DEMPSEY",
+     "name": "Clint Dempsey",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2014-AYEW",
+     "name": "André Ayew",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2014-BROOKS",
+     "name": "John Brooks",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-17",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "BEL",
+   "away": "DZA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DZA",
+     "player": "DZA-2014-FEGHOULI",
+     "name": "Sofiane Feghouli",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2014-FELLAINI",
+     "name": "Marouane Fellaini",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2014-MERTENS",
+     "name": "Dries Mertens",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-16",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-17",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "MEX",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-17",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-17",
+   "stadium": "Arena Pantanal",
+   "city": "Cuiabá",
+   "capacity": 41000,
+   "home": "RUS",
+   "away": "KOR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-2014-LEE",
+     "name": "Lee Keun-ho",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2014-KERZHAKOV",
+     "name": "Aleksandr Kerzhakov",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-18",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-18",
+   "stadium": "Estádio Beira-Rio",
+   "city": "Porto Alegre",
+   "capacity": 43000,
+   "home": "AUS",
+   "away": "NLD",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2014-ROBBEN",
+     "name": "Arjen Robben",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2014-CAHILL",
+     "name": "Tim Cahill",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "AUS-2014-JEDINAK",
+     "name": "Mile Jedinak",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-DEPAY",
+     "name": "Memphis Depay",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-19",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-18",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ESP",
+   "away": "CHL",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-2014-VARGAS",
+     "name": "Eduardo Vargas",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-2014-ARANGUIZ",
+     "name": "Charles Aránguiz",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-20",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-18",
+   "stadium": "Arena da Amazônia",
+   "city": "Manaus",
+   "capacity": 41000,
+   "home": "CMR",
+   "away": "HRV",
+   "score": [
+    0,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-2014-OLIC",
+     "name": "Ivica Olić",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2014-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2014-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2014-MANDZUKIC",
+     "name": "Mario Mandžukić",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-21",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-19",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "COL",
+   "away": "CIV",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-QUINTERO",
+     "name": "Juan Fernando Quintero",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2014-GERVINHO",
+     "name": "Gervinho",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-22",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-19",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "URY",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2014-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2014-ROONEY",
+     "name": "Wayne Rooney",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2014-SUAREZ",
+     "name": "Luis Suárez",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-23",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-19",
+   "stadium": "Arena das Dunas",
+   "city": "Natal",
+   "capacity": 40000,
+   "home": "JPN",
+   "away": "GRC",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-24",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-20",
+   "stadium": "Arena Pernambuco",
+   "city": "Recife",
+   "capacity": 43000,
+   "home": "ITA",
+   "away": "CRI",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-2014-RUIZ",
+     "name": "Bryan Ruiz",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-25",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-20",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "CHE",
+   "away": "FRA",
+   "score": [
+    2,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2014-GIROUD",
+     "name": "Olivier Giroud",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2014-MATUIDI",
+     "name": "Blaise Matuidi",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2014-VALBUENA",
+     "name": "Mathieu Valbuena",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2014-BENZEMA",
+     "name": "Karim Benzema",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2014-SISSOKO",
+     "name": "Moussa Sissoko",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-DZEMAILI",
+     "name": "Blerim Džemaili",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-XHAKA",
+     "name": "Granit Xhaka",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-26",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-20",
+   "stadium": "Arena da Baixada",
+   "city": "Curitiba",
+   "capacity": 40000,
+   "home": "HND",
+   "away": "ECU",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HND",
+     "player": "HND-2014-COSTLY",
+     "name": "Carlo Costly",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2014-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2014-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-27",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-21",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "ARG",
+   "away": "IRN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2014-MESSI",
+     "name": "Lionel Messi",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-28",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-21",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "DEU",
+   "away": "GHA",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-GOTZE",
+     "name": "Mario Götze",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2014-AYEW",
+     "name": "André Ayew",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2014-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-29",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-21",
+   "stadium": "Arena Pantanal",
+   "city": "Cuiabá",
+   "capacity": 41000,
+   "home": "NGA",
+   "away": "BIH",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-2014-ODEMWINGIE",
+     "name": "Peter Odemwingie",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-30",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-22",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "BEL",
+   "away": "RUS",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2014-ORIGI",
+     "name": "Divock Origi",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-31",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-22",
+   "stadium": "Estádio Beira-Rio",
+   "city": "Porto Alegre",
+   "capacity": 43000,
+   "home": "KOR",
+   "away": "DZA",
+   "score": [
+    2,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DZA",
+     "player": "DZA-2014-SLIMANI",
+     "name": "Islam Slimani",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-2014-HALLICHE",
+     "name": "Rafik Halliche",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-2014-DJABOU",
+     "name": "Abdelmoumene Djabou",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2014-SON",
+     "name": "Son Heung-min",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-2014-BRAHIMI",
+     "name": "Yacine Brahimi",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2014-KOO",
+     "name": "Koo Ja-cheol",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-32",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-22",
+   "stadium": "Arena da Amazônia",
+   "city": "Manaus",
+   "capacity": 41000,
+   "home": "USA",
+   "away": "PRT",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2014-NANI",
+     "name": "Nani",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2014-JONES",
+     "name": "Jermaine Jones",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2014-DEMPSEY",
+     "name": "Clint Dempsey",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2014-VARELA",
+     "name": "Silvestre Varela",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-33",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-23",
+   "stadium": "Arena da Baixada",
+   "city": "Curitiba",
+   "capacity": 40000,
+   "home": "AUS",
+   "away": "ESP",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2014-VILLA",
+     "name": "David Villa",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2014-TORRES",
+     "name": "Fernando Torres",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2014-MATA",
+     "name": "Juan Mata",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-34",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2014-06-23",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "NLD",
+   "away": "CHL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2014-FER",
+     "name": "Leroy Fer",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-DEPAY",
+     "name": "Memphis Depay",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-35",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-23",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "CMR",
+   "away": "BRA",
+   "score": [
+    1,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2014-NEYMAR",
+     "name": "Neymar",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-2014-MATIP",
+     "name": "Joël Matip",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-NEYMAR",
+     "name": "Neymar",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-FRED",
+     "name": "Fred",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-FERNANDINHO",
+     "name": "Fernandinho",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-36",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2014-06-23",
+   "stadium": "Arena Pernambuco",
+   "city": "Recife",
+   "capacity": 43000,
+   "home": "HRV",
+   "away": "MEX",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2014-MARQUEZ",
+     "name": "Rafael Márquez",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2014-GUARDADO",
+     "name": "Andrés Guardado",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2014-HERNANDEZ",
+     "name": "Javier Hernández",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2014-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-37",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-24",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "CRI",
+   "away": "ENG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-38",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2014-06-24",
+   "stadium": "Arena das Dunas",
+   "city": "Natal",
+   "capacity": 40000,
+   "home": "ITA",
+   "away": "URY",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2014-GODIN",
+     "name": "Diego Godín",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-39",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-24",
+   "stadium": "Arena Pantanal",
+   "city": "Cuiabá",
+   "capacity": 41000,
+   "home": "JPN",
+   "away": "COL",
+   "score": [
+    1,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2014-CUADRADO",
+     "name": "Juan Cuadrado",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2014-OKAZAKI",
+     "name": "Okazaki Shinji",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-MARTINEZ",
+     "name": "Jackson Martínez",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-MARTINEZ",
+     "name": "Jackson Martínez",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-40",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2014-06-24",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "GRC",
+   "away": "CIV",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GRC",
+     "player": "GRC-2014-SAMARIS",
+     "name": "Andreas Samaris",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CIV",
+     "player": "CIV-2014-BONY",
+     "name": "Wilfried Bony",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GRC",
+     "player": "GRC-2014-SAMARAS",
+     "name": "Georgios Samaras",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-41",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-25",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "BIH",
+   "away": "IRN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BIH",
+     "player": "BIH-2014-DZEKO",
+     "name": "Edin Džeko",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BIH",
+     "player": "BIH-2014-PJANIC",
+     "name": "Miralem Pjanić",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2014-GHOOCHANNEJHAD",
+     "name": "Reza Ghoochannejhad",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BIH",
+     "player": "BIH-2014-VRSAJEVIC",
+     "name": "Avdija Vršajević",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-42",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2014-06-25",
+   "stadium": "Estádio Beira-Rio",
+   "city": "Porto Alegre",
+   "capacity": 43000,
+   "home": "NGA",
+   "away": "ARG",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2014-MESSI",
+     "name": "Lionel Messi",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-2014-MUSA",
+     "name": "Ahmed Musa",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2014-MESSI",
+     "name": "Lionel Messi",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-2014-MUSA",
+     "name": "Ahmed Musa",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2014-ROJO",
+     "name": "Marcos Rojo",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-43",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-25",
+   "stadium": "Arena da Amazônia",
+   "city": "Manaus",
+   "capacity": 41000,
+   "home": "HND",
+   "away": "CHE",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2014-SHAQIRI",
+     "name": "Xherdan Shaqiri",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-SHAQIRI",
+     "name": "Xherdan Shaqiri",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2014-SHAQIRI",
+     "name": "Xherdan Shaqiri",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-44",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2014-06-25",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ECU",
+   "away": "FRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-45",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-26",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "PRT",
+   "away": "GHA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "GHA-2014-BOYE",
+     "name": "John Boye",
+     "minute": "31'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2014-GYAN",
+     "name": "Asamoah Gyan",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2014-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-46",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2014-06-26",
+   "stadium": "Arena Pernambuco",
+   "city": "Recife",
+   "capacity": 43000,
+   "home": "USA",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-MULLER",
+     "name": "Thomas Müller",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-47",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-26",
+   "stadium": "Arena da Baixada",
+   "city": "Curitiba",
+   "capacity": 40000,
+   "home": "DZA",
+   "away": "RUS",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "RUS",
+     "player": "RUS-2014-KOKORIN",
+     "name": "Aleksandr Kokorin",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-2014-SLIMANI",
+     "name": "Islam Slimani",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-48",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2014-06-26",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "KOR",
+   "away": "BEL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2014-VERTONGHEN",
+     "name": "Jan Vertonghen",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-28",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "BRA",
+   "away": "CHL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    2
+   ],
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2014-LUIZ",
+     "name": "David Luiz",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-2014-SANCHEZ",
+     "name": "Alexis Sánchez",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-28",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "COL",
+   "away": "URY",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-29",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "NLD",
+   "away": "MEX",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2014-DOSSANTOS",
+     "name": "Giovani dos Santos",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-SNEIJDER",
+     "name": "Wesley Sneijder",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-HUNTELAAR",
+     "name": "Klaas-Jan Huntelaar",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-29",
+   "stadium": "Arena Pernambuco",
+   "city": "Recife",
+   "capacity": 43000,
+   "home": "CRI",
+   "away": "GRC",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    5,
+    3
+   ],
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-2014-RUIZ",
+     "name": "Bryan Ruiz",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GRC",
+     "player": "GRC-2014-PAPASTATHOPOULOS",
+     "name": "Sokratis Papastathopoulos",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-30",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "FRA",
+   "away": "NGA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2014-POGBA",
+     "name": "Paul Pogba",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "NGA-2014-YOBO",
+     "name": "Joseph Yobo",
+     "minute": "90'+2'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-06-30",
+   "stadium": "Estádio Beira-Rio",
+   "city": "Porto Alegre",
+   "capacity": 43000,
+   "home": "DEU",
+   "away": "DZA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-SCHURRLE",
+     "name": "André Schürrle",
+     "minute": "92'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-OZIL",
+     "name": "Mesut Özil",
+     "minute": "120'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-2014-DJABOU",
+     "name": "Abdelmoumene Djabou",
+     "minute": "120'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-07-01",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "ARG",
+   "away": "CHE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2014-DIMARIA",
+     "name": "Ángel Di María",
+     "minute": "118'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2014-07-01",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "BEL",
+   "away": "USA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2014-DEBRUYNE",
+     "name": "Kevin De Bruyne",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2014-LUKAKU",
+     "name": "Romelu Lukaku",
+     "minute": "105'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2014-GREEN",
+     "name": "Julian Green",
+     "minute": "107'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2014-07-04",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "FRA",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-HUMMELS",
+     "name": "Mats Hummels",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2014-07-04",
+   "stadium": "Estádio Castelão",
+   "city": "Fortaleza",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "COL",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2014-SILVA",
+     "name": "Thiago Silva",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-LUIZ",
+     "name": "David Luiz",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-2014-RODRIGUEZ",
+     "name": "James Rodríguez",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2014-07-05",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "ARG",
+   "away": "BEL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2014-HIGUAIN",
+     "name": "Gonzalo Higuaín",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2014-07-05",
+   "stadium": "Arena Fonte Nova",
+   "city": "Salvador",
+   "capacity": 52000,
+   "home": "NLD",
+   "away": "CRI",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    3
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2014-07-08",
+   "stadium": "Estádio Mineirão",
+   "city": "Belo Horizonte",
+   "capacity": 43000,
+   "home": "BRA",
+   "away": "DEU",
+   "score": [
+    1,
+    7
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-MULLER",
+     "name": "Thomas Müller",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-KROOS",
+     "name": "Toni Kroos",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-KROOS",
+     "name": "Toni Kroos",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-KHEDIRA",
+     "name": "Sami Khedira",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-SCHURRLE",
+     "name": "André Schürrle",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2014-SCHURRLE",
+     "name": "André Schürrle",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2014-OSCAR",
+     "name": "Oscar",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2014-07-09",
+   "stadium": "Arena Corinthians",
+   "city": "São Paulo",
+   "capacity": 63000,
+   "home": "NLD",
+   "away": "ARG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    2,
+    4
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2014-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2014-07-12",
+   "stadium": "Estádio Nacional",
+   "city": "Brasília",
+   "capacity": 70000,
+   "home": "BRA",
+   "away": "NLD",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2014-VANPERSIE",
+     "name": "Robin van Persie",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-BLIND",
+     "name": "Daley Blind",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2014-WIJNALDUM",
+     "name": "Georginio Wijnaldum",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2014-64",
+   "stage": "final",
+   "group": null,
+   "date": "2014-07-13",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "DEU",
+   "away": "ARG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2014-GOTZE",
+     "name": "Mario Götze",
+     "minute": "113'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

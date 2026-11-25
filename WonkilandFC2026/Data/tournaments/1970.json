@@ -1,0 +1,1584 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1970",
+ "year": 1970,
+ "name": "1970 FIFA Men's World Cup",
+ "host_country": "Mexico",
+ "winner": "Brazil",
+ "start_date": "1970-05-31",
+ "end_date": "1970-06-21",
+ "rules_profile": "historical_1970",
+ "teams": [
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 3",
+   "finish": 1
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 4",
+   "finish": 3
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 3",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ISR",
+   "fifa_code": "ISR",
+   "name_en": "Israel",
+   "name_ko": "이스라엘",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 2",
+   "finish": 2
+  },
+  {
+   "team_id": "MAR",
+   "fifa_code": "MAR",
+   "name_en": "Morocco",
+   "name_ko": "모로코",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 1",
+   "finish": "QF"
+  },
+  {
+   "team_id": "PER",
+   "fifa_code": "PER",
+   "name_en": "Peru",
+   "name_ko": "페루",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SLV",
+   "fifa_code": "SLV",
+   "name_en": "El Salvador",
+   "name_ko": "엘살바도르",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group 1",
+   "finish": "QF"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 2",
+   "finish": 4
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "BRA"
+  },
+  {
+   "position": 2,
+   "team": "ITA"
+  },
+  {
+   "position": 3,
+   "team": "DEU"
+  },
+  {
+   "position": 4,
+   "team": "URY"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "DEU-1970-MULLER",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "BRA-1970-JAIRZINHO",
+   "team": "BRA"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "PER-1970-CUBILLAS",
+   "team": "PER"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "PER-1970-CUBILLAS",
+   "team": "PER"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1970-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-05-31",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "MEX",
+   "away": "SUN",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1970-02",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-02",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "URY",
+   "away": "ISR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1970-MANEIRO",
+     "name": "Ildo Maneiro",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1970-MUJICA",
+     "name": "Juan Mujica",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-03",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-02",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "ENG",
+   "away": "ROU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1970-HURST",
+     "name": "Geoff Hurst",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-04",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-02",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "PER",
+   "away": "BGR",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1970-DERMENDZHIEV",
+     "name": "Dinko Dermendzhiev",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "BGR-1970-BONEV",
+     "name": "Hristo Bonev",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-GALLARDO",
+     "name": "Alberto Gallardo",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CHUMPITAZ",
+     "name": "Héctor Chumpitaz",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-05",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-06-03",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "BEL",
+   "away": "SLV",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1970-VANMOER",
+     "name": "Wilfried Van Moer",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1970-VANMOER",
+     "name": "Wilfried Van Moer",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1970-LAMBERT",
+     "name": "Raoul Lambert",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-06",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-03",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "SWE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1970-DOMENGHINI",
+     "name": "Angelo Domenghini",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-07",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-03",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "CSK",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1970-PETRAS",
+     "name": "Ladislav Petráš",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-PELE",
+     "name": "Pelé",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-03",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "DEU",
+   "away": "MAR",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-1970-JARIR",
+     "name": "Houmane Jarir",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-06-06",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "SUN",
+   "away": "BEL",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1970-BYSHOVETS",
+     "name": "Anatoliy Byshovets",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1970-ASATIANI",
+     "name": "Kakhi Asatiani",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1970-BYSHOVETS",
+     "name": "Anatoliy Byshovets",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1970-KHMELNITSKY",
+     "name": "Vitaly Khmelnitsky",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1970-LAMBERT",
+     "name": "Raoul Lambert",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-10",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-06",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "URY",
+   "away": "ITA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1970-11",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-06",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "ROU",
+   "away": "CSK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1970-PETRAS",
+     "name": "Ladislav Petráš",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1970-NEAGU",
+     "name": "Alexandru Neagu",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1970-DUMITRACHE",
+     "name": "Florea Dumitrache",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-12",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-06",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "PER",
+   "away": "MAR",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PER",
+     "player": "PER-1970-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CHALLE",
+     "name": "Roberto Challe",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-13",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-06-07",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "MEX",
+   "away": "SLV",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1970-VALDIVIA",
+     "name": "Javier Valdivia",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1970-VALDIVIA",
+     "name": "Javier Valdivia",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1970-FRAGOSO",
+     "name": "Javier Fragoso",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1970-BASAGUREN",
+     "name": "Juan Ignacio Basaguren",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-14",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-07",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "SWE",
+   "away": "ISR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1970-TURESSON",
+     "name": "Tom Turesson",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ISR",
+     "player": "ISR-1970-SPIEGLER",
+     "name": "Mordechai Spiegler",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-15",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-07",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "ENG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-16",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-07",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "DEU",
+   "away": "BGR",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1970-NIKODIMOV",
+     "name": "Asparuh Nikodimov",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-LIBUDA",
+     "name": "Reinhard Libuda",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "BGR-1970-KOLEV",
+     "name": "Todor Kolev",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-17",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-06-10",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "SUN",
+   "away": "SLV",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1970-BYSHOVETS",
+     "name": "Anatoliy Byshovets",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1970-BYSHOVETS",
+     "name": "Anatoliy Byshovets",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-18",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-10",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "SWE",
+   "away": "URY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1970-GRAHN",
+     "name": "Ove Grahn",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-19",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-10",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "ROU",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1970-PELE",
+     "name": "Pelé",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1970-DUMITRACHE",
+     "name": "Florea Dumitrache",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-PELE",
+     "name": "Pelé",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1970-DEMBROVSCHI",
+     "name": "Emerich Dembrovschi",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-20",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-10",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "DEU",
+   "away": "PER",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-21",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1970-06-11",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "MEX",
+   "away": "BEL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1970-PENA",
+     "name": "Gustavo Peña",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-22",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1970-06-11",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "ISR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1970-23",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1970-06-11",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "ENG",
+   "away": "CSK",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1970-CLARKE",
+     "name": "Allan Clarke",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1970-06-11",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "BGR",
+   "away": "MAR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1970-ZHECHEV",
+     "name": "Dobromir Zhechev",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1970-GHAZOUANI",
+     "name": "Maouhoub Ghazouani",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-25",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1970-06-14",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "PER",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1970-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-TOSTAO",
+     "name": "Tostão",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-GALLARDO",
+     "name": "Alberto Gallardo",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-TOSTAO",
+     "name": "Tostão",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1970-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-26",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1970-06-14",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "MEX",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1970-GONZALEZ",
+     "name": "José Luis González",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "MEX-1970-GUZMAN",
+     "name": "Javier Guzmán",
+     "minute": "25'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-RIVA",
+     "name": "Gigi Riva",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-RIVERA",
+     "name": "Gianni Rivera",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-RIVA",
+     "name": "Gigi Riva",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-27",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1970-06-14",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "SUN",
+   "away": "URY",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1970-ESPARRAGO",
+     "name": "Víctor Espárrago",
+     "minute": "117'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-28",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1970-06-14",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "DEU",
+   "away": "ENG",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1970-MULLERY",
+     "name": "Alan Mullery",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1970-PETERS",
+     "name": "Martin Peters",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-BECKENBAUER",
+     "name": "Franz Beckenbauer",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "108'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-29",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1970-06-17",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "URY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1970-CUBILLA",
+     "name": "Luis Cubilla",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-CLODOALDO",
+     "name": "Clodoaldo",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-30",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1970-06-17",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "ITA",
+   "away": "DEU",
+   "score": [
+    4,
+    3
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1970-BONINSEGNA",
+     "name": "Roberto Boninsegna",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-SCHNELLINGER",
+     "name": "Karl-Heinz Schnellinger",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "94'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-BURGNICH",
+     "name": "Tarcisio Burgnich",
+     "minute": "98'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-RIVA",
+     "name": "Gigi Riva",
+     "minute": "104'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1970-MULLER",
+     "name": "Gerd Müller",
+     "minute": "110'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-RIVERA",
+     "name": "Gianni Rivera",
+     "minute": "111'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-31",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1970-06-20",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "DEU",
+   "away": "URY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1970-OVERATH",
+     "name": "Wolfgang Overath",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1970-32",
+   "stage": "final",
+   "group": null,
+   "date": "1970-06-21",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "BRA",
+   "away": "ITA",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1970-PELE",
+     "name": "Pelé",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1970-BONINSEGNA",
+     "name": "Roberto Boninsegna",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-GERSON",
+     "name": "Gérson",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1970-ALBERTO",
+     "name": "Carlos Alberto",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

@@ -1,0 +1,1551 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1966",
+ "year": 1966,
+ "name": "1966 FIFA Men's World Cup",
+ "host_country": "England",
+ "winner": "England",
+ "start_date": "1966-07-11",
+ "end_date": "1966-07-30",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 2",
+   "finish": "QF"
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 2",
+   "finish": 2
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 1",
+   "finish": 1
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 3",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRK",
+   "fifa_code": "PRK",
+   "name_en": "North Korea",
+   "name_ko": "북한",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group 3",
+   "finish": 3
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group 4",
+   "finish": 4
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 1",
+   "finish": "QF"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ENG"
+  },
+  {
+   "position": 2,
+   "team": "DEU"
+  },
+  {
+   "position": 3,
+   "team": "PRT"
+  },
+  {
+   "position": 4,
+   "team": "SUN"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "PRT-1966-EUSEBIO",
+   "team": "PRT"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-1966-HALLER",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "DEU-1966-BECKENBAUER",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "HUN-1966-BENE",
+   "team": "HUN"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "ENG-1966-HURST",
+   "team": "ENG"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "SUN-1966-PORKUJAN",
+   "team": "SUN"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "DEU-1966-BECKENBAUER",
+   "team": "DEU"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1966-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-11",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "URY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1966-02",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-12",
+   "stadium": "Hillsborough Stadium",
+   "city": "Sheffield",
+   "capacity": 43000,
+   "home": "DEU",
+   "away": "CHE",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HELD",
+     "name": "Sigfried Held",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-BECKENBAUER",
+     "name": "Franz Beckenbauer",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-BECKENBAUER",
+     "name": "Franz Beckenbauer",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-03",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-12",
+   "stadium": "Goodison Park",
+   "city": "Liverpool",
+   "capacity": 50000,
+   "home": "BRA",
+   "away": "BGR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1966-PELE",
+     "name": "Pelé",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1966-GARRINCHA",
+     "name": "Garrincha",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-04",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-12",
+   "stadium": "Ayresome Park",
+   "city": "Middlesbrough",
+   "capacity": 40000,
+   "home": "SUN",
+   "away": "PRK",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1966-MALOFEYEV",
+     "name": "Eduard Malofeyev",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-BANISHEVSKIY",
+     "name": "Anatoliy Banishevskiy",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-MALOFEYEV",
+     "name": "Eduard Malofeyev",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-05",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-13",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "FRA",
+   "away": "MEX",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1966-BORJA",
+     "name": "Enrique Borja",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1966-HAUSSER",
+     "name": "Gérard Hausser",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-06",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-13",
+   "stadium": "Villa Park",
+   "city": "Birmingham",
+   "capacity": 52000,
+   "home": "ARG",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1966-ARTIME",
+     "name": "Luis Artime",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1966-PIRRI",
+     "name": "Pirri",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1966-ARTIME",
+     "name": "Luis Artime",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-07",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-13",
+   "stadium": "Old Trafford",
+   "city": "Manchester",
+   "capacity": 58000,
+   "home": "PRT",
+   "away": "HUN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-1966-AUGUSTO",
+     "name": "José Augusto",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-BENE",
+     "name": "Ferenc Bene",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-AUGUSTO",
+     "name": "José Augusto",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-TORRES",
+     "name": "José Torres",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-13",
+   "stadium": "Roker Park",
+   "city": "Sunderland",
+   "capacity": 40000,
+   "home": "ITA",
+   "away": "CHL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1966-MAZZOLA",
+     "name": "Sandro Mazzola",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1966-BARISON",
+     "name": "Paolo Barison",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-15",
+   "stadium": "White City Stadium",
+   "city": "London",
+   "capacity": 77000,
+   "home": "URY",
+   "away": "FRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1966-DEBOURGOING",
+     "name": "Héctor De Bourgoing",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "URY",
+     "player": "URY-1966-ROCHA",
+     "name": "Pedro Rocha",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1966-CORTES",
+     "name": "Julio César Cortés",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-10",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-15",
+   "stadium": "Hillsborough Stadium",
+   "city": "Sheffield",
+   "capacity": 43000,
+   "home": "ESP",
+   "away": "CHE",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1966-QUENTIN",
+     "name": "René-Pierre Quentin",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1966-SANCHIS",
+     "name": "Manuel Sanchís",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1966-AMANCIO",
+     "name": "Amancio",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-11",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-15",
+   "stadium": "Goodison Park",
+   "city": "Liverpool",
+   "capacity": 50000,
+   "home": "HUN",
+   "away": "BRA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1966-BENE",
+     "name": "Ferenc Bene",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1966-TOSTAO",
+     "name": "Tostão",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-FARKAS",
+     "name": "János Farkas",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-MESZOLY",
+     "name": "Kálmán Mészöly",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-12",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-15",
+   "stadium": "Ayresome Park",
+   "city": "Middlesbrough",
+   "capacity": 40000,
+   "home": "CHL",
+   "away": "PRK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1966-MARCOS",
+     "name": "Rubén Marcos",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "PRK",
+     "player": "PRK-1966-PAKSEU",
+     "name": "Pak Seung-zin",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-13",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-16",
+   "stadium": "Villa Park",
+   "city": "Birmingham",
+   "capacity": 52000,
+   "home": "ARG",
+   "away": "DEU",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1966-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-16",
+   "stadium": "Old Trafford",
+   "city": "Manchester",
+   "capacity": 58000,
+   "home": "PRT",
+   "away": "BGR",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "BGR-1966-VUTSOV",
+     "name": "Ivan Vutsov",
+     "minute": "7'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-TORRES",
+     "name": "José Torres",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-16",
+   "stadium": "Roker Park",
+   "city": "Sunderland",
+   "capacity": 40000,
+   "home": "SUN",
+   "away": "ITA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1966-CHISLENKO",
+     "name": "Igor Chislenko",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-16",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-16",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "MEX",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1966-CHARLTONBOB",
+     "name": "Bobby Charlton",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HUNT",
+     "name": "Roger Hunt",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-17",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-19",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "MEX",
+   "away": "URY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1966-18",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-19",
+   "stadium": "Hillsborough Stadium",
+   "city": "Sheffield",
+   "capacity": 43000,
+   "home": "ARG",
+   "away": "CHE",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1966-ARTIME",
+     "name": "Luis Artime",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1966-ONEGA",
+     "name": "Ermindo Onega",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-19",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-19",
+   "stadium": "Goodison Park",
+   "city": "Liverpool",
+   "capacity": 50000,
+   "home": "PRT",
+   "away": "BRA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-1966-SIMOES",
+     "name": "António Simões",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1966-RILDO",
+     "name": "Rildo",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-20",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-19",
+   "stadium": "Ayresome Park",
+   "city": "Middlesbrough",
+   "capacity": 40000,
+   "home": "PRK",
+   "away": "ITA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRK",
+     "player": "PRK-1966-PAKDOO",
+     "name": "Pak Doo-ik",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-21",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1966-07-20",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "FRA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HUNT",
+     "name": "Roger Hunt",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HUNT",
+     "name": "Roger Hunt",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-22",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1966-07-20",
+   "stadium": "Villa Park",
+   "city": "Birmingham",
+   "capacity": 52000,
+   "home": "DEU",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1966-FUSTE",
+     "name": "Josep Maria Fusté",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-EMMERICH",
+     "name": "Lothar Emmerich",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-23",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1966-07-20",
+   "stadium": "Old Trafford",
+   "city": "Manchester",
+   "capacity": 58000,
+   "home": "HUN",
+   "away": "BGR",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1966-ASPARUHOV",
+     "name": "Georgi Asparuhov",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "BGR-1966-DAVIDOV",
+     "name": "Ivan Davidov",
+     "minute": "43'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-MESZOLY",
+     "name": "Kálmán Mészöly",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-BENE",
+     "name": "Ferenc Bene",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1966-07-20",
+   "stadium": "Roker Park",
+   "city": "Sunderland",
+   "capacity": 40000,
+   "home": "SUN",
+   "away": "CHL",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1966-PORKUJAN",
+     "name": "Valeriy Porkujan",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1966-MARCOS",
+     "name": "Rubén Marcos",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-PORKUJAN",
+     "name": "Valeriy Porkujan",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-25",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1966-07-23",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "ARG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HURST",
+     "name": "Geoff Hurst",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-26",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1966-07-23",
+   "stadium": "Goodison Park",
+   "city": "Liverpool",
+   "capacity": 50000,
+   "home": "PRT",
+   "away": "PRK",
+   "score": [
+    5,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRK",
+     "player": "PRK-1966-PAKSEU",
+     "name": "Pak Seung-zin",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRK",
+     "player": "PRK-1966-LI",
+     "name": "Li Dong-woon",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRK",
+     "player": "PRK-1966-YANG",
+     "name": "Yang Seung-kook",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-AUGUSTO",
+     "name": "José Augusto",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-27",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1966-07-23",
+   "stadium": "Roker Park",
+   "city": "Sunderland",
+   "capacity": 40000,
+   "home": "SUN",
+   "away": "HUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1966-CHISLENKO",
+     "name": "Igor Chislenko",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-PORKUJAN",
+     "name": "Valeriy Porkujan",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1966-BENE",
+     "name": "Ferenc Bene",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-28",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1966-07-23",
+   "stadium": "Hillsborough Stadium",
+   "city": "Sheffield",
+   "capacity": 43000,
+   "home": "DEU",
+   "away": "URY",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-BECKENBAUER",
+     "name": "Franz Beckenbauer",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-29",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1966-07-25",
+   "stadium": "Goodison Park",
+   "city": "Liverpool",
+   "capacity": 50000,
+   "home": "DEU",
+   "away": "SUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-BECKENBAUER",
+     "name": "Franz Beckenbauer",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-PORKUJAN",
+     "name": "Valeriy Porkujan",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-30",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1966-07-26",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "PRT",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1966-CHARLTONBOB",
+     "name": "Bobby Charlton",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-CHARLTONBOB",
+     "name": "Bobby Charlton",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-31",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1966-07-28",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "PRT",
+   "away": "SUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-1966-EUSEBIO",
+     "name": "Eusébio",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1966-MALOFEYEV",
+     "name": "Eduard Malofeyev",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1966-TORRES",
+     "name": "José Torres",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1966-32",
+   "stage": "final",
+   "group": null,
+   "date": "1966-07-30",
+   "stadium": "Wembley Stadium",
+   "city": "London",
+   "capacity": 99000,
+   "home": "ENG",
+   "away": "DEU",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1966-HALLER",
+     "name": "Helmut Haller",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HURST",
+     "name": "Geoff Hurst",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-PETERS",
+     "name": "Martin Peters",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1966-WEBER",
+     "name": "Wolfgang Weber",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HURST",
+     "name": "Geoff Hurst",
+     "minute": "101'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1966-HURST",
+     "name": "Geoff Hurst",
+     "minute": "120'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "wfc.rules.v1",
+ "verification": "needs_citation",
+ "id": "historical_1998",
+ "era": "1998–2018",
+ "substitutions": 3,
+ "cards": true,
+ "offside": {
+  "opponents_required": 2,
+  "level_is_onside": true
+ },
+ "draw_resolution": "extra_time_then_penalties",
+ "penalty_shootout": true,
+ "added_time_display": true,
+ "notes": [
+  "교체 3명",
+  "1998·2002 골든골 규정은 미구현"
+ ]
+}

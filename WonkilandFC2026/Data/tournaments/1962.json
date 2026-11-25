@@ -1,0 +1,1550 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1962",
+ "year": 1962,
+ "name": "1962 FIFA Men's World Cup",
+ "host_country": "Chile",
+ "winner": "Brazil",
+ "start_date": "1962-05-30",
+ "end_date": "1962-07-17",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 3",
+   "finish": 1
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 2",
+   "finish": 3
+  },
+  {
+   "team_id": "COL",
+   "fifa_code": "COL",
+   "name_en": "Colombia",
+   "name_ko": "콜롬비아",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group 3",
+   "finish": 2
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 2",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group 1",
+   "finish": "QF"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 1",
+   "finish": 4
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "BRA"
+  },
+  {
+   "position": 2,
+   "team": "CSK"
+  },
+  {
+   "position": 3,
+   "team": "CHL"
+  },
+  {
+   "position": 4,
+   "team": "YUG"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "HUN-1962-ALBERT",
+   "team": "HUN"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "BRA-1962-GARRINCHA",
+   "team": "BRA"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "SUN-1962-IVANOV",
+   "team": "SUN"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "YUG-1962-JERKOVIC",
+   "team": "YUG"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "CHL-1962-SANCHEZLEO",
+   "team": "CHL"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "BRA-1962-VAVA",
+   "team": "BRA"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "HUN-1962-ALBERT",
+   "team": "HUN"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1962-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-05-30",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "URY",
+   "away": "COL",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-1962-ZULUAGA",
+     "name": "Francisco Zuluaga",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "URY",
+     "player": "URY-1962-CUBILLALUI",
+     "name": "Luis Cubilla",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1962-SASIA",
+     "name": "José Sasía",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-02",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-05-30",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "CHL",
+   "away": "CHE",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1962-WUTHRICH",
+     "name": "Rolf Wüthrich",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-SANCHEZLEO",
+     "name": "Leonel Sánchez",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-RAMIREZ",
+     "name": "Jaime Ramírez",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-SANCHEZLEO",
+     "name": "Leonel Sánchez",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-03",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-05-30",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "BRA",
+   "away": "MEX",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1962-ZAGALLO",
+     "name": "Mário Zagallo",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-PELE",
+     "name": "Pelé",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-04",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-05-30",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "ARG",
+   "away": "BGR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1962-FACUNDO",
+     "name": "Héctor Facundo",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-05",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-05-31",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "SUN",
+   "away": "YUG",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1962-IVANOV",
+     "name": "Valentin Ivanov",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-PONEDELNIK",
+     "name": "Viktor Ponedelnik",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-06",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-05-31",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "DEU",
+   "away": "ITA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1962-07",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-05-31",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "CSK",
+   "away": "ESP",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1962-STIBRANYI",
+     "name": "Jozef Štibrányi",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-05-31",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "HUN",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1962-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1962-FLOWERS",
+     "name": "Ron Flowers",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-ALBERT",
+     "name": "Flórián Albert",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-06-02",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "YUG",
+   "away": "URY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1962-CABRERA",
+     "name": "Ángel Cabrera",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-SKOBLAR",
+     "name": "Josip Skoblar",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-GALIC",
+     "name": "Milan Galić",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-JERKOVIC",
+     "name": "Dražan Jerković",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-10",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-06-02",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "CHL",
+   "away": "ITA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1962-RAMIREZ",
+     "name": "Jaime Ramírez",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-TORO",
+     "name": "Jorge Toro",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-11",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-06-02",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "BRA",
+   "away": "CSK",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1962-12",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-06-02",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "ENG",
+   "away": "ARG",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1962-FLOWERS",
+     "name": "Ron Flowers",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1962-CHARLTON",
+     "name": "Bobby Charlton",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1962-GREAVES",
+     "name": "Jimmy Greaves",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1962-SANFILIPPO",
+     "name": "José Sanfilippo",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-13",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-06-03",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "SUN",
+   "away": "COL",
+   "score": [
+    4,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1962-IVANOV",
+     "name": "Valentin Ivanov",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-CHISLENKO",
+     "name": "Igor Chislenko",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-IVANOV",
+     "name": "Valentin Ivanov",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1962-ACEROS",
+     "name": "Germán Aceros",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-PONEDELNIK",
+     "name": "Viktor Ponedelnik",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1962-COLL",
+     "name": "Marcos Coll",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1962-RADA",
+     "name": "Antonio Rada",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "COL",
+     "player": "COL-1962-KLINGER",
+     "name": "Marino Klinger",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-14",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-06-03",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "DEU",
+   "away": "CHE",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1962-BRULLS",
+     "name": "Albert Brülls",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1962-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1962-SCHNEITER",
+     "name": "Heinz Schneiter",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-15",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-06-03",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "ESP",
+   "away": "MEX",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1962-PEIRO",
+     "name": "Joaquín Peiró",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-16",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-06-03",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "HUN",
+   "away": "BGR",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1962-ALBERT",
+     "name": "Flórián Albert",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-ALBERT",
+     "name": "Flórián Albert",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-SOLYMOSI",
+     "name": "Ernő Solymosi",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-ALBERT",
+     "name": "Flórián Albert",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "BGR-1962-SOKOLOV",
+     "name": "Georgi Sokolov",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1962-TICHY",
+     "name": "Lajos Tichy",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-17",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-06-06",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "SUN",
+   "away": "URY",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1962-MAMYKIN",
+     "name": "Aleksei Mamykin",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1962-SASIA",
+     "name": "José Sasía",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-IVANOV",
+     "name": "Valentin Ivanov",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-18",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-06-06",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "DEU",
+   "away": "CHL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1962-SZYMANIAK",
+     "name": "Horst Szymaniak",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1962-SEELER",
+     "name": "Uwe Seeler",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-19",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-06-06",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "BRA",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1962-ADELARDO",
+     "name": "Adelardo",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-AMARILDO",
+     "name": "Amarildo",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-AMARILDO",
+     "name": "Amarildo",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-20",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-06-06",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "HUN",
+   "away": "ARG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1962-21",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1962-06-07",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "YUG",
+   "away": "COL",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1962-GALIC",
+     "name": "Milan Galić",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-JERKOVIC",
+     "name": "Dražan Jerković",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-GALIC",
+     "name": "Milan Galić",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-MELIC",
+     "name": "Vojislav Melić",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-JERKOVIC",
+     "name": "Dražan Jerković",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-22",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1962-06-07",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "ITA",
+   "away": "CHE",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1962-MORA",
+     "name": "Bruno Mora",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1962-BULGARELLI",
+     "name": "Giacomo Bulgarelli",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1962-BULGARELLI",
+     "name": "Giacomo Bulgarelli",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-23",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1962-06-07",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "MEX",
+   "away": "CSK",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1962-MASEK",
+     "name": "Václav Mašek",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1962-DIAZ",
+     "name": "Isidoro Díaz",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1962-DELAGUILA",
+     "name": "Alfredo del Águila",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1962-HERNANDEZ",
+     "name": "Héctor Hernández",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1962-06-07",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "ENG",
+   "away": "BGR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1962-25",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1962-06-10",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "BRA",
+   "away": "ENG",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1962-GARRINCHA",
+     "name": "Garrincha",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1962-HITCHENS",
+     "name": "Gerry Hitchens",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-VAVA",
+     "name": "Vavá",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-GARRINCHA",
+     "name": "Garrincha",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-26",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1962-06-10",
+   "stadium": "Estadio Carlos Dittborn",
+   "city": "Arica",
+   "capacity": 18000,
+   "home": "CHL",
+   "away": "SUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1962-SANCHEZLEO",
+     "name": "Leonel Sánchez",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1962-CHISLENKO",
+     "name": "Igor Chislenko",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-ROJAS",
+     "name": "Eladio Rojas",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-27",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1962-06-10",
+   "stadium": "Estadio El Teniente",
+   "city": "Rancagua",
+   "capacity": 18000,
+   "home": "CSK",
+   "away": "HUN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1962-SCHERER",
+     "name": "Adolf Scherer",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-28",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1962-06-10",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "YUG",
+   "away": "DEU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1962-RADAKOVIC",
+     "name": "Petar Radaković",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-29",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1962-06-13",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "BRA",
+   "away": "CHL",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1962-GARRINCHA",
+     "name": "Garrincha",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-GARRINCHA",
+     "name": "Garrincha",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-TORO",
+     "name": "Jorge Toro",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-VAVA",
+     "name": "Vavá",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1962-SANCHEZLEO",
+     "name": "Leonel Sánchez",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-VAVA",
+     "name": "Vavá",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-30",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1962-06-13",
+   "stadium": "Estadio Sausalito",
+   "city": "Viña del Mar",
+   "capacity": 18000,
+   "home": "CSK",
+   "away": "YUG",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1962-KADRABA",
+     "name": "Josef Kadraba",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1962-JERKOVIC",
+     "name": "Dražan Jerković",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1962-SCHERER",
+     "name": "Adolf Scherer",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1962-SCHERER",
+     "name": "Adolf Scherer",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-31",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1962-06-16",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "CHL",
+   "away": "YUG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1962-ROJAS",
+     "name": "Eladio Rojas",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1962-32",
+   "stage": "final",
+   "group": null,
+   "date": "1962-06-17",
+   "stadium": "Estadio Nacional",
+   "city": "Santiago",
+   "capacity": 67000,
+   "home": "BRA",
+   "away": "CSK",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1962-MASOPUST",
+     "name": "Josef Masopust",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-AMARILDO",
+     "name": "Amarildo",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-ZITO",
+     "name": "Zito",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1962-VAVA",
+     "name": "Vavá",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

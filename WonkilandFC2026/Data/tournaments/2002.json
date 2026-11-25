@@ -1,0 +1,2906 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2002",
+ "year": 2002,
+ "name": "2002 FIFA Men's World Cup",
+ "host_country": "Korea, Japan",
+ "winner": "Brazil",
+ "start_date": "2002-05-31",
+ "end_date": "2002-06-30",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group C",
+   "finish": 1
+  },
+  {
+   "team_id": "CHN",
+   "fifa_code": "CHN",
+   "name_en": "China",
+   "name_ko": "중국",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group E",
+   "finish": 2
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ECU",
+   "fifa_code": "ECU",
+   "name_en": "Ecuador",
+   "name_ko": "에콰도르",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "IRL",
+   "fifa_code": "IRL",
+   "name_en": "Republic of Ireland",
+   "name_ko": "아일랜드",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group D",
+   "finish": 4
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NGA",
+   "fifa_code": "NGA",
+   "name_en": "Nigeria",
+   "name_ko": "나이지리아",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "RUS",
+   "fifa_code": "RUS",
+   "name_en": "Russia",
+   "name_ko": "러시아",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SAU",
+   "fifa_code": "KSA",
+   "name_en": "Saudi Arabia",
+   "name_ko": "사우디아라비아",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SEN",
+   "fifa_code": "SEN",
+   "name_en": "Senegal",
+   "name_ko": "세네갈",
+   "group": "Group A",
+   "finish": "QF"
+  },
+  {
+   "team_id": "SVN",
+   "fifa_code": "SVN",
+   "name_en": "Slovenia",
+   "name_ko": "슬로베니아",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUR",
+   "fifa_code": "TUR",
+   "name_en": "Turkey",
+   "name_ko": "튀르키예",
+   "group": "Group C",
+   "finish": 3
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group D",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ZAF",
+   "fifa_code": "RSA",
+   "name_en": "South Africa",
+   "name_ko": "남아프리카공화국",
+   "group": "Group B",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "BRA"
+  },
+  {
+   "position": 2,
+   "team": "DEU"
+  },
+  {
+   "position": 3,
+   "team": "TUR"
+  },
+  {
+   "position": 4,
+   "team": "KOR"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "DEU-2002-KAHN",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "BRA-2002-RONALDO",
+   "team": "BRA"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "KOR-2002-HONG",
+   "team": "KOR"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "BRA-2002-RONALDO",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-2002-KLOSE",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "BRA-2002-RIVALDO",
+   "team": "BRA"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "DEU-2002-KAHN",
+   "team": "DEU"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "USA-2002-DONOVAN",
+   "team": "USA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2002-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-05-31",
+   "stadium": "Seoul World Cup Stadium",
+   "city": "Seoul",
+   "capacity": 64000,
+   "home": "FRA",
+   "away": "SEN",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "SEN-2002-DIOP",
+     "name": "Papa Bouba Diop",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-02",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-01",
+   "stadium": "Niigata Stadium",
+   "city": "Niigata",
+   "capacity": 42000,
+   "home": "IRL",
+   "away": "CMR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-2002-MBOMA",
+     "name": "Patrick M'Boma",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-2002-HOLLAND",
+     "name": "Matt Holland",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-03",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-06-01",
+   "stadium": "Ulsan Munsu Football Stadium",
+   "city": "Ulsan",
+   "capacity": 44000,
+   "home": "URY",
+   "away": "DNK",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2002-TOMASSON",
+     "name": "Jon Dahl Tomasson",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2002-RODRIGUEZ",
+     "name": "Darío Rodríguez",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2002-TOMASSON",
+     "name": "Jon Dahl Tomasson",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-04",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-01",
+   "stadium": "Sapporo Dome",
+   "city": "Sapporo",
+   "capacity": 42000,
+   "home": "DEU",
+   "away": "SAU",
+   "score": [
+    8,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-BALLACK",
+     "name": "Michael Ballack",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-JANCKER",
+     "name": "Carsten Jancker",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-LINKE",
+     "name": "Thomas Linke",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-BIERHOFF",
+     "name": "Oliver Bierhoff",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-SCHNEIDER",
+     "name": "Bernd Schneider",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-05",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-02",
+   "stadium": "Kashima Stadium",
+   "city": "Ibaraki",
+   "capacity": 42000,
+   "home": "ARG",
+   "away": "NGA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2002-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-06",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-02",
+   "stadium": "Busan Asiad Stadium",
+   "city": "Busan",
+   "capacity": 56000,
+   "home": "PRY",
+   "away": "ZAF",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-2002-SANTACRUZ",
+     "name": "Roque Santa Cruz",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2002-ARCE",
+     "name": "Francisco Arce",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-2002-MOKOENATEB",
+     "name": "Teboho Mokoena",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-2002-FORTUNE",
+     "name": "Quinton Fortune",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-07",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-02",
+   "stadium": "Saitama Stadium",
+   "city": "Saitama",
+   "capacity": 63000,
+   "home": "ENG",
+   "away": "SWE",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2002-CAMPBELL",
+     "name": "Sol Campbell",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2002-ALEXANDERSSON",
+     "name": "Niclas Alexandersson",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-08",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-02",
+   "stadium": "Gwangju World Cup Stadium",
+   "city": "Gwangju",
+   "capacity": 43000,
+   "home": "ESP",
+   "away": "SVN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2002-RAUL",
+     "name": "Raúl",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-VALERON",
+     "name": "Juan Carlos Valerón",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SVN",
+     "player": "SVN-2002-CIMIROTIC",
+     "name": "Sebastjan Cimirotič",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-HIERRO",
+     "name": "Fernando Hierro",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-09",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-03",
+   "stadium": "Niigata Stadium",
+   "city": "Niigata",
+   "capacity": 42000,
+   "home": "HRV",
+   "away": "MEX",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2002-BLANCO",
+     "name": "Cuauhtémoc Blanco",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-10",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-03",
+   "stadium": "Ulsan Munsu Football Stadium",
+   "city": "Ulsan",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "TUR",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-SAS",
+     "name": "Hasan Şaş",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-11",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-03",
+   "stadium": "Sapporo Dome",
+   "city": "Sapporo",
+   "capacity": 42000,
+   "home": "ITA",
+   "away": "ECU",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2002-VIERI",
+     "name": "Christian Vieri",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2002-VIERI",
+     "name": "Christian Vieri",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-12",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-04",
+   "stadium": "Gwangju World Cup Stadium",
+   "city": "Gwangju",
+   "capacity": 43000,
+   "home": "CHN",
+   "away": "CRI",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-2002-GOMEZ",
+     "name": "Rónald Gómez",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2002-WRIGHT",
+     "name": "Mauricio Wright",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-13",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-04",
+   "stadium": "Saitama Stadium",
+   "city": "Saitama",
+   "capacity": 63000,
+   "home": "JPN",
+   "away": "BEL",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2002-WILMOTS",
+     "name": "Marc Wilmots",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2002-SUZUKI",
+     "name": "Suzuki Takayuki",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2002-INAMOTO",
+     "name": "Inamoto Junichi",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2002-VANDERHEYDEN",
+     "name": "Peter Van der Heyden",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-14",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-04",
+   "stadium": "Busan Asiad Stadium",
+   "city": "Busan",
+   "capacity": 56000,
+   "home": "KOR",
+   "away": "POL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-2002-HWANG",
+     "name": "Hwang Sun-hong",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-YOO",
+     "name": "Yoo Sang-chul",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-05",
+   "stadium": "Kobe Wing Stadium",
+   "city": "Kobe",
+   "capacity": 42000,
+   "home": "RUS",
+   "away": "TUN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "RUS",
+     "player": "RUS-2002-TITOV",
+     "name": "Yegor Titov",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2002-KARPIN",
+     "name": "Valeri Karpin",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-16",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-05",
+   "stadium": "Suwon World Cup Stadium",
+   "city": "Suwon",
+   "capacity": 43000,
+   "home": "USA",
+   "away": "PRT",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2002-OBRIEN",
+     "name": "John O'Brien",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "PRT-2002-COSTA",
+     "name": "Jorge Costa",
+     "minute": "29'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2002-MCBRIDE",
+     "name": "Brian McBride",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2002-BETO",
+     "name": "Beto",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "USA-2002-AGOOS",
+     "name": "Jeff Agoos",
+     "minute": "71'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-17",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-05",
+   "stadium": "Kashima Stadium",
+   "city": "Ibaraki",
+   "capacity": 42000,
+   "home": "DEU",
+   "away": "IRL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-2002-KEANEROB",
+     "name": "Robbie Keane",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-18",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-06-06",
+   "stadium": "Daegu World Cup Stadium",
+   "city": "Daegu",
+   "capacity": 68000,
+   "home": "DNK",
+   "away": "SEN",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2002-TOMASSON",
+     "name": "Jon Dahl Tomasson",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2002-DIAO",
+     "name": "Salif Diao",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-19",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-06",
+   "stadium": "Saitama Stadium",
+   "city": "Saitama",
+   "capacity": 63000,
+   "home": "CMR",
+   "away": "SAU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-2002-ETOO",
+     "name": "Samuel Eto'o",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-20",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-06-06",
+   "stadium": "Busan Asiad Stadium",
+   "city": "Busan",
+   "capacity": 56000,
+   "home": "FRA",
+   "away": "URY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2002-21",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-07",
+   "stadium": "Kobe Wing Stadium",
+   "city": "Kobe",
+   "capacity": 42000,
+   "home": "SWE",
+   "away": "NGA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-2002-AGHAHOWA",
+     "name": "Julius Aghahowa",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2002-LARSSON",
+     "name": "Henrik Larsson",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-2002-LARSSON",
+     "name": "Henrik Larsson",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-22",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-07",
+   "stadium": "Jeonju World Cup Stadium",
+   "city": "Jeonju",
+   "capacity": 42000,
+   "home": "ESP",
+   "away": "PRY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "ESP-2002-PUYOL",
+     "name": "Carles Puyol",
+     "minute": "10'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-MORIENTES",
+     "name": "Fernando Morientes",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-MORIENTES",
+     "name": "Fernando Morientes",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-HIERRO",
+     "name": "Fernando Hierro",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-23",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-07",
+   "stadium": "Sapporo Dome",
+   "city": "Sapporo",
+   "capacity": 42000,
+   "home": "ARG",
+   "away": "ENG",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2002-BECKHAM",
+     "name": "David Beckham",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-24",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-08",
+   "stadium": "Daegu World Cup Stadium",
+   "city": "Daegu",
+   "capacity": 68000,
+   "home": "ZAF",
+   "away": "SVN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ZAF",
+     "player": "ZAF-2002-NOMVETHE",
+     "name": "Siyabonga Nomvethe",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-25",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-08",
+   "stadium": "Kashima Stadium",
+   "city": "Ibaraki",
+   "capacity": 42000,
+   "home": "ITA",
+   "away": "HRV",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2002-VIERI",
+     "name": "Christian Vieri",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2002-OLIC",
+     "name": "Ivica Olić",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2002-RAPAIC",
+     "name": "Milan Rapaić",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-26",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-08",
+   "stadium": "Jeju World Cup Stadium",
+   "city": "Seogwipo",
+   "capacity": 42000,
+   "home": "BRA",
+   "away": "CHN",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2002-CARLOS",
+     "name": "Roberto Carlos",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDINHO",
+     "name": "Ronaldinho",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-27",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-09",
+   "stadium": "Miyagi Stadium",
+   "city": "Miyagi",
+   "capacity": 49000,
+   "home": "MEX",
+   "away": "ECU",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2002-DELGADO",
+     "name": "Agustín Delgado",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2002-BORGETTI",
+     "name": "Jared Borgetti",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2002-TORRADO",
+     "name": "Gerardo Torrado",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-28",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-09",
+   "stadium": "Incheon Munhak Stadium",
+   "city": "Incheon",
+   "capacity": 52000,
+   "home": "CRI",
+   "away": "TUR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-BELOZOGLU",
+     "name": "Emre Belözoğlu",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2002-PARKS",
+     "name": "Winston Parks",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-29",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-09",
+   "stadium": "International Stadium Yokohama",
+   "city": "Yokohama",
+   "capacity": 72000,
+   "home": "JPN",
+   "away": "RUS",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2002-INAMOTO",
+     "name": "Inamoto Junichi",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-30",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-10",
+   "stadium": "Daegu World Cup Stadium",
+   "city": "Daegu",
+   "capacity": 68000,
+   "home": "KOR",
+   "away": "USA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2002-MATHIS",
+     "name": "Clint Mathis",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-AHN",
+     "name": "Ahn Jung-hwan",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-31",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-10",
+   "stadium": "Ōita Stadium",
+   "city": "Ōita",
+   "capacity": 43000,
+   "home": "TUN",
+   "away": "BEL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2002-WILMOTS",
+     "name": "Marc Wilmots",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-2002-BOUZAIENE",
+     "name": "Raouf Bouzaiene",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-32",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-10",
+   "stadium": "Jeonju World Cup Stadium",
+   "city": "Jeonju",
+   "capacity": 42000,
+   "home": "PRT",
+   "away": "POL",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2002-PAULETA",
+     "name": "Pauleta",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2002-PAULETA",
+     "name": "Pauleta",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2002-PAULETA",
+     "name": "Pauleta",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2002-COSTARUI",
+     "name": "Rui Costa",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-33",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-06-11",
+   "stadium": "Incheon Munhak Stadium",
+   "city": "Incheon",
+   "capacity": 52000,
+   "home": "DNK",
+   "away": "FRA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-2002-ROMMEDAHL",
+     "name": "Dennis Rommedahl",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2002-TOMASSON",
+     "name": "Jon Dahl Tomasson",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-34",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2002-06-11",
+   "stadium": "Suwon World Cup Stadium",
+   "city": "Suwon",
+   "capacity": 43000,
+   "home": "SEN",
+   "away": "URY",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "SEN-2002-FADIGA",
+     "name": "Khalilou Fadiga",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2002-DIOP",
+     "name": "Papa Bouba Diop",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2002-DIOP",
+     "name": "Papa Bouba Diop",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2002-MORALES",
+     "name": "Richard Morales",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2002-FORLAN",
+     "name": "Diego Forlán",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2002-RECOBA",
+     "name": "Álvaro Recoba",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-35",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-11",
+   "stadium": "Shizuoka Stadium ECOPA",
+   "city": "Shizuoka",
+   "capacity": 51000,
+   "home": "CMR",
+   "away": "DEU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-BODE",
+     "name": "Marco Bode",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2002-KLOSE",
+     "name": "Miroslav Klose",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-36",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2002-06-11",
+   "stadium": "International Stadium Yokohama",
+   "city": "Yokohama",
+   "capacity": 72000,
+   "home": "SAU",
+   "away": "IRL",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "IRL",
+     "player": "IRL-2002-KEANEROB",
+     "name": "Robbie Keane",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-2002-BREEN",
+     "name": "Gary Breen",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-2002-DUFF",
+     "name": "Damien Duff",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-37",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-12",
+   "stadium": "Nagai Stadium",
+   "city": "Osaka",
+   "capacity": 50000,
+   "home": "NGA",
+   "away": "ENG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2002-38",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2002-06-12",
+   "stadium": "Miyagi Stadium",
+   "city": "Miyagi",
+   "capacity": 49000,
+   "home": "SWE",
+   "away": "ARG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2002-SVENSSONAND",
+     "name": "Anders Svensson",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2002-CRESPO",
+     "name": "Hernán Crespo",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-39",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-12",
+   "stadium": "Jeju World Cup Stadium",
+   "city": "Seogwipo",
+   "capacity": 42000,
+   "home": "SVN",
+   "away": "PRY",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SVN",
+     "player": "SVN-2002-ACIMOVIC",
+     "name": "Milenko Ačimovič",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2002-CUEVAS",
+     "name": "Nelson Cuevas",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2002-CAMPOS",
+     "name": "Jorge Luis Campos",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-2002-CUEVAS",
+     "name": "Nelson Cuevas",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-40",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2002-06-12",
+   "stadium": "Daejeon World Cup Stadium",
+   "city": "Daejeon",
+   "capacity": 40000,
+   "home": "ZAF",
+   "away": "ESP",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2002-RAUL",
+     "name": "Raúl",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-2002-MCCARTHY",
+     "name": "Benni McCarthy",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-MENDIETA",
+     "name": "Gaizka Mendieta",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-2002-RADEBE",
+     "name": "Lucas Radebe",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2002-RAUL",
+     "name": "Raúl",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-41",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-13",
+   "stadium": "Suwon World Cup Stadium",
+   "city": "Suwon",
+   "capacity": 43000,
+   "home": "CRI",
+   "away": "BRA",
+   "score": [
+    2,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-EDMILSON",
+     "name": "Edmílson",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2002-WANCHOPE",
+     "name": "Paulo Wanchope",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2002-GOMEZ",
+     "name": "Rónald Gómez",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-JUNIORX",
+     "name": "Júnior",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-42",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2002-06-13",
+   "stadium": "Seoul World Cup Stadium",
+   "city": "Seoul",
+   "capacity": 64000,
+   "home": "TUR",
+   "away": "CHN",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-SAS",
+     "name": "Hasan Şaş",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-2002-KORKMAZ",
+     "name": "Bülent Korkmaz",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-2002-DAVALA",
+     "name": "Ümit Davala",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-43",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-13",
+   "stadium": "International Stadium Yokohama",
+   "city": "Yokohama",
+   "capacity": 72000,
+   "home": "ECU",
+   "away": "HRV",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2002-MENDEZ",
+     "name": "Édison Méndez",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-44",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2002-06-13",
+   "stadium": "Ōita Stadium",
+   "city": "Ōita",
+   "capacity": 43000,
+   "home": "MEX",
+   "away": "ITA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2002-BORGETTI",
+     "name": "Jared Borgetti",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-2002-DELPIERO",
+     "name": "Alessandro Del Piero",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-45",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-14",
+   "stadium": "Shizuoka Stadium ECOPA",
+   "city": "Shizuoka",
+   "capacity": 51000,
+   "home": "BEL",
+   "away": "RUS",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2002-WALEM",
+     "name": "Johan Walem",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2002-BESCHASTNYKH",
+     "name": "Vladimir Beschastnykh",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2002-SONCK",
+     "name": "Wesley Sonck",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-2002-WILMOTS",
+     "name": "Marc Wilmots",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "RUS",
+     "player": "RUS-2002-SYCHEV",
+     "name": "Dmitri Sychev",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-46",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2002-06-14",
+   "stadium": "Nagai Stadium",
+   "city": "Osaka",
+   "capacity": 50000,
+   "home": "TUN",
+   "away": "JPN",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2002-MORISHIMA",
+     "name": "Morishima Hiroaki",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2002-NAKATA",
+     "name": "Nakata Hidetoshi",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-47",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-14",
+   "stadium": "Daejeon World Cup Stadium",
+   "city": "Daejeon",
+   "capacity": 40000,
+   "home": "POL",
+   "away": "USA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-2002-OLISADEBE",
+     "name": "Emmanuel Olisadebe",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2002-KRYSZALOWICZ",
+     "name": "Paweł Kryszałowicz",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2002-ZEWLAKOWMAR",
+     "name": "Marcin Żewłakow",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2002-DONOVAN",
+     "name": "Landon Donovan",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-48",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2002-06-14",
+   "stadium": "Incheon Munhak Stadium",
+   "city": "Incheon",
+   "capacity": 52000,
+   "home": "PRT",
+   "away": "KOR",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-2002-PARK",
+     "name": "Park Ji-sung",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-15",
+   "stadium": "Jeju World Cup Stadium",
+   "city": "Seogwipo",
+   "capacity": 42000,
+   "home": "DEU",
+   "away": "PRY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-NEUVILLE",
+     "name": "Oliver Neuville",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-15",
+   "stadium": "Niigata Stadium",
+   "city": "Niigata",
+   "capacity": 42000,
+   "home": "DNK",
+   "away": "ENG",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2002-FERDINAND",
+     "name": "Rio Ferdinand",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2002-OWEN",
+     "name": "Michael Owen",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2002-HESKEY",
+     "name": "Emile Heskey",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-16",
+   "stadium": "Ōita Stadium",
+   "city": "Ōita",
+   "capacity": 43000,
+   "home": "SWE",
+   "away": "SEN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-2002-LARSSON",
+     "name": "Henrik Larsson",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2002-CAMARA",
+     "name": "Henri Camara",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2002-CAMARA",
+     "name": "Henri Camara",
+     "minute": "104'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-16",
+   "stadium": "Suwon World Cup Stadium",
+   "city": "Suwon",
+   "capacity": 43000,
+   "home": "ESP",
+   "away": "IRL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    2
+   ],
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2002-MORIENTES",
+     "name": "Fernando Morientes",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRL",
+     "player": "IRL-2002-KEANEROB",
+     "name": "Robbie Keane",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-17",
+   "stadium": "Jeonju World Cup Stadium",
+   "city": "Jeonju",
+   "capacity": 42000,
+   "home": "MEX",
+   "away": "USA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2002-MCBRIDE",
+     "name": "Brian McBride",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2002-DONOVAN",
+     "name": "Landon Donovan",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-17",
+   "stadium": "Kobe Wing Stadium",
+   "city": "Kobe",
+   "capacity": 42000,
+   "home": "BRA",
+   "away": "BEL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-18",
+   "stadium": "Miyagi Stadium",
+   "city": "Miyagi",
+   "capacity": 49000,
+   "home": "JPN",
+   "away": "TUR",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-DAVALA",
+     "name": "Ümit Davala",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2002-06-18",
+   "stadium": "Daejeon World Cup Stadium",
+   "city": "Daejeon",
+   "capacity": 40000,
+   "home": "KOR",
+   "away": "ITA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-2002-VIERI",
+     "name": "Christian Vieri",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-SEOL",
+     "name": "Seol Ki-hyeon",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-AHN",
+     "name": "Ahn Jung-hwan",
+     "minute": "117'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2002-06-21",
+   "stadium": "Shizuoka Stadium ECOPA",
+   "city": "Shizuoka",
+   "capacity": 51000,
+   "home": "ENG",
+   "away": "BRA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2002-OWEN",
+     "name": "Michael Owen",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDINHO",
+     "name": "Ronaldinho",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2002-06-21",
+   "stadium": "Ulsan Munsu Football Stadium",
+   "city": "Ulsan",
+   "capacity": 44000,
+   "home": "DEU",
+   "away": "USA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-BALLACK",
+     "name": "Michael Ballack",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2002-06-22",
+   "stadium": "Gwangju World Cup Stadium",
+   "city": "Gwangju",
+   "capacity": 43000,
+   "home": "ESP",
+   "away": "KOR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    5
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2002-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2002-06-22",
+   "stadium": "Nagai Stadium",
+   "city": "Osaka",
+   "capacity": 50000,
+   "home": "SEN",
+   "away": "TUR",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-MANSZ",
+     "name": "İlhan Mansız",
+     "minute": "94'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2002-06-25",
+   "stadium": "Seoul World Cup Stadium",
+   "city": "Seoul",
+   "capacity": 64000,
+   "home": "DEU",
+   "away": "KOR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2002-BALLACK",
+     "name": "Michael Ballack",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2002-06-26",
+   "stadium": "Saitama Stadium",
+   "city": "Saitama",
+   "capacity": 63000,
+   "home": "BRA",
+   "away": "TUR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2002-06-29",
+   "stadium": "Daegu World Cup Stadium",
+   "city": "Daegu",
+   "capacity": 68000,
+   "home": "KOR",
+   "away": "TUR",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-2002-SUKUR",
+     "name": "Hakan Şükür",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-LEEEUL",
+     "name": "Lee Eul-yong",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-2002-MANSZ",
+     "name": "İlhan Mansız",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-2002-MANSZ",
+     "name": "İlhan Mansız",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2002-SONG",
+     "name": "Song Chong-gug",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2002-64",
+   "stage": "final",
+   "group": null,
+   "date": "2002-06-30",
+   "stadium": "International Stadium Yokohama",
+   "city": "Yokohama",
+   "capacity": 72000,
+   "home": "DEU",
+   "away": "BRA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2002-RONALDO",
+     "name": "Ronaldo",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

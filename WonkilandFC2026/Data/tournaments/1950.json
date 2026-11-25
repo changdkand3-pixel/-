@@ -1,0 +1,1317 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1950",
+ "year": 1950,
+ "name": "1950 FIFA Men's World Cup",
+ "host_country": "Brazil",
+ "winner": "Uruguay",
+ "start_date": "1950-06-24",
+ "end_date": "1950-07-16",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "BOL",
+   "fifa_code": "BOL",
+   "name_en": "Bolivia",
+   "name_ko": "볼리비아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 1",
+   "finish": 2
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group 2",
+   "finish": 4
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group 3",
+   "finish": 3
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 4",
+   "finish": 1
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 1",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "URY"
+  },
+  {
+   "position": 2,
+   "team": "BRA"
+  },
+  {
+   "position": 3,
+   "team": "SWE"
+  },
+  {
+   "position": 4,
+   "team": "ESP"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "BRA-1950-ADEMIR",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "URY-1950-MIGUEZ",
+   "team": "URY"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "ESP-1950-BASORA",
+   "team": "ESP"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "BRA-1950-CHICO",
+   "team": "BRA"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "URY-1950-GHIGGIA",
+   "team": "URY"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "ESP-1950-ZARRA",
+   "team": "ESP"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1950-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-06-24",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "BRA",
+   "away": "MEX",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-JAIR",
+     "name": "Jair",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-BALTAZAR",
+     "name": "Baltazar",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-06-25",
+   "stadium": "Estádio Independência",
+   "city": "Belo Horizonte",
+   "capacity": 30000,
+   "home": "YUG",
+   "away": "CHE",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1950-MITIC",
+     "name": "Rajko Mitić",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1950-TOMASEVIC",
+     "name": "Kosta Tomašević",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1950-OGNJANOV",
+     "name": "Tihomir Ognjanov",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-03",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-06-25",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ENG",
+   "away": "CHL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1950-MORTENSEN",
+     "name": "Stan Mortensen",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1950-MANNION",
+     "name": "Wilf Mannion",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-04",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-06-25",
+   "stadium": "Estádio Vila Capanema",
+   "city": "Curitiba",
+   "capacity": 10000,
+   "home": "ESP",
+   "away": "USA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-1950-PARIANI",
+     "name": "Gino Pariani",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-IGOA",
+     "name": "Silvestre Igoa",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-BASORA",
+     "name": "Estanislau Basora",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-ZARRA",
+     "name": "Telmo Zarra",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-05",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1950-06-25",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "SWE",
+   "away": "ITA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1950-CARAPELLESE",
+     "name": "Riccardo Carapellese",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-JEPPSON",
+     "name": "Hasse Jeppson",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-ANDERSSON",
+     "name": "Sune Andersson",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-JEPPSON",
+     "name": "Hasse Jeppson",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1950-MUCCINELLI",
+     "name": "Ermes Muccinelli",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-06",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-06-28",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "BRA",
+   "away": "CHE",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ALFREDO",
+     "name": "Alfredo",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1950-FATTON",
+     "name": "Jacques Fatton",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-BALTAZAR",
+     "name": "Baltazar",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1950-FATTON",
+     "name": "Jacques Fatton",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-07",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-06-28",
+   "stadium": "Estádio dos Eucaliptos",
+   "city": "Porto Alegre",
+   "capacity": 20000,
+   "home": "YUG",
+   "away": "MEX",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1950-BOBEK",
+     "name": "Stjepan Bobek",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1950-CAJKOVSKI",
+     "name": "Željko Čajkovski",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1950-CAJKOVSKI",
+     "name": "Željko Čajkovski",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1950-TOMASEVIC",
+     "name": "Kosta Tomašević",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1950-ORTIZ",
+     "name": "Héctor Ortiz",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-08",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-06-29",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ESP",
+   "away": "CHL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1950-BASORA",
+     "name": "Estanislau Basora",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-ZARRA",
+     "name": "Telmo Zarra",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-09",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-06-29",
+   "stadium": "Estádio Independência",
+   "city": "Belo Horizonte",
+   "capacity": 30000,
+   "home": "USA",
+   "away": "ENG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-1950-GAETJENS",
+     "name": "Joe Gaetjens",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-10",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1950-06-29",
+   "stadium": "Estádio Vila Capanema",
+   "city": "Curitiba",
+   "capacity": 10000,
+   "home": "SWE",
+   "away": "PRY",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1950-SUNDQVIST",
+     "name": "Stig Sundqvist",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-PALMER",
+     "name": "Karl-Erik Palmér",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1950-LOPEZ",
+     "name": "Atilio López",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1950-FRETES",
+     "name": "César López Fretes",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-11",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-07-01",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "BRA",
+   "away": "YUG",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ZIZINHO",
+     "name": "Zizinho",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-12",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-07-02",
+   "stadium": "Estádio Ilha do Retiro",
+   "city": "Recife",
+   "capacity": 30000,
+   "home": "CHL",
+   "away": "USA",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1950-ROBLEDO",
+     "name": "George Robledo",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1950-CREMASCHI",
+     "name": "Atilio Cremaschi",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1950-WALLACE",
+     "name": "Frank Wallace",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1950-MACA",
+     "name": "Joe Maca",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1950-PRIETO",
+     "name": "Andrés Prieto",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1950-CREMASCHI",
+     "name": "Atilio Cremaschi",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1950-RIERA",
+     "name": "Fernando Riera",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-13",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1950-07-02",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "ESP",
+   "away": "ENG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1950-ZARRA",
+     "name": "Telmo Zarra",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1950-07-02",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "PRY",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1950-CARAPELLESE",
+     "name": "Riccardo Carapellese",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1950-PANDOLFINI",
+     "name": "Egisto Pandolfini",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1950-07-02",
+   "stadium": "Estádio Independência",
+   "city": "Belo Horizonte",
+   "capacity": 30000,
+   "home": "URY",
+   "away": "BOL",
+   "score": [
+    8,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1950-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-VIDAL",
+     "name": "Ernesto Vidal",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-SCHIAFFINO",
+     "name": "Juan Alberto Schiaffino",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-SCHIAFFINO",
+     "name": "Juan Alberto Schiaffino",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-PEREZ",
+     "name": "Julio Pérez",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-GHIGGIA",
+     "name": "Alcides Ghiggia",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-16",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1950-07-02",
+   "stadium": "Estádio dos Eucaliptos",
+   "city": "Porto Alegre",
+   "capacity": 20000,
+   "home": "CHE",
+   "away": "MEX",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1950-BADER",
+     "name": "René Bader",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1950-ANTENEN",
+     "name": "Charles Antenen",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1950-CASARIN",
+     "name": "Horacio Casarín",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-17",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-09",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "BRA",
+   "away": "SWE",
+   "score": [
+    7,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-CHICO",
+     "name": "Chico",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-ANDERSSON",
+     "name": "Sune Andersson",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-MANECA",
+     "name": "Maneca",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-CHICO",
+     "name": "Chico",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-18",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-09",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "URY",
+   "away": "ESP",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1950-GHIGGIA",
+     "name": "Alcides Ghiggia",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-BASORA",
+     "name": "Estanislau Basora",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-BASORA",
+     "name": "Estanislau Basora",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-VARELA",
+     "name": "Obdulio Varela",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-19",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-13",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "BRA",
+   "away": "ESP",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-JAIR",
+     "name": "Jair",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-CHICO",
+     "name": "Chico",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-CHICO",
+     "name": "Chico",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ADEMIR",
+     "name": "Ademir",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1950-ZIZINHO",
+     "name": "Zizinho",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-IGOA",
+     "name": "Silvestre Igoa",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-20",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-13",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "URY",
+   "away": "SWE",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1950-PALMER",
+     "name": "Karl-Erik Palmér",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-GHIGGIA",
+     "name": "Alcides Ghiggia",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-SUNDQVIST",
+     "name": "Stig Sundqvist",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-21",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-16",
+   "stadium": "Estádio do Pacaembu",
+   "city": "São Paulo",
+   "capacity": 60000,
+   "home": "SWE",
+   "away": "ESP",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1950-SUNDQVIST",
+     "name": "Stig Sundqvist",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-MELLBERG",
+     "name": "Bror Mellberg",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1950-PALMER",
+     "name": "Karl-Erik Palmér",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1950-ZARRA",
+     "name": "Telmo Zarra",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1950-22",
+   "stage": "final round",
+   "group": null,
+   "date": "1950-07-16",
+   "stadium": "Estádio do Maracanã",
+   "city": "Rio de Janeiro",
+   "capacity": 200000,
+   "home": "URY",
+   "away": "BRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1950-FRIACA",
+     "name": "Friaça",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-SCHIAFFINO",
+     "name": "Juan Alberto Schiaffino",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1950-GHIGGIA",
+     "name": "Alcides Ghiggia",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

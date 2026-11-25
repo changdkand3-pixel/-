@@ -1,0 +1,802 @@
+{
+ "schema": "wfc.curated.v1",
+ "note": "사람이 직접 입력한 보정값. 원본 데이터셋 값 위에 덮어씀. 능력치는 추정치.",
+ "squads": [
+  {
+   "team_id": "URY",
+   "tournament_year": 1930,
+   "coaches_ko": [
+    "알베르토 수피시"
+   ],
+   "lineup": [
+    {
+     "family": "Ballesteros",
+     "given": null
+    },
+    {
+     "family": "Nasazzi",
+     "given": null
+    },
+    {
+     "family": "Mascheroni",
+     "given": null
+    },
+    {
+     "family": "Andrade",
+     "given": null
+    },
+    {
+     "family": "Fernández",
+     "given": null
+    },
+    {
+     "family": "Gestido",
+     "given": null
+    },
+    {
+     "family": "Dorado",
+     "given": null
+    },
+    {
+     "family": "Scarone",
+     "given": null
+    },
+    {
+     "family": "Castro",
+     "given": null
+    },
+    {
+     "family": "Cea",
+     "given": null
+    },
+    {
+     "family": "Iriarte",
+     "given": null
+    }
+   ],
+   "lineup_source": "1930 결승 선발 (needs_citation)",
+   "players": [
+    {
+     "match": {
+      "family": "Ballesteros",
+      "given": null
+     },
+     "name_en": "Enrique Ballestrero",
+     "name_ko": "엔리케 바예스트레로",
+     "captain": false,
+     "position_role_1930": "Goalkeeper",
+     "ratings": {
+      "overall": 80,
+      "speed": 55,
+      "acceleration": 60,
+      "shooting": 20,
+      "finishing": 15,
+      "long_shots": 15,
+      "passing": 45,
+      "dribbling": 30,
+      "ball_control": 50,
+      "skill_moves": 30,
+      "heading": 40,
+      "defending": 30,
+      "tackling": 25,
+      "physical": 72,
+      "stamina": 70,
+      "jumping": 78,
+      "free_kick": 20,
+      "penalty": 25,
+      "goalkeeping": 80
+     },
+     "name_note": "출처 간 표기 차이: 'Ballesteros'(Fjelstul DB) / 'Ballestrero'(널리 쓰이는 표기). 확인 필요"
+    },
+    {
+     "match": {
+      "family": "Nasazzi",
+      "given": null
+     },
+     "name_en": "José Nasazzi",
+     "name_ko": "호세 나사시",
+     "captain": true,
+     "position_role_1930": "Right back",
+     "ratings": {
+      "overall": 86,
+      "speed": 72,
+      "acceleration": 72,
+      "shooting": 45,
+      "finishing": 40,
+      "long_shots": 50,
+      "passing": 70,
+      "dribbling": 60,
+      "ball_control": 72,
+      "skill_moves": 55,
+      "heading": 80,
+      "defending": 88,
+      "tackling": 87,
+      "physical": 85,
+      "stamina": 85,
+      "jumping": 76,
+      "free_kick": 60,
+      "penalty": 65,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Mascheroni",
+      "given": null
+     },
+     "name_en": "Ernesto Mascheroni",
+     "name_ko": "에르네스토 마스케로니",
+     "captain": false,
+     "position_role_1930": "Left back",
+     "ratings": {
+      "overall": 79,
+      "speed": 72,
+      "acceleration": 73,
+      "shooting": 40,
+      "finishing": 35,
+      "long_shots": 42,
+      "passing": 64,
+      "dribbling": 58,
+      "ball_control": 66,
+      "skill_moves": 50,
+      "heading": 74,
+      "defending": 80,
+      "tackling": 81,
+      "physical": 78,
+      "stamina": 80,
+      "jumping": 72,
+      "free_kick": 45,
+      "penalty": 50,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Andrade",
+      "given": null
+     },
+     "name_en": "José Leandro Andrade",
+     "name_ko": "호세 레안드로 안드라데",
+     "captain": false,
+     "position_role_1930": "Right half",
+     "ratings": {
+      "overall": 87,
+      "speed": 82,
+      "acceleration": 82,
+      "shooting": 55,
+      "finishing": 50,
+      "long_shots": 58,
+      "passing": 80,
+      "dribbling": 85,
+      "ball_control": 86,
+      "skill_moves": 80,
+      "heading": 75,
+      "defending": 84,
+      "tackling": 82,
+      "physical": 80,
+      "stamina": 88,
+      "jumping": 78,
+      "free_kick": 55,
+      "penalty": 55,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Fernández",
+      "given": null
+     },
+     "name_en": "Lorenzo Fernández",
+     "name_ko": "로렌소 페르난데스",
+     "captain": false,
+     "position_role_1930": "Centre half",
+     "ratings": {
+      "overall": 82,
+      "speed": 72,
+      "acceleration": 72,
+      "shooting": 55,
+      "finishing": 50,
+      "long_shots": 60,
+      "passing": 76,
+      "dribbling": 68,
+      "ball_control": 75,
+      "skill_moves": 60,
+      "heading": 78,
+      "defending": 80,
+      "tackling": 80,
+      "physical": 82,
+      "stamina": 85,
+      "jumping": 76,
+      "free_kick": 55,
+      "penalty": 55,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Gestido",
+      "given": null
+     },
+     "name_en": "Álvaro Gestido",
+     "name_ko": "알바로 헤스티도",
+     "captain": false,
+     "position_role_1930": "Left half",
+     "ratings": {
+      "overall": 81,
+      "speed": 74,
+      "acceleration": 74,
+      "shooting": 50,
+      "finishing": 45,
+      "long_shots": 52,
+      "passing": 74,
+      "dribbling": 68,
+      "ball_control": 74,
+      "skill_moves": 60,
+      "heading": 72,
+      "defending": 79,
+      "tackling": 79,
+      "physical": 78,
+      "stamina": 84,
+      "jumping": 72,
+      "free_kick": 50,
+      "penalty": 50,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Dorado",
+      "given": null
+     },
+     "name_en": "Pablo Dorado",
+     "name_ko": "파블로 도라도",
+     "captain": false,
+     "position_role_1930": "Outside right",
+     "ratings": {
+      "overall": 80,
+      "speed": 84,
+      "acceleration": 85,
+      "shooting": 76,
+      "finishing": 78,
+      "long_shots": 68,
+      "passing": 70,
+      "dribbling": 78,
+      "ball_control": 76,
+      "skill_moves": 72,
+      "heading": 62,
+      "defending": 35,
+      "tackling": 35,
+      "physical": 66,
+      "stamina": 80,
+      "jumping": 66,
+      "free_kick": 60,
+      "penalty": 65,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Scarone",
+      "given": null
+     },
+     "name_en": "Héctor Scarone",
+     "name_ko": "엑토르 스카로네",
+     "captain": false,
+     "position_role_1930": "Inside right",
+     "ratings": {
+      "overall": 87,
+      "speed": 78,
+      "acceleration": 80,
+      "shooting": 86,
+      "finishing": 87,
+      "long_shots": 82,
+      "passing": 82,
+      "dribbling": 85,
+      "ball_control": 86,
+      "skill_moves": 82,
+      "heading": 70,
+      "defending": 40,
+      "tackling": 40,
+      "physical": 70,
+      "stamina": 82,
+      "jumping": 70,
+      "free_kick": 82,
+      "penalty": 80,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Castro",
+      "given": null
+     },
+     "name_en": "Héctor Castro",
+     "name_ko": "엑토르 카스트로",
+     "captain": false,
+     "position_role_1930": "Centre forward",
+     "ratings": {
+      "overall": 84,
+      "speed": 78,
+      "acceleration": 79,
+      "shooting": 83,
+      "finishing": 86,
+      "long_shots": 72,
+      "passing": 66,
+      "dribbling": 74,
+      "ball_control": 76,
+      "skill_moves": 70,
+      "heading": 80,
+      "defending": 38,
+      "tackling": 40,
+      "physical": 82,
+      "stamina": 80,
+      "jumping": 80,
+      "free_kick": 55,
+      "penalty": 70,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Cea",
+      "given": null
+     },
+     "name_en": "Pedro Cea",
+     "name_ko": "페드로 세아",
+     "captain": false,
+     "position_role_1930": "Inside left",
+     "ratings": {
+      "overall": 86,
+      "speed": 77,
+      "acceleration": 78,
+      "shooting": 84,
+      "finishing": 86,
+      "long_shots": 76,
+      "passing": 80,
+      "dribbling": 82,
+      "ball_control": 84,
+      "skill_moves": 78,
+      "heading": 72,
+      "defending": 40,
+      "tackling": 40,
+      "physical": 74,
+      "stamina": 82,
+      "jumping": 72,
+      "free_kick": 70,
+      "penalty": 75,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Iriarte",
+      "given": null
+     },
+     "name_en": "Santos Iriarte",
+     "name_ko": "산토스 이리아르테",
+     "captain": false,
+     "position_role_1930": "Outside left",
+     "ratings": {
+      "overall": 81,
+      "speed": 83,
+      "acceleration": 84,
+      "shooting": 78,
+      "finishing": 80,
+      "long_shots": 78,
+      "passing": 70,
+      "dribbling": 78,
+      "ball_control": 77,
+      "skill_moves": 72,
+      "heading": 60,
+      "defending": 35,
+      "tackling": 35,
+      "physical": 68,
+      "stamina": 80,
+      "jumping": 64,
+      "free_kick": 62,
+      "penalty": 65,
+      "goalkeeping": 10
+     }
+    }
+   ]
+  },
+  {
+   "team_id": "ARG",
+   "tournament_year": 1930,
+   "coaches_ko": [
+    "프란시스코 올라사르",
+    "후안 호세 트라무톨라"
+   ],
+   "lineup": [
+    {
+     "family": "Botasso",
+     "given": null
+    },
+    {
+     "family": "Della Torre",
+     "given": null
+    },
+    {
+     "family": "Paternoster",
+     "given": null
+    },
+    {
+     "family": "Evaristo",
+     "given": "Juan"
+    },
+    {
+     "family": "Monti",
+     "given": null
+    },
+    {
+     "family": "Suárez",
+     "given": null
+    },
+    {
+     "family": "Peucelle",
+     "given": null
+    },
+    {
+     "family": "Varallo",
+     "given": null
+    },
+    {
+     "family": "Stábile",
+     "given": null
+    },
+    {
+     "family": "Ferreira",
+     "given": null
+    },
+    {
+     "family": "Evaristo",
+     "given": "Mario"
+    }
+   ],
+   "lineup_source": "1930 결승 선발 (needs_citation)",
+   "players": [
+    {
+     "match": {
+      "family": "Botasso",
+      "given": null
+     },
+     "name_en": "Juan Botasso",
+     "name_ko": "후안 보타소",
+     "captain": false,
+     "position_role_1930": "Goalkeeper",
+     "ratings": {
+      "overall": 77,
+      "speed": 55,
+      "acceleration": 60,
+      "shooting": 20,
+      "finishing": 15,
+      "long_shots": 15,
+      "passing": 45,
+      "dribbling": 30,
+      "ball_control": 48,
+      "skill_moves": 30,
+      "heading": 40,
+      "defending": 30,
+      "tackling": 25,
+      "physical": 70,
+      "stamina": 70,
+      "jumping": 76,
+      "free_kick": 20,
+      "penalty": 25,
+      "goalkeeping": 77
+     }
+    },
+    {
+     "match": {
+      "family": "Della Torre",
+      "given": null
+     },
+     "name_en": "José Della Torre",
+     "name_ko": "호세 델라 토레",
+     "captain": false,
+     "position_role_1930": "Right back",
+     "ratings": {
+      "overall": 78,
+      "speed": 70,
+      "acceleration": 71,
+      "shooting": 40,
+      "finishing": 35,
+      "long_shots": 42,
+      "passing": 62,
+      "dribbling": 56,
+      "ball_control": 64,
+      "skill_moves": 50,
+      "heading": 74,
+      "defending": 79,
+      "tackling": 80,
+      "physical": 78,
+      "stamina": 80,
+      "jumping": 72,
+      "free_kick": 45,
+      "penalty": 50,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Paternoster",
+      "given": null
+     },
+     "name_en": "Fernando Paternoster",
+     "name_ko": "페르난도 파테르노스테르",
+     "captain": false,
+     "position_role_1930": "Left back",
+     "ratings": {
+      "overall": 80,
+      "speed": 71,
+      "acceleration": 71,
+      "shooting": 42,
+      "finishing": 36,
+      "long_shots": 45,
+      "passing": 64,
+      "dribbling": 58,
+      "ball_control": 66,
+      "skill_moves": 50,
+      "heading": 76,
+      "defending": 81,
+      "tackling": 82,
+      "physical": 80,
+      "stamina": 80,
+      "jumping": 74,
+      "free_kick": 48,
+      "penalty": 50,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Evaristo",
+      "given": "Juan"
+     },
+     "name_en": "Juan Evaristo",
+     "name_ko": "후안 에바리스토",
+     "captain": false,
+     "position_role_1930": "Right half",
+     "ratings": {
+      "overall": 78,
+      "speed": 72,
+      "acceleration": 72,
+      "shooting": 48,
+      "finishing": 44,
+      "long_shots": 50,
+      "passing": 70,
+      "dribbling": 64,
+      "ball_control": 70,
+      "skill_moves": 56,
+      "heading": 70,
+      "defending": 77,
+      "tackling": 78,
+      "physical": 76,
+      "stamina": 82,
+      "jumping": 70,
+      "free_kick": 46,
+      "penalty": 48,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Monti",
+      "given": null
+     },
+     "name_en": "Luis Monti",
+     "name_ko": "루이스 몬티",
+     "captain": false,
+     "position_role_1930": "Centre half",
+     "ratings": {
+      "overall": 87,
+      "speed": 72,
+      "acceleration": 72,
+      "shooting": 65,
+      "finishing": 60,
+      "long_shots": 70,
+      "passing": 82,
+      "dribbling": 72,
+      "ball_control": 82,
+      "skill_moves": 66,
+      "heading": 80,
+      "defending": 86,
+      "tackling": 88,
+      "physical": 90,
+      "stamina": 88,
+      "jumping": 78,
+      "free_kick": 65,
+      "penalty": 65,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Suárez",
+      "given": null
+     },
+     "name_en": "Pedro Arico Suárez",
+     "name_ko": "페드로 아리코 수아레스",
+     "captain": false,
+     "position_role_1930": "Left half",
+     "ratings": {
+      "overall": 78,
+      "speed": 72,
+      "acceleration": 72,
+      "shooting": 48,
+      "finishing": 44,
+      "long_shots": 50,
+      "passing": 70,
+      "dribbling": 64,
+      "ball_control": 70,
+      "skill_moves": 56,
+      "heading": 70,
+      "defending": 77,
+      "tackling": 78,
+      "physical": 76,
+      "stamina": 82,
+      "jumping": 70,
+      "free_kick": 46,
+      "penalty": 48,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Peucelle",
+      "given": null
+     },
+     "name_en": "Carlos Peucelle",
+     "name_ko": "카를로스 페우셀레",
+     "captain": false,
+     "position_role_1930": "Outside right",
+     "ratings": {
+      "overall": 82,
+      "speed": 84,
+      "acceleration": 85,
+      "shooting": 78,
+      "finishing": 79,
+      "long_shots": 74,
+      "passing": 74,
+      "dribbling": 82,
+      "ball_control": 80,
+      "skill_moves": 78,
+      "heading": 62,
+      "defending": 36,
+      "tackling": 36,
+      "physical": 68,
+      "stamina": 82,
+      "jumping": 64,
+      "free_kick": 62,
+      "penalty": 65,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Varallo",
+      "given": null
+     },
+     "name_en": "Francisco Varallo",
+     "name_ko": "프란시스코 바라요",
+     "captain": false,
+     "position_role_1930": "Inside right",
+     "ratings": {
+      "overall": 81,
+      "speed": 79,
+      "acceleration": 80,
+      "shooting": 82,
+      "finishing": 82,
+      "long_shots": 80,
+      "passing": 72,
+      "dribbling": 76,
+      "ball_control": 77,
+      "skill_moves": 72,
+      "heading": 68,
+      "defending": 36,
+      "tackling": 38,
+      "physical": 72,
+      "stamina": 80,
+      "jumping": 70,
+      "free_kick": 66,
+      "penalty": 70,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Stábile",
+      "given": null
+     },
+     "name_en": "Guillermo Stábile",
+     "name_ko": "기예르모 스타빌레",
+     "captain": false,
+     "position_role_1930": "Centre forward",
+     "ratings": {
+      "overall": 86,
+      "speed": 82,
+      "acceleration": 83,
+      "shooting": 86,
+      "finishing": 89,
+      "long_shots": 78,
+      "passing": 70,
+      "dribbling": 80,
+      "ball_control": 82,
+      "skill_moves": 76,
+      "heading": 78,
+      "defending": 36,
+      "tackling": 38,
+      "physical": 74,
+      "stamina": 82,
+      "jumping": 76,
+      "free_kick": 62,
+      "penalty": 75,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Ferreira",
+      "given": null
+     },
+     "name_en": "Manuel Ferreira",
+     "name_ko": "마누엘 페레이라",
+     "captain": true,
+     "position_role_1930": "Inside left",
+     "ratings": {
+      "overall": 84,
+      "speed": 76,
+      "acceleration": 77,
+      "shooting": 82,
+      "finishing": 82,
+      "long_shots": 78,
+      "passing": 82,
+      "dribbling": 80,
+      "ball_control": 83,
+      "skill_moves": 78,
+      "heading": 68,
+      "defending": 38,
+      "tackling": 40,
+      "physical": 70,
+      "stamina": 82,
+      "jumping": 68,
+      "free_kick": 72,
+      "penalty": 75,
+      "goalkeeping": 10
+     }
+    },
+    {
+     "match": {
+      "family": "Evaristo",
+      "given": "Mario"
+     },
+     "name_en": "Mario Evaristo",
+     "name_ko": "마리오 에바리스토",
+     "captain": false,
+     "position_role_1930": "Outside left",
+     "ratings": {
+      "overall": 79,
+      "speed": 82,
+      "acceleration": 83,
+      "shooting": 74,
+      "finishing": 75,
+      "long_shots": 70,
+      "passing": 70,
+      "dribbling": 77,
+      "ball_control": 75,
+      "skill_moves": 72,
+      "heading": 60,
+      "defending": 35,
+      "tackling": 35,
+      "physical": 66,
+      "stamina": 80,
+      "jumping": 62,
+      "free_kick": 58,
+      "penalty": 60,
+      "goalkeeping": 10
+     }
+    }
+   ]
+  }
+ ]
+}

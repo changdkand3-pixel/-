@@ -19,13 +19,15 @@
   </div>
   <nav class="menu" id="mainMenu">
     <button data-act="final1930" class="primary">▶ 테스트 경기: 1930 결승 우루과이 vs 아르헨티나</button>
+    <button data-act="builder">★ 드림팀 만들기 (1930–2022 선수 10,973명)</button>
+    <button data-act="history">역대 월드컵 경기 재현</button>
     <button data-act="modes">게임 모드</button>
-    <button data-act="draw">1930 월드컵 조 추첨식</button>
+    <button data-act="draw">월드컵 조 추첨식</button>
     <button data-act="editor">선수 및 팀 편집</button>
     <button data-act="settings">설정 / 음악</button>
     <button data-act="help">조작법</button>
   </nav>
-  <div class="footer">프로토타입 v0.1 · 절차적 저폴리 그래픽 (실사 그래픽은 UE5 단계 목표) · <span id="padInfo"></span></div>
+  <div class="footer">선수 데이터: Fjelstul World Cup Database (CC-BY-SA 4.0) · 프로토타입 v0.2 · 절차적 저폴리 그래픽 (실사 그래픽은 UE5 단계 목표) · <span id="padInfo"></span></div>
 </section>
 
 <!-- 게임 모드 -->
@@ -36,19 +38,77 @@
 </section>
 
 <!-- 경기 설정 -->
-<section id="setup" class="screen panel hidden">
+<section id="setup" class="screen panel hidden wide">
   <h2 id="setupTitle">경기 설정</h2>
+  <div class="pickers"><div class="picker" id="pk0"><h3>홈 팀</h3>
+      <select class="pkType"><option value="national">역대 국가대표</option><option value="dream">내 드림팀</option></select>
+      <select class="pkYear"></select><select class="pkTeam"></select><select class="pkDream"></select>
+      <div class="pkInfo note"></div></div><div class="vs">VS</div><div class="picker" id="pk1"><h3>원정 팀</h3>
+      <select class="pkType"><option value="national">역대 국가대표</option><option value="dream">내 드림팀</option></select>
+      <select class="pkYear"></select><select class="pkTeam"></select><select class="pkDream"></select>
+      <div class="pkInfo note"></div></div></div>
   <div class="form">
-    <label>내가 조작할 팀 <select id="optSide"><option value="0">우루과이 (홈)</option><option value="1">아르헨티나</option><option value="-1">관전 (AI vs AI)</option></select></label>
-    <label>규칙 <select id="optRules"><option value="historical_1930">역사 재현 (1930 규칙)</option><option value="modern">현대 축구 규칙</option></select></label>
+    <label>조작 <select id="optSide"><option value="0">홈 팀 조작</option><option value="1">원정 팀 조작</option><option value="-1">관전 (AI vs AI)</option></select></label>
+    <label>규칙 <select id="optRules"></select></label>
     <label>전·후반 길이 <select id="optHalf"><option value="120">2분</option><option value="180" selected>3분</option><option value="300">5분</option><option value="600">10분</option></select></label>
-    <label>시간대 <select id="optTime"><option value="day">주간</option><option value="dusk">해질녘</option><option value="night">야간 (1930 센테나리오엔 조명 없음)</option></select></label>
+    <label>시간대 <select id="optTime"><option value="day">주간</option><option value="dusk">해질녘</option><option value="night">야간</option></select></label>
     <label>날씨 <select id="optWeather"><option value="clear">맑음</option><option value="rain">비</option><option value="snow">눈</option></select></label>
-    <label>포메이션(우루과이) <select id="optF0"></select></label>
-    <label>포메이션(아르헨티나) <select id="optF1"></select></label>
+    <label>포메이션(홈) <select id="optF0"></select></label>
+    <label>포메이션(원정) <select id="optF1"></select></label>
     <label>오프닝/선수소개 연출 <select id="optIntro"><option value="1">보기</option><option value="0">건너뛰기</option></select></label>
   </div>
   <div class="row"><button class="primary" id="btnStart">경기 시작</button><button class="back" data-act="title">← 뒤로</button></div>
+</section>
+
+<!-- 드림팀 빌더 -->
+<section id="builder" class="screen panel hidden xwide">
+  <h2>드림팀 만들기 <small>1930–2022 월드컵 등록 선수 · 능력치는 기록 기반 <span class="est">추정치</span></small></h2>
+  <div class="bld">
+    <div class="bld-left">
+      <div class="row filters">
+        <input id="bQ" placeholder="선수 이름 검색 (영문/한글)">
+        <select id="bNation"></select><select id="bYear"></select>
+        <select id="bPos"><option value="">전체 포지션</option><option value="GK">골키퍼</option><option value="DF">수비수</option><option value="MF">미드필더</option><option value="FW">공격수</option></select>
+        <label class="chk"><input type="checkbox" id="bOne" checked> 같은 선수는 최고 버전만</label>
+      </div>
+      <div class="note" id="bHint">선수를 클릭하면 선택된 자리(없으면 같은 포지션 빈자리 → 후보)에 들어갑니다.</div>
+      <div class="tablewrap"><table id="bResults"></table></div>
+    </div>
+    <div class="bld-right">
+      <div class="row"><input id="bName" value="나의 드림팀" maxlength="20"><select id="bFormation"></select>
+        <select id="bKit"><option value="#d4af37">금색 유니폼</option><option value="#111111">검정</option><option value="#ffffff">흰색</option><option value="#c8102e">빨강</option><option value="#1d3a8a">파랑</option><option value="#1f7a3a">초록</option><option value="#6a2c91">보라</option></select></div>
+      <div id="bPitch" class="bpitch"></div>
+      <div class="note" id="bAvg"></div>
+      <h4>후보 <small class="note">(최대 12명, 클릭하면 제거)</small></h4><div id="bBench" class="benchrow"></div>
+      <div class="row"><button id="bAuto">자동 구성 (검색 조건 최고 능력치)</button><button id="bClear">비우기</button></div>
+      <div class="row"><button id="bSave">저장</button><select id="bSaved"></select><button id="bLoad">불러오기</button><button id="bDelete">삭제</button><button id="bExport">파일로 내보내기</button><label class="filebtn">파일 불러오기<input type="file" id="bImport" accept="application/json"></label></div>
+      <div class="row"><button class="primary" id="bPlay">이 팀으로 경기하기</button><button class="back" data-act="title">← 뒤로</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 역대 경기 재현 -->
+<section id="history" class="screen panel hidden wide">
+  <h2>역대 월드컵 경기 재현 <small>실제 대진 · 실제 선발(1970년 이후) · 해당 시대 규칙</small></h2>
+  <div class="row"><select id="hYear"></select><select id="hMatch"></select></div>
+  <div id="hInfo" class="note"></div>
+  <div class="form">
+    <label>조작 <select id="hSide"><option value="0">홈 팀 조작</option><option value="1">원정 팀 조작</option><option value="-1">관전 (AI vs AI)</option></select></label>
+    <label>전·후반 길이 <select id="hHalf"><option value="120">2분</option><option value="180" selected>3분</option><option value="300">5분</option></select></label>
+    <label>오프닝 연출 <select id="hIntro"><option value="1">보기</option><option value="0">건너뛰기</option></select></label>
+  </div>
+  <div class="row"><button class="primary" id="hStart">경기 시작</button><button class="back" data-act="title">← 뒤로</button></div>
+</section>
+
+<!-- 도장깨기 -->
+<section id="gauntlet" class="screen panel hidden wide">
+  <h2>역대 월드컵 도장깨기 <small>역대 우승팀을 1930년부터 차례로 격파</small></h2>
+  <div class="pickers"><div class="picker" id="pkG"><h3>내 팀</h3>
+      <select class="pkType"><option value="national">역대 국가대표</option><option value="dream">내 드림팀</option></select>
+      <select class="pkYear"></select><select class="pkTeam"></select><select class="pkDream"></select>
+      <div class="pkInfo note"></div></div></div>
+  <div id="gList" class="glist"></div>
+  <div class="row"><button class="primary" id="gNext">다음 상대와 경기</button><button id="gReset">처음부터 다시</button><button class="back" data-act="title">← 뒤로</button></div>
 </section>
 
 <!-- 설정/음악 -->
@@ -75,16 +135,17 @@
 <!-- 편집 -->
 <section id="editor" class="screen panel hidden wide">
   <h2>선수 및 팀 편집 <small>능력치는 모두 <span class="est">추정치</span> · 공식 기록 아님</small></h2>
-  <div class="row"><select id="edSquad"></select><button id="edExport">JSON 내보내기</button><button id="edReset">되돌리기</button></div>
+  <div class="row"><select id="edYear"></select><select id="edTeam"></select><button id="edExport">보정 파일 내보내기</button><button id="edReset">되돌리기</button></div>
   <div class="tablewrap"><table id="edTable"></table></div>
-  <p class="note">수정 내용은 이번 실행 중 경기에 즉시 반영됩니다. 영구 저장은 내보낸 JSON으로 <code>Data/players/</code> 파일을 교체한 뒤 <code>node Tools/build_data.js</code> 실행.</p>
+  <p class="note">한글 이름·능력치 수정은 이번 실행 중 즉시 반영됩니다. 영구 저장: 내보낸 파일을 <code>Data/curated/</code>에 넣고 <code>node Tools/import_fjelstul.js</code> → <code>node Tools/build_data.js</code> 실행.</p>
   <button class="back" data-act="title">← 뒤로</button>
 </section>
 
 <!-- 조 추첨 -->
 <section id="draw" class="screen hidden">
   <div class="draw-board" id="drawBoard"></div>
-  <div class="caption-inline">개최자 장원기의 1930 월드컵 조 추첨식 (연출 재현)</div>
+  <select id="drawYear" class="draw-year"></select>
+  <div class="caption-inline" id="drawCaption">개최자 장원기의 월드컵 조 추첨식 (연출 재현)</div>
   <button class="back" data-act="title">← 뒤로</button>
 </section>
 
@@ -128,7 +189,7 @@
     <label>날씨 <select id="pWeather"><option value="clear">맑음</option><option value="rain">비</option><option value="snow">눈</option></select></label>
     <label>시간대 <select id="pTime"><option value="day">주간</option><option value="dusk">해질녘</option><option value="night">야간</option></select></label>
   </div>
-  <div id="subInfo" class="note"></div>
+  <h3>선수 교체</h3><div class="row"><select id="subOut"></select><span>→</span><select id="subIn"></select><button id="btnSub">교체</button></div><div id="subInfo" class="note"></div>
   <div class="row"><button class="primary" id="btnResume">계속하기</button><button id="btnQuit">메인 메뉴로</button></div>
 </section>
 
@@ -145,6 +206,7 @@
 <script src="../Assets/Music/playlist.js"></script>
 <script src="js/physics.js"></script>
 <script src="js/match.js"></script>
+<script src="js/data.js"></script>
 <script src="js/models.js"></script>
 <script src="js/input.js"></script>
 <script src="js/audio.js"></script>

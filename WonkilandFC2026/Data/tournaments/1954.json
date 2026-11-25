@@ -1,0 +1,1827 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1954",
+ "year": 1954,
+ "name": "1954 FIFA Men's World Cup",
+ "host_country": "Switzerland",
+ "winner": "West Germany",
+ "start_date": "1954-06-16",
+ "end_date": "1954-07-04",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group 3",
+   "finish": 3
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 1",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 2",
+   "finish": 1
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 4",
+   "finish": "QF"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 2",
+   "finish": 2
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUR",
+   "fifa_code": "TUR",
+   "name_en": "Turkey",
+   "name_ko": "튀르키예",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 3",
+   "finish": 4
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 1",
+   "finish": "QF"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "DEU"
+  },
+  {
+   "position": 2,
+   "team": "HUN"
+  },
+  {
+   "position": 3,
+   "team": "AUT"
+  },
+  {
+   "position": 4,
+   "team": "URY"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "HUN-1954-KOCSIS",
+   "team": "HUN"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "CHE-1954-HUGI",
+   "team": "CHE"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-1954-MORLOCK",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "AUT-1954-PROBST",
+   "team": "AUT"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1954-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1954-06-16",
+   "stadium": "Charmilles Stadium",
+   "city": "Geneva",
+   "capacity": 36000,
+   "home": "BRA",
+   "away": "MEX",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1954-BALTAZAR",
+     "name": "Baltazar",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-DIDI",
+     "name": "Didi",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-PINGA",
+     "name": "Pinga",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-PINGA",
+     "name": "Pinga",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-JULINHO",
+     "name": "Julinho",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1954-06-16",
+   "stadium": "Stade Olympique de la Pontaise",
+   "city": "Lausanne",
+   "capacity": 50000,
+   "home": "YUG",
+   "away": "FRA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1954-MILUTINOVIC",
+     "name": "Miloš Milutinović",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-03",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1954-06-16",
+   "stadium": "Hardturm Stadium",
+   "city": "Zürich",
+   "capacity": 35000,
+   "home": "AUT",
+   "away": "SCO",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-04",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1954-06-16",
+   "stadium": "Wankdorf Stadium",
+   "city": "Bern",
+   "capacity": 65000,
+   "home": "URY",
+   "away": "CSK",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1954-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-SCHIAFFINO",
+     "name": "Juan Alberto Schiaffino",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-05",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1954-06-17",
+   "stadium": "Stade Olympique de la Pontaise",
+   "city": "Lausanne",
+   "capacity": 50000,
+   "home": "CHE",
+   "away": "ITA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1954-BALLAMAN",
+     "name": "Robert Ballaman",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1954-BONIPERTI",
+     "name": "Giampiero Boniperti",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-06",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1954-06-17",
+   "stadium": "Hardturm Stadium",
+   "city": "Zürich",
+   "capacity": 35000,
+   "home": "HUN",
+   "away": "KOR",
+   "score": [
+    9,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PUSKAS",
+     "name": "Ferenc Puskás",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-LANTOS",
+     "name": "Mihály Lantos",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-CZIBOR",
+     "name": "Zoltán Czibor",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PALOTAS",
+     "name": "Péter Palotás",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PALOTAS",
+     "name": "Péter Palotás",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PUSKAS",
+     "name": "Ferenc Puskás",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-07",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1954-06-17",
+   "stadium": "Wankdorf Stadium",
+   "city": "Bern",
+   "capacity": 65000,
+   "home": "DEU",
+   "away": "TUR",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-1954-MAMAT",
+     "name": "Suat Mamat",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-KLODT",
+     "name": "Bernhard Klodt",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTER",
+     "name": "Ottmar Walter",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1954-06-17",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "ENG",
+   "away": "BEL",
+   "score": [
+    4,
+    4
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1954-ANOUL",
+     "name": "Léopold Anoul",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-BROADIS",
+     "name": "Ivor Broadis",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-LOFTHOUSE",
+     "name": "Nat Lofthouse",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-BROADIS",
+     "name": "Ivor Broadis",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1954-COPPENS",
+     "name": "Henri Coppens",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1954-ANOUL",
+     "name": "Léopold Anoul",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-LOFTHOUSE",
+     "name": "Nat Lofthouse",
+     "minute": "91'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "ENG-1954-DICKINSON",
+     "name": "Jimmy Dickinson",
+     "minute": "94'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-09",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1954-06-19",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "URY",
+   "away": "SCO",
+   "score": [
+    7,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1954-BORGES",
+     "name": "Carlos Borges",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-BORGES",
+     "name": "Carlos Borges",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-ABBADIE",
+     "name": "Julio Abbadie",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-BORGES",
+     "name": "Carlos Borges",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-MIGUEZ",
+     "name": "Oscar Míguez",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-ABBADIE",
+     "name": "Julio Abbadie",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-10",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1954-06-19",
+   "stadium": "Stade Olympique de la Pontaise",
+   "city": "Lausanne",
+   "capacity": 50000,
+   "home": "BRA",
+   "away": "YUG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1954-ZEBEC",
+     "name": "Branko Zebec",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-DIDI",
+     "name": "Didi",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-11",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1954-06-19",
+   "stadium": "Hardturm Stadium",
+   "city": "Zürich",
+   "capacity": 35000,
+   "home": "AUT",
+   "away": "CSK",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1954-STOJASPAL",
+     "name": "Ernst Stojaspal",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-STOJASPAL",
+     "name": "Ernst Stojaspal",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-12",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1954-06-19",
+   "stadium": "Charmilles Stadium",
+   "city": "Geneva",
+   "capacity": 36000,
+   "home": "FRA",
+   "away": "MEX",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1954-VINCENT",
+     "name": "Jean Vincent",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "MEX-1954-CARDENAS",
+     "name": "Raúl Cárdenas",
+     "minute": "46'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1954-LAMADRID",
+     "name": "José Luis Lamadrid",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1954-BALCAZAR",
+     "name": "Tomás Balcázar",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1954-KOPA",
+     "name": "Raymond Kopa",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-13",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1954-06-20",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "HUN",
+   "away": "DEU",
+   "score": [
+    8,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PUSKAS",
+     "name": "Ferenc Puskás",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-PFAFF",
+     "name": "Alfred Pfaff",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-HIDEGKUTI",
+     "name": "Nándor Hidegkuti",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-HIDEGKUTI",
+     "name": "Nándor Hidegkuti",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-TOTH",
+     "name": "József Tóth",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-HERRMANN",
+     "name": "Richard Herrmann",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-14",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1954-06-20",
+   "stadium": "Charmilles Stadium",
+   "city": "Geneva",
+   "capacity": 36000,
+   "home": "TUR",
+   "away": "KOR",
+   "score": [
+    7,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUR",
+     "player": "TUR-1954-MAMAT",
+     "name": "Suat Mamat",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-KUCUKANDONYADIS",
+     "name": "Lefter Küçükandonyadis",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-MAMAT",
+     "name": "Suat Mamat",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-SARGUN",
+     "name": "Burhan Sargun",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-SARGUN",
+     "name": "Burhan Sargun",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-SARGUN",
+     "name": "Burhan Sargun",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-KESKIN",
+     "name": "Erol Keskin",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1954-06-20",
+   "stadium": "Cornaredo Stadium",
+   "city": "Lugano",
+   "capacity": 36000,
+   "home": "ITA",
+   "away": "BEL",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1954-PANDOLFINI",
+     "name": "Egisto Pandolfini",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1954-GALLI",
+     "name": "Carlo Galli",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1954-FRIGNANI",
+     "name": "Amleto Frignani",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1954-LORENZI",
+     "name": "Benito Lorenzi",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1954-ANOUL",
+     "name": "Léopold Anoul",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-16",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1954-06-20",
+   "stadium": "Wankdorf Stadium",
+   "city": "Bern",
+   "capacity": 65000,
+   "home": "ENG",
+   "away": "CHE",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1954-MULLEN",
+     "name": "Jimmy Mullen",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-WILSHAW",
+     "name": "Dennis Wilshaw",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-17",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1954-06-23",
+   "stadium": "Hardturm Stadium",
+   "city": "Zürich",
+   "capacity": 35000,
+   "home": "DEU",
+   "away": "TUR",
+   "score": [
+    7,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTER",
+     "name": "Ottmar Walter",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-ERTAN",
+     "name": "Mustafa Ertan",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTERFRI",
+     "name": "Fritz Walter",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUR",
+     "player": "TUR-1954-KUCUKANDONYADIS",
+     "name": "Lefter Küçükandonyadis",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-18",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1954-06-23",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "CHE",
+   "away": "ITA",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-BALLAMAN",
+     "name": "Robert Ballaman",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1954-NESTI",
+     "name": "Fulvio Nesti",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-FATTON",
+     "name": "Jacques Fatton",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-19",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1954-06-26",
+   "stadium": "Stade Olympique de la Pontaise",
+   "city": "Lausanne",
+   "capacity": 50000,
+   "home": "AUT",
+   "away": "CHE",
+   "score": [
+    7,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1954-BALLAMAN",
+     "name": "Robert Ballaman",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-WAGNER",
+     "name": "Theodor Wagner",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-KORNERALF",
+     "name": "Alfred Körner",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-WAGNER",
+     "name": "Theodor Wagner",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-OCWIRK",
+     "name": "Ernst Ocwirk",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-KORNERALF",
+     "name": "Alfred Körner",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-BALLAMAN",
+     "name": "Robert Ballaman",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-WAGNER",
+     "name": "Theodor Wagner",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1954-HUGI",
+     "name": "Josef Hügi",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-20",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1954-06-26",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "URY",
+   "away": "ENG",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1954-BORGES",
+     "name": "Carlos Borges",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-LOFTHOUSE",
+     "name": "Nat Lofthouse",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-VARELA",
+     "name": "Obdulio Varela",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-SCHIAFFINO",
+     "name": "Juan Alberto Schiaffino",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1954-FINNEY",
+     "name": "Tom Finney",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-AMBROIS",
+     "name": "Javier Ambrois",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-21",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1954-06-27",
+   "stadium": "Wankdorf Stadium",
+   "city": "Bern",
+   "capacity": 65000,
+   "home": "HUN",
+   "away": "BRA",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1954-HIDEGKUTI",
+     "name": "Nándor Hidegkuti",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-SANTOS",
+     "name": "Djalma Santos",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-LANTOS",
+     "name": "Mihály Lantos",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1954-JULINHO",
+     "name": "Julinho",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-22",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1954-06-27",
+   "stadium": "Charmilles Stadium",
+   "city": "Geneva",
+   "capacity": 36000,
+   "home": "DEU",
+   "away": "YUG",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "YUG-1954-HORVAT",
+     "name": "Ivica Horvat",
+     "minute": "9'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-23",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1954-06-30",
+   "stadium": "Stade Olympique de la Pontaise",
+   "city": "Lausanne",
+   "capacity": 50000,
+   "home": "HUN",
+   "away": "URY",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1954-CZIBOR",
+     "name": "Zoltán Czibor",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-HIDEGKUTI",
+     "name": "Nándor Hidegkuti",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-HOHBERG",
+     "name": "Juan Hohberg",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-HOHBERG",
+     "name": "Juan Hohberg",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "111'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-KOCSIS",
+     "name": "Sándor Kocsis",
+     "minute": "116'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-24",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1954-06-30",
+   "stadium": "St. Jakob Stadium",
+   "city": "Basel",
+   "capacity": 55000,
+   "home": "DEU",
+   "away": "AUT",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1954-SCHAFER",
+     "name": "Hans Schäfer",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-PROBST",
+     "name": "Erich Probst",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTERFRI",
+     "name": "Fritz Walter",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTER",
+     "name": "Ottmar Walter",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTERFRI",
+     "name": "Fritz Walter",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-WALTER",
+     "name": "Ottmar Walter",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-25",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1954-07-03",
+   "stadium": "Hardturm Stadium",
+   "city": "Zürich",
+   "capacity": 35000,
+   "home": "AUT",
+   "away": "URY",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1954-STOJASPAL",
+     "name": "Ernst Stojaspal",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "URY",
+     "player": "URY-1954-HOHBERG",
+     "name": "Juan Hohberg",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "URY-1954-CRUZ",
+     "name": "Luis Cruz",
+     "minute": "59'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1954-OCWIRK",
+     "name": "Ernst Ocwirk",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1954-26",
+   "stage": "final",
+   "group": null,
+   "date": "1954-07-04",
+   "stadium": "Wankdorf Stadium",
+   "city": "Bern",
+   "capacity": 65000,
+   "home": "DEU",
+   "away": "HUN",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1954-PUSKAS",
+     "name": "Ferenc Puskás",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1954-CZIBOR",
+     "name": "Zoltán Czibor",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-MORLOCK",
+     "name": "Max Morlock",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1954-RAHN",
+     "name": "Helmut Rahn",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

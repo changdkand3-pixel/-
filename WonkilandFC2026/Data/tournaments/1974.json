@@ -1,0 +1,1718 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1974",
+ "year": 1974,
+ "name": "1974 FIFA Men's World Cup",
+ "host_country": "West Germany",
+ "winner": "West Germany",
+ "start_date": "1974-06-13",
+ "end_date": "1974-07-07",
+ "rules_profile": "historical_1970",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 4",
+   "finish": "R2"
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 2",
+   "finish": 4
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "COD",
+   "fifa_code": "ZAI",
+   "name_en": "Zaire",
+   "name_ko": "자이르",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DDR",
+   "fifa_code": "GDR",
+   "name_en": "East Germany",
+   "name_ko": "동독",
+   "group": "Group 1",
+   "finish": "R2"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 1",
+   "finish": 1
+  },
+  {
+   "team_id": "HTI",
+   "fifa_code": "HAI",
+   "name_en": "Haiti",
+   "name_ko": "아이티",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group 3",
+   "finish": 2
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group 4",
+   "finish": 3
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group 3",
+   "finish": "R2"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 2",
+   "finish": "R2"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "DEU"
+  },
+  {
+   "position": 2,
+   "team": "NLD"
+  },
+  {
+   "position": 3,
+   "team": "POL"
+  },
+  {
+   "position": 4,
+   "team": "BRA"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "POL-1974-LATO",
+   "team": "POL"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "NLD-1974-NEESKENS",
+   "team": "NLD"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "POL-1974-SZARMACH",
+   "team": "POL"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "POL-1974-ZMUDA",
+   "team": "POL"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1974-01",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-13",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "BRA",
+   "away": "YUG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1974-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-14",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "DEU",
+   "away": "CHL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1974-BREITNER",
+     "name": "Paul Breitner",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-03",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-14",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "DDR",
+   "away": "AUS",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DDR",
+     "player": "AUS-1974-CURRAN",
+     "name": "Colin Curran",
+     "minute": "58'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "DDR",
+     "player": "DDR-1974-STREICH",
+     "name": "Joachim Streich",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-04",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-14",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "COD",
+   "away": "SCO",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1974-LORIMER",
+     "name": "Peter Lorimer",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1974-JORDAN",
+     "name": "Joe Jordan",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-05",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-15",
+   "stadium": "Rheinstadion",
+   "city": "Düsseldorf",
+   "capacity": 70000,
+   "home": "SWE",
+   "away": "BGR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1974-06",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-15",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "URY",
+   "away": "NLD",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-REP",
+     "name": "Johnny Rep",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-REP",
+     "name": "Johnny Rep",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-07",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-15",
+   "stadium": "Olympiastadion",
+   "city": "Munich",
+   "capacity": 78000,
+   "home": "ITA",
+   "away": "HTI",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HTI",
+     "player": "HTI-1974-SANON",
+     "name": "Emmanuel Sanon",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1974-RIVERA",
+     "name": "Gianni Rivera",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1974-BENETTI",
+     "name": "Romeo Benetti",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1974-ANASTASI",
+     "name": "Pietro Anastasi",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-15",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "POL",
+   "away": "ARG",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-HEREDIA",
+     "name": "Ramón Heredia",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-BABINGTON",
+     "name": "Carlos Babington",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-18",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "AUS",
+   "away": "DEU",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1974-OVERATH",
+     "name": "Wolfgang Overath",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-CULLMANN",
+     "name": "Bernhard Cullmann",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-MULLER",
+     "name": "Gerd Müller",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-10",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-18",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "CHL",
+   "away": "DDR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DDR",
+     "player": "DDR-1974-HOFFMANN",
+     "name": "Martin Hoffmann",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1974-AHUMADA",
+     "name": "Sergio Ahumada",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-11",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-18",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "SCO",
+   "away": "BRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1974-12",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-18",
+   "stadium": "Parkstadion",
+   "city": "Gelsenkirchen",
+   "capacity": 72000,
+   "home": "YUG",
+   "away": "COD",
+   "score": [
+    9,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1974-BAJEVIC",
+     "name": "Dušan Bajević",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-DZAJIC",
+     "name": "Dragan Džajić",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-SURJAK",
+     "name": "Ivica Šurjak",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-KATALINSKI",
+     "name": "Josip Katalinski",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-BAJEVIC",
+     "name": "Dušan Bajević",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-BOGICEVIC",
+     "name": "Vladislav Bogićević",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-OBLAK",
+     "name": "Branko Oblak",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-PETKOVIC",
+     "name": "Ilija Petković",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-BAJEVIC",
+     "name": "Dušan Bajević",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-13",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-19",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "BGR",
+   "away": "URY",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1974-BONEV",
+     "name": "Hristo Bonev",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1974-PAVONI",
+     "name": "Ricardo Pavoni",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-19",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "NLD",
+   "away": "SWE",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1974-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-19",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "ARG",
+   "away": "ITA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1974-HOUSEMAN",
+     "name": "René Houseman",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ARG-1974-PERFUMO",
+     "name": "Roberto Perfumo",
+     "minute": "35'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-16",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-19",
+   "stadium": "Olympiastadion",
+   "city": "Munich",
+   "capacity": 78000,
+   "home": "HTI",
+   "away": "POL",
+   "score": [
+    0,
+    7
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-DEYNA",
+     "name": "Kazimierz Deyna",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-GORGON",
+     "name": "Jerzy Gorgoń",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-17",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-22",
+   "stadium": "Olympiastadion",
+   "city": "Berlin",
+   "capacity": 86000,
+   "home": "AUS",
+   "away": "CHL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1974-18",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-22",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "SCO",
+   "away": "YUG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1974-KARASI",
+     "name": "Stanislav Karasi",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1974-JORDAN",
+     "name": "Joe Jordan",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-19",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1974-06-22",
+   "stadium": "Parkstadion",
+   "city": "Gelsenkirchen",
+   "capacity": 72000,
+   "home": "COD",
+   "away": "BRA",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1974-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1974-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1974-VALDOMIRO",
+     "name": "Valdomiro",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-20",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1974-06-22",
+   "stadium": "Volksparkstadion",
+   "city": "Hamburg",
+   "capacity": 61000,
+   "home": "DDR",
+   "away": "DEU",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DDR",
+     "player": "DDR-1974-SPARWASSER",
+     "name": "Jürgen Sparwasser",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-21",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-23",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "BGR",
+   "away": "NLD",
+   "score": [
+    1,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-NEESKENS",
+     "name": "Johan Neeskens",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-NEESKENS",
+     "name": "Johan Neeskens",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-REP",
+     "name": "Johnny Rep",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "NLD-1974-KROL",
+     "name": "Ruud Krol",
+     "minute": "78'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-DEJONG",
+     "name": "Theo de Jong",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-22",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1974-06-23",
+   "stadium": "Rheinstadion",
+   "city": "Düsseldorf",
+   "capacity": 70000,
+   "home": "SWE",
+   "away": "URY",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1974-EDSTROM",
+     "name": "Ralf Edström",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1974-SANDBERG",
+     "name": "Roland Sandberg",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1974-EDSTROM",
+     "name": "Ralf Edström",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-23",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-23",
+   "stadium": "Olympiastadion",
+   "city": "Munich",
+   "capacity": 78000,
+   "home": "ARG",
+   "away": "HTI",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1974-YAZALDE",
+     "name": "Héctor Yazalde",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-HOUSEMAN",
+     "name": "René Houseman",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-AYALA",
+     "name": "Rubén Ayala",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HTI",
+     "player": "HTI-1974-SANON",
+     "name": "Emmanuel Sanon",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-YAZALDE",
+     "name": "Héctor Yazalde",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1974-06-23",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "POL",
+   "away": "ITA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-DEYNA",
+     "name": "Kazimierz Deyna",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1974-CAPELLO",
+     "name": "Fabio Capello",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-25",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-06-26",
+   "stadium": "Rheinstadion",
+   "city": "Düsseldorf",
+   "capacity": 70000,
+   "home": "YUG",
+   "away": "DEU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1974-BREITNER",
+     "name": "Paul Breitner",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-MULLER",
+     "name": "Gerd Müller",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-26",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-06-26",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "BRA",
+   "away": "DDR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1974-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-27",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-06-26",
+   "stadium": "Parkstadion",
+   "city": "Gelsenkirchen",
+   "capacity": 72000,
+   "home": "NLD",
+   "away": "ARG",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-CRUYFF",
+     "name": "Johan Cruyff",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-KROL",
+     "name": "Ruud Krol",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-REP",
+     "name": "Johnny Rep",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-CRUYFF",
+     "name": "Johan Cruyff",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-28",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-06-26",
+   "stadium": "Neckarstadion",
+   "city": "Stuttgart",
+   "capacity": 72000,
+   "home": "SWE",
+   "away": "POL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-29",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-06-30",
+   "stadium": "Niedersachsenstadion",
+   "city": "Hanover",
+   "capacity": 60000,
+   "home": "ARG",
+   "away": "BRA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1974-RIVELLINO",
+     "name": "Rivellino",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-BRINDISI",
+     "name": "Miguel Ángel Brindisi",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1974-JAIRZINHO",
+     "name": "Jairzinho",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-30",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-06-30",
+   "stadium": "Parkstadion",
+   "city": "Gelsenkirchen",
+   "capacity": 72000,
+   "home": "DDR",
+   "away": "NLD",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-NEESKENS",
+     "name": "Johan Neeskens",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-31",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-06-30",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "POL",
+   "away": "YUG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-DEYNA",
+     "name": "Kazimierz Deyna",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1974-KARASI",
+     "name": "Stanislav Karasi",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-32",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-06-30",
+   "stadium": "Rheinstadion",
+   "city": "Düsseldorf",
+   "capacity": 70000,
+   "home": "DEU",
+   "away": "SWE",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1974-EDSTROM",
+     "name": "Ralf Edström",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-OVERATH",
+     "name": "Wolfgang Overath",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-BONHOF",
+     "name": "Rainer Bonhof",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1974-SANDBERG",
+     "name": "Roland Sandberg",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-GRABOWSKI",
+     "name": "Jürgen Grabowski",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-HOENESS",
+     "name": "Uli Hoeneß",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-33",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-07-03",
+   "stadium": "Waldstadion",
+   "city": "Frankfurt",
+   "capacity": 62000,
+   "home": "POL",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1974-MULLER",
+     "name": "Gerd Müller",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-34",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-07-03",
+   "stadium": "Parkstadion",
+   "city": "Gelsenkirchen",
+   "capacity": 72000,
+   "home": "ARG",
+   "away": "DDR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DDR",
+     "player": "DDR-1974-STREICH",
+     "name": "Joachim Streich",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1974-HOUSEMAN",
+     "name": "René Houseman",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-35",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1974-07-03",
+   "stadium": "Westfalenstadion",
+   "city": "Dortmund",
+   "capacity": 65000,
+   "home": "NLD",
+   "away": "BRA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-NEESKENS",
+     "name": "Johan Neeskens",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1974-CRUYFF",
+     "name": "Johan Cruyff",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-36",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1974-07-03",
+   "stadium": "Rheinstadion",
+   "city": "Düsseldorf",
+   "capacity": 70000,
+   "home": "SWE",
+   "away": "YUG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1974-SURJAK",
+     "name": "Ivica Šurjak",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1974-EDSTROM",
+     "name": "Ralf Edström",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1974-TORSTENSSON",
+     "name": "Conny Torstensson",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-37",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1974-07-06",
+   "stadium": "Olympiastadion",
+   "city": "Munich",
+   "capacity": 78000,
+   "home": "BRA",
+   "away": "POL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1974-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1974-38",
+   "stage": "final",
+   "group": null,
+   "date": "1974-07-07",
+   "stadium": "Olympiastadion",
+   "city": "Munich",
+   "capacity": 78000,
+   "home": "NLD",
+   "away": "DEU",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1974-NEESKENS",
+     "name": "Johan Neeskens",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-BREITNER",
+     "name": "Paul Breitner",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1974-MULLER",
+     "name": "Gerd Müller",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

@@ -5,6 +5,7 @@
 ## 현재 프로젝트에 포함된 에셋
 | 항목 | 파일 | 출처 | 라이선스/권리 | 배포 가능 여부 |
 |---|---|---|---|---|
+| 선수·대회 데이터 | `Data/sources/fjelstul/`, `Data/players/`, `Data/tournaments/`, `Prototype/js/data_bundle.js` | Fjelstul World Cup Database | **CC-BY-SA 4.0** — 출처 표기 + 동일 라이선스 유지 (`Data/LICENSE-DATA.md`) | ✅ (조건 준수 시). 단 실명 사용 자체는 아래 퍼블리시티권 검토 필요 |
 | three.js 라이브러리 | `Prototype/lib/three.min.js` | three.js r149 (npm) | MIT (`three.LICENSE.txt`) | ✅ (라이선스 고지 포함) |
 | 개최자 참조 사진 | `Assets/Host/reference/host_jang_wonki_reference_01.jpg` | 사용자 제공 | 본인 사진으로 제공됨 | ⚠️ **공개 배포 전 서면 초상 사용 동의서 보관 필요** |
 | 개최자 얼굴 텍스처 | `Assets/Host/reference/host_face_crop.png`, `Prototype/js/host_face.js` | 위 사진에서 크롭 | 위와 동일 | ⚠️ 위와 동일 |

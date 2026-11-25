@@ -1,0 +1,2988 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1998",
+ "year": 1998,
+ "name": "1998 FIFA Men's World Cup",
+ "host_country": "France",
+ "winner": "France",
+ "start_date": "1998-06-10",
+ "end_date": "1998-07-12",
+ "rules_profile": "historical_1998",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group H",
+   "finish": "QF"
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group A",
+   "finish": 2
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "COL",
+   "fifa_code": "COL",
+   "name_en": "Colombia",
+   "name_ko": "콜롬비아",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group C",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group C",
+   "finish": 1
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group H",
+   "finish": 3
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "JAM",
+   "fifa_code": "JAM",
+   "name_en": "Jamaica",
+   "name_ko": "자메이카",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MAR",
+   "fifa_code": "MAR",
+   "name_en": "Morocco",
+   "name_ko": "모로코",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NGA",
+   "fifa_code": "NGA",
+   "name_en": "Nigeria",
+   "name_ko": "나이지리아",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group E",
+   "finish": 4
+  },
+  {
+   "team_id": "NOR",
+   "fifa_code": "NOR",
+   "name_en": "Norway",
+   "name_ko": "노르웨이",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "SAU",
+   "fifa_code": "KSA",
+   "name_en": "Saudi Arabia",
+   "name_ko": "사우디아라비아",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "ZAF",
+   "fifa_code": "RSA",
+   "name_en": "South Africa",
+   "name_ko": "남아프리카공화국",
+   "group": "Group C",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "FRA"
+  },
+  {
+   "position": 2,
+   "team": "BRA"
+  },
+  {
+   "position": 3,
+   "team": "HRV"
+  },
+  {
+   "position": 4,
+   "team": "NLD"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "BRA-1998-RONALDO",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "HRV-1998-SUKER",
+   "team": "HRV"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "FRA-1998-THURAM",
+   "team": "FRA"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "HRV-1998-SUKER",
+   "team": "HRV"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ARG-1998-BATISTUTA",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ITA-1998-VIERI",
+   "team": "ITA"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "FRA-1998-BARTHEZ",
+   "team": "FRA"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "ENG-1998-OWEN",
+   "team": "ENG"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1998-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-10",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "BRA",
+   "away": "SCO",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1998-SAMPAIO",
+     "name": "César Sampaio",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1998-COLLINS",
+     "name": "John Collins",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "SCO-1998-BOYD",
+     "name": "Tom Boyd",
+     "minute": "74'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-02",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-10",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "MAR",
+   "away": "NOR",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-1998-HADJI",
+     "name": "Mustapha Hadji",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NOR",
+     "player": "MAR-1998-CHIPPO",
+     "name": "Youssef Chippo",
+     "minute": "45'+1'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1998-HADDA",
+     "name": "Abdeljalil Hadda",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NOR",
+     "player": "NOR-1998-EGGEN",
+     "name": "Dan Eggen",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-03",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-11",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "ITA",
+   "away": "CHL",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1998-VIERI",
+     "name": "Christian Vieri",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1998-SALAS",
+     "name": "Marcelo Salas",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1998-SALAS",
+     "name": "Marcelo Salas",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1998-BAGGIOROB",
+     "name": "Roberto Baggio",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-11",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "CMR",
+   "away": "AUT",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-1998-NJANKA",
+     "name": "Pierre Njanka",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1998-POLSTER",
+     "name": "Toni Polster",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-05",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-12",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "PRY",
+   "away": "BGR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1998-06",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-12",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "SAU",
+   "away": "DNK",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1998-RIEPER",
+     "name": "Marc Rieper",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-07",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-12",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "FRA",
+   "away": "ZAF",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1998-DUGARRY",
+     "name": "Christophe Dugarry",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "ZAF-1998-ISSA",
+     "name": "Pierre Issa",
+     "minute": "77'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-HENRY",
+     "name": "Thierry Henry",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-13",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "ESP",
+   "away": "NGA",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1998-HIERRO",
+     "name": "Fernando Hierro",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-1998-ADEPOJU",
+     "name": "Mutiu Adepoju",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1998-RAUL",
+     "name": "Raúl",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "ESP-1998-ZUBIZARRETA",
+     "name": "Andoni Zubizarreta",
+     "minute": "73'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-1998-OLISEH",
+     "name": "Sunday Oliseh",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-09",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-13",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "KOR",
+   "away": "MEX",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "KOR",
+     "player": "KOR-1998-HA",
+     "name": "Ha Seok-ju",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-PELAEZ",
+     "name": "Ricardo Peláez",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-HERNANDEZ",
+     "name": "Luis Hernández",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-HERNANDEZ",
+     "name": "Luis Hernández",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-13",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "NLD",
+   "away": "BEL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1998-11",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-14",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "ARG",
+   "away": "JPN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1998-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-12",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-14",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "YUG",
+   "away": "IRN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1998-MIHAJLOVIC",
+     "name": "Siniša Mihajlović",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-13",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-14",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "JAM",
+   "away": "HRV",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-STANIC",
+     "name": "Mario Stanić",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JAM",
+     "player": "JAM-1998-EARLE",
+     "name": "Robbie Earle",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-1998-PROSINECKI",
+     "name": "Robert Prosinečki",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-14",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-15",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "ENG",
+   "away": "TUN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1998-SHEARER",
+     "name": "Alan Shearer",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1998-SCHOLES",
+     "name": "Paul Scholes",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-15",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-15",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "ROU",
+   "away": "COL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1998-ILIE",
+     "name": "Adrian Ilie",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-16",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-15",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "DEU",
+   "away": "USA",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1998-MOLLER",
+     "name": "Andreas Möller",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1998-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-17",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-16",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "SCO",
+   "away": "NOR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NOR",
+     "player": "NOR-1998-FLOHAV",
+     "name": "Håvard Flo",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1998-BURLEY",
+     "name": "Craig Burley",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-18",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-16",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "BRA",
+   "away": "MAR",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RONALDO",
+     "name": "Ronaldo",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-BEBETO",
+     "name": "Bebeto",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-19",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-17",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "CHL",
+   "away": "AUT",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1998-SALAS",
+     "name": "Marcelo Salas",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1998-VASTIC",
+     "name": "Ivica Vastić",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-20",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-17",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "ITA",
+   "away": "CMR",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1998-DIBIAGIO",
+     "name": "Luigi Di Biagio",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1998-VIERI",
+     "name": "Christian Vieri",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1998-VIERI",
+     "name": "Christian Vieri",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-21",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-18",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "ZAF",
+   "away": "DNK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1998-NIELSEN",
+     "name": "Allan Nielsen",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-1998-MCCARTHY",
+     "name": "Benni McCarthy",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-22",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-18",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "FRA",
+   "away": "SAU",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1998-HENRY",
+     "name": "Thierry Henry",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-TREZEGUET",
+     "name": "David Trezeguet",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-HENRY",
+     "name": "Thierry Henry",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-LIZARAZU",
+     "name": "Bixente Lizarazu",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-23",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-19",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "NGA",
+   "away": "BGR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NGA",
+     "player": "NGA-1998-IKPEBA",
+     "name": "Victor Ikpeba",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-24",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-19",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "ESP",
+   "away": "PRY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1998-25",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-20",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "JPN",
+   "away": "HRV",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-26",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-20",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "BEL",
+   "away": "MEX",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1998-WILMOTS",
+     "name": "Marc Wilmots",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1998-WILMOTS",
+     "name": "Marc Wilmots",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-GARCIAASPE",
+     "name": "Alberto García Aspe",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-BLANCO",
+     "name": "Cuauhtémoc Blanco",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-27",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-20",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "NLD",
+   "away": "KOR",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1998-COCU",
+     "name": "Phillip Cocu",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-OVERMARS",
+     "name": "Marc Overmars",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-BERGKAMP",
+     "name": "Dennis Bergkamp",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-VANHOOIJDONK",
+     "name": "Pierre van Hooijdonk",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-DEBOERRON",
+     "name": "Ronald de Boer",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-28",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-21",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "DEU",
+   "away": "YUG",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1998-MIJATOVIC",
+     "name": "Predrag Mijatović",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1998-STOJKOVIC",
+     "name": "Dragan Stojković",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "YUG-1998-MIHAJLOVIC",
+     "name": "Siniša Mihajlović",
+     "minute": "72'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1998-BIERHOFF",
+     "name": "Oliver Bierhoff",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-29",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-21",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "ARG",
+   "away": "JAM",
+   "score": [
+    5,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1998-ORTEGA",
+     "name": "Ariel Ortega",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-ORTEGA",
+     "name": "Ariel Ortega",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-30",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-21",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "USA",
+   "away": "IRN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "IRN",
+     "player": "IRN-1998-ESTILI",
+     "name": "Hamid Estili",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-1998-MAHDAVIKIA",
+     "name": "Mehdi Mahdavikia",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1998-MCBRIDE",
+     "name": "Brian McBride",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-31",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-22",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "COL",
+   "away": "TUN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "COL",
+     "player": "COL-1998-PRECIADO",
+     "name": "Léider Preciado",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-32",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-22",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "ROU",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1998-MOLDOVAN",
+     "name": "Viorel Moldovan",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1998-OWEN",
+     "name": "Michael Owen",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1998-PETRESCU",
+     "name": "Dan Petrescu",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-33",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-23",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "CHL",
+   "away": "CMR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1998-SIERRA",
+     "name": "José Luis Sierra",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1998-MBOMA",
+     "name": "Patrick M'Boma",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-34",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1998-06-23",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "ITA",
+   "away": "AUT",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1998-VIERI",
+     "name": "Christian Vieri",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1998-BAGGIOROB",
+     "name": "Roberto Baggio",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1998-HERZOG",
+     "name": "Andi Herzog",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-35",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-23",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "BRA",
+   "away": "NOR",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1998-BEBETO",
+     "name": "Bebeto",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NOR",
+     "player": "NOR-1998-FLO",
+     "name": "Tore André Flo",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NOR",
+     "player": "NOR-1998-REKDAL",
+     "name": "Kjetil Rekdal",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-36",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1998-06-23",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "SCO",
+   "away": "MAR",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-1998-BASSIR",
+     "name": "Salaheddine Bassir",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1998-HADDA",
+     "name": "Abdeljalil Hadda",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1998-BASSIR",
+     "name": "Salaheddine Bassir",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-37",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-24",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "FRA",
+   "away": "DNK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1998-DJORKAEFF",
+     "name": "Youri Djorkaeff",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1998-LAUDRUP",
+     "name": "Michael Laudrup",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-PETIT",
+     "name": "Emmanuel Petit",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-38",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1998-06-24",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "ZAF",
+   "away": "SAU",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ZAF",
+     "player": "ZAF-1998-BARTLETT",
+     "name": "Shaun Bartlett",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-1998-ALJABER",
+     "name": "Sami Al-Jaber",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-1998-ALTHUNAYAN",
+     "name": "Yousuf Al-Thunayan",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ZAF",
+     "player": "ZAF-1998-BARTLETT",
+     "name": "Shaun Bartlett",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-39",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-24",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "NGA",
+   "away": "PRY",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-1998-AYALA",
+     "name": "Celso Ayala",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-1998-ORUMA",
+     "name": "Wilson Oruma",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1998-BENITEZ",
+     "name": "Miguel Ángel Benítez",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1998-CARDOZO",
+     "name": "José Cardozo",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-40",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1998-06-24",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "ESP",
+   "away": "BGR",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1998-HIERRO",
+     "name": "Fernando Hierro",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1998-ENRIQUE",
+     "name": "Luis Enrique",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1998-MORIENTES",
+     "name": "Fernando Morientes",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "BGR-1998-KOSTADINOV",
+     "name": "Emil Kostadinov",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1998-MORIENTES",
+     "name": "Fernando Morientes",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "BGR-1998-BACHEV",
+     "name": "Georgi Bachev",
+     "minute": "88'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1998-KIKO",
+     "name": "Kiko",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-41",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-25",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "BEL",
+   "away": "KOR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1998-NILIS",
+     "name": "Luc Nilis",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1998-YOO",
+     "name": "Yoo Sang-chul",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-42",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1998-06-25",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "NLD",
+   "away": "MEX",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1998-COCU",
+     "name": "Phillip Cocu",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-DEBOERRON",
+     "name": "Ronald de Boer",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-PELAEZ",
+     "name": "Ricardo Peláez",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1998-HERNANDEZ",
+     "name": "Luis Hernández",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-43",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-25",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "DEU",
+   "away": "IRN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1998-BIERHOFF",
+     "name": "Oliver Bierhoff",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1998-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-44",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1998-06-25",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "USA",
+   "away": "YUG",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1998-KOMLJENOVIC",
+     "name": "Slobodan Komljenović",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-45",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-26",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "ARG",
+   "away": "HRV",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1998-PINEDA",
+     "name": "Mauricio Pineda",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-46",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "1998-06-26",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "JPN",
+   "away": "JAM",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "JAM",
+     "player": "JAM-1998-WHITMORE",
+     "name": "Theodore Whitmore",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JAM",
+     "player": "JAM-1998-WHITMORE",
+     "name": "Theodore Whitmore",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-1998-NAKAYAMA",
+     "name": "Nakayama Masashi",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-47",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-26",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "COL",
+   "away": "ENG",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1998-ANDERTON",
+     "name": "Darren Anderton",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1998-BECKHAM",
+     "name": "David Beckham",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-48",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "1998-06-26",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "ROU",
+   "away": "TUN",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUN",
+     "player": "TUN-1998-SOUAYAH",
+     "name": "Skander Souayah",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1998-MOLDOVAN",
+     "name": "Viorel Moldovan",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-27",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "ITA",
+   "away": "NOR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1998-VIERI",
+     "name": "Christian Vieri",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-27",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "BRA",
+   "away": "CHL",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1998-SAMPAIO",
+     "name": "César Sampaio",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-SAMPAIO",
+     "name": "César Sampaio",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RONALDO",
+     "name": "Ronaldo",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1998-SALAS",
+     "name": "Marcelo Salas",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RONALDO",
+     "name": "Ronaldo",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-28",
+   "stadium": "Stade Félix-Bollaert",
+   "city": "Lens",
+   "capacity": 41000,
+   "home": "FRA",
+   "away": "PRY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1998-BLANC",
+     "name": "Laurent Blanc",
+     "minute": "114'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-28",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "NGA",
+   "away": "DNK",
+   "score": [
+    1,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1998-MOLLER",
+     "name": "Peter Møller",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1998-LAUDRUPBRI",
+     "name": "Brian Laudrup",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1998-SAND",
+     "name": "Ebbe Sand",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1998-HELVEG",
+     "name": "Thomas Helveg",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NGA",
+     "player": "NGA-1998-BABANGIDA",
+     "name": "Tijani Babangida",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-29",
+   "stadium": "Stade de la Mosson",
+   "city": "Montpellier",
+   "capacity": 34000,
+   "home": "DEU",
+   "away": "MEX",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1998-HERNANDEZ",
+     "name": "Luis Hernández",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1998-KLINSMANN",
+     "name": "Jürgen Klinsmann",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1998-BIERHOFF",
+     "name": "Oliver Bierhoff",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-29",
+   "stadium": "Stade de Toulouse",
+   "city": "Toulouse",
+   "capacity": 37000,
+   "home": "NLD",
+   "away": "YUG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1998-BERGKAMP",
+     "name": "Dennis Bergkamp",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1998-KOMLJENOVIC",
+     "name": "Slobodan Komljenović",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-DAVIDS",
+     "name": "Edgar Davids",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-30",
+   "stadium": "Stade du Parc Lescure",
+   "city": "Bordeaux",
+   "capacity": 35000,
+   "home": "ROU",
+   "away": "HRV",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "45'+2'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1998-06-30",
+   "stadium": "Stade Geoffroy-Guichard",
+   "city": "Saint-Étienne",
+   "capacity": 36000,
+   "home": "ARG",
+   "away": "ENG",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    3
+   ],
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1998-BATISTUTA",
+     "name": "Gabriel Batistuta",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1998-SHEARER",
+     "name": "Alan Shearer",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1998-OWEN",
+     "name": "Michael Owen",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-ZANETTI",
+     "name": "Javier Zanetti",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1998-07-03",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "ITA",
+   "away": "FRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-1998-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1998-07-03",
+   "stadium": "Stade de la Beaujoire",
+   "city": "Nantes",
+   "capacity": 40000,
+   "home": "BRA",
+   "away": "DNK",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1998-JORGENSEN",
+     "name": "Martin Jørgensen",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-BEBETO",
+     "name": "Bebeto",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1998-LAUDRUPBRI",
+     "name": "Brian Laudrup",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RIVALDO",
+     "name": "Rivaldo",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1998-07-04",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "NLD",
+   "away": "ARG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1998-KLUIVERT",
+     "name": "Patrick Kluivert",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1998-LOPEZ",
+     "name": "Claudio López",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-BERGKAMP",
+     "name": "Dennis Bergkamp",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1998-07-04",
+   "stadium": "Stade de Gerland",
+   "city": "Lyon",
+   "capacity": 44000,
+   "home": "DEU",
+   "away": "HRV",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-JARNI",
+     "name": "Robert Jarni",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-1998-VLAOVIC",
+     "name": "Goran Vlaović",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1998-07-07",
+   "stadium": "Stade Vélodrome",
+   "city": "Marseille",
+   "capacity": 60000,
+   "home": "BRA",
+   "away": "NLD",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    2
+   ],
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1998-RONALDO",
+     "name": "Ronaldo",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-KLUIVERT",
+     "name": "Patrick Kluivert",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1998-07-08",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "FRA",
+   "away": "HRV",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-THURAM",
+     "name": "Lilian Thuram",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-THURAM",
+     "name": "Lilian Thuram",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1998-07-11",
+   "stadium": "Parc des Princes",
+   "city": "Paris",
+   "capacity": 49000,
+   "home": "NLD",
+   "away": "HRV",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-1998-PROSINECKI",
+     "name": "Robert Prosinečki",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1998-ZENDEN",
+     "name": "Boudewijn Zenden",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-1998-SUKER",
+     "name": "Davor Šuker",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1998-64",
+   "stage": "final",
+   "group": null,
+   "date": "1998-07-12",
+   "stadium": "Stade de France",
+   "city": "Saint-Denis",
+   "capacity": 80000,
+   "home": "BRA",
+   "away": "FRA",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1998-ZIDANE",
+     "name": "Zinedine Zidane",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-ZIDANE",
+     "name": "Zinedine Zidane",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1998-PETIT",
+     "name": "Emmanuel Petit",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

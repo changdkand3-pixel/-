@@ -1,0 +1,1772 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1978",
+ "year": 1978,
+ "name": "1978 FIFA Men's World Cup",
+ "host_country": "Argentina",
+ "winner": "Argentina",
+ "start_date": "1978-06-01",
+ "end_date": "1978-06-25",
+ "rules_profile": "historical_1970",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 1",
+   "finish": 1
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group 3",
+   "finish": "R2"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 3",
+   "finish": 3
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 2",
+   "finish": "R2"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 1",
+   "finish": 4
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group 4",
+   "finish": 2
+  },
+  {
+   "team_id": "PER",
+   "fifa_code": "PER",
+   "name_en": "Peru",
+   "name_ko": "페루",
+   "group": "Group 4",
+   "finish": "R2"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group 2",
+   "finish": "R2"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group 2",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ARG"
+  },
+  {
+   "position": 2,
+   "team": "NLD"
+  },
+  {
+   "position": 3,
+   "team": "BRA"
+  },
+  {
+   "position": 4,
+   "team": "ITA"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ARG-1978-KEMPES",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "ITA-1978-ROSSI",
+   "team": "ITA"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "BRA-1978-DIRCEU",
+   "team": "BRA"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "ARG-1978-KEMPES",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "PER-1978-CUBILLAS",
+   "team": "PER"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "NLD-1978-RENSENBRINK",
+   "team": "NLD"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "ITA-1978-CABRINI",
+   "team": "ITA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1978-01",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-01",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "POL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-02",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "ITA",
+   "away": "FRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1978-LACOMBE",
+     "name": "Bernard Lacombe",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1978-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1978-ZACCARELLI",
+     "name": "Renato Zaccarelli",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-03",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-02",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "TUN",
+   "away": "MEX",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1978-VAZQUEZAYALA",
+     "name": "Arturo Vázquez Ayala",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-1978-KAABI",
+     "name": "Ali Kaabi",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-1978-GHOMMIDH",
+     "name": "Néjib Ghommidh",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "TUN",
+     "player": "TUN-1978-DHOUIB",
+     "name": "Mokhtar Dhouib",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-04",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-02",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ARG",
+   "away": "HUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1978-CSAPO",
+     "name": "Károly Csapó",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-LUQUE",
+     "name": "Leopoldo Luque",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-BERTONI",
+     "name": "Daniel Bertoni",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-05",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-03",
+   "stadium": "Estadio José Amalfitani",
+   "city": "Buenos Aires",
+   "capacity": 49000,
+   "home": "AUT",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1978-SCHACHNER",
+     "name": "Walter Schachner",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1978-DANI",
+     "name": "Dani",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1978-KRANKL",
+     "name": "Hans Krankl",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-06",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-03",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "SWE",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SWE",
+     "player": "SWE-1978-SJOBERG",
+     "name": "Thomas Sjöberg",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-REINALDO",
+     "name": "Reinaldo",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-07",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-03",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "NLD",
+   "away": "IRN",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1978-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-03",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "PER",
+   "away": "SCO",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1978-JORDAN",
+     "name": "Joe Jordan",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUETO",
+     "name": "César Cueto",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-09",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-06",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "ITA",
+   "away": "HUN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1978-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1978-BETTEGA",
+     "name": "Roberto Bettega",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1978-BENETTI",
+     "name": "Romeo Benetti",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1978-TOTHAND",
+     "name": "András Tóth",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-10",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-06",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "POL",
+   "away": "TUN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1978-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-11",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-06",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "DEU",
+   "away": "MEX",
+   "score": [
+    6,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1978-MULLER",
+     "name": "Dieter Müller",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-MULLERHAN",
+     "name": "Hansi Müller",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-FLOHE",
+     "name": "Heinz Flohe",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-FLOHE",
+     "name": "Heinz Flohe",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-12",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-06",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ARG",
+   "away": "FRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1978-PASSARELLA",
+     "name": "Daniel Passarella",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1978-PLATINI",
+     "name": "Michel Platini",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-LUQUE",
+     "name": "Leopoldo Luque",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-13",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-07",
+   "stadium": "Estadio José Amalfitani",
+   "city": "Buenos Aires",
+   "capacity": 49000,
+   "home": "AUT",
+   "away": "SWE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1978-KRANKL",
+     "name": "Hans Krankl",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-07",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "ESP",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-15",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-07",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "NLD",
+   "away": "PER",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-16",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-07",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "SCO",
+   "away": "IRN",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "IRN-1978-ESKANDARIAN",
+     "name": "Andranik Eskandarian",
+     "minute": "43'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-1978-DANAEIFARD",
+     "name": "Iraj Danaeifard",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-17",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-10",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "FRA",
+   "away": "HUN",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1978-LOPEZ",
+     "name": "Christian Lopez",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1978-BERDOLL",
+     "name": "Marc Berdoll",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1978-ZOMBORI",
+     "name": "Sándor Zombori",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1978-ROCHETEAU",
+     "name": "Dominique Rocheteau",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-18",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-10",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "POL",
+   "away": "MEX",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1978-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1978-RANGEL",
+     "name": "Víctor Rangel",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1978-DEYNA",
+     "name": "Kazimierz Deyna",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1978-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-19",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1978-06-10",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "DEU",
+   "away": "TUN",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-20",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1978-06-10",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ARG",
+   "away": "ITA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1978-BETTEGA",
+     "name": "Roberto Bettega",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-21",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-11",
+   "stadium": "Estadio José María Minella",
+   "city": "Mar del Plata",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "AUT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DINAMITE",
+     "name": "Roberto Dinamite",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-22",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1978-06-11",
+   "stadium": "Estadio José Amalfitani",
+   "city": "Buenos Aires",
+   "capacity": 49000,
+   "home": "ESP",
+   "away": "SWE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1978-ASENSI",
+     "name": "Juan Manuel Asensi",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-23",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-11",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "PER",
+   "away": "IRN",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PER",
+     "player": "PER-1978-VELASQUEZ",
+     "name": "José Velásquez",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-1978-ROSHAN",
+     "name": "Hassan Roshan",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1978-CUBILLAS",
+     "name": "Teófilo Cubillas",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-24",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1978-06-11",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "SCO",
+   "away": "NLD",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1978-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1978-DALGLISH",
+     "name": "Kenny Dalglish",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1978-GEMMILL",
+     "name": "Archie Gemmill",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1978-GEMMILL",
+     "name": "Archie Gemmill",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-REP",
+     "name": "Johnny Rep",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-25",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-14",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "AUT",
+   "away": "NLD",
+   "score": [
+    1,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-1978-BRANDTS",
+     "name": "Ernie Brandts",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-RENSENBRINK",
+     "name": "Rob Rensenbrink",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-REP",
+     "name": "Johnny Rep",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-REP",
+     "name": "Johnny Rep",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1978-OBERMAYER",
+     "name": "Erich Obermayer",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-VANDEKERKHOFWIL",
+     "name": "Willy van de Kerkhof",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-26",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-14",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ITA",
+   "away": "DEU",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-27",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-14",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "BRA",
+   "away": "PER",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DIRCEU",
+     "name": "Dirceu",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DIRCEU",
+     "name": "Dirceu",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-ZICO",
+     "name": "Zico",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-28",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-14",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "ARG",
+   "away": "POL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-29",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-18",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "PER",
+   "away": "POL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1978-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-30",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-18",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ITA",
+   "away": "AUT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1978-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-31",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-18",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "NLD",
+   "away": "DEU",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1978-ABRAMCZIK",
+     "name": "Rüdiger Abramczik",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-HAAN",
+     "name": "Arie Haan",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-MULLER",
+     "name": "Dieter Müller",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-VANDEKERKHOF",
+     "name": "René van de Kerkhof",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-32",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-18",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "ARG",
+   "away": "BRA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1978-33",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-21",
+   "stadium": "Estadio Chateau Carreras",
+   "city": "Córdoba",
+   "capacity": 47000,
+   "home": "AUT",
+   "away": "DEU",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1978-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "DEU-1978-VOGTS",
+     "name": "Berti Vogts",
+     "minute": "59'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1978-KRANKL",
+     "name": "Hans Krankl",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1978-HOLZENBEIN",
+     "name": "Bernd Hölzenbein",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1978-KRANKL",
+     "name": "Hans Krankl",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-34",
+   "stage": "second group stage",
+   "group": "Group A",
+   "date": "1978-06-21",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ITA",
+   "away": "NLD",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "NLD-1978-BRANDTS",
+     "name": "Ernie Brandts",
+     "minute": "19'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-BRANDTS",
+     "name": "Ernie Brandts",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-HAAN",
+     "name": "Arie Haan",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-35",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-21",
+   "stadium": "Estadio Ciudad de Mendoza",
+   "city": "Mendoza",
+   "capacity": 35000,
+   "home": "BRA",
+   "away": "POL",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1978-NELINHO",
+     "name": "Nelinho",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1978-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DINAMITE",
+     "name": "Roberto Dinamite",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DINAMITE",
+     "name": "Roberto Dinamite",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-36",
+   "stage": "second group stage",
+   "group": "Group B",
+   "date": "1978-06-21",
+   "stadium": "Estadio Gigante de Arroyito",
+   "city": "Rosario",
+   "capacity": 46000,
+   "home": "ARG",
+   "away": "PER",
+   "score": [
+    6,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-TARANTINI",
+     "name": "Alberto Tarantini",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-LUQUE",
+     "name": "Leopoldo Luque",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-HOUSEMAN",
+     "name": "René Houseman",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-LUQUE",
+     "name": "Leopoldo Luque",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-37",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1978-06-24",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "BRA",
+   "away": "ITA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1978-CAUSIO",
+     "name": "Franco Causio",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-NELINHO",
+     "name": "Nelinho",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1978-DIRCEU",
+     "name": "Dirceu",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1978-38",
+   "stage": "final",
+   "group": null,
+   "date": "1978-06-25",
+   "stadium": "Estadio Monumental",
+   "city": "Buenos Aires",
+   "capacity": 75000,
+   "home": "ARG",
+   "away": "NLD",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1978-NANNINGA",
+     "name": "Dick Nanninga",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-KEMPES",
+     "name": "Mario Kempes",
+     "minute": "105'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1978-BERTONI",
+     "name": "Daniel Bertoni",
+     "minute": "115'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

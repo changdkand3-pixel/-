@@ -1,0 +1,2999 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-2022",
+ "year": 2022,
+ "name": "2022 FIFA Men's World Cup",
+ "host_country": "Qatar",
+ "winner": "Argentina",
+ "start_date": "2022-11-20",
+ "end_date": "2022-12-18",
+ "rules_profile": "modern",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group C",
+   "finish": 1
+  },
+  {
+   "team_id": "AUS",
+   "fifa_code": "AUS",
+   "name_en": "Australia",
+   "name_ko": "호주",
+   "group": "Group D",
+   "finish": "R16"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group G",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CAN",
+   "fifa_code": "CAN",
+   "name_en": "Canada",
+   "name_ko": "캐나다",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": "Group G",
+   "finish": "R16"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CRI",
+   "fifa_code": "CRC",
+   "name_en": "Costa Rica",
+   "name_ko": "코스타리카",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ECU",
+   "fifa_code": "ECU",
+   "name_en": "Ecuador",
+   "name_ko": "에콰도르",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group D",
+   "finish": 2
+  },
+  {
+   "team_id": "GHA",
+   "fifa_code": "GHA",
+   "name_en": "Ghana",
+   "name_ko": "가나",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HRV",
+   "fifa_code": "CRO",
+   "name_en": "Croatia",
+   "name_ko": "크로아티아",
+   "group": "Group F",
+   "finish": 3
+  },
+  {
+   "team_id": "IRN",
+   "fifa_code": "IRN",
+   "name_en": "Iran",
+   "name_ko": "이란",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "JPN",
+   "fifa_code": "JPN",
+   "name_en": "Japan",
+   "name_ko": "일본",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group H",
+   "finish": "R16"
+  },
+  {
+   "team_id": "MAR",
+   "fifa_code": "MAR",
+   "name_en": "Morocco",
+   "name_ko": "모로코",
+   "group": "Group F",
+   "finish": 4
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": "Group A",
+   "finish": "QF"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group H",
+   "finish": "QF"
+  },
+  {
+   "team_id": "QAT",
+   "fifa_code": "QAT",
+   "name_en": "Qatar",
+   "name_ko": "카타르",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SAU",
+   "fifa_code": "KSA",
+   "name_en": "Saudi Arabia",
+   "name_ko": "사우디아라비아",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SEN",
+   "fifa_code": "SEN",
+   "name_en": "Senegal",
+   "name_ko": "세네갈",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "SRB",
+   "fifa_code": "SRB",
+   "name_en": "Serbia",
+   "name_ko": "세르비아",
+   "group": "Group G",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "TUN",
+   "fifa_code": "TUN",
+   "name_en": "Tunisia",
+   "name_ko": "튀니지",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group H",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "WAL",
+   "fifa_code": "WAL",
+   "name_en": "Wales",
+   "name_ko": "웨일스",
+   "group": "Group B",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ARG"
+  },
+  {
+   "position": 2,
+   "team": "FRA"
+  },
+  {
+   "position": 3,
+   "team": "HRV"
+  },
+  {
+   "position": 4,
+   "team": "MAR"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ARG-2022-MESSI",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "FRA-2022-MBAPPE",
+   "team": "FRA"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "HRV-2022-MODRIC",
+   "team": "HRV"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "FRA-2022-MBAPPE",
+   "team": "FRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ARG-2022-MESSI",
+   "team": "ARG"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "FRA-2022-GIROUD",
+   "team": "FRA"
+  },
+  {
+   "award": "Golden Glove",
+   "player": "ARG-2022-MARTINEZEMI",
+   "team": "ARG"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "ARG-2022-FERNANDEZ",
+   "team": "ARG"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-2022-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-20",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "QAT",
+   "away": "ECU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ECU",
+     "player": "ECU-2022-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2022-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-02",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-21",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "ENG",
+   "away": "IRN",
+   "score": [
+    6,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2022-BELLINGHAM",
+     "name": "Jude Bellingham",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-SAKA",
+     "name": "Bukayo Saka",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-STERLING",
+     "name": "Raheem Sterling",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-SAKA",
+     "name": "Bukayo Saka",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2022-TAREMI",
+     "name": "Mehdi Taremi",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-RASHFORD",
+     "name": "Marcus Rashford",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-GREALISH",
+     "name": "Jack Grealish",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2022-TAREMI",
+     "name": "Mehdi Taremi",
+     "minute": "90'+13'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-03",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-21",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "SEN",
+   "away": "NLD",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2022-GAKPO",
+     "name": "Cody Gakpo",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-KLAASSEN",
+     "name": "Davy Klaassen",
+     "minute": "90'+9'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-04",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-21",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "USA",
+   "away": "WAL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2022-WEAH",
+     "name": "Timothy Weah",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "WAL",
+     "player": "WAL-2022-BALE",
+     "name": "Gareth Bale",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-22",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "ARG",
+   "away": "SAU",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2022-ALSHEHRI",
+     "name": "Saleh Al-Shehri",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2022-ALDAWSARI",
+     "name": "Salem Al-Dawsari",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-06",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-22",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "DNK",
+   "away": "TUN",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-07",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-22",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "MEX",
+   "away": "POL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-22",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "FRA",
+   "away": "AUS",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUS",
+     "player": "AUS-2022-GOODWIN",
+     "name": "Craig Goodwin",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-RABIOT",
+     "name": "Adrien Rabiot",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-GIROUD",
+     "name": "Olivier Giroud",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-GIROUD",
+     "name": "Olivier Giroud",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-09",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-11-23",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "MAR",
+   "away": "HRV",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-10",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-11-23",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "DEU",
+   "away": "JPN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2022-GUNDOGAN",
+     "name": "İlkay Gündoğan",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2022-DOAN",
+     "name": "Dōan Ritsu",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2022-ASANO",
+     "name": "Asano Takuma",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-11",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-11-23",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "ESP",
+   "away": "CRI",
+   "score": [
+    7,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2022-OLMO",
+     "name": "Dani Olmo",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-ASENSIO",
+     "name": "Marco Asensio",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-TORRESFER",
+     "name": "Ferran Torres",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-TORRESFER",
+     "name": "Ferran Torres",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-GAVI",
+     "name": "Gavi",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-SOLER",
+     "name": "Carlos Soler",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-2022-MORATA",
+     "name": "Álvaro Morata",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-12",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-11-23",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "BEL",
+   "away": "CAN",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-2022-BATSHUAYI",
+     "name": "Michy Batshuayi",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-13",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-11-24",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "CHE",
+   "away": "CMR",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2022-EMBOLO",
+     "name": "Breel Embolo",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-14",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-11-24",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "URY",
+   "away": "KOR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-15",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-11-24",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "PRT",
+   "away": "GHA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2022-RONALDO",
+     "name": "Cristiano Ronaldo",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2022-AYEWAND",
+     "name": "André Ayew",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-FELIX",
+     "name": "João Félix",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-LEAO",
+     "name": "Rafael Leão",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2022-BUKARI",
+     "name": "Osman Bukari",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-16",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-11-24",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "BRA",
+   "away": "SRB",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2022-RICHARLISON",
+     "name": "Richarlison",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2022-RICHARLISON",
+     "name": "Richarlison",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-17",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-25",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "WAL",
+   "away": "IRN",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "IRN",
+     "player": "IRN-2022-CHESHMI",
+     "name": "Rouzbeh Cheshmi",
+     "minute": "90'+8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "IRN",
+     "player": "IRN-2022-REZAEIAN",
+     "name": "Ramin Rezaeian",
+     "minute": "90'+11'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-18",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-25",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "QAT",
+   "away": "SEN",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "SEN-2022-DIA",
+     "name": "Boulaye Dia",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2022-DIEDHIOU",
+     "name": "Famara Diédhiou",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "QAT",
+     "player": "QAT-2022-MUNTARI",
+     "name": "Mohammed Muntari",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2022-DIENGBAM",
+     "name": "Bamba Dieng",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-19",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-25",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "NLD",
+   "away": "ECU",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2022-GAKPO",
+     "name": "Cody Gakpo",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2022-VALENCIA",
+     "name": "Enner Valencia",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-20",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-25",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "ENG",
+   "away": "USA",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-21",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-26",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "TUN",
+   "away": "AUS",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUS",
+     "player": "AUS-2022-DUKE",
+     "name": "Mitchell Duke",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-22",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-26",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "POL",
+   "away": "SAU",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-2022-ZIELINSKI",
+     "name": "Piotr Zieliński",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2022-LEWANDOWSKI",
+     "name": "Robert Lewandowski",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-23",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-26",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "FRA",
+   "away": "DNK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-2022-CHRISTENSEN",
+     "name": "Andreas Christensen",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-24",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-26",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "ARG",
+   "away": "MEX",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-FERNANDEZ",
+     "name": "Enzo Fernández",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-25",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-11-27",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "JPN",
+   "away": "CRI",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CRI",
+     "player": "CRI-2022-FULLER",
+     "name": "Keysher Fuller",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-26",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-11-27",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "BEL",
+   "away": "MAR",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-2022-SAISS",
+     "name": "Romain Saïss",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-2022-ABOUKHLAL",
+     "name": "Zakaria Aboukhlal",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-27",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-11-27",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "HRV",
+   "away": "CAN",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CAN",
+     "player": "CAN-2022-DAVIES",
+     "name": "Alphonso Davies",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-KRAMARIC",
+     "name": "Andrej Kramarić",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-LIVAJA",
+     "name": "Marko Livaja",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-KRAMARIC",
+     "name": "Andrej Kramarić",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-MAJER",
+     "name": "Lovro Majer",
+     "minute": "90'+4'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-28",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-11-27",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "ESP",
+   "away": "DEU",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2022-MORATA",
+     "name": "Álvaro Morata",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2022-FULLKRUG",
+     "name": "Niclas Füllkrug",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-29",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-11-28",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "CMR",
+   "away": "SRB",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-2022-CASTELLETTO",
+     "name": "Jean-Charles Castelletto",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2022-PAVLOVIC",
+     "name": "Strahinja Pavlović",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2022-MILINKOVICSAVIC",
+     "name": "Sergej Milinković-Savić",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2022-MITROVIC",
+     "name": "Aleksandar Mitrović",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-2022-ABOUBAKAR",
+     "name": "Vincent Aboubakar",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-2022-CHOUPOMOTING",
+     "name": "Eric Maxim Choupo-Moting",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-30",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-11-28",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "KOR",
+   "away": "GHA",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "GHA",
+     "player": "GHA-2022-SALISU",
+     "name": "Mohammed Salisu",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2022-KUDUS",
+     "name": "Mohammed Kudus",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2022-GUESUNG",
+     "name": "Gue-sung Cho",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2022-GUESUNG",
+     "name": "Gue-sung Cho",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "GHA",
+     "player": "GHA-2022-KUDUS",
+     "name": "Mohammed Kudus",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-31",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-11-28",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "CHE",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2022-CASEMIRO",
+     "name": "Casemiro",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-32",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-11-28",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "PRT",
+   "away": "URY",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2022-FERNANDES",
+     "name": "Bruno Fernandes",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-FERNANDES",
+     "name": "Bruno Fernandes",
+     "minute": "90'+3'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-33",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-29",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "ECU",
+   "away": "SEN",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SEN",
+     "player": "SEN-2022-SARRISM",
+     "name": "Ismaïla Sarr",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ECU",
+     "player": "ECU-2022-CAICEDO",
+     "name": "Moisés Caicedo",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SEN",
+     "player": "SEN-2022-KOULIBALY",
+     "name": "Kalidou Koulibaly",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-34",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "2022-11-29",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "NLD",
+   "away": "QAT",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2022-GAKPO",
+     "name": "Cody Gakpo",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-DEJONGFRE",
+     "name": "Frenkie de Jong",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-35",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-29",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "IRN",
+   "away": "USA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-2022-PULISIC",
+     "name": "Christian Pulisic",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-36",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "2022-11-29",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "WAL",
+   "away": "ENG",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2022-RASHFORD",
+     "name": "Marcus Rashford",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-FODEN",
+     "name": "Phil Foden",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-RASHFORD",
+     "name": "Marcus Rashford",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-37",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-30",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "AUS",
+   "away": "DNK",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUS",
+     "player": "AUS-2022-LECKIE",
+     "name": "Mathew Leckie",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-38",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "2022-11-30",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "TUN",
+   "away": "FRA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "TUN",
+     "player": "TUN-2022-KHAZRI",
+     "name": "Wahbi Khazri",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-39",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-30",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "POL",
+   "away": "ARG",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MACALLISTER",
+     "name": "Alexis Mac Allister",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-ALVAREZ",
+     "name": "Julián Álvarez",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-40",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "2022-11-30",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "SAU",
+   "away": "MEX",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-2022-MARTIN",
+     "name": "Henry Martín",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-2022-CHAVEZ",
+     "name": "Luis Chávez",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SAU",
+     "player": "SAU-2022-ALDAWSARI",
+     "name": "Salem Al-Dawsari",
+     "minute": "90'+5'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-41",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-12-01",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "CAN",
+   "away": "MAR",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-2022-ZIYECH",
+     "name": "Hakim Ziyech",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-2022-ENNESYRI",
+     "name": "Youssef En-Nesyri",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CAN",
+     "player": "MAR-2022-AGUERD",
+     "name": "Nayef Aguerd",
+     "minute": "40'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-42",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "2022-12-01",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "HRV",
+   "away": "BEL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-43",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-12-01",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "CRI",
+   "away": "DEU",
+   "score": [
+    2,
+    4
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-2022-GNABRY",
+     "name": "Serge Gnabry",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2022-TEJEDA",
+     "name": "Yeltsin Tejeda",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CRI",
+     "player": "CRI-2022-VARGAS",
+     "name": "Juan Pablo Vargas",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2022-HAVERTZ",
+     "name": "Kai Havertz",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2022-HAVERTZ",
+     "name": "Kai Havertz",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-2022-FULLKRUG",
+     "name": "Niclas Füllkrug",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-44",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "2022-12-01",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "JPN",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-2022-MORATA",
+     "name": "Álvaro Morata",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2022-DOAN",
+     "name": "Dōan Ritsu",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "JPN",
+     "player": "JPN-2022-TANAKA",
+     "name": "Tanaka Ao",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-45",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-12-02",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "GHA",
+   "away": "URY",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-2022-DEARRASCAETA",
+     "name": "Giorgian De Arrascaeta",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-2022-DEARRASCAETA",
+     "name": "Giorgian De Arrascaeta",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-46",
+   "stage": "group stage",
+   "group": "Group H",
+   "date": "2022-12-02",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "KOR",
+   "away": "PRT",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2022-HORTA",
+     "name": "Ricardo Horta",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2022-KIMYOU",
+     "name": "Kim Young-gwon",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2022-HWANG",
+     "name": "Hwang Hee-chan",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-47",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-12-02",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "CMR",
+   "away": "BRA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CMR",
+     "player": "CMR-2022-ABOUBAKAR",
+     "name": "Vincent Aboubakar",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-48",
+   "stage": "group stage",
+   "group": "Group G",
+   "date": "2022-12-02",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "SRB",
+   "away": "CHE",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-2022-SHAQIRI",
+     "name": "Xherdan Shaqiri",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2022-MITROVIC",
+     "name": "Aleksandar Mitrović",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SRB",
+     "player": "SRB-2022-VLAHOVIC",
+     "name": "Dušan Vlahović",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2022-EMBOLO",
+     "name": "Breel Embolo",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2022-FREULER",
+     "name": "Remo Freuler",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-49",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-03",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "NLD",
+   "away": "USA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NLD",
+     "player": "NLD-2022-DEPAY",
+     "name": "Memphis Depay",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-BLIND",
+     "name": "Daley Blind",
+     "minute": "45'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-2022-WRIGHT",
+     "name": "Haji Wright",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-DUMFRIES",
+     "name": "Denzel Dumfries",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-50",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-03",
+   "stadium": "Ahmad bin Ali Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "ARG",
+   "away": "AUS",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-ALVAREZ",
+     "name": "Julián Álvarez",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUS",
+     "player": "ARG-2022-FERNANDEZ",
+     "name": "Enzo Fernández",
+     "minute": "77'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-51",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-04",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "FRA",
+   "away": "POL",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2022-GIROUD",
+     "name": "Olivier Giroud",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "90'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-2022-LEWANDOWSKI",
+     "name": "Robert Lewandowski",
+     "minute": "90'+9'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-52",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-04",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "ENG",
+   "away": "SEN",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-2022-HENDERSON",
+     "name": "Jordan Henderson",
+     "minute": "38'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-KANE",
+     "name": "Harry Kane",
+     "minute": "45'+3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-SAKA",
+     "name": "Bukayo Saka",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-53",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-05",
+   "stadium": "Al Janoub Stadium",
+   "city": "Al Wakrah",
+   "capacity": 44000,
+   "home": "JPN",
+   "away": "HRV",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    1,
+    3
+   ],
+   "goals": [
+    {
+     "team": "JPN",
+     "player": "JPN-2022-MAEDA",
+     "name": "Maeda Daizen",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-PERISIC",
+     "name": "Ivan Perišić",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-54",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-05",
+   "stadium": "Stadium 974",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "BRA",
+   "away": "KOR",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2022-JUNIOR",
+     "name": "Vinícius Júnior",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2022-NEYMAR",
+     "name": "Neymar",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2022-RICHARLISON",
+     "name": "Richarlison",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-2022-PAQUETA",
+     "name": "Lucas Paquetá",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-2022-SEUNGHO",
+     "name": "Seung-ho Paik",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-55",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-06",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "MAR",
+   "away": "ESP",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    0
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-2022-56",
+   "stage": "round of 16",
+   "group": null,
+   "date": "2022-12-06",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "PRT",
+   "away": "CHE",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-2022-RAMOS",
+     "name": "Gonçalo Ramos",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-PEPE",
+     "name": "Pepe",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-RAMOS",
+     "name": "Gonçalo Ramos",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-GUERREIRO",
+     "name": "Raphaël Guerreiro",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-2022-AKANJI",
+     "name": "Manuel Akanji",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-RAMOS",
+     "name": "Gonçalo Ramos",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-2022-LEAO",
+     "name": "Rafael Leão",
+     "minute": "90'+2'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-57",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2022-12-09",
+   "stadium": "Education City Stadium",
+   "city": "Al Rayyan",
+   "capacity": 45000,
+   "home": "HRV",
+   "away": "BRA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    2
+   ],
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-2022-NEYMAR",
+     "name": "Neymar",
+     "minute": "105'+1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-PETKOVIC",
+     "name": "Bruno Petković",
+     "minute": "117'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-58",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2022-12-09",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "NLD",
+   "away": "ARG",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MOLINA",
+     "name": "Nahuel Molina",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-WEGHORST",
+     "name": "Wout Weghorst",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-2022-WEGHORST",
+     "name": "Wout Weghorst",
+     "minute": "90'+11'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-59",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2022-12-10",
+   "stadium": "Al Thumama Stadium",
+   "city": "Doha",
+   "capacity": 44000,
+   "home": "MAR",
+   "away": "PRT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-2022-ENNESYRI",
+     "name": "Youssef En-Nesyri",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-60",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "2022-12-10",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "ENG",
+   "away": "FRA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2022-TCHOUAMENI",
+     "name": "Aurélien Tchouaméni",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-2022-KANE",
+     "name": "Harry Kane",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-GIROUD",
+     "name": "Olivier Giroud",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-61",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2022-12-13",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "ARG",
+   "away": "HRV",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-ALVAREZ",
+     "name": "Julián Álvarez",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-ALVAREZ",
+     "name": "Julián Álvarez",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-62",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "2022-12-14",
+   "stadium": "Al Bayt Stadium",
+   "city": "Al Khor",
+   "capacity": 69000,
+   "home": "FRA",
+   "away": "MAR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-2022-HERNANDEZTHE",
+     "name": "Théo Hernandez",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-KOLOMUANI",
+     "name": "Randal Kolo Muani",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-63",
+   "stage": "third-place match",
+   "group": null,
+   "date": "2022-12-17",
+   "stadium": "Khalifa International Stadium",
+   "city": "Al Rayyan",
+   "capacity": 46000,
+   "home": "HRV",
+   "away": "MAR",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HRV",
+     "player": "HRV-2022-GVARDIOL",
+     "name": "Joško Gvardiol",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-2022-DARI",
+     "name": "Achraf Dari",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HRV",
+     "player": "HRV-2022-ORSIC",
+     "name": "Mislav Oršić",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-2022-64",
+   "stage": "final",
+   "group": null,
+   "date": "2022-12-18",
+   "stadium": "Lusail Stadium",
+   "city": "Lusail",
+   "capacity": 89000,
+   "home": "ARG",
+   "away": "FRA",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    2
+   ],
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-DIMARIA",
+     "name": "Ángel Di María",
+     "minute": "36'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-2022-MESSI",
+     "name": "Lionel Messi",
+     "minute": "108'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-2022-MBAPPE",
+     "name": "Kylian Mbappé",
+     "minute": "118'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

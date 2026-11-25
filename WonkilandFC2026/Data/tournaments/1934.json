@@ -1,0 +1,1082 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1934",
+ "year": 1934,
+ "name": "1934 FIFA Men's World Cup",
+ "host_country": "Italy",
+ "winner": "Italy",
+ "start_date": "1934-05-27",
+ "end_date": "1934-06-10",
+ "rules_profile": "historical_1930",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": null,
+   "finish": 4
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "CHE",
+   "fifa_code": "SUI",
+   "name_en": "Switzerland",
+   "name_ko": "스위스",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": null,
+   "finish": 2
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "Germany",
+   "name_ko": "독일",
+   "group": null,
+   "finish": 3
+  },
+  {
+   "team_id": "EGY",
+   "fifa_code": "EGY",
+   "name_en": "Egypt",
+   "name_ko": "이집트",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": null,
+   "finish": 1
+  },
+  {
+   "team_id": "NLD",
+   "fifa_code": "NED",
+   "name_en": "Netherlands",
+   "name_ko": "네덜란드",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": null,
+   "finish": "R16"
+  },
+  {
+   "team_id": "SWE",
+   "fifa_code": "SWE",
+   "name_en": "Sweden",
+   "name_ko": "스웨덴",
+   "group": null,
+   "finish": "QF"
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": null,
+   "finish": "R16"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ITA"
+  },
+  {
+   "position": 2,
+   "team": "CSK"
+  },
+  {
+   "position": 3,
+   "team": "DEU"
+  },
+  {
+   "position": 4,
+   "team": "AUT"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "CSK-1934-NEJEDLY",
+   "team": "CSK"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-1934-CONEN",
+   "team": "DEU"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ITA-1934-SCHIAVIO",
+   "team": "ITA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1934-01",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Benito Mussolini",
+   "city": "Turin",
+   "capacity": 28000,
+   "home": "AUT",
+   "away": "FRA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1934-NICOLAS",
+     "name": "Jean Nicolas",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-SINDELAR",
+     "name": "Matthias Sindelar",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-SCHALL",
+     "name": "Anton Schall",
+     "minute": "93'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-BICAN",
+     "name": "Josef Bican",
+     "minute": "109'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1934-VERRIEST",
+     "name": "Georges Verriest",
+     "minute": "116'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-02",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Littorio",
+   "city": "Trieste",
+   "capacity": 8000,
+   "home": "CSK",
+   "away": "ROU",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1934-DOBAY",
+     "name": "Ștefan Dobay",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-PUC",
+     "name": "Antonín Puč",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-03",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Giovanni Berta",
+   "city": "Florence",
+   "capacity": 47000,
+   "home": "DEU",
+   "away": "BEL",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1934-KOBIERSKI",
+     "name": "Stanislaus Kobierski",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1934-VOORHOOF",
+     "name": "Bernard Voorhoof",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1934-VOORHOOF",
+     "name": "Bernard Voorhoof",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-SIFFLING",
+     "name": "Otto Siffling",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-CONEN",
+     "name": "Edmund Conen",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-CONEN",
+     "name": "Edmund Conen",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-CONEN",
+     "name": "Edmund Conen",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-04",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Giorgio Ascarelli",
+   "city": "Naples",
+   "capacity": 40000,
+   "home": "HUN",
+   "away": "EGY",
+   "score": [
+    4,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1934-TELEKI",
+     "name": "Pál Teleki",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1934-TOLDI",
+     "name": "Géza Toldi",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "EGY",
+     "player": "EGY-1934-FAWZI",
+     "name": "Abdulrahman Fawzi",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "EGY",
+     "player": "EGY-1934-FAWZI",
+     "name": "Abdulrahman Fawzi",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1934-VINCZE",
+     "name": "Jenő Vincze",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1934-TOLDI",
+     "name": "Géza Toldi",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-05",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Nazionale PNF",
+   "city": "Rome",
+   "capacity": 47000,
+   "home": "ITA",
+   "away": "USA",
+   "score": [
+    7,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1934-SCHIAVIO",
+     "name": "Angelo Schiavio",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-ORSI",
+     "name": "Raimundo Orsi",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-SCHIAVIO",
+     "name": "Angelo Schiavio",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1934-DONELLI",
+     "name": "Aldo Donelli",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-FERRARI",
+     "name": "Giovanni Ferrari",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-SCHIAVIO",
+     "name": "Angelo Schiavio",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-ORSI",
+     "name": "Raimundo Orsi",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-MEAZZA",
+     "name": "Giuseppe Meazza",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-06",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Luigi Ferraris",
+   "city": "Genoa",
+   "capacity": 37000,
+   "home": "ESP",
+   "away": "BRA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1934-IRARAGORRI",
+     "name": "José Iraragorri",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1934-IRARAGORRI",
+     "name": "José Iraragorri",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1934-LANGARA",
+     "name": "Isidro Lángara",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1934-LEONIDAS",
+     "name": "Leônidas",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-07",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "SWE",
+   "away": "ARG",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1934-BELIS",
+     "name": "Ernesto Belis",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1934-JONASSON",
+     "name": "Sven Jonasson",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1934-GALATEO",
+     "name": "Alberto Galateo",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1934-JONASSON",
+     "name": "Sven Jonasson",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1934-KROON",
+     "name": "Knut Kroon",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-08",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1934-05-27",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "CHE",
+   "away": "NLD",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1934-KIELHOLZ",
+     "name": "Leopold Kielholz",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1934-SMIT",
+     "name": "Kick Smit",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1934-KIELHOLZ",
+     "name": "Leopold Kielholz",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1934-ABEGGLEN",
+     "name": "André Abegglen",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NLD",
+     "player": "NLD-1934-VENTE",
+     "name": "Leen Vente",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-09",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1934-05-31",
+   "stadium": "Stadio Renato Dall'Ara",
+   "city": "Bologna",
+   "capacity": 50000,
+   "home": "AUT",
+   "away": "HUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1934-HORVATH",
+     "name": "Johann Horvath",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-ZISCHEK",
+     "name": "Karl Zischek",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1934-SAROSI",
+     "name": "György Sárosi",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-10",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1934-05-31",
+   "stadium": "Stadio Benito Mussolini",
+   "city": "Turin",
+   "capacity": 28000,
+   "home": "CSK",
+   "away": "CHE",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHE",
+     "player": "CHE-1934-KIELHOLZ",
+     "name": "Leopold Kielholz",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-SVOBODA",
+     "name": "František Svoboda",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-SOBOTKA",
+     "name": "Jiří Sobotka",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHE",
+     "player": "CHE-1934-JAGGI",
+     "name": "Willy Jäggi",
+     "minute": "78'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-11",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1934-05-31",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "DEU",
+   "away": "SWE",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1934-HOHMANN",
+     "name": "Karl Hohmann",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-HOHMANN",
+     "name": "Karl Hohmann",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SWE",
+     "player": "SWE-1934-DUNKER",
+     "name": "Gösta Dunker",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-12",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1934-05-31",
+   "stadium": "Stadio Giovanni Berta",
+   "city": "Florence",
+   "capacity": 47000,
+   "home": "ITA",
+   "away": "ESP",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1934-REGUEIRO",
+     "name": "Luis Regueiro",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-FERRARI",
+     "name": "Giovanni Ferrari",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-13",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1934-06-01",
+   "stadium": "Stadio Giovanni Berta",
+   "city": "Florence",
+   "capacity": 47000,
+   "home": "ITA",
+   "away": "ESP",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": true,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1934-MEAZZA",
+     "name": "Giuseppe Meazza",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-14",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1934-06-03",
+   "stadium": "Stadio Nazionale PNF",
+   "city": "Rome",
+   "capacity": 47000,
+   "home": "CSK",
+   "away": "DEU",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1934-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-NOACK",
+     "name": "Rudolf Noack",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1934-NEJEDLY",
+     "name": "Oldřich Nejedlý",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-15",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1934-06-03",
+   "stadium": "San Siro",
+   "city": "Milan",
+   "capacity": 75000,
+   "home": "ITA",
+   "away": "AUT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1934-GUAITA",
+     "name": "Enrique Guaita",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-16",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1934-06-07",
+   "stadium": "Stadio Giorgio Ascarelli",
+   "city": "Naples",
+   "capacity": 40000,
+   "home": "DEU",
+   "away": "AUT",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1934-LEHNER",
+     "name": "Ernst Lehner",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-CONEN",
+     "name": "Edmund Conen",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-HORVATH",
+     "name": "Johann Horvath",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1934-LEHNER",
+     "name": "Ernst Lehner",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1934-SESTA",
+     "name": "Karl Sesta",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1934-17",
+   "stage": "final",
+   "group": null,
+   "date": "1934-06-10",
+   "stadium": "Stadio Nazionale PNF",
+   "city": "Rome",
+   "capacity": 47000,
+   "home": "ITA",
+   "away": "CSK",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1934-PUC",
+     "name": "Antonín Puč",
+     "minute": "71'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-ORSI",
+     "name": "Raimundo Orsi",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1934-SCHIAVIO",
+     "name": "Angelo Schiavio",
+     "minute": "95'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

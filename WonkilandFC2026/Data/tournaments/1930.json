@@ -1,205 +1,1078 @@
 {
- "schema": "wfc.tournament.v1",
- "id": "WC1930",
- "edition": 1,
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1930",
  "year": 1930,
+ "name": "1930 FIFA Men's World Cup",
  "host_country": "Uruguay",
- "host_country_ko": "우루과이",
+ "winner": "Uruguay",
+ "start_date": "1930-07-13",
+ "end_date": "1930-07-30",
+ "rules_profile": "historical_1930",
  "teams": [
   {
-   "team_id": "URU",
-   "name_ko": "우루과이",
-   "name_en": "Uruguay",
-   "group": 3,
-   "squad_file": "players/1930/URU.json",
-   "data_status": "final_lineup_only"
-  },
-  {
    "team_id": "ARG",
-   "name_ko": "아르헨티나",
+   "fifa_code": "ARG",
    "name_en": "Argentina",
-   "group": 1,
-   "squad_file": "players/1930/ARG.json",
-   "data_status": "final_lineup_only"
-  },
-  {
-   "team_id": "USA",
-   "name_ko": "미국",
-   "name_en": "United States",
-   "group": 4,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "YUG",
-   "name_ko": "유고슬라비아",
-   "name_en": "Yugoslavia",
-   "group": 2,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "CHI",
-   "name_ko": "칠레",
-   "name_en": "Chile",
-   "group": 1,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "BRA",
-   "name_ko": "브라질",
-   "name_en": "Brazil",
-   "group": 2,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "FRA",
-   "name_ko": "프랑스",
-   "name_en": "France",
-   "group": 1,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "ROU",
-   "name_ko": "루마니아",
-   "name_en": "Romania",
-   "group": 3,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "PAR",
-   "name_ko": "파라과이",
-   "name_en": "Paraguay",
-   "group": 4,
-   "squad_file": null,
-   "data_status": "not_started"
-  },
-  {
-   "team_id": "PER",
-   "name_ko": "페루",
-   "name_en": "Peru",
-   "group": 3,
-   "squad_file": null,
-   "data_status": "not_started"
+   "name_ko": "아르헨티나",
+   "group": "Group 1",
+   "finish": 2
   },
   {
    "team_id": "BEL",
-   "name_ko": "벨기에",
+   "fifa_code": "BEL",
    "name_en": "Belgium",
-   "group": 4,
-   "squad_file": null,
-   "data_status": "not_started"
+   "name_ko": "벨기에",
+   "group": "Group 4",
+   "finish": "GROUP"
   },
   {
    "team_id": "BOL",
-   "name_ko": "볼리비아",
+   "fifa_code": "BOL",
    "name_en": "Bolivia",
-   "group": 2,
-   "squad_file": null,
-   "data_status": "not_started"
+   "name_ko": "볼리비아",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 1",
+   "finish": "GROUP"
   },
   {
    "team_id": "MEX",
-   "name_ko": "멕시코",
+   "fifa_code": "MEX",
    "name_en": "Mexico",
-   "group": 1,
-   "squad_file": null,
-   "data_status": "not_started"
+   "name_ko": "멕시코",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PER",
+   "fifa_code": "PER",
+   "name_en": "Peru",
+   "name_ko": "페루",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ROU",
+   "fifa_code": "ROU",
+   "name_en": "Romania",
+   "name_ko": "루마니아",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group 3",
+   "finish": 1
+  },
+  {
+   "team_id": "USA",
+   "fifa_code": "USA",
+   "name_en": "United States",
+   "name_ko": "미국",
+   "group": "Group 4",
+   "finish": 3
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 2",
+   "finish": 4
   }
  ],
- "rules_profile": "rules/historical_1930.json",
- "knockout": [
+ "standings": [
   {
-   "round": "semi_final",
+   "position": 1,
+   "team": "URY"
+  },
+  {
+   "position": 2,
+   "team": "ARG"
+  },
+  {
+   "position": 3,
+   "team": "USA"
+  },
+  {
+   "position": 4,
+   "team": "YUG"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Boot",
+   "player": "ARG-1930-STABILE",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "URY-1930-CEA",
+   "team": "URY"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "USA-1930-PATENAUDE",
+   "team": "USA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1930-01",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-13",
+   "stadium": "Estadio Pocitos",
+   "city": "Montevideo",
+   "capacity": 10000,
+   "home": "FRA",
+   "away": "MEX",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1930-LAURENTLUC",
+     "name": "Lucien Laurent",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1930-LANGILLER",
+     "name": "Marcel Langiller",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1930-MASCHINOT",
+     "name": "André Maschinot",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1930-CARRENO",
+     "name": "Juan Carreño",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1930-MASCHINOT",
+     "name": "André Maschinot",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-02",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1930-07-13",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "USA",
+   "away": "BEL",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-1930-MCGHEE",
+     "name": "Bart McGhee",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1930-FLORIE",
+     "name": "Tom Florie",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1930-PATENAUDE",
+     "name": "Bert Patenaude",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-03",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1930-07-14",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "YUG",
+   "away": "BRA",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1930-TIRNANIC",
+     "name": "Aleksandar Tirnanić",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1930-BEK",
+     "name": "Ivan Bek",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1930-PREGUINHO",
+     "name": "Preguinho",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-04",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1930-07-14",
+   "stadium": "Estadio Pocitos",
+   "city": "Montevideo",
+   "capacity": 10000,
+   "home": "ROU",
+   "away": "PER",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ROU",
+     "player": "ROU-1930-DESU",
+     "name": "Adalbert Deşu",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1930-SOUZAFERREIRA",
+     "name": "Luis Souza Ferreira",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1930-STANCIU",
+     "name": "Constantin Stanciu",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ROU",
+     "player": "ROU-1930-KOVACS",
+     "name": "Miklós Kovács",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-05",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-15",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "ARG",
+   "away": "FRA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1930-MONTI",
+     "name": "Luis Monti",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-06",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-16",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "CHL",
+   "away": "MEX",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1930-VIDAL",
+     "name": "Carlos Vidal",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "MEX-1930-ROSASMAN",
+     "name": "Manuel Rosas",
+     "minute": "52'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1930-VIDAL",
+     "name": "Carlos Vidal",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-07",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1930-07-17",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "YUG",
+   "away": "BOL",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1930-BEK",
+     "name": "Ivan Bek",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1930-MARJANOVIC",
+     "name": "Blagoje Marjanović",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1930-BEK",
+     "name": "Ivan Bek",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "YUG",
+     "player": "YUG-1930-VUJADINOVIC",
+     "name": "Đorđe Vujadinović",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1930-07-17",
+   "stadium": "Estadio Gran Parque Central",
+   "city": "Montevideo",
+   "capacity": 20000,
+   "home": "USA",
+   "away": "PRY",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "USA",
+     "player": "USA-1930-PATENAUDE",
+     "name": "Bert Patenaude",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1930-PATENAUDE",
+     "name": "Bert Patenaude",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1930-PATENAUDE",
+     "name": "Bert Patenaude",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-09",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1930-07-18",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "URY",
+   "away": "PER",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1930-CASTRO",
+     "name": "Héctor Castro",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-10",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-19",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "CHL",
+   "away": "FRA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CHL",
+     "player": "CHL-1930-SUBIABRE",
+     "name": "Guillermo Subiabre",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-11",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-19",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "ARG",
+   "away": "MEX",
+   "score": [
+    6,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-ZUMELZU",
+     "name": "Adolfo Zumelzú",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1930-ROSASMAN",
+     "name": "Manuel Rosas",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-VARALLO",
+     "name": "Francisco Varallo",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-ZUMELZU",
+     "name": "Adolfo Zumelzú",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1930-ROSASMAN",
+     "name": "Manuel Rosas",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1930-GAYON",
+     "name": "Roberto Gayón",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-12",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1930-07-20",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "BRA",
+   "away": "BOL",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1930-MODERATO",
+     "name": "Moderato",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1930-PREGUINHO",
+     "name": "Preguinho",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1930-MODERATO",
+     "name": "Moderato",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1930-PREGUINHO",
+     "name": "Preguinho",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-13",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1930-07-20",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "PRY",
+   "away": "BEL",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-1930-VARGASPENA",
+     "name": "Luis Vargas Peña",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1930-07-21",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "URY",
+   "away": "ROU",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1930-DORADO",
+     "name": "Pablo Dorado",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-SCARONE",
+     "name": "Héctor Scarone",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-ANSELMO",
+     "name": "Peregrino Anselmo",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-CEA",
+     "name": "Pedro Cea",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-15",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1930-07-22",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "ARG",
+   "away": "CHL",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1930-SUBIABRE",
+     "name": "Guillermo Subiabre",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-EVARISTOMAR",
+     "name": "Mario Evaristo",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1930-16",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1930-07-26",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
    "home": "ARG",
    "away": "USA",
    "score": [
     6,
     1
    ],
-   "verification": "needs_citation"
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1930-MONTI",
+     "name": "Luis Monti",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-SCOPELLI",
+     "name": "Alejandro Scopelli",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-PEUCELLE",
+     "name": "Carlos Peucelle",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-PEUCELLE",
+     "name": "Carlos Peucelle",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1930-STABILE",
+     "name": "Guillermo Stábile",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "USA",
+     "player": "USA-1930-BROWN",
+     "name": "Jim Brown",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
   },
   {
-   "round": "semi_final",
-   "home": "URU",
+   "match_id": "M-1930-17",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1930-07-27",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "URY",
    "away": "YUG",
    "score": [
     6,
     1
    ],
-   "verification": "needs_citation"
-  }
- ],
- "matches": [
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1930-VUJADINOVIC",
+     "name": "Đorđe Vujadinović",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-CEA",
+     "name": "Pedro Cea",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-ANSELMO",
+     "name": "Peregrino Anselmo",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-ANSELMO",
+     "name": "Peregrino Anselmo",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-IRIARTE",
+     "name": "Santos Iriarte",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-CEA",
+     "name": "Pedro Cea",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1930-CEA",
+     "name": "Pedro Cea",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
   {
-   "match_id": "WC1930-FINAL",
-   "round": "final",
+   "match_id": "M-1930-18",
+   "stage": "final",
+   "group": null,
    "date": "1930-07-30",
-   "stadium_id": "estadio-centenario",
-   "home": "URU",
+   "stadium": "Estadio Centenario",
+   "city": "Montevideo",
+   "capacity": 90000,
+   "home": "URY",
    "away": "ARG",
    "score": [
     4,
     2
    ],
-   "half_time": [
-    1,
-    2
-   ],
-   "referee": {
-    "name_en": "John Langenus",
-    "nationality": "BEL"
-   },
-   "attendance": 68346,
-   "formation_home": "2-3-5",
-   "formation_away": "2-3-5",
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
    "goals": [
     {
-     "team": "URU",
-     "player": "URU-1930-DORADO",
-     "minute": 12
+     "team": "URY",
+     "player": "URY-1930-DORADO",
+     "name": "Pablo Dorado",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
     },
     {
      "team": "ARG",
      "player": "ARG-1930-PEUCELLE",
-     "minute": 20
+     "name": "Carlos Peucelle",
+     "minute": "20'",
+     "own_goal": false,
+     "penalty": false
     },
     {
      "team": "ARG",
      "player": "ARG-1930-STABILE",
-     "minute": 37
+     "name": "Guillermo Stábile",
+     "minute": "37'",
+     "own_goal": false,
+     "penalty": false
     },
     {
-     "team": "URU",
-     "player": "URU-1930-CEA",
-     "minute": 57
+     "team": "URY",
+     "player": "URY-1930-CEA",
+     "name": "Pedro Cea",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
     },
     {
-     "team": "URU",
-     "player": "URU-1930-IRIARTE",
-     "minute": 68
+     "team": "URY",
+     "player": "URY-1930-IRIARTE",
+     "name": "Santos Iriarte",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
     },
     {
-     "team": "URU",
-     "player": "URU-1930-CASTRO",
-     "minute": 89
+     "team": "URY",
+     "player": "URY-1930-CASTRO",
+     "name": "Héctor Castro",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
     }
-   ],
-   "notes": [
-    "전반은 아르헨티나 공, 후반은 우루과이 공을 사용했다는 기록이 널리 알려져 있음(출처 첨부 필요)."
-   ],
-   "verification": {
-    "score": "needs_citation",
-    "half_time": "needs_citation",
-    "goals": "needs_citation",
-    "referee": "needs_citation",
-    "attendance": "needs_citation",
-    "formations": "needs_citation"
-   }
+   ]
   }
- ]
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
 }

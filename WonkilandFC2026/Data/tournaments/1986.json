@@ -1,0 +1,2372 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1986",
+ "year": 1986,
+ "name": "1986 FIFA Men's World Cup",
+ "host_country": "Mexico",
+ "winner": "Argentina",
+ "start_date": "1986-05-31",
+ "end_date": "1986-06-29",
+ "rules_profile": "historical_1982",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group A",
+   "finish": 1
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group B",
+   "finish": 4
+  },
+  {
+   "team_id": "BGR",
+   "fifa_code": "BUL",
+   "name_en": "Bulgaria",
+   "name_ko": "불가리아",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group D",
+   "finish": "QF"
+  },
+  {
+   "team_id": "CAN",
+   "fifa_code": "CAN",
+   "name_en": "Canada",
+   "name_ko": "캐나다",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group E",
+   "finish": 2
+  },
+  {
+   "team_id": "DNK",
+   "fifa_code": "DEN",
+   "name_en": "Denmark",
+   "name_ko": "덴마크",
+   "group": "Group E",
+   "finish": "R16"
+  },
+  {
+   "team_id": "DZA",
+   "fifa_code": "ALG",
+   "name_en": "Algeria",
+   "name_ko": "알제리",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group F",
+   "finish": "QF"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group D",
+   "finish": "QF"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group C",
+   "finish": 3
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group C",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "IRQ",
+   "fifa_code": "IRQ",
+   "name_en": "Iraq",
+   "name_ko": "이라크",
+   "group": "Group B",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group A",
+   "finish": "R16"
+  },
+  {
+   "team_id": "KOR",
+   "fifa_code": "KOR",
+   "name_en": "South Korea",
+   "name_ko": "대한민국",
+   "group": "Group A",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "MAR",
+   "fifa_code": "MAR",
+   "name_en": "Morocco",
+   "name_ko": "모로코",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "MEX",
+   "fifa_code": "MEX",
+   "name_en": "Mexico",
+   "name_ko": "멕시코",
+   "group": "Group B",
+   "finish": "QF"
+  },
+  {
+   "team_id": "NIR",
+   "fifa_code": "NIR",
+   "name_en": "Northern Ireland",
+   "name_ko": "북아일랜드",
+   "group": "Group D",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group F",
+   "finish": "R16"
+  },
+  {
+   "team_id": "PRT",
+   "fifa_code": "POR",
+   "name_en": "Portugal",
+   "name_ko": "포르투갈",
+   "group": "Group F",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PRY",
+   "fifa_code": "PAR",
+   "name_en": "Paraguay",
+   "name_ko": "파라과이",
+   "group": "Group B",
+   "finish": "R16"
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group E",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group C",
+   "finish": "R16"
+  },
+  {
+   "team_id": "URY",
+   "fifa_code": "URU",
+   "name_en": "Uruguay",
+   "name_ko": "우루과이",
+   "group": "Group E",
+   "finish": "R16"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ARG"
+  },
+  {
+   "position": 2,
+   "team": "DEU"
+  },
+  {
+   "position": 3,
+   "team": "FRA"
+  },
+  {
+   "position": 4,
+   "team": "BEL"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ARG-1986-MARADONA",
+   "team": "ARG"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "DEU-1986-SCHUMACHER",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "DNK-1986-ELKJR",
+   "team": "DNK"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "ENG-1986-LINEKER",
+   "team": "ENG"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ESP-1986-BUTRAGUENO",
+   "team": "ESP"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "BRA-1986-CARECA",
+   "team": "BRA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "ARG-1986-MARADONA",
+   "team": "ARG"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "BEL-1986-SCIFO",
+   "team": "BEL"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1986-01",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-05-31",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "BGR",
+   "away": "ITA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1986-ALTOBELLI",
+     "name": "Alessandro Altobelli",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BGR",
+     "player": "BGR-1986-SIRAKOV",
+     "name": "Nasko Sirakov",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-02",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-01",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "ESP",
+   "away": "BRA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1986-SOCRATES",
+     "name": "Sócrates",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-03",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-01",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "CAN",
+   "away": "FRA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1986-PAPIN",
+     "name": "Jean-Pierre Papin",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-04",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-06-02",
+   "stadium": "Estadio Olímpico Universitario",
+   "city": "Mexico City",
+   "capacity": 72000,
+   "home": "ARG",
+   "away": "KOR",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-VALDANO",
+     "name": "Jorge Valdano",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-RUGGERI",
+     "name": "Oscar Ruggeri",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-VALDANO",
+     "name": "Jorge Valdano",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1986-PARKCHA",
+     "name": "Park Chang-sun",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-05",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-02",
+   "stadium": "Estadio Sergio León Chavez",
+   "city": "Irapuato",
+   "capacity": 31000,
+   "home": "SUN",
+   "away": "HUN",
+   "score": [
+    6,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1986-YAKOVENKO",
+     "name": "Pavel Yakovenko",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-ALEINIKOV",
+     "name": "Sergei Aleinikov",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-BELANOV",
+     "name": "Ihor Belanov",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-YAREMCHUK",
+     "name": "Ivan Yaremchuk",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "HUN-1986-DAJKA",
+     "name": "László Dajka",
+     "minute": "73'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-RODIONOV",
+     "name": "Sergey Rodionov",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-06",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-02",
+   "stadium": "Estadio Universitario",
+   "city": "Monterrey",
+   "capacity": 44000,
+   "home": "MAR",
+   "away": "POL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1986-07",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-03",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "BEL",
+   "away": "MEX",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1986-QUIRARTE",
+     "name": "Fernando Quirarte",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1986-SANCHEZ",
+     "name": "Hugo Sánchez",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-VANDENBERGH",
+     "name": "Erwin Vandenbergh",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-08",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-03",
+   "stadium": "Estadio Tres de Marzo",
+   "city": "Guadalajara",
+   "capacity": 30000,
+   "home": "DZA",
+   "away": "NIR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1986-WHITESIDE",
+     "name": "Norman Whiteside",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-1986-ZIDANE",
+     "name": "Djamel Zidane",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-09",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-03",
+   "stadium": "Estadio Tecnológico",
+   "city": "Monterrey",
+   "capacity": 34000,
+   "home": "PRT",
+   "away": "ENG",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRT",
+     "player": "PRT-1986-MANUEL",
+     "name": "Carlos Manuel",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-10",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-04",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "PRY",
+   "away": "IRQ",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "PRY",
+     "player": "PRY-1986-ROMERO",
+     "name": "Julio César Romero",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-11",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-04",
+   "stadium": "Estadio La Corregidora",
+   "city": "Querétaro",
+   "capacity": 39000,
+   "home": "URY",
+   "away": "DEU",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "URY",
+     "player": "URY-1986-ALZAMENDI",
+     "name": "Antonio Alzamendi",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-ALLOFS",
+     "name": "Klaus Allofs",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-12",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-04",
+   "stadium": "Estadio Neza 86",
+   "city": "Nezahualcóyotl",
+   "capacity": 35000,
+   "home": "SCO",
+   "away": "DNK",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1986-ELKJR",
+     "name": "Preben Elkjær",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-13",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-06-05",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "ITA",
+   "away": "ARG",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1986-ALTOBELLI",
+     "name": "Alessandro Altobelli",
+     "minute": "6'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-14",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-05",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "FRA",
+   "away": "SUN",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1986-RATS",
+     "name": "Vasyl Rats",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-FERNANDEZ",
+     "name": "Luis Fernández",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-15",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-06-05",
+   "stadium": "Estadio Olímpico Universitario",
+   "city": "Mexico City",
+   "capacity": 72000,
+   "home": "KOR",
+   "away": "BGR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BGR",
+     "player": "BGR-1986-GETOV",
+     "name": "Plamen Getov",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1986-KIM",
+     "name": "Kim Jong-boo",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-16",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-06",
+   "stadium": "Estadio Sergio León Chavez",
+   "city": "Irapuato",
+   "capacity": 31000,
+   "home": "HUN",
+   "away": "CAN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1986-ESTERHAZY",
+     "name": "Márton Esterházy",
+     "minute": "2'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1986-DETARI",
+     "name": "Lajos Détári",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-17",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-06",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "DZA",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1986-CARECA",
+     "name": "Careca",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-18",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-06",
+   "stadium": "Estadio Tecnológico",
+   "city": "Monterrey",
+   "capacity": 34000,
+   "home": "ENG",
+   "away": "MAR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1986-19",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-07",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "MEX",
+   "away": "PRY",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1986-FLORES",
+     "name": "Luis Flores",
+     "minute": "3'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1986-ROMERO",
+     "name": "Julio César Romero",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-20",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-07",
+   "stadium": "Estadio Tres de Marzo",
+   "city": "Guadalajara",
+   "capacity": 30000,
+   "home": "NIR",
+   "away": "ESP",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1986-BUTRAGUENO",
+     "name": "Emilio Butragueño",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-SALINAS",
+     "name": "Julio Salinas",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1986-CLARKE",
+     "name": "Colin Clarke",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-21",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-07",
+   "stadium": "Estadio Universitario",
+   "city": "Monterrey",
+   "capacity": 44000,
+   "home": "POL",
+   "away": "PRT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1986-SMOLAREK",
+     "name": "Włodzimierz Smolarek",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-22",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-08",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "IRQ",
+   "away": "BEL",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1986-SCIFO",
+     "name": "Enzo Scifo",
+     "minute": "16'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CLAESEN",
+     "name": "Nico Claesen",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "IRQ",
+     "player": "IRQ-1986-RADHI",
+     "name": "Ahmed Radhi",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-23",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-08",
+   "stadium": "Estadio La Corregidora",
+   "city": "Querétaro",
+   "capacity": 39000,
+   "home": "DEU",
+   "away": "SCO",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1986-STRACHAN",
+     "name": "Gordon Strachan",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-ALLOFS",
+     "name": "Klaus Allofs",
+     "minute": "49'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-24",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-08",
+   "stadium": "Estadio Neza 86",
+   "city": "Nezahualcóyotl",
+   "capacity": 35000,
+   "home": "DNK",
+   "away": "URY",
+   "score": [
+    6,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1986-ELKJR",
+     "name": "Preben Elkjær",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-LERBY",
+     "name": "Søren Lerby",
+     "minute": "41'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "URY",
+     "player": "URY-1986-FRANCESCOLI",
+     "name": "Enzo Francescoli",
+     "minute": "45'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-LAUDRUP",
+     "name": "Michael Laudrup",
+     "minute": "52'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-ELKJR",
+     "name": "Preben Elkjær",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-ELKJR",
+     "name": "Preben Elkjær",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-OLSENJES",
+     "name": "Jesper Olsen",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-25",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-09",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "HUN",
+   "away": "FRA",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1986-STOPYRA",
+     "name": "Yannick Stopyra",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-TIGANA",
+     "name": "Jean Tigana",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-ROCHETEAU",
+     "name": "Dominique Rocheteau",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-26",
+   "stage": "group stage",
+   "group": "Group C",
+   "date": "1986-06-09",
+   "stadium": "Estadio Sergio León Chavez",
+   "city": "Irapuato",
+   "capacity": 31000,
+   "home": "SUN",
+   "away": "CAN",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1986-BLOKHIN",
+     "name": "Oleh Blokhin",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-ZAVAROV",
+     "name": "Oleksandr Zavarov",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-27",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-06-10",
+   "stadium": "Estadio Olímpico Universitario",
+   "city": "Mexico City",
+   "capacity": 72000,
+   "home": "ARG",
+   "away": "BGR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-VALDANO",
+     "name": "Jorge Valdano",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-BURRUCHAGA",
+     "name": "Jorge Burruchaga",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-28",
+   "stage": "group stage",
+   "group": "Group A",
+   "date": "1986-06-10",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "KOR",
+   "away": "ITA",
+   "score": [
+    2,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1986-ALTOBELLI",
+     "name": "Alessandro Altobelli",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1986-CHOI",
+     "name": "Choi Soon-ho",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1986-ALTOBELLI",
+     "name": "Alessandro Altobelli",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "KOR-1986-CHOKWA",
+     "name": "Cho Kwang-rae",
+     "minute": "82'",
+     "own_goal": true,
+     "penalty": false
+    },
+    {
+     "team": "KOR",
+     "player": "KOR-1986-HUH",
+     "name": "Huh Jung-moo",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-29",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-11",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "IRQ",
+   "away": "MEX",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1986-QUIRARTE",
+     "name": "Fernando Quirarte",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-30",
+   "stage": "group stage",
+   "group": "Group B",
+   "date": "1986-06-11",
+   "stadium": "La Bombonera",
+   "city": "Toluca",
+   "capacity": 33000,
+   "home": "PRY",
+   "away": "BEL",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1986-VERCAUTEREN",
+     "name": "Franky Vercauteren",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1986-CABANAS",
+     "name": "Roberto Cabañas",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-VEYT",
+     "name": "Daniel Veyt",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRY",
+     "player": "PRY-1986-CABANAS",
+     "name": "Roberto Cabañas",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-31",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-11",
+   "stadium": "Estadio Universitario",
+   "city": "Monterrey",
+   "capacity": 44000,
+   "home": "ENG",
+   "away": "POL",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-32",
+   "stage": "group stage",
+   "group": "Group F",
+   "date": "1986-06-11",
+   "stadium": "Estadio Tres de Marzo",
+   "city": "Guadalajara",
+   "capacity": 30000,
+   "home": "PRT",
+   "away": "MAR",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MAR",
+     "player": "MAR-1986-KHAIRI",
+     "name": "Abderrazak Khairi",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1986-KHAIRI",
+     "name": "Abderrazak Khairi",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MAR",
+     "player": "MAR-1986-MERRY",
+     "name": "Abdelkrim Merry",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PRT",
+     "player": "PRT-1986-DIAMANTINO",
+     "name": "Diamantino",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-33",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-12",
+   "stadium": "Estadio Tecnológico",
+   "city": "Monterrey",
+   "capacity": 34000,
+   "home": "DZA",
+   "away": "ESP",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ESP",
+     "player": "ESP-1986-CALDERE",
+     "name": "Ramón Calderé",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-CALDERE",
+     "name": "Ramón Calderé",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-ELOY",
+     "name": "Eloy",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-34",
+   "stage": "group stage",
+   "group": "Group D",
+   "date": "1986-06-12",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "NIR",
+   "away": "BRA",
+   "score": [
+    0,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1986-CARECA",
+     "name": "Careca",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1986-JOSIMAR",
+     "name": "Josimar",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1986-CARECA",
+     "name": "Careca",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-35",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-13",
+   "stadium": "Estadio La Corregidora",
+   "city": "Querétaro",
+   "capacity": 39000,
+   "home": "DNK",
+   "away": "DEU",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1986-OLSENJES",
+     "name": "Jesper Olsen",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "DNK",
+     "player": "DNK-1986-ERIKSEN",
+     "name": "John Eriksen",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-36",
+   "stage": "group stage",
+   "group": "Group E",
+   "date": "1986-06-13",
+   "stadium": "Estadio Neza 86",
+   "city": "Nezahualcóyotl",
+   "capacity": 35000,
+   "home": "SCO",
+   "away": "URY",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1986-37",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-15",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "MEX",
+   "away": "BGR",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "MEX",
+     "player": "MEX-1986-NEGRETE",
+     "name": "Manuel Negrete",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "MEX",
+     "player": "MEX-1986-SERVIN",
+     "name": "Raúl Servín",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-38",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-15",
+   "stadium": "Estadio Nou Camp",
+   "city": "León",
+   "capacity": 31000,
+   "home": "SUN",
+   "away": "BEL",
+   "score": [
+    3,
+    4
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1986-BELANOV",
+     "name": "Ihor Belanov",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-SCIFO",
+     "name": "Enzo Scifo",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-BELANOV",
+     "name": "Ihor Belanov",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CEULEMANS",
+     "name": "Jan Ceulemans",
+     "minute": "77'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-DEMOL",
+     "name": "Stéphane Demol",
+     "minute": "102'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CLAESEN",
+     "name": "Nico Claesen",
+     "minute": "110'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1986-BELANOV",
+     "name": "Ihor Belanov",
+     "minute": "111'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-39",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-16",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "POL",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1986-SOCRATES",
+     "name": "Sócrates",
+     "minute": "30'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1986-JOSIMAR",
+     "name": "Josimar",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1986-EDINHO",
+     "name": "Edinho",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1986-CARECA",
+     "name": "Careca",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-40",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-16",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "ARG",
+   "away": "URY",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-PASCULLI",
+     "name": "Pedro Pasculli",
+     "minute": "42'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-41",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-17",
+   "stadium": "Estadio Olímpico Universitario",
+   "city": "Mexico City",
+   "capacity": 72000,
+   "home": "ITA",
+   "away": "FRA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1986-PLATINI",
+     "name": "Michel Platini",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-STOPYRA",
+     "name": "Yannick Stopyra",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-42",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-17",
+   "stadium": "Estadio Universitario",
+   "city": "Monterrey",
+   "capacity": 44000,
+   "home": "MAR",
+   "away": "DEU",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1986-MATTHAUS",
+     "name": "Lothar Matthäus",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-43",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-18",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "ENG",
+   "away": "PRY",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1986-BEARDSLEY",
+     "name": "Peter Beardsley",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-44",
+   "stage": "round of 16",
+   "group": null,
+   "date": "1986-06-18",
+   "stadium": "Estadio La Corregidora",
+   "city": "Querétaro",
+   "capacity": 39000,
+   "home": "DNK",
+   "away": "ESP",
+   "score": [
+    1,
+    5
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DNK",
+     "player": "DNK-1986-OLSENJES",
+     "name": "Jesper Olsen",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-BUTRAGUENO",
+     "name": "Emilio Butragueño",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-BUTRAGUENO",
+     "name": "Emilio Butragueño",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-GOIKOETXEA",
+     "name": "Andoni Goikoetxea",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-BUTRAGUENO",
+     "name": "Emilio Butragueño",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-BUTRAGUENO",
+     "name": "Emilio Butragueño",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-45",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1986-06-21",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "BRA",
+   "away": "FRA",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    3,
+    4
+   ],
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1986-CARECA",
+     "name": "Careca",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-PLATINI",
+     "name": "Michel Platini",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-46",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1986-06-21",
+   "stadium": "Estadio Universitario",
+   "city": "Monterrey",
+   "capacity": 44000,
+   "home": "DEU",
+   "away": "MEX",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    1
+   ],
+   "goals": []
+  },
+  {
+   "match_id": "M-1986-47",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1986-06-22",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "ARG",
+   "away": "ENG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1986-LINEKER",
+     "name": "Gary Lineker",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-48",
+   "stage": "quarter-finals",
+   "group": null,
+   "date": "1986-06-22",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "ESP",
+   "away": "BEL",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    4,
+    5
+   ],
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CEULEMANS",
+     "name": "Jan Ceulemans",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1986-SENOR",
+     "name": "Juan Antonio Señor",
+     "minute": "85'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-49",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1986-06-25",
+   "stadium": "Estadio Jalisco",
+   "city": "Guadalajara",
+   "capacity": 71000,
+   "home": "FRA",
+   "away": "DEU",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1986-BREHME",
+     "name": "Andreas Brehme",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-50",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1986-06-25",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "ARG",
+   "away": "BEL",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "51'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-51",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1986-06-28",
+   "stadium": "Estadio Cuauhtémoc",
+   "city": "Puebla",
+   "capacity": 46000,
+   "home": "BEL",
+   "away": "FRA",
+   "score": [
+    2,
+    4
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CEULEMANS",
+     "name": "Jan Ceulemans",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-FERRERI",
+     "name": "Jean-Marc Ferreri",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-PAPIN",
+     "name": "Jean-Pierre Papin",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1986-CLAESEN",
+     "name": "Nico Claesen",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-GENGHINI",
+     "name": "Bernard Genghini",
+     "minute": "104'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1986-AMOROS",
+     "name": "Manuel Amoros",
+     "minute": "111'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1986-52",
+   "stage": "final",
+   "group": null,
+   "date": "1986-06-29",
+   "stadium": "Estadio Azteca",
+   "city": "Mexico City",
+   "capacity": 115000,
+   "home": "ARG",
+   "away": "DEU",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1986-BROWN",
+     "name": "José Luis Brown",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-VALDANO",
+     "name": "Jorge Valdano",
+     "minute": "56'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1986-VOLLER",
+     "name": "Rudi Völler",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1986-BURRUCHAGA",
+     "name": "Jorge Burruchaga",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}

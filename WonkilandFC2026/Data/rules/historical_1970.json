@@ -1,0 +1,21 @@
+{
+ "schema": "wfc.rules.v1",
+ "verification": "needs_citation",
+ "id": "historical_1970",
+ "era": "1970–1978",
+ "substitutions": 2,
+ "cards": true,
+ "offside": {
+  "opponents_required": 2,
+  "level_is_onside": false
+ },
+ "draw_resolution": "extra_time_then_replay",
+ "penalty_shootout": false,
+ "added_time_display": false,
+ "notes": [
+  "교체 2명(1970 도입)",
+  "카드 도입(1970)",
+  "승부차기 없음",
+  "동일선상=오프사이드"
+ ]
+}

@@ -26,9 +26,14 @@
       if (kit.shirt.pattern === 'vertical_stripes' && cols[1]) {
         g.fillStyle = cols[1];
         for (let i = 0; i < 6; i++) g.fillRect(i * w / 5 + w / 20, 0, w / 10, h);
+      } else if (kit.shirt.pattern === 'checkered' && cols[1]) {
+        g.fillStyle = cols[1]; const n = 8;
+        for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) if ((x + y) % 2) g.fillRect(x * w / n, y * h / n, w / n + 0.5, h / n + 0.5);
+      } else if (kit.shirt.pattern === 'sash' && cols[1]) {
+        g.strokeStyle = cols[1]; g.lineWidth = w * 0.18; g.beginPath(); g.moveTo(-10, -10); g.lineTo(w + 10, h + 10); g.stroke();
       }
-      // 1930년대 끈 칼라
-      g.fillStyle = 'rgba(0,0,0,0.25)'; g.fillRect(w * 0.47, 0, w * 0.06, h * 0.18);
+      if ((kit.era || 2022) < 1960) { g.fillStyle = 'rgba(0,0,0,0.25)'; g.fillRect(w * 0.47, 0, w * 0.06, h * 0.18); } // 옛날식 끈 칼라
+      else { g.fillStyle = 'rgba(0,0,0,0.18)'; g.beginPath(); g.moveTo(w * 0.38, 0); g.lineTo(w * 0.5, h * 0.14); g.lineTo(w * 0.62, 0); g.fill(); } // V넥
     });
     kitTexCache[kit.kit_id] = tex; return tex;
   }
@@ -167,24 +172,30 @@
   // ---------- 선수 모델 (데이터 → 모델) ----------
   const SKIN_VARIANTS = ['#e2b59a', '#d2a184', '#c08c6c', '#a8765a', '#8a5c42', '#5e3b2a'];
   function hashStr(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) | 0; return Math.abs(h); }
-  function buildPlayer(pdata, kit, isGK) {
-    const h = hashStr(pdata.version_id);
-    // 확인된 외형 데이터가 없으면 결정적(항상 같은) 플레이스홀더 외형을 쓴다 - 실제 외형 아님
-    let skin = pdata.appearance.skin_tone_ref || SKIN_VARIANTS[h % 4];
-    if (pdata.version_id === 'URU-1930-ANDRADE') skin = SKIN_VARIANTS[5]; // 안드라데: 아프리카계 우루과이인(널리 알려진 사실)
-    const hair = ['#1a1410', '#2b1d14', '#3a2a1c', '#141414'][h % 4];
+  const GK_COLORS = ['#f5d000', '#21a35b', '#222222', '#7b3fbf', '#ff7a00', '#2bb5d8'];
+  // 확인된 외형 데이터가 없으므로 결정적(항상 같은) 플레이스홀더 외형 사용 - 실제 외형 아님.
+  // 국적으로 외형을 추정하지 않는다(부정확·고정관념 방지). 피부톤/머리색은 선수 ID 해시로만 결정.
+  function buildPlayer(pdata, kit, isGK, gkColor) {
+    const h = hashStr(pdata.person_id || pdata.version_id);
+    const ap = pdata.appearance || {};
+    const skin = ap.skin_tone_ref || SKIN_VARIANTS[h % SKIN_VARIANTS.length];
+    const hair = ['#1a1410', '#2b1d14', '#3a2a1c', '#141414', '#5a3b22', '#8a6a3a'][(h >> 3) % 6];
+    const era = pdata.tournament_year || 2022;
     const shirtTex = shirtTexture(kit);
-    const gk = isGK ? { shirt: '#2f3b2f', sleeve: '#2f3b2f' } : null; // 1930년대 골키퍼는 두꺼운 스웨터(색상은 플레이스홀더)
-    const shirtMat = gk ? mat(gk.shirt) : new T.MeshStandardMaterial({ map: shirtTex, roughness: 0.85 });
-    const sleeveMat = gk ? mat(gk.sleeve) : new T.MeshStandardMaterial({ map: shirtTex, roughness: 0.85 });
+    const gkCol = gkColor || (era < 1970 ? '#2f3b2f' : GK_COLORS[h % GK_COLORS.length]);
+    const shirtMat = isGK ? mat(gkCol) : new T.MeshStandardMaterial({ map: shirtTex, roughness: 0.85 });
+    const longSleeve = isGK || era < 1960;
+    const skinMat = mat(skin);
     const model = buildHumanoid({
-      shirtMat, sleeveMat, forearmMat: sleeveMat, // 1930: 긴소매
-      shortsMat: mat(kit.shorts.colors[0]), sockMat: mat(kit.socks.colors[0]), skin, hair,
-      hairStyle: 'short', build: 0.97 + (h % 7) / 100, gloveMat: null
+      shirtMat, sleeveMat: shirtMat, forearmMat: longSleeve ? shirtMat : skinMat,
+      shortsMat: mat(isGK && era >= 1970 ? gkCol : kit.shorts.colors[0]), sockMat: mat(kit.socks.colors[0]), skin, hair,
+      hairStyle: ['short', 'cropped', 'long'][(h >> 5) % (era < 1960 ? 2 : 3)], build: 0.95 + (h % 9) / 100,
+      bootColor: era < 1970 ? '#1b1410' : ['#111111', '#f2f2f2', '#e0402a', '#2a7de0', '#e8c22a'][(h >> 7) % 5],
+      gloveMat: isGK && era >= 1970 ? mat('#f4f4f4') : null
     });
-    const hcm = pdata.height_cm || 174; // 미확인 신장 → 1930년대 평균 근사치 플레이스홀더
+    // 신장 미확인 → 시대 평균 근사 플레이스홀더(1930 약 173cm → 2022 약 182cm) + 개인차
+    const hcm = pdata.height_cm || (173 + (Math.min(era, 2022) - 1930) * 0.1 + ((h >> 9) % 9) - 4 + (isGK ? 4 : 0));
     model.scale.setScalar(hcm / 178);
-    // 그림자 원 (가독성)
     const sh = new T.Mesh(new T.CircleGeometry(0.35, 12), new T.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.25, depthWrite: false }));
     sh.rotation.x = -Math.PI / 2; sh.position.y = 0.012; model.add(sh);
     return model;
@@ -334,12 +345,12 @@
       }
       insts.forEach((list, k) => {
         const im = new T.InstancedMesh(personGeo, new T.MeshStandardMaterial({ roughness: 0.9 }), list.length);
-        const col = new T.Color();
+        const col = new T.Color(); im.userData.teams = [];
         list.forEach((p, i) => {
           dummy.position.set(p[0], p[1], p[2]); dummy.updateMatrix(); im.setMatrixAt(i, dummy.matrix);
           // 국가별 응원: 관중석 쪽마다 팀 색상 비율을 다르게
           const team = (si === 2 ? 0 : si === 3 ? 1 : (p[0] < 0 ? 0 : 1));
-          const rnd = Math.random();
+          const rnd = Math.random(); im.userData.teams.push([team, rnd, Math.floor(Math.random() * 5)]);
           col.set(rnd < 0.45 ? tc[team][0] : rnd < 0.6 ? tc[team][1] : ['#2b2b2b', '#4a3b2b', '#5c5c5c', '#ece5d8', '#7a2b2b'][Math.floor(Math.random() * 5)]);
           im.setColorAt(i, col);
         });
@@ -357,6 +368,15 @@
     return { root, crowdGroups, lightTowers };
   }
 
+  // 경기마다 양 팀 유니폼 색으로 관중 응원색 변경 (국가별 응원 연출)
+  function recolorCrowd(stadium, tc) {
+    const col = new T.Color(), neutral = ['#2b2b2b', '#4a3b2b', '#5c5c5c', '#ece5d8', '#7a2b2b'];
+    for (const c of stadium.crowdGroups) {
+      const im = c.holder.children[0];
+      im.userData.teams.forEach(([team, rnd, n], i) => { col.set(rnd < 0.45 ? tc[team][0] : rnd < 0.6 ? tc[team][1] : neutral[n]); im.setColorAt(i, col); });
+      im.instanceColor.needsUpdate = true;
+    }
+  }
   function updateCrowd(stadium, time, excitement) {
     for (const c of stadium.crowdGroups) {
       const e = excitement[c.team === 2 ? 0 : c.team === 3 ? 1 : 2] || 0;
@@ -397,5 +417,5 @@
     m.castShadow = true; return m;
   }
 
-  window.WFCModels = { buildHumanoid, buildPlayer, buildHost, buildTrophy, buildStadium, updateCrowd, buildWeather, buildBall, animate, mat, canvasTex };
+  window.WFCModels = { recolorCrowd, buildHumanoid, buildPlayer, buildHost, buildTrophy, buildStadium, updateCrowd, buildWeather, buildBall, animate, mat, canvasTex };
 })();

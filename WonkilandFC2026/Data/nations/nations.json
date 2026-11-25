@@ -1,0 +1,1943 @@
+{
+ "schema": "wfc.nations.v1",
+ "note": "유니폼 색상은 대표적 색상의 근사치(시대별 실제 유니폼과 다를 수 있음, needs_citation). 엠블럼/로고 미사용. fifa_code는 표시용.",
+ "nations": {
+  "AGO": {
+   "fifa_code": "ANG",
+   "names_ko": {
+    "Angola": "앙골라"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d0021b"
+    ],
+    "shorts": "#111111",
+    "socks": "#d0021b"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "ARE": {
+   "fifa_code": "UAE",
+   "names_ko": {
+    "United Arab Emirates": "아랍에미리트"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#c8102e"
+    ],
+    "shorts": "#c8102e",
+    "socks": "#c8102e"
+   },
+   "verification": "needs_citation"
+  },
+  "ARG": {
+   "fifa_code": "ARG",
+   "names_ko": {
+    "Argentina": "아르헨티나"
+   },
+   "home": {
+    "pattern": "vertical_stripes",
+    "colors": [
+     "#ffffff",
+     "#75aadb"
+    ],
+    "shorts": "#111111",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#1f2a5c"
+    ],
+    "shorts": "#1f2a5c",
+    "socks": "#1f2a5c"
+   },
+   "verification": "needs_citation"
+  },
+  "AUS": {
+   "fifa_code": "AUS",
+   "names_ko": {
+    "Australia": "호주"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffcd00"
+    ],
+    "shorts": "#00843d",
+    "socks": "#ffcd00"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#00843d"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#00843d"
+   },
+   "verification": "needs_citation"
+  },
+  "AUT": {
+   "fifa_code": "AUT",
+   "names_ko": {
+    "Austria": "오스트리아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#111111",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#c8102e"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c8102e"
+   },
+   "verification": "needs_citation"
+  },
+  "BEL": {
+   "fifa_code": "BEL",
+   "names_ko": {
+    "Belgium": "벨기에"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c8102e"
+    ],
+    "shorts": "#c8102e",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "BGR": {
+   "fifa_code": "BUL",
+   "names_ko": {
+    "Bulgaria": "불가리아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#00966e",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#d62612"
+    ],
+    "shorts": "#d62612",
+    "socks": "#d62612"
+   },
+   "verification": "needs_citation"
+  },
+  "BIH": {
+   "fifa_code": "BIH",
+   "names_ko": {
+    "Bosnia and Herzegovina": "보스니아 헤르체고비나"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#0033a0"
+    ],
+    "shorts": "#0033a0",
+    "socks": "#0033a0"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "BOL": {
+   "fifa_code": "BOL",
+   "names_ko": {
+    "Bolivia": "볼리비아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#007a33"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#007a33"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "BRA": {
+   "fifa_code": "BRA",
+   "names_ko": {
+    "Brazil": "브라질"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffdf00"
+    ],
+    "shorts": "#1c3f94",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#1c3f94"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#1c3f94"
+   },
+   "verification": "needs_citation"
+  },
+  "CAN": {
+   "fifa_code": "CAN",
+   "names_ko": {
+    "Canada": "캐나다"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d52b1e"
+    ],
+    "shorts": "#d52b1e",
+    "socks": "#d52b1e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CHE": {
+   "fifa_code": "SUI",
+   "names_ko": {
+    "Switzerland": "스위스"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d52b1e"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#d52b1e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#d52b1e",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CHL": {
+   "fifa_code": "CHI",
+   "names_ko": {
+    "Chile": "칠레"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d52b1e"
+    ],
+    "shorts": "#0039a6",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CHN": {
+   "fifa_code": "CHN",
+   "names_ko": {
+    "China": "중국"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#de2910"
+    ],
+    "shorts": "#de2910",
+    "socks": "#de2910"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CIV": {
+   "fifa_code": "CIV",
+   "names_ko": {
+    "Ivory Coast": "코트디부아르"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#f77f00"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#009e60"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#f77f00",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CMR": {
+   "fifa_code": "CMR",
+   "names_ko": {
+    "Cameroon": "카메룬"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#007a5e"
+    ],
+    "shorts": "#ce1126",
+    "socks": "#fcd116"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "COD": {
+   "fifa_code": "ZAI",
+   "names_ko": {
+    "Zaire": "자이르"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#00843d"
+    ],
+    "shorts": "#fcd116",
+    "socks": "#00843d"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#fcd116"
+    ],
+    "shorts": "#fcd116",
+    "socks": "#fcd116"
+   },
+   "verification": "needs_citation"
+  },
+  "COL": {
+   "fifa_code": "COL",
+   "names_ko": {
+    "Colombia": "콜롬비아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#fcd116"
+    ],
+    "shorts": "#003893",
+    "socks": "#ce1126"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ce1126"
+    ],
+    "shorts": "#ce1126",
+    "socks": "#ce1126"
+   },
+   "verification": "needs_citation"
+  },
+  "CRI": {
+   "fifa_code": "CRC",
+   "names_ko": {
+    "Costa Rica": "코스타리카"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ce1126"
+    ],
+    "shorts": "#002b7f",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CSK": {
+   "fifa_code": "TCH",
+   "names_ko": {
+    "Czechoslovakia": "체코슬로바키아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d7141a"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#11457e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CUB": {
+   "fifa_code": "CUB",
+   "names_ko": {
+    "Cuba": "쿠바"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#cf142b"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#cf142b"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#002a8f",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "CZE": {
+   "fifa_code": "CZE",
+   "names_ko": {
+    "Czech Republic": "체코"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d7141a"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#11457e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "DDR": {
+   "fifa_code": "GDR",
+   "names_ko": {
+    "East Germany": "동독"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1f4fa3"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#1f4fa3"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "DEU": {
+   "fifa_code": "GER",
+   "names_ko": {
+    "Germany": "독일",
+    "West Germany": "서독"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#111111",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#2e7d32"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#2e7d32"
+   },
+   "verification": "needs_citation"
+  },
+  "DNK": {
+   "fifa_code": "DEN",
+   "names_ko": {
+    "Denmark": "덴마크"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c60c30"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c60c30"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "DZA": {
+   "fifa_code": "ALG",
+   "names_ko": {
+    "Algeria": "알제리"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#006233"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#006233"
+    ],
+    "shorts": "#006233",
+    "socks": "#006233"
+   },
+   "verification": "needs_citation"
+  },
+  "ECU": {
+   "fifa_code": "ECU",
+   "names_ko": {
+    "Ecuador": "에콰도르"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffdd00"
+    ],
+    "shorts": "#034ea2",
+    "socks": "#ffdd00"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#034ea2"
+    ],
+    "shorts": "#034ea2",
+    "socks": "#034ea2"
+   },
+   "verification": "needs_citation"
+  },
+  "EGY": {
+   "fifa_code": "EGY",
+   "names_ko": {
+    "Egypt": "이집트"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ce1126"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#111111"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "ENG": {
+   "fifa_code": "ENG",
+   "names_ko": {
+    "England": "잉글랜드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#1d2f5a",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#cf081f"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#cf081f"
+   },
+   "verification": "needs_citation"
+  },
+  "ESP": {
+   "fifa_code": "ESP",
+   "names_ko": {
+    "Spain": "스페인"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c60b1e"
+    ],
+    "shorts": "#1d2f5a",
+    "socks": "#1d2f5a"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "FRA": {
+   "fifa_code": "FRA",
+   "names_ko": {
+    "France": "프랑스"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1d3a8a"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#1d3a8a",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "GHA": {
+   "fifa_code": "GHA",
+   "names_ko": {
+    "Ghana": "가나"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ce1126"
+    ],
+    "shorts": "#ce1126",
+    "socks": "#ce1126"
+   },
+   "verification": "needs_citation"
+  },
+  "GRC": {
+   "fifa_code": "GRE",
+   "names_ko": {
+    "Greece": "그리스"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0d5eaf"
+    ],
+    "shorts": "#0d5eaf",
+    "socks": "#0d5eaf"
+   },
+   "verification": "needs_citation"
+  },
+  "HND": {
+   "fifa_code": "HON",
+   "names_ko": {
+    "Honduras": "온두라스"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0073cf"
+    ],
+    "shorts": "#0073cf",
+    "socks": "#0073cf"
+   },
+   "verification": "needs_citation"
+  },
+  "HRV": {
+   "fifa_code": "CRO",
+   "names_ko": {
+    "Croatia": "크로아티아"
+   },
+   "home": {
+    "pattern": "checkered",
+    "colors": [
+     "#ffffff",
+     "#d40000"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#1b3a8a"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#1b3a8a"
+    ],
+    "shorts": "#1b3a8a",
+    "socks": "#1b3a8a"
+   },
+   "verification": "needs_citation"
+  },
+  "HTI": {
+   "fifa_code": "HAI",
+   "names_ko": {
+    "Haiti": "아이티"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#00209f"
+    ],
+    "shorts": "#d21034",
+    "socks": "#00209f"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "HUN": {
+   "fifa_code": "HUN",
+   "names_ko": {
+    "Hungary": "헝가리"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#cd2a3e"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#436f4d"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "IDN": {
+   "fifa_code": "INH",
+   "names_ko": {
+    "Dutch East Indies": "네덜란드령 동인도"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#f36c21"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#f36c21"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "IRL": {
+   "fifa_code": "IRL",
+   "names_ko": {
+    "Republic of Ireland": "아일랜드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#169b62"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#169b62"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "IRN": {
+   "fifa_code": "IRN",
+   "names_ko": {
+    "Iran": "이란"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#da0000"
+    ],
+    "shorts": "#da0000",
+    "socks": "#da0000"
+   },
+   "verification": "needs_citation"
+  },
+  "IRQ": {
+   "fifa_code": "IRQ",
+   "names_ko": {
+    "Iraq": "이라크"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#007a3d"
+    ],
+    "shorts": "#007a3d",
+    "socks": "#007a3d"
+   },
+   "verification": "needs_citation"
+  },
+  "ISL": {
+   "fifa_code": "ISL",
+   "names_ko": {
+    "Iceland": "아이슬란드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#02529c"
+    ],
+    "shorts": "#02529c",
+    "socks": "#02529c"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "ISR": {
+   "fifa_code": "ISR",
+   "names_ko": {
+    "Israel": "이스라엘"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#0038b8",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0038b8"
+    ],
+    "shorts": "#0038b8",
+    "socks": "#0038b8"
+   },
+   "verification": "needs_citation"
+  },
+  "ITA": {
+   "fifa_code": "ITA",
+   "names_ko": {
+    "Italy": "이탈리아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#0064aa"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#0064aa"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "JAM": {
+   "fifa_code": "JAM",
+   "names_ko": {
+    "Jamaica": "자메이카"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#fed100"
+    ],
+    "shorts": "#111111",
+    "socks": "#fed100"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#111111"
+    ],
+    "shorts": "#111111",
+    "socks": "#111111"
+   },
+   "verification": "needs_citation"
+  },
+  "JPN": {
+   "fifa_code": "JPN",
+   "names_ko": {
+    "Japan": "일본"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1f3c88"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#1f3c88"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "KOR": {
+   "fifa_code": "KOR",
+   "names_ko": {
+    "South Korea": "대한민국"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d80c27"
+    ],
+    "shorts": "#111111",
+    "socks": "#d80c27"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "KWT": {
+   "fifa_code": "KUW",
+   "names_ko": {
+    "Kuwait": "쿠웨이트"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#007a3d"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#007a3d"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "MAR": {
+   "fifa_code": "MAR",
+   "names_ko": {
+    "Morocco": "모로코"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c1272d"
+    ],
+    "shorts": "#006233",
+    "socks": "#c1272d"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "MEX": {
+   "fifa_code": "MEX",
+   "names_ko": {
+    "Mexico": "멕시코"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#006847"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ce1126"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "NGA": {
+   "fifa_code": "NGA",
+   "names_ko": {
+    "Nigeria": "나이지리아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#008751"
+    ],
+    "shorts": "#008751",
+    "socks": "#008751"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "NIR": {
+   "fifa_code": "NIR",
+   "names_ko": {
+    "Northern Ireland": "북아일랜드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#00a651"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#00a651"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "NLD": {
+   "fifa_code": "NED",
+   "names_ko": {
+    "Netherlands": "네덜란드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#f36c21"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#f36c21"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "NOR": {
+   "fifa_code": "NOR",
+   "names_ko": {
+    "Norway": "노르웨이"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ba0c2f"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#00205b"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "NZL": {
+   "fifa_code": "NZL",
+   "names_ko": {
+    "New Zealand": "뉴질랜드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#111111"
+    ],
+    "shorts": "#111111",
+    "socks": "#111111"
+   },
+   "verification": "needs_citation"
+  },
+  "PAN": {
+   "fifa_code": "PAN",
+   "names_ko": {
+    "Panama": "파나마"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d21034"
+    ],
+    "shorts": "#d21034",
+    "socks": "#d21034"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "PER": {
+   "fifa_code": "PER",
+   "names_ko": {
+    "Peru": "페루"
+   },
+   "home": {
+    "pattern": "sash",
+    "colors": [
+     "#ffffff",
+     "#d91023"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#d91023"
+    ],
+    "shorts": "#d91023",
+    "socks": "#d91023"
+   },
+   "verification": "needs_citation"
+  },
+  "POL": {
+   "fifa_code": "POL",
+   "names_ko": {
+    "Poland": "폴란드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#dc143c",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#dc143c"
+    ],
+    "shorts": "#dc143c",
+    "socks": "#dc143c"
+   },
+   "verification": "needs_citation"
+  },
+  "PRK": {
+   "fifa_code": "PRK",
+   "names_ko": {
+    "North Korea": "북한"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ed1c27"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ed1c27"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "PRT": {
+   "fifa_code": "POR",
+   "names_ko": {
+    "Portugal": "포르투갈"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c8102e"
+    ],
+    "shorts": "#046a38",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "PRY": {
+   "fifa_code": "PAR",
+   "names_ko": {
+    "Paraguay": "파라과이"
+   },
+   "home": {
+    "pattern": "vertical_stripes",
+    "colors": [
+     "#d52b1e",
+     "#ffffff"
+    ],
+    "shorts": "#0038a8",
+    "socks": "#0038a8"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0038a8"
+    ],
+    "shorts": "#0038a8",
+    "socks": "#0038a8"
+   },
+   "verification": "needs_citation"
+  },
+  "QAT": {
+   "fifa_code": "QAT",
+   "names_ko": {
+    "Qatar": "카타르"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#8a1538"
+    ],
+    "shorts": "#8a1538",
+    "socks": "#8a1538"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "ROU": {
+   "fifa_code": "ROU",
+   "names_ko": {
+    "Romania": "루마니아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#fcd116"
+    ],
+    "shorts": "#fcd116",
+    "socks": "#fcd116"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#002b7f"
+    ],
+    "shorts": "#002b7f",
+    "socks": "#002b7f"
+   },
+   "verification": "needs_citation"
+  },
+  "RUS": {
+   "fifa_code": "RUS",
+   "names_ko": {
+    "Russia": "러시아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#d52b1e"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#d52b1e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SAU": {
+   "fifa_code": "KSA",
+   "names_ko": {
+    "Saudi Arabia": "사우디아라비아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#006c35"
+    ],
+    "shorts": "#006c35",
+    "socks": "#006c35"
+   },
+   "verification": "needs_citation"
+  },
+  "SCG": {
+   "fifa_code": "SCG",
+   "names_ko": {
+    "Serbia and Montenegro": "세르비아 몬테네그로"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1f3c88"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SCO": {
+   "fifa_code": "SCO",
+   "names_ko": {
+    "Scotland": "스코틀랜드"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1d2b58"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#1d2b58"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#1d2b58",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SEN": {
+   "fifa_code": "SEN",
+   "names_ko": {
+    "Senegal": "세네갈"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#00853f"
+    ],
+    "shorts": "#00853f",
+    "socks": "#00853f"
+   },
+   "verification": "needs_citation"
+  },
+  "SLV": {
+   "fifa_code": "SLV",
+   "names_ko": {
+    "El Salvador": "엘살바도르"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#0f47af"
+    ],
+    "shorts": "#0f47af",
+    "socks": "#0f47af"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SRB": {
+   "fifa_code": "SRB",
+   "names_ko": {
+    "Serbia": "세르비아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c6363c"
+    ],
+    "shorts": "#0c4076",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SUN": {
+   "fifa_code": "URS",
+   "names_ko": {
+    "Soviet Union": "소련"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#cc0000"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#cc0000"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "SVK": {
+   "fifa_code": "SVK",
+   "names_ko": {
+    "Slovakia": "슬로바키아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#0b4ea2",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0b4ea2"
+    ],
+    "shorts": "#0b4ea2",
+    "socks": "#0b4ea2"
+   },
+   "verification": "needs_citation"
+  },
+  "SVN": {
+   "fifa_code": "SVN",
+   "names_ko": {
+    "Slovenia": "슬로베니아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#00a651"
+    ],
+    "shorts": "#00a651",
+    "socks": "#00a651"
+   },
+   "verification": "needs_citation"
+  },
+  "SWE": {
+   "fifa_code": "SWE",
+   "names_ko": {
+    "Sweden": "스웨덴"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#fecc00"
+    ],
+    "shorts": "#006aa7",
+    "socks": "#fecc00"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#006aa7"
+    ],
+    "shorts": "#006aa7",
+    "socks": "#006aa7"
+   },
+   "verification": "needs_citation"
+  },
+  "TGO": {
+   "fifa_code": "TOG",
+   "names_ko": {
+    "Togo": "토고"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffce00"
+    ],
+    "shorts": "#006a4e",
+    "socks": "#ffce00"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "TTO": {
+   "fifa_code": "TRI",
+   "names_ko": {
+    "Trinidad and Tobago": "트리니다드 토바고"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ce1126"
+    ],
+    "shorts": "#111111",
+    "socks": "#ce1126"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "TUN": {
+   "fifa_code": "TUN",
+   "names_ko": {
+    "Tunisia": "튀니지"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#e70013"
+    ],
+    "shorts": "#e70013",
+    "socks": "#e70013"
+   },
+   "verification": "needs_citation"
+  },
+  "TUR": {
+   "fifa_code": "TUR",
+   "names_ko": {
+    "Turkey": "튀르키예"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#e30a17"
+    ],
+    "shorts": "#e30a17",
+    "socks": "#e30a17"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "UKR": {
+   "fifa_code": "UKR",
+   "names_ko": {
+    "Ukraine": "우크라이나"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffd700"
+    ],
+    "shorts": "#ffd700",
+    "socks": "#ffd700"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#0057b7"
+    ],
+    "shorts": "#0057b7",
+    "socks": "#0057b7"
+   },
+   "verification": "needs_citation"
+  },
+  "URY": {
+   "fifa_code": "URU",
+   "names_ko": {
+    "Uruguay": "우루과이"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#7fb8e6"
+    ],
+    "shorts": "#111111",
+    "socks": "#111111"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "USA": {
+   "fifa_code": "USA",
+   "names_ko": {
+    "United States": "미국"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#1d2f5a",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#1d2f5a"
+    ],
+    "shorts": "#1d2f5a",
+    "socks": "#1d2f5a"
+   },
+   "verification": "needs_citation"
+  },
+  "WAL": {
+   "fifa_code": "WAL",
+   "names_ko": {
+    "Wales": "웨일스"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#c8102e"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "YUG": {
+   "fifa_code": "YUG",
+   "names_ko": {
+    "Yugoslavia": "유고슬라비아"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#1f3c88"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#c8102e"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#ffffff"
+    ],
+    "shorts": "#ffffff",
+    "socks": "#ffffff"
+   },
+   "verification": "needs_citation"
+  },
+  "ZAF": {
+   "fifa_code": "RSA",
+   "names_ko": {
+    "South Africa": "남아프리카공화국"
+   },
+   "home": {
+    "pattern": "solid",
+    "colors": [
+     "#ffb612"
+    ],
+    "shorts": "#007749",
+    "socks": "#ffffff"
+   },
+   "away": {
+    "pattern": "solid",
+    "colors": [
+     "#007749"
+    ],
+    "shorts": "#007749",
+    "socks": "#007749"
+   },
+   "verification": "needs_citation"
+  }
+ }
+}

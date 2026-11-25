@@ -1,0 +1,2470 @@
+{
+ "schema": "wfc.tournament.v2",
+ "id": "WC-1982",
+ "year": 1982,
+ "name": "1982 FIFA Men's World Cup",
+ "host_country": "Spain",
+ "winner": "Italy",
+ "start_date": "1982-06-13",
+ "end_date": "1982-07-11",
+ "rules_profile": "historical_1982",
+ "teams": [
+  {
+   "team_id": "ARG",
+   "fifa_code": "ARG",
+   "name_en": "Argentina",
+   "name_ko": "아르헨티나",
+   "group": "Group 3",
+   "finish": "R2"
+  },
+  {
+   "team_id": "AUT",
+   "fifa_code": "AUT",
+   "name_en": "Austria",
+   "name_ko": "오스트리아",
+   "group": "Group 2",
+   "finish": "R2"
+  },
+  {
+   "team_id": "BEL",
+   "fifa_code": "BEL",
+   "name_en": "Belgium",
+   "name_ko": "벨기에",
+   "group": "Group 3",
+   "finish": "R2"
+  },
+  {
+   "team_id": "BRA",
+   "fifa_code": "BRA",
+   "name_en": "Brazil",
+   "name_ko": "브라질",
+   "group": "Group 6",
+   "finish": "R2"
+  },
+  {
+   "team_id": "CHL",
+   "fifa_code": "CHI",
+   "name_en": "Chile",
+   "name_ko": "칠레",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CMR",
+   "fifa_code": "CMR",
+   "name_en": "Cameroon",
+   "name_ko": "카메룬",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "CSK",
+   "fifa_code": "TCH",
+   "name_en": "Czechoslovakia",
+   "name_ko": "체코슬로바키아",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "DEU",
+   "fifa_code": "GER",
+   "name_en": "West Germany",
+   "name_ko": "서독",
+   "group": "Group 2",
+   "finish": 2
+  },
+  {
+   "team_id": "DZA",
+   "fifa_code": "ALG",
+   "name_en": "Algeria",
+   "name_ko": "알제리",
+   "group": "Group 2",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ENG",
+   "fifa_code": "ENG",
+   "name_en": "England",
+   "name_ko": "잉글랜드",
+   "group": "Group 4",
+   "finish": "R2"
+  },
+  {
+   "team_id": "ESP",
+   "fifa_code": "ESP",
+   "name_en": "Spain",
+   "name_ko": "스페인",
+   "group": "Group 5",
+   "finish": "R2"
+  },
+  {
+   "team_id": "FRA",
+   "fifa_code": "FRA",
+   "name_en": "France",
+   "name_ko": "프랑스",
+   "group": "Group 4",
+   "finish": 4
+  },
+  {
+   "team_id": "HND",
+   "fifa_code": "HON",
+   "name_en": "Honduras",
+   "name_ko": "온두라스",
+   "group": "Group 5",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "HUN",
+   "fifa_code": "HUN",
+   "name_en": "Hungary",
+   "name_ko": "헝가리",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "ITA",
+   "fifa_code": "ITA",
+   "name_en": "Italy",
+   "name_ko": "이탈리아",
+   "group": "Group 1",
+   "finish": 1
+  },
+  {
+   "team_id": "KWT",
+   "fifa_code": "KUW",
+   "name_en": "Kuwait",
+   "name_ko": "쿠웨이트",
+   "group": "Group 4",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "NIR",
+   "fifa_code": "NIR",
+   "name_en": "Northern Ireland",
+   "name_ko": "북아일랜드",
+   "group": "Group 5",
+   "finish": "R2"
+  },
+  {
+   "team_id": "NZL",
+   "fifa_code": "NZL",
+   "name_en": "New Zealand",
+   "name_ko": "뉴질랜드",
+   "group": "Group 6",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "PER",
+   "fifa_code": "PER",
+   "name_en": "Peru",
+   "name_ko": "페루",
+   "group": "Group 1",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "POL",
+   "fifa_code": "POL",
+   "name_en": "Poland",
+   "name_ko": "폴란드",
+   "group": "Group 1",
+   "finish": 3
+  },
+  {
+   "team_id": "SCO",
+   "fifa_code": "SCO",
+   "name_en": "Scotland",
+   "name_ko": "스코틀랜드",
+   "group": "Group 6",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SLV",
+   "fifa_code": "SLV",
+   "name_en": "El Salvador",
+   "name_ko": "엘살바도르",
+   "group": "Group 3",
+   "finish": "GROUP"
+  },
+  {
+   "team_id": "SUN",
+   "fifa_code": "URS",
+   "name_en": "Soviet Union",
+   "name_ko": "소련",
+   "group": "Group 6",
+   "finish": "R2"
+  },
+  {
+   "team_id": "YUG",
+   "fifa_code": "YUG",
+   "name_en": "Yugoslavia",
+   "name_ko": "유고슬라비아",
+   "group": "Group 5",
+   "finish": "GROUP"
+  }
+ ],
+ "standings": [
+  {
+   "position": 1,
+   "team": "ITA"
+  },
+  {
+   "position": 2,
+   "team": "DEU"
+  },
+  {
+   "position": 3,
+   "team": "POL"
+  },
+  {
+   "position": 4,
+   "team": "FRA"
+  }
+ ],
+ "awards": [
+  {
+   "award": "Golden Ball",
+   "player": "ITA-1982-ROSSI",
+   "team": "ITA"
+  },
+  {
+   "award": "Silver Ball",
+   "player": "BRA-1982-FALCAO",
+   "team": "BRA"
+  },
+  {
+   "award": "Bronze Ball",
+   "player": "DEU-1982-RUMMENIGGE",
+   "team": "DEU"
+  },
+  {
+   "award": "Golden Boot",
+   "player": "ITA-1982-ROSSI",
+   "team": "ITA"
+  },
+  {
+   "award": "Silver Boot",
+   "player": "DEU-1982-RUMMENIGGE",
+   "team": "DEU"
+  },
+  {
+   "award": "Bronze Boot",
+   "player": "BRA-1982-ZICO",
+   "team": "BRA"
+  },
+  {
+   "award": "Best Young Player",
+   "player": "FRA-1982-AMOROS",
+   "team": "FRA"
+  }
+ ],
+ "matches": [
+  {
+   "match_id": "M-1982-01",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-13",
+   "stadium": "Camp Nou",
+   "city": "Barcelona",
+   "capacity": 121000,
+   "home": "ARG",
+   "away": "BEL",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1982-VANDENBERGH",
+     "name": "Erwin Vandenbergh",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-02",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-14",
+   "stadium": "Balaídos",
+   "city": "Vigo",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "POL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-03",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-14",
+   "stadium": "Estadio Ramón Sánchez Pizjuán",
+   "city": "Seville",
+   "capacity": 68000,
+   "home": "BRA",
+   "away": "SUN",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1982-BAL",
+     "name": "Andriy Bal",
+     "minute": "34'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-SOCRATES",
+     "name": "Sócrates",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-EDER",
+     "name": "Éder",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-04",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-15",
+   "stadium": "Estadio Riazor",
+   "city": "A Coruña",
+   "capacity": 34000,
+   "home": "PER",
+   "away": "CMR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-05",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-15",
+   "stadium": "Nuevo Estadio",
+   "city": "Elche",
+   "capacity": 53000,
+   "home": "HUN",
+   "away": "SLV",
+   "score": [
+    10,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1982-NYILASI",
+     "name": "Tibor Nyilasi",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-POLOSKEI",
+     "name": "Gábor Pölöskei",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-FAZEKAS",
+     "name": "László Fazekas",
+     "minute": "23'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-TOTH",
+     "name": "József Tóth",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-FAZEKAS",
+     "name": "László Fazekas",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SLV",
+     "player": "SLV-1982-RAMIREZZAPATA",
+     "name": "Luis Ramírez Zapata",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-KISS",
+     "name": "László Kiss",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-SZENTES",
+     "name": "Lázár Szentes",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-KISS",
+     "name": "László Kiss",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-KISS",
+     "name": "László Kiss",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-NYILASI",
+     "name": "Tibor Nyilasi",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-06",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-15",
+   "stadium": "Estadio La Rosaleda",
+   "city": "Málaga",
+   "capacity": 45000,
+   "home": "SCO",
+   "away": "NZL",
+   "score": [
+    5,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1982-DALGLISH",
+     "name": "Kenny Dalglish",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1982-WARK",
+     "name": "John Wark",
+     "minute": "29'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1982-WARK",
+     "name": "John Wark",
+     "minute": "32'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NZL",
+     "player": "NZL-1982-SUMNER",
+     "name": "Steve Sumner",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NZL",
+     "player": "NZL-1982-WOODDIN",
+     "name": "Steve Wooddin",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1982-ROBERTSON",
+     "name": "John Robertson",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1982-ARCHIBALD",
+     "name": "Steve Archibald",
+     "minute": "79'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-07",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-16",
+   "stadium": "Estadio El Molinón",
+   "city": "Gijón",
+   "capacity": 45000,
+   "home": "DEU",
+   "away": "DZA",
+   "score": [
+    1,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DZA",
+     "player": "DZA-1982-MADJER",
+     "name": "Rabah Madjer",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-1982-BELLOUMI",
+     "name": "Lakhdar Belloumi",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-08",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-16",
+   "stadium": "Estadio San Mamés",
+   "city": "Bilbao",
+   "capacity": 46000,
+   "home": "ENG",
+   "away": "FRA",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1982-ROBSON",
+     "name": "Bryan Robson",
+     "minute": "1'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-SOLER",
+     "name": "Gérard Soler",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1982-ROBSON",
+     "name": "Bryan Robson",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "ENG-1982-MARINER",
+     "name": "Paul Mariner",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-09",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-16",
+   "stadium": "Estadio Luis Casanova",
+   "city": "Valencia",
+   "capacity": 50000,
+   "home": "ESP",
+   "away": "HND",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HND",
+     "player": "HND-1982-ZELAYA",
+     "name": "Héctor Zelaya",
+     "minute": "8'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1982-UFARTE",
+     "name": "Roberto López Ufarte",
+     "minute": "65'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-10",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-17",
+   "stadium": "Estadio Carlos Tartiere",
+   "city": "Oviedo",
+   "capacity": 24000,
+   "home": "CHL",
+   "away": "AUT",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1982-SCHACHNER",
+     "name": "Walter Schachner",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-11",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-17",
+   "stadium": "Estadio José Zorrilla",
+   "city": "Valladolid",
+   "capacity": 30000,
+   "home": "CSK",
+   "away": "KWT",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "CSK",
+     "player": "CSK-1982-PANENKA",
+     "name": "Antonín Panenka",
+     "minute": "21'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "KWT",
+     "player": "KWT-1982-ALDAKHIL",
+     "name": "Faisal Al-Dakhil",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-12",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-17",
+   "stadium": "Estadio La Romareda",
+   "city": "Zaragoza",
+   "capacity": 42000,
+   "home": "YUG",
+   "away": "NIR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-13",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-18",
+   "stadium": "Balaídos",
+   "city": "Vigo",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "PER",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-CONTI",
+     "name": "Bruno Conti",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1982-DIAZ",
+     "name": "Rubén Toribio Díaz",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-14",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-18",
+   "stadium": "Estadio José Rico Pérez",
+   "city": "Alicante",
+   "capacity": 33000,
+   "home": "ARG",
+   "away": "HUN",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1982-BERTONI",
+     "name": "Daniel Bertoni",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-MARADONA",
+     "name": "Diego Maradona",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-ARDILES",
+     "name": "Osvaldo Ardiles",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HUN",
+     "player": "HUN-1982-POLOSKEI",
+     "name": "Gábor Pölöskei",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-15",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-18",
+   "stadium": "Estadio Benito Villamarín",
+   "city": "Seville",
+   "capacity": 50000,
+   "home": "BRA",
+   "away": "SCO",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1982-NAREY",
+     "name": "David Narey",
+     "minute": "18'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-ZICO",
+     "name": "Zico",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-OSCAR",
+     "name": "Oscar",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-EDER",
+     "name": "Éder",
+     "minute": "63'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-FALCAO",
+     "name": "Falcão",
+     "minute": "87'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-16",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-19",
+   "stadium": "Estadio Riazor",
+   "city": "A Coruña",
+   "capacity": 34000,
+   "home": "POL",
+   "away": "CMR",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-17",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-19",
+   "stadium": "Nuevo Estadio",
+   "city": "Elche",
+   "capacity": 53000,
+   "home": "BEL",
+   "away": "SLV",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BEL",
+     "player": "BEL-1982-COECK",
+     "name": "Ludo Coeck",
+     "minute": "19'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-18",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-19",
+   "stadium": "Estadio La Rosaleda",
+   "city": "Málaga",
+   "capacity": 45000,
+   "home": "SUN",
+   "away": "NZL",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1982-GAVRILOV",
+     "name": "Yuri Gavrilov",
+     "minute": "24'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1982-BLOKHIN",
+     "name": "Oleh Blokhin",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1982-BALTACHA",
+     "name": "Sergei Baltacha",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-19",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-20",
+   "stadium": "Estadio El Molinón",
+   "city": "Gijón",
+   "capacity": 45000,
+   "home": "DEU",
+   "away": "CHL",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1982-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "9'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-REINDERS",
+     "name": "Uwe Reinders",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1982-MOSCOSO",
+     "name": "Gustavo Moscoso",
+     "minute": "90'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-20",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-20",
+   "stadium": "Estadio San Mamés",
+   "city": "Bilbao",
+   "capacity": 46000,
+   "home": "ENG",
+   "away": "CSK",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1982-FRANCIS",
+     "name": "Trevor Francis",
+     "minute": "62'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ENG",
+     "player": "CSK-1982-BARMOS",
+     "name": "Jozef Barmoš",
+     "minute": "66'",
+     "own_goal": true,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-21",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-20",
+   "stadium": "Estadio Luis Casanova",
+   "city": "Valencia",
+   "capacity": 50000,
+   "home": "ESP",
+   "away": "YUG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1982-GUDELJ",
+     "name": "Ivan Gudelj",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1982-JUANITO",
+     "name": "Juanito",
+     "minute": "14'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1982-SAURA",
+     "name": "Enrique Saura",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-22",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-21",
+   "stadium": "Estadio Carlos Tartiere",
+   "city": "Oviedo",
+   "capacity": 24000,
+   "home": "DZA",
+   "away": "AUT",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "AUT",
+     "player": "AUT-1982-SCHACHNER",
+     "name": "Walter Schachner",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1982-KRANKL",
+     "name": "Hans Krankl",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-23",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-21",
+   "stadium": "Estadio José Zorrilla",
+   "city": "Valladolid",
+   "capacity": 30000,
+   "home": "FRA",
+   "away": "KWT",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GENGHINI",
+     "name": "Bernard Genghini",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-PLATINI",
+     "name": "Michel Platini",
+     "minute": "43'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-SIX",
+     "name": "Didier Six",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "KWT",
+     "player": "KWT-1982-ALBULOUSHI",
+     "name": "Abdullah Al-Buloushi",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-BOSSIS",
+     "name": "Maxime Bossis",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-24",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-21",
+   "stadium": "Estadio La Romareda",
+   "city": "Zaragoza",
+   "capacity": 42000,
+   "home": "HND",
+   "away": "NIR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1982-ARMSTRONG",
+     "name": "Gerry Armstrong",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "HND",
+     "player": "HND-1982-LAING",
+     "name": "Antonio Laing",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-25",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-22",
+   "stadium": "Estadio Riazor",
+   "city": "A Coruña",
+   "capacity": 34000,
+   "home": "POL",
+   "away": "PER",
+   "score": [
+    5,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1982-SMOLAREK",
+     "name": "Włodzimierz Smolarek",
+     "minute": "55'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-LATO",
+     "name": "Grzegorz Lato",
+     "minute": "58'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-BUNCOL",
+     "name": "Andrzej Buncol",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-CIOLEK",
+     "name": "Włodzimierz Ciołek",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "PER",
+     "player": "PER-1982-LAROSA",
+     "name": "Guillermo La Rosa",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-26",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-22",
+   "stadium": "Nuevo Estadio",
+   "city": "Elche",
+   "capacity": 53000,
+   "home": "BEL",
+   "away": "HUN",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "HUN",
+     "player": "HUN-1982-VARGA",
+     "name": "József Varga",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BEL",
+     "player": "BEL-1982-CZERNIATYNSKI",
+     "name": "Alexandre Czerniatynski",
+     "minute": "76'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-27",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-22",
+   "stadium": "Estadio La Rosaleda",
+   "city": "Málaga",
+   "capacity": 45000,
+   "home": "SUN",
+   "away": "SCO",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SCO",
+     "player": "SCO-1982-JORDAN",
+     "name": "Joe Jordan",
+     "minute": "15'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1982-CHIVADZE",
+     "name": "Aleksandr Chivadze",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SUN",
+     "player": "SUN-1982-SHENGELIA",
+     "name": "Ramaz Shengelia",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "SCO",
+     "player": "SCO-1982-SOUNESS",
+     "name": "Graeme Souness",
+     "minute": "86'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-28",
+   "stage": "group stage",
+   "group": "Group 1",
+   "date": "1982-06-23",
+   "stadium": "Balaídos",
+   "city": "Vigo",
+   "capacity": 33000,
+   "home": "ITA",
+   "away": "CMR",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-GRAZIANI",
+     "name": "Francesco Graziani",
+     "minute": "60'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CMR",
+     "player": "CMR-1982-MBIDA",
+     "name": "Grégoire M'Bida",
+     "minute": "61'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-29",
+   "stage": "group stage",
+   "group": "Group 3",
+   "date": "1982-06-23",
+   "stadium": "Estadio José Rico Pérez",
+   "city": "Alicante",
+   "capacity": 33000,
+   "home": "ARG",
+   "away": "SLV",
+   "score": [
+    2,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ARG",
+     "player": "ARG-1982-PASSARELLA",
+     "name": "Daniel Passarella",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-BERTONI",
+     "name": "Daniel Bertoni",
+     "minute": "54'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-30",
+   "stage": "group stage",
+   "group": "Group 6",
+   "date": "1982-06-23",
+   "stadium": "Estadio Benito Villamarín",
+   "city": "Seville",
+   "capacity": 50000,
+   "home": "BRA",
+   "away": "NZL",
+   "score": [
+    4,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1982-ZICO",
+     "name": "Zico",
+     "minute": "28'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-ZICO",
+     "name": "Zico",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-FALCAO",
+     "name": "Falcão",
+     "minute": "64'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-SERGINHO",
+     "name": "Serginho",
+     "minute": "70'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-31",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-24",
+   "stadium": "Estadio Carlos Tartiere",
+   "city": "Oviedo",
+   "capacity": 24000,
+   "home": "DZA",
+   "away": "CHL",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DZA",
+     "player": "DZA-1982-ASSAD",
+     "name": "Salah Assad",
+     "minute": "7'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-1982-ASSAD",
+     "name": "Salah Assad",
+     "minute": "31'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DZA",
+     "player": "DZA-1982-BENSAOULA",
+     "name": "Tedj Bensaoula",
+     "minute": "35'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1982-NEIRA",
+     "name": "Miguel Ángel Neira",
+     "minute": "59'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "CHL",
+     "player": "CHL-1982-LETELIER",
+     "name": "Juan Carlos Letelier",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-32",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-24",
+   "stadium": "Estadio José Zorrilla",
+   "city": "Valladolid",
+   "capacity": 30000,
+   "home": "FRA",
+   "away": "CSK",
+   "score": [
+    1,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1982-SIX",
+     "name": "Didier Six",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "CSK",
+     "player": "CSK-1982-PANENKA",
+     "name": "Antonín Panenka",
+     "minute": "84'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-33",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-24",
+   "stadium": "Estadio La Romareda",
+   "city": "Zaragoza",
+   "capacity": 42000,
+   "home": "HND",
+   "away": "YUG",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "YUG",
+     "player": "YUG-1982-PETROVIC",
+     "name": "Vladimir Petrović",
+     "minute": "88'",
+     "own_goal": false,
+     "penalty": true
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-34",
+   "stage": "group stage",
+   "group": "Group 2",
+   "date": "1982-06-25",
+   "stadium": "Estadio El Molinón",
+   "city": "Gijón",
+   "capacity": 45000,
+   "home": "DEU",
+   "away": "AUT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1982-HRUBESCH",
+     "name": "Horst Hrubesch",
+     "minute": "10'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-35",
+   "stage": "group stage",
+   "group": "Group 4",
+   "date": "1982-06-25",
+   "stadium": "Estadio San Mamés",
+   "city": "Bilbao",
+   "capacity": 46000,
+   "home": "ENG",
+   "away": "KWT",
+   "score": [
+    1,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ENG",
+     "player": "ENG-1982-FRANCIS",
+     "name": "Trevor Francis",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-36",
+   "stage": "group stage",
+   "group": "Group 5",
+   "date": "1982-06-25",
+   "stadium": "Estadio Luis Casanova",
+   "city": "Valencia",
+   "capacity": 50000,
+   "home": "ESP",
+   "away": "NIR",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1982-ARMSTRONG",
+     "name": "Gerry Armstrong",
+     "minute": "47'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-37",
+   "stage": "second group stage",
+   "group": "Group 4",
+   "date": "1982-06-28",
+   "stadium": "Vicente Calderón",
+   "city": "Madrid",
+   "capacity": 66000,
+   "home": "AUT",
+   "away": "FRA",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GENGHINI",
+     "name": "Bernard Genghini",
+     "minute": "39'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-38",
+   "stage": "second group stage",
+   "group": "Group 1",
+   "date": "1982-06-28",
+   "stadium": "Camp Nou",
+   "city": "Barcelona",
+   "capacity": 121000,
+   "home": "POL",
+   "away": "BEL",
+   "score": [
+    3,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "POL",
+     "player": "POL-1982-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "4'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-BONIEK",
+     "name": "Zbigniew Boniek",
+     "minute": "53'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-39",
+   "stage": "second group stage",
+   "group": "Group 3",
+   "date": "1982-06-29",
+   "stadium": "Estadi de Sarrià",
+   "city": "Barcelona",
+   "capacity": 40000,
+   "home": "ITA",
+   "away": "ARG",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-TARDELLI",
+     "name": "Marco Tardelli",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-CABRINI",
+     "name": "Antonio Cabrini",
+     "minute": "67'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-PASSARELLA",
+     "name": "Daniel Passarella",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-40",
+   "stage": "second group stage",
+   "group": "Group 2",
+   "date": "1982-06-29",
+   "stadium": "Estadio Santiago Bernabéu",
+   "city": "Madrid",
+   "capacity": 90000,
+   "home": "DEU",
+   "away": "ENG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-41",
+   "stage": "second group stage",
+   "group": "Group 4",
+   "date": "1982-07-01",
+   "stadium": "Vicente Calderón",
+   "city": "Madrid",
+   "capacity": 66000,
+   "home": "AUT",
+   "away": "NIR",
+   "score": [
+    2,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "NIR",
+     "player": "NIR-1982-HAMILTON",
+     "name": "Billy Hamilton",
+     "minute": "27'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1982-PEZZEY",
+     "name": "Bruno Pezzey",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "AUT",
+     "player": "AUT-1982-HINTERMAIER",
+     "name": "Reinhold Hintermaier",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1982-HAMILTON",
+     "name": "Billy Hamilton",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-42",
+   "stage": "second group stage",
+   "group": "Group 1",
+   "date": "1982-07-01",
+   "stadium": "Camp Nou",
+   "city": "Barcelona",
+   "capacity": 121000,
+   "home": "BEL",
+   "away": "SUN",
+   "score": [
+    0,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "SUN",
+     "player": "SUN-1982-HOVHANNISYAN",
+     "name": "Khoren Hovhannisyan",
+     "minute": "48'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-43",
+   "stage": "second group stage",
+   "group": "Group 3",
+   "date": "1982-07-02",
+   "stadium": "Estadi de Sarrià",
+   "city": "Barcelona",
+   "capacity": 40000,
+   "home": "ARG",
+   "away": "BRA",
+   "score": [
+    1,
+    3
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "BRA",
+     "player": "BRA-1982-ZICO",
+     "name": "Zico",
+     "minute": "11'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-SERGINHO",
+     "name": "Serginho",
+     "minute": "66'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-JUNIOR",
+     "name": "Júnior",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ARG",
+     "player": "ARG-1982-DIAZ",
+     "name": "Ramón Díaz",
+     "minute": "89'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-44",
+   "stage": "second group stage",
+   "group": "Group 2",
+   "date": "1982-07-02",
+   "stadium": "Estadio Santiago Bernabéu",
+   "city": "Madrid",
+   "capacity": 90000,
+   "home": "DEU",
+   "away": "ESP",
+   "score": [
+    2,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1982-LITTBARSKI",
+     "name": "Pierre Littbarski",
+     "minute": "50'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-FISCHER",
+     "name": "Klaus Fischer",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ESP",
+     "player": "ESP-1982-ZAMORA",
+     "name": "Jesús María Zamora",
+     "minute": "82'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-45",
+   "stage": "second group stage",
+   "group": "Group 4",
+   "date": "1982-07-04",
+   "stadium": "Vicente Calderón",
+   "city": "Madrid",
+   "capacity": 66000,
+   "home": "FRA",
+   "away": "NIR",
+   "score": [
+    4,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GIRESSE",
+     "name": "Alain Giresse",
+     "minute": "33'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-ROCHETEAU",
+     "name": "Dominique Rocheteau",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-ROCHETEAU",
+     "name": "Dominique Rocheteau",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "NIR",
+     "player": "NIR-1982-ARMSTRONG",
+     "name": "Gerry Armstrong",
+     "minute": "75'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GIRESSE",
+     "name": "Alain Giresse",
+     "minute": "80'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-46",
+   "stage": "second group stage",
+   "group": "Group 1",
+   "date": "1982-07-04",
+   "stadium": "Camp Nou",
+   "city": "Barcelona",
+   "capacity": 121000,
+   "home": "SUN",
+   "away": "POL",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-47",
+   "stage": "second group stage",
+   "group": "Group 3",
+   "date": "1982-07-05",
+   "stadium": "Estadi de Sarrià",
+   "city": "Barcelona",
+   "capacity": 40000,
+   "home": "ITA",
+   "away": "BRA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "5'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-SOCRATES",
+     "name": "Sócrates",
+     "minute": "12'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "25'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "BRA",
+     "player": "BRA-1982-FALCAO",
+     "name": "Falcão",
+     "minute": "68'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "74'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-48",
+   "stage": "second group stage",
+   "group": "Group 2",
+   "date": "1982-07-05",
+   "stadium": "Estadio Santiago Bernabéu",
+   "city": "Madrid",
+   "capacity": 90000,
+   "home": "ESP",
+   "away": "ENG",
+   "score": [
+    0,
+    0
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": []
+  },
+  {
+   "match_id": "M-1982-49",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1982-07-08",
+   "stadium": "Camp Nou",
+   "city": "Barcelona",
+   "capacity": 121000,
+   "home": "POL",
+   "away": "ITA",
+   "score": [
+    0,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "22'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "73'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-50",
+   "stage": "semi-finals",
+   "group": null,
+   "date": "1982-07-08",
+   "stadium": "Estadio Ramón Sánchez Pizjuán",
+   "city": "Seville",
+   "capacity": 68000,
+   "home": "DEU",
+   "away": "FRA",
+   "score": [
+    3,
+    3
+   ],
+   "extra_time": true,
+   "replay": false,
+   "penalties": [
+    5,
+    4
+   ],
+   "goals": [
+    {
+     "team": "DEU",
+     "player": "DEU-1982-LITTBARSKI",
+     "name": "Pierre Littbarski",
+     "minute": "17'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-PLATINI",
+     "name": "Michel Platini",
+     "minute": "26'",
+     "own_goal": false,
+     "penalty": true
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-TRESOR",
+     "name": "Marius Trésor",
+     "minute": "92'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GIRESSE",
+     "name": "Alain Giresse",
+     "minute": "98'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-RUMMENIGGE",
+     "name": "Karl-Heinz Rummenigge",
+     "minute": "102'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-FISCHER",
+     "name": "Klaus Fischer",
+     "minute": "108'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-51",
+   "stage": "third-place match",
+   "group": null,
+   "date": "1982-07-10",
+   "stadium": "Estadio José Rico Pérez",
+   "city": "Alicante",
+   "capacity": 33000,
+   "home": "POL",
+   "away": "FRA",
+   "score": [
+    3,
+    2
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "FRA",
+     "player": "FRA-1982-GIRARD",
+     "name": "René Girard",
+     "minute": "13'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-SZARMACH",
+     "name": "Andrzej Szarmach",
+     "minute": "40'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-MAJEWSKI",
+     "name": "Stefan Majewski",
+     "minute": "44'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "POL",
+     "player": "POL-1982-KUPCEWICZ",
+     "name": "Janusz Kupcewicz",
+     "minute": "46'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "FRA",
+     "player": "FRA-1982-COURIOL",
+     "name": "Alain Couriol",
+     "minute": "72'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  },
+  {
+   "match_id": "M-1982-52",
+   "stage": "final",
+   "group": null,
+   "date": "1982-07-11",
+   "stadium": "Estadio Santiago Bernabéu",
+   "city": "Madrid",
+   "capacity": 90000,
+   "home": "ITA",
+   "away": "DEU",
+   "score": [
+    3,
+    1
+   ],
+   "extra_time": false,
+   "replay": false,
+   "penalties": null,
+   "goals": [
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ROSSI",
+     "name": "Paolo Rossi",
+     "minute": "57'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-TARDELLI",
+     "name": "Marco Tardelli",
+     "minute": "69'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "ITA",
+     "player": "ITA-1982-ALTOBELLI",
+     "name": "Alessandro Altobelli",
+     "minute": "81'",
+     "own_goal": false,
+     "penalty": false
+    },
+    {
+     "team": "DEU",
+     "player": "DEU-1982-BREITNER",
+     "name": "Paul Breitner",
+     "minute": "83'",
+     "own_goal": false,
+     "penalty": false
+    }
+   ]
+  }
+ ],
+ "source": {
+  "dataset": "Fjelstul World Cup Database",
+  "license": "CC-BY-SA 4.0"
+ }
+}
