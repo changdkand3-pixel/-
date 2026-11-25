@@ -738,10 +738,43 @@ rep("""viewport.addEventListener('touchend',event=>{if(gesture?.moved||gesture?.
 rep("""viewport.addEventListener('touchcancel',()=>{if(gesture)""","""viewport.addEventListener('touchcancel',()=>{wkPinchCommit();if(gesture)""")
 rep("""let gesture=null,suppressUntil=0;""","""let gesture=null,suppressUntil=0,wkPinchRaf=0,wkPinchP=null,wkPinchG=null,wkPinchO=null;""")
 
+# ---------- 50. 142차: 초6-1 (수학 원본 100문항 + 드라이브 6-1 폴더 목차·캐릭터 그림, 영어 e6-1 대결판) — 46단계(초5-2)와 같은 방식
+_g61dir=sys.argv[2].replace('world_final.webp','g61/')
+_math61=open(_g61dir+'math61.json',encoding='utf-8').read()
+_g61html=open(_g61dir+'g61.html',encoding='utf-8').read()
+rep("""'초4-1','초4-2','초5-1','초5-2'].includes(S.activeGrade)""","""'초4-1','초4-2','초5-1','초5-2','초6-1'].includes(S.activeGrade)""")
+rep("""if(S.g52){SS['초5-2']=S.g52;delete S.g52}""","""if(S.g52){SS['초5-2']=S.g52;delete S.g52}if(S.g61){SS['초6-1']=S.g61;delete S.g61}""")
+rep("""delete o.g51;delete o.g52;o.activeGrade=GR;""","""delete o.g51;delete o.g52;delete o.g61;o.activeGrade=GR;""")
+rep("""if(SS['초5-2'])o.g52=SS['초5-2'];""","""if(SS['초5-2'])o.g52=SS['초5-2'];if(SS['초6-1'])o.g61=SS['초6-1'];""")
+rep("""g51=data.g51,g52=data.g52,""","""g51=data.g51,g52=data.g52,g61=data.g61,""")
+rep("""delete d2.g51;delete d2.g52;""","""delete d2.g51;delete d2.g52;delete d2.g61;""")
+rep("""else delete SS['초5-2'];applyPack(target);""","""else delete SS['초5-2'];if(g61)SS['초6-1']=Object.assign(newState(),g61);else delete SS['초6-1'];applyPack(target);""")
+rep("""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2')""","""(GR==='초2-1'||GR==='초2-2'||GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2'||GR==='초6-1')""",10)
+rep("""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2')&&!privateSession)""","""function roster(){if((GR==='초3-1'||GR==='초3-2'||GR==='초4-1'||GR==='초4-2'||GR==='초5-1'||GR==='초5-2'||GR==='초6-1')&&!privateSession)""")
+_a=t.index("if(GR==='초5-2'&&window.WonkiGrade52){body.innerHTML=head(");_b=t.index("\n if(GR==='초5-1'&&window.WonkiGrade51){body.innerHTML=head(",_a)
+_board61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace('초5-2','초6-1')
+assert 'WonkiGrade61' in _board61
+t=t[:_a]+_board61+'\n '+t[_a:]
+rep("""PACKS['초5-2']=""","""PACKS['초6-1']="""+_math61+""";
+PACKS['초5-2']=""")
+rep("""return ['초5-2','초5-1','초4-2','초4-1','초3-2','초3-1','초2-2',""","""return ['초6-1','초5-2','초5-1','초4-2','초4-1','초3-2','초3-1','초2-2',""")
+rep("""||st.includes('초4-2')||st.includes('초5-1')||st.includes('초5-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2입니다.""","""||st.includes('초4-2')||st.includes('초5-1')||st.includes('초5-2')||st.includes('초6-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1입니다.""")
+rep("""'초4-1','초4-2','초5-1','초5-2'].includes(grade.dataset.grade))return;""","""'초4-1','초4-2','초5-1','초5-2','초6-1'].includes(grade.dataset.grade))return;""")
+_m61=_j.loads(_math61)
+_eng61="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m61['CH'].items()},ensure_ascii=False)+");const GRADE61_CAST="+_j.dumps(_m61['CAST'],ensure_ascii=False)+";const GRADE61_STARTERS="+_j.dumps(_m61['PICK'])+";const GRADE61_ENEMIES={};{const s61=SEMESTERS.find(s=>s.key==='e6-1');if(s61)s61.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE61_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[])).filter(x=>x!=='goku61');GRADE61_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng61+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE52_ENEMIES[u]||""","""function enemies(u){return(GRADE61_ENEMIES[u]||GRADE52_ENEMIES[u]||""")
+rep("""state.semester==='e5-2'?[...GRADE52_STARTERS,...state.friends]:""","""state.semester==='e6-1'?[...GRADE61_STARTERS,...state.friends]:state.semester==='e5-2'?[...GRADE52_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e5-2'&&GRADE52_STARTERS.includes(saved.player))""","""||(out.semester==='e5-2'&&GRADE52_STARTERS.includes(saved.player))||(out.semester==='e6-1'&&GRADE61_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e5-2'&&window.WonkiGrade52){");_b=t.index("\n  if(s.semester==='e5-1'&&window.WonkiGrade51){",_a)
+_eb61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace("'e5-2'","'e6-1'").replace("id!=='goku52'&&id!=='goku260_52'","id!=='goku61'").replace('초5-2','초6-1')
+assert 'WonkiGrade61' in _eb61 and "id!=='goku61'" in _eb61
+t=t[:_a]+_eb61+'\n'+t[_a:]
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
-final = _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
+final = _g61html + '\n' + _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64
