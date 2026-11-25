@@ -773,6 +773,22 @@ _eb61=t[_a:_b].replace('WonkiGrade52','WonkiGrade61').replace("'e5-2'","'e6-1'")
 assert 'WonkiGrade61' in _eb61
 t=t[:_a]+_eb61+'\n'+t[_a:]
 
+# ---------- 51. 144차: 초1~초6 수학·영어 모두 같은 캐릭터끼리 대결(거울 대결) — 손오공·내 전사를 상대에서 빼던 거르기를 모두 없앰
+import re as _re144
+t,_n144=_re144.subn(r"\.filter\(x=>x!=='goku\w*'(?:&&x!=='\w+')*\)","",t)
+assert _n144==6,_n144
+rep("""enemies:r.enemies.filter(id=>id!==p)""","""enemies:r.enemies""",6)
+rep("""||unitById(u)?.enemies||[]).filter(id=>id!==state.player);}""","""||unitById(u)?.enemies||[]).concat(state.player?[state.player]:[]).filter((id,i,a)=>a.indexOf(id)===i);}""")
+rep("""?(PACKS[GR].BOSSES[u]||[]):(CAST[u]||[]);""","""?[...(PACKS[GR].BOSSES[u]||[]),...(PACKS[GR].CAST[u]||[])]:(CAST[u]||[]);""")
+rep("""||GR==='초6-1')||privateSession||id!==S.player));""","""||GR==='초6-1')||true));""")
+
+# 2학년 대결판: 내 편(VS 왼쪽) 캐릭터 칸 자리(그림 폭 %: [왼쪽, 오른쪽])를 따로 정함 — 2-1은 상대 칸이 한 곳, 2-2는 순서대로라서
+_L144="""window.WK144={l21:[{goku:[20.5,42]},{goku:[3,21.5],goku_kame2:[22.5,41]},{goku:[20.5,42]},{goku:[3,23],hatchan2:[23.5,42]},{goku:[3,23],hatchan2:[24,43]},{goku:[2,16],hatchan2:[17,29.5],chief2:[30,40],suno2:[40.5,50]}],l22:[{goku:[.5,15.5]},{goku:[.5,15.5],krillin22:[16,32],bulma22:[32.5,48.5]},{goku:[.5,12.5],krillin22:[13,25],bulma22:[25.5,37.5],roshi22:[38,50],lunch22:[50,61.5],lunch_blonde22:[61.5,72]},{goku12522:[.5,14.5],bora22:[15,28],upa22:[28.5,42]},{goku12522:[.5,15.5],upa22:[16,31.5],korin22:[32,48.5]},{goku12522:[.5,25]}]};"""
+rep("""allowed=row.enemies.filter(id=>id!=='goku');""","""allowed=row.enemies,L144=(window.WK144&&WK144.l22[n])||{};let j144=0;""")
+rep("""allowed.map((id,j)=>{const hit=targets[n][Math.min(j,targets[n].length-1)],""","""allowed.map((id,j)=>{const lw=L144[id],hit=lw?[20+lw[0]*9.2,21,(lw[1]-lw[0])*9.2,targets[n][0][3]]:targets[n][Math.min(j144++,targets[n].length-1)],""")
+rep("""const scenes=[[20,333,920,144],""",_L144+"""const scenes=[[20,333,920,144],""")
+rep("""style="left:'+(target[0]/593*100)+'%;width:'+(target[1]/593*100)+'%">""","""style="'+(((window.WK144&&WK144.l21[i])||{})[id]?'left:'+WK144.l21[i][id][0]+'%;width:'+(WK144.l21[i][id][1]-WK144.l21[i][id][0])+'%':'left:'+(target[0]/593*100)+'%;width:'+(target[1]/593*100)+'%')+'">""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
