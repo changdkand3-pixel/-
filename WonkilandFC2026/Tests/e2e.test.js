@@ -10,6 +10,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 (async () => {
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--autoplay-policy=no-user-gesture-required'] });
   const page = await browser.newPage({ viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1 });
+  // 이 테스트는 기능 검증용: GPU 없는 환경(소프트웨어 렌더링)에서도 돌도록 그래픽 품질 '낮음'으로 실행.
+  // 고품질 그래픽 렌더링은 Tests/graphics.test.js 에서 별도 검증.
+  await page.addInitScript(q => { try { localStorage.setItem('wfc.quality', q); } catch (e) { } }, process.env.E2E_QUALITY || 'low');
   const errors = [];
   page.on('pageerror', e => errors.push('pageerror: ' + e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });

@@ -27,7 +27,7 @@
     <button data-act="settings">설정 / 음악</button>
     <button data-act="help">조작법</button>
   </nav>
-  <div class="footer">선수 데이터: Fjelstul World Cup Database (CC-BY-SA 4.0) · 프로토타입 v0.2 · 절차적 저폴리 그래픽 (실사 그래픽은 UE5 단계 목표) · <span id="padInfo"></span></div>
+  <div class="footer">선수 데이터: Fjelstul World Cup Database (CC-BY-SA 4.0) · 프로토타입 v0.3 · 실사풍 1단계 (최신 FC 수준은 UE5 단계 목표) · <span id="padInfo"></span></div>
 </section>
 
 <!-- 게임 모드 -->
@@ -119,7 +119,7 @@
     <label>효과음 볼륨 <input type="range" id="volSfx" min="0" max="1" step="0.05" value="0.8"></label>
     <label>재생 방식 <select id="optShuffle"><option value="1">랜덤 재생</option><option value="0">순서대로 자동 재생</option></select></label>
     <label>음성 해설 (브라우저 음성합성) <select id="optVoice"><option value="1">켜기</option><option value="0">끄기</option></select></label>
-    <label>그래픽 품질 <select id="optQuality"><option value="high">높음 (그림자)</option><option value="low">낮음</option></select></label>
+    <label>그래픽 품질 <select id="optQuality"><option value="high">높음 (주변광 차폐·빛 번짐·그림자)</option><option value="medium">중간 (빛 번짐·그림자)</option><option value="low">낮음 (저사양 PC)</option></select></label>
   </div>
   <h3>음악 파일 추가 <small>(사용 권리가 확보된 파일만 — docs/RIGHTS_REGISTER.md에 기록)</small></h3>
   <div class="form">
@@ -200,7 +200,7 @@
   <div class="row"><button class="primary" id="btnCeremony">시상식 보기</button><button id="btnToTitle">메인 메뉴</button></div>
 </section>
 
-<script src="lib/three.min.js"></script>
+<script src="lib/three.bundle.js"></script>
 <script src="js/data_bundle.js"></script>
 <script src="js/host_face.js"></script>
 <script src="../Assets/Music/playlist.js"></script>

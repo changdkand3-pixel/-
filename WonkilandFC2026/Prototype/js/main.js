@@ -18,9 +18,40 @@
   const camera = new T.PerspectiveCamera(40, 1, 0.1, 800);
   const hemi = new T.HemisphereLight(0xdfeaff, 0x3a5a2a, 0.65); scene.add(hemi);
   const sun = new T.DirectionalLight(0xfff2dd, 1.25); sun.position.set(-40, 80, 30); sun.castShadow = true;
-  sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -70, right: 70, top: 50, bottom: -50, near: 10, far: 220 }); scene.add(sun);
+  sun.shadow.mapSize.set(2048, 2048); sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; Object.assign(sun.shadow.camera, { left: -70, right: 70, top: 50, bottom: -50, near: 10, far: 220 }); scene.add(sun);
   const nightLights = [];
   for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const l = new T.SpotLight(0xf4f6ff, 0, 220, 0.6, 0.5); l.position.set(sx * (PH.halfLength + 14), 31, sz * (PH.halfWidth + 20)); l.target.position.set(sx * 20, 0, 0); scene.add(l, l.target); nightLights.push(l); }
+  scene.add(sun.target);
+  // ---- 실사풍 렌더링: 환경광(반사) + 대기 산란 하늘 + 밤하늘 별 + 후처리 ----
+  const AD = T.Addons;
+  const pmrem = new T.PMREMGenerator(renderer);
+  const dayEnv = pmrem.fromScene(new AD.RoomEnvironment(), 0.04).texture;
+  scene.environment = dayEnv;
+  const sky = new AD.Sky(); sky.scale.setScalar(700); scene.add(sky);
+  const stars = (() => { const n = 1500, p = new Float32Array(n * 3); for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, e = Math.random() * 1.3 + 0.12, r = 650; p[i * 3] = Math.cos(a) * Math.cos(e) * r; p[i * 3 + 1] = Math.sin(e) * r; p[i * 3 + 2] = Math.sin(a) * Math.cos(e) * r; }
+    const g = new T.BufferGeometry(); g.setAttribute('position', new T.BufferAttribute(p, 3)); const pts = new T.Points(g, new T.PointsMaterial({ color: 0xffffff, size: 1.6, sizeAttenuation: false, fog: false })); pts.visible = false; scene.add(pts); return pts; })();
+  const post = { composer: null };
+  function setupPost(quality) {
+    post.quality = quality;
+    renderer.shadowMap.enabled = quality !== 'low';
+    if (quality === 'low') { post.composer = null; return; }
+    const c = new AD.EffectComposer(renderer);
+    c.addPass(new AD.RenderPass(scene, camera));
+    if (quality === 'high') {
+      const sao = new AD.SAOPass(scene, camera, false, true);
+      Object.assign(sao.params, { saoIntensity: 0.012, saoScale: 6, saoKernelRadius: 30, saoBlurRadius: 6, saoMinResolution: 0, saoBias: 0.5 });
+      c.addPass(sao); post.sao = sao;
+    }
+    post.bloom = new AD.UnrealBloomPass(new T.Vector2(innerWidth, innerHeight), 0.25, 0.6, 0.86); c.addPass(post.bloom);
+    c.addPass(new AD.ShaderPass(AD.GammaCorrectionShader));
+    post.fxaa = new AD.ShaderPass(AD.FXAAShader); c.addPass(post.fxaa);
+    post.composer = c; resizePost();
+  }
+  function resizePost() {
+    if (!post.composer) return;
+    const pr = renderer.getPixelRatio(); post.composer.setSize(innerWidth, innerHeight);
+    post.fxaa.material.uniforms.resolution.value.set(1 / (innerWidth * pr), 1 / (innerHeight * pr));
+  }
   const stadium = M.buildStadium(scene, { teamColors: [['#7fb8e6', '#ffffff'], ['#75aadb', '#ffffff']] });
   const weather = M.buildWeather(scene);
   const ballMesh = M.buildBall(); scene.add(ballMesh);
@@ -48,21 +79,31 @@
     }
   }
 
-  function resize() { const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+  function resize() { const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); resizePost(); }
   addEventListener('resize', resize); resize();
 
   // ---------------- 환경 (시간대/날씨) ----------------
   function setEnvironment(time, wx) {
-    const sky = { day: 0x87b5e8, dusk: 0xe08a5a, night: 0x070b1a }[time];
-    scene.background = new T.Color(sky);
-    scene.fog = new T.Fog(sky, 140, wx === 'clear' ? 420 : 200);
-    sun.intensity = time === 'day' ? 1.25 : time === 'dusk' ? 0.7 : 0.08;
-    sun.color.set(time === 'dusk' ? 0xffb27a : 0xfff2dd);
-    hemi.intensity = time === 'night' ? 0.12 : 0.65;
-    renderer.toneMappingExposure = time === 'night' ? 0.8 : 1.0;
+    const fogCol = wx !== 'clear' && time !== 'night' ? 0x8f99a5 : { day: 0xb9cde4, dusk: 0xd9a27c, night: 0x070b1a }[time];
+    scene.environment = time === 'night' ? null : dayEnv; // 밤에는 주간 환경광 반사 제거
+    // 대기 산란 하늘: 태양 고도에 따라 낮/해질녘 색이 물리적으로 계산됨
+    const elev = time === 'day' ? 48 : time === 'dusk' ? 4 : -10, azim = 200;
+    const sunDir = new T.Vector3().setFromSphericalCoords(1, T.MathUtils.degToRad(90 - elev), T.MathUtils.degToRad(azim));
+    const u = sky.material.uniforms;
+    u.sunPosition.value.copy(sunDir); u.turbidity.value = wx === 'clear' ? 4 : 14; u.rayleigh.value = time === 'dusk' ? 2.5 : 1.2; u.mieCoefficient.value = 0.004; u.mieDirectionalG.value = 0.8;
+    sky.visible = time !== 'night'; stars.visible = time === 'night' && wx === 'clear';
+    scene.background = time === 'night' ? new T.Color(0x05070f) : null;
+    scene.fog = new T.Fog(fogCol, 160, wx === 'clear' ? 600 : 220);
+    S.sunOffset = sunDir.clone().multiplyScalar(110); if (S.sunOffset.y < 25) S.sunOffset.y = 25;
+    sun.intensity = time === 'day' ? 2.2 : time === 'dusk' ? 1.1 : 0.05;
+    sun.color.set(time === 'dusk' ? 0xffa060 : 0xfff4e6);
+    hemi.intensity = time === 'night' ? 0.35 : 0.25;
+    renderer.toneMappingExposure = time === 'night' ? 0.9 : time === 'dusk' ? 0.55 : 0.5;
+    if (post.bloom) { post.bloom.strength = time === 'night' ? 0.3 : 0.16; post.bloom.threshold = time === 'night' ? 0.92 : 0.86; }
+    M.setWet(wx === 'rain');
     nightLights.forEach(l => { l.intensity = time === 'night' ? 1.6 : time === 'dusk' ? 0.4 : 0; l.decay = 0; });
     stadium.lightTowers.forEach(t => t.head.material.emissive.set(time === 'day' ? 0x000000 : 0xffffff));
-    if (wx !== 'clear') { sun.intensity *= 0.55; scene.background.multiplyScalar(0.7); }
+    if (wx !== 'clear') { sun.intensity *= 0.45; hemi.intensity *= 1.4; }
     weather.set(wx);
     // 날씨가 공 물리에 영향: 젖은 잔디는 공이 더 미끄러지고, 눈은 더 빨리 멈춤
     WFCPhysics.BALL.rollFriction = wx === 'rain' ? 1.2 : wx === 'snow' ? 2.6 : 1.6;
@@ -84,7 +125,7 @@
     clearMatch(); S.seq = null; caption(null); $('skipHint').classList.add('hidden'); $('hud').classList.add('hidden');
     document.querySelectorAll('.lineup').forEach(e => e.remove());
     setEnvironment('dusk', 'clear');
-    placeHost('center', 'wave'); trophy.visible = false; ballMesh.visible = false;
+    placeHost('center', 'wave'); trophy.visible = false; ballMesh.visible = false; followShadow({ x: 0, z: 0 });
     show('title'); A.init(); A.crowd(0.15);
     if (!A.playCategory('menu')) { /* 음악 파일이 없으면 무음 */ }
   }
@@ -321,7 +362,7 @@
   $('volSfx').oninput = e => { A.state.sfxVolume = +e.target.value; };
   $('optShuffle').onchange = e => { A.state.shuffle = e.target.value === '1'; };
   $('optVoice').onchange = e => { A.state.voice = e.target.value === '1'; };
-  $('optQuality').onchange = e => { S.quality = e.target.value; renderer.shadowMap.enabled = S.quality === 'high'; scene.traverse(o => { if (o.material) o.material.needsUpdate = true; }); };
+  $('optQuality').onchange = e => { S.quality = e.target.value; setupPost(S.quality); scene.traverse(o => { if (o.material) o.material.needsUpdate = true; }); try { localStorage.setItem('wfc.quality', S.quality); } catch (err) { /* 무시 */ } };
   document.querySelectorAll('#settings input[type=file]').forEach(inp => inp.onchange = () => { A.init(); A.addFiles(inp.dataset.cat, inp.files); refreshPlaylistInfo(); if (inp.dataset.cat === 'menu') A.playCategory('menu'); });
   function refreshPlaylistInfo() {
     const p = A.state.playlists;
@@ -415,7 +456,7 @@
     M.recolorCrowd(stadium, [tA.kit, tB.kit].map(k => [k.shirt.colors[0], k.shirt.colors[1] || k.shorts.colors[0]]));
     $('t0').textContent = tA.short; $('t1').textContent = tB.short;
     [0, 1].forEach(i => { const k = S.teamsMeta[i].kit.shirt.colors; $('sw' + i).style.background = k.length > 1 ? `linear-gradient(90deg, ${k.join(',')})` : k[0]; });
-    ballMesh.visible = true; trophy.visible = false;
+    ballMesh.visible = true; trophy.visible = false; ballMesh.userData.setEra(tA.year && tB.year ? Math.max(tA.year, tB.year) : 2022);
     show(null); $('hud').classList.remove('hidden');
     const hostWatch = cfg.kind === 'final' || cfg.kind === 'history' || cfg.kind === 'dream';
     if (hostWatch) placeHost('vip', 'sit'); else host.visible = podium.visible = false;
@@ -644,6 +685,12 @@
     ballMesh.position.set(fr.b[0], fr.b[1], fr.b[2]);
   }
 
+  // 그림자 카메라가 공 주변을 따라가며 좁은 범위만 렌더링 → 선명한 그림자
+  function followShadow(c) {
+    const o = S.sunOffset || new T.Vector3(-40, 80, 30);
+    sun.target.position.set(c.x * 0.9, 0, c.z * 0.5); sun.position.copy(sun.target.position).add(o);
+    const sc = sun.shadow.camera; if (sc.right !== 42) { Object.assign(sc, { left: -42, right: 42, top: 30, bottom: -30, near: 20, far: 260 }); sc.updateProjectionMatrix(); }
+  }
   // ---------------- HUD ----------------
   const radar = $('radar').getContext('2d');
   function drawHUD(m, inputs) {
@@ -681,7 +728,7 @@
     const dt = Math.min(0.25, (now - S.lastFrame) / 1000); S.lastFrame = now; S.t += dt;
     try { tick(dt); } catch (err) { console.error(err); }
     S.clickSkip = false; I.endFrame();
-    renderer.render(scene, camera);
+    if (post.composer) post.composer.render(); else renderer.render(scene, camera);
     requestAnimationFrame(frame);
   }
   function tick(dt) {
@@ -749,9 +796,11 @@
     if (host.visible) { if (hostAnim.state === 'clap' && S.excitement[2] < 0.3) hostAnim.state = 'sit'; }
     A.crowd(0.3 + Math.max(...S.excitement) * 0.6);
     const [p, l] = matchCamera(m, dt); applyCam(p, l, dt);
+    followShadow(m.ball.p);
     drawHUD(m, inputs);
   }
 
+  S.quality = (() => { try { return localStorage.getItem('wfc.quality') || 'high'; } catch (e) { return 'high'; } })(); $('optQuality').value = S.quality; setupPost(S.quality);
   toTitle();
   requestAnimationFrame(frame);
   // 테스트 훅

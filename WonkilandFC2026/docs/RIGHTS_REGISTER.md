@@ -6,11 +6,12 @@
 | 항목 | 파일 | 출처 | 라이선스/권리 | 배포 가능 여부 |
 |---|---|---|---|---|
 | 선수·대회 데이터 | `Data/sources/fjelstul/`, `Data/players/`, `Data/tournaments/`, `Prototype/js/data_bundle.js` | Fjelstul World Cup Database | **CC-BY-SA 4.0** — 출처 표기 + 동일 라이선스 유지 (`Data/LICENSE-DATA.md`) | ✅ (조건 준수 시). 단 실명 사용 자체는 아래 퍼블리시티권 검토 필요 |
-| three.js 라이브러리 | `Prototype/lib/three.min.js` | three.js r149 (npm) | MIT (`three.LICENSE.txt`) | ✅ (라이선스 고지 포함) |
+| three.js 라이브러리 + 부가 모듈 | `Prototype/lib/three.bundle.js` | three.js r149 (npm), esbuild로 묶음 | MIT (`three.LICENSE.txt`) | ✅ (라이선스 고지 포함) |
 | 개최자 참조 사진 | `Assets/Host/reference/host_jang_wonki_reference_01.jpg` | 사용자 제공 | 본인 사진으로 제공됨 | ⚠️ **공개 배포 전 서면 초상 사용 동의서 보관 필요** |
 | 개최자 얼굴 텍스처 | `Assets/Host/reference/host_face_crop.png`, `Prototype/js/host_face.js` | 위 사진에서 크롭 | 위와 동일 | ⚠️ 위와 동일 |
 | 효과음 | (파일 없음) | WebAudio 실시간 합성 | 자체 제작 | ✅ |
 | 경기장·선수·공·트로피 3D 모델 | (코드 생성) | 자체 제작 | 자체 제작 | ✅ |
+| 시대별 공 디자인 | 코드 생성 | 일반적 형태 재현 (특정 제조사 상표·로고 미사용) | 자체 제작 | ✅ |
 | 트로피 디자인 | 코드 생성 | 자체 디자인 (실제 대회 트로피 복제 아님) | 자체 제작 | ✅ |
 | 유니폼 | 색상만 사용 | 역사적 색상 | 협회 엠블럼/로고 **미사용** | ✅ (엠블럼 추가 시 재검토) |
 | 광고판 문구 | 코드 생성 | "WONKILAND FC 2026" 자체 문구 | 실제 브랜드 미사용 | ✅ |
