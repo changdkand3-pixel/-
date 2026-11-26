@@ -789,10 +789,42 @@ rep("""allowed.map((id,j)=>{const hit=targets[n][Math.min(j,targets[n].length-1)
 rep("""const scenes=[[20,333,920,144],""",_L144+"""const scenes=[[20,333,920,144],""")
 rep("""style="left:'+(target[0]/593*100)+'%;width:'+(target[1]/593*100)+'%">""","""style="'+(((window.WK144&&WK144.l21[i])||{})[id]?'left:'+WK144.l21[i][id][0]+'%;width:'+(WK144.l21[i][id][1]-WK144.l21[i][id][0])+'%':'left:'+(target[0]/593*100)+'%;width:'+(target[1]/593*100)+'%')+'">""")
 
+# ---------- 52. 145차: 초6-2 (수학 원본 100문항 + 드라이브 6-2 폴더 목차·캐릭터 그림, 영어 e6-2 대결판) — 50단계(초6-1)와 같은 방식, 51단계(거울 대결) 뒤
+_g62dir=sys.argv[2].replace('world_final.webp','g62/')
+_math62=open(_g62dir+'math62.json',encoding='utf-8').read()
+_g62html=open(_g62dir+'g62.html',encoding='utf-8').read()
+rep("""'초5-1','초5-2','초6-1'].includes(S.activeGrade)""","""'초5-1','초5-2','초6-1','초6-2'].includes(S.activeGrade)""")
+rep("""if(S.g61){SS['초6-1']=S.g61;delete S.g61}""","""if(S.g61){SS['초6-1']=S.g61;delete S.g61}if(S.g62){SS['초6-2']=S.g62;delete S.g62}""")
+rep("""delete o.g61;o.activeGrade=GR;""","""delete o.g61;delete o.g62;o.activeGrade=GR;""")
+rep("""if(SS['초6-1'])o.g61=SS['초6-1'];""","""if(SS['초6-1'])o.g61=SS['초6-1'];if(SS['초6-2'])o.g62=SS['초6-2'];""")
+rep("""g61=data.g61,""","""g61=data.g61,g62=data.g62,""")
+rep("""delete d2.g61;""","""delete d2.g61;delete d2.g62;""")
+rep("""else delete SS['초6-1'];applyPack(target);""","""else delete SS['초6-1'];if(g62)SS['초6-2']=Object.assign(newState(),g62);else delete SS['초6-2'];applyPack(target);""")
+rep("""||GR==='초5-2'||GR==='초6-1')""","""||GR==='초5-2'||GR==='초6-1'||GR==='초6-2')""",11)  # 10곳 + roster
+_a=t.index("if(GR==='초6-1'&&window.WonkiGrade61){body.innerHTML=head(");_b=t.index("\n if(GR==='초5-2'&&window.WonkiGrade52){body.innerHTML=head(",_a)
+_board62=t[_a:_b].replace('WonkiGrade61','WonkiGrade62').replace('초6-1','초6-2')
+assert 'WonkiGrade62' in _board62
+t=t[:_a]+_board62+'\n '+t[_a:]
+rep("""PACKS['초6-1']=""","""PACKS['초6-2']="""+_math62+""";
+PACKS['초6-1']=""")
+rep("""return ['초6-1','초5-2',""","""return ['초6-2','초6-1','초5-2',""")
+rep("""||st.includes('초6-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1입니다.""","""||st.includes('초6-1')||st.includes('초6-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1, 초6-2입니다.""")
+rep("""'초5-2','초6-1'].includes(grade.dataset.grade))return;""","""'초5-2','초6-1','초6-2'].includes(grade.dataset.grade))return;""")
+_m62=_j.loads(_math62)
+_eng62="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m62['CH'].items()},ensure_ascii=False)+");const GRADE62_CAST="+_j.dumps(_m62['CAST'],ensure_ascii=False)+";const GRADE62_STARTERS="+_j.dumps(_m62['PICK'])+";const GRADE62_ENEMIES={};{const s62=SEMESTERS.find(s=>s.key==='e6-2');if(s62)s62.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE62_CAST[String(([0,1,2,3,4,5,5][i]??5)+1)]||[]));GRADE62_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng62+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE61_ENEMIES[u]||""","""function enemies(u){return(GRADE62_ENEMIES[u]||GRADE61_ENEMIES[u]||""")
+rep("""state.semester==='e6-1'?[...GRADE61_STARTERS,...state.friends]:""","""state.semester==='e6-2'?[...GRADE62_STARTERS,...state.friends]:state.semester==='e6-1'?[...GRADE61_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e6-1'&&GRADE61_STARTERS.includes(saved.player))""","""||(out.semester==='e6-1'&&GRADE61_STARTERS.includes(saved.player))||(out.semester==='e6-2'&&GRADE62_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e6-1'&&window.WonkiGrade61){");_b=t.index("\n  if(s.semester==='e5-2'&&window.WonkiGrade52){",_a)
+_eb62=t[_a:_b].replace('WonkiGrade61','WonkiGrade62').replace("'e6-1'","'e6-2'").replace('초6-1','초6-2')
+assert 'WonkiGrade62' in _eb62
+t=t[:_a]+_eb62+'\n'+t[_a:]
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
-final = _g61html + '\n' + _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
+final = _g62html + '\n' + _g61html + '\n' + _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64

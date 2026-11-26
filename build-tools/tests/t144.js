@@ -4,7 +4,7 @@ const {chromium}=require('playwright');
 const p=await b.newPage({viewport:{width:1100,height:900}});p.on('pageerror',e=>errs.push(e.message));p.on('dialog',d=>d.accept());await p.route(/^https?:/,r=>r.abort());
 await p.goto('file://'+process.argv[2],{waitUntil:'load',timeout:120000});await p.waitForTimeout(1200);
 await p.evaluate(()=>{const u=document.getElementById('wkUpdatePoster');if(u)u.hidden=true;});
-const GR=['초1-1','초1-2','초2-1','초2-2','초3-1','초3-2','초4-1','초4-2','초5-1','초5-2','초6-1'];
+const GR=['초1-1','초1-2','초2-1','초2-2','초3-1','초3-2','초4-1','초4-2','초5-1','초5-2','초6-1','초6-2'];
 for(const g of GR){
  await p.evaluate(g=>{document.getElementById('mathChoiceStatus').textContent='레벨: 중 | 학년: '+g;window.wonkiStartDbzGame();},g);await p.waitForTimeout(500);
  const cards=await p.$$('#dbzv2Body .cd');if(cards.length&&await p.$('#dbzv2Body [data-a=start]')){await cards[0].click();await p.click('#dbzv2Body [data-a=start]');await p.waitForTimeout(500);}
