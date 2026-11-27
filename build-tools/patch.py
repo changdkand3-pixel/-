@@ -821,10 +821,82 @@ _eb62=t[_a:_b].replace('WonkiGrade61','WonkiGrade62').replace("'e6-1'","'e6-2'")
 assert 'WonkiGrade62' in _eb62
 t=t[:_a]+_eb62+'\n'+t[_a:]
 
+# ---------- 53. 146차: 중1-1 (수학 원본 100문항 + 드라이브 중1-1 폴더 목차·캐릭터 그림, 영어 m1-1 대결판) — 52단계와 같은 방식, 영어 단원→그림 줄 [0,0,1,1,2,2,2]
+_g71dir=sys.argv[2].replace('world_final.webp','g71/')
+_math71=open(_g71dir+'math71.json',encoding='utf-8').read()
+_g71html=open(_g71dir+'g71.html',encoding='utf-8').read()
+rep("""'초6-2'].includes(S.activeGrade)""","""'초6-2','중1-1'].includes(S.activeGrade)""")
+rep("""if(S.g62){SS['초6-2']=S.g62;delete S.g62}""","""if(S.g62){SS['초6-2']=S.g62;delete S.g62}if(S.g71){SS['중1-1']=S.g71;delete S.g71}""")
+rep("""delete o.g62;o.activeGrade=GR;""","""delete o.g62;delete o.g71;o.activeGrade=GR;""")
+rep("""if(SS['초6-2'])o.g62=SS['초6-2'];""","""if(SS['초6-2'])o.g62=SS['초6-2'];if(SS['중1-1'])o.g71=SS['중1-1'];""")
+rep("""g62=data.g62,""","""g62=data.g62,g71=data.g71,""")
+rep("""delete d2.g62;""","""delete d2.g62;delete d2.g71;""")
+rep("""else delete SS['초6-2'];applyPack(target);""","""else delete SS['초6-2'];if(g71)SS['중1-1']=Object.assign(newState(),g71);else delete SS['중1-1'];applyPack(target);""")
+rep("""||GR==='초6-2')""","""||GR==='초6-2'||GR==='중1-1')""",11)
+_a=t.index("if(GR==='초6-2'&&window.WonkiGrade62){body.innerHTML=head(")
+_board71=t[_a:t.index("\n if(GR===",_a+10)].replace('WonkiGrade62','WonkiGrade71').replace('초6-2','중1-1')
+assert 'WonkiGrade71' in _board71
+t=t[:_a]+_board71+'\n '+t[_a:]
+rep("""PACKS['초6-2']=""","""PACKS['중1-1']="""+_math71+""";
+PACKS['초6-2']=""")
+rep("""return ['초6-2',""","""return ['중1-1','초6-2',""")
+rep("""||st.includes('초6-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1, 초6-2입니다.""","""||st.includes('초6-2')||st.includes('중1-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1, 초6-2, 중1-1입니다.""")
+rep("""'초6-2'].includes(grade.dataset.grade))return;""","""'초6-2','중1-1'].includes(grade.dataset.grade))return;""")
+_m71=_j.loads(_math71)
+_eng71="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m71['CH'].items()},ensure_ascii=False)+");const GRADE71_CAST="+_j.dumps(_m71['CAST'],ensure_ascii=False)+";const GRADE71_STARTERS="+_j.dumps(_m71['PICK'])+";const GRADE71_ENEMIES={};{const s71=SEMESTERS.find(s=>s.key==='m1-1');if(s71)s71.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE71_CAST[String(([0,0,1,1,2,2,2][i]??0)+1)]||[]));GRADE71_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng71+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE62_ENEMIES[u]||""","""function enemies(u){return(GRADE71_ENEMIES[u]||GRADE62_ENEMIES[u]||""")
+rep("""state.semester==='e6-2'?[...GRADE62_STARTERS,...state.friends]:""","""state.semester==='m1-1'?[...GRADE71_STARTERS,...state.friends]:state.semester==='e6-2'?[...GRADE62_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='e6-2'&&GRADE62_STARTERS.includes(saved.player))""","""||(out.semester==='e6-2'&&GRADE62_STARTERS.includes(saved.player))||(out.semester==='m1-1'&&GRADE71_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='e6-2'&&window.WonkiGrade62){")
+_eb71=t[_a:t.index("\n  if(s.semester===",_a+10)].replace('WonkiGrade62','WonkiGrade71').replace("'e6-2'","'m1-1'").replace('초6-2','중1-1')
+_eb71=_re144.sub(r'const scene=\[[0-9,]+\]\[i\]\?\?\d+;','const scene=[0,0,1,1,2,2,2][i]??0;',_eb71)
+assert 'WonkiGrade71' in _eb71 and 'const scene=[0,0,1,1,2,2,2]' in _eb71
+t=t[:_a]+_eb71+'\n'+t[_a:]
+
+# ---------- 54. 146차: 중1-2 (수학 원본 100문항 + 드라이브 중1-2 폴더 목차·캐릭터 그림, 영어 m1-2 대결판) — 52단계와 같은 방식, 영어 단원→그림 줄 [0,0,1,1,2,3,3]
+_g72dir=sys.argv[2].replace('world_final.webp','g72/')
+_math72=open(_g72dir+'math72.json',encoding='utf-8').read()
+_g72html=open(_g72dir+'g72.html',encoding='utf-8').read()
+rep("""'중1-1'].includes(S.activeGrade)""","""'중1-1','중1-2'].includes(S.activeGrade)""")
+rep("""if(S.g71){SS['중1-1']=S.g71;delete S.g71}""","""if(S.g71){SS['중1-1']=S.g71;delete S.g71}if(S.g72){SS['중1-2']=S.g72;delete S.g72}""")
+rep("""delete o.g71;o.activeGrade=GR;""","""delete o.g71;delete o.g72;o.activeGrade=GR;""")
+rep("""if(SS['중1-1'])o.g71=SS['중1-1'];""","""if(SS['중1-1'])o.g71=SS['중1-1'];if(SS['중1-2'])o.g72=SS['중1-2'];""")
+rep("""g71=data.g71,""","""g71=data.g71,g72=data.g72,""")
+rep("""delete d2.g71;""","""delete d2.g71;delete d2.g72;""")
+rep("""else delete SS['중1-1'];applyPack(target);""","""else delete SS['중1-1'];if(g72)SS['중1-2']=Object.assign(newState(),g72);else delete SS['중1-2'];applyPack(target);""")
+rep("""||GR==='중1-1')""","""||GR==='중1-1'||GR==='중1-2')""",11)
+_a=t.index("if(GR==='중1-1'&&window.WonkiGrade71){body.innerHTML=head(")
+_board72=t[_a:t.index("\n if(GR===",_a+10)].replace('WonkiGrade71','WonkiGrade72').replace('중1-1','중1-2')
+assert 'WonkiGrade72' in _board72
+t=t[:_a]+_board72+'\n '+t[_a:]
+rep("""PACKS['중1-1']=""","""PACKS['중1-2']="""+_math72+""";
+PACKS['중1-1']=""")
+rep("""return ['중1-1',""","""return ['중1-2','중1-1',""")
+rep("""||st.includes('중1-1'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1, 초6-2, 중1-1입니다.""","""||st.includes('중1-1')||st.includes('중1-2'))){alert('현재 연결된 문제 자료는 초1-1, 초1-2, 초2-1, 초2-2, 초3-1, 초3-2, 초4-1, 초4-2, 초5-1, 초5-2, 초6-1, 초6-2, 중1-1, 중1-2입니다.""")
+rep("""'중1-1'].includes(grade.dataset.grade))return;""","""'중1-1','중1-2'].includes(grade.dataset.grade))return;""")
+_m72=_j.loads(_math72)
+_eng72="Object.assign(CHARACTERS,"+_j.dumps({k:{'name':v[0],'power':v[1]} for k,v in _m72['CH'].items()},ensure_ascii=False)+");const GRADE72_CAST="+_j.dumps(_m72['CAST'],ensure_ascii=False)+";const GRADE72_STARTERS="+_j.dumps(_m72['PICK'])+";const GRADE72_ENEMIES={};{const s72=SEMESTERS.find(s=>s.key==='m1-2');if(s72)s72.units.forEach((id,i)=>{const ids=Array.from(new Set(GRADE72_CAST[String(([0,0,1,1,2,3,3][i]??0)+1)]||[]));GRADE72_ENEMIES[id]=ids;const u=UNITS.find(x=>x.id===id);if(u)u.enemies=ids;});}\n"
+rep("""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""",_eng72+"""const GRADE21_ENEMIES={};const grade21=SEMESTERS.find(s=>s.key==='e2-1');""")
+rep("""function enemies(u){return(GRADE71_ENEMIES[u]||""","""function enemies(u){return(GRADE72_ENEMIES[u]||GRADE71_ENEMIES[u]||""")
+rep("""state.semester==='m1-1'?[...GRADE71_STARTERS,...state.friends]:""","""state.semester==='m1-2'?[...GRADE72_STARTERS,...state.friends]:state.semester==='m1-1'?[...GRADE71_STARTERS,...state.friends]:""")
+rep("""||(out.semester==='m1-1'&&GRADE71_STARTERS.includes(saved.player))""","""||(out.semester==='m1-1'&&GRADE71_STARTERS.includes(saved.player))||(out.semester==='m1-2'&&GRADE72_STARTERS.includes(saved.player))""")
+_a=t.index("  if(s.semester==='m1-1'&&window.WonkiGrade71){")
+_eb72=t[_a:t.index("\n  if(s.semester===",_a+10)].replace('WonkiGrade71','WonkiGrade72').replace("'m1-1'","'m1-2'").replace('중1-1','중1-2')
+_eb72=_re144.sub(r'const scene=\[[0-9,]+\]\[i\]\?\?\d+;','const scene=[0,0,1,1,2,3,3][i]??0;',_eb72)
+assert 'WonkiGrade72' in _eb72 and 'const scene=[0,0,1,1,2,3,3]' in _eb72
+t=t[:_a]+_eb72+'\n'+t[_a:]
+
+# ---------- 55. 146차: 영어 그림 대결판에서도 내 전사와 같은 캐릭터 칸 보이기(144차 거울 대결을 화면까지), 수학 답 비교에서 음수 부호 지키기(중학교 −18 ≠ 18)
+t,_n146=_re144.subn(r"\.filter\(id=>(?:true|id!=='goku\w*'(?:&&id!=='\w+')*)&&id!==s\.player\)","",t)
+assert _n146>=10,_n146
+rep(""".boss[String(scene+1)].filter(id=>id!==s.player)""",""".boss[String(scene+1)]""")
+rep("""const norm=v=>String(v||'').replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-65248)).replace(/[^0-9]/g,'');""","""const norm=v=>String(v||'').replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-65248)).replace(/[−–—－]/g,'-').replace(/[^0-9-]/g,'').replace(/(?!^)-/g,'');""")
+
 # ---------- 6. final overrides (map, yellow borders, guestbook next to visitor count)
 final = open(sys.argv[4], encoding='utf-8').read()
 _mp63=open(sys.argv[2].replace('world_final.webp','member-progress.html'),encoding='utf-8').read()
-final = _g62html + '\n' + _g61html + '\n' + _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
+final = _g72html + '\n' + _g71html + '\n' + _g62html + '\n' + _g61html + '\n' + _g52html + '\n' + _g51html + '\n' + _g42html + '\n' + _g41html + '\n' + _g32html + '\n' + _g31html + '\n' + final
 final = final + '\n' + _mp63
 _pv64=open(sys.argv[2].replace('world_final.webp','park-viewer.html'),encoding='utf-8').read()
 final = final + '\n' + _pv64

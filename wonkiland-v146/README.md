@@ -1,0 +1,260 @@
+# 원기랜드 146차 — 중1-1·중1-2 수학
+
+## 올리는 방법 (순서대로)
+
+1. **먼저 새 그림 233개를 `작업장` 폴더에 올리기**
+   - [작업장_새그림_233개.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v146/%EC%9E%91%EC%97%85%EC%9E%A5_%EC%83%88%EA%B7%B8%EB%A6%BC_233%EA%B0%9C.zip)을 받아 압축을 풀고, 그림 233개를 Neocities `작업장` 폴더에 한꺼번에 끌어다 올리세요. (중1-1·중1-2 문제 그림 200장, 목차 그림 2장, 캐릭터 얼굴)
+2. **[웰컴투 원기랜드.html](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v146/%EC%9B%B0%EC%BB%B4%ED%88%AC%20%EC%9B%90%EA%B8%B0%EB%9E%9C%EB%93%9C.html)** → `드래곤볼 수학게임` 폴더에 지우지 말고 같은 이름으로 덮어 올리기.
+
+전체: [wonkiland_v146_neocities.zip](https://github.com/changdkand3-pixel/-/raw/claude/adoring-darwin-mewhr1/wonkiland-v146/wonkiland_v146_neocities.zip). **서버 코드:** 바꿀 것 없음
+
+## 바뀐 점 (145차 → 146차)
+
+1. **중1-1 수학 (드래곤볼Z 수학)** — 드라이브 `중1-1.pdf` 100문항 + `이미지파일/중1-1` 폴더 그림.
+   - 단원: Ⅰ 수와 연산(1~51번) · Ⅱ 문자와 식(52~77번) · Ⅲ 좌표평면과 그래프(78~100번)
+   - 캐릭터 8명: 손오공 334·416·924(에네르기파), 피콜로 322·408·1330(마관광살포), 손오반 1307, 라데츠 1220.
+   - 38번은 '2020년 3월 고1 변형'이라고 적혀 있지만 중1 유리수 계산 문제라 그대로 넣었습니다.
+2. **중1-2 수학** — 드라이브 `중1-2.pdf` 100문항 + `이미지파일/중1-2` 폴더 그림.
+   - 단원: Ⅰ 기본 도형(1~40번) · Ⅱ 평면도형(41~65번) · Ⅲ 입체도형(66~90번) · Ⅳ 통계(91~100번)
+   - 캐릭터 31명(손오공 계왕권 단계별, 베지터, 네퍼, 재배맨 등). 1단원은 그림처럼 위아래 두 줄 칸으로 누를 수 있습니다.
+   - 1단원 맨 위 크리링 칸은 그림에 전투력이 없어 1770(확산탄과 같은 값)으로 넣었습니다.
+3. **음수 답**: 수학 답을 비교할 때 이제 빼기 부호도 봅니다. 답이 −18이면 `18`은 오답, `-18`(또는 `−18`)이 정답입니다. 초등 답에는 빼기 부호가 없어서 그대로입니다.
+4. **영어 그림 대결판**에서도 내 전사와 같은 캐릭터 칸이 보입니다(144차 거울 대결을 화면까지 맞춤). 영어 중1-1·중1-2도 목차 그림 대결판으로 바뀜.
+5. 145차 새 그림 110개는 실제 사이트에 모두 올라간 것을 확인했습니다.
+6. 146차 업데이트 안내 카드.
+
+## 이번에 새로 생긴 그림 (233개, 작업장에 올릴 것)
+
+- `00080fa90f9bd0.webp`
+- `00f9ca2a1fd65f.webp`
+- `0167c44fbd99ae.webp`
+- `017cfb06374b8a.webp`
+- `04a723f7f5bc2c.webp`
+- `060476e03359e7.webp`
+- `0893186bdecdff.webp`
+- `090316ec0f734f.webp`
+- `0cb70cd791a678.webp`
+- `0ceb08678f84eb.webp`
+- `0cfd25e8846226.webp`
+- `0d167e088524d3.webp`
+- `0ef93131ffd409.webp`
+- `108367f42428a2.webp`
+- `10b01ccdbd21ec.webp`
+- `10b1fc91472ca1.webp`
+- `10cde374dcf146.webp`
+- `11078dccc0578c.webp`
+- `12e217d4fe6dfb.webp`
+- `138a2078b8d40d.webp`
+- `13e282d4b2196c.webp`
+- `1470db55327d77.webp`
+- `151b2cdda5d0de.webp`
+- `151df23279b90c.webp`
+- `15b3294eacb7c0.webp`
+- `16daed032285f3.webp`
+- `16ea0591b82a6a.webp`
+- `1815e80d0f146a.webp`
+- `1944e96b7e1ca9.webp`
+- `19eeea6d506f88.webp`
+- `1b7d2e6b826abd.webp`
+- `1cb9fdd1c7bac2.webp`
+- `1d0162c9fd1d21.webp`
+- `1d6e47052f9262.webp`
+- `1e9462608e38b1.webp`
+- `1f5156f081606f.webp`
+- `2271dc785ef0c7.webp`
+- `259e27b6cd5137.webp`
+- `25d8f4282a6ba9.webp`
+- `25f4ffc96faea7.webp`
+- `2607801814b4cc.webp`
+- `26608a8dc7a827.webp`
+- `2743b8f24ee3a5.webp`
+- `2758b003edd387.webp`
+- `27b4702313651f.webp`
+- `2c2c6bdf8b7445.webp`
+- `2ca6c8141845dc.webp`
+- `2da97209805334.webp`
+- `3278cb05b5a43c.webp`
+- `34104d65e40dcd.webp`
+- `3493982f82d17d.webp`
+- `37ecdaf39854a4.webp`
+- `38d3c6187c01f6.webp`
+- `3baa343821069f.webp`
+- `3bc65b94b2a1b6.webp`
+- `3ee05352664fb8.webp`
+- `3ff7977cb56e1a.webp`
+- `4195b0a6bb11b8.webp`
+- `433b6706cee166.webp`
+- `4600b15649a8a8.webp`
+- `4a8e39f9dd1b1a.webp`
+- `4adfbadc36d866.webp`
+- `4ae20d4c7545e9.webp`
+- `4ae3574c542346.webp`
+- `4ba688979b0508.webp`
+- `4bfc1aafc74e89.webp`
+- `4c2c31bc39d319.webp`
+- `4c5d70ca8fd72a.webp`
+- `4e2ba73e9fe6c2.webp`
+- `4e4fd50f799b10.webp`
+- `4f3db3f5b68a1b.webp`
+- `501c62d93048bf.webp`
+- `505af85f6dad09.webp`
+- `513f2c932afb8f.webp`
+- `51800b84fd2ecd.webp`
+- `520501a7f632d6.webp`
+- `52a2b0ea17c927.webp`
+- `54d485d6b0cda9.webp`
+- `55db35deb2c37b.webp`
+- `56fc3e273ebfd1.webp`
+- `57031e9c0f627b.webp`
+- `57259ce501dd57.webp`
+- `591ac914deec6c.webp`
+- `5c048562a60124.webp`
+- `5cbca139cb2d37.webp`
+- `5d8cf3c7a41b79.webp`
+- `5e8d521a9657bf.webp`
+- `5ee8a0a3d2aa12.webp`
+- `636ba4f90e63a4.webp`
+- `6443afbb363e85.webp`
+- `652bcb1194a86b.webp`
+- `670609a9bbba56.webp`
+- `677bb8b5621ed6.webp`
+- `69d64bcf57067b.webp`
+- `6a3a7fdca4176e.webp`
+- `6a91312c22c29a.webp`
+- `6a9b119f83a1d4.webp`
+- `6aee166a7767ea.webp`
+- `6bc90f381a745f.webp`
+- `6c2b3e3afd7614.webp`
+- `6e28d93d5beac8.webp`
+- `6e36cfeeeb1f75.webp`
+- `70610018927adb.webp`
+- `70d67dc49cc09f.webp`
+- `7421dcf41659b9.webp`
+- `74a1a59f8d3e3f.webp`
+- `75258a5af7835b.webp`
+- `760776ec10f478.webp`
+- `7719be7bcfabca.webp`
+- `7b2ea3cc96b17a.webp`
+- `7dce07f777501c.webp`
+- `7e43cef8e1e9ff.webp`
+- `7f780bcb00fe7c.webp`
+- `7fcfbd124459a4.webp`
+- `8042533f720564.webp`
+- `8053fef00d6c70.webp`
+- `80c48e316f1ee7.webp`
+- `821968daf9713e.webp`
+- `82779a41ed6353.webp`
+- `838adf17f55704.webp`
+- `83ca6e9bfcd06d.webp`
+- `8517410a6b76f3.webp`
+- `8c876a5f70ee05.webp`
+- `8c8f2ef69bb750.webp`
+- `8e01018fbf97b4.webp`
+- `8ec280c40be544.webp`
+- `8f6fe8db0d75ba.webp`
+- `9000f368aa8572.webp`
+- `9226e2d03b2e4d.webp`
+- `924fbf8c2c5c18.webp`
+- `9260f5eee2d8d9.webp`
+- `92672876203358.webp`
+- `930f43c796853d.webp`
+- `9418e50dc3201a.webp`
+- `9504c23ed860d0.webp`
+- `9631349e53cb60.webp`
+- `96a181d05dd0b5.webp`
+- `973efaae7730d7.webp`
+- `97be367d638d64.webp`
+- `97ef2e87eb16ff.webp`
+- `98a7ffdeecba8b.webp`
+- `98d09c49660f97.webp`
+- `9a702f8b761fc5.webp`
+- `9afa07dd55e18a.webp`
+- `9b223fa3fe26eb.webp`
+- `9db2d547973ad0.webp`
+- `9dc8e2bc356089.webp`
+- `9eb22c83ca8fe4.webp`
+- `9feb174f39b1e2.webp`
+- `a03ded1430d0b4.webp`
+- `a060e5fed5cc07.webp`
+- `a1f66006044c64.webp`
+- `a2d60c7dcc6878.webp`
+- `a462f229fcebc8.webp`
+- `a4b6c5b9cf6a3c.webp`
+- `a84c01008c13ca.webp`
+- `a90b5dc60143b1.webp`
+- `a9514e05e185d8.webp`
+- `ab0c9148cf70f2.webp`
+- `ab4126a7a5caf8.webp`
+- `aea751390f84ee.webp`
+- `b1c1c43045f4b9.webp`
+- `b3376e3f0874ab.webp`
+- `b3a264f0897640.webp`
+- `b3c046b61f1a9b.webp`
+- `b524e859315fd0.webp`
+- `b567d6341afe38.webp`
+- `b56aa8d24a6049.webp`
+- `b5ecf4282f6fad.webp`
+- `b5f1a1708fbb85.webp`
+- `b7d8561ea64f5e.webp`
+- `b838045e8598c3.webp`
+- `b89d6fc35bf43a.webp`
+- `bb4b6a91153bf5.webp`
+- `bcb1149bfdf895.webp`
+- `bd8962ceb97ec1.webp`
+- `bd958c4ef41d59.webp`
+- `bde98c68797a49.webp`
+- `bf3cfcc01bdc02.webp`
+- `bf461f374af158.webp`
+- `bf7d6a563d06aa.webp`
+- `bf912e5e52aed0.webp`
+- `bfb6cbbabca532.webp`
+- `c11017964105db.webp`
+- `c13b4093acfea5.webp`
+- `c15ba4c4dec01f.webp`
+- `c22994ada18996.webp`
+- `c2c01d3cb4424e.webp`
+- `c4f9c500c76b1a.webp`
+- `c5bf901eb08008.webp`
+- `c5f37536846751.webp`
+- `c659ed15d6fca3.webp`
+- `c678ead82e53fc.webp`
+- `c8ce33da0b74c9.webp`
+- `ca4e6d66afaacf.webp`
+- `cc267eb210ff7e.webp`
+- `ce888b52e45195.webp`
+- `cff980116ae7ef.webp`
+- `d16aedde549ce1.webp`
+- `d17a7140552db9.webp`
+- `d3670216adda2d.webp`
+- `d5f9d7c66bddac.webp`
+- `d682fd3e9ee2c8.webp`
+- `d7e6056461fdd2.webp`
+- `d896b160dc8bff.webp`
+- `d8fec79594e843.webp`
+- `d96f164323dfdb.webp`
+- `d9bbc8652a7362.webp`
+- `d9dd66f813351f.webp`
+- `da6494c0585b64.webp`
+- `dad446b22e64e9.webp`
+- `dd7fa3a4a301d4.webp`
+- `e144fca1a6a092.webp`
+- `e19392c3bae5c0.webp`
+- `e2bd3b8a60ba4b.webp`
+- `e510607ae1f931.webp`
+- `e51b427d60a001.webp`
+- `e5f98dc6c36363.webp`
+- `e79c4ed91a4281.webp`
+- `ed4ce491b50bb8.webp`
+- `f0513db31f680a.webp`
+- `f3717e011addd5.webp`
+- `f42c4c0787740b.webp`
+- `f43effc165b79a.webp`
+- `f4bf5906334504.webp`
+- `f74db885bc1aee.webp`
+- `f7b8e79a4405dd.webp`
+- `f8d26f05064819.webp`
+- `f94059819b526a.webp`
+- `fb61fb199271f4.webp`
+- `fd180f8a35dfd3.webp`
+- `fdf534359a7332.webp`
+- `ff8eeea7ff417d.webp`
